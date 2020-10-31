@@ -1,0 +1,2 @@
+# docs
+Amplication docs
