@@ -4,7 +4,7 @@ title: Create your first application with Amplication
 sidebar_label: Your first application
 ---
 
-# Your first application
+# Your first application1
 
 Not sure how to get started? In this tutorial, you’ll walk through the steps of creating an application, adding an entity, adding roles, and setting permissions on entities.
 
