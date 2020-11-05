@@ -95,14 +95,14 @@ In the **`Related Entity Id`**select “User”.
 Click on the **`Required Field`** toggle to make this field required.
 
 :::tip
-🦸 **Pro Tip:**
+**Pro Tip:**
 
 You can create multiple fields, one after the other, by typing the display name of the field, press on "Enter", and then start typing the display name of the next field. Continue this way with as many fields as you want.
 
 After creating all fields, you can go back to each one of the fields and set its unique properties like data type, etc.
 :::
 
-## 🔐 Set Access Permissions
+## Set Access Permissions
 
 In order to allow users to access the entity, we need to set its permissions.
 
@@ -154,7 +154,7 @@ To do so, make sure to use `Granular` permissions, and click on**`+ Add Field`**
 This option is not available for the **Delete** action
 :::
 
-## 👌 Commit Your Changes
+## Commit Your Changes
 
 When working on Amplication your changes are saved automatically, but are not committed before you decide to do so. Only committed changes will be included in the next version of your application.
 
@@ -176,7 +176,7 @@ Type in a short message to describe the changes, e.g. "Create Project Entity", a
 
 All the changes are now committed. You can now build the first version of our app.
 
-## 📦 Build a New Version
+## Build a New Version
 
 From the main menu, click on **`Publish`**. If you just committed your changes, you can also find the **`Publish`** button below the success message.
 
@@ -198,11 +198,11 @@ Click on the**`Download`**icon to get a **.zip** file with the code of your new 
 
 ![](./assets/pic10.jpg)
 
-## 💪🏾 Continue Building Your App
+## Continue Building Your App
 
 Now that we know how to create entities, commit changes, and build new versions, let's continue to build our app. In the next part of this guide, we will create another entity, and learn how to compare changes before committing.
 
-## ✅ Create the Task Entity
+## Create the Task Entity
 
 Go back to `Entities` page, and click on **`Create New`** to open the `New Entity`dialog.
 
@@ -225,7 +225,7 @@ The Task's field list should now look like this:
 
 ![](./assets/pic11.jpg)
 
-## 🖊 Update the Project Entity
+## Update the Project Entity
 
 We now want to make some changes to the **Project** entity. Let's go back to the Entity list and click on the **Project** entity.
 
@@ -233,7 +233,7 @@ Add a new field called "Due Date" and select the **Date Time** as the data type.
 
 Also, change the name of the "Owner" field to "Project Owner".
 
-## 👭 Compare Pending Changes Before Commit
+## Compare Pending Changes Before Commit
 
 Click on the **`Pending`** button, which now shows indication for two changes.
 
