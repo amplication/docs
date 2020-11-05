@@ -40,6 +40,11 @@
   --positive-default: #31c587;
   --warning-default: #f6aa50;
   --negative: #e93c51;
+
+  --positive-light: #eaf7f2;
+  --info-light: #edf6ff;
+  --warning-light: #fff5e7;
+  --negative-light: #ffe9e9;
 }
 
 :root {
@@ -68,6 +73,39 @@
   --ifm-table-head-font-weight: 600;
 
   --ifm-blockquote-color: var(--black80);
+  --ifm-alert-color: var(--black80);
+  --ra-color-text-dark: var(--black100);
+}
+.alert {
+  border-left: 6px solid var(--black60);
+}
+
+.alert--secondary {
+  border-left-color: var(--black60);
+}
+
+.alert--success {
+  --ifm-alert-background-color: var(--positive-light);
+  --ifm-alert-border-color: var(--positive-light);
+  border-left-color: var(--positive-default);
+}
+
+.alert--info {
+  --ifm-alert-background-color: var(--info-light);
+  --ifm-alert-border-color: var(--info-light);
+  border-left-color: var(--secondary-light-blue);
+}
+
+.alert--warning {
+  --ifm-alert-background-color: var(--warning-light);
+  --ifm-alert-border-color: var(--warning-light);
+  border-left-color: var(--warning-default);
+}
+
+.alert--danger {
+  --ifm-alert-background-color: var(--negative-light);
+  --ifm-alert-border-color: var(--negative-light);
+  border-left-color: var(--negative);
 }
 
 blockquote {
