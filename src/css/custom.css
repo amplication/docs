@@ -137,10 +137,10 @@ hr {
   box-shadow: 0px 2px 10px rgba(109, 95, 149, 0.2);
 }
 
-.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage- {
+.main-wrapper div[class^="docSidebarContainer"] {
   background-color: var(--black5);
 }
 
-.docTitle_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem- {
+article > header {
   display: none;
 }
