@@ -140,3 +140,7 @@ hr {
 .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage- {
   background-color: var(--black5);
 }
+
+.docTitle_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem- {
+  display: none;
+}
