@@ -6,15 +6,86 @@
  */
 
 /* You can override the default Infima variables here. */
+
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --white: #ffffff;
+  --primary-font-family: "Poppins", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  --primary: #7950ed;
+  --secondary: #a787ff;
+  --dark-purple: #6032ea;
+  --raised-button-fill: #6032ea;
+  --mdc-theme-primary: var(--primary);
+  --mdc-theme-secondary: (--dark-purple);
+  --mdc-typography-body2-font-family: var(--primary-font-family);
+  --mdc-typography-subtitle2-font-family: var(
+    --mdc-typography-body2-font-family
+  );
+  --black100: #121242;
+  --black90: #2a2a55;
+  --black80: #414168;
+  --black60: #71718e;
+  --black40: #a0a0b3;
+  --black30: #b8b8c6;
+  --black20: #d0d0d9;
+  --black10: #e7e7ec;
+  --black5: #f4f4f7;
+  --black2: #f9f9fa;
+  --secondary1: #f5a2f9;
+  --secondary2: #59c4a9;
+  --secondary-turquoise: #32c9e5;
+  --secondary-light-blue: #20a4f3;
+  --secondary-blue: #144bc1;
+  --positive-default: #31c587;
+  --warning-default: #f6aa50;
+  --negative: #e93c51;
+}
+
+:root {
+  --ifm-font-family-base: "Poppins", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  --ifm-color-primary: var(--primary);
   --ifm-code-font-size: 95%;
+  --ifm-toc-border-color: var(--black10);
+  --ifm-menu-color: var(--black80);
+  --ifm-font-color-base: var(--black80);
+  --ifm-heading-color: var(--black100);
+  --ifm-h1-font-size: 10px;
+  --ifm-heading-font-weight: 600;
+
+  --ifm-hr-border-color: var(--black20);
+  --ifm-hr-border-width: 1px;
+  --ifm-hr-margin-vertical: 3rem;
+
+  --ifm-table-head-font-weight: 600;
+
+  --ifm-table-stripe-background: transparent;
+  --ifm-table-border-color: var(--black10);
+  --ifm-table-head-background: var(--black2);
+  --ifm-table-head-color: var(--black100);
+  --ifm-table-head-font-weight: 600;
+
+  --ifm-blockquote-color: var(--black80);
+}
+
+blockquote {
+  border-left-color: var(--primary);
+  border-radius: 3px;
+  background-color: var(--black5);
+}
+
+table {
+  display: table;
+}
+
+hr {
+  border-bottom: none;
+}
+
+.menu {
+  font-weight: 400;
 }
 
 .docusaurus-highlight-code-line {
@@ -22,4 +93,12 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+.navbar {
+  box-shadow: 0px 2px 10px rgba(109, 95, 149, 0.2);
+}
+
+.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage- {
+  background-color: var(--black5);
 }

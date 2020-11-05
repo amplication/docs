@@ -8,24 +8,28 @@ module.exports = {
   organizationName: 'amplicaiton/amplication', // Usually your GitHub org/user name.
   projectName: 'amplication', // Usually your repo name.
   themeConfig: {
+    
+    colorMode: {
+      // "light" | "dark"
+      defaultMode: 'light',
+      // Hides the switch in the navbar
+      disableSwitch: true,
+    },
     navbar: {
-      title: 'Docs',
+      hideOnScroll: true,
+      title: '',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Amplicaiton',
         src: 'img/amplication-logo.svg',
+        href:"https://amplication.com/"
       },
       items: [
-        {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        
         {
           href: 'https://github.com/amplicaiton/amplication',
           label: 'GitHub',
           position: 'right',
+          activeSidebarClassName: 'yuval'
         },
       ],
     },
