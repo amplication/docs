@@ -16,7 +16,7 @@ module.exports = {
       disableSwitch: true,
     },
     navbar: {
-      hideOnScroll: true,
+      hideOnScroll: false,
       title: '',
       logo: {
         alt: 'Amplicaiton',
