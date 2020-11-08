@@ -2,6 +2,7 @@
 id: first-app
 title: Create your first application with Amplication
 sidebar_label: Your first application
+slug: /getting-started
 ---
 
 # Your first application
