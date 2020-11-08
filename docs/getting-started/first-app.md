@@ -16,9 +16,9 @@ Let’s get started.
 ## Create a New App
 
 1. Sign in to [app.amplication.com](https://app.amplication.com). You should land on the _My Apps_ page. If you're not on the My Apps page, click the Amplication logo in the top-left corner to reach this page, as this is our starting point.
-2. In the My Apps page, click **`Create New App`**.
+2. In the My Apps page, click **Create New App**.
 3. In the _New App_ dialog, name your app “Task Management” and enter this description: “My first app for task management”.
-4. Click **`Create App`**.
+4. Click **Create App**.
 
 ![](./assets/pic0.jpg)
 
@@ -34,9 +34,9 @@ Currently, there's only a “User” entity that was auto-generated when you cre
 
 For the purpose of this tutorial, we'll now add another entity called “Project”.
 
-1. Click **`Create New`**.
+1. Click **Create New**.
 2. In the _New Entity_ dialog, type in “Project”.
-3. Click **`Create Entity`**.
+3. Click **Create Entity**.
 
 ![](./assets/pic-2.jpg)
 
@@ -44,25 +44,24 @@ You now have a new “Project” entity. Notice that the added entity comes with
 
 ## Add Entity Fields
 
-We now need to add some new fields to describe our projects. We will add the following fields:
+To describe your project add some new fields. For the purpose of this tutorial, add these fields:
 
-- Name – to save the name of the project
-- Description – to save a more detailed description of the project
-- Start Date – to save the date in which this project starts
-- Owner – to assign a user to be an owner of the project
+- Name – for saving the project name
+- Description – for saving a more detailed description of the project
+- Start Date – for saving the date on which this project starts
+- Owner – for assigning a user to be an owner of the project
 
 ### Create the Name Field
 
-To create the first field, type in “Name” in the `New Field` textbox above the field list, and click on **`Add Field`** \(or just press Enter\).
-
-The new field was created, and you see a panel with all the field properties.
-
-In the field panel, click on the **`Required Field`** toggle to make the “Name” field required.
+1. In the *Entity Fields* text box (above the list of fields), type in “Name”.
+2. Click **Add field** \(or just press Enter\). The new field is added to the list.
+3. The field's property panel opens. Click the **Required Field** toggle to make the “Name” field required. 
+4. Leave the defaults for the other properties ('Searchable' inactive, 'Data Type' Single Line Text, and 'Max Length' 256.)
 
 ![](./assets/pic-3.jpg)
 
 :::tip
-All changes are saved automatically
+All changes are saved automatically.
 :::
 
 ### Create the Description Field
