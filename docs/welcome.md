@@ -8,4 +8,4 @@ slug: /
 
 ---
 
-Welcome to the Amplication documentation
+Welcome to Amplication's documentation. 
