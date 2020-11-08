@@ -57,7 +57,7 @@
   --ifm-menu-color: var(--black80);
   --ifm-font-color-base: var(--black80);
   --ifm-heading-color: var(--black100);
-  --ifm-h1-font-size: 10px;
+
   --ifm-heading-font-weight: 600;
 
   --ifm-hr-border-color: var(--black20);
@@ -76,8 +76,16 @@
   --ifm-alert-color: var(--black80);
   --ra-color-text-dark: var(--black100);
 }
+
+.menu__list-item {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
 .alert {
   border-left: 6px solid var(--black60);
+  margin-top: 2rem;
 }
 
 .alert--secondary {
@@ -143,4 +151,20 @@ hr {
 
 article > header {
   display: none;
+}
+
+.markdown img {
+  margin: 1rem 0;
+}
+
+.markdown > h1 {
+  --ifm-h1-font-size: 2rem;
+}
+
+.markdown > h2 {
+  --ifm-h2-font-size: 1.5rem;
+}
+
+.markdown > h3 {
+  --ifm-h3-font-size: 1.3rem;
 }
