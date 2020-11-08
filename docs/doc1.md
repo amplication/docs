@@ -169,7 +169,7 @@ This line is also a separate paragraph, but... This line is only separated by a 
 
 ---
 
-## Admonitions
+## Admonitions (tips, notes and warnings)
 
 :::note
 
