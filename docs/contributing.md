@@ -45,9 +45,6 @@ If you want to help out with a code contribution, our project uses the following
 - [TypeScript](https://www.typescriptlang.org/docs)
 - [Apollo Client](https://www.apollographql.com/docs/react/)
 
-### Code generation
-
--
 
 If you don't feel ready to make a code contribution yet, no problem! You can also check out the [documentation issues](https://github.com/amplication/amplication/labels/type%3A%20docs).
 
