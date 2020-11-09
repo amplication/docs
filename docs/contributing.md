@@ -47,6 +47,7 @@ If you want to help out with a code contribution, our project uses the following
 
 
 :::tip If you don't feel ready to make a code contribution yet, no problem! You can also check out the [documentation issues](https://github.com/amplication/amplication/labels/type%3A%20docs).
+:::
 
 ## <a name="submit-pr"></a> How do I make a contribution?
 
@@ -99,7 +100,7 @@ Wait for the pull request to be reviewed by a maintainer.
 
 Make changes to the pull request if the reviewing maintainer recommends them.
 
-Celebrate your success after your pull request is merged!
+Celebrate your success after your pull request is merged! :champagne:
 
 ### Git Commit Messages
 
