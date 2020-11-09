@@ -66,6 +66,9 @@ All changes are saved automatically.
 
 ### Create the Description Field
 
+1. In the *Entity Fields* text box type “Description”.
+2. Click **Add field** \(or just press Enter\). The new field is added to the list.
+3. The field's property panel opens. Click the **Required Field** toggle to make the “Name” field required.
 To create the next field, type in “Description” in the `New Field` textbox above the field list, and click on Enter.
 
 Once again, you see the new field properties listed in the panel.
