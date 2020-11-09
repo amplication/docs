@@ -21,9 +21,9 @@ If you find a bug in the source code, you can help us by [submitting an issue](h
 
 You can request a new feature by [submitting an issue](https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title=) to our GitHub Repository.
 
-If you would like to implement a new feature, please submit an issue with a proposal for your work first, to be sure that we can use it. Please consider what kind of change it is:
+If you'd like to implement a new feature, it's always good to be in touch with us before you invest time and effort, since not all features can be supported. 
 
-- For a Major Feature, first open an issue and outline your proposal so that it can be discussed. This will also allow us to better coordinate our efforts, prevent duplication of work, and help you craft the change so that it's successfully integrated in the project.
+- For a Major Feature, first open an issue and outline your proposal. This will let us coordinate efforts, prevent duplication of work, and help you craft the change so that it's successfully integrated in the project. 
 - Small Features can be crafted and directly [submitted as a Pull Request](#submit-pr).
 
 ## What do I need to know to help?
@@ -46,11 +46,11 @@ If you want to help out with a code contribution, our project uses the following
 - [Apollo Client](https://www.apollographql.com/docs/react/)
 
 
-If you don't feel ready to make a code contribution yet, no problem! You can also check out the [documentation issues](https://github.com/amplication/amplication/labels/type%3A%20docs).
+:::tip If you don't feel ready to make a code contribution yet, no problem! You can also check out the [documentation issues](https://github.com/amplication/amplication/labels/type%3A%20docs).
 
 ## <a name="submit-pr"></a> How do I make a contribution?
 
-Never made an open source contribution before? Wondering how contributions work in the in our project? Here's a quick rundown!
+Never made an open source contribution before? Wondering how contributions work in our project? Here's a quick rundown.
 
 Find an issue that you're interested in addressing, or a feature that you'd like to add.
 You can use [this view](https://github.com/amplication/amplication/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) which helps new contributors find easy gateways into our project.
@@ -69,7 +69,7 @@ Create a new branch for your fix:
 git checkout -b branch-name-here
 ```
 
-Make the appropriate changes for the issue you are trying to address or the feature that you want to add.
+Make the appropriate changes for the issue you're trying to address, or the feature you want to add.
 
 Once done, stage the changes that are ready to be committed:
 
@@ -77,7 +77,7 @@ Once done, stage the changes that are ready to be committed:
 git add .
 ```
 
-Commit the changes with a short message. (See below for more details on how we structure our commit messages)
+Commit the changes with a short message. (See below for more details on how we structure our commit messages.)
 
 ```
 git commit -m "<type>(<package>): <subject>"
@@ -120,7 +120,7 @@ List of types:
 - feat: A new feature
 - fix: A bug fix
 - docs: Changes to the documentation
-- style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+- style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc.)
 - refactor: A code change that neither fixes a bug nor adds a feature
 - perf: A code change that improves performance
 - test: Adding missing or correcting existing tests
