@@ -5,7 +5,7 @@ sidebar_label: Your first application
 slug: /getting-started
 ---
 
-# Your first application
+# Your first application 
 
 Not sure how to get started? In this tutorial, you’ll walk through the steps of creating an application, adding an entity, adding roles, and setting permissions on entities.
 
