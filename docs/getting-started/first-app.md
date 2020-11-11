@@ -5,7 +5,7 @@ sidebar_label: Your first application
 slug: /getting-started
 ---
 
-# Your first application
+# Your first application 
 
 Not sure how to get started? In this tutorial, you’ll walk through the steps of creating an application, adding an entity, adding roles, and setting permissions on entities.
 
@@ -66,40 +66,31 @@ All changes are saved automatically.
 
 ### Create the Description Field
 
-To create the next field, type in “Description” in the `New Field` textbox above the field list, and click on Enter.
-
-Once again, you see the new field properties listed in the panel.
+1. In the *Entity Fields* text box type “Description”.
+2. Click **Add field** \(or just press Enter\). The new field is added to the list.
+3. The field's property panel opens. Leave the defaults ('Required Field' and 'Searchable' inactive, 'Data Type' Multi Line Text, and 'Max Length' 1000.)
 
 ### Create the Start Date Field
 
-To create the next field, type in “Start Date” in the `New Field` textbox, and click on Enter.
-
+1. In the *Entity Fields* text box type “Start Date”.
 :::info
-Please note that you can use white spaces to better describe your fields. The value is saved as the field’s display name.
-
-Also, each field has an auto-generated “name” which must not contain spaces or special characters. The name is later used for the API endpoint and in other places in the generated code.
-
-If needed, you can manually set the field name.
+White spaces are supported, which is useful when you want to enter a descriptive field name. The value is saved as the field’s display name.
+In addition to the display name, each field has an auto-generated **Name** that does not contain spaces or special characters. This name is later used for the API endpoint and in other places in the generated code.
+If needed, you can manually change the field name in the field's properties panel.
 :::
-
-Once again, you see the new field properties listed in the panel.
+2. Click **Add field** \(or just press Enter\). The new field is added to the list.
+3. The field's property panel opens. Leave the defaults ('Required Field' and 'Searchable' inactive, 'Data Type' Date Time, and 'Time Zone' Local Time.)
 
 ### Create the Owner Field
 
-To create the next field, type in “Owner” in the `New Field` text box, and click on Enter.
-
-Change the data type of the new field from `Single Line Text`to `Relation to Another Entity`.
-
-In the **`Related Entity Id`**select “User”.
-
-Click on the **`Required Field`** toggle to make this field required.
+1. In the *Entity Fields* text box type “Owner”.
+2. Click **Add field** \(or just press Enter\). The new field is added to the list.
+3. The field's property panel opens. Change the *Data Type* from "Single Line Text" to "Relation to another Entity".
+4. In the *Related Entity Id* field select “User”.
+5. Click the **Required Field** toggle to make the “Owner” field required.
 
 :::tip
-**Pro Tip:**
-
-You can create multiple fields, one after the other, by typing the display name of the field, press on "Enter", and then start typing the display name of the next field. Continue this way with as many fields as you want.
-
-After creating all fields, you can go back to each one of the fields and set its unique properties like data type, etc.
+You might find it easier to first add all the fields you want, one after onother, and afterwards setting the properties of each field. 
 :::
 
 ## Set Access Permissions
