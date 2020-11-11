@@ -99,7 +99,7 @@ Wait for the pull request to be reviewed by a maintainer.
 
 Make changes to the pull request if the reviewing maintainer recommends them.
 
-Celebrate your success after your pull request is merged!
+Celebrate your success after your pull request is merged! 🥂
 
 ### Git Commit Messages
 
