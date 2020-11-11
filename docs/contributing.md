@@ -102,6 +102,7 @@ Make changes to the pull request if the reviewing maintainer recommends them.
 
 Celebrate your success after your pull request is merged! :champagne:
 
+
 ### Git Commit Messages
 
 We structure our commit messages like this:
