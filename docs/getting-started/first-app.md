@@ -24,7 +24,7 @@ Let’s get started.
 
 ## Create an Entity
 
-Click the Entities icon \(left sidebar\) to reach the Entities page, here you see all the entities in your application.
+Click the Entities icon (left sidebar, a.k.a. main menu) to reach the Entities page, here you see all the entities in your application.
 
 ![](./assets/pic-1.jpg)
 
@@ -54,9 +54,9 @@ To describe your project add some new fields. For the purpose of this tutorial, 
 ### Create the Name Field
 
 1. In the *Entity Fields* text box (above the list of fields), type in “Name”.
-2. Click **Add field** \(or just press Enter\). The new field is added to the list.
-3. The field's property panel opens. Click the **Required Field** toggle to make the “Name” field required. 
-4. Leave the defaults for the other properties ('Searchable' inactive, 'Data Type' Single Line Text, and 'Max Length' 256.)
+2. Click **Add field** (or just press Enter). The new field is added to the list.
+3. The field's property panel opens. Click the **Required Field** toggle to make the *Name* field required. 
+4. Leave the defaults for the other properties (*Searchable* inactive, *Data Type* "Single Line Text", and *Max Length* "256".)
 
 ![](./assets/pic-3.jpg)
 
@@ -67,19 +67,21 @@ All changes are saved automatically.
 ### Create the Description Field
 
 1. In the *Entity Fields* text box type “Description”.
-2. Click **Add field** \(or just press Enter\). The new field is added to the list.
-3. The field's property panel opens. Leave the defaults ('Required Field' and 'Searchable' inactive, 'Data Type' Multi Line Text, and 'Max Length' 1000.)
+2. Click **Add field** (or just press Enter). The new field is added to the list.
+3. The field's property panel opens. Leave the defaults (*Required Field* and *Searchable* inactive, *Data Type* "Multi Line Text", and *Max Length* "1000".)
 
 ### Create the Start Date Field
 
 1. In the *Entity Fields* text box type “Start Date”.
+
 :::info
 White spaces are supported, which is useful when you want to enter a descriptive field name. The value is saved as the field’s display name.
-In addition to the display name, each field has an auto-generated **Name** that does not contain spaces or special characters. This name is later used for the API endpoint and in other places in the generated code.
+In addition to the display name, each field has an auto-generated *Name* that does not contain spaces or special characters. This name is later used for the API endpoint and in other places in the generated code.
 If needed, you can manually change the field name in the field's properties panel.
 :::
-2. Click **Add field** \(or just press Enter\). The new field is added to the list.
-3. The field's property panel opens. Leave the defaults ('Required Field' and 'Searchable' inactive, 'Data Type' Date Time, and 'Time Zone' Local Time.)
+
+2. Click **Add field** (or just press Enter). The new field is added to the list.
+3. The field's property panel opens. Leave the defaults (*Required Field* and *Searchable* inactive, *Data Type* "Date Time", and *Time Zone* "Local Time".)
 
 ### Create the Owner Field
 
@@ -90,14 +92,14 @@ If needed, you can manually change the field name in the field's properties pane
 5. Click the **Required Field** toggle to make the “Owner” field required.
 
 :::tip
-You might find it easier to first add all the fields you want, one after onother, and afterwards setting the properties of each field. 
+You might find it easier to first add all the fields you want, one after onother, and only afterwards set the properties of each field. 
 :::
 
 ## Set Access Permissions
 
 In order to allow users to access the entity, we need to set its permissions.
 
-The permissions can be controlled separately for each of the following actions:
+Permissions can be controlled separately for each of the following actions:
 
 - **View**
 - **Create**
@@ -105,34 +107,34 @@ The permissions can be controlled separately for each of the following actions:
 - **Delete**
 - **Search**
 
-By default, all these actions are **not permitted**, so we need to decide what actions we want to allow and to whom.
+By default, ALL these actions are NOT permitted, so we need to decide which actions are allowed for whom.
+This is where roles are handy. 
 
 ### Create Roles
 
-Click on the **`Roles`** icon in the main menu to navigate to the Roles list.
+Click the Roles icon (left sidebar, a.k.a. the main menu) to reach the *Roles* page, here you see all the roles in your application.
 
-In the list, you should find one default role named "User".
+:::tip
+Currently, there's only a default “User” role that was auto-generated when you created the new app.
+:::
 
-Let's create two new roles - Admin and Manager.
+For the purpose of this tutorial, we'll now add another two roles: “Admin” and "Manager".
 
-In the `Type role name` text box, type in "Admin" and click on **`Add Role`** or press Enter.
 
-Do the same for the "Manager" role.
+1. In the *Type role name* text box, type "Admin".
+2. Click **Add Role** \(or just press Enter\). The new role is added to the list.
+3. Repeat these steps to add the "Manager" role.
 
 ![](./assets/pic-4.jpg)
 
 ### Set Entity Permissions
 
-Go back to the Entities list and navigate into the **Project** entity.
-
-In the `Permissions` panel, click on the **`pencil`** icon to edit the permissions.
-
-Initially, we will allow all roles to perform all actions. So, for each of the actions listed in the panel, enable the toggle next to the action name.
-
-Now, let's make sure that only users with the **Admin** role can delete projects. It takes two steps:
-
-1. Next to "Delete Projects" change the selection from `All Roles` to `Granular`.
-2. Expand the role list and select **Admin**.
+1. Click the Entities icon in the main menu to open the *Entities* page.
+2. Click the *Project* entity.
+3. In the Project's page *Permissions* panel click the edit icon (pencil). This opens the Permissions settings.
+4. Start by making sure that all actions (View, Create, Update, Delete, and Search) are enabled for all roles.
+5. Fine tune permissions by changing the *Delete* permissions from "All Roles" to "Granular" and then select from the presented roles the "Admin" role.
+   This ensures that only users filling the Admin role can delete projects.
 
 ![](./assets/pic-5.jpg)
 
