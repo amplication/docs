@@ -139,35 +139,32 @@ For the purpose of this tutorial, we'll now add another two roles: “Admin” a
 ![](./assets/pic-5.jpg)
 
 :::info
-
-You can also set special permissions for specific fields. For example, you can prevent users from editing the Due Date of a project and allowing it only to managers.
-
-To do so, make sure to use `Granular` permissions, and click on**`+ Add Field`** below the role list.
-
-This option is not available for the **Delete** action
+You can set action permissions for specific fields, instead of globally for all the action's fields. For example, you can prevent users from editing the Due Date of a project, while permitting managers to do so.
+To specify permissions at the field level:
+1. Set the action's permission scope to "Granular".
+2. Click **+ Add Field**. (For the *Delete* action there's no option to set permissions for specific fields.) 
+3. Select the field(s) from the list.  
+4. The roles you've defined for your app in general are listed beneath the action. To have them available for the fields, you'll need to select them at the action top level. So either select all roles, or only the roles you'll be using for these fields. 
+5. For each field set which role(s) can perform the action. For example, only Admins can create project owners, if this role was assigned to the Project entity's *Create* action's *owner* field.  
 :::
 
 ## Commit Your Changes
 
-When working on Amplication your changes are saved automatically, but are not committed before you decide to do so. Only committed changes will be included in the next version of your application.
+While working in Amplication your changes are saved automatically, but are not committed. Only committed changes will be included in the next version of your application.
 
-On the top right corner of the screen, you can always see how many pending changes are awaiting to be committed, in the `Pending` button.
+In the *Pending* control (top bar, on the right) you can see how many pending changes are waiting to be committed. 
 
 ![](./assets/pic8.jpg)
 
-Let's create our first commit to the changes done so far.
+For the purpose of this tutorial, let's make our first commit.
 
-Click on the **`Pending`** button to navigate to the `Pending Changes` pages.
-
-In the `Pending Changes` page, you can see that the creation of the **Project** entity is pending.
-
-Click on **`Commit Changes`**to open the `Commit Pending Changes` dialog.
+1. Click **Pending** to open the *Pending Changes* page.
+2. In this page, you can see that the creation of the *Project* entity hasn't been committed. Click **Commit Changes**.
+3. In the *Commit Pending Changes* dialog, enter a short description of the changes you're committing for example, "Created project entity".
 
 ![](./assets/pic9.jpg)
 
-Type in a short message to describe the changes, e.g. "Create Project Entity", and click on **`Commit`**.
-
-All the changes are now committed. You can now build the first version of our app.
+4. Click **Commit**. All changes are committed. You can now build the first version of your app!
 
 ## Build a New Version
 
