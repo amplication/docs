@@ -26,7 +26,7 @@ module.exports = {
       items: [
         
         {
-          href: 'https://github.com/amplicaiton/amplication',
+          href: 'https://github.com/amplication/amplication',
           label: 'GitHub',
           position: 'right',
           activeSidebarClassName: 'yuval'
