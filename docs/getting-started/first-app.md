@@ -139,13 +139,13 @@ For the purpose of this tutorial, we'll now add another two roles: “Admin” a
 ![](./assets/pic-5.jpg)
 
 :::info
-You can set action permissions for specific fields, instead of globally for all the action's fields. For example, you can prevent users from editing the Due Date of a project, while permitting managers to do so.
+You can set action permissions for specific fields, instead of globally for all the action's fields. For example, you can prevent users from changing (updating) the Due Date of a project, while permitting managers to do so.
 To specify permissions at the field level:
 1. Set the action's permission scope to "Granular".
-2. Click **+ Add Field**. (For the *Delete* action there's no option to set permissions for specific fields.) 
-3. Select the field(s) from the list.  
-4. The roles you've defined for your app in general are listed beneath the action. To have them available for the fields, you'll need to select them at the action top level. So either select all roles, or only the roles you'll be using for these fields. 
-5. For each field set which role(s) can perform the action. For example, only Admins can create project owners, if this role was assigned to the Project entity's *Create* action's *owner* field.  
+2. Select the role(s) relevant to this action. 
+3. Click **+ Add Field**. (For the *Delete* action there's no option to set permissions for specific fields.) 
+4. Select the field(s) from the list.   
+5. For each of these fields set which role(s) can perform the action by clicking it. For example, click **Admin** beneath "Update Field" *owner*. 
 :::
 
 ## Commit Your Changes
@@ -160,7 +160,7 @@ For the purpose of this tutorial, let's make our first commit.
 
 1. Click **Pending** to open the *Pending Changes* page.
 2. In this page, you can see that the creation of the *Project* entity hasn't been committed. Click **Commit Changes**.
-3. In the *Commit Pending Changes* dialog, enter a short description of the changes you're committing for example, "Created project entity".
+3. In the *Commit Pending Changes* dialog, enter a short description of the changes you're committing. For example, "Created project entity".
 
 ![](./assets/pic9.jpg)
 
