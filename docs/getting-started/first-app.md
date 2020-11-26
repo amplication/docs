@@ -167,24 +167,21 @@ For the purpose of this tutorial, let's make our first commit.
 4. Click **Commit**. All changes are committed. You can now build the first version of your app!
 
 ## Build a New Version
+For the purpose of this tutorial we will now build a version of the app that includes everything we did up to this point. 
 
-From the main menu, click on **`Publish`**. If you just committed your changes, you can also find the **`Publish`** button below the success message.
-
-On the left side of the screen, you can see a list of commits that were created in the app. This list will always show only the commits that were created since the last build. Since this is our first build, we see two commits. The first one was created automatically with your new application, and the second one we just created together.
+1. If you just committed changes, you'll have the **Publish** option available in the committed change confirmation page, click it. Otherwise, click the Publish icon in the main menu to open the *Publish* page.
+2. The *Publish* page lists all commits made since the last build. Per the context of this tutorial, there are two commits. The first one was made automatically when starting your new application, and the second one was done in the previous segment where we committed  the *Project* entity. 
 
 ![](./assets/pic6.jpg)
 
-Click on **`Build`** to open the `New Build`dialog.
-
-For our example, we will use the suggested build number "0.0.1". For the next builds, you will be able to control the version number by selecting whether to create a major version, a minor version, or a patch.
+3. Click **Build** to open the *New Build* dialog.
+4. For the purpose of this tutorial use the suggested build number "0.0.1". In your forthcoming builds, control the version number by selecting whether to create a major version, a minor version, or a patch.
 
 ![](./assets/pic7.jpg)
 
-Type in a short message to describe the new build and click on **`Build New Version.`**
-
-On the right side of the screen, you are now able to see a log of the build process. Once it is completed, the new build is listed on the left side.
-
-Click on the**`Download`**icon to get a **.zip** file with the code of your new application. It is now ready to be deployed anywhere you want. 🚀
+5. The descriptions you entered for your commits are listed in the description box of this dialog. You can add more information if needed. 
+6. Click **Build New Version**. 
+7. The Build log is visible on the right side of this page. After the build process completes, click the download icon in the *Generate Code* row to get a .zip file of your app. It is now ready to be deployed anywhere you want. 🚀
 
 ![](./assets/pic10.jpg)
 
