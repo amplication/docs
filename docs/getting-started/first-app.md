@@ -42,7 +42,7 @@ For the purpose of this tutorial, we'll now add another entity called “Project
 
 You now have a new “Project” entity. Notice that the added entity comes with auto-generated values like “Plural Display Name” and some default fields – ID, Created At, and Updated At.
 
-## Add Entity Fields
+## Add Entity Fields {:#add_entity_fields}
 
 To describe your project add some new fields. For the purpose of this tutorial, add these fields:
 
@@ -185,19 +185,19 @@ For the purpose of this tutorial we will now build a version of the app that inc
 
 ![](./assets/pic10.jpg)
 
-## Continue Building Your App
+## Taking your app a bit further
 
-Now that we know how to create entities, commit changes, and build new versions, let's continue to build our app. In the next part of this guide, we will create another entity, and learn how to compare changes before committing.
+Now that you know how to create entities, commit changes, and build new versions, let's take it a bit further by adding another entity and learning how to compare changes before committing.
 
-## Create the Task Entity
+### Create the Task Entity
 
-Go back to `Entities` page, and click on **`Create New`** to open the `New Entity`dialog.
-
-Type in “Task” and click on **`Create Entity`**.
-
-### Create Task Fields
-
-Let's create the following fields for Task. For each line in the following table, create a new field, with the listed data type and properties.
+For the purpose of this tutorial, we'll now add another entity called “Task”.
+1. Click the Entities icon (left sidebar, a.k.a. main menu) to reach the Entities page.
+2. Click **Create New**.
+2. In the _New Entity_ dialog, type in “Task”.
+3. Click **Create Entity**.
+4. The entity comes with a few default fields. We'll add some more fields as follows. 
+If you don't remember how to add a field refer to the [link Add Entity Fields section above](#add_entity_fields). 
 
 | Field Name        | Data Type                 | Properties                                                                  |
 | ----------------- | ------------------------- | --------------------------------------------------------------------------- |
@@ -212,7 +212,7 @@ The Task's field list should now look like this:
 
 ![](./assets/pic11.jpg)
 
-## Update the Project Entity
+### Update the Project Entity
 
 We now want to make some changes to the **Project** entity. Let's go back to the Entity list and click on the **Project** entity.
 
@@ -220,7 +220,7 @@ Add a new field called "Due Date" and select the **Date Time** as the data type.
 
 Also, change the name of the "Owner" field to "Project Owner".
 
-## Compare Pending Changes Before Commit
+### Compare Pending Changes Before Commit
 
 Click on the **`Pending`** button, which now shows indication for two changes.
 
