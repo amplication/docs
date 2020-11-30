@@ -42,7 +42,7 @@ For the purpose of this tutorial, we'll now add another entity called “Project
 
 You now have a new “Project” entity. Notice that the added entity comes with auto-generated values like “Plural Display Name” and some default fields – ID, Created At, and Updated At.
 
-## Add Entity Fields {:#add_entity_fields}
+## Add Entity Fields
 
 To describe your project add some new fields. For the purpose of this tutorial, add these fields:
 
