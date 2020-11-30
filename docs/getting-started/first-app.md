@@ -197,7 +197,7 @@ For the purpose of this tutorial, we'll now add another entity called “Task”
 2. In the _New Entity_ dialog, type in “Task”.
 3. Click **Create Entity**.
 4. The entity comes with a few default fields. We'll add some more fields as follows. 
-If you don't remember how to add a field refer to the [link Add Entity Fields section above](#add_entity_fields). 
+If you don't remember how to add a field refer to the [link Add Entity Fields section above](#add-entity-fields). 
 
 | Field Name        | Data Type                 | Properties                                                                  |
 | ----------------- | ------------------------- | --------------------------------------------------------------------------- |
