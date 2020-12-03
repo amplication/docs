@@ -199,14 +199,14 @@ For the purpose of this tutorial, we'll now add another entity called “Task”
 4. The entity comes with a few default fields. We'll add some more fields as follows. 
 If you don't remember how to add a field refer to the [Add Entity Fields section above](#add-entity-fields). 
 
-| Field Name        | Data Type                 | Properties                                                                  |
-| ----------------- | ------------------------- | --------------------------------------------------------------------------- |
-| Title             | Single Line Tex           | Required                                                                    |
-| Estimation (days) | Whole Number              |                                                                             |
-| Start Date        | Date Time                 |                                                                             |
-| Status            | Option Set                | Required <ul><li>New</li><li>Pending</li><li>Ongoing</li><li>Done</li></ul> |
-| Project           | elation to Another Entity | Related to: Project                                                         |
-| Assigned To       | elation to Another Entity | Related to: User                                                            |
+| Field Name        | Data Type                  | Properties                                                                  |
+| ----------------- | -------------------------- | --------------------------------------------------------------------------- |
+| Title             | Single Line Tex            | Required                                                                    |
+| Estimation (days) | Whole Number               |                                                                             |
+| Start Date        | Date Time                  |                                                                             |
+| Status            | Option Set                 | Required, 4 options: <ul><li>New</li><li>Pending</li><li>Ongoing</li><li>Done</li></ul> |
+| Project           | Relation to another Entity | Related to: Project                                                         |
+| Assigned To       | Relation to another Entity | Related to: User                                                            |
 
 The Task's field list should now look like this:
 
@@ -214,29 +214,25 @@ The Task's field list should now look like this:
 
 ### Update the Project Entity
 
-We now want to make some changes to the **Project** entity. Let's go back to the Entity list and click on the **Project** entity.
-
-Add a new field called "Due Date" and select the **Date Time** as the data type.
-
-Also, change the name of the "Owner" field to "Project Owner".
+We'll now make a few changes to the *Project* entity. 
+1. Click the Entities icon (left sidebar, a.k.a. main menu) to reach the Entities page.
+2. Select the *Project* entity.
+3. Add a new field called "Due Date" and set its data type to "Date Time".
+4. Select the existing *Owner* field and change its *Display Name* to "Project Owner".
 
 ### Compare Pending Changes Before Commit
 
-Click on the **`Pending`** button, which now shows indication for two changes.
-
-In the `Pending Changes` page, we now see the two changes pending to be committed:
-
-- The Task entity was created
-- The Project entity was updated
+It's always good to check what was changed before you commit to verify that these changes were intentional. 
+To do so:
+1. Click **Compare Changes**. 
+2. The *Pending Changes* page opens and indicates what was changed and what was added. 
+- The *Task* entity was created
+- The *Project* entity was updated
 
 ![](./assets/pic12.jpg)
 
-Usually, before committing your changes it is a good practice to make sure all the changes were made intentionally. So, in order to see all the changes made to the Project entity, click on the `arrow` to expand the diff view.
-
 ![](./assets/pic13.jpg)
 
-We can easily see that one new field was created, and the name of another field was changed.
-
-Since we are happy with these changes, let's click on **`Commit Changes`**.
+3. Since these changes were intentional and we're happy to commit them, click **Commit Changes**.
 
 **You are now ready to build a new version of your app. Great work!**
