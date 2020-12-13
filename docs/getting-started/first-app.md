@@ -56,7 +56,7 @@ To describe your project add some new fields. For the purpose of this tutorial, 
 1. In the *Entity Fields* text box (above the list of fields), type in “Name”.
 2. Click **Add field** (or just press Enter). The new field is added to the list.
 3. The field's property panel opens. Click the **Required Field** toggle to make the *Name* field required. 
-4. Leave the defaults for the other properties (*Searchable* inactive, *Data Type* "Single Line Text", and *Max Length* "256".)
+4. Leave the defaults for the other properties (*Searchable* inactive, *Data Type* "xt", and *Max Length* "256".)
 
 ![](./assets/pic-3.jpg)
 
@@ -201,7 +201,7 @@ If you don't remember how to add a field refer to the [Add Entity Fields section
 
 | Field Name        | Data Type                  | Properties                                                                  |
 | ----------------- | -------------------------- | --------------------------------------------------------------------------- |
-| Title             | Single Line Tex            | Required                                                                    |
+| Title             | Single Line Text           | Required                                                                    |
 | Estimation (days) | Whole Number               |                                                                             |
 | Start Date        | Date Time                  |                                                                             |
 | Status            | Option Set                 | Required, 4 options: <ul><li>New</li><li>Pending</li><li>Ongoing</li><li>Done</li></ul> |
