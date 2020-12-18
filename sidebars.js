@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    'Amplication':['welcome'],
-    'Getting Started': ['getting-started/first-app','contributing', 'getting-started/deploy'],
+    'Getting Started':['welcome','getting-started/first-app', 'getting-started/deploy'],
+    'Community':['contributing'],
   },
 };
