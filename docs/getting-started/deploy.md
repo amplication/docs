@@ -21,7 +21,15 @@ Let’s explore each of the options.
 
 When working with Amplication, all your committed changes are continuously deployed to a sandbox environment on the Amplication cloud so you can easily access your application for testing and development purposes.
 
-Click the “Preview App” link in the build panel to access your application. The sandbox environment provided by Amplication is not for production purposes (currently all existing data in the environment is purged following each deployment), but it’s a great starting point while developing your app. The sandbox environment is totally free of charge — like all other things in Amplication.
+Click the “Preview App” link in the build panel to access the login page of your application's Admin UI.
+
+![](./assets/deploy/login.png)
+
+By default, your app comes with one user with the username "admin" and password "admin". Use these credentials to access your app and create other users.
+
+You may also to navigate to _/api_ or just click "View API Docks" to see the full swagger documentation of your API.
+
+The sandbox environment provided by Amplication is not for production purposes (currently all existing data in the environment is purged following each deployment), but it’s a great starting point while developing your app. The sandbox environment is totally free of charge — like all other things in Amplication.
 
 We are working to offer production-like (remember, we are still in beta) environments with data retention in an upcoming release. Stay tuned for news and updates.
 
