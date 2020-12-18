@@ -41,6 +41,8 @@ Please note that you can always come back and update your app on Amplication and
 
 To download the source code, click the "Download" icon in the build panel. You'll get a ZIP file with a [NestJS](https://nestjs.com/) app, that includes all your modules, services, controllers, and a [Prisma](https://www.prisma.io/) ORM client.
 
+![](./assets/deploy/generated-app.png)
+
 To use your code locally, you'll need to have [Node v14](https://nodejs.org/en/download/), npm, and [Docker](https://docs.docker.com/get-docker/) installed on your machine.
 
 To start using your app, extract the ZIP file to a local folder and execute the following commands:
