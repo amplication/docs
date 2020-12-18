@@ -39,7 +39,10 @@ Everything you create on Amplication is generated to really neat and readable Ty
 
 Please note that you can always come back and update your app on Amplication and then download an updated version.
 
-To download the source code, click the "Download" icon in the build panel. You'll get a ZIP file with a [NestJS](https://nestjs.com/) app, that includes all your modules, services, controllers, and a [Prisma](https://www.prisma.io/) ORM client.
+To download the source code, click the "Download" icon in the build panel. You'll get a ZIP file with two project:
+
+1. A [NestJS](https://nestjs.com/) app, that includes all your modules, services, controllers, a [Prisma](https://www.prisma.io/) ORM client, and a swagger documentation of your API.
+2. A [React](https://reactjs.org/) app, with an Admin UI for executing CRUD queries on your database in addition to using the API.
 
 ![](./assets/deploy/generated-app.png)
 
