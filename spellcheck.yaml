@@ -1,0 +1,11 @@
+matrix:
+  - name: Markdown
+    sources:
+      - "**/*.md|!docs/doc1.md"
+    pipeline:
+      - pyspelling.filters.url
+      - pyspelling.filters.markdown
+      - pyspelling.filters.html
+    dictionary:
+      wordlists:
+        - docs/dictionary/en-custom.txt
