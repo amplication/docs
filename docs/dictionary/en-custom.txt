@@ -1,0 +1,12 @@
+Amplication
+NestJS
+Prisma
+TypeScript
+UI
+js
+Docusaurus
+gh
+perf
+init
+GraphQL
+amplication
