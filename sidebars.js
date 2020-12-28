@@ -1,6 +1,7 @@
 module.exports = {
   someSidebar: {
-    'Amplication':['welcome'],
-    'Getting Started': ['getting-started/first-app','contributing'],
-  },
+    'Getting Started':['welcome','getting-started/first-app'],
+    'How To':['how-to/how-to-create-app','how-to/how-to-create-entity','how-to/how-to-create-entity-field','how-to/how-to-commit-changes'],
+    'Community':['contributing'],
+  },  
 };
