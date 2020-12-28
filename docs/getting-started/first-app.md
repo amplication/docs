@@ -56,7 +56,7 @@ To describe your project add some new fields. For the purpose of this tutorial, 
 1. In the _Entity Fields_ text box (above the list of fields), type in “Name”.
 2. Click **Add field** (or just press Enter). The new field is added to the list.
 3. The field's property panel opens. Click the **Required Field** toggle to make the _Name_ field required.
-4. Leave the defaults for the other properties (_Searchable_ inactive, _Data Type_ "Single Line Text", and _Max Length_ "256".)
+4. Leave the defaults for the other properties (_Searchable_ inactive, _Data Type_ "Single Line Text", and _Max Length_ "1000".)
 
 ![](./assets/pic-3.jpg)
 
@@ -152,39 +152,17 @@ To specify permissions at the field level:
 
 While working in Amplication your changes are saved automatically, but are not committed. Only committed changes will be included in the next version of your application.
 
-In the _Pending_ control (top bar, on the right) you can see how many pending changes are waiting to be committed.
+In the _Pending Changes_ control in the main menu (left sidebar) you can see how many pending changes are waiting to be committed.
 
 ![](./assets/pic8.jpg)
 
 For the purpose of this tutorial, let's make our first commit.
 
-1. Click **Pending** to open the _Pending Changes_ page.
-2. In this page, you can see that the creation of the _Project_ entity hasn't been committed. Click **Commit Changes**.
-3. In the _Commit Pending Changes_ dialog, enter a short description of the changes you're committing. For example, "Created project entity".
+In this page, you can see that the creation of the _Project_ entity hasn't been committed.
 
-![](./assets/pic9.jpg)
-
-4. Click **Commit**. All changes are committed. You can now build the first version of your app!
-
-## Build a New Version
-
-For the purpose of this tutorial we will now build a version of the app that includes everything we did up to this point.
-
-1. If you just committed changes, you'll have the **Publish** option available in the committed change confirmation page, click it. Otherwise, click the Publish icon in the main menu to open the _Publish_ page.
-2. The _Publish_ page lists all commits made since the last build. Per the context of this tutorial, there are two commits. The first one was made automatically when starting your new application, and the second one was done in the previous segment where we committed the _Project_ entity.
-
-![](./assets/pic6.jpg)
-
-3. Click **Build** to open the _New Build_ dialog.
-4. For the purpose of this tutorial use the suggested build number "0.0.1". In your forthcoming builds, control the version number by selecting whether to create a major version, a minor version, or a patch.
-
-![](./assets/pic7.jpg)
-
-5. The descriptions you entered for your commits are listed in the description box of this dialog. You can add more information if needed.
-6. Click **Build New Version**.
-7. The Build log is visible on the right side of this page. After the build process completes, click the download icon in the _Generate Code_ row to get a .zip file of your app. It is now ready to be deployed anywhere you want. 🚀
-
-![](./assets/pic10.jpg)
+1. In the _commit message_ dialog, write a description of the changes you're committing, for example: "Added Project Entity and Manager and Admin roles".
+2. Click **Commit Changes**. All changes are committed. A build of the first version of your app is automatically created!
+3. After the build process completes, click the download icon in the _Generate Code_ row to get a .zip file of your app. It is now ready to be deployed anywhere you want. 🚀
 
 ## Taking your app a bit further
 
