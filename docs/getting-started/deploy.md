@@ -11,7 +11,7 @@ Applications created with Amplication comprise two main components — the serve
 
 When it comes to deployment, you can choose any of the following options:
 
-- Deploying to the Amplication Cloud for testing and development purposes.
+- Deploying to the Amplication cloud for testing and development purposes.
 - Downloading the generated source code and continuing the process with your favorite IDE and local tools.
 - Building a Docker container and deploying it to any cloud, datacenter, or server.
 
@@ -25,9 +25,9 @@ Click the “Preview App” link in the build panel to access the login page of 
 
 ![](./assets/deploy/login.png)
 
-By default, your app comes with one user with the username "admin" and password "admin". Use these credentials to access your app and create other users.
+By default, your app comes with one user: username "admin" and password "admin". Use these credentials to access your app and create other users.
 
-You may also to navigate to _/api_ or just click "View API Docks" to see the full swagger documentation of your API.
+You can also to navigate to _/api_ or just click "View API Docs" to see the full Swagger documentation of your API.
 
 The sandbox environment provided by Amplication is not for production purposes (currently all existing data in the environment is purged following each deployment), but it’s a great starting point while developing your app. The sandbox environment is totally free of charge — like all other things in Amplication.
 
@@ -37,11 +37,11 @@ We are working to offer production-like (remember, we are still in beta) environ
 
 Everything you create on Amplication is generated to really neat and readable TypeScript code. Whether you already have a deployment process in-place, or whether you want full control of your app, at any time you can download the source code from Amplication and continue on your own.
 
-Please note that you can always come back and update your app on Amplication and then download an updated version.
+Note that you can always come back and update your app on Amplication and then download an updated version.
 
-To download the source code, click the "Download" icon in the build panel. You'll get a ZIP file with two project:
+To download the source code, click "Download" in the build panel. You'll get a ZIP file with two project:
 
-1. A [NestJS](https://nestjs.com/) app, that includes all your modules, services, controllers, a [Prisma](https://www.prisma.io/) ORM client, and a swagger documentation of your API.
+1. A [NestJS](https://nestjs.com/) app, that includes all your modules, services, controllers, a [Prisma](https://www.prisma.io/) ORM client, and Swagger documentation of your API.
 2. A [React](https://reactjs.org/) app, with an Admin UI for executing CRUD queries on your database in addition to using the API.
 
 ![](./assets/deploy/generated-app.png)
@@ -61,9 +61,9 @@ npm start
 
 You can also easily build a Docker container to prepare your app for deployment. Your app is always generated with all the configuration and scripts needed to do so.
 
-First download the source code of you app and extract the ZIP file to a local folder (same as explained in previous section).
+First download the source code of your app and extract the ZIP file to a local folder (same as explained in previous section).
 
-To run your app in Docker with a functional database execute the docker-compose command
+To run your app in Docker with a functional database, execute the docker-compose command
 
 ```
 docker-compose up
