@@ -161,7 +161,7 @@ For the purpose of this tutorial, let's make our first commit.
 In this page, you can see that the creation of the _Project_ entity hasn't been committed.
 
 1. In the _commit message_ dialog, write a description of the changes you're committing, for example: "Added Project Entity and Manager and Admin roles".
-2. Click **Commit Changes**. All changes are committed. a build of the first version of your app is automatically created!
+2. Click **Commit Changes**. All changes are committed. A build of the first version of your app is automatically created!
 3. After the build process completes, click the download icon in the _Generate Code_ row to get a .zip file of your app. It is now ready to be deployed anywhere you want. 🚀
 
 ## Taking your app a bit further
