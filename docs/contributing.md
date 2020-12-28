@@ -21,9 +21,9 @@ If you find a bug in the source code, you can help us by [submitting an issue](h
 
 You can request a new feature by [submitting an issue](https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title=) to our GitHub Repository.
 
-If you'd like to implement a new feature, it's always good to be in touch with us before you invest time and effort, since not all features can be supported. 
+If you'd like to implement a new feature, it's always good to be in touch with us before you invest time and effort, since not all features can be supported.
 
-- For a Major Feature, first open an issue and outline your proposal. This will let us coordinate efforts, prevent duplication of work, and help you craft the change so that it's successfully integrated in the project. 
+- For a Major Feature, first open an issue and outline your proposal. This will let us coordinate efforts, prevent duplication of work, and help you craft the change so that it's successfully integrated in the project.
 - Small Features can be crafted and directly [submitted as a Pull Request](#submit-pr).
 
 ## What do I need to know to help?
@@ -45,8 +45,7 @@ If you want to help out with a code contribution, our project uses the following
 - [TypeScript](https://www.typescriptlang.org/docs)
 - [Apollo Client](https://www.apollographql.com/docs/react/)
 
-
-:::tip 
+:::tip
 If you don't feel ready to make a code contribution yet, no problem! You can also check out the [documentation issues](https://github.com/amplication/amplication/labels/type%3A%20docs).
 :::
 
@@ -101,8 +100,7 @@ Wait for the pull request to be reviewed by a maintainer.
 
 Make changes to the pull request if the reviewing maintainer recommends them.
 
-Celebrate your success after your pull request is merged! 
-
+Celebrate your success after your pull request is merged!
 
 ### Git Commit Messages
 

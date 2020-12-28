@@ -1,6 +1,9 @@
 {
-    "cSpell.words": [
-        "Amplication",
-        "Amplication's"
-    ]
+  "cSpell.dictionaryDefinitions": [
+    {
+      "name": "custom",
+      "path": "${workspaceFolder}/docs/dictionary/en-custom.txt"
+    }
+  ],
+  "cSpell.dictionaries": ["custom", "wordsEn"]
 }
