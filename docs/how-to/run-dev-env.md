@@ -94,7 +94,7 @@ Try to open one of these URLs and have fun
 - http://localhost:3001/api
 - http://localhost:3001/graphql
 
-To read more about the technologies and structure of your server read [this article](../getting-started/generated-app)
+To read more about the technologies and structure of your server read [this article](../generated-app)
 
 ## Install packages from npm for the Admin UI
 
