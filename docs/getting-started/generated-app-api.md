@@ -2,7 +2,7 @@
 id: generated-app-api
 title: Use your APIs
 sidebar_label: Use Your APIs
-slug: /generated-app-api
+slug: /api
 ---
 
 # Use Your APIs
