@@ -54,7 +54,7 @@ async restPassword(args: FindOneUserArgs): Promise<User> {
 ```
 
 :::warning
-For simplicity and demonstration purposes this function reset a password to a fixed string "123456". It is against best practices to use this function in production as it is. You should instead use a random complex string as the new password.
+For simplicity and demonstration purposes this function resets a password to a fixed string "123456". It is against best practices to use this function in production as it is. You should instead use a random complex string as the new password.
 :::
 
 This function gets an object of type FindOneUserArgs as a parameter and uses the [prisma client ](https://www.prisma.io/docs/concepts/components/prisma-client) to find the user and reset its password.
