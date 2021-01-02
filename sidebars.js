@@ -11,7 +11,8 @@ module.exports = {
       'how-to/how-to-create-entity',
       'how-to/how-to-create-entity-field',
       'how-to/how-to-commit-changes',
-      'how-to/run-dev-env'
+      'how-to/run-dev-env',
+      'how-to/add-custom-code'
     ],
     'Community':[
       'contributing'
