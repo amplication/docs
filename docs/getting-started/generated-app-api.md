@@ -32,7 +32,7 @@ You can use a tool to create the header. There are several generators [available
 ## REST API
 
 The REST API is available at **/api** at the root of your application.
-When your navigate directly to **/api** you will see the swagger documentation of you API with a list of all resources and actions.
+When you navigate directly to **/api** you will see the swagger documentation of you API with a list of all resources and actions.
 
 For development and testing purposes, you can use the [swagger UI](https://swagger.io/tools/swagger-ui/) to execute requests against the API. First, click on the "Authorize" button and enter the username and password, it will add the authorization header automatically.
 
@@ -52,7 +52,7 @@ The REST API provide methods on all your data model. For each model, you can fin
 
 The GraphQL API is available at **/graphql** at the root of your application.
 
-When your navigate directly to **/graphql** you will see the [GraphQL Playground](https://www.apollographql.com/docs/apollo-server/testing/graphql-playground/) provided by Apollo Server.
+When you navigate directly to **/graphql** you will see the [GraphQL Playground](https://www.apollographql.com/docs/apollo-server/testing/graphql-playground/) provided by Apollo Server.
 
 For development and testing purposes, you can use the GraphQL Playground to execute queries and mutations against the API. First, click on the "HTTP HEADERS" tab at the bottom of the screen and add the authorization header in the following format:
 
