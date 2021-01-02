@@ -3,6 +3,7 @@ id: generated-app-api
 title: Use your APIs
 sidebar_label: Use Your APIs
 slug: /api
+# The slug of this page should not be changed since it is referenced from the Admin UI sign in page
 ---
 
 # Use Your APIs
