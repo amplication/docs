@@ -36,8 +36,6 @@ When you navigate directly to **/api** you will see the swagger documentation of
 
 For development and testing purposes, you can use the [swagger UI](https://swagger.io/tools/swagger-ui/) to execute requests against the API. First, click on the "Authorize" button and enter the username and password, it will add the authorization header automatically.
 
-@Yuval - check why the CSS of the swagger page is not loading
-
 ![](./assets/generated-app-api/swagger-ui.png)
 
 The REST API provide methods on all your data model. For each model, you can find five endpoints. For example, on the User model you will find the following endpoints:
