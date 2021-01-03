@@ -21,7 +21,7 @@ Until this feature is ready, you should keep track of changes yourself. It is re
 Until this feature is ready, if you find it too complicated to keep manually merging changes from Amplication, we recommend that you first think thoroughly about your requirements and then build your models and permission schema with Amplication. You can still save a ton of time on boilerplate, permissions, APIs, React structure and more.  
 :::
 
-## Example
+## Examples
 
 Following are some examples of how to add custom code in different layers of the application.
 
