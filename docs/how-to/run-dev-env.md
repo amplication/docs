@@ -122,12 +122,6 @@ To run the React application with the Admin UI execute the following command
 npm run start
 ```
 
-@Iddan, should we use this? and if so, why?
-
-```
-SKIP_PREFLIGHT_CHECK=true npm run start
-```
-
 By default, your client is now available at http://localhost:3000
 
 ![](../getting-started/assets/generated-app/admin-ui.png)
