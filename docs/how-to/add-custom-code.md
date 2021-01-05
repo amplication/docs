@@ -25,7 +25,7 @@ Until this feature is ready, if you find it too complicated to keep manually mer
 
 Following are some examples of how to add custom code in different layers of the application.
 
-The purpose of this example is to get familiar with the layers structure and the responsibility of each of the components in the server.
+The purpose of these examples is to get familiar with the layers structure and the responsibility of each of the components in the server.
 
 - [Example: How to add a business logic to a service](/docs/custom-code/business-logic)
 - [Example: How to add an action to a REST API controller](/docs/custom-code/controller-action)
