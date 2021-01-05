@@ -10,3 +10,12 @@ perf
 init
 GraphQL
 amplication
+scalable
+ORM
+APIs
+OpenAPI
+ReactJS
+Axios
+Formik
+api
+npm

@@ -13,7 +13,7 @@ In this article you will find the details on the structure of the application an
 
 ## Technologies
 
-The generated app is built with the following amazing open-source technologies:
+The generated app is built with the following proven open-source technologies:
 
 ### Server-side
 
@@ -44,12 +44,10 @@ The generated app is built from two projects, each in a separate folder
 
 The server project provides all the back-end services of your application, like REST API, GraphQL API, authentication, authorization, logging, data validation, and connection to the database.
 
-@Lee, Please prepare a diagram
 ![](./assets/generated-app/app-components.png)
 
 ### Admin
 
 The Admin project provide a React application with ready-made forms for creating and editing all the data models of your application. The React app is configured to work with the server and already have the all the boilerplate and foundation for your client - routing and navigation, authentication, permissions, menu, breadcrumbs, error handling and much more.
 
-@Lee, Please prepare the same image with a browser container
 ![](./assets/generated-app/admin-ui.png)

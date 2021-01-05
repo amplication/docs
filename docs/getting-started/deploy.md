@@ -13,7 +13,7 @@ When it comes to deployment, you can choose any of the following options:
 
 - Deploying to the Amplication cloud for testing and development purposes.
 - Downloading the generated source code and continuing the process with your favorite IDE and local tools.
-- Building a Docker container and deploying it to any cloud, datacenter, or server.
+- Building a Docker container and deploying it to any cloud, data center, or server.
 
 Let’s explore each of the options.
 

@@ -8,9 +8,9 @@ slug: /api
 
 # Use Your APIs
 
-Every application created with Amplication is generated with two type of APIs - REST API, and GraphQL API.
+Every application created with Amplication is generated with two types of APIs: REST, and GraphQL.
 
-In this article you will find the details on how to connect, authenticate, and consume the APIs.
+In this article you will learn how to connect, authenticate, and consume these APIs.
 
 ## Authentication
 
@@ -36,17 +36,15 @@ When you navigate directly to **/api** you will see the swagger documentation of
 
 For development and testing purposes, you can use the [swagger UI](https://swagger.io/tools/swagger-ui/) to execute requests against the API. First, click on the "Authorize" button and enter the username and password, it will add the authorization header automatically.
 
-@Yuval - check why the CSS of the swagger page is not loading
-
 ![](./assets/generated-app-api/swagger-ui.png)
 
 The REST API provide methods on all your data model. For each model, you can find five endpoints. For example, on the User model you will find the following endpoints:
 
-- GET /api/users - to get a list of users
-- GET /api/users/{id} - to get a single user by its ID
-- POST /api/users - to create a new user
-- PATCH /api/users/{id} - to update an existing user by its ID
-- DELETE /api/users/{id} - to delete a user by its ID
+- `GET /api/users` - to get a list of users
+- `GET /api/users/:id` - to get a single user by its ID
+- `POST /api/users` - to create a new user
+- `PATCH /api/users/:id` - to update an existing user by its ID
+- `DELETE /api/users/:id` - to delete a user by its ID
 
 ## GraphQL API
 
@@ -65,15 +63,17 @@ For development and testing purposes, you can use the GraphQL Playground to exec
 ![](./assets/generated-app-api/graphql-playground.png)
 
 The GraphQL API provide queries and mutations on all your data model. For each model, you can find 2 queries and 3 mutations. \
-For example, on the User model you will find the following queries:
+For example, for the User model you will find the following:
 
-- users - to get a list of users
-- user - to get a single user by its ID
+### Queries
 
-and, the following mutations:
+- `users` - to get a list of users
+- `user` - to get a single user by its ID
 
-- createUser - to create a new user
-- updateUser - to update an existing user by its ID
-- deleteUser - to delete a user by its ID
+### Mutations
+
+- `createUser` - to create a new user
+- `updateUser` - to update an existing user by its ID
+- `deleteUser` - to delete a user by its ID
 
 Click on the DOCS tab on the right hand side to view a full documentation of all queries and mutations.
