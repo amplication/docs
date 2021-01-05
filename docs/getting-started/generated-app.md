@@ -13,7 +13,7 @@ In this article you will find the details on the structure of the application an
 
 ## Technologies
 
-The generated app is built with the following amazing open-source technologies:
+The generated app is built with the following proven open-source technologies:
 
 ### Server-side
 
