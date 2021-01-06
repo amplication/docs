@@ -7,7 +7,7 @@ slug: /how-to/dev-env
 
 # Run your application in development environment
 
-To build and run your application in development environment follow this tutorial.
+To build and run your generated application in a local development environment follow this tutorial.
 VS code is used for demonstration in this article, but the process can be done on any IDE or directly in the command line with npm CLI.
 
 ## Summary
