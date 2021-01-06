@@ -48,6 +48,6 @@ The server project provides all the back-end services of your application, like 
 
 ### Admin
 
-The Admin project provide a React application with ready-made forms for creating and editing all the data models of your application. The React app is configured to work with the server and already have the all the boilerplate and foundation for your client - routing and navigation, authentication, permissions, menu, breadcrumbs, error handling and much more.
+The Admin project provide a React application with ready-made forms for creating and editing all the data models of your application. The React app is pre-configured to work with the server and comes with all the boilerplate and foundation for your client - routing and navigation, authentication, permissions, menu, breadcrumbs, error handling and much more.
 
 ![](./assets/generated-app/admin-ui.png)
