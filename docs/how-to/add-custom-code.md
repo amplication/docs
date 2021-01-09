@@ -7,7 +7,7 @@ slug: /how-to/custom-code
 
 # Add custom code to you application
 
-Although your application built with Amplication is fully functional and you can start using it as it was shipped, you probably want to add your core business logic and other functionality to you app.
+Although your application built with Amplication is fully functional and you can start using it as it was shipped, you probably want to add your core business logic and other functionality to your app.
 
 ## The Vision
 
@@ -18,7 +18,7 @@ To do so, Amplication will merge changes via Git based on pre-defined policies t
 Until this feature is ready, you should keep track of changes yourself. It is recommended to do so using GitHub or other git services.
 
 :::info
-Until this feature is ready, if you find it too complicated to keep manually merging changes from Amplication, we recommend that you first think thoroughly about your requirements and then build your models and permission schema with Amplication. You can still save a ton of time on boilerplate, permissions, APIs, React structure and more.  
+Until this feature is ready, if you find it too complicated to keep manually merging changes from Amplication, we recommend that you first think thoroughly about your requirements and then build your models and permission schema with Amplication. You can still save a ton of time on boilerplate, permissions, API's, React structure and much more.  
 :::
 
 ## Examples
