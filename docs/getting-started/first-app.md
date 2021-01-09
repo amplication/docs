@@ -7,7 +7,7 @@ slug: /getting-started
 
 # Your first application
 
-Not sure how to get started? In this tutorial, you’ll walk through the steps of creating an application, adding an entity, adding roles, and setting permissions on entities.
+Not sure how to get started? In this tutorial, we will walk you through the steps of creating an application, adding an entity, adding roles, and setting permissions on entities.
 
 Also, you'll see how to commit changes and manage versions, and finally how to build your app and get it ready for deployment.
 
