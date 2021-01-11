@@ -9,7 +9,7 @@ slug: /getting-started
 
 Not sure how to get started? In this tutorial, we will walk you through the steps of creating an application, adding an entity, adding roles, and setting permissions on entities.
 
-Also, you'll see how to commit changes and manage versions, and finally how to build your app and get it ready for deployment.
+Also, you'll see how to commit changes and manage versions, and finally how to build your app and download the generated source-code.
 
 Let’s get started.
 
@@ -146,7 +146,7 @@ To specify permissions at the field level:
 3. Click **+ Add Field**. (For the _Delete_ action there's no option to set permissions for specific fields.)
 4. Select the field(s) from the list.
 5. For each of these fields set which role(s) can perform the action by clicking it. For example, click **Admin** beneath "Update Field" _owner_.
-:::
+   :::
 
 ## Commit Your Changes
 
