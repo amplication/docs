@@ -1,9 +1,10 @@
 module.exports = {
   someSidebar: {
     'Getting Started':[
-      'welcome','getting-started/first-app', 
-      'getting-started/deploy', 
+      'welcome',
       'getting-started/generated-app', 
+      'getting-started/first-app', 
+      'getting-started/deploy', 
       'getting-started/generated-app-api'
     ],
     'How To':[

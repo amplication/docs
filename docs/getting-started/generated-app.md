@@ -2,12 +2,14 @@
 id: generated-app
 title: The generated app
 sidebar_label: The Generated App
-slug: /generated-app
+slug: /getting-started
 ---
 
 # The Generated App
 
-Applications created with Amplication are generated as human-readable and editable TypeScript code.
+Amplication auto-generates fully functional human-readable and editable apps based on TypeScript and Node.js.
+
+Generated apps include NestJS, Prisma, REST API, GraphQL API, a React admin UI, authentication, authorization, and logging.
 
 In this article you will find the details on the structure of the application and the technologies behind it.
 
@@ -51,3 +53,7 @@ The server project provides all the back-end services of your application, like 
 The Admin project provide a React application with ready-made forms for creating and editing all the data models of your application. The React app is pre-configured to work with the server and comes with all the boilerplate and foundation for your client - routing and navigation, authentication, permissions, menu, breadcrumbs, error handling and much more.
 
 ![](./assets/generated-app/admin-ui.png)
+
+## Learn more
+
+- [How to add custom code to your application](/docs/how-to/custom-code)

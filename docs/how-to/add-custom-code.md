@@ -5,7 +5,7 @@ sidebar_label: Add Custom Code
 slug: /how-to/custom-code
 ---
 
-# Add custom code to you application
+# Add custom code to your application
 
 Although your application built with Amplication is fully functional and you can start using it as it was shipped, you probably want to add your core business logic and other functionality to your app.
 

@@ -2,7 +2,7 @@
 id: first-app
 title: Create your first application with Amplication
 sidebar_label: Your first application
-slug: /getting-started
+slug: /first-app
 ---
 
 # Your first application
@@ -146,6 +146,7 @@ To specify permissions at the field level:
 3. Click **+ Add Field**. (For the _Delete_ action there's no option to set permissions for specific fields.)
 4. Select the field(s) from the list.
 5. For each of these fields set which role(s) can perform the action by clicking it. For example, click **Admin** beneath "Update Field" _owner_.
+
 :::
 
 ## Commit Your Changes
