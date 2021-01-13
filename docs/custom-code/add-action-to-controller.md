@@ -7,7 +7,7 @@ slug: /custom-code/controller-action
 
 # How to add an action to a REST API controller
 
-In this example you will see how to add a action to a REST API controller.
+In this example you will see how to add an action to a REST API controller.
 
 The example will demonstrate how to get the parameters from the request and call a service to execute the operation.
 
@@ -115,7 +115,7 @@ This line creates a parameter named **userRoles** and extract its value from the
     @nestAccessControl.UserRoles() userRoles: string[]
 ```
 
-Create a permission object to be user later for result filtering based on the user permissions.
+Create a permission object to be used later for result filtering based on the user permissions.
 
 ```javascript
 const permission = this.rolesBuilder.permission({
