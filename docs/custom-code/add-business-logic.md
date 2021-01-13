@@ -1,7 +1,7 @@
 ---
 id: add-business-logic
 title: How to add a business logic to a service
-sidebar_label: Add Business Login
+sidebar_label: Add Business Logic
 slug: /custom-code/business-logic
 ---
 
