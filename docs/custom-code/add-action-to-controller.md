@@ -129,7 +129,7 @@ const permission = this.rolesBuilder.permission({
 Call the user service to execute the resetPassword, then check and filter the results before return it to the client.
 
 ```javascript
-const result = await this.service.restPassword({
+const result = await this.service.resetPassword({
   where: params,
 });
 if (result === null) {
