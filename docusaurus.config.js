@@ -62,6 +62,10 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} amplication. Built with Docusaurus.`,
     },
+    googleAnalytics: {
+      trackingID: 'UA-177067786-1',
+      
+    },
   },
   presets: [
     [
@@ -86,6 +90,7 @@ module.exports = {
     ],
   ],
   plugins: [
+    '@docusaurus/plugin-google-analytics',
     [
       '@docusaurus/plugin-client-redirects',
       {
