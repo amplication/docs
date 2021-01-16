@@ -85,4 +85,17 @@ module.exports = {
       },
     ],
   ],
+  plugins: [ 
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/docs', // string
+            from: ['/guides/getting-started'], 
+          },
+        ],
+      },
+    ],
+  ],
 };
