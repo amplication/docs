@@ -27,7 +27,7 @@ import { User } from "./User";
 3. Add the following function at the bottom of the file.
 
 ```javascript
-async restPassword(args: FindOneUserArgs): Promise<User> {
+async resetPassword(args: FindOneUserArgs): Promise<User> {
     return this.prisma.user.update({
       where: args.where,
       data:{
