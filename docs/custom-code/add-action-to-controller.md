@@ -24,7 +24,7 @@ For simplicity purposes we are updating the existing files created by Amplicatio
 2. Add the following code at the bottom of the file.
 
 ```javascript
-  @common.UseInterdceptors(nestMorgan.MorganInterceptor("combined"))
+  @common.UseInterceptors(nestMorgan.MorganInterceptor("combined"))
   @common.UseGuards(basicAuthGuard.BasicAuthGuard, nestAccessControl.ACGuard)
   @common.Patch("/:id/password")
   @nestAccessControl.UseRoles({
