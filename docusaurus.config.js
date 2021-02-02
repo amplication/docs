@@ -13,7 +13,7 @@ module.exports = {
       // "light" | "dark"
       defaultMode: 'light',
       // Hides the switch in the navbar
-      disableSwitch: true,
+      disableSwitch: false,
     },
     navbar: {
       hideOnScroll: false,
@@ -21,6 +21,7 @@ module.exports = {
       logo: {
         alt: 'Amplicaiton',
         src: 'img/amplication-logo.svg',
+        srcDark: 'img/amplication-logo-dark.svg',
         href:"https://amplication.com/"
       },
       items: [
@@ -84,7 +85,7 @@ module.exports = {
             'https://github.com/amplication/docs/edit/main/blog/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [require.resolve('./src/css/custom.css'),require.resolve('./src/css/dark-theme.css')],
         },
       },
     ],
