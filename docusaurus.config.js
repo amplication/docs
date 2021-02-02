@@ -13,7 +13,7 @@ module.exports = {
       // "light" | "dark"
       defaultMode: 'light',
       // Hides the switch in the navbar
-      disableSwitch: false,
+      disableSwitch: true,
     },
     navbar: {
       hideOnScroll: false,
