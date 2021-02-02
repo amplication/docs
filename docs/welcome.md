@@ -12,6 +12,12 @@ Amplication is an open‑source development tool. It helps professional Node.js 
 
 Amplication auto-generates fully functional apps based on TypeScript and Node.js.
 
+:::note
+You can see an example of an app generated with Amplication in this repository
+
+https://github.com/amplication/sample-app
+:::
+
 Generated apps include NestJS, Prisma, REST API, GraphQL API, a React admin UI, authentication, authorization, and logging.
 
 1. Easily create data models, and role-based access control and let Amplication generate your application.

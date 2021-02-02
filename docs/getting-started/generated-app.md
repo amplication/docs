@@ -13,6 +13,12 @@ Generated apps include NestJS, Prisma, REST API, GraphQL API, a React admin UI, 
 
 In this article you will find the details on the structure of the application and the technologies behind it.
 
+:::note
+You can see an example of an app generated with Amplication in this repository
+
+https://github.com/amplication/sample-app
+:::
+
 ## Technologies
 
 The generated app is built with the following proven open-source technologies:
