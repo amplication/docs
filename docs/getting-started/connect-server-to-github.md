@@ -7,7 +7,7 @@ slug: /connect-server-to-github
 
 # Connect Amplication server to GitHub
 
-Amplication provides built-in integration with GitHub to push the generated application to a GitHub repository.
+Amplication already provides built-in integration with GitHub to push the generated application to a GitHub repository.
 
 When running a local Amplication server you first need to configure the server to integrate with a new GitHub app, following the steps below.
 
@@ -24,7 +24,7 @@ When using the hosted service on https://app.amplication.com, the integration is
 5. Set the **Authorization callback URL** URL to **http://localhost:3001**
 
 :::info
-In case you are hosting Amplication server on any other address, use the specific address instead of http://localhost:3001
+In case you are hosting the Amplication server on any other address, use the specific address instead of http://localhost:3001
 :::
 
 6. Copy and save the client secret and client ID of your new GitHub application.
