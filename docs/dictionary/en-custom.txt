@@ -1,4 +1,7 @@
 Amplication
+Amplication's
+Strikethrough
+Blockquotes
 NestJS
 Prisma
 TypeScript
