@@ -5,7 +5,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'amplicaiton/amplication', // Usually your GitHub org/user name.
+  organizationName: 'amplication/amplication', // Usually your GitHub org/user name.
   projectName: 'amplication', // Usually your repo name.
   themeConfig: {
     
@@ -19,7 +19,7 @@ module.exports = {
       hideOnScroll: false,
       title: '',
       logo: {
-        alt: 'Amplicaiton',
+        alt: 'Amplication',
         src: 'img/amplication-logo.svg',
         srcDark: 'img/amplication-logo-dark.svg',
         href:"https://amplication.com/"

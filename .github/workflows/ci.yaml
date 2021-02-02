@@ -5,5 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Spellcheck
-        uses: rojopolis/spellcheck-github-actions@0.5.0
+      - name: simple-cspell
+        uses: zwaldowski/cspell-action@1.0.0
+        with:
+          paths: "**/*.md"
+          config: .github/workflows/cspell.json
+      
