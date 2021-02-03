@@ -130,7 +130,7 @@ For the purpose of this tutorial, we'll now add another two roles: “Admin” a
 
 1. Click the Entities icon in the main menu to open the _Entities_ page.
 2. Click the _Project_ entity.
-3. In the Project's page _Permissions_ panel click the edit icon (pencil). This opens the Permissions settings.
+3. In the Project's page click the _Permissions_ tab. This opens the Permissions settings.
 4. Start by making sure that all actions (View, Create, Update, Delete, and Search) are enabled for all roles.
 5. Fine tune permissions by changing the _Delete_ permissions from "All Roles" to "Granular" and then select from the presented roles the "Admin" role.
    This ensures that only users filling the Admin role can delete projects.
@@ -178,7 +178,6 @@ For the purpose of this tutorial, we'll now add another entity called “Task”
 3. In the _New Entity_ dialog, type in “Task”.
 4. Click **Create Entity**.
 5. The entity comes with a few default fields. We'll add some more fields as follows.
-   If you don't remember how to add a field refer to the [Add Entity Fields section above](#add-entity-fields).
 
 | Field Name        | Data Type                  | Properties                                                                              |
 | ----------------- | -------------------------- | --------------------------------------------------------------------------------------- |
@@ -212,8 +211,6 @@ To do so:
 
 - The _Task_ entity was created
 - The _Project_ entity was updated
-
-![](./assets/pic12.jpg)
 
 ![](./assets/pic13.jpg)
 

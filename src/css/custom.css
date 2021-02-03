@@ -155,6 +155,8 @@ article > header {
 
 .markdown img {
   margin: 1rem 0;
+  border: 1px solid var(--black60);
+  border-radius: 4px;
 }
 
 .markdown > h1 {
