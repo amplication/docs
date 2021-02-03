@@ -29,9 +29,10 @@ In case you are hosting a local Amplication server, you should first follow [thi
 
 Before integrating your application with GitHub, you need to authorize Amplication to get access to your GitHub account.
 
-1. Click the **Sync With Github** icon in the main menu, to reach the Settings page.
-2. Click the **Sync with GitHub** toggle button to start the authorization process.
-3. In the new window, accept the request to allow Amplication to access your GitHub account.
+1. Click the **Dashboard** icon in the main menu.
+2. Click the **Sync with GitHub** tab to reach the settings page.
+3. click the **Sync with GitHub** Toggle button to start the authorization process.
+4. In the new window, accept the request to allow Amplication to access your GitHub account.
 
 ## Select the GitHub repository to use
 

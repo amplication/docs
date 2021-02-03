@@ -28,6 +28,10 @@ Before you start make sure you have Node.js 14, npm, and Docker installed.
 
 ## Download your application
 
+:::note
+Instead of manually downloading the code, you can sync your application with a GitHub repository by following [this guide](/docs/sync-with-github).
+:::
+
 First, you will need to download your application source code from Amplication.
 
 1. Commit all your changes so Amplication generate the updated source code.
