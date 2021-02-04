@@ -72,7 +72,13 @@ npm run docker:db
 
 Now you need to create your application schema on the database. To do so Amplication uses Prisma and the prisma migrate command.
 
-Execute the following command in the command line tool:
+First execute the following command in the command line tool to generate the Prisma client
+
+```
+npm run prisma:generate
+```
+
+Now, execute the following command in the command line tool to generate the schema on the database
 
 ```
 npm run db:init
@@ -91,12 +97,12 @@ Execute the following command to start your server
 npm run start
 ```
 
-By default, your server is now available at http://localhost:3001
+By default, your server is now available at http://localhost:3000
 
 Try to open one of these URLs and have fun
 
-- http://localhost:3001/api
-- http://localhost:3001/graphql
+- http://localhost:3000/api
+- http://localhost:3000/graphql
 
 To read more about the technologies and structure of your server read [this article](../getting-started)
 
@@ -126,6 +132,6 @@ To run the React application with the Admin UI execute the following command
 npm run start
 ```
 
-By default, your client is now available at http://localhost:3000
+By default, your client is now available at http://localhost:3001
 
 ![](../getting-started/assets/generated-app/admin-ui.png)
