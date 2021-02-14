@@ -17,16 +17,16 @@ In Amplication a relation between entities is described using a named field on b
 For example, The relation between a project and its tasks is described by a **Project** field on the **Task** entity, and a **Tasks** field on the **Project** entity.
 
 A **Tasks** field on the **Project** entity:
-![](./assets/relations/related-entity-2.jpg)
+![](./assets/relations/related-entity--2.jpg)
 
 A **Project** field on the **Task** entity:
-![](./assets/relations/related-entity.jpg)
+![](./assets/relations/related-entity--1.jpg)
 
 ## Cardinality
 
 To set the type of relationship between entities (one-to-one, one-to-many, many-to-many), you need to set it separately on each side of the relation. Each side defines whether it can relate to a single or multiple objects on the other side.
 
-![](./assets/relations/cardinality.jpg)
+![](./assets/relations/relation-cardinality.jpg)
 
 ## Creating a Relation
 
@@ -42,7 +42,7 @@ A relation field can also self reference its own entity. By doing so, two new fi
 
 For example, a **User** entity can be used to describe a relationship between a manager and employees in the following way:
 
-![](./assets/relations/self-relation.jpg)
+![](./assets/relations/self-relation-1.jpg)
 
 ## Relation fields in your app
 
