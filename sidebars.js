@@ -7,7 +7,8 @@ module.exports = {
       'getting-started/sync-with-github', 
       'getting-started/deploy', 
       'getting-started/generated-app-api',
-      'getting-started/connect-server-to-github'
+      'getting-started/connect-server-to-github',
+      'getting-started/relations'
     ],
     'How To':[
       'how-to/how-to-create-app',
