@@ -9,7 +9,7 @@ slug: /relations
 
 Entities in Amplication can have relations to other entities. For example, there is a relation between a **task** and a **project**, where a project can be related to many tasks, and a task can be related to a single project.
 
-## Genreal
+## General
 
 Usually, at the database level, a relation is described using a Foreign Key field on one table that references a Primary Key on another table.
 In Amplication a relation between entities is described using a named field on both sides of the relation. It is made to allow easy navigation from one side of the relation to the other, especially in graphQL queries.
@@ -81,11 +81,11 @@ model Project {
 ```typescript
 @ApiProperty({
   required: true,
-  type: ProjectdWhereUniqueInput,
+  type: ProjectWhereUniqueInput,
 })
 @ValidateNested()
-@Type(() => ProjectdWhereUniqueInput)
-project!: ProjectdWhereUniqueInput;
+@Type(() => ProjectWhereUniqueInput)
+project!: ProjectWhereUniqueInput;
 
 ```
 
