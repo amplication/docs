@@ -87,7 +87,7 @@ If needed, you can manually change the field name in the field's properties pane
 
 1. In the _Entity Fields_ text box type “Owner”.
 2. Click **Add field** \(or just press Enter\). The new field is added to the list.
-3. The field's property panel opens. Change the _Data Type_ from "Single Line Text" to "Relation to another Entity".
+3. The field's property panel opens. Change the _Data Type_ from "Single Line Text" to "Relation to Entity".
 4. In the _Related Entity Id_ field select “User”.
 5. Click the **Required Field** toggle to make the “Owner” field required.
 
@@ -179,14 +179,14 @@ For the purpose of this tutorial, we'll now add another entity called “Task”
 4. Click **Create Entity**.
 5. The entity comes with a few default fields. We'll add some more fields as follows.
 
-| Field Name        | Data Type                  | Properties                                                                              |
-| ----------------- | -------------------------- | --------------------------------------------------------------------------------------- |
-| Title             | Single Line Text           | Required                                                                                |
-| Estimation (days) | Whole Number               |                                                                                         |
-| Start Date        | Date Time                  |                                                                                         |
-| Status            | Option Set                 | Required, 4 options: <ul><li>New</li><li>Pending</li><li>Ongoing</li><li>Done</li></ul> |
-| Project           | Relation to another Entity | Related to: Project                                                                     |
-| Assigned To       | Relation to another Entity | Related to: User                                                                        |
+| Field Name        | Data Type          | Properties                                                                              |
+| ----------------- | ------------------ | --------------------------------------------------------------------------------------- |
+| Title             | Single Line Text   | Required                                                                                |
+| Estimation (days) | Whole Number       |                                                                                         |
+| Start Date        | Date Time          |                                                                                         |
+| Status            | Option Set         | Required, 4 options: <ul><li>New</li><li>Pending</li><li>Ongoing</li><li>Done</li></ul> |
+| Project           | Relation to Entity | Related to: Project                                                                     |
+| Assigned To       | Relation to Entity | Related to: User                                                                        |
 
 The Task's field list should now look like this:
 
