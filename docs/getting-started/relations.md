@@ -24,7 +24,7 @@ A **Project** field on the **Task** entity:
 
 ## Cardinality
 
-To set the type of relationship between entities (one-to-one, one-to-many, many-to-many), you need to set it separately on each side of the relation. Each side defines whether it can relate to a single or multiple objects on the other side.
+To set the type of relationship between entities (one-to-one, one-to-many, many-to-many), you need to have it set separately on each side of the relation. Each side defines whether it can relate to a single or multiple objects on the other side.
 
 ![](./assets/relations/relation-cardinality.jpg)
 
