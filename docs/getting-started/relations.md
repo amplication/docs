@@ -48,7 +48,7 @@ For example, a **User** entity can be used to describe a relationship between a 
 
 Relation fields impact several areas in the generated application:
 
-- Creates fields in the schema.prisma file (read more here)
+- Creates fields in the schema.prisma file ([read more here](https://www.prisma.io/docs/concepts/components/prisma-schema/relations))
 
 ```typescript
 model Task {
