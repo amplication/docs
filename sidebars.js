@@ -22,6 +22,12 @@ module.exports = {
       'custom-code/add-business-logic',
       'custom-code/add-action-to-controller',
     ],
+    'Errors and Resolutions':[
+      'errors/github-different-app-id',
+      'errors/invalid-code-generation-version',
+      'errors/merge-conflict',
+      'errors/missing-code-generation-version',
+    ],
     'Community':[
       'contributing'
     ],
