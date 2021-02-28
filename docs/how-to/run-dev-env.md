@@ -2,7 +2,7 @@
 id: run-dev-env
 title: How to run your app on development environment
 sidebar_label: Run in Dev Environment
-slug: /how-to/dev-env
+slug: /getting-started/dev-env
 ---
 
 # Run your application in development environment

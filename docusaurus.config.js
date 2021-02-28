@@ -99,6 +99,10 @@ module.exports = {
             to: '/docs/getting-started', // string
             from: ['/guides/getting-started'], 
           },
+          {
+            to: '/docs/getting-started/dev-env', // string
+            from: ['/docs/how-to/dev-env'], 
+          },
         ],
       },
     ],
