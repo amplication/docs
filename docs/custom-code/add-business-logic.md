@@ -1,15 +1,15 @@
 ---
 id: add-business-logic
-title: How to add a business logic to a service
+title: How to add business logic to a service
 sidebar_label: Add Business Logic
 slug: /custom-code/business-logic
 ---
 
-# How to add a business logic to a service
+# How to add business logic to a service
 
 ## General
 
-In this example you will see how to add a new function with your business logic to an existing service.
+In this example, you will see how to add a new function with your business logic to an existing service.
 The _entity_.service.ts file is generated only once by Amplication, and you can freely customize it. Amplication will never override this file.
 
 You can use this file to add new functions, override existing functions that are inherited from _entity_.service.base, import libraries and modules to the file, or anything else you may need.
@@ -27,9 +27,9 @@ This example will demonstrate how to pass parameters to the service, how to acce
 
 ### Adding a new function to user.service.ts
 
-1. Open your application and open the **user.service.ts**. The file in located in **./server/src/user/user.service.ts**.
+1. Open your application and open the **user.service.ts**. The file is located in **./server/src/user/user.service.ts**.
 
-Initially the files should look like this
+Initially, the files should look like this
 
 ```typescript
 import { Injectable } from "@nestjs/common";
@@ -48,13 +48,13 @@ export class UserService extends UserServiceBase {
 }
 ```
 
-2. Add import for _User_. This is the type that describe the User entity in the application and is required for the return type of our new function.
+2. Add import for _User_. This is the type that describes the User entity in the application and is required for the return type of our new function.
 
 ```javascript
 import { User } from "./base/User";
 ```
 
-2. Add import for _FindOneUserArgs_. this is the args type that is used to find a single User by its ID. We will use is as the input parameter of our new function.
+2. Add import for _FindOneUserArgs_. this is the args type that is used to find a single User by its ID. We will use it as the input parameter of our new function.
 
 ```javascript
 import { FindOneUserArgs } from "./base/FindOneUserArgs";
@@ -78,4 +78,4 @@ For simplicity and demonstration purposes this function resets a password to a f
 :::
 
 This function gets an object of type FindOneUserArgs as a parameter.
-It uses the [prisma client ](https://www.prisma.io/docs/concepts/components/prisma-client) to find the user and reset its password, and then returns the updated user object.
+It uses the [prisma client ](https://www.prisma.io/docs/concepts/components/prisma-client) to find the user and reset its password and then returns the updated user object.
