@@ -92,3 +92,4 @@ The purpose of these examples is to get familiar with the layers' structure and 
 
 - [Example: How to add a business logic to a service](/docs/custom-code/business-logic)
 - [Example: How to add an action to a REST API controller](/docs/custom-code/controller-action)
+- [Example: How to add a query to a GraphQL resolver](/docs/custom-code/graphql-query)

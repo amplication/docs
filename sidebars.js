@@ -21,6 +21,7 @@ module.exports = {
     'Customize Your Application':[
       'custom-code/add-business-logic',
       'custom-code/add-action-to-controller',
+      'custom-code/add-graphql-query',
     ],
     'Errors and Resolutions':[
       'errors/github-different-app-id',
