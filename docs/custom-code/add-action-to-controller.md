@@ -9,11 +9,11 @@ slug: /custom-code/controller-action
 
 ## General
 
-In this example you will see how to add an action to a REST API controller.
+In this example, you will see how to add an action to a REST API controller.
 
 The _entity_.controller.ts file is generated only once by Amplication, and you can freely customize it. Amplication will never override this file.
 
-You can use this file to add new actions (endpoints), or override existing actions that are inherited from _entity_.controller.base
+You can use this file to add new actions (endpoints) or override existing actions that are inherited from _entity_.controller.base
 
 ## Example
 
@@ -23,9 +23,9 @@ It will also demonstrate how to check the user's permissions, how to add Swagger
 
 ### Adding a new endpoint to user.controller.ts
 
-1. Open the file **user.controller.ts**. The file in located in **./server/src/user/user.controller.ts**.
+1. Open the file **user.controller.ts**. The file is located in **./server/src/user/user.controller.ts**.
 
-Initially the files should look like this
+Initially, the files should look like this
 
 ```typescript
 import * as common from "@nestjs/common";
@@ -84,7 +84,7 @@ export class UserController extends UserControllerBase {
   }
 ```
 
-The above code gets a user ID from the request, checks for the user permissions, and calls the userService to reset the password.
+The above code gets a user ID from the request, checks for the user permissions, and calls the user service to reset the password.
 
 #### line-by-line instructions
 
@@ -108,7 +108,7 @@ This decorator sets the route for the endpoint.
   @common.Patch("/:id/password")
 ```
 
-This decorator Uses nestJS Access Control to enforce access permissions based on the user's role permissions. In this example it validates that the current user can update users record.
+This decorator Uses nestJS Access Control to enforce access permissions based on the user's role permissions. This example validates that the current user can update user records.
 
 ```typescript
   @nestAccessControl.UseRoles({
@@ -153,7 +153,7 @@ const permission = this.rolesBuilder.permission({
 });
 ```
 
-Call the user service to execute the resetPassword, then check and filter the results before return it to the client.
+Call the user service to execute the resetPassword, then check and filter the results before returning them to the client.
 
 ```typescript
 const result = await this.service.resetPassword({
@@ -169,11 +169,11 @@ return permission.filter(result);
 
 ## Check your changes
 
-You are ready to check you changes. Just save all changes and restart your server.
+You are ready to check your changes. Just save all changes and restart your server.
 Navigate to http://localhost:3000/api/ to see and execute the new API endpoint.
 
 :::tip
-You can run your server in watch mode so it is automatically restarts every time a file in the server code is changed.
+You can run your server in watch mode so it automatically restarts every time a file in the server code is changed.
 Instead of using **npm start** you should use this command
 
 ```
