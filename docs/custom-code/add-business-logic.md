@@ -7,10 +7,12 @@ slug: /custom-code/business-logic
 
 # How to add a business logic to a service
 
+## General
+
 In this example you will see how to add a new function with your business logic to an existing service.
 The _entity_.service.ts file is generated only once by Amplication, and you can freely customize it. Amplication will never override this file.
 
-You can use this file to add new functions, override existing functions that are inherited from _entity_.service.base, import מק' libraries and modules to the file, or anything else you may need.
+You can use this file to add new functions, override existing functions that are inherited from _entity_.service.base, import libraries and modules to the file, or anything else you may need.
 
 You may also use the super keyword to call the functions in the base class.
 
@@ -18,6 +20,8 @@ You may also use the super keyword to call the functions in the base class.
 //this code invoke the update function on the base class
 super.update(args);
 ```
+
+## example
 
 This example will demonstrate how to pass parameters to the service, how to access the database using [prisma client ](https://www.prisma.io/docs/concepts/components/prisma-client), and how to return the data from the service using your application models.
 
