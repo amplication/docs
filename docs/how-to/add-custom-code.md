@@ -40,7 +40,7 @@ For example:
 	└── task
 ```
 
-The entity folder contains all the modules and files required to work with a specific entity, i.e. GrpahQL resolver, REST API controller, service, and DTOs.
+The entity folder contains all the modules and files required to work with a specific entity, i.e. GraphQL resolver, REST API controller, service, and DTOs.
 
 The files are split into two groups:
 
@@ -52,10 +52,10 @@ The files are split into two groups:
 src
 └── Customer
     ├── Base
-    │    ├── CreateCutomerArgs.ts
-    │    ├── DeleteCutomerArgs.ts
-    │    ├── FindManyCutomerArgs.ts
-    │    ├── FindOneCutomerArgs.ts
+    │    ├── CreateCustomerArgs.ts
+    │    ├── DeleteCustomerArgs.ts
+    │    ├── FindManyCustomerArgs.ts
+    │    ├── FindOneCustomerArgs.ts
     │    ├── customer.controller.base.spec.ts
     │    ├── customer.controller.base.ts
     │    ├── customer.resolver.base.ts
