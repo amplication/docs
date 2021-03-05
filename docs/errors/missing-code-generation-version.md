@@ -2,7 +2,7 @@
 id: missing-code-generation-version
 title: Missing code generation version ID
 sidebar_label: Missing code generation version ID
-slug: /missing-code-generation-version
+slug: /errors/missing-code-generation-version
 ---
 
 # Missing code generation version ID
