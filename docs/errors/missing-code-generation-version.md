@@ -38,7 +38,7 @@ It may also happen if the code in the repo was generated with a version of Ampli
 
 ### If you created your app with a version earlier than v0.0.4
 
-v.0.04 includes a major change in the way amplication generates code. You can read more about it here.
+v.0.04 includes a major change in the way amplication generates code.
 It is recommended that you connect your app to a new repository to avoid conflicts with the previously generated code.
 
 If you already have a custom code in your app, we recommend to manually merging the newly generated code to your existing repo, or, if possible connecting your app to a new repo and then moving also the custom code to the new repo.
