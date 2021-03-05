@@ -32,7 +32,7 @@ The error indicates that the file could not be found, or that the parameter **da
 
 This may happen if the file was deleted, or updated manually.
 
-It may also happen if the code in the repo was generated with a version of Amplication before v0.0.4 (released on 2021-02-28).
+It may also happen if the code in the repo was generated with a version of Amplication before v0.0.4 (released on 2021-03-05).
 
 ## What to do?
 
