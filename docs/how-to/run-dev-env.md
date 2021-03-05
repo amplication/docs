@@ -2,7 +2,7 @@
 id: run-dev-env
 title: How to run your app on development environment
 sidebar_label: Run in Dev Environment
-slug: /how-to/dev-env
+slug: /getting-started/dev-env
 ---
 
 # Run your application in development environment
@@ -14,7 +14,7 @@ VS code is used for demonstration in this article, but the process can be done o
 
 Im this article you will go through the following steps:
 
-1. Download your application
+1. Get the application source code
 2. Install packages from npm for the server
 3. Start docker container for your database
 4. Initialize your database
@@ -26,13 +26,13 @@ Im this article you will go through the following steps:
 Before you start make sure you have Node.js 14, npm, and Docker installed.
 :::
 
-## Download your application
+## Get the application source code
 
-:::note
-Instead of manually downloading the code, you can sync your application with a GitHub repository by following [this guide](/docs/sync-with-github).
-:::
+First, you will need to get your application source code from Amplication.
 
-First, you will need to download your application source code from Amplication.
+The best way to do it, is to sync your application with a GitHub repository by following [this guide](/docs/sync-with-github).
+
+Instead, if you prefer to download the source code as a ZIP file, follow these steps:
 
 1. Commit all your changes so Amplication generate the updated source code.
 2. click on the **Download** button on the latest commit. You'll get a ZIP file.

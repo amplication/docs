@@ -1,27 +1,63 @@
 ---
 id: add-business-logic
-title: How to add a business logic to a service
+title: How to add business logic to a service
 sidebar_label: Add Business Logic
 slug: /custom-code/business-logic
 ---
 
-# How to add a business logic to a service
+# How to add business logic to a service
 
-In this example you will see how to add a new business logic to an existing service.
-The example will demonstrate how to pass parameters to the service, how to access the database using [prisma client ](https://www.prisma.io/docs/concepts/components/prisma-client), and how to return the data from the service using your application models.
+## General
 
-:::info
-For simplicity purposes we are updating the existing files created by Amplication. In the future, we will release a set of policies and best-practices how to add custom code that will allow easier maintenance and merge of Amplication's code and your code without conflicts.
-:::
+In this example, you will see how to add a new function with your business logic to an existing service.
+The _entity_.service.ts file is generated only once by Amplication, and you can freely customize it. Amplication will never override this file.
+
+You can use this file to add new functions, override existing functions that are inherited from _entity_.service.base, import libraries and modules to the file, or anything else you may need.
+
+You may also use the super keyword to call the functions in the base class.
+
+```typescript
+//this code invoke the update function on the base class
+super.update(args);
+```
+
+## example
+
+This example will demonstrate how to pass parameters to the service, how to access the database using [prisma client ](https://www.prisma.io/docs/concepts/components/prisma-client), and how to return the data from the service using your application models.
 
 ### Adding a new function to user.service.ts
 
-1. Open your application and open the **user.service.ts**. The file in located in **./server/src/user/user.service.ts**.
+1. Open your application and open the **user.service.ts**. The file is located in **./server/src/user/user.service.ts**.
 
-2. Add import for user.ts at the top of the file. The user.ts is the type that describe the User entity in the application and is required for the return type of our new function.
+Initially, the files should look like this
+
+```typescript
+import { Injectable } from "@nestjs/common";
+import { PrismaService } from "nestjs-prisma";
+import { UserServiceBase } from "./base/user.service.base";
+import { PasswordService } from "../auth/password.service";
+
+@Injectable()
+export class UserService extends UserServiceBase {
+  constructor(
+    protected readonly prisma: PrismaService,
+    protected readonly passwordService: PasswordService
+  ) {
+    super(prisma, passwordService);
+  }
+}
+```
+
+2. Add import for _User_. This is the type that describes the User entity in the application and is required for the return type of our new function.
 
 ```javascript
-import { User } from "./User";
+import { User } from "./base/User";
+```
+
+2. Add import for _FindOneUserArgs_. this is the args type that is used to find a single User by its ID. We will use it as the input parameter of our new function.
+
+```javascript
+import { FindOneUserArgs } from "./base/FindOneUserArgs";
 ```
 
 3. Add the following function at the bottom of the file.
@@ -42,4 +78,4 @@ For simplicity and demonstration purposes this function resets a password to a f
 :::
 
 This function gets an object of type FindOneUserArgs as a parameter.
-It uses the [prisma client ](https://www.prisma.io/docs/concepts/components/prisma-client) to find the user and reset its password, and then returns the updated user object.
+It uses the [prisma client ](https://www.prisma.io/docs/concepts/components/prisma-client) to find the user and reset its password and then returns the updated user object.
