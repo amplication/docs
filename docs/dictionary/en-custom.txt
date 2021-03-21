@@ -24,3 +24,6 @@ api
 npm
 ampconfig
 DTOs
+automations
+oclif
+installable
