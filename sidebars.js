@@ -4,6 +4,7 @@ module.exports = {
       'welcome',
       'getting-started/generated-app', 
       'getting-started/first-app', 
+      'getting-started/cli', 
       'getting-started/sync-with-github', 
       'how-to/run-dev-env',
       'how-to/add-custom-code',
