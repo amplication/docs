@@ -30,3 +30,4 @@ installable
 Kubernetes
 kubectl
 bitnami
+postgresql
