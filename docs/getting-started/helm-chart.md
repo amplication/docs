@@ -27,7 +27,6 @@ There are a few ways to install a Kubernetes cluster locally, in our example we'
 After you've finished installing [Docker Desktop](https://www.docker.com/products/docker-desktop) you can now enable the _Kubernetes Plugin_ by going to the _Kubernetes_ tab in the Docker Desktop settings page and check _Enable Kubernetes_
 ![enable Kubernetes](./assets/helm-chart/enable-kubernetes.png)
 
-There are a few other options that you can choose, you can find the list and instructions to install them [here](https://kubernetes.io/docs/tasks/tools).
 
 ### Install Helm
 
