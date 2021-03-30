@@ -28,7 +28,7 @@ After you've finished installing [Docker Desktop](https://www.docker.com/product
 ![enable Kubernetes](./assets/helm-chart/enable-kubernetes.png)
 
 
-### Install Helm
+### Install Helm and Kubectl
 
 If it is not already installed, you also need to install Helm.
 
