@@ -30,7 +30,9 @@ After you've finished installing [Docker Desktop](https://www.docker.com/product
 
 ### Install Helm and Kubectl
 
-If it is not already installed, you also need to install Helm.
+You will also need _Helm_ and _Kubectl_ installed. 
+1. [Kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
+2. [Helm](https://helm.sh/docs/intro/install/)
 
 Follow the instructions [on this page](https://helm.sh/docs/intro/install/) to install it.
 
