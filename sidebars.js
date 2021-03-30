@@ -11,6 +11,7 @@ module.exports = {
       'getting-started/deploy', 
       'getting-started/generated-app-api',
       'getting-started/connect-server-to-github',
+      'getting-started/helm-chart',
     ],
     'How To':[
       'how-to/how-to-create-app',

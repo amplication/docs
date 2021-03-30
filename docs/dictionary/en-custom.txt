@@ -27,3 +27,9 @@ DTOs
 automations
 oclif
 installable
+Kubernetes
+kubectl
+bitnami
+postgresql
+Minikube
+Docker's
