@@ -27,3 +27,4 @@ DTOs
 automations
 oclif
 installable
+Kubernetes
