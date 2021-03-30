@@ -13,7 +13,12 @@ The article focuses on deployment on a local server for testing and development 
 
 ## Prerequisites
 
-Before you start you need to install Kubernetes and Helm.
+Before you start you need to install the following.
+1. Kubernetes Cluster (We will be using the [Docker Desktop](https://www.docker.com/products/docker-desktop) K8s implementation)
+2. Helm
+3. Kubectl
+
+Below we will go through each install step individually.
 
 ### Install Kubernetes cluster
 
