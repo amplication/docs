@@ -34,7 +34,6 @@ You will also need _Helm_ and _Kubectl_ installed.
 1. [Kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
 2. [Helm](https://helm.sh/docs/intro/install/)
 
-Follow the instructions [on this page](https://helm.sh/docs/intro/install/) to install it.
 
 ## Installing Amplication Helm Chart
 
