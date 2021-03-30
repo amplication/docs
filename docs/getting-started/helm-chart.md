@@ -24,7 +24,7 @@ Below we will go through each install step individually.
 
 There are a few ways to install a Kubernetes cluster locally, in our example we'll be using Docker's Kubernetes Plugin ([Docker Desktop](https://www.docker.com/products/docker-desktop)). However there are a few other Open Source alternatives (e.g. _Kind_ and _Minikube_), if you prefer to install a different K8s cluster, you can reference the list here [here](https://kubernetes.io/docs/tasks/tools/). 
 
-Once you have it installed, go to the _Kubernetes_ tab in the setting page and check _Enable Kubernetes_
+After you've finished installing [Docker Desktop](https://www.docker.com/products/docker-desktop) you can now enable the _Kubernetes Plugin_ by going to the _Kubernetes_ tab in the Docker Desktop settings page and check _Enable Kubernetes_
 ![enable Kubernetes](./assets/helm-chart/enable-kubernetes.png)
 
 There are a few other options that you can choose, you can find the list and instructions to install them [here](https://kubernetes.io/docs/tasks/tools).
