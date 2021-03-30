@@ -36,7 +36,10 @@ You will also need _Helm_ and _Kubectl_ installed.
 
 
 ## Installing Amplication Helm Chart
+Open the terminal and Pull down [_Amplication_](https://github.com/amplication/amplication.git) then go to `./amplication/chart/amplication` directory.
 
+ 1. `git clone  https://github.com/amplication/amplication.git`
+ 2. `cd amplication/chart/amplication`
 
 The amplication chart is shipped with a set of defaults that should get you running without any additional configuration.
 Run this command
