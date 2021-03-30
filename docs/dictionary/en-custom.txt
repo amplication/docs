@@ -31,3 +31,5 @@ Kubernetes
 kubectl
 bitnami
 postgresql
+Minikube
+Docker's
