@@ -51,6 +51,8 @@ Amplication Helm chart includes:
 
 You can monitor the whole list of resources by running the following:
 
+<!-- spell-checker: disable -->
+
 ```sh
 $ kubectl get all --namespace amplication
 
@@ -89,6 +91,8 @@ statefulset.apps/localpostgres   1/1     53s
 NAME                                COMPLETIONS   DURATION   AGE
 job.batch/amplication-app-migrate   1/1           22s        53s
 ```
+
+<!-- spell-checker: enable -->
 
 ## Port-Forwarding
 
