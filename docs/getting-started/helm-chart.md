@@ -20,7 +20,7 @@ Before you start you need to install Kubernetes and Helm.
 The easiest way to deploy a local Kubernetes cluster is using [Docker Desktop](https://www.docker.com/products/docker-desktop).
 
 Once you have it installed, go to the _Kubernetes_ tab in the setting page and check _Enable Kubernetes_
-![enable Kubernetes](./assets/helm-chart/enable-kube.png)
+![enable Kubernetes](./assets/helm-chart/enable-kubernetes.png)
 
 There are a few other options that you can choose, you can find the list and instructions to install them [here](https://kubernetes.io/docs/tasks/tools).
 
