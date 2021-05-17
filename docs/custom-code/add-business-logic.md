@@ -57,13 +57,13 @@ import { User } from "./base/User";
 2. Add import for _FindOneUserArgs_. this is the args type that is used to find a single User by its ID. We will use it as the input parameter of our new function.
 
 ```javascript
-import { FindOneUserArgs } from "./base/FindOneUserArgs";
+import { UserFindUniqueArgs } from "./base/UserFindUniqueArgs";
 ```
 
 3. Add the following function at the bottom of the file.
 
 ```javascript
-async resetPassword(args: FindOneUserArgs): Promise<User> {
+async resetPassword(args: UserFindUniqueArgs): Promise<User> {
     return this.prisma.user.update({
       where: args.where,
       data:{
