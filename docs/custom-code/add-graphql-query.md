@@ -48,7 +48,19 @@ export class UserResolver extends UserResolverBase {
 }
 ```
 
-2. Add the following code at the bottom of the class.
+2. Add import for _gqlUserRoles_. This is the decorator that provides the roles of the current user.
+
+```typeScript
+import * as gqlUserRoles from "../auth/gqlUserRoles.decorator";
+```
+
+3. Add import for _UserFindManyArgs_. this is the args type that is used to find multiple Users. We will use it as the input parameter of our new function.
+
+```typeScript
+import { UserFindManyArgs } from "./base/UserFindManyArgs";
+```
+
+4. Add the following code at the bottom of the class.
 
 ```typescript
   @graphql.Query(() => [User])
@@ -58,7 +70,7 @@ export class UserResolver extends UserResolverBase {
     possession: "any",
   })
   async users(
-    @graphql.Args() args: FindManyUserArgs,
+    @graphql.Args() args: UserFindManyArgs,
     @gqlUserRoles.UserRoles() userRoles: string[]
   ): Promise<User[]> {
     const permission = this.rolesBuilder.permission({
@@ -101,7 +113,7 @@ Create a function called **users**. with parameter of type **FindManyUserArgs** 
 
 ```typescript
 async users(
-    @graphql.Args() args: FindManyUserArgs,
+    @graphql.Args() args: UserFindManyArgs,
     @gqlUserRoles.UserRoles() userRoles: string[]
   ): Promise<User[]> {
 ```
