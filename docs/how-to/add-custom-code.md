@@ -53,9 +53,8 @@ src
 └── Customer
     ├── Base
     │    ├── CreateCustomerArgs.ts
-    │    ├── DeleteCustomerArgs.ts
-    │    ├── FindManyCustomerArgs.ts
-    │    ├── FindOneCustomerArgs.ts
+    │    ├── CustomerFindManyArgs.ts
+    │    ├── CustomerFindUniqueArgs.ts
     │    ├── customer.controller.base.spec.ts
     │    ├── customer.controller.base.ts
     │    ├── customer.resolver.base.ts
@@ -65,6 +64,7 @@ src
     │    ├── CustomerUpdateInput.ts
     │    ├── CustomerWhereInput.ts
     │    ├── CustomerWhereUniqueInput.ts
+    │    ├── DeleteCustomerArgs.ts
     │    └── updateCustomerArgs.ts
     ├── customer.controller.spec.ts
     ├── customer.controller.ts
