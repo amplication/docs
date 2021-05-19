@@ -107,4 +107,7 @@ module.exports = {
       },
     ],
   ],
+  clientModules: [
+    require.resolve('./src/js/global.js'),
+  ],
 };
