@@ -27,7 +27,7 @@ Click the “Preview App” link in the build panel to access the login page of 
 
 By default, your app comes with one user: username "admin" and password "admin". Use these credentials to access your app and create other users.
 
-You can also navigate to _/api_ to see the REST API docs (Swagger) or _/graphq/_ to see the GraphQL API playgournd. 
+You can also navigate to _/api_ to see the REST API docs (Swagger) or _/graphql_ to see the GraphQL API playground. 
 
 
 The sandbox environment provided by Amplication is not for production purposes (currently all existing data in the environment is purged following each deployment), but it’s a great starting point while developing your app. The sandbox environment is totally free of charge — like all other things in Amplication.
