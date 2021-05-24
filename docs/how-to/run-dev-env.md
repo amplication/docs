@@ -115,7 +115,7 @@ To install all the packages needed for the client, follow these steps:
 1. in the command-line tool, move to the Admin folder. In case you are still in the Server folder, execute this command
 
 ```
-cd ../admin
+cd ../admin-ui
 ```
 
 2. Execute `npm install` or `npm i` to download and install all the packages
@@ -135,5 +135,3 @@ npm run start
 By default, your client is now available at http://localhost:3001
 
 ![](../getting-started/assets/generated-app/admin-ui.png)
-
-
