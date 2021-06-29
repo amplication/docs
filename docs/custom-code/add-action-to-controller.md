@@ -47,8 +47,18 @@ export class UserController extends UserControllerBase {
   }
 }
 ```
+2. Add the following imports at the beginning of the file
 
-2. Add the following code at the bottom of the class.
+```typescript
+  import * as nestMorgan from "nest-morgan";
+  import * as basicAuthGuard from "../auth/basicAuth.guard";
+  import * as errors from "../errors";
+  import { User } from "./base/User";
+  import { UserWhereUniqueInput } from "./base/UserWhereUniqueInput";
+```
+
+
+3. Add the following code at the bottom of the class.
 
 ```typescript
   @common.UseInterceptors(nestMorgan.MorganInterceptor("combined"))
@@ -72,7 +82,7 @@ export class UserController extends UserControllerBase {
       possession: "own",
       resource: "User",
     });
-    const result = await this.service.restPassword({
+    const result = await this.service.resetPassword({
       where: params,
     });
     if (result === null) {
