@@ -33,7 +33,7 @@ Currently, there's only a “User” entity that was auto-generated when you cre
 
 For the purpose of this tutorial, we'll now add another entity called “Project”.
 
-1. Click **Create New**.
+1. Click **Add Entity**.
 2. In the _New Entity_ dialog, type in “Project”.
 3. Click **Create Entity**.
 
@@ -204,7 +204,7 @@ We'll now make a few changes to the _Project_ entity.
 It's always good to check what was changed before you commit to verify that these changes were intentional.
 To do so:
 
-1. Click **Compare Changes**.
+1. Click **Compare Changes**. (Note: Compare changes icon is next to delete icon)
 2. The _Pending Changes_ page opens and indicates what was changed and what was added.
 
 - The _Task_ entity was created
