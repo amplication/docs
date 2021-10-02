@@ -104,7 +104,7 @@ Try to open one of these URLs and have fun
 - http://localhost:3000/api
 - http://localhost:3000/graphql
 
-To read more about the technologies and structure of your server read [this article](../getting-started)
+To read more about the technologies and structure of your server read [this article](../getting-started) - Need working link
 
 ## Install packages from npm for the Admin UI
 
