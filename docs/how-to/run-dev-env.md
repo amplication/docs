@@ -35,7 +35,7 @@ The best way to do it is to sync your application with a GitHub repository by fo
 Instead, if you prefer to download the source code as a ZIP file, follow these steps:
 
 1. Commit all your changes so Amplication generates the updated source code.
-2. Click on the **Download** button on the latest commit. You'll get a ZIP file.
+2. Click on the **Download Code** button on the latest commit. You'll get a ZIP file.
 3. Extract the ZIP file to a local folder.
 4. Open your application with your favorite IDE
 
