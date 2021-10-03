@@ -20,21 +20,17 @@ This error may happen if you are working with the wrong Amplication server.
 
 ## What to do?
 
-Please run the command `amp config`. You should get below output stating AMP_SERVER_URL=http://localhost:3000/
+Run the command amp config to see the URL of the Amplication server used by the CLI.
 
+The results should look like the below
+
+```
 AMP_CURRENT_APP=undefined
 AMP_CURRENT_ENTITY=undefined
 AMP_CURRENT_FIELD=undefined
 AMP_SERVER_URL=http://localhost:3000/
 AMP_OUTPUT_FORMAT=undefined
-
-This means that AMP_SERVER_URL is set to http://localhost:3000/ We need to set the URL to https://app.amplication.com.
-
-Run the below command to resolve this issue.
+```
+Use this command to set the correct URL for the Amplication server
 
 ```$ amp config:set AMP_SERVER_URL https://app.amplication.com```
-
-After running the above command the issue should be resolved. Post which you may run the command `amp auth TOKEN` with the token generated from the Amplication server UI.
-
-
-
