@@ -9,7 +9,7 @@ slug: /errors/could-not-authorize-user
 
 ## Message
 
-»   Error: Could not authorize user
+CLI Error: Could not authorize user
 
 ## What went wrong?
 
