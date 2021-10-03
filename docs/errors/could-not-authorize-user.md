@@ -13,11 +13,9 @@ CLI Error: Could not authorize user
 
 ## What went wrong?
 
-Amplication CLI works with the hosted version on https://app.amplication.com. It's possible that you might have run the command 
+Amplication CLI could not authenticate with Amplication Server. 
 
-```$ amp config:set AMP_SERVER_URL http://localhost:3000```
-
-while going through the documentation.
+This error may happen if you are working with the wrong Amplication server. 
 
 
 ## What to do?
