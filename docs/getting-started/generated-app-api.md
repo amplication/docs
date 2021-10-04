@@ -12,23 +12,6 @@ Every application created with Amplication is generated with two types of APIs: 
 
 In this article you will learn how to connect, authenticate, and consume these APIs.
 
-## Authentication
-
-While we are working to add more authentication providers, currently your server is secured with Basic HTTP Authentication.
-
-To send a request to the API you must provide a Basic HTTP authentication header in the form of _Authorization: Basic [credentials]_, where credentials is the Base64 encoding of a string "_username:password_".
-
-By default, your app comes with one user with the username "admin" and password "admin".
-You can use the following header to authenticate with the default user.
-
-```
-Authorization: Basic YWRtaW46YWRtaW4=
-```
-
-:::tip
-You can use a tool to create the header. There are several generators [available online](https://www.google.com/search?q=http+basic+authentication+header+generator).
-:::
-
 ## REST API
 
 The REST API is available at **/api** at the root of your application.
