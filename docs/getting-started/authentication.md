@@ -13,7 +13,7 @@ In this article we will talk about working with both http and jwt
 
 ## Jwt vs Http
 
-As you what to send or recide data from your server you must provide a "key" that show your are allow to get and send this data, the key is called "Token".
+As you what to send or receive data from your server you must provide a "key" that show your are allow to get and send this data, the key is called "Token".
 
 The common method to provide this token to the server is by adding the Authentication Header to the http requests.
 
@@ -21,7 +21,7 @@ The common method to provide this token to the server is by adding the Authentic
 
 ### The Bearer (jwt) header example
 
-This schema take data that your server provide and signing it with a key that you provide it via the SecretsManeger, in that way no sensitive data is transfer over the network and its safe from mutilation.
+This schema take data that your server provide and signing it with a key that you provide it via the SecretsManager, in that way no sensitive data is transfer over the network and its safe from mutilation.
 
 ```
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoieW91IGFyZSBzb29vb28gY29vbCB0aGF0IHlvdSBjaGVjayB0aGF0ISIsIm5hbWUiOiJPZmVrIGdhYmF5IDspIiwiaWF0IjoxNTE2MjM5MDIyfQ.vaYJaP9SUlOU0u4NfFCRm5tmBVDKeCwvN6ByCkqJt8U
