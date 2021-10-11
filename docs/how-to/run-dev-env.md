@@ -135,3 +135,12 @@ npm run start
 By default, your client is now available at http://localhost:3001
 
 ![](../getting-started/assets/generated-app/admin-ui.png)
+
+:::tip
+Incase you run into below error
+```
+Proxy error: Could not proxy request /graphql from localhost:3001 to http:localhost:3000/.
+See https://nodejs.org/api/errors.html#errors_common_system_errors for more informtion (ECONNREFUSED)
+```
+Make sure the command `npm run start` is running in parallel at path `cd ../admin-ui` and at path `cd ../server` in the separate command prompt windows
+:::
