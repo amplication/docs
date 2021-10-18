@@ -30,6 +30,7 @@ module.exports = {
       'errors/invalid-code-generation-version',
       'errors/merge-conflict',
       'errors/missing-code-generation-version',
+      '/errors/could-not-authorize-user',
     ],
     'Community':[
       'contributing'
