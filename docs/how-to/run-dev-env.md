@@ -135,3 +135,7 @@ npm run start
 By default, your client is now available at http://localhost:3001
 
 ![](../getting-started/assets/generated-app/admin-ui.png)
+
+:::tip
+Make sure that the server is started and running in the background when initiating the admin UI. You can run npm run start for the admin UI in a separated shell from the one running the server.
+:::
