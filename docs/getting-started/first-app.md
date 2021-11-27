@@ -172,7 +172,7 @@ Now that you know how to create entities, commit changes, and build new versions
 For the purpose of this tutorial, we'll now add another entity called “Task”.
 
 1. Click the Entities icon (left sidebar, a.k.a. main menu) to reach the Entities page.
-2. Click **Create New**.
+2. Click **Add entity**.
 3. In the _New Entity_ dialog, type in “Task”.
 4. Click **Create Entity**.
 5. The entity comes with a few default fields. We'll add some more fields as follows.
