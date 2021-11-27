@@ -212,6 +212,6 @@ To do so:
 
 ![](./assets/pic13.jpg)
 
-3. Since these changes were intentional and we're happy to commit them, click **Commit Changes**.
+3. Since these changes were intentional and we're happy to commit them, click **Commit changes and build**.
 
 **You are now ready to build a new version of your app. Great work!**
