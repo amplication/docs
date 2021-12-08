@@ -20,7 +20,7 @@ This error may happen if you are working with the wrong Amplication server.
 
 ## What to do?
 
-Run the command amp config to see the URL of the Amplication server used by the CLI.
+Run the command ```amp config``` to see the URL of the Amplication server used by the CLI.
 
 The results should look like the below
 
