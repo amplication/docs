@@ -11,7 +11,7 @@ Amplication auto-generates fully functional human-readable and editable apps bas
 
 Generated apps include NestJS, Prisma, REST API, GraphQL API, a React admin UI, authentication, authorization, and logging.
 
-In this article you will find the details on the structure of the application and the technologies behind it.
+In this article you can find the details on the structure of the application and the technologies behind it.
 
 :::note
 You can see an example of an app generated with Amplication in this repository
