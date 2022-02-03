@@ -34,7 +34,7 @@ It is expected that the Contributor will have entered a detailed description of 
 
    
 
-# Set Status
+## Set Status
 
 The status indicates to what stage the issue has progressed in the workflow. 
 
@@ -74,6 +74,6 @@ If it is decided by the Amplication team that the issue will not be fixed, eithe
 
 Before closing a duplicated issue, first set the status **duplicate** and write an explanation including the number of the duplicated item.
 
-# What’s Next?
+## What’s Next?
 
 When the steps described in this article have been completed the issue is ready for the development phase.
