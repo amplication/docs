@@ -33,3 +33,5 @@ bitnami
 postgresql
 Minikube
 Docker's
+Roadmap
+Wontfix
