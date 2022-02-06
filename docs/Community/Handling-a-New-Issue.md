@@ -19,7 +19,7 @@ It is expected that the Contributor will have entered a detailed description of 
 
 **A new issue processed in GitHub as follows:** 
 
-1. Maintainers change **Backlog** status from **New** to **Baking** and add the appropriate labels.  ****The Issue is validated and researched to gain a deep understanding of the issue. Contributors and Maintainers can add comments and participate in discussions in the GitHub Issue. 
+1. Maintainers change **Backlog** status from **New** to **Baking** and add the appropriate labels. The Issue is validated and researched to gain a deep understanding of the issue. Contributors and Maintainers can add comments and participate in discussions in the GitHub Issue. 
     
 :::tip
 **For Internal use only:** If a subject is not relevant for public discussion, the Maintainers can open the issue for an internal discussion in a Discord thread.  If a thread is opened on Discord, it should be named according to the following format:
