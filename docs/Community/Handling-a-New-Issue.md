@@ -40,7 +40,7 @@ The status indicates to what stage the issue has progressed in the workflow.
 
 | Status  | Description   |  Owner |
 |---|---|---|
-| New  The issue has been created in GitHub	 | Maintainers and Contributors   |
+| New  | The issue has been created in GitHub	 | Maintainers and Contributors   |
 |  Baking | Are still researching the issue. Understanding the problem and developing an idea of how the problem can be solved. | Maintainers and Contributors. Typically, a discussion will take place between Contributors and Maintainers in the GitHub Issue where the details will be examined. |
 | Candidate | Once enough information has been gathered to fully understand the issue, the steps that must be taken to resolve it, and its importance. | Maintainers. Typically, a discussion will take place in the GitHub Issue |
 | Accepted | A decision has been made that the Candidate is going to be resolved. | Product team |
