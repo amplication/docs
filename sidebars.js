@@ -34,7 +34,7 @@ module.exports = {
     ],
     'Community':[
       'contributing',
-      'Community/Handling-a-New-Issue',
+      'community/handling-a-new-issue',
     ],
   }, 
 };
