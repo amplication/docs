@@ -27,6 +27,10 @@ Click the “Preview App” link in the build panel to access the login page of 
 
 By default, your app comes with one user: username "admin" and password "admin". Use these credentials to access your app and create other users.
 
+:::tip
+If encountered with "Invalid email or password" when using the credentials with username "admin" and password "admin" then rebuild the code to trigger a new deployment.This usually occurs when DB migration did not complete successfully.
+:::
+
 You can also navigate to _/api_ to see the REST API docs (Swagger) or _/graphql_ to see the GraphQL API playground. 
 
 
