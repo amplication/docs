@@ -1,5 +1,5 @@
 ---
-id: Handling-a-New-Issue
+id: handling-a-new-issue
 title: Handling a New Issue
 sidebar_label: Handling a New Issue
 slug: /Community/Handling-a-New-Issue
