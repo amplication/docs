@@ -33,7 +33,8 @@ module.exports = {
       'errors/could-not-authorize-user',
     ],
     'Community':[
-      'contributing'
+      'contributing',
+      'community/handling-a-new-issue',
     ],
   }, 
 };
