@@ -12,7 +12,7 @@ Click the Entities icon (left sidebar, a.k.a. main menu) to reach the Entities p
 ![](../getting-started/assets/pic-1.jpg)
 
 1. Click **Create New**.
-2. In the _New Entity_ dialog, type in the name of the new Entity..
+2. In the _New Entity_ dialog, type in the name of the new Entity.
 3. Click **Create Entity**.
 
 :::tip
