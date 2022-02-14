@@ -104,14 +104,5 @@ Read here to find out more: [HTTP authentication](https://developer.mozilla.org/
 
 Amplication uses the @nestjs/passport module as middleware to support authentication.
 Passport is a popular node.js authentication library, widely used by the community.
-The following example shows authentication of  a user with a username and password:
-
-```
-app.post('/login/password',
-passport.authenticate('local', { failureRedirect: '/login', failureMessage: true }),
-function(req, res) {
-res.redirect('/~' + req.user.username);
-});
-```
 
 Read this for more information: [authentication with Nest](https://docs.nestjs.com/security/authentication)
