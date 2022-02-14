@@ -51,7 +51,7 @@ curl -X 'POST' \
 }'
 ```
 
-![](./assets/authentication/auth.png)
+![](./assets/authentication/auth-rest.png)
 
 ## GraphQL API
 
