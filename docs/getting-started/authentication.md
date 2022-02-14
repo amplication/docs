@@ -68,9 +68,13 @@ mutation{
 
 ## Header with JWT Included (example)
 
+<!-- spell-checker: disable -->
+
 ```
  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoieW91IGFyZSBzb29vb28gY29vbCB0aGF0IHlvdSBjaGVjayB0aGF0ISIsIm5hbWUiOiJPZmVrIGdhYmF5IDspIiwiaWF0IjoxNTE2MjM5MDIyfQ.vaYJaP9SUlOU0u4NfFCRm5tmBVDKeCwvN6ByCkqJt8U
 ```
+
+<!-- spell-checker: enable -->
 
 # Basic **HTTP Authentication**
 
