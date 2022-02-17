@@ -8,6 +8,18 @@ module.exports = {
   organizationName: "amplication/amplication", // Usually your GitHub org/user name.
   projectName: "amplication", // Usually your repo name.
   themeConfig: {
+    algolia: {
+      // The application ID provided by Algolia
+      appId: "2U9P8WAXIR",
+
+      // Public API key: it is safe to commit it
+      apiKey: "3aedb20f97bf433d57d27c8c250c8c04",
+
+      indexName: "docs-amplication",
+
+      // Optional: see doc section below
+      contextualSearch: false,
+    },
     colorMode: {
       // "light" | "dark"
       defaultMode: "dark",
