@@ -65,7 +65,7 @@ Fork the Amplication repository to your GitHub organization. This means that you
 git clone https://github.com/amplication/amplication
 
 ```
-## Step3: Prepare the development environment 
+## Step 3: Prepare the development environment 
 Set up and run the development environment on your local machine (for details, see the [ Development Environment (Local)](https://github.com/amplication/amplication/blob/master/README.md#development) section in the README. 
 
 ## Step 4: Create a branch
