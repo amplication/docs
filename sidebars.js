@@ -10,9 +10,14 @@ module.exports = {
       "how-to/add-custom-code",
       "getting-started/deploy",
       "getting-started/authentication",
-      "getting-started/generated-app-api",
       "getting-started/connect-server-to-github",
       "getting-started/helm-chart",
+    ],
+    "Generated API": [
+      "getting-started/generated-app-api",
+      "api/generated-api-sorting",
+      "api/generated-api-filtering",
+      "api/generated-api-pagination",
     ],
     "How To": [
       "how-to/how-to-create-app",
