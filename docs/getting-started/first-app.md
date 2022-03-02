@@ -15,8 +15,9 @@ Let’s get started.
 
 ## Create a New App
 
-1. Sign in to [app.amplication.com](https://app.amplication.com). You should land on the _New App_ page. If you're not on the _New App_ page, click the Amplication logo in the top-left corner to reach the _My Apps_ page, and from there click **New App**.
-2. In the _New App_ page, click on **Start from Scratch** to create an empty app.
+1. Sign-in  to [app.amplication.com](https://app.amplication.com). You should land on the _New App_ page. If you're not on the _New App_ page, click the Amplication logo in the top-left corner to reach the _My Apps_ page.
+2. Click  the **New App** button.
+3. In the _New App_ page, click  **Start from Scratch** to create an empty app.
 
 
 ![](./assets/pic0.png)
