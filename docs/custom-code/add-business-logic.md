@@ -10,7 +10,7 @@ slug: /custom-code/business-logic
 ## General
 
 In this example, you will see how to add a new function with your business logic to an existing service.
-The _entity_.service.ts file is generated only once by Amplication, and you can freely customize it. Amplication will never override this file.
+The `_entity_.service.ts` file is generated only once by Amplication, and you can freely customize it. Amplication will never override this file.
 
 You can use this file to add new functions, override existing functions that are inherited from _entity_.service.base, import libraries and modules to the file, or anything else you may need.
 
@@ -27,7 +27,7 @@ This example will demonstrate how to pass parameters to the service, how to acce
 
 ### Adding a new function to user.service.ts
 
-1. Open your application and open the **user.service.ts**. The file is located in **./server/src/user/user.service.ts**.
+1. Open your application and open the **`user.service.ts`**. The file is located in **`./server/src/user/user.service.ts`**.
 
 Initially, the files should look like this
 
