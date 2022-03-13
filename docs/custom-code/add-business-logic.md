@@ -27,7 +27,7 @@ This example will demonstrate how to pass parameters to the service, how to acce
 
 ### Adding a new function to user.service.ts
 
-1. Open your application and open the **user.service.ts**. The file is located in **./server/src/user/user.service.ts**.
+1. Open your application and open the `user.service.ts`. The file is located in `./server/src/user/user.service.ts`.
 
 Initially, the files should look like this
 
