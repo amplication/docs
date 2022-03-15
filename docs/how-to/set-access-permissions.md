@@ -21,7 +21,7 @@ By default, ALL these actions are permitted for all roles.
 
 ## Set Entity Permissions
 
-1. Click the **Entities** icon in the main menu (leftsidebar) to open the _Entities_ page.
+1. Click the **Entities** icon in the main menu (left sidebar) to open the _Entities_ page.
 2. Click an entity.
 3. On the entity's page, click **Permissions**.
 
