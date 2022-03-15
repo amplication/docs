@@ -5,58 +5,61 @@ sidebar_label: Your first application
 slug: /first-app
 ---
 
-# Your first application
+# Your First Application - Tutorial 
 
 Not sure how to get started? In this tutorial, we will walk you through the steps of creating an application, adding an entity, adding roles, and setting permissions on entities.
 
-Also, you'll see how to commit changes and manage versions, and finally how to build your app and download the generated source-code.
+Also, you'll see how to commit changes and manage versions, and finally, how to build your app and download the generated source-code.
 
 Let’s get started.
 
-## Create a New App
+## Step 1 - Create a New App
 
-1. Sign-in  to [app.amplication.com](https://app.amplication.com). You should land on the _New App_ page. If you're not on the _New App_ page, click the Amplication logo in the top-left corner to reach the _My Apps_ page.
+1. Sign-in  to [app.amplication.com](https://app.amplication.com).
+
+   You should land on the _New App_ page. If you're not on the _New App_ page, click the Amplication logo in the top-left corner to reach the _My Apps_ page.
+
 2. Click  the **New App** button.
 3. In the _New App_ page, click  **Start from Scratch** to create an empty app.
 
 
 ![](./assets/pic0.png)
 
-## Create an Entity
+## Step 2 - Create an Entity
 
-Click the Entities icon (left sidebar, a.k.a. main menu) to reach the Entities page, here you see all the entities in your application.
+Click the **Entities** icon on the main menu (left sidebar) to reach the _Entities_ page. Here you see all the entities in your application.
 
 ![](./assets/pic-1.jpg)
 
 :::tip
-Currently, there's only a “User” entity that was auto-generated when you created the new app.
+At this stage, there's only one entity, **User**. This is auto-generated when you created the new app.
 :::
 
 For the purpose of this tutorial, we'll now add another entity called “Project”.
 
 1. Click **Add Entity**.
-2. In the _New Entity_ dialog, type in “Project”.
+2. In the _New Entity_ dialog, type  “Project”.
 3. Click **Create Entity**.
 
 ![](./assets/pic-2.jpg)
 
-You now have a new “Project” entity. Notice that the added entity comes with auto-generated values like “Plural Display Name” and some default fields – ID, Created At, and Updated At.
+You now have a new  entity named _Project_. Notice that the added entity comes with auto-generated values such as “Plural Display Name” and some default fields – **ID**, **Created At**, and **Updated At**.
 
-## Add Entity Fields
+## Step 3 - Add Entity Fields
 
 To describe your project add some new fields. For the purpose of this tutorial, add these fields:
 
-- Name – for saving the project name
-- Description – for saving a more detailed description of the project
-- Start Date – for saving the date on which this project starts
-- Owner – for assigning a user to be an owner of the project
+- **Name** – for saving the project name
+- **Description** – for saving a more detailed description of the project
+- **Start Date** – for saving the date on which this project starts
+- **Owner** – for assigning a user to be an owner of the project
 
 ### Create the Name Field
 
-1. In the _Entity Fields_ text box (above the list of fields), type in “Name”.
-2. Click **Add field** (or just press Enter). The new field is added to the list.
-3. The field's property panel opens. Click the **Required Field** toggle to make the _Name_ field required.
-4. Leave the defaults for the other properties (_Searchable_ inactive, _Data Type_ "Single Line Text", and _Max Length_ "1000".)
+1. In the _Entity Fields_ text box (above the list of fields), type “Name”.
+2. Click **Add field** (or just press Enter). The new field is added to the list and the field's property panel opens. 
+3. Click the **Required Field** toggle to configure the _Name_ field as required.
+4. Leave the defaults for the other properties (_Searchable_ active, _Data Type_ "Single Line Text", and _Max Length_ "1000".)
 
 ![](./assets/pic-3.jpg)
 
@@ -64,11 +67,20 @@ To describe your project add some new fields. For the purpose of this tutorial, 
 All changes are saved automatically.
 :::
 
+
 ### Create the Description Field
 
 1. In the _Entity Fields_ text box type “Description”.
-2. Click **Add field** (or just press Enter). The new field is added to the list.
-3. The field's property panel opens. Leave the defaults (_Required Field_ and _Searchable_ inactive, _Data Type_ "Multi Line Text", and _Max Length_ "1000".)
+2. Click **Add field** (or just press Enter). The new field is added to the list and the field's property panel opens.
+3. Leave the defaults (_Required Field_ inactive _Searchable_ active, _Data Type_ "Multi Line Text", and _Max Length_ "1000".)
+
+:::info
+
+If the **Searchable** setting is not activated, the search cannot be based on the field. The field visibility is determined by the settings on the **Permissions** tab. 
+
+For example, if the customer's email address is visible (permissions set to **All Roles** for search), but the field is not set as **Searchable** the user will be able to search for customers by name, phone, or any other field but not by email address. However, the results will still include the email address. 
+
+:::
 
 ### Create the Start Date Field
 
@@ -81,21 +93,39 @@ If needed, you can manually change the field name in the field's properties pane
 :::
 
 2. Click **Add field** (or just press Enter). The new field is added to the list.
-3. The field's property panel opens. Leave the defaults (_Required Field_ and _Searchable_ inactive, _Data Type_ "Date Time", and _Time Zone_ "Local Time".)
+3. The field's property panel opens. Leave the defaults (_Required Field_ inactive, _Searchable_ active, _Data Type_ "Date Time", and _Time Zone_ "Local Time".)
 
 ### Create the Owner Field
 
 1. In the _Entity Fields_ text box type “Owner”.
-2. Click **Add field** \(or just press Enter\). The new field is added to the list.
-3. The field's property panel opens. Change the _Data Type_ from "Single Line Text" to "Relation to Entity".
-4. In the _Related Entity Id_ field select “User”.
-5. Click the **Required Field** toggle to make the “Owner” field required.
+2. Click **Add field** \(or just press Enter\). The new field is added to the list and the field's property panel opens. 
+3. Change the _Data Type_ from **Single Line Text** to **Relation to Entity**.
+4. In the _Related Entity Id_ field select **User**.
+5. Click the **Required Field** toggle to make the _Owner_ field required.
 
 :::tip
 You might find it easier to first add all the fields you want, one after another, and only afterwards set the properties of each field.
 :::
 
-## Set Access Permissions
+
+
+## Step 4 - Create Roles
+
+Click the Roles icon on the main menu (left sidebar) to reach the _Roles_ page. Here you see all the roles in your application.
+
+:::tip
+Currently, there's only a default **User** role that was auto-generated when you created the new app.
+:::
+
+For the purpose of this tutorial, we'll now add another two roles: _Admin_ and _Manager_.
+
+1. In the _Type role name_ text box, type "Admin".
+2. Click **Add Role** \(or just press Enter\). The new role is added to the list.
+3. Repeat these steps to add the "Manager" role.
+
+![](./assets/pic-4.jpg)
+
+## Step 5 - Set Access Permissions
 
 In order to allow users to access the entity, we need to set its permissions.
 
@@ -109,46 +139,49 @@ Permissions can be controlled separately for each of the following actions:
 
 By default, ALL these actions are permitted for all roles.
 
-### Create Roles
-
-Click the Roles icon (left sidebar, a.k.a. the main menu) to reach the _Roles_ page, here you see all the roles in your application.
-
-:::tip
-Currently, there's only a default “User” role that was auto-generated when you created the new app.
-:::
-
-For the purpose of this tutorial, we'll now add another two roles: “Admin” and "Manager".
-
-1. In the _Type role name_ text box, type "Admin".
-2. Click **Add Role** \(or just press Enter\). The new role is added to the list.
-3. Repeat these steps to add the "Manager" role.
-
-![](./assets/pic-4.jpg)
-
 ### Set Entity Permissions
 
-1. Click the Entities icon in the main menu to open the _Entities_ page.
+1. Click the Entities icon in the main menu (left sidebar) to open the _Entities_ page.
 2. Click the _Project_ entity.
-3. In the Project's page click the _Permissions_ tab. This opens the Permissions settings.
-4. Start by making sure that all actions (View, Create, Update, Delete, and Search) are enabled for all roles.
-5. Fine tune permissions by changing the _Delete_ permissions from "All Roles" to "Granular" and then select from the presented roles the "Admin" role.
-   This ensures that only users filling the Admin role can delete projects.
+3. In the _Project_ page click the _Permissions_ tab. This opens the Permissions settings.
+4. By default, all actions (_View_, _Create_, _Update_, _Delete_, and _Search_) are set to **All Roles**. 
+5. Fine tune permissions by changing the *Delete* permissions from **All Roles** to **Granular** and then select from the displayed roles the _Admin_ role. This ensures that only users with the _Admin_ role can delete projects.
 
 ![](./assets/pic-5.jpg)
 
-:::info
-You can set action permissions for specific fields, instead of globally for all the action's fields. For example, you can prevent users from changing (updating) the Due Date of a project, while permitting managers to do so.
-To specify permissions at the field level:
+6. Select **Granular** to enable the configuration of the actions according to specific roles.
 
-1. Set the action's permission scope to "Granular".
-2. Select the role(s) relevant to this action.
-3. Click **+ Add Field**. (For the _Delete_ action there's no option to set permissions for specific fields.)
-4. Select the field(s) from the list.
-5. For each of these fields set which role(s) can perform the action by clicking it. For example, click **Admin** beneath "Update Field" _owner_.
+   The roles, **Manager** and **Admin**, are displayed.
 
-:::
+![](./assets/pic-5.2.png)
 
-## Commit Your Changes
+
+7. To give a specific roles permission to perform the action, select the appropriate button. 
+
+   For this tutorial, we give permissions to perform **Delete** actions only to the **Admin** role. 
+
+![](./assets/pic-7.png)
+
+
+### Set Field Permissions 
+
+We will now set permissions at the field level.
+
+ 1. In the **Update** action, click **+ Add Field** and select the **Start Date** and **ID** fields from the drop-down list.
+
+
+![](./assets/pic-8.png)
+
+
+2. We now select the roles to associate with each selected field.
+
+   For the purposes of this tutorial, for the  _Update_ action, apply **Admin** permissions to the **startDate**, and apply both **Admin** and **Manager** permissions to the **id** field.  
+
+
+![](./assets/pic-9.png)
+
+
+## Step 6 - Commit Your Changes
 
 While working in Amplication your changes are saved automatically, but are not committed. Only committed changes will be included in the next version of your application.
 
@@ -160,11 +193,11 @@ For the purpose of this tutorial, let's make our first commit.
 
 In this page, you can see that the creation of the _Project_ entity hasn't been committed.
 
-1. In the _commit message_ dialog, write a description of the changes you're committing, for example: "Added Project Entity and Manager and Admin roles".
+1. In the _commit message_ dialog, write a description of the changes you're committing. For example: "Added Project Entity and Manager and Admin roles".
 2. Click **Commit Changes**. All changes are committed. A build of the first version of your app is automatically created!
 3. After the build process completes, click the download icon in the _Generate Code_ row to get a .zip file of your app. It is now ready to be deployed anywhere you want. 🚀
 
-## Taking your app a bit further
+## Step 7 - Taking your app a bit further
 
 Now that you know how to create entities, commit changes, and build new versions, let's take it a bit further by adding another entity and learning how to compare changes before committing.
 
@@ -172,7 +205,7 @@ Now that you know how to create entities, commit changes, and build new versions
 
 For the purpose of this tutorial, we'll now add another entity called “Task”.
 
-1. Click the Entities icon (left sidebar, a.k.a. main menu) to reach the Entities page.
+1. Click the Entities icon on the main menu (left toolbar) to reach the Entities page.
 2. Click **Add entity**.
 3. In the _New Entity_ dialog, type in “Task”.
 4. Click **Create Entity**.
@@ -195,9 +228,9 @@ The Task's field list should now look like this:
 
 We'll now make a few changes to the _Project_ entity.
 
-1. Click the Entities icon (left sidebar, a.k.a. main menu) to reach the Entities page.
+1. Click the Entities icon on the main menu (left sidebar) to reach the Entities page.
 2. Select the _Project_ entity.
-3. Add a new field called "Due Date" and set its data type to "Date Time".
+3. Add a new field called **Due Date** and set its data type to "Date Time".
 4. Select the existing _Owner_ field and change its _Display Name_ to "Project Owner".
 
 ### Compare Pending Changes Before Commit
@@ -205,7 +238,7 @@ We'll now make a few changes to the _Project_ entity.
 It's always good to check what was changed before you commit to verify that these changes were intentional.
 To do so:
 
-1. Click **Compare Changes**. (Note: Compare changes icon is next to delete icon)
+1. Click **Compare Changes**. (Note: **Compare Changes** icon is next to **Delete** icon)
 2. The _Pending Changes_ page opens and indicates what was changed and what was added.
 
 - The _Task_ entity was created
@@ -214,5 +247,6 @@ To do so:
 ![](./assets/pic13.jpg)
 
 3. Since these changes were intentional and we're happy to commit them, click **Commit changes and build**.
+
 
 **You are now ready to build a new version of your app. Great work!**
