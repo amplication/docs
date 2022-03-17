@@ -5,9 +5,9 @@ sidebar_label: Your first application
 slug: /first-app
 ---
 
-# Your First Application - Tutorial 
+# Your First Application
 
-Not sure how to get started? In this tutorial, we will walk you through the steps of creating an application, adding an entity, adding roles, and setting permissions on entities.
+Not sure how to get started? These instructions will walk you through the steps of creating an application, adding an entity, adding roles, and setting permissions on entities.
 
 Also, you'll see how to commit changes and manage versions, and finally, how to build your app and download the generated source-code.
 
@@ -35,7 +35,7 @@ Click the **Entities** icon on the main menu (left sidebar) to reach the _Entiti
 At this stage, there's only one entity, **User**. This is auto-generated when you created the new app.
 :::
 
-For the purpose of this tutorial, we'll now add another entity called “Project”.
+In this example, we'll now add another entity called “Project”.
 
 1. Click **Add Entity**.
 2. In the _New Entity_ dialog, type  “Project”.
@@ -47,7 +47,7 @@ You now have a new  entity named _Project_. Notice that the added entity comes w
 
 ## Step 3 - Add Entity Fields
 
-To describe your project add some new fields. For the purpose of this tutorial, add these fields:
+To describe your project add some new fields. For this example, add these fields:
 
 - **Name** – for saving the project name
 - **Description** – for saving a more detailed description of the project
@@ -117,7 +117,7 @@ Click the Roles icon on the main menu (left sidebar) to reach the _Roles_ page. 
 Currently, there's only a default **User** role that was auto-generated when you created the new app.
 :::
 
-For the purpose of this tutorial, we'll now add another two roles: _Admin_ and _Manager_.
+In this example, we add another two roles: _Admin_ and _Manager_.
 
 1. In the _Type role name_ text box, type "Admin".
 2. Click **Add Role** \(or just press Enter\). The new role is added to the list.
@@ -158,7 +158,7 @@ By default, ALL these actions are permitted for all roles.
 
 7. To give a specific roles permission to perform the action, select the appropriate button. 
 
-   For this tutorial, we give permissions to perform **Delete** actions only to the **Admin** role. 
+   In this example, we give permissions to perform **Delete** actions only to the **Admin** role. 
 
 ![](./assets/pic-7.png)
 
@@ -175,7 +175,7 @@ We will now set permissions at the field level.
 
 2. We now select the roles to associate with each selected field.
 
-   For the purposes of this tutorial, for the  _Update_ action, apply **Admin** permissions to the **startDate**, and apply both **Admin** and **Manager** permissions to the **id** field.  
+   In this example, for the  _Update_ action, apply **Admin** permissions to the **startDate**, and apply both **Admin** and **Manager** permissions to the **id** field.  
 
 
 ![](./assets/pic-9.png)
@@ -189,7 +189,7 @@ In the _Pending Changes_ control in the main menu (left sidebar) you can see how
 
 ![](./assets/pic8.jpg)
 
-For the purpose of this tutorial, let's make our first commit.
+We'll now make our first commit.
 
 In this page, you can see that the creation of the _Project_ entity hasn't been committed.
 
@@ -203,7 +203,7 @@ Now that you know how to create entities, commit changes, and build new versions
 
 ### Create the Task Entity
 
-For the purpose of this tutorial, we'll now add another entity called “Task”.
+We'll now add another entity called “Task”.
 
 1. Click the Entities icon on the main menu (left toolbar) to reach the Entities page.
 2. Click **Add entity**.
