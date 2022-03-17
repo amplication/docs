@@ -32,6 +32,9 @@ By default, ALL these actions are permitted for all roles.
 
 4. Select **Granular** to enable the configuration of the actions according to specific roles.
 
+:::tip
+After selecting **Granular**, and before selecting specific roles, this action cannot be performed by any role.
+:::
 
 ![](./assets/pic-5.2.png)
 
@@ -39,6 +42,11 @@ By default, ALL these actions are permitted for all roles.
 5. To give a specific role permission to perform the action, select the appropriate button. 
 
    For example, we can give permissions to perform the **Delete** action to the **Admin** role. 
+   
+:::tip
+When selecting a specific field, it will  be available only for the selected roles for that field, and by default will not be available for any role that was not selected.
+:::
+
 
 ![](./assets/pic-7.png)
 
