@@ -162,6 +162,9 @@ By default, ALL these actions are permitted for all roles.
 
 ![](./assets/pic-7.png)
 
+:::tip
+After selecting **Granular**, and before selecting specific roles, this action cannot be performed by any role. 
+:::
 
 ### Set Field Permissions 
 
