@@ -19,7 +19,6 @@ module.exports = {
 
       // Optional: see doc section below
       contextualSearch: false,
-      schedule: "every 1 day at 3:00 pm",
     },
     colorMode: {
       // "light" | "dark"
