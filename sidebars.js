@@ -24,6 +24,7 @@ module.exports = {
       "how-to/how-to-create-app",
       "how-to/how-to-create-entity",
       "how-to/how-to-create-entity-field",
+      "how-to/how-to-set-access-permissions",
       "how-to/how-to-commit-changes",
       "getting-started/relations",
     ],
