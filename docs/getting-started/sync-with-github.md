@@ -20,9 +20,9 @@ Amplication can push the code of your app to a GitHub repository. It will provid
 If you want to create a new repository in GitHub, you can do so [here](https://github.com/new). Please select **Initialize this repository with a README file** to make sure the new repository is not empty.
 
 :::info
-If you are using the hosted service on https://app.amplication.com, you can continue with this guide.
+If you are using the hosted service on https://app.amplication.com, you can continue with this article.
 
-In case you are hosting a local Amplication server, you should first follow [this guide](/docs/connect-server-to-github) in order to configure the Server to work with a new GitHub application.
+If you are hosting a local Amplication server, you should first follow [this guide](/docs/connect-server-to-github) in order to configure the Server to work with a new GitHub application.
 :::
 
 ## Authorize Amplication to access your GitHub account
@@ -31,14 +31,14 @@ Before integrating your application with GitHub, you need to authorize Amplicati
 
 1. Click the **Dashboard** icon in the main menu.
 2. Click the **Sync with GitHub** tab to reach the settings page.
-3. click the **Sync with GitHub** Toggle button to start the authorization process.
+3. click the **Sync with GitHub** toggle button to start the authorization process.
 4. In the new window, accept the request to allow Amplication to access your GitHub account.
 
 ## Select the GitHub repository to use
 
 After completing the authorization process, you need to select the GitHub repository to use in the integration.
 
-1. Click on the **Select Repository** button.
+1. Click the **Select Repository** button.
 2. Select the repository you want to use.
 
 ![](./assets/sync-with-github/select-repository.png)
