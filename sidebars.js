@@ -28,6 +28,21 @@ module.exports = {
       "how-to/how-to-commit-changes",
       "getting-started/relations",
     ],
+    Tutorials: [
+      {
+        type: "category",
+        label: "React Todos",
+        items: [
+          "tutorials/react-todos/react-todos-step-000",
+          "tutorials/react-todos/react-todos-step-001",
+          "tutorials/react-todos/react-todos-step-002",
+          "tutorials/react-todos/react-todos-step-003",
+          "tutorials/react-todos/react-todos-step-004",
+          "tutorials/react-todos/react-todos-step-005",
+          "tutorials/react-todos/react-todos-step-006",
+        ],
+      },
+    ],
     "Customize Your Application": [
       "custom-code/add-business-logic",
       "custom-code/add-action-to-controller",
