@@ -244,4 +244,4 @@ Users' tasks are now being saved to the Amplication backend and still show when 
 
 So far though we've done everything through HTTP calls, however, Amplication also supports GraphQL. Next, we'll update the `Todos` app to handle all data requests via GraphQL queries and mutations.
 
-To view the changes for this step, [visit here](https://github.com/MichaelSolati/amplication-x-react/compare/step-004...step-005).
+To view the changes for this step, [visit here](https://github.com/amplication/react-todos/compare/step-004...step-005).

@@ -192,4 +192,4 @@ Visiting [http://localhost:3000/](http://localhost:3000/) will greet you with a 
 
 With our backend created and running locally, we're almost ready to link it to the frontend. First, we'll need to make some additions to the code.
 
-To view the changes for this step, [visit here](https://github.com/MichaelSolati/amplication-x-react/compare/step-001...step-002).
+To view the changes for this step, [visit here](https://github.com/amplication/react-todos/compare/step-001...step-002).

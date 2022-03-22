@@ -265,4 +265,4 @@ Run the application and try creating a new account.
 
 Users are now able to login to the `Todos` application, but we're not saving their tasks in our backend yet... That'll have to be next.
 
-To view the changes for this step, [visit here](https://github.com/MichaelSolati/amplication-x-react/compare/step-003...step-004).
+To view the changes for this step, [visit here](https://github.com/amplication/react-todos/compare/step-003...step-004).

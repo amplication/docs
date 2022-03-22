@@ -288,4 +288,4 @@ Congratulations developer. Take with you what you've learned and build something
 
 If you need help or want to share what you're up to then you should join our [Discord](https://discord.com/invite/KSJCZ24vj2).
 
-To view the changes for this step, [visit here](https://github.com/MichaelSolati/amplication-x-react/compare/step-005...step-006).
+To view the changes for this step, [visit here](https://github.com/amplication/react-todos/compare/step-005...step-006).

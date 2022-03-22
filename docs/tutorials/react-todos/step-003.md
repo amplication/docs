@@ -207,4 +207,4 @@ After clicking `Execute` scroll down to see the result of the request.
 
 We will eventually need to make a few more changes to our backend, but now users can create an account as well as to sign in with their existing account.
 
-To view the changes for this step, [visit here](https://github.com/MichaelSolati/amplication-x-react/compare/step-002...step-003).
+To view the changes for this step, [visit here](https://github.com/amplication/react-todos/compare/step-002...step-003).

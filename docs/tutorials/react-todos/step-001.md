@@ -351,4 +351,4 @@ Go ahead and try adding tasks or marking them as complete.
 
 The only problem is that these tasks aren't being saved anywhere, so when you refresh the page _poof_ they're gone. In our next step, we will create our backend with Amplication to be able to save our tasks to a database!
 
-To view the changes for this step, [visit here](https://github.com/MichaelSolati/amplication-x-react/compare/step-000...step-001).
+To view the changes for this step, [visit here](https://github.com/amplication/react-todos/compare/step-000...step-001).
