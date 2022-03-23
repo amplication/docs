@@ -12,7 +12,7 @@ slug: /tutorials/react-todos/step-005
 - [HTTP Requests](#http-requests)
 - [Updating `App`](#updating-app)
 - [Updating `Auth`](#updating-auth)
-- [Updating `Task`](#updating-tasl)
+- [Updating `Task`](#updating-task)
 - [Wrap Up](#wrap-up)
 
 ## HTTP Requests
@@ -60,7 +60,7 @@ export const create = async (text, uid) => {
 - `text` - The string of the task itself.
 - `uid.id` - The unique ID of the user, this allows for querying tasks created by a specific user.
 
-One propertiy that is not being included that we had before is `id`. Why aren't we assigning it? Well, we don't need to. The Amplication backend will assign a unique ID to all entries to the database, making management of data easier.
+One property that is not being included that we had before is `id`. Why aren't we assigning it? Well, we don't need to. The Amplication backend will assign a unique ID to all entries to the database, making management of data easier.
 
 If the request fails an alert will notify the user and the function will not return anything. On the success of the request, the new task object will be returned, with all the required properties to render it in the frontend.
 

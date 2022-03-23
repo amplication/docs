@@ -125,7 +125,7 @@ On the bottom of the page, there's a status button with the text `Preparing sand
 
 This takes a few minutes, but once complete you can see the backend by clicking the `Open Sandbox environment`, but we will not be using the sandbox for the Todo app.
 
-Amplication by default creates a secure environment where all requests need to be authenticated. For this use case, we will want to ease some of those protections. Thanks to Amplications extensibility, we can build on top of everything that was generated for us.
+Amplication by default creates a secure environment where all requests need to be authenticated. For this use case, we will want to ease some of those protections. Thanks to Amplication's extensibility, we can build on top of everything that was generated for us.
 
 We'll start by downloading the backend.
 
