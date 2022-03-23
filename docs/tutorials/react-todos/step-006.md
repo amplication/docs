@@ -18,7 +18,7 @@ slug: /tutorials/react-todos/step-006
 
 So far we've done everything handled communicating with the Amplication backend by making HTTP requests. However, Amplication provides another way of interacting with the backend, GraphQL. GraphQL is a querying language that allows for readable commands that has a lot of benefits. If you want to know more about why GraphQL may be a better choice for your application I'd recommend reading [this article](https://www.apollographql.com/blog/graphql/basics/why-use-graphql/) by the Apollo team.
 
-If you're running the backend (`npm run start:backend`) you can tinker with queries on the GrapQL Playground [http://localhost:3000/graphql](http://localhost:3000/graphql).
+If you're running the backend (`npm run start:backend`) you can tinker with queries on the GraphQL Playground [http://localhost:3000/graphql](http://localhost:3000/graphql).
 
 ![GraphQL Playground](./assets/step-006-001.webp)
 
