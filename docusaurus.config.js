@@ -40,7 +40,7 @@ module.exports = {
           href: "https://github.com/amplication/amplication",
           label: "GitHub",
           position: "right",
-          activeSidebarClassName: "yuval",
+          activesidebarclassname: "yuval",
         },
       ],
     },
