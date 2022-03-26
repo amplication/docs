@@ -6,7 +6,7 @@ export default function DocItemFooterWrapper(props) {
   return (
     <>
       <DocItemFooter {...props} />
-      <Feedback></Feedback>
+      <Feedback {...props}></Feedback>
     </>
   );
 }

@@ -1,22 +1,20 @@
-import React from "react";
 import clsx from "clsx";
+import React from "react";
 import styles from "./styles.module.css";
 
-export default function Feedback() {
+export default function Feedback({ location, content }) {
   const [submitted, setSubmitted] = React.useState(false);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (submitted) return;
     const data = new FormData(e.target);
     const isHelpful = data.get("helpful") === "true";
     setSubmitted(true);
-
     window.analytics
       .track("Docs Feedback", {
-        title: document.querySelector("h1")?.textContent || "UNKNOWN",
+        title: content.contentTitle || "UNKNOWN",
         isHelpful,
-        url: window.location.href,
+        url: location.pathname,
       })
       .catch(console.warn);
   };
