@@ -10,13 +10,17 @@ export default function Feedback({ location, content }) {
     const data = new FormData(e.target);
     const isHelpful = data.get("helpful") === "true";
     setSubmitted(true);
-    window.analytics
-      .track("Docs Feedback", {
-        title: content.contentTitle || "UNKNOWN",
-        isHelpful,
-        url: location.pathname,
-      })
-      .catch(console.warn);
+    if (window.analytics) {
+      window.analytics
+        .track("Docs Feedback", {
+          title: content.contentTitle || "UNKNOWN",
+          isHelpful,
+          url: location.pathname,
+        })
+        .catch(console.warn);
+    } else {
+      console.warn("Analytics not found");
+    }
   };
 
   const onChange = (e) => e.target.form.requestSubmit();
