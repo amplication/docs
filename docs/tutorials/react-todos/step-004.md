@@ -9,255 +9,257 @@ slug: /tutorials/react-todos/step-004
 
 ## Table of Contents
 
-- [axios](#axios)
-- [Authorization Requests](#authorization-requests)
-- [The `Auth` Component](#the-auth-component)
-- [Login](#login)
-- [Wrap Up](#wrap-up)
+- [Step 1 - axios](#Step-1---axios)
+- [Step 2 - Authorization Requests](#Step-2---Authorization-Requests)
+- [Step 3 - The `Auth` Component](#Step-3---The-`Auth`-Component)
+- [Step 4 - Login](#Step-4---Login)
+- [Step 5 - Wrap Up](#Step-5---Wrap-Up)
 
-## axios
+## Step 1 - axios
 
-To allow users to sign in to the `Todos` application we'll need to prompt them for the username and password and then verify it with the backend. To make the HTTP request to the backend we'll use a library called axios. First, install axios as a dependency in the `web` subfolder:
+1. To allow users to sign in to the `Todos` application we'll need to prompt them for the username and password and then verify it with the backend. To make the HTTP request to the backend we'll use a library called axios. First, install axios as a dependency in the `web` subfolder:
 
-```bash
-cd web
-npm install axios
-```
+   ```bash
+   cd web
+   npm install axios
+   ```
 
-We'll want to configure axios to use a user's access token when making requests to the backend and have easy access to the axios library, so we'll need to set up an interceptor as well as some other functions. Create the following file `web/src/lib/http.js` and at the top of the file import axios.
+2. We'll want to configure axios to use a user's access token when making requests to the backend and have easy access to the axios library, so we'll need to set up an interceptor as well as some other functions. Create the following file `web/src/lib/http.js` and at the top of the file import axios.
 
-```js
-import axios from "axios";
-```
+   ```js
+   import axios from "axios";
+   ```
 
-Then paste in the following code:
+3. Then paste in the following code:
 
-```js
-const apiUrl = "http://localhost:3000";
-const jwtKey = "accessToken";
+   ```js
+   const apiUrl = "http://localhost:3000";
+   const jwtKey = "accessToken";
 
-axios.interceptors.request.use(
-  (config) => {
-    const { origin } = new URL(config.url);
-    const allowedOrigins = [apiUrl];
-    const accessToken = localStorage.getItem(jwtKey);
-    if (allowedOrigins.includes(origin)) {
-      config.headers.authorization = `Bearer ${accessToken}`;
-    }
-    return config;
-  },
-  (error) => {
-    return Promise.reject(error);
-  }
-);
-```
+   axios.interceptors.request.use(
+     (config) => {
+       const { origin } = new URL(config.url);
+       const allowedOrigins = [apiUrl];
+       const accessToken = localStorage.getItem(jwtKey);
+       if (allowedOrigins.includes(origin)) {
+         config.headers.authorization = `Bearer ${accessToken}`;
+       }
+       return config;
+     },
+     (error) => {
+       return Promise.reject(error);
+     }
+   );
+   ```
 
-Now every request that axios makes will take the user's JWT access token, which will be stored in local storage, and assign it to the Authorization header of every request.
+   Now every request that axios makes will take the user's JWT access token, which will be stored in local storage, and assign it to the Authorization header of every request.
 
-To simplify some tasks we'll add a function that generates the full URL of an API request when provided the endpoint, a function that checks if an access token already exists in local storage, and a function to save an access token in local storage.
+4. To simplify some tasks we'll add a function that generates the full URL of an API request when provided the endpoint, a function that checks if an access token already exists in local storage, and a function to save an access token in local storage.
 
-```js
-export const createUrl = (endpoint) => new URL(endpoint, apiUrl).href;
-export const isStoredJwt = () => Boolean(localStorage.getItem(jwtKey));
-export const setStoredJwt = (accessToken) =>
-  localStorage.setItem(jwtKey, accessToken);
-```
+   ```js
+   export const createUrl = (endpoint) => new URL(endpoint, apiUrl).href;
+   export const isStoredJwt = () => Boolean(localStorage.getItem(jwtKey));
+   export const setStoredJwt = (accessToken) =>
+     localStorage.setItem(jwtKey, accessToken);
+   ```
 
-Finally, we'll want to expose the `get`, `patch`, and `post` methods axios provides.
+5. Finally, we'll want to expose the `get`, `patch`, and `post` methods axios provides.
 
-```js
-export const get = axios.get;
-export const patch = axios.patch;
-export const post = axios.post;
-```
+   ```js
+   export const get = axios.get;
+   export const patch = axios.patch;
+   export const post = axios.post;
+   ```
 
-## Authorization Requests
+## Step 2 - Authorization Requests
 
-Instead of calling our API endpoints with axios directly from our components, we will abstract the logic of the requests so if we ever need to make changes to the behavior of the code we can do it in just one place. Create the following file `web/src/lib/auth.js` and at the top of the file, we'll import some of the functions we created in the `web/src/lib/http.js` file.
+Instead of calling our API endpoints with axios directly from our components, we will abstract the logic of the requests so if we ever need to make changes to the behavior of the code we can do it in just one place.
 
-```js
-import { createUrl, get, isStoredJwt, post, setStoredJwt } from "./http";
-```
+1. Create the following file `web/src/lib/auth.js` and at the top of the file, we'll import some of the functions we created in the `web/src/lib/http.js` file.
 
-First, add the `me` function:
+   ```js
+   import { createUrl, get, isStoredJwt, post, setStoredJwt } from "./http";
+   ```
 
-```js
-export const me = async () => {
-  return isStoredJwt()
-    ? (await get(createUrl("/api/me")).catch(() => null))?.data
-    : null;
-};
-```
+2. First, add the `me` function:
 
-`me` will check if we have an access token stored, because if there is none then there is no way this request would succeed. If the token exists, it will make a `GET` request to the `/api/me` endpoint we created in [Step 3](./step-003). On the success of the request, the current user's user object will be returned.
+   ```js
+   export const me = async () => {
+     return isStoredJwt()
+       ? (await get(createUrl("/api/me")).catch(() => null))?.data
+       : null;
+   };
+   ```
 
-Next, add the `login` function:
+   `me` will check if we have an access token stored, because if there is none then there is no way this request would succeed. If the token exists, it will make a `GET` request to the `/api/me` endpoint we created in [Tutorial Step 3](./step-003). On the success of the request, the current user's user object will be returned.
 
-```js
-export const login = async (username, password) => {
-  const result = (
-    await post(createUrl("/api/login"), { username, password }).catch(
-      () => null
-    )
-  )?.data;
+3. Next, add the `login` function:
 
-  if (!result) {
-    return alert("Could not login");
-  }
-  setStoredJwt(result.accessToken);
-  return me();
-};
-```
+   ```js
+   export const login = async (username, password) => {
+     const result = (
+       await post(createUrl("/api/login"), { username, password }).catch(
+         () => null
+       )
+     )?.data;
 
-`login` will make a `POST` request to the `/api/login` endpoint, sending the username and password of our user. If the request fails, like when a user doesn't exist, an alert will pop up notifying the user of the failure. If the request succeeds the access token will be saved into local storage, and then the `me` function will be called to return the current user's user object.
+     if (!result) {
+       return alert("Could not login");
+     }
+     setStoredJwt(result.accessToken);
+     return me();
+   };
+   ```
 
-Finally, add the `signup` function:
+   `login` will make a `POST` request to the `/api/login` endpoint, sending the username and password of our user. If the request fails, like when a user doesn't exist, an alert will pop up notifying the user of the failure. If the request succeeds the access token will be saved into local storage, and then the `me` function will be called to return the current user's user object.
 
-```js
-export const signup = async (username, password) => {
-  const result = (
-    await post(createUrl("/api/signup"), { username, password }).catch(
-      () => null
-    )
-  )?.data;
+4. Finally, add the `signup` function:
 
-  if (!result) {
-    return alert("Could not sign up");
-  }
-  setStoredJwt(result.accessToken);
-  return me();
-};
-```
+   ```js
+   export const signup = async (username, password) => {
+     const result = (
+       await post(createUrl("/api/signup"), { username, password }).catch(
+         () => null
+       )
+     )?.data;
 
-`signup` will make a `POST` request to the `/api/signup` endpoint, which we also created in [Step 3](./step-003), sending the username and password of our new user. If the request fails, like if the username is already used, an alert will pop up notifying the user of the failure. If the request succeeds the access token will be saved into local storage, and then the `me` function will be called to return the current user's user object.
+     if (!result) {
+       return alert("Could not sign up");
+     }
+     setStoredJwt(result.accessToken);
+     return me();
+   };
+   ```
 
-## The `Auth` Component
+   `signup` will make a `POST` request to the `/api/signup` endpoint, which we also created in [Tutorial Step 3](./step-003), sending the username and password of our new user. If the request fails, like if the username is already used, an alert will pop up notifying the user of the failure. If the request succeeds the access token will be saved into local storage, and then the `me` function will be called to return the current user's user object.
 
-We need a component that can collect the username and password from the user and then make the appropriate request with the functions we just added. Create `web/src/Auth.js` and paste the following code:
+## Step 3 - The `Auth` Component
 
-```js
-import { useState } from "react";
-import { login, signup } from "./lib/auth";
+1. We need a component that can collect the username and password from the user and then make the appropriate request with the functions we just added. Create `web/src/Auth.js` and paste the following code:
 
-export default function Auth({ setUser }) {
-  const [isLogin, setIsLogin] = useState(true);
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirm, setConfirm] = useState("");
+   ```js
+   import { useState } from "react";
+   import { login, signup } from "./lib/auth";
 
-  const handleUsernameChange = (e) => setUsername(e.target.value.toLowerCase());
-  const handlePasswordChange = (e) => setPassword(e.target.value);
-  const handleConfirmChange = (e) => setConfirm(e.target.value);
+   export default function Auth({ setUser }) {
+     const [isLogin, setIsLogin] = useState(true);
+     const [username, setUsername] = useState("");
+     const [password, setPassword] = useState("");
+     const [confirm, setConfirm] = useState("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const func = isLogin ? login : signup;
-    if (!isLogin) {
-      if (password !== confirm) {
-        return alert("Passwords do not match");
-      }
-    }
-    const result = await func(username, password);
-    setUser(result);
-  };
+     const handleUsernameChange = (e) => setUsername(e.target.value.toLowerCase());
+     const handlePasswordChange = (e) => setPassword(e.target.value);
+     const handleConfirmChange = (e) => setConfirm(e.target.value);
 
-  return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <h2>{isLogin ? "Login" : "Sign Up"}</h2>
-        <input
-          name="username"
-          type="text"
-          placeholder="username"
-          value={username}
-          onChange={handleUsernameChange}
-          required
-        />
-        <input
-          name="password"
-          type="password"
-          placeholder="password"
-          value={password}
-          onChange={handlePasswordChange}
-          required
-        />
-        {!isLogin && (
-          <input
-            name="confirmPassword"
-            type="password"
-            placeholder="confirm password"
-            value={confirm}
-            onChange={handleConfirmChange}
-            required
-          />
-        )}
-        <button type="submit">Submit</button>
-        <button type="button" onClick={() => setIsLogin(!isLogin)}>
-          {isLogin ? "Need an account?" : "Already have an account?"}
-        </button>
-      </form>
-    </div>
-  );
-}
-```
+     const handleSubmit = async (e) => {
+       e.preventDefault();
+       const func = isLogin ? login : signup;
+       if (!isLogin) {
+         if (password !== confirm) {
+           return alert("Passwords do not match");
+         }
+       }
+       const result = await func(username, password);
+       setUser(result);
+     };
 
-This component renders a form to the user prompting them for their username and password to log in. If they don't have an account yet then a button on the bottom of the page will toggle the form to be for creating a new account, which adds a new field for a user to confirm their password.
+     return (
+       <div>
+         <form onSubmit={handleSubmit}>
+           <h2>{isLogin ? "Login" : "Sign Up"}</h2>
+           <input
+             name="username"
+             type="text"
+             placeholder="username"
+             value={username}
+             onChange={handleUsernameChange}
+             required
+           />
+           <input
+             name="password"
+             type="password"
+             placeholder="password"
+             value={password}
+             onChange={handlePasswordChange}
+             required
+           />
+           {!isLogin && (
+             <input
+               name="confirmPassword"
+               type="password"
+               placeholder="confirm password"
+               value={confirm}
+               onChange={handleConfirmChange}
+               required
+             />
+           )}
+           <button type="submit">Submit</button>
+           <button type="button" onClick={() => setIsLogin(!isLogin)}>
+             {isLogin ? "Need an account?" : "Already have an account?"}
+           </button>
+         </form>
+       </div>
+     );
+   }
+   ```
 
-On submit the `login` or `signup` function from `web/src/lib/auth.js` is called, and the result is passed into the `setUser` function.
+   This component renders a form to the user prompting them for their username and password to log in. If they don't have an account yet then a button on the bottom of the page will toggle the form to be for creating a new account, which adds a new field for a user to confirm their password.
 
-## Login
+   On submit the `login` or `signup` function from `web/src/lib/auth.js` is called, and the result is passed into the `setUser` function.
 
-With the authentication component created we just need to show it to users. Start by replacing the imports at the top of `web/src/App.js` with this:
+## Step 4 - Login
 
-```js
-import { useState, useEffect } from "react";
-import "./App.css";
+1. With the authentication component created we just need to show it to users. Start by replacing the imports at the top of `web/src/App.js` with this:
 
-import { me } from "./lib/auth";
+   ```js
+   import { useState, useEffect } from "react";
+   import "./App.css";
 
-import Auth from "./Auth";
-import CreateTask from "./CreateTask";
-import Tasks from "./Tasks";
-```
+   import { me } from "./lib/auth";
 
-Then create a `user` and `setUser` and add the following `useEffect` hook.
+   import Auth from "./Auth";
+   import CreateTask from "./CreateTask";
+   import Tasks from "./Tasks";
+   ```
 
-```diff
-function App() {
-+  const [user, setUser] = useState();
-  const [tasks, setTasks] = useState([]);
+2. Then create a `user` and `setUser` and add the following `useEffect` hook.
 
-+  useEffect(() => {
-+    async function getUser() {
-+      const result = await me();
-+      setUser(result);
-+    }
-+    getUser();
-+  }, [setUser]);
-```
+   ```diff
+   function App() {
+   +  const [user, setUser] = useState();
+     const [tasks, setTasks] = useState([]);
 
-We've created our `user` variable and can update it with the `setUser` function. We've also implemented the `useEffect` hook, which will allow code to be executed when the component mounts. So, when the `App` component mounts, we call the `me` function from `web/src/lib/auth.js` to set the current user to our `user` variable.
+   +  useEffect(() => {
+   +    async function getUser() {
+   +      const result = await me();
+   +      setUser(result);
+   +    }
+   +    getUser();
+   +  }, [setUser]);
+   ```
 
-Finally, replace the `return` with this:
+   We've created our `user` variable and can update it with the `setUser` function. We've also implemented the `useEffect` hook, which will allow code to be executed when the component mounts. So, when the `App` component mounts, we call the `me` function from `web/src/lib/auth.js` to set the current user to our `user` variable.
 
-```js
-return (
-  <div>
-    {user ? (
-      <div>
-        <CreateTask addTask={addTask} />
-        <Tasks tasks={tasks} toggleCompleted={toggleCompleted} />
-      </div>
-    ) : (
-      <Auth setUser={setUser} />
-    )}
-  </div>
-);
-```
+3. Finally, replace the `return` with this:
 
-Now if a `user` object exists, which only occurs when they're logged in, the application will show the user's tasks. If a `user` object doesn't exist they are shown the auth screen, which when a user logs in or signs up, will set the `user` variable with the `setUser` function that is passed into it.
+   ```js
+   return (
+     <div>
+       {user ? (
+         <div>
+           <CreateTask addTask={addTask} />
+           <Tasks tasks={tasks} toggleCompleted={toggleCompleted} />
+         </div>
+       ) : (
+         <Auth setUser={setUser} />
+       )}
+     </div>
+   );
+   ```
 
-## Wrap Up
+   Now if a `user` object exists, which only occurs when they're logged in, the application will show the user's tasks. If a `user` object doesn't exist they are shown the auth screen, which when a user logs in or signs up, will set the `user` variable with the `setUser` function that is passed into it.
+
+## Step 5 - Wrap Up
 
 Run the application and try creating a new account.
 
