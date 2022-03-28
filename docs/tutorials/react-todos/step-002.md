@@ -9,13 +9,13 @@ slug: /tutorials/react-todos/step-002
 
 ## Table of Contents
 
-- [Step 1 - Create a New App](#Step-1---Create-a-New-App)
-- [Step 2 - Create an Entity](#Step-2---Create-an-Entity)
-- [Step 3 - Create a Role](#Step-3---Create-a-Role)
-- [Step 4 - Assign Permissions](#Step-4---Assign-Permissions)
-- [Step 5 - Build the Backend](#Step-5---Build-the-Backend)
-- [Step 6 - Run the Backend](#Step-6---Run-the-Backend)
-- [Step 7 - Wrap Up](#Step-7---Wrap-Up)
+- [Step 1 - Create a New App](#step-1---create-a-new-app)
+- [Step 2 - Create an Entity](#step-2---create-an-entity)
+- [Step 3 - Create a Role](#step-3---create-a-role)
+- [Step 4 - Assign Permissions](#step-4---assign-permissions)
+- [Step 5 - Build the Backend](#step-5---build-the-backend)
+- [Step 6 - Run the Backend](#step-6---run-the-backend)
+- [Step 7 - Wrap Up](#step-7---wrap-up)
 
 ## Step 1 - Create a New App
 

@@ -9,11 +9,11 @@ slug: /tutorials/react-todos/step-004
 
 ## Table of Contents
 
-- [Step 1 - axios](#Step-1---axios)
-- [Step 2 - Authorization Requests](#Step-2---Authorization-Requests)
-- [Step 3 - The Auth Component](#Step-3---The-Auth-Component)
-- [Step 4 - Login](#Step-4---Login)
-- [Step 5 - Wrap Up](#Step-5---Wrap-Up)
+- [Step 1 - axios](#step-1---axios)
+- [Step 2 - Authorization Requests](#step-2---authorization-requests)
+- [Step 3 - The Auth Component](#step-3---the-auth-component)
+- [Step 4 - Login](#step-4---login)
+- [Step 5 - Wrap Up](#step-5---wrap-up)
 
 ## Step 1 - axios
 
