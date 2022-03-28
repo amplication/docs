@@ -10,7 +10,7 @@ slug: /tutorials/react-todos/step-006
 ## Table of Contents
 
 - [Step 1 - GraphQL](#Step-1---GraphQL)
-- [Step 2 - Updating lib/auth.js](#Step-2---Updating-lib/auth.js)
+- [Step 2 - Updating libauth.js](#Step-2---Updating-libauth.js)
 - [Step 3 - Updating lib/tasks.js](#Step-3---Updating-lib/tasks.js)
 - [Step 4 - Wrap Up](#Step-4---Wrap-Up)
 
@@ -73,7 +73,7 @@ If you're running the backend (`npm run start:backend`) you can tinker with quer
    export { gql } from "@apollo/client";
    ```
 
-## Step 2 - Updating lib/auth.js
+## Step 2 - Updating libauth.js
 
 Open up `web/src/lib/auth.js` and delete all the code in the file. At the top of the file, we'll import some of the functions we created in the `web/src/lib/apollo.js` file.
 
