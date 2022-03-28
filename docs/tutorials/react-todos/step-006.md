@@ -11,10 +11,10 @@ slug: /tutorials/react-todos/step-006
 
 - [Step 1 - GraphQL](#Step-1---GraphQL)
 - [Step 2 - Updating lib/auth.js](#Step-2---Updating-lib/auth.js)
-- [Step 3 - Updating lib/tasks.js](#uStep-3---Updating-lib/tasks.js)
+- [Step 3 - Updating lib/tasks.js](#Step-3---Updating-lib/tasks.js)
 - [Step 4 - Wrap Up](#Step-4---Wrap-Up)
 
-## Step 1 - GraphQ
+## Step 1 - GraphQL
 
 So far we've handled communication with the Amplication backend by making HTTP requests. However, Amplication provides another way of interacting with the backend, GraphQL. GraphQL is a querying language that allows for readable commands with many benefits. If you want to know more about why GraphQL may be a better choice for your application I'd recommend reading [this article](https://www.apollographql.com/blog/graphql/basics/why-use-graphql/) by the Apollo team.
 
