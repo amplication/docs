@@ -9,10 +9,10 @@ slug: /tutorials/react-todos/step-003
 
 ## Table of Contents
 
-- [Step 1 - Creating Users](#Step-1---Creating-Users)
-- [Step 2 - Getting the Signed In User](#Step-2---Getting-the-Signed-In-User)
-- [Step 3 - Run It Again](#Step-3---Run-It-Again)
-- [Step 4 - Wrap Up](#Step-4---Wrap-Up)
+- [Step 1 - Creating Users](#step-1---creating-users)
+- [Step 2 - Getting the Signed In User](#step-2---getting-the-signed-in-user)
+- [Step 3 - Run It Again](#step-3---run-it-again)
+- [Step 4 - Wrap Up](#step-4---wrap-up)
 
 ## Step 1 - Creating Users
 
