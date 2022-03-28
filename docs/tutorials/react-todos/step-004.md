@@ -11,7 +11,7 @@ slug: /tutorials/react-todos/step-004
 
 - [Step 1 - axios](#Step-1---axios)
 - [Step 2 - Authorization Requests](#Step-2---Authorization-Requests)
-- [Step 3 - The `Auth` Component](#Step-3---The-`Auth`-Component)
+- [Step 3 - The Auth Component](#Step-3---The-Auth-Component)
 - [Step 4 - Login](#Step-4---Login)
 - [Step 5 - Wrap Up](#Step-5---Wrap-Up)
 
@@ -133,7 +133,7 @@ Instead of calling our API endpoints with axios directly from our components, we
 
    `signup` will make a `POST` request to the `/api/signup` endpoint, which we also created in [Tutorial Step 3](./step-003), sending the username and password of our new user. If the request fails, like if the username is already used, an alert will pop up notifying the user of the failure. If the request succeeds the access token will be saved into local storage, and then the `me` function will be called to return the current user's user object.
 
-## Step 3 - The `Auth` Component
+## Step 3 - The Auth Component
 
 1. We need a component that can collect the username and password from the user and then make the appropriate request with the functions we just added. Create `web/src/Auth.js` and paste the following code:
 
