@@ -15,13 +15,12 @@ Let’s get started.
 
 ## Step 1 - Create a New App
 
-1. Sign-in  to [app.amplication.com](https://app.amplication.com).
+1. Sign-in to [app.amplication.com](https://app.amplication.com).
 
    You should land on the _New App_ page. If you're not on the _New App_ page, click the Amplication logo in the top-left corner to reach the _My Apps_ page.
 
-2. Click  the **New App** button.
-3. In the _New App_ page, click  **Start from Scratch** to create an empty app.
-
+2. Click the **New App** button.
+3. In the _New App_ page, click **Start from Scratch** to create an empty app.
 
 ![](./assets/pic0.png)
 
@@ -38,12 +37,12 @@ At this stage, there's only one entity, **User**. This is auto-generated when yo
 In this example, we'll now add another entity called “Project”.
 
 1. Click **Add Entity**.
-2. In the _New Entity_ dialog, type  “Project”.
+2. In the _New Entity_ dialog, type “Project”.
 3. Click **Create Entity**.
 
 ![](./assets/pic-2.jpg)
 
-You now have a new  entity named _Project_. Notice that the added entity comes with auto-generated values such as “Plural Display Name” and some default fields – **ID**, **Created At**, and **Updated At**.
+You now have a new entity named _Project_. Notice that the added entity comes with auto-generated values such as “Plural Display Name” and some default fields – **ID**, **Created At**, and **Updated At**.
 
 ## Step 3 - Add Entity Fields
 
@@ -57,7 +56,7 @@ To describe your project add some new fields. For this example, add these fields
 ### Create the Name Field
 
 1. In the _Entity Fields_ text box (above the list of fields), type “Name”.
-2. Click **Add field** (or just press Enter). The new field is added to the list and the field's property panel opens. 
+2. Click **Add field** (or just press Enter). The new field is added to the list and the field's property panel opens.
 3. Click the **Required Field** toggle to configure the _Name_ field as required.
 4. Leave the defaults for the other properties (_Searchable_ active, _Data Type_ "Single Line Text", and _Max Length_ "1000".)
 
@@ -67,7 +66,6 @@ To describe your project add some new fields. For this example, add these fields
 All changes are saved automatically.
 :::
 
-
 ### Create the Description Field
 
 1. In the _Entity Fields_ text box type “Description”.
@@ -76,9 +74,9 @@ All changes are saved automatically.
 
 :::info
 
-If the **Searchable** setting is not activated, the search cannot be based on the field. The field visibility is determined by the settings on the **Permissions** tab. 
+If the **Searchable** setting is not activated, the search cannot be based on the field. The field visibility is determined by the settings on the **Permissions** tab.
 
-For example, if the customer's email address is visible (permissions set to **All Roles** for search), but the field is not set as **Searchable** the user will be able to search for customers by name, phone, or any other field but not by email address. However, the results will still include the email address. 
+For example, if the customer's email address is visible (permissions set to **All Roles** for search), but the field is not set as **Searchable** the user will be able to search for customers by name, phone, or any other field but not by email address. However, the results will still include the email address.
 
 :::
 
@@ -98,7 +96,7 @@ If needed, you can manually change the field name in the field's properties pane
 ### Create the Owner Field
 
 1. In the _Entity Fields_ text box type “Owner”.
-2. Click **Add field** \(or just press Enter\). The new field is added to the list and the field's property panel opens. 
+2. Click **Add field** \(or just press Enter\). The new field is added to the list and the field's property panel opens.
 3. Change the _Data Type_ from **Single Line Text** to **Relation to Entity**.
 4. In the _Related Entity Id_ field select **User**.
 5. Click the **Required Field** toggle to make the _Owner_ field required.
@@ -106,8 +104,6 @@ If needed, you can manually change the field name in the field's properties pane
 :::tip
 You might find it easier to first add all the fields you want, one after another, and only afterwards set the properties of each field.
 :::
-
-
 
 ## Step 4 - Create Roles
 
@@ -144,45 +140,28 @@ By default, ALL these actions are permitted for all roles.
 1. Click the Entities icon in the main menu (left sidebar) to open the _Entities_ page.
 2. Click the _Project_ entity.
 3. In the _Project_ page click the _Permissions_ tab. This opens the Permissions settings.
-4. By default, all actions (_View_, _Create_, _Update_, _Delete_, and _Search_) are set to **All Roles**. 
+4. By default, all actions (_View_, _Create_, _Update_, _Delete_, and _Search_) are set to **All Roles**.
 5. Fine tune permissions by changing the *Delete* permissions from **All Roles** to **Granular** and then select from the displayed roles the _Admin_ role. This ensures that only users with the _Admin_ role can delete projects.
 
 ![](./assets/pic-5.jpg)
 
-6. Select **Granular** to enable the configuration of the actions according to specific roles.
-
-   The roles, **Manager** and **Admin**, are displayed.
-
-![](./assets/pic-5.2.png)
-
-
-7. To give a specific roles permission to perform the action, select the appropriate button. 
-
-   In this example, we give permissions to perform **Delete** actions only to the **Admin** role. 
-
-![](./assets/pic-7.png)
-
 :::tip
-After selecting **Granular**, and before selecting specific roles, this action cannot be performed by any role. 
+Once you have selected **Granular** on an action such as _Delete_, you have to select specific roles, or no one at all can use that action.
 :::
 
-### Set Field Permissions 
+### Set Field Permissions
 
 We will now set permissions at the field level.
 
- 1. In the **Update** action, click **+ Add Field** and select the **Start Date** and **ID** fields from the drop-down list.
-
+1.  In the **Update** action, click **+ Add Field** and select the **Start Date** and **ID** fields from the drop-down list.
 
 ![](./assets/pic-8.png)
 
-
 2. We now select the roles to associate with each selected field.
 
-   In this example, for the  _Update_ action, apply **Admin** permissions to the **startDate**, and apply both **Admin** and **Manager** permissions to the **id** field.  
-
+   In this example, for the _Update_ action, apply **Admin** permissions to the **startDate**, and apply both **Admin** and **Manager** permissions to the **id** field. To do this, you first need to select **Admin** and **Manager** from the roles on this action, so you can apply those roles on the specific fields.
 
 ![](./assets/pic-9.png)
-
 
 ## Step 6 - Commit Your Changes
 
@@ -250,6 +229,5 @@ To do so:
 ![](./assets/pic13.jpg)
 
 3. Since these changes were intentional and we're happy to commit them, click **Commit changes and build**.
-
 
 **You are now ready to build a new version of your app. Great work!**
