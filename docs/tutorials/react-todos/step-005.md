@@ -11,7 +11,7 @@ slug: /tutorials/react-todos/step-005
 
 - [Step 1 - HTTP Requests](#Step-1---HTTP-Requests)
 - [Step 2 - Updating App](#Step-2---Updating-App)
-- [Step 3 - Updating Auth](Step-3---Updating-Auth)
+- [Step 3 - Updating Auth](#Step-3---Updating-Auth)
 - [Step 4 - Updating Task](#Step-4---Updating-Task)
 - [Step 5 - Wrap Up](#Step-5---Wrap-Up)
 
@@ -190,6 +190,7 @@ import * as tasksLib from "./lib/tasks";
    A new function is created `setUserFetchTasks`, which takes a user object and updates the `user` variable in the `App` function. If there is a new user object the `getAll` function is called to fetch all tasks belonging to the user. With the tasks fetched `setTasks` is called to updated the `tasks` variable in the `App` function.
 
    `useEffect` is updated to call `setUserFetchTasks` instead of `setUser` to handle updating the `user` and `tasks` when the app is loaded.
+
 
 ## Step 3 - Updating Auth
 
