@@ -56,5 +56,5 @@ dockerized
 signup
 subfolder
 subfolders
-libauth
-libtasks
+libauthjs
+libtasksjs
