@@ -13,6 +13,7 @@ perf
 init
 GraphQL
 amplication
+amplication's
 scalable
 ORM
 APIs
@@ -58,3 +59,4 @@ subfolder
 subfolders
 libauthjs
 libtasksjs
+Posthog
