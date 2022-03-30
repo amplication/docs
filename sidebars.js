@@ -13,7 +13,10 @@ module.exports = {
       "getting-started/connect-server-to-github",
       "getting-started/helm-chart",
     ],
-    About: ["about/product-roadmap"],
+    "About": [
+        "about/product-roadmap",
+        "getting-started/phone-home",
+    ],
     "Generated API": [
       "getting-started/generated-app-api",
       "api/generated-api-sorting",
