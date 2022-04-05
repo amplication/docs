@@ -210,7 +210,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class TaskComponent {
   @Input() task: any = {};
-  @Output() completed = new EventEmitter<number>();
+  @Output() completed = new EventEmitter<any>();
 }
 ```
 
@@ -252,7 +252,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class TasksComponent {
   @Input() tasks: any[] = [];
-  @Output() completed = new EventEmitter<number>();
+  @Output() completed = new EventEmitter<any>();
 }
 ```
 
