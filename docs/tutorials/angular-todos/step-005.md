@@ -11,9 +11,8 @@ slug: /tutorials/angular-todos/step-005
 
 - [Step 1 - HTTP Requests](#step-1---http-requests)
 - [Step 2 - Updating App](#step-2---updating-app)
-- [Step 3 - Updating Auth](#step-3---updating-auth)
-- [Step 4 - Updating Task](#step-4---updating-task)
-- [Step 5 - Wrap Up](#step-5---wrap-up)
+- [Step 3 - Updating Task](#step-3---updating-task)
+- [Step 4 - Wrap Up](#step-4---wrap-up)
 
 ## Step 1 - HTTP Requests
 
@@ -21,11 +20,11 @@ Users can log in to their accounts, but their tasks are still not persisting. Wh
 
 We will need a new dependency though, `qs`, in the `web` subfolder. `qs` is the library we use to stringify an object for `GET` requests.
 
-   ```bash
-   cd web
-   npm install qs
-   npm install -D @types/qs
-   ```
+```bash
+cd web
+npm install qs
+npm install -D @types/qs
+```
 
 We also need to create a service to handle these requests. Also in your `web` subfolder run:
 
@@ -48,22 +47,22 @@ import { Injectable } from '@angular/core';
 
    ```ts
    export class TasksService {
-    constructor(private http: HttpClient) {}
+      constructor(private http: HttpClient) {}
    }
    ```
 
 2. Second, add the `create` method to the `TasksService`:
 
    ```ts
-    create(text: string, uid: string) {
+   create(text: string, uid: string) {
       const url = new URL('/api/tasks', environment.apiUrl).href;
       return this.http
-        .post(url, { completed: false, text, uid: { id: uid } })
-        .pipe(
-          catchError(() => of(null)),
-          map((result: any) => (result ? result : alert('Could not create task')))
-        );
-    }
+         .post(url, { completed: false, text, uid: { id: uid } })
+         .pipe(
+            catchError(() => of(null)),
+            map((result: any) => (result ? result : alert('Could not create task')))
+         );
+   }
    ```
 
    `create` will take two arguments, the text content of a new task as well as the unique ID of the user. It will make a `POST` request to the `/api/tasks` endpoint, sending a task object. The task object has three properties:
@@ -79,24 +78,24 @@ import { Injectable } from '@angular/core';
 3. Next, add the `getAll` method:
 
    ```ts
-    getAll(uid: string) {
+   getAll(uid: string) {
       const query = qs.stringify({
-        where: { uid: { id: uid } },
-        orderBy: { createdAt: 'asc' },
+         where: { uid: { id: uid } },
+         orderBy: { createdAt: 'asc' },
       });
       const url = new URL(`/api/tasks?${query}`, environment.apiUrl).href;
       return this.http.get(url).pipe(
-        catchError(() => of(null)),
-        map((result: any) => {
-          if (!result) {
-            alert('Could not get tasks');
-            return [];
-          }
+         catchError(() => of(null)),
+         map((result: any) => {
+            if (!result) {
+               alert('Could not get tasks');
+               return [];
+            }
   
-          return result;
-        })
+            return result;
+         })
       );
-    }
+   }
    ```
 
    `getAll` takes one argument, the unique ID of the user. It will make a `GET` request to the `/api/tasks` endpoint, sending a query. In this case, we're looking to return all the tasks for a user, and the query object reflects that. Looking at the object should help make sense of what's going on.
@@ -106,13 +105,13 @@ import { Injectable } from '@angular/core';
 4. Then, add the `update` method:
 
    ```ts
-    update(task: any) {
+   update(task: any) {
       const url = new URL(`/api/tasks/${task.id}`, environment.apiUrl).href;
       return this.http.patch(url, { completed: !task.completed }).pipe(
-        catchError(() => of(null)),
-        map((result: any) => (result ? result : alert('Could not update task')))
+         catchError(() => of(null)),
+         map((result: any) => (result ? result : alert('Could not update task')))
       );
-    }
+   }
    ```
 
    `update` takes one argument, the task object. It will make a `PATCH` request to the `/api/tasks/{TASK_ID}` endpoint. The ID of the task object is included in the request and all that is being sent in the body of the request is a `completed` property, which is toggled to its new state. `PATCH` requests do not require a complete object, and only update the properties included in the request. In this case, we only want to update the `completed` property, so that's the only value we send. If the request fails an alert will pop up notifying the user of the failure. If the request succeeds, then an Observable emitting the updated task object will be returned.
@@ -127,23 +126,23 @@ import { Injectable } from '@angular/core';
 
    Then add and configure the `TasksService` to the `providers` in the `@NgModule` decorator:
 
-    ```diff
+   ```diff
       providers: [
-        { provide: HTTP_INTERCEPTORS, useClass: JWTService, multi: true },
-        AuthService,
-    +    TasksService,
+         { provide: HTTP_INTERCEPTORS, useClass: JWTService, multi: true },
+         AuthService,
+   +      TasksService,
       ],
       bootstrap: [AppComponent]
-    })
-    export class AppModule { }
-    ```
+   })
+   export class AppModule { }
+   ```
 
 > The Angular CLI and the Typescript compiler may complain about `qs`. This can be resolved in two steps. In `web/angular.json` add the following to the `projects.web.architect.build.options`:
 >
 > ```json
 > "allowedCommonJsDependencies": [
 >    "qs"
->  ],
+> ],
 > ```
 >
 > Additionally in `web/tsconfig.json` add the following to the `compilerOptions`:
@@ -166,11 +165,11 @@ import { AuthService } from './auth.service';
 
    ```diff
    export class AppComponent implements OnInit {
-    tasks: any[] = [];
-    user: any;
+      tasks: any[] = [];
+      user: any;
   
-   - constructor(private auth: AuthService) {}
-   + constructor(private auth: AuthService, private ts: TasksService) {}
+   -   constructor(private auth: AuthService) {}
+   +   constructor(private auth: AuthService, private ts: TasksService) {}
    ```
 
 2. In `AppComponent` we can now remove the `createTask`, as the task object is created by the `create` method of the `TasksService`.
@@ -178,29 +177,29 @@ import { AuthService } from './auth.service';
    ```diff
    - createTask(text: string) {
    -   return {
-   -     id: this.tasks.length,
-   -     text,
-   -     completed: false,
+   -      id: this.tasks.length,
+   -      text,
+   -      completed: false,
    -   };
    - }
   
-    addTask(task: string) {
+   addTask(task: string) {
       const newTask = this.createTask(task);
       this.tasks.push(newTask);
-    }
+   }
    ```
 
 3. We'll next modify the `addTask` method:
 
    ```diff
-    addTask(task: string) {
+   addTask(task: string) {
    -   const newTask = this.createTask(task);
    -   this.tasks.push(newTask);
    +   this.ts.create(task, this.user.id).subscribe({
-   +     next: (newTask: any) => {
-   +       if (!newTask) return;
-   +       this.tasks.push(newTask);
-   +     },
+   +      next: (newTask: any) => {
+   +         if (!newTask) return;
+   +         this.tasks.push(newTask);
+   +      },
    +   });
     }
    ```
@@ -211,87 +210,48 @@ import { AuthService } from './auth.service';
 
    ```diff
    - completed(id: number) {
-   -  const i = this.tasks.findIndex((t) => t.id === id);
-   -  this.tasks[i].completed = !this.tasks[i].completed;
+   -    const i = this.tasks.findIndex((t) => t.id === id);
+   -    this.tasks[i].completed = !this.tasks[i].completed;
    + completed(task: any) {
-   +   this.ts.update(task).subscribe({
-   +     next: (updatedTask: any) => {
-   +       if (!updatedTask) return;
-   +       const i = this.tasks.findIndex((t) => t.id === updatedTask.id);
-   +       this.tasks[i].completed = !this.tasks[i].completed;
-   +     },
-   +   });
-    }
+   +    this.ts.update(task).subscribe({
+   +       next: (updatedTask: any) => {
+   +          if (!updatedTask) return;
+   +          const i = this.tasks.findIndex((t) => t.id === updatedTask.id);
+   +          this.tasks[i].completed = !this.tasks[i].completed;
+   +       },
+   +    });
+   }
    ```
 
    `completed` is now an asynchronous HTTP request as well, so again we'll be working with RxJS Observables. The method is also updated to instead accept the task object that is being toggled rather than the ID of the task being updated. We `subscribe` to see when the `update` resolves, and when it does, we update the `completed` property of the task in the `tasks` array of the `AppComponent`. If the request fails then `updatedTask` will have no value, and the `subscribe` listener will end right away.
 
-5. Finally, we'll make some updates regarding the `ngOnInit` lifecycle:
+5. Finally, we'll make some updates regarding the `setUser` method:
 
    ```diff
-    ngOnInit(): void {
-   -   this.auth.me().subscribe({ next: (user: any) => (this.user = user) });
-   +   this.auth.me().subscribe({
-   +     next: (user: any) => {
-   +       this.user = user;
-   +       if (!user) return;
-   +       this.ts.getAll(user.id).subscribe({
-   +         next: (tasks: any[]) => {
-   +           this.tasks = tasks;
-   +         },
-   +       });
-   +     },
-   +   });
-    }
+   setUser(user: any) {
+      this.user = user;
+      if (!user) return;
+      this.ts.getAll(user.id).subscribe({
+         next: (tasks: any[]) => (this.tasks = tasks),
+      });
+   }
    ```
 
-   Now, when the `user` object is fetched on initialization of the `AppComponent` we also will attempt to fetch all tasks that belong to a user, if the `user` object exists.
+   Now, when the `user` object is set, like on initialization of the `AppComponent`, we also will attempt to fetch all tasks that belong to a user.
 
+## Step 3 - Updating Tasks
 
-## Step 3 - Updating Auth
-
-Tasks belonging to a user are fetched on a load of the application if the user is signed in. But if a user was not signed in at the start of the application then we'll need to fetch the user's tasks when they sign in.
-
-We've already added a function to update the `user` variable and then fetch and update their `tasks`, so we just need to update the `Auth` component to use this function. Update the `render` of the `App` function in `web/src/App.js` as so:
+With almost everything in place, just a few changes to the `TaskComponent`'s template so that it now emits the `task` object rather than just the `task`'s ID. Make the following changes to `web/src/app/task/task.component.html`
 
 ```diff
-return (
-  <div>
-    {user ? (
-      <div>
-        <CreateTask addTask={addTask} />
-        <Tasks tasks={tasks} toggleCompleted={toggleCompleted} />
-      </div>
-    ) : (
--       <Auth setUser={setUser} />
-+       <Auth setUser={setUserFetchTasks} />
-    )}
-  </div>
-);
+<li [class.completed]="task.completed">
+   <span>{{task.text}}</span>
+-   <input type="checkbox" [checked]="task.completed" (click)="completed.emit(task?.id)" readOnly /> 
++   <input type="checkbox" [checked]="task.completed" (click)="completed.emit(task)" readOnly />
+</li>
 ```
 
-## Step 4 - Updating Task
-
-   With almost everything in place, just a few changes to `web/src/Task.js` are required. Update the `return` of the `Task` function like so:
-
-   ```diff
-   return (
-     <li className={completed ? "completed" : "incompleted"}>
-       <span>{task.text}</span>
-       <input
-         type="checkbox"
-         checked={completed}
-   -       onClick={() => toggleCompleted(task.id)}
-   +       onClick={() => toggleCompleted(task)}
-   -       onChange={() => setCompleted(task.completed)}
-   +       onChange={() => setCompleted(!task.completed)}
-         readOnly
-       />
-     </li>
-   );
-   ```
-
-## Step 5 - Wrap Up
+## Step 4 - Wrap Up
 
 Run the application and try creating some tasks. Feel free to refresh the page as well.
 
