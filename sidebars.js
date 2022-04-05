@@ -40,6 +40,7 @@ module.exports = {
           "tutorials/angular-todos/angular-todos-step-001",
           "tutorials/angular-todos/angular-todos-step-002",
           "tutorials/angular-todos/angular-todos-step-003",
+          "tutorials/angular-todos/angular-todos-step-004",
         ],
       },
       {

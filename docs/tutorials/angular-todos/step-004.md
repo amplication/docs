@@ -2,7 +2,7 @@
 id: angular-todos-step-004
 title: Frontend Authentication
 sidebar_label: Frontend Authentication
-slug: /tutorials/amgular-todos/step-004
+slug: /tutorials/angular-todos/step-004
 ---
 
 # Frontend Authentication
@@ -109,7 +109,7 @@ slug: /tutorials/amgular-todos/step-004
 
    Now every request that the Angular `HttpClientModule` makes will take the user's JWT access token, which will be stored in local storage, and assign it to the Authorization header of every request.
 
-   In adition we've added a `get`ter that checks if an access token already exists in local storage and a `set`ter to save an access token in local storage.
+   In addition we've added a `get`ter that checks if an access token already exists in local storage and a `set`ter to save an access token in local storage.
 
 5. Finally we'll need to configure the `JWTService` in the `AppModule`. Open `web/src/app/app.module.ts` and import `JWTService` and `HTTP_INTERCEPTORS`:
 
@@ -379,7 +379,7 @@ On submit the `login` or `signup` method from the `AuthService` is called, and t
     }
    ```
 
-   Now if the `user` property has a value, which only occurs when they're logged in, the application will show the user's tasks. If the `user` property doesn't have a value they are shown the auth screen, which when a user logsin or signs up, will set the `user` property with the `setUser` event of the `app-auth` element (`AuthComponent`).
+   Now if the `user` property has a value, which only occurs when they're logged in, the application will show the user's tasks. If the `user` property doesn't have a value they are shown the auth screen, which when a user logs in or signs up, will set the `user` property with the `setUser` event of the `app-auth` element (`AuthComponent`).
 
 ## Step 5 - Wrap Up
 
