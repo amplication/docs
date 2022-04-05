@@ -205,7 +205,7 @@ import { AuthService } from './auth.service';
     }
    ```
 
-   Now that we're making an asynchronous HTTP request, we'll be working with RxJS Observables. RxJS is a library for writing asynchronous and event-based applications by using observable sequences. You can read more about it at [rxjs.dev](https://rxjs.dev/). We `subscibe` to see when the `create` resolves, and when it does, we push the newly created task into the `tasks` array of the `AppComponent`. If the request fails then `newTask` will have no value, and the `subscribe` listener will end right away.
+   Now that we're making an asynchronous HTTP request, we'll be working with RxJS Observables. RxJS is a library for writing asynchronous and event-based applications by using observable sequences. You can read more about it at [rxjs.dev](https://rxjs.dev/). We `subscribe` to see when the `create` resolves, and when it does, we push the newly created task into the `tasks` array of the `AppComponent`. If the request fails then `newTask` will have no value, and the `subscribe` listener will end right away.
 
 4. Next, we'll make updates to the `completed` method:
 
@@ -224,7 +224,7 @@ import { AuthService } from './auth.service';
     }
    ```
 
-   `completed` is now an asynchronous HTTP request as well, so again we'll be working with RxJS Observables. The method is also updated to instead accept the task object that is being toggled rather than the ID of the task being updated. We `subscibe` to see when the `update` resolves, and when it does, we update the `completed` property of the task in the `tasks` array of the `AppComponent`. If the request fails then `updatedTask` will have no value, and the `subscribe` listener will end right away.
+   `completed` is now an asynchronous HTTP request as well, so again we'll be working with RxJS Observables. The method is also updated to instead accept the task object that is being toggled rather than the ID of the task being updated. We `subscribe` to see when the `update` resolves, and when it does, we update the `completed` property of the task in the `tasks` array of the `AppComponent`. If the request fails then `updatedTask` will have no value, and the `subscribe` listener will end right away.
 
 5. Finally, we'll make some updates regarding the `ngOnInit` lifecycle:
 
