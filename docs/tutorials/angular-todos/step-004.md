@@ -324,7 +324,7 @@ On submit the `login` or `signup` method from the `AuthService` is called, and t
 
 ## Step 4 - Login
 
-1. With the authentication component created we just need to show it to users. Start by adding a `user` property to the `AppComponent` in `web/src/app/app.component.ts` like :
+1. With the authentication component created we just need to show it to users. Start by adding a `user` property to the `AppComponent` in `web/src/app/app.component.ts` like:
 
    ```diff
    export class AppComponent {
@@ -332,7 +332,15 @@ On submit the `login` or `signup` method from the `AuthService` is called, and t
    + user: any;
    ```
 
-2. Then update the `AppComponent`'s template (`web/src/app/app.component.html`) to look like this:
+2. Next we will add a method to the `AppComponent` to set the `user` property. While we could directly set the value, we will eventually want to trigger some code when a user is set, so we implement it this way.
+
+   ```ts
+    setUser(user: any) {
+     this.user = user;
+    }
+   ```
+
+3. Then update the `AppComponent`'s template (`web/src/app/app.component.html`) to look like this:
 
    ```html
    <ng-container *ngIf="user; else auth">
@@ -341,13 +349,13 @@ On submit the `login` or `signup` method from the `AuthService` is called, and t
    </ng-container>
    
    <ng-template #auth>
-     <app-auth (setUser)="user = $event"></app-auth>
+     <app-auth (setUser)="setUser($event)"></app-auth>
    </ng-template>
    ```
 
-   So, at the top level of the component's template we have two sibling elements, `<ng-container>` and `<ng-template>`. The behavior of `<ng-container>` is much like how `<>` is used in React, where we are holding elements without adding any extra elements to the DOM. The `<ng-container>` is displayed if the `user` property exists in the `AppComponent`, otherwise the content of the `<ng-template>` is shown. Inside `<ng-template>` we've added the `app-auth` element. When the `app-auth` element (`AuthComponent`) emits a `setUser` event the `user` property of the `AppComponent` is assigned. If there is a `user` value then we'll toggle the template to show the todo list.
+   So, at the top level of the component's template we have two sibling elements, `<ng-container>` and `<ng-template>`. The behavior of `<ng-container>` is much like how `<>` is used in React, where we are holding elements without adding any extra elements to the DOM. The `<ng-container>` is displayed if the `user` property exists in the `AppComponent`, otherwise the content of the `<ng-template>` is shown. Inside `<ng-template>` we've added the `app-auth` element. When the `app-auth` element (`AuthComponent`) emits a `setUser` event the `user` property of the `AppComponent` is assigned by it's `setUser` method. If there is a `user` value then we'll toggle the template to show the todo list.
 
-3. User's aren't expected to log in every time, especially considering we're storing the user's JWT access token. We'll update the `AppComponent` to call the `me` method of the `AuthService` when the component initiates. That way we can assign the `user` property as soon as possible.
+4. User's aren't expected to log in every time, especially considering we're storing the user's JWT access token. We'll update the `AppComponent` to call the `me` method of the `AuthService` when the component initiates. That way we can assign the `user` property as soon as possible.
 
    Start by importing `OnInit` and `AuthService`, and then set the `AppComponent` to implement the `OnInit` lifecycle hook.
 
