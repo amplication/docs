@@ -299,6 +299,7 @@ import { TasksComponent } from './tasks/tasks.component';
 })
 export class AppModule { }
 ```
+
 In your terminal navigate to the `web` directory and run:
 
 ```bash
@@ -357,44 +358,44 @@ With our different components created, we'll next put them together and see how 
 
 1. Open up `web/src/app/app.component.ts` and in the `AppComponent` class we will want to create our tasks array and remove `title`.
 
-```diff
-export class AppComponent {
--  title = 'web';
-+  tasks: any[] = [];
-```
+   ```diff
+   export class AppComponent {
+   -  title = 'web';
+   +  tasks: any[] = [];
+   ```
 
 2. We'll also want ways to add and toggle the state of tasks.
 
-```diff
-export class AppComponent {
-  tasks: any[] = [];
-
-+  createTask(text: string) {
-+    return {
-+      id: this.tasks.length,
-+      text,
-+      completed: false,
-+    };
-+  }
-+
-+  addTask(task: string) {
-+    const newTask = this.createTask(task);
-+    this.tasks.push(newTask);
-+  };
-+
-+  completed(id: number) {
-+    const i = this.tasks.findIndex((t) => t.id === id);
-+    this.tasks[i].completed = !this.tasks[i].completed;
-+  };
-}
-```
+   ```diff
+   export class AppComponent {
+     tasks: any[] = [];
+   
+   +  createTask(text: string) {
+   +    return {
+   +      id: this.tasks.length,
+   +      text,
+   +      completed: false,
+   +    };
+   +  }
+   +
+   +  addTask(task: string) {
+   +    const newTask = this.createTask(task);
+   +    this.tasks.push(newTask);
+   +  };
+   +
+   +  completed(id: number) {
+   +    const i = this.tasks.findIndex((t) => t.id === id);
+   +    this.tasks[i].completed = !this.tasks[i].completed;
+   +  };
+   }
+   ```
 
 3. With all of our logic and components in place, we'll finally render our components! Copy the following HTML into `web/src/app/app.component.html` so we can see our tasks list and add tasks to that list.
 
-```HTML
-<app-create-task (addTask)="addTask($event)"></app-create-task>
-<app-tasks [tasks]="tasks" (completed)="completed($event)"></app-tasks>
-```
+   ```html
+   <app-create-task (addTask)="addTask($event)"></app-create-task>
+   <app-tasks [tasks]="tasks" (completed)="completed($event)"></app-tasks>
+   ```
 
 ## Step 5 - Wrap Up
 

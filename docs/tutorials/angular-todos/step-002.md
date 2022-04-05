@@ -19,19 +19,15 @@ slug: /tutorials/angular-todos/step-002
 
 ## Step 1 - Create a New App
 
-1. Hopefully, you've had the chance to create an Amplication account, but if not, don't fret! Visit [https://app.amplication.com/](https://app.amplication.com/) and you'll be directed to the login screen. Here you can log in to an existing Amplication account, or create one, by signing in with a GitHub account.
-
-   You should end up at the `New App` page, but if not you can get to it [here](https://app.amplication.com/).
+1. Hopefully, you've had the chance to create an Amplication account, but if not, don't fret! Visit [https://app.amplication.com/](https://app.amplication.com/) and you'll be directed to the login screen. Here you can log in to an existing Amplication account, or create one, by signing in with a GitHub account. You should end up at the `New App` page, but if not you can get to it [here](https://app.amplication.com/).
 
 2. Click the `New App` button in the top right corner.
 
-![create an Amplication app](./assets/step-002-001.png)
+   ![create an Amplication app](./assets/step-002-001.png)
 
-3. Select `Start from Scratch` and wait a few seconds for the app to be generated.
+3. Select `Start from Scratch` and wait a few seconds for the app to be generated. You'll be directed to the application's entities. An entity is  equivalent to a collection in a NoSQL database or a table in a  relational database.
 
-   You'll be directed to the application's entities. An entity is  equivalent to a collection in a NoSQL database or a table in a  relational database.
-
-![application entities](./assets/step-002-002.png)
+   ![application entities](./assets/step-002-002.png)
 
 By default, a User entity is created for you. This entity will eventually help us handle authentication. But first, let's deal with the backend.
 
@@ -41,21 +37,17 @@ The main entity will be used to store tasks created by users.
 
 1. Click `Add entity`.
 
-![add entity](./assets/step-002-003.png)
+   ![add entity](./assets/step-002-003.png)
 
-2. When a `New entity` modal appears, input `Task` into the input field and click `Create Entity`.
-
-   With the entity created we'll want to define a few fields for task elements.
+2. When a `New entity` modal appears, input `Task` into the input field and click `Create Entity`. With the entity created we'll want to define a few fields for task elements.
 
 3. On the left-hand panel, you'll see the `Fields` this entity has, and at the very bottom, there will be an option to add a field.
 
-![add entity fields](./assets/step-002-004.png)
+   ![add entity fields](./assets/step-002-004.png)
 
-4. The first field will be `Text`. Type that into the `Add field` input and hit `enter`.
+4. The first field will be `Text`. Type that into the `Add field` input and hit `enter`. The new field will be created and a few options will appear.
 
-   The new field will be created and a few options will appear.
-
-![text field](./assets/step-002-005.png)
+   ![text field](./assets/step-002-005.png)
 
 5. Notice a dropdown for the `Data Type` of this field is set to `Single Line Text`. That's perfect as it'll be a string input of a task. There are many different data types Amplication can enforce for fields.
 
@@ -101,11 +93,11 @@ User's who will be creating tasks in the Todo app will need to be granted certai
 
 3. Toggle the permissions for each of the entity's commands to `Granular` and toggle on the `User` role. Now the only user who can access `User` accounts will have the `User` role, which will belong only to the admin account.
 
-![users permissions](./assets/step-002-009.png)
+   ![users permissions](./assets/step-002-009.png)
 
 4. Return to the `Entities` page and now select the `Task` entity. Click `Permissions`. Toggle the `Delete` command, to `Granular` and enable access to the `User` role. Both `User`s (the admin) and `Todo User`s (regular users of the app) will be able to create, read, and update tasks; but only `User`s will be able to delete tasks.
 
-![tasks permissions](./assets/step-002-010.png)
+   ![tasks permissions](./assets/step-002-010.png)
 
 ## Step 5 - Build the Backend
 
@@ -127,7 +119,7 @@ On the right-side panel is the `Pending Changes` where the changes to `Task` and
 
 3. We'll start by downloading the backend. In the bottom right of the page, you'll see a download button. Click that and you'll download a `.zip` file containing all of the code to run the backend.
 
-![download button](./assets/step-002-013.png)
+   ![download button](./assets/step-002-013.png)
 
 4. Extract the zip file and copy all of the contents (except for the `README.md`) to the root of the `amplication-angular` project.
 

@@ -28,30 +28,30 @@ slug: /tutorials/angular-todos/step-004
 
    Then add the `HttpClientModule` to the `imports` in the `@NgModule` decorator:
 
-    ```diff
-    @NgModule({
+   ```diff
+   @NgModule({
       declarations: [
-        AppComponent,
-        TaskComponent,
-        TasksComponent,
-        CreateTaskComponent
+         AppComponent,
+         TaskComponent,
+         TasksComponent,
+         CreateTaskComponent
       ],
       imports: [
-        BrowserModule,
-        ReactiveFormsModule,
-    +   HttpClientModule
+         BrowserModule,
+         ReactiveFormsModule,
+   +      HttpClientModule
       ],
-      providers: [],
-      bootstrap: [AppComponent]
-    })
-    export class AppModule { }
-    ```
+    providers: [],
+    bootstrap: [AppComponent]
+   })
+   export class AppModule { }
+   ```
 
 2. We'll want to abstract some variables, such as our API url, into a reusable resource. In `web/src/environments/environment.ts` and `web/src/environments/environment.prod.ts` add the following properties to the `environment` export:
 
    ```diff
    export const environment = {
-     production: false,
+      production: false,
    +   apiUrl: 'http://localhost:3000',
    +   jwtKey: 'accessToken',
    };
@@ -68,42 +68,42 @@ slug: /tutorials/angular-todos/step-004
    ```ts
    import { Injectable } from '@angular/core';
    import {
-     HttpInterceptor,
-     HttpEvent,
-     HttpRequest,
-     HttpHandler,
+      HttpInterceptor,
+      HttpEvent,
+      HttpRequest,
+      HttpHandler,
    } from '@angular/common/http';
    import { Observable } from 'rxjs';
    import { environment } from '../environments/environment';
    
    @Injectable({
-     providedIn: 'root',
+      providedIn: 'root',
    })
    export class JWTService implements HttpInterceptor {
-     get jwt(): string {
-       return localStorage.getItem(environment.jwtKey) || '';
-     }
+      get jwt(): string {
+         return localStorage.getItem(environment.jwtKey) || '';
+      }
    
-     set jwt(accessToken: string) {
-       localStorage.setItem(environment.jwtKey, accessToken);
-     }
+      set jwt(accessToken: string) {
+         localStorage.setItem(environment.jwtKey, accessToken);
+      }
    
-     get isStoredJwt(): boolean {
-       return Boolean(this.jwt);
-     }
+      get isStoredJwt(): boolean {
+         return Boolean(this.jwt);
+      }
    
-     intercept(
-       request: HttpRequest<any>,
-       next: HttpHandler
-     ): Observable<HttpEvent<any>> {
-       if (request.url.startsWith(environment.apiUrl)) {
-         request = request.clone({
-           setHeaders: { Authorization: `Bearer ${this.jwt}` },
-         });
-       }
+      intercept(
+         request: HttpRequest<any>,
+         next: HttpHandler
+      ): Observable<HttpEvent<any>> {
+         if (request.url.startsWith(environment.apiUrl)) {
+            request = request.clone({
+               setHeaders: { Authorization: `Bearer ${this.jwt}` },
+            });
+         }
    
-       return next.handle(request);
-     }
+         return next.handle(request);
+      }
    }
    ```
 
@@ -124,15 +124,15 @@ slug: /tutorials/angular-todos/step-004
 
    Then add and configure the `JWTService` in the `providers` of the `@NgModule` decorator:
 
-    ```diff
-    -  providers: [],
-    +  providers: [
-    +    { provide: HTTP_INTERCEPTORS, useClass: JWTService, multi: true },
-    +  ],
+   ```diff
+   -  providers: [],
+   +  providers: [
+   +     { provide: HTTP_INTERCEPTORS, useClass: JWTService, multi: true },
+   +  ],
       bootstrap: [AppComponent]
-    })
-    export class AppModule { }
-    ```
+   })
+   export class AppModule { }
+   ```
 
 ## Step 2 - Authorization Requests
 
@@ -159,19 +159,19 @@ Instead of calling our API endpoints directly from our components, we will abstr
 
    ```ts
    export class AuthService {
-    constructor(private http: HttpClient, private jwt: JWTService) { }
+      constructor(private http: HttpClient, private jwt: JWTService) { }
    }
    ```
 
 3. Now, add the `me` method:
 
    ```ts
-    me() {
+   me() {
       const url = new URL('/api/me', environment.apiUrl).href;
       return this.jwt.isStoredJwt
-        ? this.http.get(url).pipe(catchError(() => of(null)))
-        : of(null);
-    }
+         ? this.http.get(url).pipe(catchError(() => of(null)))
+         : of(null);
+   }
    ```
 
    `me` will check if we have an access token stored, because if there is none then there is no way this request would succeed. If the token exists, it will make a `GET` request to the `/api/me` endpoint we created in [Tutorial Step 3](./step-003). On the success of the request, the current user's user object will be returned.
@@ -179,25 +179,25 @@ Instead of calling our API endpoints directly from our components, we will abstr
 4. Next, add the `login` method:
 
    ```ts
-    login(username: string, password: string) {
+   login(username: string, password: string) {
       const url = new URL('/api/login', environment.apiUrl).href;
       return this.http
-        .post(url, {
-          username,
-          password,
-        })
-        .pipe(
-          catchError(() => of(null)),
-          mergeMap((result: any) => {
-            if (!result) {
-              alert('Could not login');
-              return of();
-            }
-            this.jwt.jwt = result.accessToken;
-            return this.me();
-          })
-        );
-    }
+         .post(url, {
+            username,
+            password,
+         })
+         .pipe(
+            catchError(() => of(null)),
+            mergeMap((result: any) => {
+               if (!result) {
+                  alert('Could not login');
+                  return of();
+               }
+               this.jwt.jwt = result.accessToken;
+               return this.me();
+            })
+         );
+   }
    ```
 
    `login` will make a `POST` request to the `/api/login` endpoint, sending the username and password of our user. If the request fails, like when a user doesn't exist, an alert will pop up notifying the user of the failure. If the request succeeds the access token will be saved into local storage, and then the `me` function will be called to return the current user's user object.
@@ -205,25 +205,25 @@ Instead of calling our API endpoints directly from our components, we will abstr
 5. Then, add the `signup` method:
 
    ```ts
-    signup(username: string, password: string) {
+   signup(username: string, password: string) {
       const url = new URL('/api/signup', environment.apiUrl).href;
       return this.http
-        .post(url, {
-          username,
-          password,
-        })
-        .pipe(
-          catchError(() => of(null)),
-          mergeMap((result: any) => {
-            if (!result) {
-              alert('Could not sign up');
-              return of();
-            }
-            this.jwt.jwt = result.accessToken;
-            return this.me();
-          })
-        );
-    }
+         .post(url, {
+            username,
+            password,
+         })
+         .pipe(
+            catchError(() => of(null)),
+            mergeMap((result: any) => {
+               if (!result) {
+                  alert('Could not sign up');
+                  return of();
+               }
+               this.jwt.jwt = result.accessToken;
+               return this.me();
+            })
+         );
+   }
    ```
 
    `signup` will make a `POST` request to the `/api/signup` endpoint, which we also created in [Tutorial Step 3](./step-003), sending the username and password of our new user. If the request fails, like if the username is already used, an alert will pop up notifying the user of the failure. If the request succeeds the access token will be saved into local storage, and then the `me` function will be called to return the current user's user object.
@@ -237,15 +237,15 @@ Instead of calling our API endpoints directly from our components, we will abstr
 
    Then add and configure the `AuthService` to the `providers` in the `@NgModule` decorator:
 
-    ```diff
+   ```diff
       providers: [
-        { provide: HTTP_INTERCEPTORS, useClass: JWTService, multi: true },
-    +    AuthService,
+         { provide: HTTP_INTERCEPTORS, useClass: JWTService, multi: true },
+   +      AuthService,
       ],
       bootstrap: [AppComponent]
-    })
-    export class AppModule { }
-    ```
+   })
+   export class AppModule { }
+   ```
 
 ## Step 3 - The Auth Component
 
@@ -265,39 +265,39 @@ import { FormBuilder } from '@angular/forms';
 import { AuthService } from '../auth.service';
 
 @Component({
-  selector: 'app-auth',
-  templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.css'],
+   selector: 'app-auth',
+   templateUrl: './auth.component.html',
+   styleUrls: ['./auth.component.css'],
 })
 export class AuthComponent {
-  @Output() setUser = new EventEmitter<string>();
-  authForm = this.fb.group({
-    username: '',
-    password: '',
-    confirm: '',
-  });
-  isLogin = true;
+   @Output() setUser = new EventEmitter<string>();
+   authForm = this.fb.group({
+      username: '',
+      password: '',
+      confirm: '',
+   });
+   isLogin = true;
 
-  constructor(private fb: FormBuilder, private auth: AuthService) {}
+   constructor(private fb: FormBuilder, private auth: AuthService) {}
 
-  onSubmit() {
-    const { username, password, confirm }: { [key: string]: string } =
-      this.authForm.getRawValue();
+   onSubmit() {
+      const { username, password, confirm }: { [key: string]: string } =
+         this.authForm.getRawValue();
 
-    if (!username || !password) return;
+      if (!username || !password) return;
 
-    let authResult;
+      let authResult;
 
-    if (!this.isLogin && password !== confirm) {
-      return alert('Passwords do not match');
-    } else if (!this.isLogin) {
-      authResult = this.auth.signup(username.toLowerCase(), password);
-    } else {
-      authResult = this.auth.login(username.toLowerCase(), password);
-    }
+      if (!this.isLogin && password !== confirm) {
+         return alert('Passwords do not match');
+      } else if (!this.isLogin) {
+         authResult = this.auth.signup(username.toLowerCase(), password);
+      } else {
+         authResult = this.auth.login(username.toLowerCase(), password);
+      }
 
-    authResult.subscribe({ next: (result: any) => this.setUser.emit(result) });
-  }
+      authResult.subscribe({ next: (result: any) => this.setUser.emit(result) });
+   }
 }
 ```
 
@@ -305,16 +305,16 @@ export class AuthComponent {
 
 ```html
 <form [formGroup]="authForm" (ngSubmit)="onSubmit()">
-  <h2>{{isLogin ? "Login" : "Sign Up"}}</h2>
-  <input name="username" type="text" placeholder="username" formControlName="username" required />
-  <input name="password" type="password" placeholder="password" formControlName="password" required />
-  <input *ngIf="!isLogin" name="confirmPassword" type="password" placeholder="confirm password"
+   <h2>{{isLogin ? "Login" : "Sign Up"}}</h2>
+   <input name="username" type="text" placeholder="username" formControlName="username" required />
+   <input name="password" type="password" placeholder="password" formControlName="password" required />
+   <input *ngIf="!isLogin" name="confirmPassword" type="password" placeholder="confirm password"
     formControlName="confirm" required />
 
-  <button type="submit">Submit</button>
-  <button type="button" (click)="isLogin = !isLogin">
-    {{isLogin ? "Need an account?" : "Already have an account?"}}
-  </button>
+   <button type="submit">Submit</button>
+   <button type="button" (click)="isLogin = !isLogin">
+      {{isLogin ? "Need an account?" : "Already have an account?"}}
+   </button>
 </form>
 ```
 
@@ -328,28 +328,28 @@ On submit the `login` or `signup` method from the `AuthService` is called, and t
 
    ```diff
    export class AppComponent {
-    tasks: any[] = [];
-   + user: any;
+      tasks: any[] = [];
+   +   user: any;
    ```
 
 2. Next we will add a method to the `AppComponent` to set the `user` property. While we could directly set the value, we will eventually want to trigger some code when a user is set, so we implement it this way.
 
    ```ts
-    setUser(user: any) {
-     this.user = user;
-    }
+   setUser(user: any) {
+      this.user = user;
+   }
    ```
 
 3. Then update the `AppComponent`'s template (`web/src/app/app.component.html`) to look like this:
 
    ```html
    <ng-container *ngIf="user; else auth">
-     <app-create-task (addTask)="addTask($event)"></app-create-task>
-     <app-tasks [tasks]="tasks" (completed)="completed($event)"></app-tasks>
+      <app-create-task (addTask)="addTask($event)"></app-create-task>
+      <app-tasks [tasks]="tasks" (completed)="completed($event)"></app-tasks>
    </ng-container>
    
    <ng-template #auth>
-     <app-auth (setUser)="setUser($event)"></app-auth>
+      <app-auth (setUser)="setUser($event)"></app-auth>
    </ng-template>
    ```
 
@@ -365,9 +365,9 @@ On submit the `login` or `signup` method from the `AuthService` is called, and t
    + import { AuthService } from './auth.service';
 
    @Component({
-     selector: 'app-root',
-     templateUrl: './app.component.html',
-     styleUrls: ['./app.component.css']
+      selector: 'app-root',
+      templateUrl: './app.component.html',
+      styleUrls: ['./app.component.css']
    })
    - export class AppComponent {
    + export class AppComponent implements OnInit {
@@ -376,15 +376,15 @@ On submit the `login` or `signup` method from the `AuthService` is called, and t
    Next add a constructor where the `AuthService` is set as the only argument.
 
    ```ts
-    constructor(private auth: AuthService) {}
+   constructor(private auth: AuthService) {}
    ```
 
    Then add this implementation of the `OnInit` lifecycle hook:
 
    ```ts
-    ngOnInit(): void {
+   ngOnInit(): void {
       this.auth.me().subscribe({ next: (user) => (this.user = user) });
-    }
+   }
    ```
 
    Now if the `user` property has a value, which only occurs when they're logged in, the application will show the user's tasks. If the `user` property doesn't have a value they are shown the auth screen, which when a user logs in or signs up, will set the `user` property with the `setUser` event of the `app-auth` element (`AuthComponent`).

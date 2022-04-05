@@ -25,28 +25,28 @@ In the previous step, we applied permissions to the `User` entity so that only u
    ```ts
    async signup(credentials: Credentials): Promise<UserInfo> {
      // Extract the username and password from the body of the request
-     const { username, password } = credentials;
+      const { username, password } = credentials;
      // Here we attempt to create a new user
-     const user = await this.userService.create({
-       data: {
-         username,
-         password,
-         roles: ['todoUser'], // Here we assign every new user the `Todo User` role
-       },
-     });
-     // If creating a new user fails throw an error
-     if (!user) {
-      throw new UnauthorizedException("Could not create user");
-     }
-     // Create an access token for the newly created user
-     //@ts-ignore
-     const accessToken = await this.tokenService.createToken(username, password);
-     // Return the access token as well as the some details about the user
-     return {
-       accessToken,
-       username: user.username,
-       roles: user.roles,
-     };
+      const user = await this.userService.create({
+         data: {
+            username,
+            password,
+            roles: ['todoUser'], // Here we assign every new user the `Todo User` role
+         },
+      });
+      // If creating a new user fails throw an error
+      if (!user) {
+         throw new UnauthorizedException("Could not create user");
+      }
+      // Create an access token for the newly created user
+      //@ts-ignore
+      const accessToken = await this.tokenService.createToken(username, password);
+      // Return the access token as well as the some details about the user
+      return {
+         accessToken,
+         username: user.username,
+         roles: user.roles,
+      };
    }
    ```
 
@@ -55,7 +55,7 @@ In the previous step, we applied permissions to the `User` entity so that only u
    ```ts
    @Post("signup")
    async signup(@Body() body: Credentials): Promise<UserInfo> {
-     return this.authService.signup(body);
+      return this.authService.signup(body);
    }
    ```
 
@@ -66,7 +66,7 @@ In the previous step, we applied permissions to the `User` entity so that only u
    ```ts
    @Mutation(() => UserInfo)
    async signup(@Args() args: LoginArgs): Promise<UserInfo> {
-     return this.authService.signup(args.credentials);
+      return this.authService.signup(args.credentials);
    }
    ```
 
@@ -84,7 +84,7 @@ Besides allowing for new users to be created, we also want to be able to get inf
     * @returns the username from a jwt token
     */
    decodeToken(bearer: string): string {
-     return this.jwtService.verify(bearer).username;
+      return this.jwtService.verify(bearer).username;
    }
    ```
 
@@ -92,9 +92,9 @@ Besides allowing for new users to be created, we also want to be able to get inf
 
    ```ts
    import {
-     Injectable,
-     UnauthorizedException,
-     NotFoundException,
+      Injectable,
+      UnauthorizedException,
+      NotFoundException,
    } from "@nestjs/common";
    // @ts-ignore
    // eslint-disable-next-line
@@ -110,25 +110,25 @@ Besides allowing for new users to be created, we also want to be able to get inf
 
    ```ts
    async me(authorization: string = ""): Promise<User> {
-     const bearer = authorization.replace(/^Bearer\s/, "");
-     const username = this.tokenService.decodeToken(bearer);
-     const result = await this.userService.findOne({
-       where: { username },
-       select: {
-         createdAt: true,
-         firstName: true,
-         id: true,
-         lastName: true,
-         roles: true,
-         updatedAt: true,
-         username: true,
-       },
-     });
-     if (!result) {
-       throw new NotFoundException(`No resource was found for ${username}`);
-     }
+      const bearer = authorization.replace(/^Bearer\s/, "");
+      const username = this.tokenService.decodeToken(bearer);
+      const result = await this.userService.findOne({
+         where: { username },
+         select: {
+            createdAt: true,
+            firstName: true,
+            id: true,
+            lastName: true,
+            roles: true,
+            updatedAt: true,
+            username: true,
+         },
+      });
+      if (!result) {
+         throw new NotFoundException(`No resource was found for ${username}`);
+      }
 
-     return result;
+      return result;
    }
    ```
 
@@ -153,7 +153,7 @@ Besides allowing for new users to be created, we also want to be able to get inf
    @ApiOkResponse({ type: User })
    @Get("me")
    async me(@Req() request: Request): Promise<User> {
-    return this.authService.me(request.headers.authorization);
+      return this.authService.me(request.headers.authorization);
    }
    ```
 
@@ -179,7 +179,7 @@ Besides allowing for new users to be created, we also want to be able to get inf
    ```ts
    @Query(() => User)
    async me(@Context('req') request: Request): Promise<User> {
-     return this.authService.me(request.headers.authorization);
+      return this.authService.me(request.headers.authorization);
    }
    ```
 
@@ -187,9 +187,9 @@ Besides allowing for new users to be created, we also want to be able to get inf
 
 1. With the necessary updates to our backend in place let's spin up the backend and explore our self-documented REST endpoints. Run the following command:
 
-     ```bash
-     npm run start:backend
-     ```
+   ```bash
+   npm run start:backend
+   ```
 
 2. Once the backend is running, visit [http://localhost:3000/api/](http://localhost:3000/api/) and scroll down to the `auth` section. A new `POST` endpoint, `/api/signup`, will appear. The endpoint can be tested right there in the browser.
 
