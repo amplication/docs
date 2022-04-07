@@ -34,6 +34,9 @@ If you're running the backend (`npm run start:backend`) you can tinker with quer
 3. Then paste in the following code:
 
    ```js
+   import { ApolloClient, createHttpLink, InMemoryCache } from "@apollo/client";
+   import { setContext } from "@apollo/client/link/context";
+
    const apiUrl = "http://localhost:3000/graphql";
    const jwtKey = "accessToken";
 
