@@ -217,7 +217,7 @@ import { AuthService } from './auth.service';
    +       next: (updatedTask: any) => {
    +          if (!updatedTask) return;
    +          const i = this.tasks.findIndex((t) => t.id === updatedTask.id);
-   +          this.tasks[i].completed = !this.tasks[i].completed;
+   +          this.tasks[i] = updatedTask;
    +       },
    +    });
    }
@@ -232,7 +232,7 @@ import { AuthService } from './auth.service';
       this.user = user;
       if (!user) return;
       this.ts.getAll(user.id).subscribe({
-         next: (tasks: any[]) => (this.tasks = tasks),
+         next: (tasks: any[]) => (this.tasks = [...tasks]),
       });
    }
    ```
