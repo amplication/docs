@@ -20,7 +20,7 @@ Amplication can push the code of your app to a GitHub repository. It will provid
 If you want to create a new repository in GitHub, you can do so [here](https://github.com/new). Select **Initialize this repository with a README file** to make sure the new repository is not empty.
 
 :::info
-If you are using the hosted service on https://app.amplication.com, you can continue with this 
+If you are using the hosted service on https://app.amplication.com, you can continue with this article. 
 
 In case you are hosting a local Amplication server, you should first follow [this guide](/docs/connect-server-to-github) in order to configure the Server to work with a new GitHub application.
 :::
