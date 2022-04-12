@@ -34,7 +34,7 @@ Before integrating your application with GitHub, you need to authorize Amplicati
 
 :::note
 If this is the first time that you have connected to GitHub, the **Connect to GitHub** button is displayed. 
-If you have already connected to GitHub, you will be promted to choose the installed organization. If several organizations are configured, you will be prompted to select the required organization. 
+If you have already connected to GitHub, you will be prompted to choose the installed organization. If several organizations are configured, you will be prompted to select the required organization. 
 :::
 
 3. Click **Connect to GitHub**
