@@ -11,7 +11,7 @@ slug: /tutorials/angular-todos/step-005
 
 - [Step 1 - HTTP Requests](#step-1---http-requests)
 - [Step 2 - Updating App](#step-2---updating-app)
-- [Step 3 - Updating Task](#step-3---updating-task)
+- [Step 3 - Updating Tasks](#step-3---updating-tasks)
 - [Step 4 - Wrap Up](#step-4---wrap-up)
 
 ## Step 1 - HTTP Requests
