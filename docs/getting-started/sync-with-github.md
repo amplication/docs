@@ -59,7 +59,7 @@ Amplication will automatically push a new Pull Request to your GitHub repository
 1. To test the process, make a change in your application and click  the **Commits** icon  to open the commit page.
 
 
-![](./assets/sync-with-github/last-commit.png)
+![](./assets/sync-with-github/Last-commit.png)
 
 2. To view the new Pull Request in GitHub, select the most recent commit and  click **Open GitHub**.
 
