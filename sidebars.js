@@ -34,6 +34,19 @@ module.exports = {
     Tutorials: [
       {
         type: "category",
+        label: "Angular Todos",
+        items: [
+          "tutorials/angular-todos/angular-todos-step-000",
+          "tutorials/angular-todos/angular-todos-step-001",
+          "tutorials/angular-todos/angular-todos-step-002",
+          "tutorials/angular-todos/angular-todos-step-003",
+          "tutorials/angular-todos/angular-todos-step-004",
+          "tutorials/angular-todos/angular-todos-step-005",
+          "tutorials/angular-todos/angular-todos-step-006",
+        ],
+      },
+      {
+        type: "category",
         label: "React Todos",
         items: [
           "tutorials/react-todos/react-todos-step-000",
