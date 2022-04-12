@@ -9,13 +9,13 @@ slug: /tutorials/angular-todos/step-004
 
 ## Table of Contents
 
-- [Step 1 - `HttpClientModule`](#step-1---httpclientmodule)
+- [Step 1 - Add HttpClientModule](#step-1---add-httpclientmodule) 
 - [Step 2 - Authorization Requests](#step-2---authorization-requests)
 - [Step 3 - The Auth Component](#step-3---the-auth-component)
 - [Step 4 - Login](#step-4---login)
 - [Step 5 - Wrap Up](#step-5---wrap-up)
 
-## Step 1 - HttpClientModule
+## Step 1 - Add HttpClientModule
 
 1. To allow users to sign in to the `Todos` application we'll need to prompt them for the username and password and then verify it with the backend. To make the HTTP request to the backend we'll use the Angular `HttpClientModule`. First open `web/src/app/app.module.ts` and add import the `HttpClientModule`:
 
