@@ -9,10 +9,10 @@ slug: /tutorials/react-todos/step-006
 
 ## Table of Contents
 
-- [Step 1 - GraphQL](#Step-1---GraphQL)
-- [Step 2 - Updating lib/auth.js](#Step-2---Updating-lib/auth.js)
-- [Step 3 - Updating lib/tasks.js](#Step-3---Updating-lib/tasks.js)
-- [Step 4 - Wrap Up](#Step-4---Wrap-Up)
+- [Step 1 - GraphQL](#step-1---graphql)
+- [Step 2 - Updating lib/auth.js](#step-2---updating-libauthjs)
+- [Step 3 - Updating lib/tasks.js](#step-3---updating-libtasksjs)
+- [Step 4 - Wrap Up](#step-4---wrap-up)
 
 ## Step 1 - GraphQL
 

@@ -13,6 +13,8 @@ perf
 init
 GraphQL
 amplication
+amplication's
+Amplication’s
 scalable
 ORM
 APIs
@@ -56,5 +58,9 @@ dockerized
 signup
 subfolder
 subfolders
-libauth
-libtasks
+libauthjs
+libtasksjs
+Posthog
+httpclientmodule
+authservice
+tasksservice

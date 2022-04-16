@@ -1,0 +1,18 @@
+.feedback {
+  background-color: var(--alert-secondary-background);
+  border: 1px solid var(--alert-secondary-border-color);
+  margin-bottom: 1em;
+  margin-top: 1rem;
+  border-radius: var(--ifm-alert-border-radius);
+  box-shadow: var(--ifm-alert-shadow);
+  color: var(--ifm-alert-foreground-color);
+  padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
+}
+
+.feedback input[type="radio"] {
+  margin: 0 1rem 0 0;
+}
+
+.feedback .thank-you {
+  text-align: center;
+}

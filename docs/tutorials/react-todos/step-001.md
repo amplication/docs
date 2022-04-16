@@ -13,7 +13,7 @@ slug: /tutorials/react-todos/step-001
 - [Step 2 - Starting with a blank canvas](#step-2---starting-with-a-blank-canvas)
 - [Step 3 - Adding our components](#step-3---adding-our-components)
 - [Step 4 - Putting it together](#step-4---putting-it-together)
-- [Step 5 - Wrapping it up](#step-5---wrapping-it-up)
+- [Step 5 - Wrap Up](#step-5---wrap-up)
 
 ## Step 1 - Creating a new directory
 
@@ -343,7 +343,7 @@ return (
 );
 ```
 
-## Step 5 - Wrapping it up
+## Step 5 - Wrap Up
 
 Go ahead and try adding tasks or marking them as complete.
 

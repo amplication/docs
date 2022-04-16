@@ -13,7 +13,10 @@ module.exports = {
       "getting-started/connect-server-to-github",
       "getting-started/helm-chart",
     ],
-    About: ["about/product-roadmap"],
+    "About": [
+        "about/product-roadmap",
+        "getting-started/phone-home",
+    ],
     "Generated API": [
       "getting-started/generated-app-api",
       "api/generated-api-sorting",
@@ -29,6 +32,19 @@ module.exports = {
       "getting-started/relations",
     ],
     Tutorials: [
+      {
+        type: "category",
+        label: "Angular Todos",
+        items: [
+          "tutorials/angular-todos/angular-todos-step-000",
+          "tutorials/angular-todos/angular-todos-step-001",
+          "tutorials/angular-todos/angular-todos-step-002",
+          "tutorials/angular-todos/angular-todos-step-003",
+          "tutorials/angular-todos/angular-todos-step-004",
+          "tutorials/angular-todos/angular-todos-step-005",
+          "tutorials/angular-todos/angular-todos-step-006",
+        ],
+      },
       {
         type: "category",
         label: "React Todos",

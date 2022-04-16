@@ -9,11 +9,11 @@ slug: /tutorials/react-todos/step-005
 
 ## Table of Contents
 
-- [Step 1 - HTTP Requests](#Step-1---HTTP-Requests)
-- [Step 2 - Updating App](#Step-2---Updating-App)
-- [Step 3 - Updating Auth](#Step-3---Updating-Auth)
-- [Step 4 - Updating Task](#Step-4---Updating-Task)
-- [Step 5 - Wrap Up](#Step-5---Wrap-Up)
+- [Step 1 - HTTP Requests](#step-1---http-requests)
+- [Step 2 - Updating App](#step-2---updating-app)
+- [Step 3 - Updating Auth](#step-3---updating-auth)
+- [Step 4 - Updating Task](#step-4---updating-task)
+- [Step 5 - Wrap Up](#step-5---wrap-up)
 
 ## Step 1 - HTTP Requests
 
