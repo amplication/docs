@@ -61,3 +61,6 @@ subfolders
 libauthjs
 libtasksjs
 Posthog
+httpclientmodule
+authservice
+tasksservice
