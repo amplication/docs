@@ -38,7 +38,7 @@ If you have already connected to GitHub, you will be prompted to choose the inst
 :::
 
 3. Click **Connect to GitHub**
-The _Install_Amplication_Github_App_ opens. 
+The _Install Amplication Github App_ opens. 
 
 ![](./assets/sync-with-github/Install_Amplication.png)
 
