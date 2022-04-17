@@ -40,7 +40,7 @@ If you have already connected to GitHub, you will be prompted to choose the inst
 3. Click **Connect to GitHub**
 The _Install Amplication Github App_ opens. 
 
-![](./assets/sync-with-github/Install_Amplication.png)
+![](./assets/sync-with-github/install_amplication.png)
 
 4. Select the GitHub account you want to use.
 5. In the new window, select on which repositories you want to install the app.
