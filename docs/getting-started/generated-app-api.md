@@ -21,7 +21,7 @@ To learn more about authentication see this [article](/docs/authentication)
 ## REST API
 
 The REST API is available at **/api** at the root of your application.
-When you navigate directly to **/api** you will see the swagger documentation of you API with a list of all resources and actions.
+When you navigate directly to **/api** you will see the swagger documentation of your API with a list of all resources and actions.
 
 For development and testing purposes, you can use the [swagger UI](https://swagger.io/tools/swagger-ui/) to execute requests against the API. First, click on the "Authorize" button and enter the username and password, it will add the authorization header automatically.
 
