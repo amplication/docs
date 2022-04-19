@@ -26,8 +26,7 @@ The generated app is built with the following proven open-source technologies:
 ### Server-side
 
 - [NestJS](https://nestjs.com/) - A progressive Node.js framework for building efficient, reliable and scalable server-side applications.
-- [Prisma](https://www.prisma.io/) - Next-generation ORM
-  for Node.js and TypeScript.
+- [Prisma](https://www.prisma.io/) - Next-generation ORM for Node.js and TypeScript.
 - [PostgreSQL](https://www.postgresql.org/) - The World's Most Advanced Open Source Relational Database
 - [Passport](http://www.passportjs.org/) - Simple, unobtrusive authentication for Node.js
 - [GraphQL](https://graphql.org/) - a query language for APIs.
@@ -38,6 +37,7 @@ The generated app is built with the following proven open-source technologies:
 ### Client-Side
 
 - [ReactJS](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [React-Admin](https://reactjs.org/) - A unified admin framework using React, Material UI, React Router, Redux, and React-final-form.
 - [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js.
 - [Formik](https://formik.org/) - React hooks and components for hassle-free form validation.
 
