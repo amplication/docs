@@ -22,6 +22,7 @@ module.exports = {
       "api/generated-api-sorting",
       "api/generated-api-filtering",
       "api/generated-api-pagination",
+      "api/generated-api-endpoints",
     ],
     "How To": [
       "how-to/how-to-create-app",
