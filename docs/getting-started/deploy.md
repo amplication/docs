@@ -21,9 +21,9 @@ Let’s explore each of the options.
 
 When working with Amplication, all your committed changes are continuously deployed to a sandbox environment on the Amplication cloud so you can easily access your application for testing and development purposes.
 
-Click the “Preview App” link in the build panel to access the login page of your application's Admin UI.
+Click the "Open in Sandbox environment" link in the bottom row to access the login page of your application's Admin UI.
 
-![](./assets/deploy/login.png)
+![](./assets/deploy/login-page.png)
 
 By default, your app comes with one user: username "admin" and password "admin". Use these credentials to access your app and create other users.
 

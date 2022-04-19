@@ -29,7 +29,7 @@ Let’s get started.
 
 Click the **Entities** icon on the main menu (left sidebar) to reach the _Entities_ page. Here you see all the entities in your application.
 
-![](./assets/pic-1.jpg)
+![](./assets/pic-1.png)
 
 :::tip
 At this stage, there's only one entity, **User**. This is auto-generated when you created the new app.
@@ -41,7 +41,7 @@ In this example, we'll now add another entity called “Project”.
 2. In the _New Entity_ dialog, type  “Project”.
 3. Click **Create Entity**.
 
-![](./assets/pic-2.jpg)
+![](./assets/pic-2.png)
 
 You now have a new  entity named _Project_. Notice that the added entity comes with auto-generated values such as “Plural Display Name” and some default fields – **ID**, **Created At**, and **Updated At**.
 
@@ -61,7 +61,7 @@ To describe your project add some new fields. For this example, add these fields
 3. Click the **Required Field** toggle to configure the _Name_ field as required.
 4. Leave the defaults for the other properties (_Searchable_ active, _Data Type_ "Single Line Text", and _Max Length_ "1000".)
 
-![](./assets/pic-3.jpg)
+![](./assets/pic-3.png)
 
 :::tip
 All changes are saved automatically.
@@ -72,7 +72,7 @@ All changes are saved automatically.
 
 1. In the _Entity Fields_ text box type “Description”.
 2. Click **Add field** (or just press Enter). The new field is added to the list and the field's property panel opens.
-3. Leave the defaults (_Required Field_ inactive _Searchable_ active, _Data Type_ "Multi Line Text", and _Max Length_ "1000".)
+3. Leave the defaults (_Required Field_ inactive, _Searchable_ active, _Data Type_ "Multi Line Text", and _Max Length_ "1000".)
 
 :::info
 
@@ -123,7 +123,7 @@ In this example, we add another two roles: _Admin_ and _Manager_.
 2. Click **Add Role** \(or just press Enter\). The new role is added to the list.
 3. Repeat these steps to add the "Manager" role.
 
-![](./assets/pic-4.jpg)
+![](./assets/pic-4.png)
 
 ## Step 5 - Set Access Permissions
 
@@ -147,7 +147,7 @@ By default, ALL these actions are permitted for all roles.
 4. By default, all actions (_View_, _Create_, _Update_, _Delete_, and _Search_) are set to **All Roles**. 
 5. Fine tune permissions by changing the *Delete* permissions from **All Roles** to **Granular** and then select from the displayed roles the _Admin_ role. This ensures that only users with the _Admin_ role can delete projects.
 
-![](./assets/pic-5.jpg)
+![](./assets/pic-5.png)
 
 6. Select **Granular** to enable the configuration of the actions according to specific roles.
 
@@ -188,16 +188,16 @@ We will now set permissions at the field level.
 
 While working in Amplication your changes are saved automatically, but are not committed. Only committed changes will be included in the next version of your application.
 
-In the _Pending Changes_ control in the main menu (left sidebar) you can see how many pending changes are waiting to be committed.
+In the _Pending Changes_ control in the main menu (right sidebar) you can see how many pending changes are waiting to be committed.
 
-![](./assets/pic8.jpg)
+![](./assets/pic8.png)
 
 We'll now make our first commit.
 
 In this page, you can see that the creation of the _Project_ entity hasn't been committed.
 
 1. In the _commit message_ dialog, write a description of the changes you're committing. For example: "Added Project Entity and Manager and Admin roles".
-2. Click **Commit Changes**. All changes are committed. A build of the first version of your app is automatically created!
+2. Click **Commit changes & build**. All changes are committed. A build of the first version of your app is automatically created!
 3. After the build process completes, click the download icon in the _Generate Code_ row to get a .zip file of your app. It is now ready to be deployed anywhere you want. 🚀
 
 ## Step 7 - Taking your app a bit further
@@ -225,7 +225,7 @@ We'll now add another entity called “Task”.
 
 The Task's field list should now look like this:
 
-![](./assets/pic11.jpg)
+![](./assets/pic-11.png)
 
 ### Update the Project Entity
 
@@ -247,7 +247,7 @@ To do so:
 - The _Task_ entity was created
 - The _Project_ entity was updated
 
-![](./assets/pic13.jpg)
+![](./assets/pic13.png)
 
 3. Since these changes were intentional and we're happy to commit them, click **Commit changes and build**.
 

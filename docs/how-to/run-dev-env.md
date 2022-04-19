@@ -23,7 +23,7 @@ In this article you will go through the following steps:
 7. Run the Admin UI
 
 :::important
-Before you start make sure you have Node.js 14, npm, and Docker installed.
+Before you start make sure you have Node.js 16.13.1(LTS), npm, and Docker installed.
 :::
 
 ## Step 1 - Get the application source code
@@ -35,7 +35,7 @@ The best way to do it is to sync your application with a GitHub repository by fo
 Instead, if you prefer to download the source code as a ZIP file, follow these steps:
 
 1. Commit all your changes so Amplication generates the updated source code.
-2. Click on the **Download Code** button on the latest commit. You'll get a ZIP file.
+2. Click on the **Download Code** button on the row below. You'll get a ZIP file.
 3. Extract the ZIP file to a local folder.
 4. Open your application with your favorite IDE
 
