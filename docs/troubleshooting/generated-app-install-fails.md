@@ -64,7 +64,7 @@ See [ReadMe](https://github.com/amplication/amplication/blob/master/README.md#in
 
 ## Related Discord Threads 
 
-[npm run setupdev takes a long time to complete](https://discordapp.com/channels/757179260417867879/968914282978893874)
+[npm run setup:dev takes a long time to complete](https://discordapp.com/channels/757179260417867879/968914282978893874)
 
 
 
