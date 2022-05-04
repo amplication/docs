@@ -56,7 +56,7 @@ We recommend doing the following:
 
 ## Related Troubleshooting Docs
 
-[npm run setup:dev takes longer than expected](\generated_app_setup_slow.html)
+Coming soon
 
 ## Additional Information
 

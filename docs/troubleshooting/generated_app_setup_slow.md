@@ -37,7 +37,7 @@ Try the following in the given order:
 
 ## Related Troubleshooting Docs
 
-[npm run setup:dev fails](\generated-app-install-fails.html)
+Coming soon 
 
 
 ## Additional Information
