@@ -72,6 +72,10 @@ module.exports = {
       "errors/missing-code-generation-version",
       "errors/could-not-authorize-user",
     ],
+    "Troubleshooting": [
+      "troubleshooting/npm-run-setup:dev-fails",
+      "troubleshooting/npm-run-setup:dev-takes-longer-than-expected",
+      ],            
     Community: ["contributing", "community/handling-a-new-issue"],
   },
 };

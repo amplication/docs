@@ -1,5 +1,3 @@
-Amplication
-Amplication's
 Strikethrough
 Blockquotes
 NestJS
@@ -12,6 +10,7 @@ gh
 perf
 init
 GraphQL
+Amplication
 amplication
 amplication's
 Amplication’s
