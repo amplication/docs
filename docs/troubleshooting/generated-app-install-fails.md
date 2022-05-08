@@ -45,7 +45,7 @@ We recommend doing the following:
 - If you stopped the process in the middle, delete node modules and re-install npm:
 
   ```jsx
-  Delete node_modules or npm run clean
+ npm run clean
   npm install
   npm run setup:dev 
   ```
