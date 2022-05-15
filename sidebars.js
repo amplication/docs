@@ -64,13 +64,40 @@ module.exports = {
       "custom-code/add-action-to-controller",
       "custom-code/add-graphql-query",
     ],
-    "Errors and Resolutions": [
-      "errors/github-different-app-id",
-      "errors/invalid-code-generation-version",
-      "errors/merge-conflict",
-      "errors/missing-code-generation-version",
-      "errors/could-not-authorize-user",
-    ],
+    Troubleshooting: [
+      {
+        type: "category",
+        label: "Code Generation",
+        items: [
+          "errors/invalid-code-generation-version",
+          "errors/missing-code-generation-version",
+        ],
+      },
+      {
+        type: "category",
+        label: "Authorization",
+        items: [
+          "errors/could-not-authorize-user",
+        ],
+      },
+      {
+        type: "category",
+        label: "GitHub",
+        items: [
+          "errors/merge-conflict",
+          "errors/github-different-app-id",
+        ],
+      },
+      {
+          type: "category",
+          label: "Set-Up",
+          items: [
+            "errors/installation-fails",
+            "errors/installation-slow",
+          ],
+        },
+      ],     
+
     Community: ["contributing", "community/handling-a-new-issue"],
   },
 };
