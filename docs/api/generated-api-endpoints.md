@@ -29,7 +29,7 @@ The APIs perform a health check and communicate the  status of the app to  infra
 
 The Amplication API also  provides health check endpoints for the internal operations management.
 Each API should provide a health, liveness and readiness check status.
-For example, under the URLs `/healthz`, `/healthz/liveness` and `/healtz/readiness`. 
+For example, under the URLs `/healthz`, `/healthz/liveness` and `/healthz/readiness`. 
 
 
 
