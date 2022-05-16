@@ -64,3 +64,4 @@ Posthog
 httpclientmodule
 authservice
 tasksservice
+healthz

@@ -1,7 +1,7 @@
 ---
 id: generated-api-endpoints
 title: API Endpoints for Health and Readiness
-sidebar_label: API Endpoints for Health and Readiness
+sidebar_label: API Health checks
 slug: api/generated-api-endpoints
 ---
 
