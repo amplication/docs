@@ -1,7 +1,7 @@
 module.exports = {
   title: "Amplication Docs",
   tagline: "Welcome to the Amplication documentation",
-  url: "https://amplication.com",
+  url: "https://docs.amplication.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   favicon: "img/favicon.ico",
