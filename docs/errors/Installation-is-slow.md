@@ -30,10 +30,15 @@ This may cause the user to assume the process is stuck, and so abort the process
 
 - If you stopped the process in the middle, delete node modules and re-install npm as follows:
 
- ```npm run clean
+ ```javascript
+ npm run clean
  npm install
  npm run setup:dev;
  ```
+
+:::note
+Stopping the installation process can result in changes to the package.json. We recommend checking that Lerna did not change the file, and if it did, to discard the changes.
+:::
 
 - Ask for help on our [Discord Server](https://discordapp.com/channels/757179260417867879/781089015548870695)
 

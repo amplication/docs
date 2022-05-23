@@ -37,10 +37,15 @@ We recommend doing the following:
 
 - If you stopped the process in the middle, delete node modules and re-install npm as follows:
 
- ```npm run clean
+ ```javascript
+ npm run clean
  npm install
  npm run setup:dev;
  ```
+
+:::note
+Stopping the installation process can result in changes to the package.json. We recommend checking that Lerna did not change the file, and if it did, to discard the changes.
+:::
 
 - If the process failed after stage 5, check that Docker is running.
 
