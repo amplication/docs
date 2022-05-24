@@ -30,7 +30,7 @@ This may cause the user to assume the process is stuck, and so abort the process
 
 - If you stopped the process in the middle, delete node modules and re-install npm as follows:
 
- ```javascript
+ ```bash
  npm run clean
  npm install
  npm run setup:dev;
