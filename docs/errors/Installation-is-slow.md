@@ -17,7 +17,7 @@ Installation npm with the following command often takes a long time to complete
 `npm run Setup:dev`
 
 ## Symptoms 
-When running `npm run Setup:dev` the installation may take much longer than expected to complete. 
+When running `npm run setup:dev` the installation may take much longer than expected to complete. 
 This may cause the user to assume the process is stuck, and so abort the process. 
 
 ## Cause
