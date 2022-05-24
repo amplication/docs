@@ -14,7 +14,7 @@ slug: /errors/installation-slow
 
 ## Overview
 Installation npm with the following command often takes a long time to complete
-`npm run Setup:dev`
+`npm run setup:dev`
 
 ## Symptoms 
 When running `npm run setup:dev` the installation may take much longer than expected to complete. 
