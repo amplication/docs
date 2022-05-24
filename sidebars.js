@@ -96,6 +96,20 @@ module.exports = {
             "errors/installation-slow",
           ],
         },
+        {
+          type: "category",
+          label: "DB",
+          items: [
+            "errors/prisma-denied-access-on-postgres",
+          ],
+        },
+        {
+          type: "category",
+          label: "DTO",
+          items: [
+            "errors/adding-custom-dto-to-app",
+          ],
+        },
       ],     
 
     Community: ["contributing", "community/handling-a-new-issue"],
