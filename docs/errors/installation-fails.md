@@ -37,7 +37,7 @@ We recommend doing the following:
 
 - If you stopped the process in the middle, delete node modules and re-install npm as follows:
 
- ```javascript
+ ```bash
  npm run clean
  npm install
  npm run setup:dev;
