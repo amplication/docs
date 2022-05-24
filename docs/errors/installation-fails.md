@@ -15,7 +15,7 @@ Attempting to install npm with the following command fails:
 `npm run setup:dev`
 
 ## Symptoms 
-Attempting to run `npm run Setup:dev` is not successful. An error message may, or may not, be displayed.
+Attempting to run `npm run setup:dev` is not successful. An error message may, or may not, be displayed.
 
 ## Cause
 
