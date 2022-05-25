@@ -27,7 +27,7 @@ It is expected that the Contributor will have entered a detailed description of 
 :::
    
 2.  When the Maintainers have an adequate level of understanding and the issue is ready to be developed, they change **Backlog** status from **Baking** to **Candidate** and apply the appropriate Labels.
-3. The Maintainers update the **Status** and **Label** as the project progresses, as described in the [Set Status](https://www.notion.so/Issue-Handling-Workflow-6c135be0a2cf491eaa5acada15bf83f4) and [Apply Labels](https://www.notion.so/Issue-Handling-Workflow-6c135be0a2cf491eaa5acada15bf83f4) sections below. 
+3. The Maintainers update the **Status** and **Label** as the project progresses, as described in the [Set Status](#set-status) and [Apply Labels](#apply-labels) sections below. 
     
 
 > The **Status Label** must be the same as the project **Status.** Both are set manually.
