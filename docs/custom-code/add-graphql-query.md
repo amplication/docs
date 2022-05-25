@@ -63,6 +63,7 @@ import { UserFindManyArgs } from "./base/UserFindManyArgs";
 4. Add the following code at the bottom of the class.
 
 ```typescript
+  @common.UseInterceptors(AclFilterResponseInterceptor)
   @graphql.Query(() => [User])
   @nestAccessControl.UseRoles({
     resource: "User",
@@ -71,19 +72,11 @@ import { UserFindManyArgs } from "./base/UserFindManyArgs";
   })
   async users(
     @graphql.Args() args: UserFindManyArgs,
-    @gqlUserRoles.UserRoles() userRoles: string[]
   ): Promise<User[]> {
-    const permission = this.rolesBuilder.permission({
-      role: userRoles,
-      action: "read",
-      possession: "any",
-      resource: "User",
-    });
-    const results = await this.service.findMany({
+    return this.service.findMany({
       ...args,
       take: 100,
     });
-    return results.map((result) => permission.filter(result));
   }
 ```
 
@@ -92,6 +85,13 @@ The above code overrides the default **users** query. It adds a value to the **t
 #### line-by-line instructions
 
 Follow this line-by-line explanation to learn more about the code you used:
+
+This decorator use [Nest interceptor]("https://docs.nestjs.com/interceptors") that we created (AclFilterResponseInterceptor) 
+to filter the response object based on the user permissions.
+
+```typescript
+@common.UseInterceptors(AclFilterResponseInterceptor)
+```
 
 This decorator defines that this function is a GraphQL query with a return type Array of User.
 
@@ -118,25 +118,13 @@ async users(
   ): Promise<User[]> {
 ```
 
-Create a permission object to be used later for result filtering based on the user permissions.
-
-```typescript
-const permission = this.rolesBuilder.permission({
-  role: userRoles,
-  action: "read",
-  possession: "any",
-  resource: "User",
-});
-```
-
 Call the user service to execute the findMany function, then check and filter the results before returning them to the client.
 
 ```typescript
-const results = await this.service.findMany({
+return await this.service.findMany({
   ...args,
   take: 100,
 });
-return results.map((result) => permission.filter(result));
 ```
 
 ## Check your changes
