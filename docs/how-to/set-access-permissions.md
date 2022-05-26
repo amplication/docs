@@ -37,7 +37,7 @@ These actions can be set to one of the following:
 4. Select **All Roles** (default), **Public**, or **Granular**.
 
 
-![](./assets/public.png)
+![](./assets/public1.png)
 
 4. If you selected **Granular** to enable the configuration of the actions according to specific roles, continue with the next steps. 
 

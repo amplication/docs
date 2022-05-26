@@ -145,7 +145,7 @@ By default, all of the actions are set as **All Roles**.
 
 In this example, some of the actions have been changed to **Public**, while the others remain as **All Roles**
 
-![](./assets/public.png)
+![](./assets/public1.png)
 
 In the following example, we use the **Granular** setting to find tune the permissions for a role. 
 
