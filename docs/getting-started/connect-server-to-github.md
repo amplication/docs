@@ -42,11 +42,11 @@ In case you are hosting the Amplication server on any other address, use the spe
 3. Add the following content to the file
 
 ```
-GITHUB_SECRET_SECRET_NAME=use_local_settings
-GITHUB_CLIENT_SECRET=[client_secret_here]
-GITHUB_CLIENT_ID=[client_id_here]
-GITHUB_APP_AUTH_SCOPE=user:email,repo,read:org
-GITHUB_APP_AUTH_REDIRECT_URI=http://localhost:3001/github-auth-app/callback/{appId}
+GITHUB_APP_CLIENT_SECRET = [use-secret-manager]
+GITHUB_APP_CLIENT_ID = [github-app-client-id]
+GITHUB_APP_APP_ID = [github-app-app-id]
+GITHUB_APP_PRIVATE_KEY = [github-app-private-key]
+GITHUB_APP_INSTALLATION_URL = [github-app-installation-url]
 ```
 
 4. Replace **[client_secret_here]** with the client secret of the new GitHub application.
