@@ -63,6 +63,7 @@ module.exports = {
       "custom-code/add-business-logic",
       "custom-code/add-action-to-controller",
       "custom-code/add-graphql-query",
+      "custom-code/adding-custom-dto-to-app",
     ],
     "Errors and Resolutions": [
       "errors/github-different-app-id",
