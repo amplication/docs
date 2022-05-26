@@ -148,7 +148,7 @@ if (result === null) {
     `No resource was found for ${JSON.stringify(params)}`
   );
 }
-return permission.filter(result);
+return results;
 ```
 
 ## Check your changes
