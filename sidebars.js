@@ -103,13 +103,6 @@ module.exports = {
             "errors/prisma-denied-access-on-postgres",
           ],
         },
-        {
-          type: "category",
-          label: "DTO",
-          items: [
-            "errors/adding-custom-dto-to-app",
-          ],
-        },
       ],     
 
     Community: ["contributing", "community/handling-a-new-issue"],
