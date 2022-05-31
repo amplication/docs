@@ -1,11 +1,11 @@
 ---
 id: licensing
-title: Amplication’s new licensing model 
-sidebar_label: Amplication’s new licensing model 
+title: Amplication’s licensing model 
+sidebar_label: Amplication’s licensing model 
 slug: about/licensing
 ---
 
-# Amplication’s new licensing model 
+# Amplication’s licensing model 
 
 Amplication has developed as an open-source application, available to all, and providing value for thousands of users. Our strong belief in open-source has enabled us to create a revolution in the way applications are developed, saving hours of development time, and boosting productivity.  
 
@@ -57,4 +57,4 @@ However, each case will be decided on its own merit. As a rule, if the feature i
 
 ## What do you think?
 
-We’d love to know what you think about Amplication’s new licensing model, or any other Amplication-related matter. If you have something to say, please open a discussion on Amplication’s [GitHub discussion page.](https://github.com/amplication/amplication/discussions) 
+We’d love to know what you think about Amplication’s new licensing model. Go to [GitHub](https://github.com/amplication/amplication/discussions/2846) to join the discussion.
