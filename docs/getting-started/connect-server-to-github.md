@@ -29,9 +29,13 @@ When using the hosted service on https://app.amplication.com, the integration is
 
 ![](./assets/connect-server-to-github/callback-and-setup-url.png)
 
-7. Choose `Read and Write` permission for `Administration` in **Repository permissions**
+7. Choose these permissions for **Repository permissions**
 
-![](./assets/connect-server-to-github/repository-permissions.png)
+![](./assets/connect-server-to-github/repository-permission-01.png)
+![](./assets/connect-server-to-github/repository-permission-02.png)
+![](./assets/connect-server-to-github/repository-permission-03.png)
+![](./assets/connect-server-to-github/repository-permission-04.png)
+![](./assets/connect-server-to-github/repository-permission-05.png)
 
 8. Choose `Any Account` for **Where can this GitHub App be installed?**
 
@@ -78,8 +82,8 @@ GITHUB_APP_INSTALLATION_URL = [github-app-installation-url]
 ![](./assets/connect-server-to-github/new-private-key.png)
 
 :::info
-After downloading private key file, copy the content of file and replace every new line with \n and replace [github-app-private-key] with that string
+After downloading private key file, copy the content of file, replace every new line with \n and replace [github-app-private-key] with that string
 :::
 
-8. Replace **[github-app-installation-url]** with the https://github.com/apps/ [your github app name] /installations/new?state={state} of the new GitHub application. 
+8. Replace **[github-app-installation-url]** with the ` https://github.com/apps/[your github app name]/installations/new?state={state} `
 9. Restart Amplication server.
