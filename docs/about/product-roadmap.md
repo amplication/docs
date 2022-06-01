@@ -10,7 +10,7 @@ slug: /about/roadmap
 View the official [Amplication public product roadmap](https://amplication.notion.site/190845345cb04a2ea15b4f4cce3a05ae).
 
 As an open-source platform, Amplication is committed to a policy of complete transparency with our community about our future direction. Use our product roadmap to learn about our future plans, to see what we're working on and what's coming next.
-By sharing our roadmap, we hope you will become an even closer partner in our joint vision of building and extending a platform that will empower professional developers to create business applications.
+By sharing our roadmap, we hope you fdsfsdwill become an even closer partner in our joint vision of building and extending a platform that will empower professional developers to create business applications.
 
 ## Roadmap Views
 
