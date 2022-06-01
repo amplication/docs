@@ -17,9 +17,16 @@ Permissions can be controlled separately for each of the following actions:
 - **Delete**
 - **Search**
 
-By default, ALL these actions are permitted for all roles.
+These actions can be set to one of the following:
+- **Public** - no authentication is required, so the action is available to all users, not only those with defined roles 
+- **All Roles** - all roles can perform the action (default)
+- **Granular** - only specified roles can perform the action
+
+
 
 ## Set Entity Permissions
+
+
 
 1. Click the **Entities** icon in the main menu (left sidebar) to open the _Entities_ page.
 2. Click an entity.
@@ -27,10 +34,12 @@ By default, ALL these actions are permitted for all roles.
 
    By default, all actions (_View_, _Create_, _Update_, _Delete_, and _Search_) are set to **All Roles**. 
 
+4. Select **All Roles** (default), **Public**, or **Granular**.
 
-![](./assets/pic-5.jpg)
 
-4. Select **Granular** to enable the configuration of the actions according to specific roles.
+![](./assets/public1.png)
+
+4. If you selected **Granular** to enable the configuration of the actions according to specific roles, continue with the next steps. 
 
 :::tip
 After selecting **Granular**, and before selecting specific roles, this action cannot be performed by any role.
@@ -55,7 +64,7 @@ When selecting a specific field, it will  be available only for the selected rol
 
 You can set permissions at the field level.
 
- 1. Click **+ Add Field** and select the required fields from the drop-down list.
+ 1. Click **Add Field +** and select the required fields from the drop-down list.
 
 
 ![](./assets/pic-8.png)
