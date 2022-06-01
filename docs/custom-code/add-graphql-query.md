@@ -86,7 +86,7 @@ The above code overrides the default **users** query. It adds a value to the **t
 
 Follow this line-by-line explanation to learn more about the code you used:
 
-This decorator uses [Nest interceptor]("https://docs.nestjs.com/interceptors") that we created (AclFilterResponseInterceptor) 
+This decorator uses [Nest interceptor](https://docs.nestjs.com/interceptors) that we created (AclFilterResponseInterceptor) 
 to filter the response object based on the user permissions.
 
 ```typescript
