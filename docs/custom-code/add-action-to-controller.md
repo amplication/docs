@@ -91,7 +91,7 @@ The above code gets a user ID from the request, checks for the user permissions,
 
 Follow this line-by-line explanation to learn more about the code you used:
 
-This decorator uses [Nest interceptor]("https://docs.nestjs.com/interceptors") that we created (AclValidateRequestInterceptor) 
+This decorator uses [Nest interceptor](https://docs.nestjs.com/interceptors) that we created (AclValidateRequestInterceptor) 
 to validate the request object by filtering it based on the user permissions.
 
 ```typescript
