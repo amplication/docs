@@ -34,7 +34,6 @@ import * as nestAccessControl from "nest-access-control";
 import { UserService } from "./user.service";
 import { UserControllerBase } from "./base/user.controller.base";
 
-@swagger.ApiBasicAuth()
 @swagger.ApiTags("users")
 @common.Controller("users")
 export class UserController extends UserControllerBase {
@@ -55,14 +54,13 @@ export class UserController extends UserControllerBase {
   import * as errors from "../errors";
   import { User } from "./base/User";
   import { UserWhereUniqueInput } from "./base/UserWhereUniqueInput";
+  import { AclValidateRequestInterceptor } from "src/interceptors/aclValidateRequest.interceptor";
 ```
-
 
 3. Add the following code at the bottom of the class.
 
 ```typescript
-  @common.UseInterceptors(nestMorgan.MorganInterceptor("combined"))
-  @common.UseGuards(basicAuthGuard.BasicAuthGuard, nestAccessControl.ACGuard)
+  @common.UseInterceptors(AclValidateRequestInterceptor)
   @common.Patch("/:id/password")
   @nestAccessControl.UseRoles({
     resource: "User",
@@ -74,14 +72,7 @@ export class UserController extends UserControllerBase {
   @swagger.ApiForbiddenResponse({ type: errors.ForbiddenException })
   async resetPassword(
     @common.Param() params: UserWhereUniqueInput,
-    @nestAccessControl.UserRoles() userRoles: string[]
   ): Promise<User | null> {
-    const permission = this.rolesBuilder.permission({
-      role: userRoles,
-      action: "update",
-      possession: "own",
-      resource: "User",
-    });
     const result = await this.service.resetPassword({
       where: params,
     });
@@ -90,7 +81,7 @@ export class UserController extends UserControllerBase {
         `No resource was found for ${JSON.stringify(params)}`
       );
     }
-    return permission.filter(result);
+    return result;
   }
 ```
 
@@ -100,16 +91,11 @@ The above code gets a user ID from the request, checks for the user permissions,
 
 Follow this line-by-line explanation to learn more about the code you used:
 
-This decorator instructs morgan to log every request to this endpoint. This line is optional.
+This decorator uses [Nest interceptor](https://docs.nestjs.com/interceptors) that we created (AclValidateRequestInterceptor) 
+to validate the request object by filtering it based on the user permissions.
 
 ```typescript
-@common.UseInterceptors(nestMorgan.MorganInterceptor("combined"))
-```
-
-This decorator instructs nestJS to guard this endpoint and prevent anonymous access.
-
-```typescript
-  @common.UseGuards(basicAuthGuard.BasicAuthGuard, nestAccessControl.ACGuard)
+@common.UseInterceptors(AclValidateRequestInterceptor)
 ```
 
 This decorator sets the route for the endpoint.
@@ -140,8 +126,7 @@ Create a function called **resetPassword** with parameter of type **UserWhereUni
 
 ```typescript
 async resetPassword(
-    @common.Param() params: UserWhereUniqueInput,
-    @nestAccessControl.UserRoles() userRoles: string[]
+    @common.Param() params: UserWhereUniqueInput
   ): Promise<User | null> {
 ```
 
@@ -150,17 +135,6 @@ This line creates a parameter named **userRoles** and extract its value from the
 
 ```typescript
     @nestAccessControl.UserRoles() userRoles: string[]
-```
-
-Create a permission object to be used later for result filtering based on the user permissions.
-
-```typescript
-const permission = this.rolesBuilder.permission({
-  role: userRoles,
-  action: "update",
-  possession: "own",
-  resource: "User",
-});
 ```
 
 Call the user service to execute the resetPassword, then check and filter the results before returning them to the client.
@@ -174,7 +148,7 @@ if (result === null) {
     `No resource was found for ${JSON.stringify(params)}`
   );
 }
-return permission.filter(result);
+return results;
 ```
 
 ## Check your changes
