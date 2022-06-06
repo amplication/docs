@@ -22,6 +22,7 @@ module.exports = {
       "api/generated-api-sorting",
       "api/generated-api-filtering",
       "api/generated-api-pagination",
+      "custom-code/meta-query-graphql",
     ],
     "How To": [
       "how-to/how-to-create-app",
@@ -63,8 +64,7 @@ module.exports = {
       "custom-code/add-business-logic",
       "custom-code/add-action-to-controller",
       "custom-code/add-graphql-query",
-      "custom-code/meta-query-graphql",
-      ],
+           ],
 
     "Errors and Resolutions": [
       "errors/github-different-app-id",
