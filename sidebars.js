@@ -18,7 +18,7 @@ module.exports = {
         "getting-started/phone-home",
     ],
     "Generated API": [
-      "getting-started/generated-app-api",
+      "getting-started/generated-app-api", 
       "api/generated-api-sorting",
       "api/generated-api-filtering",
       "api/generated-api-pagination",
