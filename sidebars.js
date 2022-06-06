@@ -63,7 +63,7 @@ module.exports = {
       "custom-code/add-business-logic",
       "custom-code/add-action-to-controller",
       "custom-code/add-graphql-query",
-      "custom-code/metaquery-graphql",
+      "custom-code/meta-query-graphql",
       ],
 
     "Errors and Resolutions": [
