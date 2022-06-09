@@ -26,6 +26,11 @@ Let’s get started.
 
 ## Step 2 - Create an Entity
 
+:::tip
+When creating an Entity, make sure you do not use a reserved name for the name of the Entity or for any of its fields. Go [here](https://github.com/amplication/amplication/blob/14e36c90734dcef2e57f39ae92c5fe1158a04d6b/packages/amplication-server/src/core/entity/reservedNames.ts) to check the list of reserved names.
+:::
+
+
 Click the **Entities** icon on the main menu (left sidebar) to reach the _Entities_ page. Here you see all the entities in your application.
 
 ![](./assets/pic-1.jpg)
