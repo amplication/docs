@@ -110,6 +110,12 @@ module.exports = {
         ],
       },
     ],
+    [
+      require.resolve("docusaurus-gtm-plugin"),
+      {
+        id: "GTM-TQF7HCF", // GTM Container ID
+      },
+    ],
   ],
   scripts: [
     {
