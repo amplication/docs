@@ -91,7 +91,7 @@ Instead of calling our API endpoints with axios directly from our components, we
    };
    ```
 
-   `me` will check if we have an access token stored, because if there is none then there is no way this request would succeed. If the token exists, it will make a `GET` request to the `/api/me` endpoint we created in [Tutorial Step 3](./step-003). On the success of the request, the current user's user object will be returned.
+   `me` will check if we have an access token stored, because if there is none then there is no way this request would succeed. If the token exists, it will make a `GET` request to the `/api/me` endpoint we created in [Tutorial Step 3](../step-003). On the success of the request, the current user's user object will be returned.
 
 3. Next, add the `login` function:
 
@@ -131,7 +131,7 @@ Instead of calling our API endpoints with axios directly from our components, we
    };
    ```
 
-   `signup` will make a `POST` request to the `/api/signup` endpoint, which we also created in [Tutorial Step 3](./step-003), sending the username and password of our new user. If the request fails, like if the username is already used, an alert will pop up notifying the user of the failure. If the request succeeds the access token will be saved into local storage, and then the `me` function will be called to return the current user's user object.
+   `signup` will make a `POST` request to the `/api/signup` endpoint, which we also created in [Tutorial Step 3](../step-003), sending the username and password of our new user. If the request fails, like if the username is already used, an alert will pop up notifying the user of the failure. If the request succeeds the access token will be saved into local storage, and then the `me` function will be called to return the current user's user object.
 
 ## Step 3 - The Auth Component
 
@@ -147,7 +147,8 @@ Instead of calling our API endpoints with axios directly from our components, we
      const [password, setPassword] = useState("");
      const [confirm, setConfirm] = useState("");
 
-     const handleUsernameChange = (e) => setUsername(e.target.value.toLowerCase());
+     const handleUsernameChange = (e) =>
+       setUsername(e.target.value.toLowerCase());
      const handlePasswordChange = (e) => setPassword(e.target.value);
      const handleConfirmChange = (e) => setConfirm(e.target.value);
 
