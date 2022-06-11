@@ -7,6 +7,7 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "amplication/amplication", // Usually your GitHub org/user name.
   projectName: "amplication", // Usually your repo name.
+  trailingSlash: true,
   themeConfig: {
     algolia: {
       // The application ID provided by Algolia
