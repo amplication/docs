@@ -8,7 +8,7 @@ slug: /how-to/create-entity
 # Create a new entity
 
 :::tip
-When creating an entity, make sure you do not use a reserved name for the name of the entity or for any of its fields. Go [here](https://github.com/amplication/amplication/blob/14e36c90734dcef2e57f39ae92c5fe1158a04d6b/packages/amplication-server/src/core/entity/reservedNames.ts) to check the list of reserved names.
+When creating an entity, make sure you do not use a reserved name for the name of the entity or for any of its fields. Go [here](https://github.com/amplication/amplication/blob/master/packages/amplication-server/src/core/entity/reservedNames.ts) to check the list of reserved names.
 :::
 
 Click the **Entities** icon on the left sidebar (main menu) to reach the Entities page. Here you see all the entities in your application.
