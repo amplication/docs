@@ -7,6 +7,7 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "amplication/amplication", // Usually your GitHub org/user name.
   projectName: "amplication", // Usually your repo name.
+  trailingSlash: true,
   themeConfig: {
     algolia: {
       // The application ID provided by Algolia
@@ -108,6 +109,12 @@ module.exports = {
             from: ["/docs/how-to/dev-env"],
           },
         ],
+      },
+    ],
+    [
+      require.resolve("docusaurus-gtm-plugin"),
+      {
+        id: "GTM-TQF7HCF", // GTM Container ID
       },
     ],
   ],

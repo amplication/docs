@@ -138,9 +138,21 @@ Permissions can be controlled separately for each of the following actions:
 - **Delete**
 - **Search**
 
-By default, ALL these actions are permitted for all roles.
+These actions can be set to one of the following:
+- **Public** - no authentication is required, so the action is available to all users, not only those with defined roles 
+- **All Roles** - all roles can perform the action 
+- **Granular** - only specified roles can perform the action
+
 
 ### Set Entity Permissions
+
+By default, all of the actions are set as **All Roles**.
+
+In this example, some of the actions have been changed to **Public**, while the others remain as **All Roles**
+
+![](./assets/public1.png)
+
+In the following example, we use the **Granular** setting to find tune the permissions for a role. 
 
 1. Click the Entities icon in the main menu (left sidebar) to open the _Entities_ page.
 2. Click the _Project_ entity.
@@ -148,7 +160,7 @@ By default, ALL these actions are permitted for all roles.
 4. By default, all actions (_View_, _Create_, _Update_, _Delete_, and _Search_) are set to **All Roles**.
 5. Fine tune permissions by changing the *Delete* permissions from **All Roles** to **Granular** and then select from the displayed roles the _Admin_ role. This ensures that only users with the _Admin_ role can delete projects.
 
-![](./assets/pic-5.jpg)
+![](./assets/granular.png)
 
 :::tip
 Once you have selected **Granular** on an action such as _Delete_, you have to select specific roles, or no one at all can use that action.
