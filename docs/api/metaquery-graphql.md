@@ -2,7 +2,7 @@
 id: meta-query-graphql
 title: Meta Query in GraphQL 
 sidebar_label: Meta Query in GraphQL
-slug: /custom-code/meta-query-graphql
+slug: /api/meta-query-graphql
 ---
 
 # Meta Query in GraphQL 
