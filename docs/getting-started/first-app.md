@@ -22,23 +22,29 @@ Let’s get started.
 2. Click the **New App** button.
 3. In the _New App_ page, click **Start from Scratch** to create an empty app.
 
-![](./assets/pic0.png)
+   ![](./assets/pic0.png)
+
+   The Overview window opens. 
+  
+   ![](./assets/overview-window.png)
+
 
 ## Step 2 - Create an Entity
 
-Click the **Entities** icon on the main menu (left sidebar) to reach the _Entities_ page. Here you see all the entities in your application.
+1. On the _Overview_ page, click **Go to Entities**, or from the main menu (left sidebar) click the **Entities** icon.
+The _Entities_ page opens.  Here you see all the entities in your application.
 
-![](./assets/pic-1.jpg)
+   ![](./assets/pic-1.jpg)
 
 :::tip
 At this stage, there's only one entity, **User**. This is auto-generated when you created the new app.
 :::
 
-In this example, we'll now add another entity called “Project”.
+   In this example, we'll now add another entity called “Project”.
 
-1. Click **Add Entity**.
-2. In the _New Entity_ dialog, type “Project”.
-3. Click **Create Entity**.
+2. Click **Add Entity**.
+3. In the _New Entity_ dialog, type “Project”.
+4. Click **Create Entity**.
 
 ![](./assets/pic-2.jpg)
 
@@ -107,7 +113,8 @@ You might find it easier to first add all the fields you want, one after another
 
 ## Step 4 - Create Roles
 
-Click the Roles icon on the main menu (left sidebar) to reach the _Roles_ page. Here you see all the roles in your application.
+1. Click the Roles icon on the main menu (left sidebar) to reach the _Roles_ page. Here you see all the roles in your application.
+1. On the _Overview_ page, click **Go to roles**, or from the main menu (left sidebar) click the **Roles** icon.
 
 :::tip
 Currently, there's only a default **User** role that was auto-generated when you created the new app.
@@ -137,8 +144,7 @@ By default, ALL these actions are permitted for all roles.
 
 ### Set Entity Permissions
 
-1. Click the Entities icon in the main menu (left sidebar) to open the _Entities_ page.
-2. Click the _Project_ entity.
+1. On the _Overview_ page, click **Go to Entities**, or from the main menu (left sidebar) click the **Entities** icon.
 3. In the _Project_ page click the _Permissions_ tab. This opens the Permissions settings.
 4. By default, all actions (_View_, _Create_, _Update_, _Delete_, and _Search_) are set to **All Roles**.
 5. Fine tune permissions by changing the *Delete* permissions from **All Roles** to **Granular** and then select from the displayed roles the _Admin_ role. This ensures that only users with the _Admin_ role can delete projects.
@@ -187,7 +193,7 @@ Now that you know how to create entities, commit changes, and build new versions
 
 We'll now add another entity called “Task”.
 
-1. Click the Entities icon on the main menu (left toolbar) to reach the Entities page.
+1. On the _Overview_ page, click **Go to Entities**, or from the main menu (left sidebar) click the **Entities** icon.
 2. Click **Add entity**.
 3. In the _New Entity_ dialog, type in “Task”.
 4. Click **Create Entity**.
@@ -210,7 +216,7 @@ The Task's field list should now look like this:
 
 We'll now make a few changes to the _Project_ entity.
 
-1. Click the Entities icon on the main menu (left sidebar) to reach the Entities page.
+1. On the _Overview_ page, click **Go to Entities**, or from the main menu (left sidebar) click the **Entities** icon.
 2. Select the _Project_ entity.
 3. Add a new field called **Due Date** and set its data type to "Date Time".
 4. Select the existing _Owner_ field and change its _Display Name_ to "Project Owner".
