@@ -33,6 +33,7 @@ Kubernetes
 kubectl
 bitnami
 postgresql
+postgres
 Minikube
 Docker's
 Roadmap
