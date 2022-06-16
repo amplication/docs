@@ -12,7 +12,7 @@ slug: getting-started/workspace
 Workspaces help you manage your projects by enabling  selected team members to work on specific apps.
 
 Every app you create in Amplication is associated with a workspace.
-The name of the workspace is displayed in the top left of the workspace window. The number to the left of the workspace name indicates the number of apps in the workspace. 
+The name of the workspace is displayed in the top left of the workspace window. 
 
 ![](./assets/workspace1.png)
 
@@ -39,7 +39,7 @@ Inviting members to the workspace gives them access to apps included in the work
 
 ![](./assets/workspace3.png)
 
-2. Enter the new members email in the field next to the **Invite** button, then click **Invite**. 
+2. Enter the new member's email in the field next to the **Invite** button, then click **Invite**. 
 
     An invitation is sent to the prospective member, and the member is added to the list with the status _Pending_.
 
