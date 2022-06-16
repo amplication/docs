@@ -7,7 +7,11 @@ slug: /how-to/create-entity
 
 # Create a new entity
 
-Click the Entities icon (left sidebar, a.k.a. main menu) to reach the Entities page, here you see all the entities in your application.
+:::tip
+When creating an entity, make sure you do not use a reserved name for the name of the entity or for any of its fields. Go [here](https://github.com/amplication/amplication/blob/master/packages/amplication-server/src/core/entity/reservedNames.ts) to check the list of reserved names.
+:::
+
+Click the **Entities** icon on the left sidebar (main menu) to reach the Entities page. Here you see all the entities in your application.
 
 ![](../getting-started/assets/pic-1.jpg)
 
@@ -22,5 +26,5 @@ White spaces are supported, which is useful when you want to enter a descriptive
 ![](../getting-started/assets/pic-2.jpg)
 
 :::info
-Notice that the added entity comes with auto-generated values like “Plural Display Name” and some default fields – ID, Created At, and Updated At.
+Notice that the added entity comes with auto-generated values like **Plural Display Name** and some default fields – ID, Created At, and Updated At.
 :::

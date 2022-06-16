@@ -30,6 +30,11 @@ The `where` parameter supports the following operators:
 - mode
 - not
 
+:::note
+The `Searchable` flag in the entity field settings determines whether the record can be included in a search. The flag is activated by default. 
+:::
+
+
 To find out more about filters and operators,  we recommend reading the [Prisma Client API reference](https://www.prisma.io/docs/reference/api-reference/prisma-client-reference#filter-conditions-and-operators)
 
 ## Filtering Examples

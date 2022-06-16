@@ -15,25 +15,40 @@ When running a local Amplication server you first need to configure the server t
 When using the hosted service on https://app.amplication.com, the integration is pre-configured and you just need to follow [this guide](/docs/sync-with-github) to sync your application with GitHub.
 :::
 
-### Create a new GitHub App
+## Step 1:  Create a new GitHub App
 
-1. Go to https://github.com/settings/developers.
-2. Click on **OAuth Apps**.
-3. Click on **Register a new application**.
-4. Give the application any name.
-5. Set the **Authorization callback URL** URL to **http://localhost:3001**
+1. Go to https://github.com/settings/apps
+2. Click **OAuth Apps**
+3. Click **Register a new application**
 
-:::info
-In case you are hosting the Amplication server on any other address, use the specific address instead of http://localhost:3001
-:::
+![](./assets/register-new-oauth-app.png)
 
-6. Copy and save the client secret and client ID of your new GitHub application.
+4. Enter the fields as follows: 
+    - **Application name** - give the application any name
+    - **Homepage URL** - full URL to your app homepage
+    - **Application description** - optional
+    - **Authorization callback URL** - set to **http://localhost:3001**. If you are hosting the Amplication server on any other address, use the specific address.
 
-### Configure Amplication server to work with the new GitHub app
+5. Click **Register application**
 
-1. Go the **../packages/amplication-server/**
+![](./assets/app-settings.png)
 
-2. Add a **.env.local** file in the root of the server directory
+6. Click **Generate a new client secret**
+
+![](./assets/client-secret.png)
+
+6. Copy and save the **Client secret** and **Client ID** of your new GitHub application.
+
+## Step 2: Configure Amplication server to work with the new GitHub app
+
+1. Go to  
+
+```
+../packages/amplication-server/
+
+```
+
+2. Add the `.env.local` file to the root of the server directory.
 
 ```
 ../packages/amplication-server/.env.local
@@ -49,7 +64,7 @@ GITHUB_APP_PRIVATE_KEY = [github-app-private-key]
 GITHUB_APP_INSTALLATION_URL = [github-app-installation-url]
 ```
 
-4. Replace **[client_secret_here]** with the client secret of the new GitHub application.
-5. Replace **[client_id_here]** with the client ID of the new GitHub application.
+4. Replace `[use-secret-manager]` with the **Client secret** of the new GitHub application.
+5. Replace `[github-app-client-id]` with the **Client ID** of the new GitHub application.
 
 6. Restart Amplication server.

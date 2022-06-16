@@ -7,17 +7,29 @@ slug: /how-to/create-entity-field
 
 # Create a new entity field
 
-To create a new entity field, you first need to navigate to the _Entity_ page - click the **Entities** icon on the main menu (left toolbar) to reach the Entities page. Here you see all the entities in your application. Click on the Entity you want to edit, to get into the Entity's page.
+To create a new entity field,  navigate to the _Entity_ page - click the **Entities** icon on the main menu (left toolbar) to reach the Entities page. Here you see all the entities in your application. Click on the Entity you want to edit, to get into the Entity's page.
 
-1. In the _Entity Fields_ text box (above the list of fields), type in a name for the new field.
-2. Click **Add field** (or just press Enter). The new field is added to the list.
-3. The field's property panel opens, so you can edit its other properties like _Description_, _Required_, and _Data Type_.
+![](./assets/field-settings.png)
+
+1. Click **Add Field** at the bottom of the list of fields.
+2. Fill the **Display Name**, and **Name** fields. 
+3. Click **Description** and enter text to describe the field. 
+4. Click the toggle switch to activate or deactivate the **Unique Field**, **Required Field**, and **Searchable** settings.  
+5. Select a **Data Type** from the drop-down list. 
+
+![](./assets/data-types.png)
+
+:::info
+JSON is one of the supported data types. You can create JSON fields as part of your data model when creating an entity field.
+JSON enables you to create fields that store and include different kinds of data, making it easier for you to add custom fields to your applications. JSON can be used with both REST API and GraphQL. 
+:::
+
+
 
 :::tip
 You might find it easier to first add all the fields you want, one after another, and only afterwards set the properties of each field.
 :::
 
-![](../getting-started/assets/pic-3.jpg)
 
 
 :::info
