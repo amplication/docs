@@ -24,6 +24,7 @@ module.exports = {
       "api/generated-api-sorting",
       "api/generated-api-filtering",
       "api/generated-api-pagination",
+      "api/meta-query-graphql",
     ],
     "How To": [
       "how-to/how-to-create-app",
@@ -106,7 +107,6 @@ module.exports = {
           ],
         },
       ],     
-
     Community: ["contributing", "community/handling-a-new-issue"],
   },
 };
