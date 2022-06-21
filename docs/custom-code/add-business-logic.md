@@ -60,7 +60,7 @@ import { User } from "./base/User";
 import { UserFindUniqueArgs } from "./base/UserFindUniqueArgs";
 ```
 
-3. Add the following function at the bottom of the file.
+3. Add the following function to the bottom of the *UserService* class.
 
 ```javascript
 async resetPassword(args: UserFindUniqueArgs): Promise<User> {
