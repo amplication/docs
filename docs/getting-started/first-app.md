@@ -34,6 +34,12 @@ Let’s get started.
 1. On the _Overview_ page, click **Go to Entities**, or from the main menu (left sidebar) click the **Entities** icon.
 The _Entities_ page opens.  Here you see all the entities in your application.
 
+:::tip
+When creating an Entity, make sure you do not use a reserved name for the name of the Entity or for any of its fields. Go [here](https://github.com/amplication/amplication/blob/master/packages/amplication-server/src/core/entity/reservedNames.ts) to check the list of reserved names.
+:::
+
+Click the **Entities** icon on the main menu (left sidebar) to reach the _Entities_ page. Here you see all the entities in your application.
+
    ![](./assets/pic-1.jpg)
 
 :::tip
@@ -140,16 +146,29 @@ Permissions can be controlled separately for each of the following actions:
 - **Delete**
 - **Search**
 
-By default, ALL these actions are permitted for all roles.
+These actions can be set to one of the following:
+- **Public** - no authentication is required, so the action is available to all users, not only those with defined roles 
+- **All Roles** - all roles can perform the action 
+- **Granular** - only specified roles can perform the action
+
 
 ### Set Entity Permissions
 
+By default, all of the actions are set as **All Roles**.
+
+In this example, some of the actions have been changed to **Public**, while the others remain as **All Roles**
+
+![](./assets/public1.png)
+
+In the following example, we use the **Granular** setting to find tune the permissions for a role. 
+
 1. On the _Overview_ page, click **Go to Entities**, or from the main menu (left sidebar) click the **Entities** icon.
+2. Click the _Project_ entity.
 3. In the _Project_ page click the _Permissions_ tab. This opens the Permissions settings.
 4. By default, all actions (_View_, _Create_, _Update_, _Delete_, and _Search_) are set to **All Roles**.
 5. Fine tune permissions by changing the *Delete* permissions from **All Roles** to **Granular** and then select from the displayed roles the _Admin_ role. This ensures that only users with the _Admin_ role can delete projects.
 
-![](./assets/pic-5.jpg)
+![](./assets/granular.png)
 
 :::tip
 Once you have selected **Granular** on an action such as _Delete_, you have to select specific roles, or no one at all can use that action.
