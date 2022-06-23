@@ -12,6 +12,7 @@ module.exports = {
       "getting-started/authentication",
       "getting-started/connect-server-to-github",
       "getting-started/helm-chart",
+      "getting-started/workspace",
     ],
     "About": [
       "about/licensing",  
