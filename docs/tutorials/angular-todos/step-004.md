@@ -9,7 +9,7 @@ slug: /tutorials/angular-todos/step-004
 
 ## Table of Contents
 
-- [Step 1 - Add HttpClientModule](#step-1---add-httpclientmodule) 
+- [Step 1 - Add HttpClientModule](#step-1---add-httpclientmodule)
 - [Step 2 - Authorization Requests](#step-2---authorization-requests)
 - [Step 3 - The Auth Component](#step-3---the-auth-component)
 - [Step 4 - Login](#step-4---login)
@@ -66,44 +66,44 @@ slug: /tutorials/angular-todos/step-004
 4. Then replace the content of the generated file (`web/src/app/jwt.service.ts`) with the following code:
 
    ```ts
-   import { Injectable } from '@angular/core';
+   import { Injectable } from "@angular/core";
    import {
-      HttpInterceptor,
-      HttpEvent,
-      HttpRequest,
-      HttpHandler,
-   } from '@angular/common/http';
-   import { Observable } from 'rxjs';
-   import { environment } from '../environments/environment';
-   
+     HttpInterceptor,
+     HttpEvent,
+     HttpRequest,
+     HttpHandler,
+   } from "@angular/common/http";
+   import { Observable } from "rxjs";
+   import { environment } from "../environments/environment";
+
    @Injectable({
-      providedIn: 'root',
+     providedIn: "root",
    })
    export class JWTService implements HttpInterceptor {
-      get jwt(): string {
-         return localStorage.getItem(environment.jwtKey) || '';
-      }
-   
-      set jwt(accessToken: string) {
-         localStorage.setItem(environment.jwtKey, accessToken);
-      }
-   
-      get isStoredJwt(): boolean {
-         return Boolean(this.jwt);
-      }
-   
-      intercept(
-         request: HttpRequest<any>,
-         next: HttpHandler
-      ): Observable<HttpEvent<any>> {
-         if (request.url.startsWith(environment.apiUrl)) {
-            request = request.clone({
-               setHeaders: { Authorization: `Bearer ${this.jwt}` },
-            });
-         }
-   
-         return next.handle(request);
-      }
+     get jwt(): string {
+       return localStorage.getItem(environment.jwtKey) || "";
+     }
+
+     set jwt(accessToken: string) {
+       localStorage.setItem(environment.jwtKey, accessToken);
+     }
+
+     get isStoredJwt(): boolean {
+       return Boolean(this.jwt);
+     }
+
+     intercept(
+       request: HttpRequest<any>,
+       next: HttpHandler
+     ): Observable<HttpEvent<any>> {
+       if (request.url.startsWith(environment.apiUrl)) {
+         request = request.clone({
+           setHeaders: { Authorization: `Bearer ${this.jwt}` },
+         });
+       }
+
+       return next.handle(request);
+     }
    }
    ```
 
@@ -116,9 +116,9 @@ slug: /tutorials/angular-todos/step-004
    ```diff
    - import { HttpClientModule } from '@angular/common/http';
    + import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-   
+
    + import { JWTService } from './jwt.service';
-   
+
    import { AppComponent } from './app.component';
    ```
 
@@ -143,7 +143,7 @@ Instead of calling our API endpoints directly from our components, we will abstr
    ```bash
    ng g s auth
    ```
-  
+
    And at the top of the newly created file (`web/src/app/auth.service.ts`), we'll import the `JWTService` and `HttpClient` and some other dependencies.
 
    ```diff
@@ -159,7 +159,7 @@ Instead of calling our API endpoints directly from our components, we will abstr
 
    ```ts
    export class AuthService {
-      constructor(private http: HttpClient, private jwt: JWTService) { }
+     constructor(private http: HttpClient, private jwt: JWTService) {}
    }
    ```
 
@@ -174,7 +174,7 @@ Instead of calling our API endpoints directly from our components, we will abstr
    }
    ```
 
-   `me` will check if we have an access token stored, because if there is none then there is no way this request would succeed. If the token exists, it will make a `GET` request to the `/api/me` endpoint we created in [Tutorial Step 3](./step-003). On the success of the request, the current user's user object will be returned.
+   `me` will check if we have an access token stored, because if there is none then there is no way this request would succeed. If the token exists, it will make a `GET` request to the `/api/me` endpoint we created in [Tutorial Step 3](../step-003). On the success of the request, the current user's user object will be returned.
 
 4. Next, add the `login` method:
 
@@ -226,7 +226,7 @@ Instead of calling our API endpoints directly from our components, we will abstr
    }
    ```
 
-   `signup` will make a `POST` request to the `/api/signup` endpoint, which we also created in [Tutorial Step 3](./step-003), sending the username and password of our new user. If the request fails, like if the username is already used, an alert will pop up notifying the user of the failure. If the request succeeds the access token will be saved into local storage, and then the `me` function will be called to return the current user's user object.
+   `signup` will make a `POST` request to the `/api/signup` endpoint, which we also created in [Tutorial Step 3](../step-003), sending the username and password of our new user. If the request fails, like if the username is already used, an alert will pop up notifying the user of the failure. If the request succeeds the access token will be saved into local storage, and then the `me` function will be called to return the current user's user object.
 
 6. Finally we'll need to add the `AuthService` to the `AppModule`. Open `web/src/app/app.module.ts` and import `AuthService`:
 
@@ -260,44 +260,44 @@ Instead of calling our API endpoints directly from our components, we will abstr
 `web/src/app/auth/auth.component.ts`
 
 ```ts
-import { Component, Output, EventEmitter } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
-import { AuthService } from '../auth.service';
+import { Component, Output, EventEmitter } from "@angular/core";
+import { FormBuilder } from "@angular/forms";
+import { AuthService } from "../auth.service";
 
 @Component({
-   selector: 'app-auth',
-   templateUrl: './auth.component.html',
-   styleUrls: ['./auth.component.css'],
+  selector: "app-auth",
+  templateUrl: "./auth.component.html",
+  styleUrls: ["./auth.component.css"],
 })
 export class AuthComponent {
-   @Output() setUser = new EventEmitter<string>();
-   authForm = this.fb.group({
-      username: '',
-      password: '',
-      confirm: '',
-   });
-   isLogin = true;
+  @Output() setUser = new EventEmitter<string>();
+  authForm = this.fb.group({
+    username: "",
+    password: "",
+    confirm: "",
+  });
+  isLogin = true;
 
-   constructor(private fb: FormBuilder, private auth: AuthService) {}
+  constructor(private fb: FormBuilder, private auth: AuthService) {}
 
-   onSubmit() {
-      const { username, password, confirm }: { [key: string]: string } =
-         this.authForm.getRawValue();
+  onSubmit() {
+    const { username, password, confirm }: { [key: string]: string } =
+      this.authForm.getRawValue();
 
-      if (!username || !password) return;
+    if (!username || !password) return;
 
-      let authResult;
+    let authResult;
 
-      if (!this.isLogin && password !== confirm) {
-         return alert('Passwords do not match');
-      } else if (!this.isLogin) {
-         authResult = this.auth.signup(username.toLowerCase(), password);
-      } else {
-         authResult = this.auth.login(username.toLowerCase(), password);
-      }
+    if (!this.isLogin && password !== confirm) {
+      return alert("Passwords do not match");
+    } else if (!this.isLogin) {
+      authResult = this.auth.signup(username.toLowerCase(), password);
+    } else {
+      authResult = this.auth.login(username.toLowerCase(), password);
+    }
 
-      authResult.subscribe({ next: (result: any) => this.setUser.emit(result) });
-   }
+    authResult.subscribe({ next: (result: any) => this.setUser.emit(result) });
+  }
 }
 ```
 
@@ -305,16 +305,34 @@ export class AuthComponent {
 
 ```html
 <form [formGroup]="authForm" (ngSubmit)="onSubmit()">
-   <h2>{{isLogin ? "Login" : "Sign Up"}}</h2>
-   <input name="username" type="text" placeholder="username" formControlName="username" required />
-   <input name="password" type="password" placeholder="password" formControlName="password" required />
-   <input *ngIf="!isLogin" name="confirmPassword" type="password" placeholder="confirm password"
-    formControlName="confirm" required />
+  <h2>{{isLogin ? "Login" : "Sign Up"}}</h2>
+  <input
+    name="username"
+    type="text"
+    placeholder="username"
+    formControlName="username"
+    required
+  />
+  <input
+    name="password"
+    type="password"
+    placeholder="password"
+    formControlName="password"
+    required
+  />
+  <input
+    *ngIf="!isLogin"
+    name="confirmPassword"
+    type="password"
+    placeholder="confirm password"
+    formControlName="confirm"
+    required
+  />
 
-   <button type="submit">Submit</button>
-   <button type="button" (click)="isLogin = !isLogin">
-      {{isLogin ? "Need an account?" : "Already have an account?"}}
-   </button>
+  <button type="submit">Submit</button>
+  <button type="button" (click)="isLogin = !isLogin">
+    {{isLogin ? "Need an account?" : "Already have an account?"}}
+  </button>
 </form>
 ```
 
@@ -344,12 +362,12 @@ On submit the `login` or `signup` method from the `AuthService` is called, and t
 
    ```html
    <ng-container *ngIf="user; else auth">
-      <app-create-task (addTask)="addTask($event)"></app-create-task>
-      <app-tasks [tasks]="tasks" (completed)="completed($event)"></app-tasks>
+     <app-create-task (addTask)="addTask($event)"></app-create-task>
+     <app-tasks [tasks]="tasks" (completed)="completed($event)"></app-tasks>
    </ng-container>
-   
+
    <ng-template #auth>
-      <app-auth (setUser)="setUser($event)"></app-auth>
+     <app-auth (setUser)="setUser($event)"></app-auth>
    </ng-template>
    ```
 
