@@ -60,11 +60,11 @@ If you're running the backend (`npm run start:backend`) you can tinker with quer
    });
    ```
 
-   As in [Tutorial Step 4](./step-004), the `@apollo/client` has been configured to take the user's JWT access token and assign it to the Authorization header of every request.
+   As in [Tutorial Step 4](../step-004), the `@apollo/client` has been configured to take the user's JWT access token and assign it to the Authorization header of every request.
 
 4. We'll also want to include the functions that check if an access token exists and to save a new access token.
 
-    ```js
+   ```js
    export const isStoredJwt = () => Boolean(localStorage.getItem(jwtKey));
    export const setStoredJwt = (accessToken) =>
      localStorage.setItem(jwtKey, accessToken);
@@ -80,9 +80,9 @@ If you're running the backend (`npm run start:backend`) you can tinker with quer
 
 Open up `web/src/lib/auth.js` and delete all the code in the file. At the top of the file, we'll import some of the functions we created in the `web/src/lib/apollo.js` file.
 
-   ```js
-   import { gql, isStoredJwt, setStoredJwt, client } from "./apollo";
-   ```
+```js
+import { gql, isStoredJwt, setStoredJwt, client } from "./apollo";
+```
 
 1. Firstly, add the new `me` function:
 
@@ -174,110 +174,110 @@ Open up `web/src/lib/auth.js` and delete all the code in the file. At the top of
 
 We'll next need to update the tasks functions to use GraphQL. Open up `web/src/lib/tasks.js` and delete all the code in the file and replace it with the following:
 
-   ```js
-   import { gql, client } from "./apollo";
+```js
+import { gql, client } from "./apollo";
 
-   const CREATE_TASK = gql`
-    mutation createTask($data: TaskCreateInput!) {
-       createTask(data: $data) {
-         completed
-         createdAt
-         id
-         text
-       }
-     }
-   `;
+const CREATE_TASK = gql`
+  mutation createTask($data: TaskCreateInput!) {
+    createTask(data: $data) {
+      completed
+      createdAt
+      id
+      text
+    }
+  }
+`;
 
-   export const create = async (text, uid) => {
-     const result = (
-       await client
-         .mutate({
-           mutation: CREATE_TASK,
-           variables: {
-             data: {
-               completed: false,
-               text,
-               uid: { id: uid },
-             },
-           },
-        })
-         .catch(() => null)
-     )?.data.createTask;
+export const create = async (text, uid) => {
+  const result = (
+    await client
+      .mutate({
+        mutation: CREATE_TASK,
+        variables: {
+          data: {
+            completed: false,
+            text,
+            uid: { id: uid },
+          },
+        },
+      })
+      .catch(() => null)
+  )?.data.createTask;
 
-     if (!result) {
-       return alert("Could not create task");
-     }
+  if (!result) {
+    return alert("Could not create task");
+  }
 
-    return result;
-   };
+  return result;
+};
 
-   const GET_TASKS = gql`
-     query tasks($where: TaskWhereInput, $orderBy: [TaskOrderByInput!]) {
-       tasks(where: $where, orderBy: $orderBy) {
-         completed
-         createdAt
-         id
-         text
-      }
-     }
-   `;
+const GET_TASKS = gql`
+  query tasks($where: TaskWhereInput, $orderBy: [TaskOrderByInput!]) {
+    tasks(where: $where, orderBy: $orderBy) {
+      completed
+      createdAt
+      id
+      text
+    }
+  }
+`;
 
-   export const getAll = async (uid) => {
-     const result = (
-       await client
-         .query({
-           query: GET_TASKS,
-           variables: {
-             where: { uid: { id: uid } },
-             orderBy: { createdAt: "Asc" },
-           },
-         })
-         .catch(() => null)
-     )?.data.tasks;
+export const getAll = async (uid) => {
+  const result = (
+    await client
+      .query({
+        query: GET_TASKS,
+        variables: {
+          where: { uid: { id: uid } },
+          orderBy: { createdAt: "Asc" },
+        },
+      })
+      .catch(() => null)
+  )?.data.tasks;
 
-     if (!result) {
-       alert("Could not get tasks");
-       return [];
-     }
+  if (!result) {
+    alert("Could not get tasks");
+    return [];
+  }
 
-     return result;
-   };
+  return result;
+};
 
-   const UPDATE_TASK = gql`
-     mutation updateTask($data: TaskUpdateInput!, $where: TaskWhereUniqueInput!) {
-       updateTask(data: $data, where: $where) {
-         completed
-         createdAt
-         id
-         text
-       }
-     }
-   `;
+const UPDATE_TASK = gql`
+  mutation updateTask($data: TaskUpdateInput!, $where: TaskWhereUniqueInput!) {
+    updateTask(data: $data, where: $where) {
+      completed
+      createdAt
+      id
+      text
+    }
+  }
+`;
 
-   export const update = async (task) => {
-     const result = (
-       await client
-         .mutate({
-           mutation: UPDATE_TASK,
-           variables: {
-             data: {
-               completed: !task.completed,
-             },
-             where: {
-               id: task.id,
-             },
-           },
-         })
-         .catch(() => null)
-     )?.data.updateTask;
+export const update = async (task) => {
+  const result = (
+    await client
+      .mutate({
+        mutation: UPDATE_TASK,
+        variables: {
+          data: {
+            completed: !task.completed,
+          },
+          where: {
+            id: task.id,
+          },
+        },
+      })
+      .catch(() => null)
+  )?.data.updateTask;
 
-     if (!result) {
-       return alert("Could not update task");
-     }
+  if (!result) {
+    return alert("Could not update task");
+  }
 
-     return result;
-   };
-   ```
+  return result;
+};
+```
 
 ## Step 4 - Wrap Up
 
