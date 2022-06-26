@@ -1,17 +1,24 @@
 ---
 id: seed-db
-title: How to Seed a database
-sidebar_label: Seed a database
-slug: /how-to/seed-db
+title: Seeding a database
+sidebar_label: Seeding a database 
+slug: /custom-code/seed-db
 ---
 
-# How to Seed a database
+# Seeding a database
+
+Database seeding is the initial seeding of a database with data.
 
 You can  use a custom script to populate the database on initialization.
 
-This can be useful for populating your database with data that is required for your application to start, or to provide basic data for validating and using your application in a development environment.
+This can be useful for populating your database with necessary data that is required for your application to start, or it can be dummy data for validating and using your application in a development environment.
 
 Seeding the database is done using the `customSeed.ts` file. 
+
+:::info
+For more information about seeding, see [Prisma docs](https://www.prisma.io/docs/guides/database/seed-database)
+:::
+
 
 
 ```typescript
@@ -33,6 +40,3 @@ const client = new PrismaClient();
   void client.$disconnect();
 }
 ```
-:::info
-For more information about seeding, see [Prisma docs](https://www.prisma.io/docs/guides/database/seed-database)
-:::

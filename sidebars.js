@@ -30,7 +30,6 @@ module.exports = {
       "how-to/how-to-set-access-permissions",
       "how-to/how-to-commit-changes",
       "getting-started/relations",
-      "how-to/seed-db",
     ],
     Tutorials: [
       {
@@ -64,6 +63,8 @@ module.exports = {
       "custom-code/add-business-logic",
       "custom-code/add-action-to-controller",
       "custom-code/add-graphql-query",
+      "custom-code/seed-db",
+
     ],
     "Errors and Resolutions": [
       "errors/github-different-app-id",
