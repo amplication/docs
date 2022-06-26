@@ -194,6 +194,11 @@ In this page, you can see that the creation of the _Project_ entity hasn't been 
 
 1. In the _commit message_ dialog, write a description of the changes you're committing. For example: "Added Project Entity and Manager and Admin roles".
 2. Click **Commit Changes**. All changes are committed. A build of the first version of your app is automatically created!
+
+:::tip
+Use Code View to view and explore the generated code. You can see the updated code before it is synced with GitHub or downloaded. Click the [View Code](./view-generated-code.md) icon to view the generated code. 
+:::
+
 3. After the build process completes, click the download icon in the _Generate Code_ row to get a .zip file of your app. It is now ready to be deployed anywhere you want. 🚀
 
 ## Step 7 - Taking your app a bit further

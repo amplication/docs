@@ -12,6 +12,7 @@ module.exports = {
       "getting-started/authentication",
       "getting-started/connect-server-to-github",
       "getting-started/helm-chart",
+      "getting-started/view-generated-code",
     ],
     "About": [
       "about/licensing",  
@@ -33,7 +34,6 @@ module.exports = {
       "how-to/how-to-set-access-permissions",
       "how-to/how-to-commit-changes",
       "getting-started/relations",
-      "how-to/view-generated-code",
     ],
     Tutorials: [
       {
