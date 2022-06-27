@@ -1,7 +1,7 @@
 ---
 id: deploy
 title: How to deploy your app
-sidebar_label: Deploy your app
+sidebar_label: How to deploy your app
 slug: /deploy
 ---
 
