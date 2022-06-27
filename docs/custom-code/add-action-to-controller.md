@@ -1,7 +1,7 @@
 ---
 id: add-action-to-controller
 title: How to add an action to a REST API controller
-sidebar_label: Add REST API Action
+sidebar_label: How to add an action to a REST API controller
 slug: /custom-code/controller-action
 ---
 
