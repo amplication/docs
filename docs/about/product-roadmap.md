@@ -1,7 +1,7 @@
 ---
 id: product-roadmap
 title: Product Roadmap
-sidebar_label: Roadmap
+sidebar_label: Product Roadmap
 slug: /about/roadmap
 ---
 
