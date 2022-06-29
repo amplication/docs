@@ -17,7 +17,7 @@ module.exports = {
       "about/licensing",  
       "about/product-roadmap",
       "getting-started/phone-home",
-        
+          
     ],
     "Generated API": [
       "getting-started/generated-app-api", 
