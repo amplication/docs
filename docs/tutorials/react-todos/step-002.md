@@ -123,7 +123,7 @@ On the right-side panel is the `Pending Changes` where the changes to `Task` and
 
    ![download button](./assets/step-002-013.png)
 
-4. Extract the zip file and copy all of the contents (except for the `README.md`) to the root of the `amplication-react` project.
+3. Extract the zip file and copy all of the contents (except for the `README.md`) to the root of the `amplication-react` project.
 
 ## Step 6 - Run the Backend
 
