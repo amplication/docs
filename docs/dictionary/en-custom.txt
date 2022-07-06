@@ -65,3 +65,4 @@ Posthog
 httpclientmodule
 authservice
 tasksservice
+upsert
