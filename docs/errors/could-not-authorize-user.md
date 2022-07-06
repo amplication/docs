@@ -33,4 +33,4 @@ AMP_OUTPUT_FORMAT=undefined
 ```
 Use this command to set the correct URL for the Amplication server
 
-```$ amp config:set AMP_SERVER_URL https://app.amplication.com```
+```$ amp config:set AMP_SERVER_URL https://server.amplication.com```
