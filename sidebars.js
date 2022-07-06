@@ -34,6 +34,7 @@ module.exports = {
       "how-to/how-to-set-access-permissions",
       "how-to/how-to-commit-changes",
       "getting-started/relations",
+      "how-to/api-admin-ui-settings",
     ],
     Tutorials: [
       {
