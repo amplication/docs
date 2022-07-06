@@ -40,7 +40,7 @@ You should see the current version number of the cli
 
 ### Changing Amplication server url
 
-By default, Amplication CLI works with the hosted version on https://app.amplication.com. In case you want to use the CLI with another Amplication server, you can use the **config:set** command
+By default, Amplication CLI works with the hosted version on https://server.amplication.com.  If you want to use the CLI with another Amplication server, you can use the **config:set** command
 
 ```sh-session
 $ amp config:set AMP_SERVER_URL http://localhost:3000
