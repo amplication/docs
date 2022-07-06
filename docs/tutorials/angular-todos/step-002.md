@@ -107,21 +107,15 @@ On the right-side panel is the `Pending Changes` where the changes to `Task` and
 
 ![pending changes](./assets/step-002-011.png)
 
-1. Click `Commit changes & build` to finalize the changes as well as to deploy an instance of the backend into a sandbox environment.
-
-2. On the bottom of the page, there's a status button with the text `Preparing sandbox environment...`. Clicking that will route you to a log of the backend being dockerized and deployed.
-
-   ![build log](./assets/step-002-012.png)
-
-   This takes a few minutes, but once complete you can see the backend by clicking the `Open Sandbox environment`, but we will not be using the sandbox for the Todo app.
+1. Click `Commit changes & build` to finalize the changes.
 
    Amplication by default creates a secure environment where all requests need to be authenticated. For this use case, we will want to ease some of those protections. Thanks to Amplication's extensibility, we can build on top of everything that was generated for us.
 
-3. We'll start by downloading the backend. In the bottom right of the page, you'll see a download button. Click that and you'll download a `.zip` file containing all of the code to run the backend.
+2. We'll start by downloading the backend. In the bottom right of the page, you'll see a download button. Click that and you'll download a `.zip` file containing all of the code to run the backend.
 
    ![download button](./assets/step-002-013.png)
 
-4. Extract the zip file and copy all of the contents (except for the `README.md`) to the root of the `amplication-angular` project.
+3. Extract the zip file and copy all of the contents (except for the `README.md`) to the root of the `amplication-angular` project.
 
 ## Step 6 - Run the Backend
 
