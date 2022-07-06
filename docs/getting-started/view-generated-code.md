@@ -25,7 +25,6 @@ Then, select a build from the **Select build** list.
 - The default build is the last one you created.
 - You can create a new build even if you have not made any changes.
 -  _Code View_ does not support builds created in earlier Amplication versions, before the feature had been introduced. 
-- If you perform a commit within a build, it will update the build but will not create a new build. 
 :::
 
 
