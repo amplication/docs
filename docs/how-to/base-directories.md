@@ -9,7 +9,7 @@ You can customize the default directories (Server and Admin UI) for generated co
 
 There are two parameters for each app, enabling you to override the default directories for the Server and Admin-UI. 
 
-The default directories are as follows: 
+The default values of the fields (if left blank) are as follows: 
 
 Server base: `packages/[SERVICE-NAME]`
 
