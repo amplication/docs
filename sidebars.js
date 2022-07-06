@@ -12,16 +12,17 @@ module.exports = {
       "getting-started/authentication",
       "getting-started/connect-server-to-github",
       "getting-started/helm-chart",
+      "getting-started/workspace",
       "getting-started/view-generated-code",
     ],
     "About": [
-      "about/licensing",  
+      "about/licensing",
       "about/product-roadmap",
       "getting-started/phone-home",
-        
+
     ],
     "Generated API": [
-      "getting-started/generated-app-api", 
+      "getting-started/generated-app-api",
       "api/generated-api-sorting",
       "api/generated-api-filtering",
       "api/generated-api-pagination",
@@ -93,21 +94,21 @@ module.exports = {
         ],
       },
       {
-          type: "category",
-          label: "Set-Up",
-          items: [
-            "errors/installation-fails",
-            "errors/installation-slow",
-          ],
-        },
-        {
-          type: "category",
-          label: "DB",
-          items: [
-            "errors/prisma-denied-access-on-postgres",
-          ],
-        },
-      ],     
+        type: "category",
+        label: "Set-Up",
+        items: [
+          "errors/installation-fails",
+          "errors/installation-slow",
+        ],
+      },
+      {
+        type: "category",
+        label: "DB",
+        items: [
+          "errors/prisma-denied-access-on-postgres",
+        ],
+      },
+    ],
     Community: ["contributing", "community/handling-a-new-issue"],
   },
 };
