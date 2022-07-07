@@ -25,7 +25,7 @@ It will also demonstrate how to check the user's permissions, how to add Swagger
 
 1. Open the file **user.controller.ts**. The file is located in **./server/src/user/user.controller.ts**.
 
-Initially, the files should look like this
+  Initially, the files should look like this
 
 ```typescript
 import * as common from "@nestjs/common";
@@ -49,8 +49,6 @@ export class UserController extends UserControllerBase {
 2. Add the following imports at the beginning of the file
 
 ```typescript
-  import * as nestMorgan from "nest-morgan";
-  import * as basicAuthGuard from "../auth/basicAuth.guard";
   import * as errors from "../errors";
   import { User } from "./base/User";
   import { UserWhereUniqueInput } from "./base/UserWhereUniqueInput";
