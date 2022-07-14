@@ -50,7 +50,7 @@ export class UserController extends UserControllerBase {
 
 ```typescript
   import * as nestMorgan from "nest-morgan";
-  import * as basicAuthGuard from "../auth/basicAuth.guard";
+  import * as basicAuthGuard from "../auth/basic/basicAuth.guard";
   import * as errors from "../errors";
   import { User } from "./base/User";
   import { UserWhereUniqueInput } from "./base/UserWhereUniqueInput";
