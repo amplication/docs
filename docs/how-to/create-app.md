@@ -13,3 +13,5 @@ slug: /how-to/create-app
 3. In the _New App_ page, click on **Start from Scratch** to create an empty app.
 
 ![](../getting-started/assets/pic0.png)
+
+
