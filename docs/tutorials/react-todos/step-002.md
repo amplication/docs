@@ -67,7 +67,7 @@ The main entity will be used to store tasks created by users.
 
 8. The final field we will need to create should be called `UID`. This field will be used to relate a task to a user. Mark this as a required field. In the `Data Type` dropdown select `Relation to Entity`.
 
-9. The `Related Entity` dropdown should appear, select `User`. A modal asking to create a relation between a Task and a User will appear. Click `Create` to create the relation. To learn more about entity relations, there's an article on the docs website [here](https://docs.amplication.com/docs/relations).
+9. The `Related Entity` dropdown should appear, select `User`. A modal asking to create a relation between a Task and a User will appear. Click `Create` to create the relation. To learn more about entity relations, there's an article on the docs website [here](https://docs.amplication.com/docs/relations/).
 
 ## Step 3 - Create a Role
 
