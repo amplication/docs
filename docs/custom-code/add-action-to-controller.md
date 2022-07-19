@@ -25,6 +25,10 @@ It will also demonstrate how to check the user's permissions, how to add Swagger
 
 1. Open the file **user.controller.ts**. The file is located in **./server/src/user/user.controller.ts**.
 
+:::info
+When you add custom code to the root controller of an entity, even though this calls the `super()` class, all the decorators of this method must be copied from the base class.
+:::
+
 Initially, the files should look like this
 
 ```typescript
