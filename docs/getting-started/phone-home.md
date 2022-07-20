@@ -1,7 +1,7 @@
 ---
 id: phone-home
 title: Phone Home - Collecting Usage Data
-sidebar_label: Phone Home 
+sidebar_label: Phone Home - Collecting Usage Data 
 slug: getting-started/phone-home
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: add-action-to-controller
 title: How to add an action to a REST API controller
-sidebar_label: Add REST API Action
+sidebar_label: Add an action to a REST API controller
 slug: /custom-code/controller-action
 ---
 
@@ -53,8 +53,6 @@ export class UserController extends UserControllerBase {
 2. Add the following imports at the beginning of the file
 
 ```typescript
-  import * as nestMorgan from "nest-morgan";
-  import * as basicAuthGuard from "../auth/basicAuth.guard";
   import * as errors from "../errors";
   import { User } from "./base/User";
   import { UserWhereUniqueInput } from "./base/UserWhereUniqueInput";

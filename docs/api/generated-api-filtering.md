@@ -1,8 +1,8 @@
 ---
 id: generated-api-filtering
 title: API Filtering
-sidebar_label: API Filtering 
-slug: api/generated-api-Filtering
+sidebar_label: Generated API - Filtering 
+slug: api/generated-api-filtering
 ---
 
 # Generated API - Filtering

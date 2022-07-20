@@ -1,7 +1,7 @@
 ---
 id: add-business-logic
 title: How to add business logic to a service
-sidebar_label: Add Business Logic
+sidebar_label: Add business logic to a service
 slug: /custom-code/business-logic
 ---
 
@@ -54,13 +54,13 @@ export class UserService extends UserServiceBase {
 import { User } from "./base/User";
 ```
 
-2. Add import for _FindOneUserArgs_. this is the args type that is used to find a single User by its ID. We will use it as the input parameter of our new function.
+2. Add import for _UserFindUniqueArgs_. this is the args type that is used to find a single User by its ID. We will use it as the input parameter of our new function.
 
 ```javascript
 import { UserFindUniqueArgs } from "./base/UserFindUniqueArgs";
 ```
 
-3. Add the following function at the bottom of the file.
+3. Add the following function to the bottom of the *UserService* class.
 
 ```javascript
 async resetPassword(args: UserFindUniqueArgs): Promise<User> {

@@ -1,7 +1,7 @@
 ---
 id: generated-api-sorting
 title: API sorting
-sidebar_label: API Sorting  
+sidebar_label: Generated API - Sorting  
 slug: api/generated-api-sorting
 ---
 # Generated API - Sorting
