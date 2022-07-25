@@ -1,5 +1,9 @@
 module.exports = {
   someSidebar: {
+
+    "Frequently Asked Questions": [
+      "faqs/faqs",      
+    ],
     "Getting Started": [
       "welcome",
       "getting-started/generated-app",
