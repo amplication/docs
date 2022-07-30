@@ -217,6 +217,21 @@ class CustomerFindManyArgs {
 You are ready to check your changes. Just save all changes and restart your server.
 Navigate to http://localhost:3000/graphql/ for GraphQL and http://localhost:3000/api/ for REST to see and execute the new query.
 
+After restarting the server, you will see in `/server/schema.graphql` the new input type: `CustomerWhereInputWithFilterEnum`
+
+```graphql
+input CustomerWhereInputWithFilterEnum {
+  address: AddressWhereUniqueInput
+  customerType: EnumEnumCustomerCustomerTypeFilter
+  email: StringNullableFilter
+  firstName: StringNullableFilter
+  id: StringFilter
+  lastName: StringNullableFilter
+  orders: OrderListRelationFilter
+  phone: StringNullableFilter
+}
+```
+
 :::tip
 You can run your server in watch mode, which automatically restarts whenever a file in the server code is changed.
 Instead of using **npm start**, you should use this command.
