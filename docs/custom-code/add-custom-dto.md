@@ -193,7 +193,7 @@ class CustomerWhereInputWithFilterEnum {
     customerType?: EnumEnumCustomerCustomerTypeFilter;
 }       
 ```
-As mentioned earlies, this class should look exactly like `CustomerWhereInput`. Therefore, you need to copy and paste the other properties from the `CustomerWhereInput` DTO.
+As mentioned earlier, this class should look exactly like `CustomerWhereInput`. Therefore, you need to copy and paste the other properties from the `CustomerWhereInput` DTO.
 
 In `/server/src/customer/base/CustomerFindManyArgs.ts`, change the type of the `where` property to `CustomerWhereInputWithFilterEnum`:
 
