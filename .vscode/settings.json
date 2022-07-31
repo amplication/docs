@@ -5,7 +5,7 @@
       "path": "${workspaceFolder}/docs/dictionary/en-custom.txt"
     }
   ],
-  "cSpell.dictionaries": ["custom", "wordsEn", "dto"],
+  "cSpell.dictionaries": ["custom", "wordsEn"],
   "cSpell.allowCompoundWords": true,
 
 }
