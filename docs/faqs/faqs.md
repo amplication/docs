@@ -162,7 +162,7 @@ Amplication currently supports integration only with GitHub, but we are planning
 Amplication currently supports only PostgreSQL.
 However, we generate apps that work with Prisma, so you could change the Prisma configuration to use another database supported by Prisma. 
 
-We are planning to support more databases in future releases, includeing mongoDB. See our [Product Roadmap](https://docs.amplication.com/docs/about/roadmap/). 
+We are planning to support more databases in future releases, including mongoDB. See our [Product Roadmap](https://docs.amplication.com/docs/about/roadmap/). 
   
 </details>
 
