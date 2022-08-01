@@ -14,7 +14,7 @@ These are some of the questions we are often asked about using Amplication
 <details>
   <summary>What is Amplication?</summary>
 
-  Amplication is an open-source development tool. It helps you develop quality Node.js applications without spending time on repetitive coding tasks. Amplication auto-generates fully functional apps based on TypeScript and Node.js.
+  Amplication is an open-source platform that helps developers build backend services without spending time on repetitive coding tasks and boilerplate code. Amplication auto-generates a fully functional, production-ready backend based on TypeScript and Node.js.
 
 </details>
 
@@ -29,7 +29,7 @@ These are some of the questions we are often asked about using Amplication
 <details>
   <summary>Do I need to be an expert developer to work with Amplication?</summary>
   
- Amplication is a great tool for developers, whatever their experience.  Even though beginners can get up-and-running quickly with Amplication, you own the code and so can make full use of your code-writing talent to customize yor output and work your magic. 
+Amplication is a great platform for professional developers, whatever their experience. Even though beginners can get up-and-running quickly with Amplication, you own the code and so can make full use of your code-writing talent to customize your output and work your magic. Amplication is also a great solution for technical leaders who seek boosting their teams' productivity and efficiency.
   
 </details>
 
@@ -46,9 +46,9 @@ These are some of the questions we are often asked about using Amplication
 </details>
 
 <details>
-  <summary>Is Amplication Free?</summary>
+  <summary>Is Amplication free?</summary>
   
- The Community Edition (CE) is free and always will be. However, to ensure that we can continue to develop Amplication, the Enterprise Edition (EE) will provide enterprise functionality that may require payment. For more information about the CE and EE, read:
+Amplication Community Edition (CE) is free and always will be. To ensure that we can continue to develop Amplication, our Enterprise Edition (EE) will provide additional enterprise-oriented functionality that may require payment. For more information about the CE and EE, read:
 
  
  [Amplication’s licensing model](https://docs.amplication.com/docs/about/about/licensing/)
@@ -62,7 +62,7 @@ These are some of the questions we are often asked about using Amplication
   
   **Community Edition (CE)** – contains Amplication's core functionality. It is open-source and free to use for the whole community. The Amplication Community Edition continues to be licensed under the [Apache 2.0 license](https://github.com/amplication/amplication/blob/master/LICENSE).
 
-  **Enterprise Edition (EE)** - adds advanced operations, security, and commercially orientated features. The Enterprise Edition is built on top of the Community Edition and the additional functionality will be supplied as source-available. While users can view and download the code, ownership of the code remains with Amplication, meaning users cannot resell it. Use of the Amplication Enterprise Edition is subject to the Amplication [Terms of Service](https://amplication.com/terms)
+  **Enterprise Edition (EE)** - adds advanced operations, security, and commercially orientated features. The Enterprise Edition is built on top of the Community Edition and the additional functionality will be supplied as source-available. While users can view and download the code, ownership of the platform code remains with Amplication, meaning users cannot resell it. Use of the Amplication Enterprise Edition is subject to the Amplication [Terms of Service](https://amplication.com/terms)
 
   
 </details>
@@ -71,7 +71,7 @@ These are some of the questions we are often asked about using Amplication
 <details>
   <summary>Who owns the code I generate with Amplication?</summary>
   
-You own the code.  Develop your app however you wish, and deploy it wherever want; on public cloud, private cloud, or on-premise. 
+You own the code. Develop your service and applications however you wish, and deploy it wherever you want; on public cloud, private cloud, or on-premise.
   
 </details>
 
@@ -79,7 +79,7 @@ You own the code.  Develop your app however you wish, and deploy it wherever wan
 <details>
   <summary>How can I get the code?</summary>
   
-You can download the source code of your application or push a new Pull Request to a GitHub repository. There is also a code-view option, that enables you to preview the code before it is generated. 
+You can download the source code of your application or connect to your GitHub account and push a new Pull Request directly to a selected GitHub repository. There is also a code-view option, that enables you to view the code in the console before you download it or move it to GitHub.
   
   
 </details>
@@ -95,8 +95,11 @@ NestJS, Prisma, PostgreSQL, Passport, GraphQL, Swagger UI, Jest, Docker
 
 <details>
   <summary>What client-side technologies does Amplication use?</summary>
-  
-ReactJS, React-Admin, Axios, Formik 
+
+Amplication focuses on creating the best backend. We provide the client only as a starting point for simple CRUD operations using the following technologies: 
+ReactJS, React-Admin, Axios, Formik. 
+
+Use your programming skills to build a great client.  
   
 </details>
 
@@ -104,18 +107,18 @@ ReactJS, React-Admin, Axios, Formik 
 <details>
   <summary>Is Amplication a no-code solution?</summary>
   
-Amplication is a tool for professional developers, enabling you to automate repetitive tasks, eliminating or reducing the time spent on repetitive server-side tasks and boilerplate code. However, your developer skills are very much required to create your  hand-crafted business logic, so it is definitely NOT a no-code solution. Some would call Amplication a low-code solution because it reduces the amount of code you need to write. 
+Amplication is a platform for professional developers, enabling you to automate repetitive tasks, eliminating or reducing the time spent on repetitive server-side tasks and boilerplate code. Your developer skills are very much required to create your hand-crafted business logic, so it is definitely NOT a no-code solution. Amplication reduces the amount of code you need to write, hence some may call it a low-code solution for professional developers.
   
 </details>
 
 
 <details>
-  <summary>What is the Amplication Architecture?</summary>
+  <summary>What is the Amplication architecture?</summary>
   
-The generated app is built from two projects, each in a separate folder:
+Each Amplication project generates a server and admin UI, each in a separate folder:
 
-- Server - For all the server components including REST API, GraphQL, Services and more.
-- Admin - For the Admin UI including forms for CRUD operations on all data models.
+- Server - for all the server components including REST API, GraphQL, Services and more.
+- Admin - for the Admin UI including forms for CRUD operations on all data models.
   
 </details>
 
@@ -125,7 +128,7 @@ The generated app is built from two projects, each in a separate folder:
 <details>
   <summary>Can I customize the code generated by Amplication?</summary>
   
-Definitely. The code is yours. Do with it what you wish. 
+Definitely. The code is yours. Do with it what you wish. You can continuously customize your code while continuing to get code from Amplication. 
   
 </details>
 
@@ -147,7 +150,7 @@ We'd love to have you contribute! To find out how, read:
 <details>
   <summary>Can I work with GitLab (or other git providers) besides GitHub?</summary>
   
-Amplication currently supports integration only with GitHub. 
+Amplication currently supports integration only with GitHub, but we are planning to add support for more Git providers. See our [Product Roadmap](https://docs.amplication.com/docs/about/roadmap/). 
   
 </details>
 
@@ -157,16 +160,18 @@ Amplication currently supports integration only with GitHub.
   <summary>Which databases does Amplication support?</summary>
   
 Amplication currently supports only PostgreSQL.
-However, we generate apps that work with Prisma, so you could change the Prisma configuration to use another database supported by Prisma.  
+However, we generate apps that work with Prisma, so you could change the Prisma configuration to use another database supported by Prisma. 
+
+We are planning to support more databases in future releases, includeing mongoDB. See our [Product Roadmap](https://docs.amplication.com/docs/about/roadmap/). 
   
 </details>
 
 
 
 <details>
-  <summary>Which Cloud Platforms does Amplication Support?</summary>
+  <summary>Which cloud platforms does Amplication support?</summary>
 
-You can host your server on AWS, Heroku, Azure, Google Cloud Platform, Digital Ocean, many and more. 
+You can host your server on AWS, Heroku, Azure, Google Cloud Platform, Digital Ocean, and many more. 
   
 Amplication uses Docker and Kubernetes to support deployment. 
 
@@ -183,30 +188,19 @@ Check out the following for for more information:
 
 
 
-
-
-<details>
-  <summary>Is Amplication Self-Hosted? </summary>
-
-  
-Amplication does not offer a self-hosting service at this time. 
-
-  
-</details>
-
-
 <details>
 
-  <summary>How can I keep in touch with the Amplication Community?</summary>
+  <summary>How can I keep in touch with the Amplication community?</summary>
   
-  Find us at any of the following locations: 
+  Join us at any of the following locations: 
 
 
-  - [GitHub](https://github.com/amplication)
+  - [GitHub](https://github.com/amplication) 
+  - [Discord](https://discord.com/) - find the Amplication channel
   - [Amplication-website](https://amplication.com/)
-  - [Docs](https://docs.amplication.com/docs/getting-started/)
   - [Blog](https://amplication.com/blog)
-  - Discord - find the Amplication channel '
+  - [Docs](https://docs.amplication.com/docs/getting-started/)
+ 
 
 
   </details>
