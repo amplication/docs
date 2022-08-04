@@ -193,7 +193,7 @@ class CustomerWhereInputWithFilterEnum {
     customerType?: EnumEnumCustomerCustomerTypeFilter;
 }       
 ```
-This class should look exactly like `CustomerWhereInput`, except the type of `customerType` field/API property that its type should be `EnumEnumCustomerCustomerTypeFilter`. Therefore, you need to copy and paste the other properties from the `CustomerWhereInput` DTO.
+This class should look exactly like `CustomerWhereInput`, except for the `customerType` field/API property who's type should be `EnumEnumCustomerCustomerTypeFilter`. Therefore, you need to copy and paste the other properties from the `CustomerWhereInput` DTO.
 
 6. Change the type of the `where` property in `CustomerFindManyArgs` to `CustomerWhereInputWithFilterEnum`
 
@@ -201,7 +201,7 @@ This class should look exactly like `CustomerWhereInput`, except the type of `cu
 import { CustomerWhereInputWithFilterEnum } from "../dtos/CustomerWhereInputWithFilterEnum";
 
 @ArgsType()
-class CustomerFindManyArgs {
+class CustomerFindManyArgs 
   @ApiProperty({
     required: false,
     type: () => CustomerWhereInputWithFilterEnum,
