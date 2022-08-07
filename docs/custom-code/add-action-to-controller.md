@@ -1,7 +1,7 @@
 ---
 id: add-action-to-controller
 title: How to add an action to a REST API controller
-sidebar_label: Add REST API Action
+sidebar_label: Add an action to a REST API controller
 slug: /custom-code/controller-action
 ---
 
@@ -24,6 +24,10 @@ It will also demonstrate how to check the user's permissions, how to add Swagger
 ### Adding a new endpoint to user.controller.ts
 
 1. Open the file **user.controller.ts**. The file is located in **./server/src/user/user.controller.ts**.
+
+:::info
+When you add custom code to the root controller of an entity, even though this calls the `super()` class, all the decorators of this method must be copied from the base class.
+:::
 
 Initially, the files should look like this
 
@@ -49,8 +53,6 @@ export class UserController extends UserControllerBase {
 2. Add the following imports at the beginning of the file
 
 ```typescript
-  import * as nestMorgan from "nest-morgan";
-  import * as basicAuthGuard from "../auth/basicAuth.guard";
   import * as errors from "../errors";
   import { User } from "./base/User";
   import { UserWhereUniqueInput } from "./base/UserWhereUniqueInput";

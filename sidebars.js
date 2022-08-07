@@ -13,15 +13,15 @@ module.exports = {
       "getting-started/connect-server-to-github",
       "getting-started/helm-chart",
       "getting-started/workspace",
+      "getting-started/view-generated-code",
     ],
     "About": [
-      "about/licensing",  
+      "about/licensing",
       "about/product-roadmap",
       "getting-started/phone-home",
-        
     ],
     "Generated API": [
-      "getting-started/generated-app-api", 
+      "getting-started/generated-app-api",
       "api/generated-api-sorting",
       "api/generated-api-filtering",
       "api/generated-api-pagination",
@@ -34,6 +34,8 @@ module.exports = {
       "how-to/how-to-set-access-permissions",
       "how-to/how-to-commit-changes",
       "getting-started/relations",
+      "how-to/base-directories",
+      "how-to/api-admin-ui-settings",
     ],
     Tutorials: [
       {
@@ -67,6 +69,8 @@ module.exports = {
       "custom-code/add-business-logic",
       "custom-code/add-action-to-controller",
       "custom-code/add-graphql-query",
+      "custom-code/seed-db",
+
     ],
     Troubleshooting: [
       {
@@ -93,21 +97,21 @@ module.exports = {
         ],
       },
       {
-          type: "category",
-          label: "Set-Up",
-          items: [
-            "errors/installation-fails",
-            "errors/installation-slow",
-          ],
-        },
-        {
-          type: "category",
-          label: "DB",
-          items: [
-            "errors/prisma-denied-access-on-postgres",
-          ],
-        },
-      ],     
+        type: "category",
+        label: "Set-Up",
+        items: [
+          "errors/installation-fails",
+          "errors/installation-slow",
+        ],
+      },
+      {
+        type: "category",
+        label: "DB",
+        items: [
+          "errors/prisma-denied-access-on-postgres",
+        ],
+      },
+    ],
     Community: ["contributing", "community/handling-a-new-issue"],
   },
 };

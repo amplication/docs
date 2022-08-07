@@ -1,7 +1,7 @@
 ---
 id: relations
 title: Relations
-sidebar_label: Manage Entity Relations
+sidebar_label: Entity Relations
 slug: /relations
 ---
 

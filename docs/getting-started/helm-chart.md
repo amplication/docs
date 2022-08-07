@@ -1,7 +1,7 @@
 ---
 id: helm-chart
 title: Deploy to a Kubernetes cluster using Helm
-sidebar_label: Deploy with Kubernetes and Helm
+sidebar_label: Deploy Amplication to a Kubernetes cluster using Helm
 slug: /helm-chart
 ---
 

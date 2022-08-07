@@ -1,6 +1,6 @@
 ---
 id: contributing
-sidebar_label: Contributing to Amplication
+sidebar_label: Contributing 
 slug: /contributing
 ---
 

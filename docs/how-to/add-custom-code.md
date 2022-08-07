@@ -1,7 +1,7 @@
 ---
 id: add-custom-code
 title: How to add custom code to your server
-sidebar_label: Add Custom Code
+sidebar_label: Add custom code to your server
 slug: /how-to/custom-code
 ---
 
