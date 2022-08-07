@@ -19,7 +19,7 @@ slug: /tutorials/angular-todos/step-001
 
 `@angular/cli` will create a new directory for our frontend application as well as handle the heavy lifting of configuring all of our build tools.
 
-1. Create a new folder to contain the frontend, and eventually the backend, application and then open a new terminal and run the commands:
+1. Create a new folder to contain the frontend, and eventually the backend, application. Open a terminal window, navigate to the new folder, and run the commands:
 
 ```bash
 npm i -g @angular/cli
@@ -31,7 +31,7 @@ ng new web -g -S --routing false --style css
 > * Without setting up routing (`--routing false` tells the CLI not to setup the routing module)
 > * With using CSS as the styling language (`--style css` tells the CLI to use CSS)
 
-2. In the newly created folder that contains `web/` create a `package.json` file and copy into it the following:
+2. Next create a `package.json` file and copy into it the following:
 
 ```json
 {
