@@ -96,6 +96,7 @@ module.exports = {
     ],
   ],
   plugins: [
+    "./plugins/analytics",
     [
       "@docusaurus/plugin-client-redirects",
       {
