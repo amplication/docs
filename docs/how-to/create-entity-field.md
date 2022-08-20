@@ -30,7 +30,7 @@ JSON enables you to create fields that store and include different kinds of data
 3. Dialog Box will appear and  Fill the **Display Name**, and **Name** fields.
 4. Click on Create Button
 
-![](./assets/relation-entity.png)
+![](./assets/relation-entity.PNG)
 
 :::tip
 You might find it easier to first add all the fields you want, one after another, and only afterwards set the properties of each field.
