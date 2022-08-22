@@ -40,7 +40,7 @@ We recommend doing the following:
  ```bash
  npm run clean
  npm install
- npm run setup:dev;
+ npm run setup:dev
  ```
 
 :::note
