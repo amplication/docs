@@ -25,7 +25,7 @@ JSON enables you to create fields that store and include different kinds of data
 :::
 # Create Relation to Entity
 
-1. In the **Data Type** field, select **Relation to Entity** from drop-down list.
+1. In the **Data Type** field, select **Relation to Entity** from the drop-down list.
 2. In the **Related Entity** field, select an entity from the drop-down list.  A dialog box is dispalyed.
 3. Fill the **Display Name**, and **Name** fields.
 4. Click **Create**.
