@@ -23,8 +23,14 @@ To create a new entity field,  navigate to the _Entity_ page - click the **Entit
 JSON is one of the supported data types. You can create JSON fields as part of your data model when creating an entity field.
 JSON enables you to create fields that store and include different kinds of data, making it easier for you to add custom fields to your applications. JSON can be used with both REST API and GraphQL. 
 :::
+# Create Relation to Entity
 
+1. In the **Data Type** field, select **Relation to Entity** from the drop-down list.
+2. In the **Related Entity** field, select an entity from the drop-down list.  A dialog box is dispalyed.
+3. Fill the **Display Name**, and **Name** fields.
+4. Click **Create**.
 
+![](./assets/relation-entity.PNG)
 
 :::tip
 You might find it easier to first add all the fields you want, one after another, and only afterwards set the properties of each field.
