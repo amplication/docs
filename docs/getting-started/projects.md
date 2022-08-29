@@ -11,7 +11,7 @@ Amplication Release 0.15.0 introduced support for microservices through the intr
 This article describes **Projects**, **Resources**, and **Services** -  key concepts that drive Amplication’s workflow. 
 
 :::tip 
-Parts of the documentation still refelect the previous app-based workflow. We are working to update this.
+Parts of the documentation still reflect the previous app-based workflow. We are working to update this.
 ::: 
 
 
