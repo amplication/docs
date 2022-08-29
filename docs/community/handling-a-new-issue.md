@@ -5,7 +5,7 @@ sidebar_label: Handling a New Issue
 slug: /community/handling-a-new-issue
 ---
 
-# Handling a New Issue 
+# Managing Projects on GitHub
 
 **This article describes how the Amplication team responds to a new issue in GitHub.**
 
