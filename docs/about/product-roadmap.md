@@ -1,7 +1,7 @@
 ---
 id: product-roadmap
 title: Product Roadmap
-sidebar_label: Roadmap
+sidebar_label: Product Roadmap
 slug: /about/roadmap
 ---
 
@@ -30,7 +30,7 @@ To promote a particular item, show your support by giving the item a upvote 👍
 
 ## Make a Contribution
 
-We hope that the roadmap will help you decide where you can [make a contribution](https://docs.amplication.com/docs/contributing) to the Amplication platform. If you see an item that you want to work on, whether it’s a feature, issue, or documentation, we would love to hear from you.
+We hope that the roadmap will help you decide where you can [make a contribution](https://docs.amplication.com/docs/contributing/) to the Amplication platform. If you see an item that you want to work on, whether it’s a feature, issue, or documentation, we would love to hear from you.
 
 ## Make a Feature Request
 

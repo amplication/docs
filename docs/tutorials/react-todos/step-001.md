@@ -19,13 +19,13 @@ slug: /tutorials/react-todos/step-001
 
 `create-react-app` will create a new directory for our frontend application as well as handle the heavy lifting of configuring all of our build tools.
 
-1. Create a new folder to contain the frontend, and eventually the backend, application and then open a new terminal and run the command:
+1. Create a new folder to contain the frontend, and eventually the backend, application. Open a terminal window, navigate to the new folder, and run the command:
 
 ```bash
 npx create-react-app web
 ```
 
-2. In the newly created folder that contains `web/` create a `package.json` file and copy into it the following:
+2. Next create a `package.json` file and copy into it the following:
 
 ```json
 {
