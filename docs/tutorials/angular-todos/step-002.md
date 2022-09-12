@@ -48,7 +48,7 @@ An entity is equivalent to a collection in a NoSQL database or a table in a  rel
 
    ![add entity](./assets/step-002-005.png)
 
-3. When a `New Rntity` modal appears, input `Task` into the input field and click `Create Entity`.
+3. When a `New Entity` modal appears, input `Task` into the input field and click `Create Entity`.
 
    With the entity created we'll want to define a few fields for task elements.
 
@@ -119,7 +119,7 @@ Amplication provides code sync with GitHub. We'll want to set this up with the r
    ![Connect to GitHub](./assets/step-002-012.png)
    ![Go to project settings](./assets/step-002-013.png)
 
-2. Click `Connect to Github.` This will allow you to connect with either your GitHub account, or with a GitHub orginization.
+2. Click `Connect to Github.` This will allow you to connect with either your GitHub account, or with a GitHub organization.
 
    ![Connect to GitHub](./assets/step-002-014.png)
 
