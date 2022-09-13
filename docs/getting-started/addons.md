@@ -14,7 +14,7 @@ The installed plugins are displayed on the _Installed Plugins_ screen
  
 
 :::tip
-If you or your organization require a specific function, install an existing addon (if it exists), or develop one to perform your required tasks.
+If you or your organization require a specific function, install an existing plugin (if it exists), or develop one to perform your required tasks.
 :::
 
 ## Installing addons
