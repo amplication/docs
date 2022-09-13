@@ -7,10 +7,10 @@ slug: getting-started/addons
 
 
 ## Overview 
-Use  addons to add new features to the Amplication developer platform.
+Use  plugins to add new features to the Amplication developer platform.
 
 The published plugins are available on the _All Plugins_ screen.
-The installed addons are displayed on the _Installed Plugins_ screen
+The installed plugins are displayed on the _Installed Plugins_ screen
  
 
 :::tip
