@@ -10,7 +10,7 @@ slug: getting-started/addons
 Use  plugins to add new features to the Amplication developer platform.
 
 The published plugins are available on the _All Plugins_ screen.
-The installed plugins are displayed on the _Installed Plugins_ screen
+The installed plugins are shown on the _Installed Plugins_ screen
  
 
 :::tip
@@ -23,7 +23,7 @@ If you or your organization require a specific function, install an existing plu
 
 ![](./assets/all-addons.png)
 
-2. Go to the _Installed Plugins_ page. The installed plugin is displayed. 
+2. Go to the _Installed Plugins_ page. The installed plugin is included. 
 :::note
 The plugins are executed when Amplication generates code, according to their order on the _Installed Plugins_ page.
 :::
