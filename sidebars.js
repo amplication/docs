@@ -40,6 +40,7 @@ module.exports = {
       "getting-started/relations",
       "how-to/base-directories",
       "how-to/api-admin-ui-settings",
+      "how-to/create-message-broker",
     ],
     Tutorials: [
       {
