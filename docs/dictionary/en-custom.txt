@@ -69,3 +69,4 @@ upsert
 dto
 transpilation
 amplicationignore
+microservices
