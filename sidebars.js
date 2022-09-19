@@ -8,6 +8,7 @@ module.exports = {
       "welcome",
       "getting-started/generated-app",
       "getting-started/first-app",
+      "getting-started/plugins",
       "getting-started/cli",
       "getting-started/sync-with-github",
       "how-to/run-dev-env",
@@ -17,7 +18,6 @@ module.exports = {
       "getting-started/authentication",
       "getting-started/connect-server-to-github",
       "getting-started/helm-chart",
-      "getting-started/workspace",
       "getting-started/view-generated-code",
     ],
     "About": [
