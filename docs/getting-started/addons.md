@@ -7,7 +7,7 @@ slug: getting-started/addons
 
 
 ## Overview 
-Use  plugins to add new features to the Amplication developer platform.
+Use plugins to extend the functionality of your generated application.
 Some plugins are included in Amplication by default. To add more functionality, you can develop your own plugins, or can use plugins developed by the community, as they become available. 
 
 The published plugins are available on the _All Plugins_ screen.
