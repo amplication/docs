@@ -3,6 +3,7 @@ module.exports = {
     "Frequently Asked Questions": ["faqs/faqs"],
     "Getting Started": [
       "welcome",
+      "getting-started/projects-resources-services",
       "getting-started/generated-app",
       "getting-started/first-app",
       "getting-started/plugins",
