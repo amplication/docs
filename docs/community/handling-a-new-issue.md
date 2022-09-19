@@ -5,13 +5,13 @@ sidebar_label: Handling a New Issue
 slug: /community/handling-a-new-issue
 ---
 
-# Managing Projects on GitHub
+# Handling a New Issue
 
 **This article describes how the Amplication team responds to a new issue in GitHub.**
 
-Members of the Amplication community can contribute to the development of Amplication by opening an issue in the [Amplication repository on GitHub](https://github.com/amplication). The issue can be a feature request, a bug report,  a documentation update, or a dependency issue. 
+Members of the Amplication community can contribute to the development of Amplication by opening an issue in the [Amplication repository on GitHub](https://github.com/amplication). The issue can be a feature request, a bug report,  a documentation update, or a dependency issue.
 
-The process described in this document begins after a new issue has been created . The issue will have been added to the **Backlog** project automatically and Maintainers will have received a notification from **Discord** that a new issue has been opened. 
+The process described in this document begins after a new issue has been created . The issue will have been added to the **Backlog** project automatically and Maintainers will have received a notification from **Discord** that a new issue has been opened.
 
 It is expected that the Contributor will have entered a detailed description of the issue, explaining what problems need to be solved, including any suggestions regarding which steps are required to resolve them. 
 
@@ -20,19 +20,15 @@ It is expected that the Contributor will have entered a detailed description of 
 **A new issue processed in GitHub as follows:** 
 
 1. Maintainers change **Backlog** status from **New** to **Baking** and add the appropriate labels. The Issue is validated and researched to gain a deep understanding of the issue. Contributors and Maintainers can add comments and participate in discussions in the GitHub Issue. 
-    
 :::tip
 **For Internal use only:** If a subject is not relevant for public discussion, the Maintainers can open the issue for an internal discussion in a Discord thread.  If a thread is opened on Discord, it should be named according to the following format:
     **issue-#[]-discussion** (for example, **issue-#2176-discussion**)
 :::
-   
 2.  When the Maintainers have an adequate level of understanding and the issue is ready to be developed, they change **Backlog** status from **Baking** to **Candidate** and apply the appropriate Labels.
 3. The Maintainers update the **Status** and **Label** as the project progresses, as described in the [Set Status](#set-status) and [Apply Labels](#apply-labels) sections below. 
     
 
 > The **Status Label** must be the same as the project **Status.** Both are set manually.
-
-   
 
 ## Set Status
 
