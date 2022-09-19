@@ -13,6 +13,7 @@ This guide assumes that you have, at minimum, a working understanding of the fol
 
 - [React](https://reactjs.org/)
 - [Node](https://nodejs.org/)
+- [GitHub](https://github.com/)
 - An IDE
 
 As well as having, at minimum, a basic understanding of the following:

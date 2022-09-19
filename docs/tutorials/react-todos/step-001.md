@@ -22,7 +22,7 @@ slug: /tutorials/react-todos/step-001
 1. Create a new folder to contain the frontend, and eventually the backend, application. Open a terminal window, navigate to the new folder, and run the command:
 
 ```bash
-npx create-react-app web
+npx create-react-app web --skip-git
 ```
 
 2. Next create a `package.json` file and copy into it the following:
@@ -31,7 +31,7 @@ npx create-react-app web
 {
   "scripts": {
     "start": "npm --prefix web start",
-    "postinstall": "npm ci --prefix web"
+    "postinstall": "npm i --prefix web"
   }
 }
 ```
@@ -342,6 +342,19 @@ return (
   </div>
 );
 ```
+
+5. Go to [GitHub](https://github.com) and create a new repository.
+
+6. Run the following commands in the working folder.
+
+```bash
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+```
+
+7. Finally, set your remote origin URL and push up the code.
 
 ## Step 5 - Wrap Up
 
