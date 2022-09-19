@@ -1,17 +1,18 @@
 ---
-id: prevent-override
-title: How to prevent override of custom files
-sidebar_label: How to prevent override of custom files
-slug: /getting-started/prevent-override
+id: managing-custom-files
+title: Managing custom files
+sidebar_label: Managing custom files
+slug: /getting-started/managing-custom-files
 ---
 
-# How to prevent override of custom files
+# Managing Custom Files
 
-When you work with Amplication to generate code, Amplication re-generates the code every time. This means that Amplication could accidentally override some of the files you added since the previous generation.
+When you work with Amplication to generate code, Amplication re-generates the code without affecting your custom files.  
 
-To prevent your files being overridden, Amplication has provided the `.amplicationignore` file. 
+However, to allow you greater contol,  Amplication has provided the `.amplicationignore` file to ensure that selected files are ignored. 
 
-## Using `.amplicationignore` to protect your files
+
+## Using `.amplicationignore` to ignore your files
 
 
 The `.amplicationignore` file must be in the root of the git repository.
@@ -37,7 +38,7 @@ folder/**/file.json <-- Ignore all file.json occurrences in subfolders of "folde
 
 ## What happens to the changes? 
 
-The files that are in the `.amplicationignore` will not be overridden, but if Amplication updates them, they will be saved in the `.amplication/ignored` folder inside the git repository
+The files that are in  `.amplicationignore`, when updated, will be saved in the `.amplication/ignored` folder inside the git repository. 
 
 
 :::info
