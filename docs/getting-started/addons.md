@@ -24,12 +24,6 @@ The following plugins are currently available, we are working to add more plugin
 - Password Basic Authentication
  
 
-
-
-:::tip
-If you or your organization require a specific function, install an existing plugin (if it exists), or develop one to perform your required tasks.
-:::
-
 ## Installing plugins
  To install a plugin:
  1. In the _All Plugins_ page, click **Install** for the required plugin. 
