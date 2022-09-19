@@ -42,7 +42,7 @@ The files that are in the `.amplicationignore` will not be overridden, but if Am
 
 
 :::info
-Remember, as always with Amplication, you are in control. While Amplication will not automatically generate code in the ignored folders and files, you can still see what the generated code *could* look like. This way, you can cherrypick whatever Amplication-generated changes you like and use them in your code. You can find these files in `.amplication/ignored` in the git repository.
+Remember, as always with Amplication, you are in control. While Amplication will not automatically generate code in the ignored folders and files, you can still see what the generated code *could* look like. This way, you can cherry pick whatever Amplication-generated changes you like and use them in your code. You can find these files in `.amplication/ignored` in the git repository.
 :::
 
 
