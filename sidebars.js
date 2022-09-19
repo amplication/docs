@@ -8,7 +8,7 @@ module.exports = {
       "welcome",
       "getting-started/generated-app",
       "getting-started/first-app",
-      "getting-started/addons",
+      "getting-started/plugins",
       "getting-started/cli",
       "getting-started/sync-with-github",
       "how-to/run-dev-env",
