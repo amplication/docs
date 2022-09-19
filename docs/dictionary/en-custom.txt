@@ -68,5 +68,6 @@ tasksservice
 upsert
 dto
 transpilation
+microservices
 amplicationignore
 microservices
