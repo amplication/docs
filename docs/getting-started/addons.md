@@ -15,7 +15,7 @@ The installed plugins are shown on the _Installed Plugins_ screen.
 
 ## Available Plugins
 
-The following plugins are included in Amplication by default. 
+The following plugins are currently available, we are working to add more plugins 
 
 - PostgreSQL 
 - MySQL database
