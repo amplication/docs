@@ -29,13 +29,8 @@ Additional types of Resources to be added in upcoming releases include message b
 
 ## Service
 
-
 In earlier releases of Amplication, Services were known as apps, and the workflow supported the creation of individual and separate apps. Now, with the Project as the framework for the development process, each Project can contain multiple connected Services, enabling support for multiple use cases.
 
 
-## Workflow 
-
-The Amplication interface has been enhanced to support the new Project hierarchy and Service creation workflows. Now, after creating or selecting a Project, you can edit the Project Configuration and use the Amplication Service Creation Wizard to create one or more services. You can also view code at the Project level and sync with GitHub across multiple Services
-Amplication Release 0.15.0 introduces support for microservices through the introduction of a Project hierarchy. 
 
 See [Your First Project](https://docs.amplication.com/docs/first-app/) for more information. 
