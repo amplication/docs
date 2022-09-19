@@ -30,7 +30,7 @@ The following plugins are included in Amplication by default.
 If you or your organization require a specific function, install an existing plugin (if it exists), or develop one to perform your required tasks.
 :::
 
-## Installing addons
+## Installing plugins
  To install an addon:
  1. In the _All Plugins_ page, click **Install** for the required addon. 
 
