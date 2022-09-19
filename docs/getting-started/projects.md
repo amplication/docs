@@ -23,7 +23,7 @@ A Project is a hierarchy that groups together multiple Resources that form the b
 
 ## Resource
 A Resource is any element that goes into creating a project with Amplication, such as Project Configuration and Service.
-Additional types of Resources to be added in upcoming releases include message brokers, storage, API gateways, and more.
+Additional types of Resources to be added in upcoming releases include storage, API gateways, and more.
 
 
 
