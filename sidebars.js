@@ -1,9 +1,6 @@
 module.exports = {
   someSidebar: {
-
-    "Frequently Asked Questions": [
-      "faqs/faqs",      
-    ],
+    "Frequently Asked Questions": ["faqs/faqs"],
     "Getting Started": [
       "welcome",
       "getting-started/projects-resources-services",
@@ -20,7 +17,7 @@ module.exports = {
       "getting-started/helm-chart",
       "getting-started/view-generated-code",
     ],
-    "About": [
+    About: [
       "about/licensing",
       "about/product-roadmap",
       "getting-started/phone-home",
@@ -72,12 +69,12 @@ module.exports = {
       },
     ],
     "Customize Your Application": [
+      "custom-code/managing-custom-files",
       "custom-code/add-business-logic",
       "custom-code/add-action-to-controller",
       "custom-code/add-graphql-query",
       "custom-code/seed-db",
       "custom-code/add-custom-dto",
-
     ],
     Troubleshooting: [
       {
@@ -91,32 +88,22 @@ module.exports = {
       {
         type: "category",
         label: "Authorization",
-        items: [
-          "errors/could-not-authorize-user",
-        ],
+        items: ["errors/could-not-authorize-user"],
       },
       {
         type: "category",
         label: "GitHub",
-        items: [
-          "errors/merge-conflict",
-          "errors/github-different-app-id",
-        ],
+        items: ["errors/merge-conflict", "errors/github-different-app-id"],
       },
       {
         type: "category",
         label: "Set-Up",
-        items: [
-          "errors/installation-fails",
-          "errors/installation-slow",
-        ],
+        items: ["errors/installation-fails", "errors/installation-slow"],
       },
       {
         type: "category",
         label: "DB",
-        items: [
-          "errors/prisma-denied-access-on-postgres",
-        ],
+        items: ["errors/prisma-denied-access-on-postgres"],
       },
     ],
     Community: ["contributing", "community/handling-a-new-issue"],
