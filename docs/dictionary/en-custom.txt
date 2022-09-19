@@ -65,6 +65,10 @@ Posthog
 httpclientmodule
 authservice
 tasksservice
+microservices
 upsert
 dto
 transpilation
+microservices
+amplicationignore
+microservices
