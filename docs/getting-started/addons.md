@@ -23,12 +23,16 @@ If you or your organization require a specific function, install an existing plu
 
 ![](./assets/all-addons.png)
 
-2. Go to the _Installed Plugins_ page. The installed plugin is included. 
+2. Go to the _Installed Plugins_ page. The installed plugins are listed. 
+
+![](./assets/installed-plugins.png)
+
 :::note
 The plugins are executed when Amplication generates code, according to their order on the _Installed Plugins_ page.
 :::
 
 3. To change the order of the installed plugins, click the up or down arrow to the right of the plugin bar.
+4. To activate or deactivate the plugin, click the toggle switch. 
 
 
 
