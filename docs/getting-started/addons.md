@@ -34,7 +34,7 @@ If you or your organization require a specific function, install an existing plu
  To install a plugin:
  1. In the _All Plugins_ page, click **Install** for the required plugin. 
 
-![](./assets/all-addons.png)
+![](./assets/all-plugins.png)
 
 2. Go to the _Installed Plugins_ page. The installed plugins are listed. 
 
