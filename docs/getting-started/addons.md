@@ -18,7 +18,7 @@ The installed plugins are shown on the _Installed Plugins_ screen.
 The following plugins are included in Amplication by default. 
 
 - PostgreSQL 
-- MYSQL DB
+- MySQL database
 - Kafka
 - Password JWT Authentication
 - Password Basic Authentication
