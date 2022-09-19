@@ -32,7 +32,6 @@ The file works similarly to `.gitignore`, using the [glob](https://en.wikipedia.
 folder_or_file.     <-- Ignore ignore a specific file or folder
 folder/file         <-- Ignore a specific file in a 
 folder/**/file.json <-- Ignore all file.json occurrences in subfolders of "folder"
-!folder/file.json   <-- Reverse glob, will include "file.json" even if "folder" was excluded
 ```
 
 
