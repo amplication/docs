@@ -1,5 +1,5 @@
 ---
-id: addons
+id: plugins
 title: Using Plugins
 sidebar_label: Using Plugins 
 slug: getting-started/addons 
