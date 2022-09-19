@@ -32,7 +32,7 @@ If you or your organization require a specific function, install an existing plu
 
 ## Installing plugins
  To install an addon:
- 1. In the _All Plugins_ page, click **Install** for the required addon. 
+ 1. In the _All Plugins_ page, click **Install** for the required plugin. 
 
 ![](./assets/all-addons.png)
 
