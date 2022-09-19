@@ -40,6 +40,17 @@ The configuration dashboard opens.
 
 7. To commit the changes, select **Commit changes & build**. 
 
+## Viewing services related to a message broker
+On the message broker dashboard click Go **to services** or click the **Services** icon on the left of the screen. 
+The **Service List** page opens, with the list of associated services.
+
+## Viewing and activating a message broker
+1. From the **Service** dashboard, click the **Connections** icon on the left of the screen. A list of message brokers is displayed. 
+2. To enable the message broker, select the **enabled** toggle switch. 
+
+
+
+
 
 
 
