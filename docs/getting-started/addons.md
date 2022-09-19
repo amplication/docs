@@ -28,7 +28,7 @@ The following plugins are currently available, we are working to add more plugin
  To install a plugin:
  1. In the _All Plugins_ page, click **Install** for the required plugin. 
 
-![](./assets/all-plugins.png)
+![](./assets/all-addons.png)
 
 2. Go to the _Installed Plugins_ page. The installed plugins are listed. 
 
