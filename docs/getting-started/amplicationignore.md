@@ -9,14 +9,11 @@ slug: /getting-started/managing-custom-files
 
 When you work with Amplication to generate code, Amplication re-generates the code without affecting your custom files.  
 
-However, to allow you greater contol,  Amplication has provided the `.amplicationignore` file to ensure that selected files are ignored. 
-
+However, to allow you greater control,  Amplication has provided the `.amplicationignore` file to ensure that selected files are ignored.
 
 ## Using `.amplicationignore` to ignore your files
 
-
 The `.amplicationignore` file must be in the root of the git repository.
-
 
 ```bash
 /node_modules/**
