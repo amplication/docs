@@ -37,7 +37,7 @@ ng new web -g -S --routing false --style css
 {
   "scripts": {
     "start": "npm --prefix web start",
-    "postinstall": "npm ci --prefix web"
+    "postinstall": "npm i --prefix web"
   }
 }
 ```
@@ -396,6 +396,19 @@ With our different components created, we'll next put them together and see how 
    <app-create-task (addTask)="addTask($event)"></app-create-task>
    <app-tasks [tasks]="tasks" (completed)="completed($event)"></app-tasks>
    ```
+
+4. Go to [GitHub](https://github.com) and create a new repository.
+
+5. Run the following commands in the working folder.
+
+```bash
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+```
+
+6. Finally, set your remote origin URL and push up the code.
 
 ## Step 5 - Wrap Up
 
