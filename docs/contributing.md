@@ -62,7 +62,7 @@ Fork the Amplication repository to your GitHub organization. This means that you
 ## Step 2: Clone the repository to your local machine
 
 ```
-git clone https://github.com/amplication/amplication
+git clone --depth 1 https://github.com/amplication/amplication
 
 ```
 ## Step 3: Prepare the development environment 
