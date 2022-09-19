@@ -13,7 +13,7 @@ module.exports = {
       "getting-started/sync-with-github",
       "how-to/run-dev-env",
       "how-to/add-custom-code",
-      "getting-started/prevent-override",
+      "getting-started/managing-custom-files",
       "getting-started/deploy",
       "getting-started/authentication",
       "getting-started/connect-server-to-github",
