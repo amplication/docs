@@ -39,7 +39,6 @@ In the previous step, we applied permissions to the `User` entity so that only u
       throw new UnauthorizedException("Could not create user");
      }
      // Create an access token for the newly created user
-     //@ts-ignore
      const accessToken = await this.tokenService.createToken(username, password);
      // Return the access token as well as the some details about the user
      return {
