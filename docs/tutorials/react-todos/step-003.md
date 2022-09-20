@@ -118,13 +118,13 @@ Besides allowing for new users to be created, we also want to be able to get inf
       const result = await this.userService.findOne({
          where: { username },
          select: {
-         createdAt: true,
-         firstName: true,
-         id: true,
-         lastName: true,
-         roles: true,
-         updatedAt: true,
-         username: true,
+            createdAt: true,
+            firstName: true,
+            id: true,
+            lastName: true,
+            roles: true,
+            updatedAt: true,
+            username: true,
          },
       });
       if (!result) {
