@@ -23,31 +23,35 @@ In the previous step, we applied permissions to the `User` entity so that only u
 2. Here we will add a method to enable the users to sign up. Copy the below method after the `login` method, and take the time to read through the comments to get a better understanding of what this code does.
 
    ```ts
-   async signup(credentials: Credentials): Promise<UserInfo> {
-     // Extract the username and password from the body of the request
+    async signup(credentials: Credentials): Promise<UserInfo> {
+      // Extract the username and password from the body of the request
       const { username, password } = credentials;
-     // Here we attempt to create a new user
+      // Here we attempt to create a new user
       const user = await this.userService.create({
-         data: {
-            username,
-            password,
-            roles: ['todoUser'], // Here we assign every new user the `Todo User` role
-         },
+        data: {
+          username,
+          password,
+          roles: ["todoUser"], // Here we assign every new user the `Todo User` role
+        },
       });
       // If creating a new user fails throw an error
       if (!user) {
-         throw new UnauthorizedException("Could not create user");
+        throw new UnauthorizedException("Could not create user");
       }
       // Create an access token for the newly created user
-      //@ts-ignore
-      const accessToken = await this.tokenService.createToken(username, password);
+      const accessToken = await this.tokenService.createToken({
+        id: user.id,
+        username,
+        password,
+      });
       // Return the access token as well as the some details about the user
       return {
-         accessToken,
-         username: user.username,
-         roles: user.roles,
+        accessToken,
+        username: user.username,
+        id: user.id,
+        roles: (user.roles as UserRoles).roles,
       };
-   }
+    }
    ```
 
 3. With the logic in place to create a new user, a new endpoint needs to be created in the `AuthController`. Open `server/src/auth/auth.controller.ts` and copy the following method into the `AuthController`.
@@ -55,7 +59,7 @@ In the previous step, we applied permissions to the `User` entity so that only u
    ```ts
    @Post("signup")
    async signup(@Body() body: Credentials): Promise<UserInfo> {
-      return this.authService.signup(body);
+     return this.authService.signup(body);
    }
    ```
 
@@ -66,7 +70,7 @@ In the previous step, we applied permissions to the `User` entity so that only u
    ```ts
    @Mutation(() => UserInfo)
    async signup(@Args() args: LoginArgs): Promise<UserInfo> {
-      return this.authService.signup(args.credentials);
+     return this.authService.signup(args.credentials);
    }
    ```
 
@@ -84,7 +88,7 @@ Besides allowing for new users to be created, we also want to be able to get inf
     * @returns the username from a jwt token
     */
    decodeToken(bearer: string): string {
-      return this.jwtService.verify(bearer).username;
+     return this.jwtService.verify(bearer).username;
    }
    ```
 
@@ -92,16 +96,15 @@ Besides allowing for new users to be created, we also want to be able to get inf
 
    ```ts
    import {
-      Injectable,
-      UnauthorizedException,
-      NotFoundException,
+     Injectable,
+     UnauthorizedException,
+     NotFoundException,
    } from "@nestjs/common";
-   // @ts-ignore
-   // eslint-disable-next-line
    import { UserService } from "../user/user.service";
    import { Credentials } from "./Credentials";
    import { PasswordService } from "./password.service";
    import { TokenService } from "./token.service";
+   import { UserRoles } from "./UserRoles";
    import { UserInfo } from "./UserInfo";
    import { User } from "../user/base/User";
    ```
@@ -153,7 +156,7 @@ Besides allowing for new users to be created, we also want to be able to get inf
    @ApiOkResponse({ type: User })
    @Get("me")
    async me(@Req() request: Request): Promise<User> {
-      return this.authService.me(request.headers.authorization);
+    return this.authService.me(request.headers.authorization);
    }
    ```
 
@@ -179,7 +182,7 @@ Besides allowing for new users to be created, we also want to be able to get inf
    ```ts
    @Query(() => User)
    async me(@Context('req') request: Request): Promise<User> {
-      return this.authService.me(request.headers.authorization);
+     return this.authService.me(request.headers.authorization);
    }
    ```
 
