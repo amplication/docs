@@ -330,7 +330,7 @@ export class CreateTaskComponent {
 
   onSubmit() {
     if (!this.createTaskForm.valid) return;
-    this.addTask.emit(this.createTaskForm.value.task);
+    this.addTask.emit(this.createTaskForm.value.task as string);
     this.createTaskForm.reset();
   }
 }
