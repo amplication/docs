@@ -41,6 +41,36 @@ module.exports = {
       "how-to/base-directories",
       "how-to/api-admin-ui-settings",
     ],
+
+    Plugins: [
+     {
+       type: "category",
+       label: "Plugin Creation ",
+       items: [
+               "plugins/plugin-develop-overview",
+               "plugins/plugin-architecture",
+            ],
+           },
+      {
+        type: "category",
+        label: "Plugin Events",
+        items: [
+            "plugins/plugin-events/plugin-events",
+            "plugins/plugin-events/create-server-event",
+            "plugins/plugin-events/create-package-json-event",
+            "plugins/plugin-events/createentityservice",
+            "plugins/plugin-events/createentityservicebase",
+            "plugins/plugin-events/createentitycontroller",
+            "plugins/plugin-events/createentitycontrollerbase",
+            "plugins/plugin-events/createauthmodels",
+            "plugins/plugin-events/createmessagebroker",
+            "plugins/plugin-events/createmessagebrokernestjsmodule",
+            "plugins/plugin-events/createserverdockercompose",
+            "plugins/plugin-events/createmessagebrokerclientoptionsfactory", 
+          
+          ],
+        },
+      ],
     Tutorials: [
       {
         type: "category",
@@ -75,7 +105,6 @@ module.exports = {
       "custom-code/add-graphql-query",
       "custom-code/seed-db",
       "custom-code/add-custom-dto",
-
     ],
     Troubleshooting: [
       {
