@@ -1,38 +1,38 @@
 ---
 id: first-app
-title: Create your first application with Amplication
-sidebar_label: Your first application
+title: Create your first service with Amplication
+sidebar_label: Create your first service
 slug: /first-app
 ---
 
-# Your First Application
+# Create Your First Service
 
-Not sure how to get started? These instructions will walk you through the steps of creating an application, adding an entity, adding roles, and setting permissions on entities.
+Not sure how to get started? These instructions will walk you through the steps of creating a service, adding an entity, adding roles, and setting permissions on entities.
 
 Also, you'll see how to commit changes and manage versions, and finally, how to build your app and download the generated source-code.
 
 Let’s get started.
 
-## Step 1 - Create a New App
+## Step 1 - Create a New Service
 
 1. Sign-in to [app.amplication.com](https://app.amplication.com).
 
-   You should land on the _New App_ page. If you're not on the _New App_ page, click the Amplication logo in the top-left corner to reach the _My Apps_ page.
+   You should land on the _New Service_ page. If you're not on the _New Service_ page, click the Amplication logo in the top-left corner to reach the _Projects_ page.
 
-2. Click the **New App** button.
-3. In the _New App_ page, click **Start from Scratch** to create an empty app.
+2. Click the **New Resource** button, and then click on **Service**
+3. In the _New Service_ page, leave the default selections to create an empty service.
+4. Click the **Create Service** button
 
    ![](./assets/pic0.png)
 
-   The Overview window opens. 
-  
-   ![](./assets/overview-window.png)
+   The Overview window opens.
 
+   ![](./assets/overview-window.png)
 
 ## Step 2 - Create an Entity
 
 1. On the _Overview_ page, click **Go to Entities**, or from the main menu (left sidebar) click the **Entities** icon.
-The _Entities_ page opens.  Here you see all the entities in your application.
+   The _Entities_ page opens. Here you see all the entities in your service.
 
 :::tip
 When creating an Entity, make sure you do not use a reserved name for the name of the Entity or for any of its fields. Go [here](https://github.com/amplication/amplication/blob/master/packages/amplication-server/src/core/entity/reservedNames.ts) to check the list of reserved names.
@@ -40,13 +40,13 @@ When creating an Entity, make sure you do not use a reserved name for the name o
 
 Click the **Entities** icon on the main menu (left sidebar) to reach the _Entities_ page. Here you see all the entities in your application.
 
-   ![](./assets/pic-1.png)
+![](./assets/pic-1.png)
 
 :::tip
-At this stage, there's only one entity, **User**. This is auto-generated when you created the new app.
+At this stage, there's only one entity, **User**. This is auto-generated when you created the new service.
 :::
 
-   In this example, we'll now add another entity called “Project”.
+In this example, we'll now add another entity called “Project”.
 
 2. Click **Add Entity**.
 3. In the _New Entity_ dialog, type “Project”.
@@ -119,7 +119,7 @@ You might find it easier to first add all the fields you want, one after another
 
 ## Step 4 - Create Roles
 
-1. Click the Roles icon on the main menu (left sidebar) to reach the _Roles_ page. Here you see all the roles in your application.
+1. Click the Roles icon on the main menu (left sidebar) to reach the _Roles_ page. Here you see all the roles in your service.
 1. On the _Overview_ page, click **Go to roles**, or from the main menu (left sidebar) click the **Roles** icon.
 
 :::tip
@@ -147,10 +147,10 @@ Permissions can be controlled separately for each of the following actions:
 - **Search**
 
 These actions can be set to one of the following:
-- **Public** - no authentication is required, so the action is available to all users, not only those with defined roles 
-- **All Roles** - all roles can perform the action 
-- **Granular** - only specified roles can perform the action
 
+- **Public** - no authentication is required, so the action is available to all users, not only those with defined roles
+- **All Roles** - all roles can perform the action
+- **Granular** - only specified roles can perform the action
 
 ### Set Entity Permissions
 
@@ -160,7 +160,7 @@ In this example, some of the actions have been changed to **Public**, while the 
 
 ![](./assets/public-1.png)
 
-In the following example, we use the **Granular** setting to find tune the permissions for a role. 
+In the following example, we use the **Granular** setting to find tune the permissions for a role.
 
 1. On the _Overview_ page, click **Go to Entities**, or from the main menu (left sidebar) click the **Entities** icon.
 2. Click the _Project_ entity.
@@ -190,9 +190,9 @@ We will now set permissions at the field level.
 
 ## Step 6 - Commit Your Changes
 
-While working in Amplication your changes are saved automatically, but are not committed. Only committed changes will be included in the next version of your application.
+While working in Amplication your changes are saved automatically, but are not committed. Only committed changes will be included in the next version of your generated application.
 
-In the _Pending Changes_ control in the main menu (left sidebar) you can see how many pending changes are waiting to be committed.
+In the _Pending Changes_ control in the right sidebar you can see the list of pending changes that are waiting to be committed.
 
 ![](./assets/pic8.1.png)
 
@@ -201,10 +201,10 @@ We'll now make our first commit.
 In this page, you can see that the creation of the _Project_ entity hasn't been committed.
 
 1. In the _commit message_ dialog, write a description of the changes you're committing. For example: "Added Project Entity and Manager and Admin roles".
-2. Click **Commit Changes**. All changes are committed. A build of the first version of your app is automatically created!
+2. Click **Commit Changes**. All changes are committed. A build of the first version of your service is automatically created!
 
 :::tip
-Use Code View to view and explore the generated code. You can see the updated code before it is synced with GitHub or downloaded. Click the [View Code](./view-generated-code.md) icon to view the generated code. 
+Use Code View to view and explore the generated code. You can see the updated code before it is synced with GitHub or downloaded. Click the [View Code](./view-generated-code.md) icon to view the generated code.
 :::
 
 3. After the build process completes, click the download icon in the _Generate Code_ row to get a .zip file of your app. It is now ready to be deployed anywhere you want. 🚀
