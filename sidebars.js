@@ -28,19 +28,6 @@ module.exports = {
       "custom-code/seed-db",
       "custom-code/add-custom-dto",
     ],
-
-    "How To": [
-      "how-to/how-to-create-app",
-      "how-to/how-to-create-entity",
-      "how-to/how-to-create-entity-field",
-      "how-to/how-to-set-access-permissions",
-      "how-to/how-to-commit-changes",
-      "getting-started/relations",
-      "how-to/base-directories",
-      "how-to/api-admin-ui-settings",
-      "how-to/create-message-broker",
-    ],
-
     Plugins: [
       {
         type: "category",
@@ -68,6 +55,17 @@ module.exports = {
           "plugins/plugin-events/create-message-broker-client-options-factory",
         ],
       },
+    ],
+    "How To": [
+      "how-to/how-to-create-app",
+      "how-to/how-to-create-entity",
+      "how-to/how-to-create-entity-field",
+      "how-to/how-to-set-access-permissions",
+      "how-to/how-to-commit-changes",
+      "getting-started/relations",
+      "how-to/base-directories",
+      "how-to/api-admin-ui-settings",
+      "how-to/create-message-broker",
     ],
     Tutorials: [
       {
