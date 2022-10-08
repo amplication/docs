@@ -1,8 +1,8 @@
 ---
-id: createmessagebrokerclientoptionsfactory
+id: create-message-broker-client-options-factory
 title: CreateMessageBrokerClientOptionsFactory
 sidebar_label: CreateMessageBrokerClientOptionsFactory
-slug: /plugins/plugin-events/createmessagebrokerclientoptionsfactory
+slug: /plugins/plugin-events/create-message-broker-client-options-factory
 ---
 
 # CreateMessageBrokerClientOptionsFactory
@@ -17,4 +17,3 @@ slug: /plugins/plugin-events/createmessagebrokerclientoptionsfactory
 [code]
 }
 ```
-

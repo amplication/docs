@@ -1,8 +1,8 @@
 ---
-id: createentityservice
+id: create-entity-service
 title: CreateEntityService
 sidebar_label: CreateEntityService
-slug: /plugins/plugin-events/createentityservice
+slug: /plugins/plugin-events/create-entity-service
 ---
 
 # CreateEntityService
@@ -17,4 +17,3 @@ slug: /plugins/plugin-events/createentityservice
 [code]
 }
 ```
-

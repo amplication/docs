@@ -1,8 +1,8 @@
 ---
-id: createmessagebrokernestjsmodule
+id: create-message-broker-nest-js-module
 title: CreateMessageBrokerNestJSModule
 sidebar_label: CreateMessageBrokerNestJSModule
-slug: /plugins/plugin-events/createmessagebrokernestjsmodule
+slug: /plugins/plugin-events/create-message-broker-nest-js-module
 ---
 
 # CreateMessageBrokerNestJSModule
@@ -17,4 +17,3 @@ slug: /plugins/plugin-events/createmessagebrokernestjsmodule
 [code]
 }
 ```
-

@@ -1,11 +1,11 @@
 ---
-id: createauthmodels
+id: create-auth-module
 title: CreateAuthModels
 sidebar_label: CreateAuthModels
-slug: /plugins/plugin-events/createauthmodels
+slug: /plugins/plugin-events/create-auth-module
 ---
 
-# CreateAuthModels
+# CreateAuthModule
 
 ## Description
 

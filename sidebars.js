@@ -42,34 +42,33 @@ module.exports = {
     ],
 
     Plugins: [
-     {
-       type: "category",
-       label: "Plugin Creation ",
-       items: [
-               "plugins/plugin-develop-overview",
-               "plugins/plugin-architecture",
-            ],
-           },
+      {
+        type: "category",
+        label: "Plugin Creation ",
+        items: [
+          "plugins/plugin-develop-overview",
+          "plugins/plugin-architecture",
+        ],
+      },
       {
         type: "category",
         label: "Plugin Events",
         items: [
-            "plugins/plugin-events/plugin-events",
-            "plugins/plugin-events/create-server-event",
-            "plugins/plugin-events/create-package-json-event",
-            "plugins/plugin-events/createentityservice",
-            "plugins/plugin-events/createentityservicebase",
-            "plugins/plugin-events/createentitycontroller",
-            "plugins/plugin-events/createentitycontrollerbase",
-            "plugins/plugin-events/createauthmodels",
-            "plugins/plugin-events/createmessagebroker",
-            "plugins/plugin-events/createmessagebrokernestjsmodule",
-            "plugins/plugin-events/createserverdockercompose",
-            "plugins/plugin-events/createmessagebrokerclientoptionsfactory", 
-          
-          ],
-        },
-      ],
+          "plugins/plugin-events/plugin-events",
+          "plugins/plugin-events/create-server",
+          "plugins/plugin-events/create-package-json",
+          "plugins/plugin-events/create-entity-service",
+          "plugins/plugin-events/create-entity-service-base",
+          "plugins/plugin-events/create-entity-controller",
+          "plugins/plugin-events/create-entity-controller-base",
+          "plugins/plugin-events/create-auth-module",
+          "plugins/plugin-events/create-message-broker",
+          "plugins/plugin-events/create-message-broker-nest-js-module",
+          "plugins/plugin-events/create-server-docker-compose",
+          "plugins/plugin-events/create-message-broker-client-options-factory",
+        ],
+      },
+    ],
     Tutorials: [
       {
         type: "category",

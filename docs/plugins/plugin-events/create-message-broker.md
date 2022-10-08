@@ -1,8 +1,8 @@
 ---
-id: createmessagebroker
+id: create-message-broker
 title: CreateMessageBroker
 sidebar_label: CreateMessageBroker
-slug: /plugins/plugin-events/createmessagebroker
+slug: /plugins/plugin-events/create-message-broker
 ---
 
 # CreateMessageBroker
@@ -17,4 +17,3 @@ slug: /plugins/plugin-events/createmessagebroker
 [code]
 }
 ```
-

@@ -1,12 +1,11 @@
 ---
-id: create-package-json-event
+id: create-package-json
 title: Create Package Json Event
 sidebar_label: Create Package Json Event
-slug: /plugins/plugin-events/create-package-json-event
+slug: /plugins/plugin-events/create-package-json
 ---
 
-
-# Create Package Json Event
+# Create Package Json
 
 ## Description
 

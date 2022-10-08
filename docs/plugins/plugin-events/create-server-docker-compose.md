@@ -1,8 +1,8 @@
 ---
-id: createserverdockercompose
+id: create-server-docker-compose
 title: Create Server Docker Compose
 sidebar_label: Create Server Docker Compose
-slug: /plugins/plugin-events/createserverdockercompose
+slug: /plugins/plugin-events/create-server-docker-compose
 ---
 
 # Create Server Docker Compose
@@ -15,15 +15,15 @@ Creates the `docker-compose.yml` file of the service
 
 ```tsx
 export interface CreateServerDockerComposeParams extends EventParams {
-    fileContent: string;
-    updateProperties: {[key: string]: any;}[];
-    outputFileName: string;
+  fileContent: string;
+  updateProperties: { [key: string]: any }[];
+  outputFileName: string;
 }
 ```
 
 ### fileContent
 
-The default content of the file as a string. If needed, the value can be parsed as an object using a YAML utility. 
+The default content of the file as a string. If needed, the value can be parsed as an object using a YAML utility.
 
 In most cases, there is no need to manipulate the property directly. Instead, use the `updatePropeties` param
 
@@ -31,7 +31,7 @@ In most cases, there is no need to manipulate the property directly. Instead, us
 
 An array that accepts any object that will be merged into the docker-compose file.
 
-The object will be deeply merged into the previous state of the file. 
+The object will be deeply merged into the previous state of the file.
 
 multiple plugins can add objects into this array, and they will be merged by the order of execution of the plugins
 
@@ -74,6 +74,6 @@ beforeCreateServerDockerCompose(
 
 ### outputFileName
 
-The file name of the docker-compose file, the default value is `docker-compose.yml` 
+The file name of the docker-compose file, the default value is `docker-compose.yml`
 
 It is recommended not to change the file name unless specifically needed and the impact is understood.
