@@ -1,26 +1,17 @@
 module.exports = {
   someSidebar: {
-    "Frequently Asked Questions": ["faqs/faqs"],
     "Getting Started": [
       "welcome",
-      "getting-started/projects-resources-services",
       "getting-started/generated-app",
       "getting-started/first-app",
-      "getting-started/plugins",
-      "getting-started/cli",
-      "getting-started/sync-with-github",
+      "getting-started/view-generated-code",
       "how-to/run-dev-env",
       "how-to/add-custom-code",
       "getting-started/deploy",
       "getting-started/authentication",
-      "getting-started/connect-server-to-github",
-      "getting-started/helm-chart",
-      "getting-started/view-generated-code",
-    ],
-    About: [
-      "about/licensing",
-      "about/product-roadmap",
-      "getting-started/phone-home",
+      "getting-started/plugins",
+      "getting-started/projects-resources-services",
+      "getting-started/cli",
     ],
     "Generated API": [
       "getting-started/generated-app-api",
@@ -29,6 +20,15 @@ module.exports = {
       "api/generated-api-pagination",
       "api/meta-query-graphql",
     ],
+    "Customize Your Application": [
+      "custom-code/managing-custom-files",
+      "custom-code/add-business-logic",
+      "custom-code/add-action-to-controller",
+      "custom-code/add-graphql-query",
+      "custom-code/seed-db",
+      "custom-code/add-custom-dto",
+    ],
+
     "How To": [
       "how-to/how-to-create-app",
       "how-to/how-to-create-entity",
@@ -97,13 +97,15 @@ module.exports = {
         ],
       },
     ],
-    "Customize Your Application": [
-      "custom-code/managing-custom-files",
-      "custom-code/add-business-logic",
-      "custom-code/add-action-to-controller",
-      "custom-code/add-graphql-query",
-      "custom-code/seed-db",
-      "custom-code/add-custom-dto",
+    "Frequently Asked Questions": ["faqs/faqs"],
+    "Running Amplication Platform": [
+      "getting-started/sync-with-github",
+      "getting-started/connect-server-to-github",
+    ],
+    About: [
+      "about/licensing",
+      "about/product-roadmap",
+      "getting-started/phone-home",
     ],
     Troubleshooting: [
       {
