@@ -1,27 +1,27 @@
 ---
 id: generated-app
-title: The generated app
-sidebar_label: The Generated App
+title: The generated service
+sidebar_label: The generated service
 slug: /getting-started
 ---
 
-# The Generated App
+# The Generated Service
 
-Amplication auto-generates fully functional human-readable and editable apps based on TypeScript and Node.js.
+Amplication auto-generates fully functional human-readable and editable services based on TypeScript and Node.js.
 
-Generated apps include NestJS, Prisma, REST API, GraphQL API, a React admin UI, authentication, authorization, and logging.
+The generated services include NestJS, Prisma, REST API, GraphQL API, a React admin UI, authentication, authorization, logging, and more.
 
-In this article you can find the details on the structure of the application and the technologies behind it.
+In this article you can find the details on the structure of a single service and the technologies behind it.
 
 :::note
-You can see an example of an app generated with Amplication in this repository
+You can see an example of a service generated with Amplication in this repository
 
 https://github.com/amplication/sample-app
 :::
 
 ## Technologies
 
-The generated app is built with the following proven open-source technologies:
+The generated service is built with the following proven open-source technologies:
 
 ### Server-side
 
@@ -38,12 +38,10 @@ The generated app is built with the following proven open-source technologies:
 
 - [ReactJS](https://reactjs.org/) - A JavaScript library for building user interfaces.
 - [React-Admin](https://reactjs.org/) - A unified admin framework using React, Material UI, React Router, Redux, and React-final-form.
-- [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js.
-- [Formik](https://formik.org/) - React hooks and components for hassle-free form validation.
 
 ## Projects Structure
 
-The generated app is built from two projects, each in a separate folder
+The generated service is built from two projects, each in a separate folder
 
 - Server - For all the server components including REST API, GraphQL, Services and more.
 - Admin - For the Admin UI including forms for CRUD operations on all data models.

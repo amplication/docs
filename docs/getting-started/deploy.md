@@ -1,11 +1,11 @@
 ---
 id: deploy
-title: How to deploy your app
-sidebar_label: How to deploy your app
+title: How to deploy your services
+sidebar_label: Deploy your services
 slug: /deploy
 ---
 
-# How to deploy your app
+# Deploy your services
 
 Applications created with Amplication comprise two main components — the server that runs the API and a database.
 
@@ -15,7 +15,6 @@ When it comes to deployment, you can choose one of the following options:
 - Building a Docker container and deploying it to any cloud, data center, or server.
 
 Let’s explore each of the options.
-
 
 ## Downloading the app’s source code
 
