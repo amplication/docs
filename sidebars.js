@@ -9,6 +9,7 @@ module.exports = {
       "how-to/add-custom-code",
       "getting-started/deploy",
       "getting-started/authentication",
+      "faqs/faqs",
       "getting-started/plugins",
       "getting-started/projects-resources-services",
       "getting-started/cli",
@@ -95,7 +96,6 @@ module.exports = {
         ],
       },
     ],
-    "Frequently Asked Questions": ["faqs/faqs"],
     "Running Amplication Platform": [
       "getting-started/sync-with-github",
       "getting-started/connect-server-to-github",
