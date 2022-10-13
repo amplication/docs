@@ -50,7 +50,7 @@ The generated service is built from two projects, each in a separate folder
 
 The server project provides all the back-end services of your application, like REST API, GraphQL API, authentication, authorization, logging, data validation, and connection to the database.
 
-![](./assets/generated-app/app-components2.png)
+![](./assets/generated-app/app-components2.jpg)
 
 ### Admin
 
