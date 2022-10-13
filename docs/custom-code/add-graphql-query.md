@@ -1,11 +1,11 @@
 ---
 id: add-graphql-query
-title: How to add an query to a GraphQL resolver
+title: Add an query to a GraphQL resolver
 sidebar_label: Add a query to a GraphQL resolver
 slug: /custom-code/graphql-query
 ---
 
-# How to add a query to a GraphQL resolver
+# Add a query to a GraphQL resolver
 
 ## General
 
