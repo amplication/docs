@@ -1,6 +1,6 @@
 ---
 id: react-todos-step-003
-title: Adding Custom Endpoints
+title: Adding Custom Endpoints | React
 sidebar_label: Adding Custom Endpoints
 slug: /tutorials/react-todos/step-003
 ---

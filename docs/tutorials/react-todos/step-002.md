@@ -1,6 +1,6 @@
 ---
 id: react-todos-step-002
-title: Create the Backend
+title: Create the Backend | React
 sidebar_label: Create the Backend
 slug: /tutorials/react-todos/step-002
 ---
