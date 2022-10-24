@@ -1,28 +1,18 @@
 module.exports = {
   someSidebar: {
-
-    "Frequently Asked Questions": [
-      "faqs/faqs",      
-    ],
     "Getting Started": [
       "welcome",
       "getting-started/generated-app",
       "getting-started/first-app",
-      "getting-started/cli",
-      "getting-started/sync-with-github",
+      "getting-started/view-generated-code",
       "how-to/run-dev-env",
       "how-to/add-custom-code",
       "getting-started/deploy",
       "getting-started/authentication",
-      "getting-started/connect-server-to-github",
-      "getting-started/helm-chart",
-      "getting-started/workspace",
-      "getting-started/view-generated-code",
-    ],
-    "About": [
-      "about/licensing",
-      "about/product-roadmap",
-      "getting-started/phone-home",
+      "faqs/faqs",
+      "getting-started/plugins",
+      "getting-started/projects-resources-services",
+      "getting-started/cli",
     ],
     "Generated API": [
       "getting-started/generated-app-api",
@@ -30,6 +20,42 @@ module.exports = {
       "api/generated-api-filtering",
       "api/generated-api-pagination",
       "api/meta-query-graphql",
+    ],
+    "Customize Your Application": [
+      "custom-code/managing-custom-files",
+      "custom-code/add-business-logic",
+      "custom-code/add-action-to-controller",
+      "custom-code/add-graphql-query",
+      "custom-code/seed-db",
+      "custom-code/add-custom-dto",
+    ],
+    Plugins: [
+      {
+        type: "category",
+        label: "Plugin Creation ",
+        items: [
+          "plugins/plugin-develop-overview",
+          "plugins/plugin-architecture",
+        ],
+      },
+      {
+        type: "category",
+        label: "Plugin Events",
+        items: [
+          "plugins/plugin-events/plugin-events",
+          "plugins/plugin-events/create-server",
+          "plugins/plugin-events/create-package-json",
+          "plugins/plugin-events/create-entity-service",
+          "plugins/plugin-events/create-entity-service-base",
+          "plugins/plugin-events/create-entity-controller",
+          "plugins/plugin-events/create-entity-controller-base",
+          "plugins/plugin-events/create-auth-module",
+          "plugins/plugin-events/create-message-broker",
+          "plugins/plugin-events/create-message-broker-nest-js-module",
+          "plugins/plugin-events/create-server-docker-compose",
+          "plugins/plugin-events/create-message-broker-client-options-factory",
+        ],
+      },
     ],
     "How To": [
       "how-to/how-to-create-app",
@@ -40,8 +66,8 @@ module.exports = {
       "getting-started/relations",
       "how-to/base-directories",
       "how-to/api-admin-ui-settings",
+      "how-to/create-message-broker",
     ],
-
     Plugins: [
      {
        type: "category",
@@ -105,12 +131,14 @@ module.exports = {
         ],
       },
     ],
-    "Customize Your Application": [
-      "custom-code/add-business-logic",
-      "custom-code/add-action-to-controller",
-      "custom-code/add-graphql-query",
-      "custom-code/seed-db",
-      "custom-code/add-custom-dto",
+    "Running Amplication Platform": [
+      "getting-started/sync-with-github",
+      "getting-started/connect-server-to-github",
+    ],
+    About: [
+      "about/licensing",
+      "about/product-roadmap",
+      "getting-started/phone-home",
     ],
     Troubleshooting: [
       {
@@ -124,32 +152,22 @@ module.exports = {
       {
         type: "category",
         label: "Authorization",
-        items: [
-          "errors/could-not-authorize-user",
-        ],
+        items: ["errors/could-not-authorize-user"],
       },
       {
         type: "category",
         label: "GitHub",
-        items: [
-          "errors/merge-conflict",
-          "errors/github-different-app-id",
-        ],
+        items: ["errors/merge-conflict", "errors/github-different-app-id"],
       },
       {
         type: "category",
         label: "Set-Up",
-        items: [
-          "errors/installation-fails",
-          "errors/installation-slow",
-        ],
+        items: ["errors/installation-fails", "errors/installation-slow"],
       },
       {
         type: "category",
         label: "DB",
-        items: [
-          "errors/prisma-denied-access-on-postgres",
-        ],
+        items: ["errors/prisma-denied-access-on-postgres"],
       },
     ],
     Community: ["contributing", "community/handling-a-new-issue"],

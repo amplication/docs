@@ -1,5 +1,5 @@
 ---
-id: createmessagebrokerclientoptionsfactory
+id: create-message-broker-client-options-factory
 title: CreateMessageBrokerClientOptionsFactory
 sidebar_label: Create Message Broker Client Options Factory
 slug: /plugins/plugin-events/createmessagebrokerclientoptionsfactory

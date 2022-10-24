@@ -1,5 +1,5 @@
 ---
-id: createmessagebroker
+id: create-message-broker
 title: CreateMessageBroker
 sidebar_label: Create Message Broker
 slug: /plugins/plugin-events/createmessagebroker
@@ -36,4 +36,3 @@ Example:
     return eventParams;
   }
 ```
-

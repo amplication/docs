@@ -1,11 +1,11 @@
 ---
 id: add-custom-code
-title: How to add custom code to your server
-sidebar_label: Add custom code to your server
+title: How to add custom code to your services
+sidebar_label: Add custom code to your services
 slug: /how-to/custom-code
 ---
 
-# Add custom code to your server
+# Add custom code to your services
 
 Although your application built with Amplication is fully functional and you can start using it as it was shipped, you probably want to add your core business logic and other functionality to your server.
 

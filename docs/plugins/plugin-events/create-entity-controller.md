@@ -1,5 +1,5 @@
 ---
-id: createentitycontroller
+id: create-entity-controller
 title: CreateEntityController
 sidebar_label: Create Entity Controller
 slug: /plugins/plugin-events/createentitycontroller

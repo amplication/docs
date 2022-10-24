@@ -66,44 +66,44 @@ slug: /tutorials/angular-todos/step-004
 4. Then replace the content of the generated file (`web/src/app/jwt.service.ts`) with the following code:
 
    ```ts
-   import { Injectable } from "@angular/core";
+   import { Injectable } from '@angular/core';
    import {
-     HttpInterceptor,
-     HttpEvent,
-     HttpRequest,
-     HttpHandler,
-   } from "@angular/common/http";
-   import { Observable } from "rxjs";
-   import { environment } from "../environments/environment";
+   HttpInterceptor,
+   HttpEvent,
+   HttpRequest,
+   HttpHandler,
+   } from '@angular/common/http';
+   import { Observable } from 'rxjs';
+   import { environment } from '../environments/environment';
 
    @Injectable({
-     providedIn: "root",
+   providedIn: 'root',
    })
    export class JWTService implements HttpInterceptor {
-     get jwt(): string {
-       return localStorage.getItem(environment.jwtKey) || "";
-     }
+   get jwt(): string {
+      return localStorage.getItem(environment.jwtKey) || '';
+   }
 
-     set jwt(accessToken: string) {
-       localStorage.setItem(environment.jwtKey, accessToken);
-     }
+   set jwt(accessToken: string) {
+      localStorage.setItem(environment.jwtKey, accessToken);
+   }
 
-     get isStoredJwt(): boolean {
-       return Boolean(this.jwt);
-     }
+   get isStoredJwt(): boolean {
+      return Boolean(this.jwt);
+   }
 
-     intercept(
-       request: HttpRequest<any>,
-       next: HttpHandler
-     ): Observable<HttpEvent<any>> {
-       if (request.url.startsWith(environment.apiUrl)) {
+   intercept(
+      request: HttpRequest<any>,
+      next: HttpHandler
+   ): Observable<HttpEvent<any>> {
+      if (request.url.startsWith(environment.apiUrl)) {
          request = request.clone({
-           setHeaders: { Authorization: `Bearer ${this.jwt}` },
+         setHeaders: { Authorization: `Bearer ${this.jwt}` },
          });
-       }
+      }
 
-       return next.handle(request);
-     }
+      return next.handle(request);
+   }
    }
    ```
 
@@ -260,36 +260,37 @@ Instead of calling our API endpoints directly from our components, we will abstr
 `web/src/app/auth/auth.component.ts`
 
 ```ts
-import { Component, Output, EventEmitter } from "@angular/core";
-import { FormBuilder } from "@angular/forms";
-import { AuthService } from "../auth.service";
+import { Component, Output, EventEmitter } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { AuthService } from '../auth.service';
 
 @Component({
-  selector: "app-auth",
-  templateUrl: "./auth.component.html",
-  styleUrls: ["./auth.component.css"],
+  selector: 'app-auth',
+  templateUrl: './auth.component.html',
+  styleUrls: ['./auth.component.css'],
 })
 export class AuthComponent {
   @Output() setUser = new EventEmitter<string>();
   authForm = this.fb.group({
-    username: "",
-    password: "",
-    confirm: "",
+    username: '',
+    password: '',
+    confirm: '',
   });
   isLogin = true;
 
   constructor(private fb: FormBuilder, private auth: AuthService) {}
 
   onSubmit() {
-    const { username, password, confirm }: { [key: string]: string } =
-      this.authForm.getRawValue();
+    const { username, password, confirm } = this.authForm.getRawValue() as {
+      [key: string]: string;
+    };
 
     if (!username || !password) return;
 
     let authResult;
 
     if (!this.isLogin && password !== confirm) {
-      return alert("Passwords do not match");
+      return alert('Passwords do not match');
     } else if (!this.isLogin) {
       authResult = this.auth.signup(username.toLowerCase(), password);
     } else {
@@ -401,7 +402,7 @@ On submit the `login` or `signup` method from the `AuthService` is called, and t
 
    ```ts
    ngOnInit(): void {
-      this.auth.me().subscribe({ next: (user) => (this.user = user) });
+      this.auth.me().subscribe({ next: (user) => this.setUser(user) });
    }
    ```
 
