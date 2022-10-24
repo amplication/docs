@@ -1,6 +1,6 @@
 ---
 id: create-package-json-event
-title: Create Package Json Event
+title: CreatePackageJsonEvent
 sidebar_label: Create Package Json Event
 slug: /plugins/plugin-events/create-package-json-event
 ---
@@ -10,7 +10,7 @@ slug: /plugins/plugin-events/create-package-json-event
 
 ## Description
 
-Create the `package.json` file of the service
+Create the `package.json` file of the service.
 
 ## Event Params
 

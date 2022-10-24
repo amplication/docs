@@ -1,33 +1,39 @@
 ---
-id: createentitycontrollerbase
-title: CreateEntityControllerBase
-sidebar_label: Create Entity Controller Base
-slug: /plugins/plugin-events/createentitycontrollerbase
+id: createentityservicebase
+title: CreateEntityServiceBase
+sidebar_label: Create Entity Service Base
+slug: /plugins/plugin-events/createentityservicebase
 ---
 
-# Create Entity Controller Base
+# Create Entity Service Base
 
 ## Description
 
-Creates the base controller of an entity
+Creates the base service of an entity
 
 ## Event Name:
-`CreateEntityControllerBase`
+`CreateEntityServiceBase`
 
 ## Event Params
 
 ```tsx
-export interface CreateEntityControllerBaseParams extends EventParams {
-  template: namedTypes.File;
-  entity: Entity;
+export interface CreateEntityServiceBaseParams extends EventParams {
   entityName: string;
-  entityType: string;
-  entityServiceModule: string;
+  entity: Entity;
   templateMapping: { [key: string]: any };
-  controllerBaseId: namedTypes.Identifier;
+  passwordFields: EntityField[];
   serviceId: namedTypes.Identifier;
+  serviceBaseId: namedTypes.Identifier;
+  delegateId: namedTypes.Identifier;
+  template: namedTypes.File;
 }
 ```
+
+### entityName
+The name of the entity for which we are generating the service
+
+### entity
+The entity which we are generating in the service
 
 ### template
 A template file that is used to generate the service
@@ -36,18 +42,6 @@ https://github.com/amplication/amplication/blob/master/packages/amplication-data
 
 You can manipulate the template or replace it completely with a new template in your plugin.
 
-### entity
-The entity which we are generating in the service
-
-### entityName
-The name of the entity for which we are generating the controller
-
-### entityType
-The type of the entity for which we are generating the controller
-
-### entityServiceModule
-TBC
-
 ### templateMapping
 An object with values that are available in the interpolation process of the template.
 This default object with the available parameters can be found here
@@ -55,10 +49,18 @@ https://github.com/amplication/amplication/blob/master/packages/amplication-data
 
 You can manipulate the object by adding new values, or replacing existing values that will be used in the template when creating the service file.
 
-### controllerBaseId
-The Identifier of the base service that is used as the class name. e.g. CustomerControllerBase
+### passwordFields
+List of fields of type Password that are used in this entity
 
-### serviceId
+### servicId
 The Identifier of the service that is used as the class name. e.g. CustomerService
+
+### serviceBaseId
+The Identifier of the base service that is used as the class name. e.g. CustomerServiceBase
+
+### delegateId
+TBC
+
+
 
 
