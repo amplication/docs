@@ -1,6 +1,6 @@
 ---
 id: angular-todos-step-006
-title: Using GraphQL
+title: Using GraphQL | Angular
 sidebar_label: Using GraphQL
 slug: /tutorials/angular-todos/step-006
 ---
