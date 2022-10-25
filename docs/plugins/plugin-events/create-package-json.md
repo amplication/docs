@@ -1,11 +1,6 @@
 ---
-<<<<<<<< HEAD:docs/plugins/plugin-events/createpackagejsonevent.md
-id: create-package-json-event
-title: CreatePackageJsonEvent
-========
 id: create-package-json
 title: Create Package Json Event
->>>>>>>> plugins-developer-guide:docs/plugins/plugin-events/create-package-json.md
 sidebar_label: Create Package Json Event
 slug: /plugins/plugin-events/create-package-json
 ---

@@ -1,8 +1,8 @@
 ---
-id: create-server
-title: Create Server Event
-sidebar_label: Create Server Event
-slug: /plugins/plugin-events/create-server
+id: CreateServer
+title: Create Server
+sidebar_label: Create Server
+slug: /plugins/plugin-events/CreateServer
 ---
 
 # Create Server Event
