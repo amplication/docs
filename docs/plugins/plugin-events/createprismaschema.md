@@ -1,8 +1,8 @@
 ---
-id: createprismaschema
-title: CreatePrismaSchema
+id: CreatePrismaSchema
+title: Create Prisma Schema
 sidebar_label: Create Prisma Schema
-slug: /plugins/plugin-events/createprismaschema
+slug: /plugins/plugin-events/CreatePrismaSchema
 ---
 
 # Create Prisma Schema
@@ -26,7 +26,7 @@ export interface CreatePrismaSchemaParams extends EventParams {
 
 ### entities
 The entities that will be generated as models in the Prisma schema and represent the table name.
-By default, this param's value is the entities that the user sets in the UI (Amplicatoin dashboard).
+By default, this param's value is the entities that the user sets in the UI (Amplication dashboard).
 
 ### dataSource
 Represents the data source type of Prisma provider (PostgreSQL, MySQL, MongoDB, etc.)

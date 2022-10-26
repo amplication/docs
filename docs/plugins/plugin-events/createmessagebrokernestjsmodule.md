@@ -1,8 +1,8 @@
 ---
-id: createmessagebrokernestjsmodule
-title: CreateMessageBrokerNestJSModule
+id: CreateMessageBrokerNestJSModule
+title: Create Message Broker NestJS Module
 sidebar_label: Create Message Broker NestJS Module
-slug: /plugins/plugin-events/createmessagebrokernestjsmodule
+slug: /plugins/plugin-events/CreateMessageBrokerNestJSModule
 ---
 
 # Create Message Broker NestJS Module

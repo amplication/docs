@@ -1,8 +1,8 @@
 ---
-id: createmessagebrokerservice
-title: CreateMessageBrokerService
+id: CreateMessageBrokerService
+title: Create Message Broker Service
 sidebar_label: Create Message Broker Service
-slug: /plugins/plugin-events/createmessagebrokerservice
+slug: /plugins/plugin-events/CreateMessageBrokerService
 ---
 # Create Message Broker Service
 

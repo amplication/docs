@@ -1,8 +1,8 @@
 ---
-id: createmessagebrokerservicebase
-title: CreateMessageBrokerService/base
+id: CreateMessageBrokerServiceBase
+title: Create Message Broker Service Base
 sidebar_label: Create Message Broker Service Base
-slug: /plugins/plugin-events/createmessagebrokerservicebase
+slug: /plugins/plugin-events/CreateMessageBrokerServiceBase
 ---
 
 # Create Message Broker Service Base

@@ -49,7 +49,7 @@ You can manipulate the object by adding new values, or replacing existing values
 ### passwordFields
 List of fields of type Password that are used in this entity
 
-### serviceId
+### servicId
 The Identifier of the service that is used as the class name. e.g. CustomerService
 
 ### serviceBaseId

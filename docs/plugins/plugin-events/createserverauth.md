@@ -1,14 +1,14 @@
 ---
-id: createserverauth
-title: CreateServerAuth
+id: CreateServerAuth
+title: Create Server Auth
 sidebar_label: Create Server Auth
-slug: /plugins/plugin-events/createserverauth
+slug: /plugins/plugin-events/CreateServerAuth
 ---
-# Create Auth Module
+# Create Server Authorization
 
 ## Description
 
-Creates the Auth directory with the selected strategy (basic/JWT)
+Creates the Authorization directory with the selected strategy (basic/JWT)
 
 ## Event Name:
 ` CreateServerAuth`

@@ -1,8 +1,8 @@
 ---
-id: createserverdotenv
-title: CreateServerDotEnv
+id: CreateServerDotEnv
+title: Create Server Dot Env
 sidebar_label: Create Server Dot Env
-slug: /plugins/plugin-events/createserverdotenv
+slug: /plugins/plugin-events/CreateServerDotEnv
 ---
 # Create Server Dot Env
 

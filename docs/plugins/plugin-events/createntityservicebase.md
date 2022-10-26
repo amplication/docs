@@ -1,8 +1,8 @@
 ---
-id: createentityservicebase
-title: CreateEntityServiceBase
+id: CreateEntityServiceBase
+title: Create Entity Service Base
 sidebar_label: Create Entity Service Base
-slug: /plugins/plugin-events/createentityservicebase
+slug: /plugins/plugin-events/CreateEntityServiceBase
 ---
 
 # Create Entity Service Base

@@ -1,8 +1,8 @@
 ---
-id: createmessagebrokertopicsenum
-title: CreateMessageBrokerTopicsEnum
+id: CreateMessageBrokerTopicsEnum
+title: Create Message Broker Topics Enum
 sidebar_label: Create Message Broker Topics Enum
-slug: /plugins/plugin-events/createmessagebrokertopicsenum
+slug: /plugins/plugin-events/CreateMessageBrokerTopicsEnum
 ---
 
 # Create Message Broker Topic Enum
