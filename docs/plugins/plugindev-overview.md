@@ -1,8 +1,8 @@
 ---
-id: overview
+id: Overview
 title: Plugin Development Overview
 sidebar_label: Plugin Development Overview 
-slug: /plugins/overview
+slug: /plugins/Overview
 ---
 
 

@@ -41,37 +41,35 @@ module.exports = {
       "how-to/api-admin-ui-settings",
       "how-to/create-message-broker",
     ],
-    Plugins: [
+    "Plugins": [
      {
        type: "category",
        label: "Plugin Creation ",
        items: [
                "plugins/overview",
-               "plugins/plugin-architecture",
+               "plugins/PluginArchitecture",
             ],
            },
       {
         type: "category",
         label: "Plugin Events",
         items: [
-            "plugins/plugin-events/plugin-events",
+            "plugins/plugin-events/PluginEvents",
             "plugins/plugin-events/CreateServer",
-            "plugins/plugin-events/createserverdockercompose",
+            "plugins/plugin-events/CreateServerDockerCompose",
             "plugins/plugin-events/CreateServerDotEnv",
-            "plugins/plugin-events/createserverauth",
+            "plugins/plugin-events/CreateServerAuth",
             "plugins/plugin-events/CreatePackageJson",
             "plugins/plugin-events/CreateEntityService",
             "plugins/plugin-events/CreateEntityServiceBase",
             "plugins/plugin-events/CreateEntityController",
             "plugins/plugin-events/CreateEntityControllerBase",
             "plugins/plugin-events/CreateMessageBrokerService",
-           "plugins/plugin-events/CreateMessageBrokerServiceBase",
+            "plugins/plugin-events/CreateMessageBrokerServiceBase",
             "plugins/plugin-events/CreateMessageBrokerNestjsModule",
             "plugins/plugin-events/CreateMessageBrokerClientOptionsFactory",
             "plugins/plugin-events/CreateMessageBrokerTopicsEnum",
             "plugins/plugin-events/CreatePrismaSchema",
-            
-          
           ],
         },
       ],

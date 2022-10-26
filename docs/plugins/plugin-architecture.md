@@ -1,8 +1,8 @@
 ---
-id: plugin-architecture
+id: PluginArchitecture
 title: Plugin Architecture
 sidebar_label: Plugin Architecture
-slug: /plugins/architecture
+slug: /plugins/PluginArchitecture
 ---
 
 A plugin is a NPM package that is installed and executed as part of the code generation process to allow the plugin writer to manipulate and extended the default behavior.
