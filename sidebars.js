@@ -46,7 +46,7 @@ module.exports = {
        type: "category",
        label: "Plugin Creation ",
        items: [
-               "plugins/overview",
+               "plugins/Overview",
                "plugins/PluginArchitecture",
             ],
            },

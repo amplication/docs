@@ -1,8 +1,8 @@
 ---
-id: CreateMessageBrokerNestJSModule
+id: CreateMessageBrokerNestjsModule
 title: Create Message Broker NestJS Module
 sidebar_label: Create Message Broker NestJS Module
-slug: /plugins/plugin-events/CreateMessageBrokerNestJSModule
+slug: /plugins/plugin-events/CreateMessageBrokerNestjsModule
 ---
 
 # Create Message Broker NestJS Module
@@ -18,6 +18,7 @@ This event does NOTHING by default. All of the logic is handled by the broker-ka
 `CreateMessageBrokerNestJSModule`
 
 ## Event Params
+
 There are no additional params to this event
 
 ```ts

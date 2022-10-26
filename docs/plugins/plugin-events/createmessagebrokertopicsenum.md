@@ -17,6 +17,7 @@ This event does NOTHING by default. All of the logic is handled by the broker-ka
 `CreateMessageBrokerTopicsEnum`
 
 ## Event Params
+
 There are no additional params to this event
 ```tsx
 export interface CreateMessageBrokerTopicsEnumParams extends EventParams {}

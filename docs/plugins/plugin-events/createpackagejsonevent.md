@@ -3,6 +3,7 @@ id: CreatePackageJson
 title: Create Package Json
 sidebar_label: Create Package Json
 slug: /plugins/plugin-events/CreatePackageJson
+---
 
 # Create Package Json
 

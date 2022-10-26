@@ -17,7 +17,9 @@ This event does NOTHING by default. All of the logic is handled by the broker-ka
 `CreateMessageBrokerServiceBase`
 
 ## Event Params
+
 There are no additional params to this event
+
 ```ts
 export interface CreateMessageBrokerServiceBaseParams extends EventParams {}
 ```
