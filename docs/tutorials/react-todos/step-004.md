@@ -1,6 +1,6 @@
 ---
 id: react-todos-step-004
-title: Frontend Authentication
+title: Frontend Authentication | React
 sidebar_label: Frontend Authentication
 slug: /tutorials/react-todos/step-004
 ---

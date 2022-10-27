@@ -1,6 +1,6 @@
 ---
 id: angular-todos-step-001
-title: Create the App
+title: Create the App | Angular
 sidebar_label: Create the App
 slug: /tutorials/angular-todos/step-001
 ---
