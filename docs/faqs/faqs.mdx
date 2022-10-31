@@ -128,7 +128,7 @@ to add support for more Git providers. See our [Product Roadmap](https://docs.am
 
 ## Which databases does Amplication support?
 
-Amplication currently supports only PostgreSQL and MySql.
+Amplication currently supports PostgreSQL and MySql.
 However, we generate apps that work with Prisma, so you could change the Prisma configuration to use another database supported by Prisma.
 
 We are planning to support more databases in future releases, including MongoDB. See our [Product Roadmap](https://docs.amplication.com/docs/about/roadmap/).
@@ -162,13 +162,13 @@ Please follow this guide for more instructions on [Using plugins](https://docs.a
 
 ## What are the plugins supported by amplication that I can use?
 
-The following plugins are currently available for your use, we are working to add more plugins.
+The following plugins are currently available for your use. We are working on adding more plugins.
     -PostgreSQL database
     -MySQL database
     -Kafka
     -Password JWT Authentication
     -Password Basic Authentication
-Please ensure you select the order of installed plugins carefully, as according to the order the Amplication code is generated.
+Please ensure you arrange the order of installed plugins carefully, as the Amplication code is generated accoring to their order.
 
 ---
 
@@ -198,26 +198,23 @@ To know more on how to use Amplication to your advantage [Read](https://amplicat
 
 ---
 
-## What is Monorepo? Does Amplication Support it?
+## What is monorepo? Does Amplication support it?
 
-In version control systems, a monorepo ("mono" meaning 'single' and "repo" is short for 'repository') is a software development strategy where code for many projects is stored in the same repository. Providing you the power to use microservices approach for you services.
+Amplication supports the monorepo model, allowing you and your team to collaborate on bigger projects.
+
+In version control systems, a monorepo ("mono" meaning 'single' and "repo" is short for 'repository') is a software development strategy where code for many projects is stored in the same repository. Providing you the power to use the microservices approach for you services.
    
 The monorepo model provides you with several advantages:
     -Easy visibility of your services
-    -Code Sharing among services to avoid code redundancy
-    -Improved Collaboration
-    -Release Management and many more
-
-Yes, Amplication supports monorope model. Allowing you and your team to collaborate on bigger projects.
-
-Start your journey with Amplication. [Get Started](https://app.amplication.com/login) 
+    -Code sharing among services to avoid code redundancy
+    -Improved collaboration
+    -Release management
 
 ---
 
-## Will all my services be stored in the same repository or different?
+## Will all my services be stored in the same or different repositories?
 
-It depends on your requirements. If you want to store all your projects( or services) on the same repo then amplication provides you the monorepo model to do so. Or you
-can create different repositories to store the service as amplication as supports polyrepo approach.
+It depends on your requirements. If you want to store all your projects( or services) on the same repo then amplication provides you the monorepo model to do so. Alternatively, you can create different repositories to store the service as Amplication as supports the polyrepo approach.
 
 ---
 
@@ -229,20 +226,12 @@ Want more Information?[Read this](https://amplication.com/blog/an-introduction-t
 
 ---
 
-## Why does Amplication supports Microservices?
+## How does the microservices architecture benefit my development?
 
-To better serve you with our services.
-We empower you to see and develop on a broader canvas by working with the microservices model.
-The architecture enables you to develop services with ease and focus on the best tech stack for that services alone. And different teams can work on a single microservice without commanality on technologies.
+Amplication's Microservices architecture enables you to develop services with ease and select the best tech stack for each service. Different development teams can work on different services without cross-team dependencies.
 
----
-
-## How does the microservices architecture of the generated services benefit me or my project development?
-
-Amplication with Project Hierarchy supports microservices. With this hierarchy structure along with the plugin system, it becomes easier for you to work on a service at a time even with different teams.
-
-The project development becomes easier with the following functionalities:
--You can connect to a single git repo at the project level saving a lot of your time from manually connecting the services
+Project development becomes easier with the following functionalities:
+-You can connect to a single git repo at the project level saving a lot of your time that would be spent manually connecting the services
 -You can make a single commit at the project level
 
 Learn more about the benefits [Here](https://amplication.com/blog/release-0150-support-for-microservices-architecture)
@@ -251,20 +240,16 @@ Learn more about the benefits [Here](https://amplication.com/blog/release-0150-s
 
 ## How are microservices incorporated in Amplication?
 
-Amplication offers support for microservices through the Project hierarchy.
-
-The Project groups together multiple resources used and created by Amplication, enabling support for multiple use cases. This simplifies the creation of connected Services, and makes it much easier to sync with GitHub across multiple Services.
-
-The Plugin system enables you to install plugin separately for each service and Kafka enables communication between services.
+Amplication supports microservices through the Project hierarchy. A Project groups together multiple resources used and created by Amplication, enabling support for multiple use cases. This simplifies the creation of connected Services, and makes it much easier to sync with GitHub across multiple Services.
 
 
 ---
 
-## What is Project, Resources and Services Structure in Amplication?
+## What is Project, Resources and Services structure in Amplication?
 
-This Structure helps you to manage various services(architected as microservices) and the resources associated with each service.
+This structure helps you to manage various services (architected as microservices) and the resources associated with each service.
 
-Providing a much simpler and easier-to-maintain project flow with multiple services.
+It provides a much simple and easy-to-maintain project flow with multiple services.
 
 Read more about the Hierarchy [Here](https://docs.amplication.com/docs/projects-resources-services/)
 
@@ -272,8 +257,8 @@ Read more about the Hierarchy [Here](https://docs.amplication.com/docs/projects-
 
 ## How do I keep track of my codebase if it involves continuous development?
 
-Amplication comes with version control built-in enabling you to see the changes made in the services and push the code, after verification, to your GitHub repository. In amplication your work is auto saved but not committed.Thus giving you the choice to review.
-All the pending changes are visible under the 'Pending Changes' that you can review and commit.
+Amplication comes with version control built-in enabling you to see the changes made in the services and push the code, after verification, to your GitHub repository. In Amplication, your work is auto saved but not committed, thus giving you the opportunity to review.
+All the pending changes are visible under  'Pending Changes',  ready for you to review and commit.
 
 Read [this](https://docs.amplication.com/docs/how-to/commit-changes/)
 
@@ -282,8 +267,8 @@ Read [this](https://docs.amplication.com/docs/how-to/commit-changes/)
 ## What is Message Broker?
 
 Message Broker enables your microservices to communicate with each other.
-A message broker is a software that enables applications, systems, and services to communicate with each other and exchange information. This allows interdependent services to “talk” with one another directly, even if they were written in different languages or implemented on different platforms.
-Amplication provides the plugin for Kafka Message Broker that can be installed as required. 
+A message broker is  software that enables applications, systems, and services to communicate with each other and exchange information. This allows interdependent services to “talk” with one another directly, even if they were written in different languages or implemented on different platforms.
+Amplication provides a plugin for Kafka Message Broker that can be installed as required. 
 Follow the [Instructions](https://docs.amplication.com/docs/getting-started/getting-started/plugins/)
 
 To create a Message Broker follow the [How to Create a Message Broker Instruction](https://docs.amplication.com/docs/how-to/create-message-broker/)
