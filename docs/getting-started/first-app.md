@@ -19,7 +19,7 @@ Let’s get started.
 
    You should land on the _New Service_ page. If you're not on the _New Service_ page, click the Amplication logo in the top-left corner to reach the _Projects_ page.
 
-2. Click the **New Resource** button, and then click on **Service**
+2. Click the **Add Resource** button, and then click on **Service**
 3. In the _New Service_ page, leave the default selections to create an empty service.
 4. Click the **Create Service** button
 
@@ -27,7 +27,7 @@ Let’s get started.
 
    The Overview window opens.
 
-   ![](./assets/overview-window.png)
+   ![](./assets/first-app/overview-window.png)
 
 ## Step 2 - Create an Entity
 
@@ -40,7 +40,7 @@ When creating an Entity, make sure you do not use a reserved name for the name o
 
 Click the **Entities** icon on the main menu (left sidebar) to reach the _Entities_ page. Here you see all the entities in your application.
 
-![](./assets/pic-1.png)
+![](./assets/first-app/entities.png)
 
 :::tip
 At this stage, there's only one entity, **User**. This is auto-generated when you created the new service.
@@ -52,7 +52,7 @@ In this example, we'll now add another entity called “Project”.
 3. In the _New Entity_ dialog, type “Project”.
 4. Click **Create Entity**.
 
-![](./assets/pic-2.png)
+![](./assets/first-app/created-entity.png)
 
 You now have a new entity named _Project_. Notice that the added entity comes with auto-generated values such as “Plural Display Name” and some default fields – **ID**, **Created At**, and **Updated At**.
 
@@ -72,7 +72,7 @@ To describe your project add some new fields. For this example, add these fields
 3. Click the **Required Field** toggle to configure the _Name_ field as required.
 4. Leave the defaults for the other properties (_Searchable_ active, _Data Type_ "Single Line Text", and _Max Length_ "1000".)
 
-![](./assets/pic-3.png)
+![](./assets/first-app/name-field.png)
 
 :::tip
 All changes are saved automatically.
@@ -132,7 +132,7 @@ In this example, we add another two roles: _Admin_ and _Manager_.
 2. Click **Add Role** \(or just press Enter\). The new role is added to the list.
 3. Repeat these steps to add the "Manager" role.
 
-![](./assets/pic-4.png)
+![](./assets/first-app/roles.png)
 
 ## Step 5 - Set Access Permissions
 
@@ -158,7 +158,7 @@ By default, all of the actions are set as **All Roles**.
 
 In this example, some of the actions have been changed to **Public**, while the others remain as **All Roles**
 
-![](./assets/public-1.png)
+![](./assets/first-app/permissions.png)
 
 In the following example, we use the **Granular** setting to find tune the permissions for a role.
 
@@ -168,7 +168,7 @@ In the following example, we use the **Granular** setting to find tune the permi
 4. By default, all actions (_View_, _Create_, _Update_, _Delete_, and _Search_) are set to **All Roles**.
 5. Fine tune permissions by changing the *Delete* permissions from **All Roles** to **Granular** and then select from the displayed roles the _Admin_ role. This ensures that only users with the _Admin_ role can delete projects.
 
-![](./assets/granular-1.png)
+![](./assets/first-app/granular-permissions.png)
 
 :::tip
 Once you have selected **Granular** on an action such as _Delete_, you have to select specific roles, or no one at all can use that action.
@@ -180,13 +180,13 @@ We will now set permissions at the field level.
 
 1.  In the **Update** action, click **+ Add Field** and select the **Start Date** and **ID** fields from the drop-down list.
 
-![](./assets/pic-8.1.png)
+![](./assets/first-app/granular-fields.png)
 
 2. We now select the roles to associate with each selected field.
 
    In this example, for the _Update_ action, apply **Admin** permissions to the **startDate**, and apply both **Admin** and **Manager** permissions to the **id** field. To do this, you first need to select **Admin** and **Manager** from the roles on this action, so you can apply those roles on the specific fields.
 
-![](./assets/pic-9.1.png)
+![](./assets/first-app/granular-fields-2.png)
 
 ## Step 6 - Commit Your Changes
 
@@ -194,7 +194,7 @@ While working in Amplication your changes are saved automatically, but are not c
 
 In the _Pending Changes_ control in the right sidebar you can see the list of pending changes that are waiting to be committed.
 
-![](./assets/pic8.1.png)
+![](./assets/first-app/pending-changes.png)
 
 We'll now make our first commit.
 
@@ -234,7 +234,7 @@ We'll now add another entity called “Task”.
 
 The Task's field list should now look like this:
 
-![](./assets/pic11.png)
+![](./assets/first-app/task.png)
 
 ### Update the Project Entity
 
@@ -256,7 +256,7 @@ To do so:
 - The _Task_ entity was created
 - The _Project_ entity was updated
 
-![](./assets/pic13.png)
+![](./assets/first-app/commit.png)
 
 3. Since these changes were intentional and we're happy to commit them, click **Commit changes and build**.
 
