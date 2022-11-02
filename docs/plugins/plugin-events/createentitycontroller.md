@@ -50,7 +50,7 @@ You can manipulate the object by adding new values, or replacing existing values
 ### controllerBaseId
 The Identifier of the base service that is used as the class name. e.g. CustomerControllerBase
 
-### servicId
+### serviceId
 The Identifier of the service that is used as the class name. e.g. CustomerService
 
 
