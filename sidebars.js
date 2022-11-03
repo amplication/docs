@@ -29,7 +29,7 @@ module.exports = {
       "custom-code/seed-db",
       "custom-code/add-custom-dto",
     ],
-
+   
     "How To": [
       "how-to/how-to-create-app",
       "how-to/how-to-create-entity",
@@ -41,6 +41,38 @@ module.exports = {
       "how-to/api-admin-ui-settings",
       "how-to/create-message-broker",
     ],
+    "Plugins": [
+     {
+       type: "category",
+       label: "Plugin Creation ",
+       items: [
+               "plugins/Overview",
+               "plugins/PluginArchitecture",
+            ],
+           },
+      {
+        type: "category",
+        label: "Plugin Events",
+        items: [
+            "plugins/plugin-events/PluginEvents",
+            "plugins/plugin-events/CreateServer",
+            "plugins/plugin-events/CreateServerDockerCompose",
+            "plugins/plugin-events/CreateServerDotEnv",
+            "plugins/plugin-events/CreateServerAuth",
+            "plugins/plugin-events/CreatePackageJson",
+            "plugins/plugin-events/CreateEntityService",
+            "plugins/plugin-events/CreateEntityServiceBase",
+            "plugins/plugin-events/CreateEntityController",
+            "plugins/plugin-events/CreateEntityControllerBase",
+            "plugins/plugin-events/CreateMessageBrokerService",
+            "plugins/plugin-events/CreateMessageBrokerServiceBase",
+            "plugins/plugin-events/CreateMessageBrokerNestjsModule",
+            "plugins/plugin-events/CreateMessageBrokerClientOptionsFactory",
+            "plugins/plugin-events/CreateMessageBrokerTopicsEnum",
+            "plugins/plugin-events/CreatePrismaSchema",
+          ],
+        },
+      ],
     Tutorials: [
       {
         type: "category",
