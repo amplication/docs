@@ -26,7 +26,7 @@ The target directory the auth folder will be generated in
 
 **Example**
 In order to set the auth strategy, we should use the `before` lifecycle event and call the `skipDefaultBehavior` util.
-As a result, the default event won't run, But we would have to provide our logic in the `after` lifecycle event:
+As a result, the default event won't run, but we would have to provide our logic in the `after` lifecycle event:
 - the path to our static auth folder
 - the path in which we want the auth folder to be generated in
 
