@@ -1,6 +1,6 @@
 ---
 id: angular-todos-step-003
-title: Adding Custom Endpoints
+title: Adding Custom Endpoints | Angular
 sidebar_label: Adding Custom Endpoints
 slug: /tutorials/angular-todos/step-003
 ---

@@ -1,6 +1,6 @@
 ---
 id: react-todos-step-006
-title: Using GraphQL
+title: Using GraphQL | React
 sidebar_label: Using GraphQL
 slug: /tutorials/react-todos/step-006
 ---

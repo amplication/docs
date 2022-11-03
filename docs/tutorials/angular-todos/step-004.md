@@ -1,6 +1,6 @@
 ---
 id: angular-todos-step-004
-title: Frontend Authentication
+title: Frontend Authentication | Angular
 sidebar_label: Frontend Authentication
 slug: /tutorials/angular-todos/step-004
 ---
