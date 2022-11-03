@@ -23,7 +23,7 @@ export interface CreateServerDockerComposeParams extends EventParams {
 
 ### fileContent
 
-The default content of the file as a string. If needed, the value can be parsed as an object using a YAML utility.
+The default content of the file is a string. If needed, the value can be parsed as an object using a YAML utility.
 
 In most cases, there is no need to manipulate the property directly. Instead, use the `updateProperties` param
 
