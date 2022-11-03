@@ -1,8 +1,8 @@
 ---
-id: plugin-events
+id: PluginEvents
 title: Plugin Events Overview
 sidebar_label: Plugin Events Overview
-slug: /plugins/plugin-events
+slug: /plugins/PluginEvents
 ---
 
 

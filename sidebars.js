@@ -29,34 +29,7 @@ module.exports = {
       "custom-code/seed-db",
       "custom-code/add-custom-dto",
     ],
-    Plugins: [
-      {
-        type: "category",
-        label: "Plugin Creation ",
-        items: [
-          "plugins/plugin-develop-overview",
-          "plugins/plugin-architecture",
-        ],
-      },
-      {
-        type: "category",
-        label: "Plugin Events",
-        items: [
-          "plugins/plugin-events/plugin-events",
-          "plugins/plugin-events/create-server",
-          "plugins/plugin-events/create-package-json",
-          "plugins/plugin-events/create-entity-service",
-          "plugins/plugin-events/create-entity-service-base",
-          "plugins/plugin-events/create-entity-controller",
-          "plugins/plugin-events/create-entity-controller-base",
-          "plugins/plugin-events/create-auth-module",
-          "plugins/plugin-events/create-message-broker",
-          "plugins/plugin-events/create-message-broker-nest-js-module",
-          "plugins/plugin-events/create-server-docker-compose",
-          "plugins/plugin-events/create-message-broker-client-options-factory",
-        ],
-      },
-    ],
+   
     "How To": [
       "how-to/how-to-create-app",
       "how-to/how-to-create-entity",
@@ -68,6 +41,38 @@ module.exports = {
       "how-to/api-admin-ui-settings",
       "how-to/create-message-broker",
     ],
+    "Plugins": [
+     {
+       type: "category",
+       label: "Plugin Creation ",
+       items: [
+               "plugins/Overview",
+               "plugins/PluginArchitecture",
+            ],
+           },
+      {
+        type: "category",
+        label: "Plugin Events",
+        items: [
+            "plugins/plugin-events/PluginEvents",
+            "plugins/plugin-events/CreateServer",
+            "plugins/plugin-events/CreateServerDockerCompose",
+            "plugins/plugin-events/CreateServerDotEnv",
+            "plugins/plugin-events/CreateServerAuth",
+            "plugins/plugin-events/CreatePackageJson",
+            "plugins/plugin-events/CreateEntityService",
+            "plugins/plugin-events/CreateEntityServiceBase",
+            "plugins/plugin-events/CreateEntityController",
+            "plugins/plugin-events/CreateEntityControllerBase",
+            "plugins/plugin-events/CreateMessageBrokerService",
+            "plugins/plugin-events/CreateMessageBrokerServiceBase",
+            "plugins/plugin-events/CreateMessageBrokerNestjsModule",
+            "plugins/plugin-events/CreateMessageBrokerClientOptionsFactory",
+            "plugins/plugin-events/CreateMessageBrokerTopicsEnum",
+            "plugins/plugin-events/CreatePrismaSchema",
+          ],
+        },
+      ],
     Tutorials: [
       {
         type: "category",

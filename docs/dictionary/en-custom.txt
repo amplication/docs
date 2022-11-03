@@ -75,3 +75,4 @@ Wontfix
 microservices
 dto
 amplicationignore
+dbsettings
