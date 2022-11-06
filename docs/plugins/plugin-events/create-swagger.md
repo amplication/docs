@@ -1,8 +1,8 @@
 ---
-id: createswagger
+id: CreateSwagger
 title: Create Swagger
 sidebar_label: Create Swagger
-slug: /plugins/plugin-events/createswagger
+slug: /plugins/plugin-events/CreateSwagger
 ---
 
 # Create Swagger
@@ -12,6 +12,7 @@ slug: /plugins/plugin-events/createswagger
 Creates the Swagger file.
 
 ## Event Name:
+
 `CreateSwagger`
 
 ## Event Params
