@@ -57,6 +57,7 @@ module.exports = {
             "plugins/plugin-events/PluginEvents",
             "plugins/plugin-events/CreateServer",
             "plugins/plugin-events/CreateServerDockerCompose",
+            "plugins/plugin-events/createswagger",
             "plugins/plugin-events/CreateServerDotEnv",
             "plugins/plugin-events/CreateServerAuth",
             "plugins/plugin-events/CreatePackageJson",
