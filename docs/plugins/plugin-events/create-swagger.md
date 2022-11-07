@@ -30,7 +30,7 @@ export interface CreateSwaggerParams extends EventParams {
 
 A template file, used to generate the service.
 
-This is the default template for this event.
+This is the default template for this event: https://github.com/amplication/amplication/blob/next/packages/amplication-data-service-generator/src/server/swagger/swagger.template.ts
 
 You can manipulate the template or replace it completely with a new template in your plugin. 
 
