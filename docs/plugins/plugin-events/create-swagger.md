@@ -37,8 +37,24 @@ You can manipulate the template or replace it completely with a new template in 
 ### templateMapping
 An object with values that are available in the interpolation process of the template.  
 
-You can manipulate the object by adding new values, or replacing existing values that will be used in the template when creating the service file. 
 
+You can find the available properties here: https://github.com/amplication/amplication/blob/next/packages/amplication-data-service-generator/src/server/swagger/create-swagger.ts#L33
+
+example:
+```ts
+const templateMapping = {
+    TITLE: builders.stringLiteral(appInfo.name),
+    DESCRIPTION: builders.stringLiteral(description),
+    VERSION: builders.stringLiteral(appInfo.version),
+    AUTH_FUNCTION: builders.identifier(
+      authProvider === EnumAuthProviderType.Http
+        ? "addBasicAuth"
+        : "addBearerAuth"
+    ),
+  };
+```
+
+You can manipulate the object by adding new values, or replacing existing values that will be used in the template when creating the service file. 
 
 
 
