@@ -77,17 +77,14 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl: "https://github.com/amplication/docs/edit/main/",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl: "https://github.com/amplication/docs/edit/main/blog/",
-        },
+        blog: false,
         theme: {
           customCss: [
             require.resolve("./src/css/custom.css"),
@@ -104,11 +101,11 @@ module.exports = {
       {
         redirects: [
           {
-            to: "/docs/getting-started", // string
+            to: "/getting-started", // string
             from: ["/guides/getting-started"],
           },
           {
-            to: "/docs/getting-started/dev-env", // string
+            to: "/getting-started/dev-env", // string
             from: ["/docs/how-to/dev-env"],
           },
         ],
