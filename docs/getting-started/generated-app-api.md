@@ -16,7 +16,7 @@ In this article you will learn how to connect, authenticate, and consume these A
 
 To send a request to the API you must provide an authentication header.
 
-To learn more about authentication see this [article](/docs/authentication)
+To learn more about authentication see this [article](/authentication)
 
 ## REST API
 
