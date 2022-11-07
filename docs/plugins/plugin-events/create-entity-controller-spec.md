@@ -46,19 +46,24 @@ An object with values that are available in the interpolation process of the tem
 This default object with the available parameters can be found here
 https://github.com/amplication/amplication/blob/next/packages/amplication-data-service-generator/src/server/resource/test/create-controller-spec.ts#L60
 
-You can manipulate the object by adding new values, or replacing existing values that will be used in the template when creating the controller spec file.
+You can manipulate the object by adding new values, or replacing existing values that will be used in the template when creating the controller spec file. 
+
 
 ### entityServiceModulePath:
 The path to the `entity` service module
 
+
 ### entityControllerModulePath:
 The path to the `entity` controller module
+
 
 ### entityControllerBaseModulePath:
 The path to the `entity` service base module
 
+
 ### controllerId
 The Identifier of the controller that is used as the class name. For example, CustomerController
 
-### servicId
+
+### serviceId
 The Identifier of the service that is used as the class name. For example, CustomerService
