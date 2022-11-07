@@ -54,7 +54,7 @@ const templateMapping = {
   };
 ```
 
-You can manipulate the object by adding new values, or replacing existing values that will be used in the template when creating the service file. 
+You can manipulate the object by adding new values, or replacing existing values that will be used in the template when creating the swagger file. 
 
 
 
