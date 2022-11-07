@@ -26,7 +26,10 @@ export interface CreateSeedParams extends EventParams {
 ```
 
 ### template
-This is the default template for this event.
+
+This is the default template that is used for this event: 
+
+https://github.com/amplication/amplication/blob/next/packages/amplication-data-service-generator/src/server/seed/seed.template.ts
 
 You can manipulate the template or replace it completely with a new template in your plugin. 
 
@@ -36,7 +39,7 @@ You can manipulate the template or replace it completely with a new template in 
 An object with values that are available in the interpolation process of the template.
 
 You can find the available properties here:
-https://github.com/amplication/amplication/blob/feat/4292-create-seed/packages/amplication-data-service-generator/src/server/seed/create-seed.ts#L86
+https://github.com/amplication/amplication/blob/next/packages/amplication-data-service-generator/src/server/seed/create-seed.ts#L86
 
 You can manipulate the object by adding new values, or replacing existing values that will be used in the template when creating the seed file.
 
