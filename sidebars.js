@@ -41,7 +41,7 @@ module.exports = {
       "how-to/api-admin-ui-settings",
       "how-to/create-message-broker",
     ],
-    "Plugins": [
+    "Plugin Developer Guide": [
      {
        type: "category",
        label: "Plugin Creation ",
@@ -66,6 +66,7 @@ module.exports = {
             "plugins/plugin-events/CreateEntityServiceBase",
             "plugins/plugin-events/CreateEntityController",
             "plugins/plugin-events/CreateEntityControllerBase",
+            "plugins/plugin-events/CreateEntityControllerSpec",
             "plugins/plugin-events/CreateMessageBrokerService",
             "plugins/plugin-events/CreateMessageBrokerServiceBase",
             "plugins/plugin-events/CreateMessageBrokerNestjsModule",
