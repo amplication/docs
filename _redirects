@@ -1,0 +1,3 @@
+/guides/getting-started /getting-started 301
+/docs/how-to/dev-env  /getting-started/dev-env  301
+/docs/*  /:splat  301
