@@ -27,6 +27,7 @@ export interface CreateSwaggerParams extends EventParams {
 ```
 
 ### template
+
 A template file, used to generate the service.
 
 This is the default template for this event.
@@ -63,7 +64,7 @@ The target directory in which the swagger file will be generated.
 
 
 ### outputFileName
-The file name of the swagger file, the default value is `swagger.ts`
+The file name of the swagger file. The default value is `swagger.ts`
 
 It is recommended not to change the file name unless specifically required and the impact is understood.
 
