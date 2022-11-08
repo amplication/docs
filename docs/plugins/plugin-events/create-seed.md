@@ -27,8 +27,9 @@ export interface CreateSeedParams extends EventParams {
 
 ### template
 
-This is the default template that is used for this event: 
+A template file, used to generate the service.
 
+This is the default template that is used for this event: 
 https://github.com/amplication/amplication/blob/next/packages/amplication-data-service-generator/src/server/seed/seed.template.ts
 
 You can manipulate the template or replace it completely with a new template in your plugin. 
