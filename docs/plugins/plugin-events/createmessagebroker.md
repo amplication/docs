@@ -13,7 +13,7 @@ Creates the message broker.
 
 This event does NOTHING by default. All of the logic is handled by the broker-kafka plugin https://github.com/amplication/plugins/tree/master/plugins/broker-kafka
 
-## Event Name:
+## Event Name
 `CreateMessageBroker`
 
 ## Event Params

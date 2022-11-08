@@ -11,7 +11,7 @@ slug: /plugins/plugin-events/CreatePrismaSchema
 
 Creates the Prisma schema
 
-## Event Name:
+## Event Name
 `CreatePrismaSchema`
 
 ## Event Params

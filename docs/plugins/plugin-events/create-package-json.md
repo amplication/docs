@@ -18,6 +18,8 @@ export interface CreateServerPackageJsonParams extends EventParams {
   updateValues: { [key: string]: JsonValue };
 }
 ```
+## Event Name
+`CreatePackageJson`
 
 ### updateValues
 

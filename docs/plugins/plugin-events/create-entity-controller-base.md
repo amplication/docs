@@ -11,7 +11,7 @@ slug: /plugins/plugin-events/CreateEntityControllerBase
 
 Creates the base controller of an entity
 
-## Event Name:
+## Event Name
 `CreateEntityControllerBase`
 
 ## Event Params

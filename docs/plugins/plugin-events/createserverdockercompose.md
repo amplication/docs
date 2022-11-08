@@ -11,7 +11,7 @@ slug: /plugins/plugin-events/CreateServerDockerCompose
 
 Creates the `docker-compose.db.yml` file of the service
 
-## Event Name:
+## Event Name
 `CreateServerDockerComposeDB`
 
 ## Event Params

@@ -5,7 +5,7 @@ sidebar_label: Create Server
 slug: /plugins/plugin-events/CreateServer
 ---
 
-# Create Server Event
+# Create Server
 
 ## Description
 

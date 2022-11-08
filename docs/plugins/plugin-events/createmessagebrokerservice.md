@@ -12,13 +12,13 @@ Creates the service of the Kafka message broker.
 
 This event does NOTHING by default. All of the logic is handled by the broker-kafka plugin https://github.com/amplication/plugins/tree/master/plugins/broker-kafka
 
-## Event Name:
+## Event Name
 `CreateMessageBrokerService`
 
 ## Event Params
 
 There are no additional params to this event
-```ts
+```tsx
 export interface CreateMessageBrokerServiceParams extends EventParams {}
 ```
 

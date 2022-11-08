@@ -41,20 +41,20 @@ module.exports = {
       "how-to/api-admin-ui-settings",
       "how-to/create-message-broker",
     ],
-    "Plugins": [
+    "Plugins Developer Guide": [
      {
        type: "category",
        label: "Plugin Creation ",
        items: [
-               "plugins/Overview",
                "plugins/PluginArchitecture",
+               "plugins/EventList",
             ],
            },
       {
         type: "category",
         label: "Plugin Events",
         items: [
-            "plugins/plugin-events/PluginEvents",
+            "plugins/plugin-events/PluginEventsBeforeAfter", 
             "plugins/plugin-events/CreateServer",
             "plugins/plugin-events/CreateServerDockerCompose",
             "plugins/plugin-events/CreateServerDotEnv",
