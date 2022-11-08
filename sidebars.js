@@ -41,7 +41,7 @@ module.exports = {
       "how-to/api-admin-ui-settings",
       "how-to/create-message-broker",
     ],
-    "Plugins": [
+    "Plugin Developer Guide": [
      {
        type: "category",
        label: "Plugin Creation ",
@@ -57,6 +57,8 @@ module.exports = {
             "plugins/plugin-events/PluginEvents",
             "plugins/plugin-events/CreateServer",
             "plugins/plugin-events/CreateServerDockerCompose",
+            "plugins/plugin-events/CreateSwagger",
+            "plugins/plugin-events/CreateSeed",
             "plugins/plugin-events/CreateServerDotEnv",
             "plugins/plugin-events/CreateServerAuth",
             "plugins/plugin-events/CreatePackageJson",
@@ -64,6 +66,7 @@ module.exports = {
             "plugins/plugin-events/CreateEntityServiceBase",
             "plugins/plugin-events/CreateEntityController",
             "plugins/plugin-events/CreateEntityControllerBase",
+            "plugins/plugin-events/CreateEntityControllerSpec",
             "plugins/plugin-events/CreateMessageBrokerService",
             "plugins/plugin-events/CreateMessageBrokerServiceBase",
             "plugins/plugin-events/CreateMessageBrokerNestjsModule",
