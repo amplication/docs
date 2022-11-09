@@ -8,7 +8,7 @@ slug: /plugins/EventList
 
 # List of Plugin Events
 
-- [Create Server](docs\plugins\plugin-events\createserverevent.md)
+- [Create Server](docs\plugins\plugin-events\create-server.md)
 - [Create Server Authorization](docs\plugins\plugin-events\createserverauth.md)
 - [Create Server Docker Compose](docs\plugins\plugin-events\createserverdockercompose.md)
 - [Create Server Dot Env](docs\plugins\plugin-events\createserverdotenv.md)
