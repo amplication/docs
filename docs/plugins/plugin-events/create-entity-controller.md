@@ -34,7 +34,7 @@ https://github.com/amplication/amplication/blob/master/packages/amplication-data
 
 You can manipulate the template or replace it completely with a new template in your plugin.
 
-### entityName
+### entityName:
 The name of the entity for which we are generating the controller
 
 ### entityServiceModule

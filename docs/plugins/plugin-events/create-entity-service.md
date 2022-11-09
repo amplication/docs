@@ -11,7 +11,7 @@ slug: /plugins/plugin-events/CreateEntityService
 
 Creates the service of an entity
 
-## Event Name
+## Event Name:
 `CreateEntityService`
 
 ## Event Params
