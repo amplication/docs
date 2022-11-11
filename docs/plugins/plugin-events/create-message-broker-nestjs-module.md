@@ -21,7 +21,7 @@ This event does NOTHING by default. All of the logic is handled by the broker-ka
 
 There are no additional params to this event
 
-```tsx
+```ts
 export interface CreateMessageBrokerNestJSModuleParams extends EventParams {}
 ```
 

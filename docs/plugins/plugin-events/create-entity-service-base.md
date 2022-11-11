@@ -59,7 +59,7 @@ The Identifier of the service that is used as the class name. e.g. CustomerServi
 The Identifier of the base service that is used as the class name. e.g. CustomerServiceBase
 
 ### delegateId
-TBC
+The identifier of the Prisma class used to access the entity data
 
 
 
