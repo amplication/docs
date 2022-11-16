@@ -6,7 +6,6 @@
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
-    "postbuild": "copyfiles -f \"./_redirects\" build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -37,8 +36,5 @@
   },
   "engines": {
     "node": ">=16.14"
-  },
-  "devDependencies": {
-    "copyfiles": "^2.4.1"
   }
 }
