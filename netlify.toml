@@ -9,6 +9,6 @@
   status = 301
 
 [[redirects]]
-  from = "/docs/:path"
-  to = "/:path"
+  from = "/docs/*"
+  to = "/:splat"
   status = 301
