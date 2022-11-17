@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "/guides/getting-started"
+  to = "/getting-started"
+  status = 301
+
+[[redirects]]
+  from = "/docs/how-to/dev-env"
+  to = "/getting-started/dev-env"
+  status = 301
+
+[[redirects]]
+  from = "/docs/:path"
+  to = "/:path"
+  status = 301

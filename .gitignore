@@ -3,7 +3,7 @@
 
 # Production
 /build/*
-!/build/_redirects
+!/build/netlify.toml
 
 # Generated files
 .docusaurus
