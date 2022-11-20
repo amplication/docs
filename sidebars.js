@@ -64,6 +64,8 @@ module.exports = {
             "plugins/plugin-events/CreateEntityServiceBase",
             "plugins/plugin-events/CreateEntityController",
             "plugins/plugin-events/CreateEntityControllerBase",
+            "plugins/plugin-events/CreateEntityResolver",
+            "plugins/plugin-events/CreateEntityResolverBase",
             "plugins/plugin-events/CreateMessageBrokerService",
             "plugins/plugin-events/CreateMessageBrokerServiceBase",
             "plugins/plugin-events/CreateMessageBrokerNestjsModule",
