@@ -48,7 +48,7 @@ You can manipulate the object by adding new values, or replacing existing values
 ### entityServiceModule
 The path to the entity service module
 
-### servicId
+### serviceId
 The Identifier of the service that is used as the class name. For example `CustomerService`
 
 ### resolverBaseId
