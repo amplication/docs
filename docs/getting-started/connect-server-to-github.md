@@ -1,3 +1,10 @@
+---
+id: connect-server-to-github
+title: Connect Amplication server to GitHub
+sidebar_label: Connect Amplication server to GitHub
+slug: /connect-server-to-github
+---
+
 # Connect Amplication server to GitHub
 
 Amplication client and server rely on GitHub OAuth mechanism to secure user interactions.
@@ -26,11 +33,11 @@ Amplication leverage GitHub OAuth implementation that supports the standard [aut
    - **Homepage URL** - `http://localhost:3000`. _If you are hosting the Amplication client on any other address, use the specific address._
    - **Application description** - optional
    - **Authorization callback URL** - `http://localhost:3001`. _If you are hosting the Amplication server on any other address, use the specific address._
-3. Hit Save.
+3. Click Save.
 
 ![](./assets/app-settings.png)
 
-4. Hit `Generate new client secret` and copy the resulting secret
+4. Click `Generate new client secret` and copy the resulting secret
 
 ### Step 2: Configure Amplication server and client to work with the new GitHub app
 
@@ -69,9 +76,9 @@ Amplication leverage GitHub Apps to integrate with GitHub and sync your generate
      - **Administration** - `Access: Read and Write`
      - **Checks** - `Access: Read and Write`
      - **Content** - `Access: Read and Write`
-3. Hit Save
-4. Hit `Generate new client secret` and copy the resulting secret
-5. Hit `Generate a private key`, download, open the generated certificate, add `\n` at the end of each line and join all lines to obtain a single line string
+3. Click Save
+4. Click `Generate new client secret` and copy the resulting secret
+5. Click `Generate a private key`, download, open the generated certificate, add `\n` at the end of each line and join all lines to obtain a single line string
 
 ### Step 2: Configure Amplication server to work with the new GitHub app
 
