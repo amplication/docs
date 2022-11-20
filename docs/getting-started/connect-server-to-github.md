@@ -2,7 +2,7 @@
 id: connect-server-to-github
 title: Connect Amplication server to GitHub
 sidebar_label: Connect Amplication server to GitHub
-slug: /connect-server-to-github
+slug: /getting-started/connect-server-to-github
 ---
 
 # Connect Amplication server to GitHub
