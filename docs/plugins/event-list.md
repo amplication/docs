@@ -38,7 +38,6 @@ slug: /plugins/EventList
 
 - [Create Server Auth](docs\plugins\plugin-events\create-server-auth.md)
 
-- Create Entity DTO 
 
 - [Create Message Broker](plugins\plugin-events\create-message-broker.md)
    - [Create Message Broker Topic Enum](plugins\plugin-events\create-message-broker-topics-enum.md)
