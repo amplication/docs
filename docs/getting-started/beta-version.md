@@ -12,6 +12,6 @@ Amplication is currently in Beta. It means that we are still working on essentia
 
 How does it effect you? Well...., it mostly doesn't.
 
-Every app generated using Amplication platform is built on top of well-adopted, open-source packages, that are all production-ready. These packages are independently documented, supported, and maintained by their own teams on regular basis. ([read more about our stack here](/docs/getting-started#technologies)). Your app is stable, scalable, and production-ready you can deploy and rely on.
+Every app generated using Amplication platform is built on top of well-adopted, open-source packages, that are all production-ready. These packages are independently documented, supported, and maintained by their own teams on regular basis. ([read more about our stack here](/getting-started#technologies)). Your app is stable, scalable, and production-ready you can deploy and rely on.
 ## Amplication Sandbox Environment
 Please note, Our free sandbox environment is limited in resources, not backed up, and can reset at any time therefore we do not recommend using the free sandbox environment as a production environment.

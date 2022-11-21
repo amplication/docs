@@ -22,7 +22,7 @@ If you want to create a new repository in GitHub, you can do so [here](https://g
 :::info
 If you are using the hosted service on https://app.amplication.com, you can continue with this article. 
 
-In case you are hosting a local Amplication server, you should first follow [this guide](/docs/connect-server-to-github) in order to configure the Server to work with a new GitHub application.
+In case you are hosting a local Amplication server, you should first follow [this guide](/connect-server-to-github) in order to configure the Server to work with a new GitHub application.
 :::
 
 ## Authorize Amplication to access your GitHub account
@@ -68,4 +68,4 @@ Amplication will automatically push a new Pull Request to your GitHub repository
 
 ## Learn more
 
-- [How to add custom code to your application](/docs/how-to/custom-code)
+- [How to add custom code to your application](/how-to/custom-code)

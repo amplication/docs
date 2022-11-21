@@ -12,7 +12,7 @@ Amplication already provides built-in integration with GitHub to push the genera
 When running a local Amplication server you first need to configure the server to integrate with a new GitHub app, following the steps below.
 
 :::info
-When using the hosted service on https://app.amplication.com, the integration is pre-configured and you just need to follow [this guide](/docs/sync-with-github) to sync your application with GitHub.
+When using the hosted service on https://app.amplication.com, the integration is pre-configured and you just need to follow [this guide](/sync-with-github) to sync your application with GitHub.
 :::
 
 ## Step 1:  Create a new GitHub App
