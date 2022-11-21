@@ -33,4 +33,4 @@ In earlier releases of Amplication, Services were known as apps, and the workflo
 
 
 
-See [Your First Project](https://docs.amplication.com/docs/first-app/) for more information. 
+See [Your First Project](https://docs.amplication.com/first-app/) for more information. 

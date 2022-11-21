@@ -60,4 +60,4 @@ The Admin project provide a React application with ready-made forms for creating
 
 ## Learn more
 
-- [How to add custom code to your application](/docs/how-to/custom-code)
+- [How to add custom code to your application](/how-to/custom-code)

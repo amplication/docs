@@ -30,11 +30,11 @@ To promote a particular item, show your support by giving the item a upvote 👍
 
 ## Make a Contribution
 
-We hope that the roadmap will help you decide where you can [make a contribution](https://docs.amplication.com/docs/contributing/) to the Amplication platform. If you see an item that you want to work on, whether it’s a feature, issue, or documentation, we would love to hear from you.
+We hope that the roadmap will help you decide where you can [make a contribution](https://docs.amplication.com/contributing/) to the Amplication platform. If you see an item that you want to work on, whether it’s a feature, issue, or documentation, we would love to hear from you.
 
 ## Make a Feature Request
 
-If you have an idea for a feature that does not appear on the roadmap, you can open a [Feature Request](https://docs.amplication.com/docs/contributing/#missing-a-feature).
+If you have an idea for a feature that does not appear on the roadmap, you can open a [Feature Request](https://docs.amplication.com/contributing/#missing-a-feature).
 
 ## Disclaimer
 
