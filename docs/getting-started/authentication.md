@@ -108,4 +108,4 @@ Amplication uses the `@nestjs/passport` module as middleware to support authenti
 
 Passport supports many authentication strategies available as `npm` modules, which you can implement in your generated project. You can easily integrate the library with a `Nest` application using the [`@nestjs/passport`](https://docs.nestjs.com/security/authentication) module.
 
-Passport has a rich ecosystem of [strategies](https://www.passportjs.org/concepts/authentication/strategies/) that implement various authentication mechanisms.\
+Passport has a rich ecosystem of [strategies](https://www.passportjs.org/concepts/authentication/strategies/) that implement various authentication mechanisms.
