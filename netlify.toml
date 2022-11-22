@@ -9,6 +9,11 @@
   status = 301
 
 [[redirects]]
+  from = "/connect-server-to-github"
+  to = "/running-amplication-platform/connect-server-to-github/"
+  status = 301
+
+[[redirects]]
   from = "/docs/*"
   to = "/:splat"
   status = 301
