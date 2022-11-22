@@ -1,11 +1,11 @@
 ---
 id: angular-todos-step-006
-title: Using GraphQL | Angular
+title: Using GraphQL | Angular Todos
 sidebar_label: Using GraphQL
 slug: /tutorials/angular-todos/step-006
 ---
 
-# Using GraphQL
+# Using GraphQL | Angular Todos
 
 ## Table of Contents
 

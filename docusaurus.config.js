@@ -5,7 +5,7 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   favicon: "img/favicon.ico",
-  organizationName: "amplication/amplication", // Usually your GitHub org/user name.
+  organizationName: "amplication", // Usually your GitHub org/user name.
   projectName: "amplication", // Usually your repo name.
   trailingSlash: true,
   themeConfig: {
@@ -77,17 +77,14 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
+          routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl: "https://github.com/amplication/docs/edit/main/",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl: "https://github.com/amplication/docs/edit/main/blog/",
-        },
+        blog: false,
         theme: {
           customCss: [
             require.resolve("./src/css/custom.css"),
@@ -99,21 +96,6 @@ module.exports = {
   ],
   plugins: [
     "./plugins/analytics",
-    [
-      "@docusaurus/plugin-client-redirects",
-      {
-        redirects: [
-          {
-            to: "/docs/getting-started", // string
-            from: ["/guides/getting-started"],
-          },
-          {
-            to: "/docs/getting-started/dev-env", // string
-            from: ["/docs/how-to/dev-env"],
-          },
-        ],
-      },
-    ],
     [
       require.resolve("docusaurus-gtm-plugin"),
       {

@@ -48,97 +48,88 @@ If you want to help out with a code contribution, our project uses the following
 If you don't feel ready to make a code contribution yet, no problem! You can also check out the [documentation issues](https://github.com/amplication/amplication/labels/type%3A%20docs).
 :::
 
-# <a name="submit-pr"></a> How do I make a code contribution?
+## <a name="submit-pr"></a> How do I make a code contribution?
 
 Are you new to open source contribution? Wondering how contributions work in our project? Here's a quick rundown.
 
 Find an issue that you're interested in addressing, or a feature that you'd like to add.
 You can use [this view](https://github.com/amplication/amplication/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) which helps new contributors find easy gateways into our project.
 
-## Step 1: Make a fork
+### Step 1: Make a fork
 
 Fork the Amplication repository to your GitHub organization. This means that you'll have a copy of the repository under _your-GitHub-username/repository-name_.
 
-## Step 2: Clone the repository to your local machine
+### Step 2: Clone the repository to your local machine
 
-```
+```bash
 git clone --depth 1 https://github.com/amplication/amplication
-
 ```
-## Step 3: Prepare the development environment 
-Set up and run the development environment on your local machine (for details, see the [ Development Environment (Local)](https://github.com/amplication/amplication/blob/master/README.md#development) section in the README. 
 
-## Step 4: Create a branch
+### Step 3: Prepare the development environment
 
- Create a new branch for your fix. 
+Set up and run the development environment on your local machine (for details, see the [Development Environment (Local)](https://github.com/amplication/amplication/blob/master/README.md#development) section in the README.
 
-```jsx
+### Step 4: Create a branch
+
+ Create a new branch for your fix.
+
+```bash
 git checkout -b branch-name-here
 ```
 
-## Step 5: Make your changes
+### Step 5: Make your changes
 
-Update the code with your bug fix or new feature. 
+Update the code with your bug fix or new feature.
 
-## Step 6: Add the changes that are ready to be committed
+### Step 6: Add the changes that are ready to be committed
 
 Stage the changes that are ready to be committed:
 
-```jsx
+```bash
 git add .
 ```
 
-## Step 7: Commit the changes (Git)
+### Step 7: Commit the changes (Git)
 
 Commit the changes with a short message. (See below for more details on how we structure our commit messages)
 
-```jsx
+```bash
 git commit -m "<type>(<package>): <subject>"
 ```
 
-## Step 8: Push the changes to the remote repository
+### Step 8: Push the changes to the remote repository
 
 Push the changes to the remote repository using:
 
-```jsx
+```bash
 git push origin branch-name-here
 ```
 
-## Step 9: Create Pull Request
+### Step 9: Create Pull Request
 
-In GitHub, do the following to submit a pull request to the upstream repository: 
+In GitHub, do the following to submit a pull request to the upstream repository:
 
-1.  Give the pull request a title and a short description of the changes made. Include also the issue or bug number associated with your change. Explain the changes that you made, any issues you think exist with the pull request you made, and any questions you have for the maintainer.
-
-:::tip
-
-Remember, it's okay if your pull request is not perfect (no pull request ever is). The reviewer will be able to help you fix any problems and improve it!
-
-:::
-
-
-2.  Wait for the pull request to be reviewed by a maintainer.
-
+1. Give the pull request a title and a short description of the changes made. Include also the issue or bug number associated with your change. Explain the changes that you made, any issues you think exist with the pull request you made, and any questions you have for the maintainer.
+  :::tip
+  Remember, it's okay if your pull request is not perfect (no pull request ever is). The reviewer will be able to help you fix any problems and improve it!
+  :::
+2. Wait for the pull request to be reviewed by a maintainer.
 3. Make changes to the pull request if the reviewing maintainer recommends them.
-
-:::important
-
-Celebrate your success after your pull request is merged :-) 
-
-:::
-
+  :::important
+  Celebrate your success after your pull request is merged :-)
+  :::
 
 ## Git Commit Messages
 
 We structure our commit messages like this:
 
-```
+```git
 <type>(<package>): <subject>
 ```
 
 Example
 
-```
+```git
 fix(server): missing entity on init
 ```
 

@@ -1,11 +1,11 @@
 ---
 id: react-todos-step-001
-title: Create the App | React
+title: Create the App | React Todos
 sidebar_label: Create the App
 slug: /tutorials/react-todos/step-001
 ---
 
-# Create the App
+# Create the App | React Todos
 
 ## Table of Contents
 

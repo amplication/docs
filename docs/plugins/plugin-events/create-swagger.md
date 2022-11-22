@@ -28,7 +28,7 @@ export interface CreateSwaggerParams extends EventParams {
 
 ### template
 
-A template file, used to generate the service.
+A template file, used to generate the default swagger file.
 
 This is the default template for this event: https://github.com/amplication/amplication/blob/next/packages/amplication-data-service-generator/src/server/swagger/swagger.template.ts
 

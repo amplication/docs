@@ -9,6 +9,7 @@ module.exports = {
       "how-to/add-custom-code",
       "getting-started/deploy",
       "getting-started/authentication",
+      "getting-started/sync-with-github",
       "faqs/faqs",
       "getting-started/plugins",
       "getting-started/projects-resources-services",
@@ -29,7 +30,7 @@ module.exports = {
       "custom-code/seed-db",
       "custom-code/add-custom-dto",
     ],
-   
+
     "How To": [
       "how-to/how-to-create-app",
       "how-to/how-to-create-entity",
@@ -105,8 +106,8 @@ module.exports = {
       },
     ],
     "Running Amplication Platform": [
-      "getting-started/sync-with-github",
-      "getting-started/connect-server-to-github",
+      "running-amplication-platform/connect-server-to-github",
+      "running-amplication-platform/configure-github-auth",
     ],
     About: [
       "about/licensing",

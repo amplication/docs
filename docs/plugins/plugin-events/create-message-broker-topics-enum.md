@@ -11,7 +11,7 @@ slug: /plugins/plugin-events/CreateMessageBrokerTopicsEnum
 
 Creates the message broker topics enum. 
 
-This event does NOTHING by default. All of the logic is handled by the broker-kafka plugin https://github.com/amplication/plugins/tree/master/plugins/broker-kafka
+All of the logic is handled by the broker-kafka plugin https://github.com/amplication/plugins/tree/master/plugins/broker-kafka
 
 ## Event Name
 `CreateMessageBrokerTopicsEnum`
