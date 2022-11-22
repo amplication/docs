@@ -1,11 +1,11 @@
 ---
 id: angular-todos-step-001
-title: Create the App | Angular
+title: Create the App | Angular Todos
 sidebar_label: Create the App
 slug: /tutorials/angular-todos/step-001
 ---
 
-# Create the App
+# Create the App | Angular Todos
 
 ## Table of Contents
 
