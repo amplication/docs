@@ -5,7 +5,7 @@ sidebar_label: CreateAuthModels
 slug: /plugins/plugin-events/create-auth-module
 ---
 
-# Create Auth Module
+# Create Server Auth
 
 ## Description
 
