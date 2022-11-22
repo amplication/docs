@@ -29,7 +29,7 @@ export interface CreateServerDockerComposeDBParams extends EventParams {
 
 The default content of the file as a string. If needed, the value can be parsed as an object using a YAML utility. 
 
-In most cases, there is no need to manipulate the property directly. Instead, use the `updatePropeties` param.
+In most cases, there is no need to manipulate the property directly. Instead, use the `updateProperties` param.
 
 ### updateProperties
 
