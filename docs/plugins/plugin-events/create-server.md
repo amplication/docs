@@ -5,11 +5,11 @@ sidebar_label: Create Server
 slug: /plugins/plugin-events/CreateServer
 ---
 
-# Create Server Event
+# Create Server
 
 ## Description
 
-This event warps the entire process of generation of the server-side code.
+This event wraps the entire process of generation of the server-side code.
 
 ## Event Params
 

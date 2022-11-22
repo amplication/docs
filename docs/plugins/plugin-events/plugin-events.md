@@ -1,9 +1,12 @@
 ---
-id: PluginEvents
-title: Plugin Events Overview
-sidebar_label: Plugin Events Overview
-slug: /plugins/PluginEvents
+id: PluginEventsBeforeAfter
+title: Plugin Events Before and After
+sidebar_label: Plugin Events Before and After
+slug: /plugins/plugin-events/PluginEventsBeforeAfter
 ---
+
+# Plugin Events - Before and After
+
 
 
 All events expose an identical interface with two functions that can be handled by the plugin, one for “before” the event is running and another for “after” the event run. 
@@ -31,3 +34,6 @@ Each event has:
 
 - Generic context (available for all events)
 - Event parameters - specific to the event
+
+
+

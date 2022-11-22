@@ -11,7 +11,7 @@ slug: /plugins/plugin-events/CreateEntityControllerBase
 
 Creates the base controller of an entity
 
-## Event Name:
+## Event Name
 `CreateEntityControllerBase`
 
 ## Event Params
@@ -32,7 +32,7 @@ export interface CreateEntityControllerBaseParams extends EventParams {
 ### template
 A template file that is used to generate the service
 This is the default template that is used for this event.
-https://github.com/amplication/amplication/blob/master/packages/amplication-data-service-generator/src/server/resource/service/service.template.ts
+https://github.com/amplication/amplication/blob/master/packages/amplication-data-service-generator/src/server/resource/controller/controller.base.template.ts
 
 You can manipulate the template or replace it completely with a new template in your plugin.
 
@@ -51,7 +51,7 @@ TBC
 ### templateMapping
 An object with values that are available in the interpolation process of the template.
 This default object with the available parameters can be found here
-https://github.com/amplication/amplication/blob/master/packages/amplication-data-service-generator/src/server/resource/service/create-service.ts#L378
+https://github.com/amplication/amplication/blob/master/packages/amplication-data-service-generator/src/server/resource/controller/create-controller.ts#L86
 
 You can manipulate the object by adding new values, or replacing existing values that will be used in the template when creating the service file.
 

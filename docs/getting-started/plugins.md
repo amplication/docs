@@ -41,7 +41,17 @@ The plugins are executed when Amplication generates code, according to their ord
 :::
 
 3. To change the order of the installed plugins, click the up or down arrow to the right of the plugin bar.
-4. To activate or deactivate the plugin, click the toggle switch. 
+4. To activate or deactivate the plugin, click the toggle switch
+
+## Creating Plugins
+
+As Amplication is an open source platform, any contributor can  develop plugins that will be made available to all users. 
+
+You can develop your own plugins to extend the Amplication's capabilities to fit your organization's requirements. 
+
+See [Plugin Development Overview ](https://docs.amplication.com/docs/plugins/Overview/) for more information.  
+
+
 
 
 
