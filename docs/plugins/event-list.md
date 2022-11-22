@@ -49,6 +49,6 @@ slug: /plugins/EventList
 - [Create Prisma Schema](plugins\plugin-events\create-prisma-schema.md)
 - [Create Server Dot Env](plugins\plugin-events\create-server-dot-env.md)
 - [Create Server Docker Compose](plugins\plugin-events\create-server-docker-compose.md)
-- Create Server Docker Compose DB
+- [Create Server Docker Compose DB](docs\plugins\create-server-docker-compose-db.md)
 
                                                                         
