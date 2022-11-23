@@ -21,9 +21,9 @@ Admin UI base: `packages/[SERVICE-NAME]`
 
 :::info
 
-When you have two or more services in a project being committed to the same repo, you must use different paths in the base directory configuration for each service.
+When you have two or more services in a project being committed to the same repository, you must use different paths in the base directory configuration for each service.
 
-When you use different repos for your services, no action is required, even if you have multiple services in your project.
+When you use different repositories for your services, no action is required, even if you have multiple services in your project.
 ::: 
 
 
