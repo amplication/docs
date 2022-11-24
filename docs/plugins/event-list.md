@@ -19,7 +19,7 @@ To achieve the integration of plugins, Amplication wraps the DSG functions with 
 
 Each plugin can contain many events, so a single plugin can utilize many functions inside the DSG.
 
-All events expose an identical interface with two functions that can be handled by the plugin, one for before the event is running and another for afterthe event run.
+All events expose an identical interface with two functions that can be handled by the plugin, one for before the event is running and another for after the event run.
 
 For each event, the type of eventParams is different, providing access to data that is relevant for the specific event.
 
