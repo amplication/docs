@@ -1,7 +1,7 @@
 ---
 id: PluginArchitecture
-title: Plugin Architecture
-sidebar_label: Plugin Architecture
+title: About Plugins
+sidebar_label: About Plugins
 slug: /plugins/PluginArchitecture
 ---
 

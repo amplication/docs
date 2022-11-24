@@ -55,7 +55,6 @@ module.exports = {
         type: "category",
         label: "Plugin Events",
         items: [
-            "plugins/plugin-events/PluginEventsBeforeAfter", 
             "plugins/plugin-events/CreateServer",
             "plugins/plugin-events/CreateServerDockerCompose",
             "plugins/plugin-events/CreateServerDockerComposeDb",
