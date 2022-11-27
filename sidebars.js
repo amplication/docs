@@ -9,6 +9,7 @@ module.exports = {
       "how-to/add-custom-code",
       "getting-started/deploy",
       "getting-started/authentication",
+      "getting-started/sync-with-github",
       "faqs/faqs",
       "getting-started/plugins",
       "getting-started/projects-resources-services",
@@ -29,7 +30,7 @@ module.exports = {
       "custom-code/seed-db",
       "custom-code/add-custom-dto",
     ],
-   
+
     "How To": [
       "how-to/how-to-create-app",
       "how-to/how-to-create-entity",
@@ -41,24 +42,23 @@ module.exports = {
       "how-to/api-admin-ui-settings",
       "how-to/create-message-broker",
     ],
-    "Plugin Developer Guide": [
+    "Plugins Developer Guide": [
      {
        type: "category",
        label: "Plugin Creation ",
        items: [
-               "plugins/Overview",
                "plugins/PluginArchitecture",
+               "plugins/EventList",
             ],
            },
       {
         type: "category",
         label: "Plugin Events",
         items: [
-            "plugins/plugin-events/PluginEvents",
+            "plugins/plugin-events/PluginEventsBeforeAfter", 
             "plugins/plugin-events/CreateServer",
             "plugins/plugin-events/CreateServerDockerCompose",
-            "plugins/plugin-events/CreateSwagger",
-            "plugins/plugin-events/CreateSeed",
+            "plugins/plugin-events/CreateServerDockerComposeDb",
             "plugins/plugin-events/CreateServerDotEnv",
             "plugins/plugin-events/CreateServerAuth",
             "plugins/plugin-events/CreatePackageJson",
@@ -66,7 +66,8 @@ module.exports = {
             "plugins/plugin-events/CreateEntityServiceBase",
             "plugins/plugin-events/CreateEntityController",
             "plugins/plugin-events/CreateEntityControllerBase",
-            "plugins/plugin-events/CreateEntityControllerSpec",
+            "plugins/plugin-events/CreateEntityResolver",
+            "plugins/plugin-events/CreateEntityResolverBase",
             "plugins/plugin-events/CreateMessageBrokerService",
             "plugins/plugin-events/CreateMessageBrokerServiceBase",
             "plugins/plugin-events/CreateMessageBrokerNestjsModule",
@@ -105,8 +106,8 @@ module.exports = {
       },
     ],
     "Running Amplication Platform": [
-      "getting-started/sync-with-github",
-      "getting-started/connect-server-to-github",
+      "running-amplication-platform/connect-server-to-github",
+      "running-amplication-platform/configure-github-auth",
     ],
     About: [
       "about/licensing",

@@ -1,9 +1,10 @@
 ---
-id: CreateServerDockerCompose
-title: Create Server Docker Compose
-sidebar_label: Create Server Docker Compose
-slug: /plugins/plugin-events/CreateServerDockerCompose
+id: CreateServerDockerComposeDb
+title: Create Server Docker Compose DB
+sidebar_label: Create Server Docker Compose DB
+slug: /plugins/plugin-events/CreateServerDockerComposeDb
 ---
+
 
 # Create Server Docker Compose DB
 
@@ -11,7 +12,7 @@ slug: /plugins/plugin-events/CreateServerDockerCompose
 
 Creates the `docker-compose.db.yml` file of the service
 
-## Event Name
+## Event Name:
 `CreateServerDockerComposeDB`
 
 ## Event Params
@@ -54,7 +55,7 @@ beforeCreateServerDockerComposeDB(
   }
 ```
 
-As a result the`CreateServerDockerComposeDB` is not running and you would have to provide your logic in the `after` lifecycle event.
+ As a result the`CreateServerDockerComposeDB` is not running and you would have to provide your logic in the `after` lifecycle event.
 For that, you need to provide the path to your `docker-compose.db.yml` and set the path in which you want the `docker-compose.db.yml` will be generated.
 
 ```ts

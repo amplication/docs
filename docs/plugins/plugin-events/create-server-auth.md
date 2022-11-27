@@ -10,7 +10,7 @@ slug: /plugins/plugin-events/CreateServerAuth
 
 Creates the Authorization directory with the selected strategy (basic/JWT)
 
-## Event Name:
+## Event Name
 ` CreateServerAuth`
 
 ## Event Params

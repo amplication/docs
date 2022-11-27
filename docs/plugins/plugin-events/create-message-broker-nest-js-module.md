@@ -5,7 +5,7 @@ sidebar_label: CreateMessageBrokerNestJSModule
 slug: /plugins/plugin-events/create-message-broker-nest-js-module
 ---
 
-# CreateMessageBrokerNestJSModule
+# Create Message Broker NestJS Module
 
 ## Description
 

@@ -10,7 +10,7 @@ slug: /plugins/plugin-events/CreateServerDotEnv
 
 Creates the server's `.env` file
 
-## Event Name:
+## Event Name
 `CreateServerDotEnv`
 
 ## Event Params

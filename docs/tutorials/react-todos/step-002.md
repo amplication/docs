@@ -1,11 +1,11 @@
 ---
 id: react-todos-step-002
-title: Create the Backend | React
+title: Create the Backend | React Todos
 sidebar_label: Create the Backend
 slug: /tutorials/react-todos/step-002
 ---
 
-# Create the Backend
+# Create the Backend | React Todos
 
 ## Table of Contents
 
