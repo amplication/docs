@@ -17,5 +17,4 @@ All published plugins are available on the All Plugins page on the Amplication i
 
 ## Using Plugins
 
-To understand how Plugins are installed and activated by the user, see [Using Plugins](https://docs.amplication.com/getting-started/getting-started/plugins/)
-
+To understand how Plugins are installed and activated by the user, see [Using Plugins](/getting-started/getting-started/plugins/)

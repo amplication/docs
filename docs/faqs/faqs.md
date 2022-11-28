@@ -40,7 +40,7 @@ Amplication is a great platform for professional developers, whatever their expe
 
 
  
- [Your First Application](https://docs.amplication.com/first-app/)
+ [Your First Application](/first-app/)
 
   
 </details>
@@ -51,7 +51,7 @@ Amplication is a great platform for professional developers, whatever their expe
 Amplication Community Edition (CE) is free and always will be. To ensure that we can continue to develop Amplication, our Enterprise Edition (EE) will provide additional enterprise-oriented functionality that may require payment. For more information about the CE and EE, read:
 
  
- [Amplication’s licensing model](https://docs.amplication.com/about/about/licensing/)
+ [Amplication’s licensing model](/about/about/licensing/)
 
   
 </details>
@@ -139,7 +139,7 @@ Definitely. The code is yours. Do with it what you wish. You can continuously cu
   
 We'd love to have you contribute! To find out how, read:
 
-[Contributing](https://docs.amplication.com/contributing/)
+[Contributing](/contributing/)
 
   
 </details>
@@ -149,8 +149,8 @@ We'd love to have you contribute! To find out how, read:
 
 <details>
   <summary>Can I work with GitLab (or other git providers) besides GitHub?</summary>
-  
-Amplication currently supports integration only with GitHub, but we are planning to add support for more Git providers. See our [Product Roadmap](https://docs.amplication.com/about/roadmap/). 
+
+Amplication currently supports integration only with GitHub, but we are planning to add support for more Git providers. See our [Product Roadmap](/about/roadmap/). 
   
 </details>
 
@@ -162,7 +162,7 @@ Amplication currently supports integration only with GitHub, but we are planning
 Amplication currently supports only PostgreSQL.
 However, we generate apps that work with Prisma, so you could change the Prisma configuration to use another database supported by Prisma. 
 
-We are planning to support more databases in future releases, including mongoDB. See our [Product Roadmap](https://docs.amplication.com/about/roadmap/). 
+We are planning to support more databases in future releases, including mongoDB. See our [Product Roadmap](/about/roadmap/).
   
 </details>
 
@@ -177,9 +177,9 @@ Amplication uses Docker and Kubernetes to support deployment.
 
 Check out the following for for more information: 
 
-[Deploy a Docker Container](https://docs.amplication.com/deploy/#deploy-a-docker-container)
+[Deploy a Docker Container](/deploy/#deploy-a-docker-container)
 
-[Deploy Amplication to a Kubernetes cluster using Helm](https://docs.amplication.com/helm-chart/)
+[Deploy Amplication to a Kubernetes cluster using Helm](/helm-chart/)
 
 [Deploying Amplication Server to Digital Ocean](https://dev.to/asiancat54x/deploying-amplication-app-to-digital-ocean-5d7k)
 
@@ -199,7 +199,7 @@ Check out the following for for more information:
   - [Discord](https://discord.com/) - find the Amplication channel
   - [Amplication-website](https://amplication.com/)
   - [Blog](https://amplication.com/blog)
-  - [Docs](https://docs.amplication.com/getting-started/)
+  - [Docs](/getting-started/)
  
 
 
