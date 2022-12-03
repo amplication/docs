@@ -19,10 +19,12 @@ Admin UI base: `packages/[SERVICE-NAME]`
 
 ![](../how-to/assets/base-directories.png)
 
-:::tip
-This feature is the first step toward full support for a monorepo model, which will replace the existing monolithic structure in a future release.  Although you can sync multiple services to a single repository, for now, you should should continue to manage your favorite monorepo tool manually.
-::: 
+:::info
 
+When you have two or more services in a project being committed to the same repository, you must use different paths in the base directory configuration for each service.
+
+When you use different repositories for your services, no action is required, even if you have multiple services in your project.
+::: 
 
 
 ### Example - setting two separate apps to work with a monorepo in GitHub:
