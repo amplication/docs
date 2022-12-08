@@ -45,17 +45,35 @@ module.exports = {
     "Plugins Developer Guide": [
      {
        type: "category",
-       label: "Plugin Creation ",
+       label: "Overview",
        items: [
-               "plugins/PluginArchitecture",
-               "plugins/EventList",
+               "plugins/Overview",
             ],
            },
       {
         type: "category",
-        label: "Plugin Events",
+        label: "Architecture",
         items: [
-            "plugins/plugin-events/PluginEventsBeforeAfter", 
+                "plugins/PluginArchitecture",      
+                "plugins/PluginEventsBeforeAfter",
+                "plugins/ContextSkipDefault",
+                "plugins/EventHierarchy",
+                 ],
+                },
+      {
+        type: "category",
+        label: "Developing Plugins",
+        items: [
+               "plugins/CreateNewPlugin",
+               "plugins/PublishPlugin",
+               "plugins/OrderOfPlugins",
+               "plugins/ExamplePlugin",
+                           ],
+                          },
+      {
+        type: "category",
+        label: "Plugin Events - Reference",
+        items: [ 
             "plugins/plugin-events/CreateServer",
             "plugins/plugin-events/CreateServerDockerCompose",
             "plugins/plugin-events/CreateServerDockerComposeDb",

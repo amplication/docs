@@ -5,3 +5,4 @@ sidebar_label: Creating a Server Event
 slug: /plugins/server-event
 ---
 
+Comming soon 
