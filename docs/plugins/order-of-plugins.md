@@ -7,4 +7,4 @@ slug: /plugins/OrderOfPlugins
 
 
 
-Comming soon 
+Coming soon 

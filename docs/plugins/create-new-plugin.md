@@ -17,7 +17,7 @@ The creation of a plugin requires the following main steps:
 
 3. Create Server Modules `createServerModules`
 
-4. Create admin modules `createAdminmodules`
+4. Create admin modules `createAdminModules`
 
 ![](.\assets\NewPlugin2.png)
 
@@ -26,7 +26,7 @@ The creation of a plugin requires the following main steps:
 ```jsx
 createDTOs
 createServerModules
-createAdminmodules
+createAdminModules
 ```
 
 

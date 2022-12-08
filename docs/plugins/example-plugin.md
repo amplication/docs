@@ -82,7 +82,7 @@ On this event we send our [event params](https://docs.amplication.com/plugins/pl
 
 `CreateServerDockerCompose` : before
 
-On this event we send our [event params](https://docs.amplication.com/plugins/plugin-events/CreateServerDockerCompose/#event-params) which are the YAML properties and values for the MySQL database. As a result the `docker-compse.yml` file will be generated in a way that the PostgreSQL properties will be replaced by the MySQL properties.
+On this event we send our [event params](https://docs.amplication.com/plugins/plugin-events/CreateServerDockerCompose/#event-params) which are the YAML properties and values for the MySQL database. As a result the `docker-compose.yml` file will be generated in a way that the PostgreSQL properties will be replaced by the MySQL properties.
 
 `CreateServerDockerComposeDB` : before
 
@@ -128,7 +128,7 @@ export const dataSource: DataSource = {
 
 We use the [event params](https://docs.amplication.com/plugins/plugin-events/CreatePrismaSchema/#event-params) to:
 
-- change the datasource name form `postgres` to `mysql`
+- change the data source name form `postgres` to `mysql`
 - change the provider from `postgresql` to `MySQL`
 
 (the `DB_URL` is handled by `CreateServerDotEnv`)

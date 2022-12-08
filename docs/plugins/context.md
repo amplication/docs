@@ -13,8 +13,8 @@ In each lifecycle function (before and after), we have access to a global object
 
 |  Name |  Type |  Description |
 |---|---|---|
-| resourceType  | keyof typeof EnumResourceType  | the type of the resource: `MessageBroker` `ProjectConfiguration` `Service`  |
-| resourceInfo  | Appinfo  |  the general data of the app:name, description, version, id, URL, and settings (resource settings) |
+| resourceType  | keyOf typeOf EnumResourceType  | the type of the resource: `MessageBroker` `ProjectConfiguration` `Service`  |
+| resourceInfo  | AppInfo  |  the general data of the app:name, description, version, id, URL, and settings (resource settings) |
 |  entities | Entity[]  | the list of entities in the service  |
 |  roles |  roles | the list of roles in the service  |
 pluginInstallations | pluginInstallations |a list of the installed plugins
