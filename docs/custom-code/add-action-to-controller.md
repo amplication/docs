@@ -56,7 +56,7 @@ export class UserController extends UserControllerBase {
   import * as errors from "../errors";
   import { User } from "./base/User";
   import { UserWhereUniqueInput } from "./base/UserWhereUniqueInput";
-  import { AclValidateRequestInterceptor } from "src/interceptors/aclValidateRequest.interceptor";
+  import { AclValidateRequestInterceptor } from "../interceptors/aclValidateRequest.interceptor";
 ```
 
 3. Add the following code at the bottom of the class.
