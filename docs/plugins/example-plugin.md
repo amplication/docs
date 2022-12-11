@@ -21,7 +21,7 @@ The most straightforward example to illustrate this development workflow is the 
 
 - We use Prisma as a ORM and Prisma supports MySQL as a provider - changing the provider on Prisma Schema.
 - We use environment variable for the Prisma schema database’s URL and for the docker-compose values - change the environment variables where needed and their values.
-- Unexpected behaviors: the Prisma’s MySQL provider does not support lists of primitive types
+- Unexpected behaviors: the Prisma MySQL provider does not support lists of primitive types
 
 Translating the above sections to events:
 
@@ -50,7 +50,7 @@ register(): Events {
 
 `CreateServer` : before 
 
-On this event we are taking care of the Prisma’s limitation regrading list of primitives values on MySQL provider.
+On this event we are taking care of the Prisma limitation regrading list of primitives values on MySQL provider.
 
 This is also a good example for a use case where the error should be thrown from the plugin itself.
 
