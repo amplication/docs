@@ -23,7 +23,7 @@ pluginInstallations | pluginInstallations |a list of the installed plugins
 |  DTOs |  DTOs | list of the generated DTOs  |
 |  plugins | PluginMap  | a `Map` of the event name with its before and after function, and event params  |
 | logger  |  winston.Logger |   a logger that can be used to log messages inside the plugin|
-| utils  | ContextUtil  |  an interface that exposes utility functionalities and properties, such as `skipDefaultBehavior` - will be explained later, and `imporStaticModules` - provides access to the static generated files |
+| utils  | ContextUtil  |  an interface that exposes utility functionalities and properties, such as `skipDefaultBehavior` - will be explained later, and `importStaticModules` - provides access to the static generated files |
 |  clientDirectories |  clientDirectories |  helps to determine where a specific file or folder will be generated in the generated admin-ui folder `baseDirectory``srcDirectory``authDirectory``publicDirectory``apiDirectory` |
 |  serverDirectories |   serverDirectories| helps to determine where a specific file or folder will be generated in the generated server folder `baseDirectory` `srcDirectory` `authDirectory`  `scriptsDirectory` `messageBrokerDirectory`  |
 
