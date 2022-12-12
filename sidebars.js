@@ -66,7 +66,6 @@ module.exports = {
         items: [
                "plugins/CreateNewPlugin",
                "plugins/PublishPlugin",
-               "plugins/OrderOfPlugins",
                "plugins/ExamplePlugin",
                            ],
                           },
