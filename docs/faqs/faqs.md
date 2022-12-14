@@ -88,7 +88,7 @@ You can download the source code of your application or connect to your GitHub a
 <details>
   <summary>What server-side technologies does Amplication use?</summary>
   
-NestJS, Prisma, PostgreSQL, Passport, GraphQL, Swagger UI, Jest, Docker
+NestJS, Prisma, PostgreSQL, MySQL, MongoDB, Passport, GraphQL, Swagger UI, Jest, Docker
   
 </details>
 
@@ -159,10 +159,7 @@ Amplication currently supports integration only with GitHub, but we are planning
 <details>
   <summary>Which databases does Amplication support?</summary>
   
-Amplication currently supports only PostgreSQL.
-However, we generate apps that work with Prisma, so you could change the Prisma configuration to use another database supported by Prisma. 
-
-We are planning to support more databases in future releases, including mongoDB. See our [Product Roadmap](/about/roadmap/).
+Amplication currently includes plugins to support PostgreSQL, MySQL, and MongoDB. 
   
 </details>
 
