@@ -17,10 +17,9 @@ The installed plugins are shown on the _Installed Plugins_ screen.
 
 The following plugins are currently available, we are working to add more plugins 
 
--  MongoDB DB
+- MongoDB 
 - PostgreSQL DB
 - MySQL DB
-- MongoDB database
 - Kafka
 - Password JWT Authentication
 - Password Basic Authentication
