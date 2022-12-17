@@ -27,12 +27,14 @@ The generated service is built with the following proven open-source technologie
 
 - [NestJS](https://nestjs.com/) - A progressive Node.js framework for building efficient, reliable and scalable server-side applications.
 - [Prisma](https://www.prisma.io/) - Next-generation ORM for Node.js and TypeScript.
-- [PostgreSQL](https://www.postgresql.org/) - The World's Most Advanced Open Source Relational Database
+- [PostgreSQL](https://www.postgresql.org/) - The world's most advanced open source relational database
+- [MySQL](https://www.mysql.com/) - A popular, open source database delivering high performance scalable database applications.
+- [MongoDB](https://www.mongodb.com/) - A source-available, cross-platform, document-oriented, NoSQL database program. 
 - [Passport](http://www.passportjs.org/) - Simple, unobtrusive authentication for Node.js
 - [GraphQL](https://graphql.org/) - a query language for APIs.
 - [Swagger UI](https://swagger.io/) - Visual documentation for REST API based on OpenAPI Specification.
 - [Jest](https://jestjs.io/) - delightful JavaScript Testing Framework with a focus on simplicity.
-- [Docker](https://www.docker.com/) - an open platform for developing, shipping, and running applications.
+- [Docker](https://www.docker.com/) - an open platform for developing, shipping, and running applications.    
 
 ### Client-Side
 
@@ -49,6 +51,10 @@ The generated service is built from two projects, each in a separate folder
 ### Server
 
 The server project provides all the back-end services of your application, like REST API, GraphQL API, authentication, authorization, logging, data validation, and connection to the database.
+
+:::note
+The following diagram shows PostgresSQL as an example. MySQL and MongoDB are also supported. 
+:::
 
 ![](./assets/generated-app/app-components2.jpg)
 
