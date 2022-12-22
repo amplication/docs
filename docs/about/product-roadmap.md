@@ -16,7 +16,6 @@ By sharing our roadmap, we hope you will become an even closer partner in our jo
 
 If you have thoughts, ideas or suggestions, about an item in the Amplication Public Roadmap, click **Edit** and leave a comment.
 
-
 ## Make a Contribution
 
 We hope that the roadmap will help you decide where you can [make a contribution](/contributing/) to the Amplication platform. If you see an item that you want to work on, whether it’s a feature, issue, or documentation, we would love to hear from you.

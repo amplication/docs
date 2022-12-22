@@ -356,6 +356,11 @@ git branch -M main
 
 7. Finally, set your remote origin URL and push up the code.
 
+```
+git remote add origin <URL copied from github repository>
+git push origin main
+```
+
 ## Step 5 - Wrap Up
 
 Go ahead and try adding tasks or marking them as complete.
