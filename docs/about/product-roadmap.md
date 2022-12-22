@@ -7,16 +7,14 @@ slug: /about/roadmap
 
 # Product Roadmap
 
-View the official [Amplication public product roadmap](https://github.com/orgs/amplication/projects/11/views/1).
+View the official [Amplication roadmap](https://github.com/orgs/amplication/projects/11/views/1)
 
 As an open-source platform, Amplication is committed to a policy of complete transparency with our community about our future direction. Use our product roadmap to learn about our future plans, to see what we're working on and what's coming next.
 By sharing our roadmap, we hope you will become an even closer partner in our joint vision of building and extending a platform that will empower professional developers to create business applications.
 
-## Join the Discussion
+## Give Feedback
 
-If you have thoughts, ideas or suggestions, click on the GitHub link in the roadmap item and write your comments in the GitHub issue.
-
-To promote a particular item, show your support by giving the item a upvote 👍 in GitHub.
+If you have thoughts, ideas or suggestions, about an item in the Amplication Public Roadmap, click **Edit** and leave a comment.
 
 ## Make a Contribution
 

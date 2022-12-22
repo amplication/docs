@@ -5,17 +5,19 @@ sidebar_label: Plugin Architecture
 slug: /plugins/PluginArchitecture
 ---
 
-A plugin is a NPM package that is installed and executed as part of the code generation process to allow the plugin writer to manipulate and extended the default behavior.
+Amplication's `Data Service Generator (DSG)` service is responsible for the code generation process. This process is divided into several functions, where each function plays a different part in this process.
 
-A plugin is a class with a register function that exposes plugin events.
+To enable intervention in the code generation process, we wrap these functions in a function named `pluginWrapper` 
 
-An event is a hook that enables the developer to intervene before or after the execution of a Function, to create new logic This intervention can occur at any logical junction in the code.
+The `pluginWrapper` function is invoked with the following arguments:
 
-Each plugin contains events which can intervene before or after the following high-level functions.
+- **func** - the DSG function we want to wrap.
+- **event** - the name of event we want to capture, and change something in the triggered process. 
+- **args** - the original parameters of the DSG function. There are most likely will be used as the parameters of the event, for the plugin developer to have access to these params and manipulate the returned value of the function.
 
-- Entry point - start creating code
-- Create DTOs (createDTOs)
-- Create Server Modules (createServerModules)
-- Create Admin Modules (createAdminModules)
+For the purpose of this architecture overview, remember that every event has before and after property (which is a function), representing the event's lifecycle in which you can intervene (before the emission of the event and after the emission of the event). For more information about `before` and `after` event see [Before and After Lifecycle Functions](docs\plugins\before-after.md)
 
-Each function can be preceded and followed by an event. Each functions can encapsulate functions at a lower level, each of which can be a point of intervention.
+When the `pluginWrapper` function is invoked, it checks whether the event argument that was passed has a `before` or `after` property. If so, it invokes other functions that are responsible for calculating the final behavior when this event is emitted, or in other words
+the outcome of the function that this event is responsible to execute.
+
+If no part of the event lifecycle was provided or if non of its params were changed, the default behavior will be executed.                       
