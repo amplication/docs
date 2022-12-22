@@ -58,8 +58,8 @@ module.exports = {
                 "plugins/PluginEventsBeforeAfter",
                 "plugins/ContextSkipDefault",
                 "plugins/EventHierarchy",
-                 ],
-                },
+                ],
+      },
       {
         type: "category",
         label: "Developing Plugins",
