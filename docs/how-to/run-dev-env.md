@@ -62,7 +62,7 @@ npm install
 
 ## Step 3 - Start docker container for your database
 
-Your application is shipped with a built-in connection to PostgreSQL DB. To start the database you need to run a docker container using the following command:
+To start the database you need to run a docker container using the following command:
 
 ```
 npm run docker:db
@@ -75,7 +75,7 @@ Now you need to create your application schema on the database. To do so Amplica
 First, execute the following command in the command-line tool to generate the Prisma client
 
 ```
-npm run prisma:generate
+npm run prisma:generate 
 ```
 
 Now, execute the following command in the command-line tool to generate the schema on the database

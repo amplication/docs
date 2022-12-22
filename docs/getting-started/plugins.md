@@ -17,8 +17,9 @@ The installed plugins are shown on the _Installed Plugins_ screen.
 
 The following plugins are currently available, we are working to add more plugins 
 
-- PostgreSQL database
-- MySQL database
+- MongoDB 
+- PostgreSQL DB
+- MySQL DB
 - Kafka
 - Password JWT Authentication
 - Password Basic Authentication
@@ -38,6 +39,7 @@ The following plugins are currently available, we are working to add more plugin
 
 :::note
 The plugins are executed when Amplication generates code, according to their order on the _Installed Plugins_ page.
+If a plugin execution is a prerequisite for another plugin, it must be located earlier in the list. 
 :::
 
 3. To change the order of the installed plugins, click the up or down arrow to the right of the plugin bar.
