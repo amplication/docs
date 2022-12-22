@@ -12,12 +12,10 @@ slug: /plugins/plugin-events/PluginEventsBeforeAfter
 All events expose an identical interface with two functions that can be handled by the plugin and responsible for a different step in the lifecycle of the event. One for “before” the event is emitted and another for “after” the event is emitted.
 
 ```tsx
-export type PluginMap = {
-  [K in EventNames]?: {
-    before?: PluginBeforeEvent<EventParams>[];
-    after?: PluginAfterEvent<EventParams>[];
-  };
-};
+export interface PluginEventType<T extends EventParams> {
+  before?: PluginBeforeEvent<T>;
+  after?: PluginAfterEvent<T>;
+}
 ```
 
 For each event, the type of `EventParams` is different, providing access to relevant data for the specific event.
