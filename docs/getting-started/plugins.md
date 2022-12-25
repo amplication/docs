@@ -19,7 +19,7 @@ The following plugins are currently available. Addition plugins will be added in
 
 #### MongoDB
 
-[MongoDB](https://www.mongodb.com/) is a free and open-source cross-platform document-oriented database program. It is classified as a NoSQL database program, meaning that it does not use the traditional SQL relational database management system (RDBMS). Instead, it uses JSON-like documents with optional schemas to store data.
+[MongoDB](https://www.mongodb.com/) is a free and open-source cross-platform document-oriented database program. It is classified as a NoSQL database program, meaning that it does not use the traditional SQL relational database management system. Instead, it uses JSON-like documents with optional schemas to store data.
 
 MongoDB is used to store and retrieve large amounts of data in real-time, and it is often used in situations where high performance and horizontal scaling are required.
 
