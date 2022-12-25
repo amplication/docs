@@ -25,13 +25,13 @@ MongoDB is used to store and retrieve large amounts of data in real-time, and it
 
 #### PostgreSQL
 
-[PostgreSQL](https://www.postgresql.org/) is a free and open-source relational database management system (RDBMS) that is designed to be highly scalable, reliable, and powerful. It is known for its ability to handle large amounts of data and a high volume of queries. 
+[PostgreSQL](https://www.postgresql.org/) is a free and open-source relational database management system that is designed to be highly scalable, reliable, and powerful. It is known for its ability to handle large amounts of data and a high volume of queries. 
 
 PostgreSQL can handle complex data structures and relationships. It supports a wide range of data types, including arrays, JSON, and XML, and it has robust support for stored procedures, triggers, and views.
 
 #### MySQL
 
-[MySQL](https://www.mysql.com/) is an open-source relational database management system (RDBMS) that is widely used in web applications and other software platforms. It is known for its reliability, simplicity, and performance. It is a powerful tool for storing and managing data in a structured and organized way.
+[MySQL](https://www.mysql.com/) is an open-source relational database management system that is widely used in web applications and other software platforms. It is known for its reliability, simplicity, and performance. It is a powerful tool for storing and managing data in a structured and organized way.
 
 #### Kafka
 
