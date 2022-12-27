@@ -35,7 +35,7 @@ PostgreSQL can handle complex data structures and relationships. It supports a w
 
 #### Kafka
 
-[Apache Kafka](https://kafka.apache.org/) is a distributed streaming platform, used for building real-time data pipelines and streaming applications. It is a publish-subscribe messaging system that allows for the creation of high-throughput and low-latency systems.
+[KafkaJS](https://kafka.js.org/) is a distributed streaming platform, used for building real-time data pipelines and streaming applications. It is a publish-subscribe messaging system that allows for the creation of high-throughput and low-latency systems.
 
 In the Apache Kafka messaging system, processes known as producers write data to Kafka topics, and processes known as consumers read data from Kafka topics.
 
