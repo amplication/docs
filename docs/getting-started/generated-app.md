@@ -38,7 +38,7 @@ The generated service is built with the following proven open-source technologie
 
 ### Client-Side
 
-- [ReactJS](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
 - [React-Admin](https://marmelab.com/react-admin/) - A frontend Framework for building B2B applications running in the browser on top of REST/GraphQL APIs, using ES6, React and Material Design.
 
 ## Projects Structure
