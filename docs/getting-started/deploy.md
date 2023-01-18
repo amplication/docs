@@ -5,14 +5,20 @@ sidebar_label: Deploy to Docker Desktop
 slug: /deploy
 ---
 
-## Build Docker image and run Docker container
+ To deploy to Docker, build a Docker image and run a Docker container. 
 
-You can also easily build a Docker container to prepare your app for deployment. Your app is always generated with all the configuration and scripts needed to do so.
+Your project is always generated with all the configuration and scripts needed to build a Docker container to prepare your app for deployment.
 
-First clone source code from your repository. See [Sync with GitHub](https://docs.amplication.com/docs/sync-with-github/) section for more information about working with source code.
+First clone source code from your repository. See [Sync with GitHub](https://docs.amplication.com/docs/sync-with-github/) for more information about working with source code.
 
-To run your app in Docker with a functional database, execute the docker-compose command:
+To run your app in Docker with a functional database, execute the docker-compose command: 
 
-```
-docker-compose up
-```
+`docker-compose up`
+
+
+---
+
+TIP: 
+If you store your  services in a monorepo git repository, run `docker-compose up` from within the service folder you want to run.
+
+---
