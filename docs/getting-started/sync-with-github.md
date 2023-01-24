@@ -29,7 +29,7 @@ If you are using the hosted service on [https://app.amplication.com](https://ap
 Before integrating your application with GitHub, you need to authorize Amplication to get access to your GitHub account.
 
 1. Open up an Amplication project.
-2. Click **Connect to GitHub** at the bottom left of your project. The sync with GitHub screen opens.
+2. Click **Connect to GitHub** at the bottom left of your project. The _Sync with GitHub_ screen opens.
 
 ![](./assets/sync-with-github/sync-with-github.png)
 
