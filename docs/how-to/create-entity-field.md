@@ -58,7 +58,7 @@ One-to-one relations refer to relations where at most **one** field can be con
 
 In the following example below, we will configure a one-to-one relation between the User and Item entities. 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/72c809be-0d4b-469a-aee9-ed199695249d/Untitled.png)
+![](./assets/entity-field-settings.PNG)
 
 1. In the Data Type field select **Relation to Entity**
 2. In the **Related Entity** field enter the field to be related
@@ -70,7 +70,7 @@ In the following example below, we will configure a one-to-one relation between�
 
 4. In the Foreign Key Holder field, select which side will hold the Foreign Key (”this side” or “other side”) 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/78abdf11-1295-4e7e-ad7b-56a2a88c440d/Untitled.png)
+![](./assets/foreign-key.PNG)
 
 The Foreign Key will always be located in the selected field in the generated schema. The Foreign key can be only on one side, not both. 
 
