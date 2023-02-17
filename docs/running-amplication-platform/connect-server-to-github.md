@@ -19,9 +19,9 @@ When running a local Amplication server you first need to configure the server t
 
 2. Enter the fields as follows:
    - **Application name** - `[your-github-username]-amplication-local`
-   - **Homepage URL** - `http://localhost:3000`. _If you are hosting the Amplication client on any other address, use the specific address._
+   - **Homepage URL** - `http://localhost:3001`. _If you are hosting the Amplication client on any other address, use the specific address._
    - **Application description** - optional
-   - **Callback URL** - `http://localhost:3001`. _If you are hosting the Amplication server on any other address, use the specific address._
+   - **Callback URL** - `http://localhost:3000`. _If you are hosting the Amplication server on any other address, use the specific address._
    - **Webhook > Active** - "unchecked"
    - **Permissions > Repository permissions**
      - **Administration** - `Access: Read and Write`
