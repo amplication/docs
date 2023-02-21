@@ -38,8 +38,6 @@ JSON enables you to create fields that store and include different kinds of data
 You might find it easier to first add all the fields you want, one after another, and only afterwards set the properties of each field.
 :::
 
-
-
 :::info
 White spaces are supported, which is useful when you want to enter a descriptive field name. The value is saved as the field’s display name.
 In addition to the display name, each field has an auto-generated _Name_ that does not contain spaces or special characters. This name is later used for the API endpoint and in other places in the generated code.
