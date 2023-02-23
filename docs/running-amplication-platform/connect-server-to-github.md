@@ -40,8 +40,8 @@ When running a local Amplication server you first need to configure the server t
    # GitHub App (Git sync)
    GITHUB_APP_APP_ID="replace with the github App ID"
    GITHUB_APP_CLIENT_ID="replace with the github app Client ID"
-   GITHUB_APP_CLIENT_SECRET="replace with secret created as step 4"
-   GITHUB_APP_PRIVATE_KEY="-----BEGIN RSA PRIVATE KEY-----The key copied at step 4-----END RSA PRIVATE KEY-----"
+   GITHUB_APP_CLIENT_SECRET="replace with secret created as step 1.4"
+   GITHUB_APP_PRIVATE_KEY="-----BEGIN RSA PRIVATE KEY-----The key copied at step 1.5-----END RSA PRIVATE KEY-----"
 
    # replace [your-github-username]-amplication-local with your chosen name
    GITHUB_APP_INSTALLATION_URL='https://github.com/apps/[your-github-username]-amplication-local/installations/new?state={state}'
