@@ -90,9 +90,13 @@ By default, the latest version of the plugin will be available in the list of pl
    
    ![](./assets/plugin-versions.png)
 
-2. Select the required plugin version from the Plugin version drop-down list and click Save.
+2. Select the required plugin version from the Plugin version drop-down list and click **Save**. 
 
    In the next build, the code will be generated with the selected plugin version. 
+   
+:::note
+Each version of the Plugin has its own settings, so when you replace the version you also replace its settings. 
+:::
    
     
 ## Creating Plugins
