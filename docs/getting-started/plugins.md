@@ -94,7 +94,7 @@ By default, the latest version of the plugin will be available in the list of pl
 
    In the next build, the code will be generated with the selected plugin version. 
    
-   
+    
 ## Creating Plugins
 
 To add more functionality, you can develop your own plugins, or can use plugins developed by the community, as they become available.
