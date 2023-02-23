@@ -74,6 +74,27 @@ If a plugin execution is a prerequisite for another plugin, it must be located e
 - To change the order of the installed plugins, click the up or down arrow to the right of the plugin bar.
 - To activate or deactivate the plugin, click the toggle switch.
 
+## Managing Plugin Versions
+
+Amplication plugin developers may release several versions of a plugin over time. By default, the latest version will be available when installing the plugin.
+
+Sometimes, you might need to generate a project with an earlier version of the plugin, to ensure compatibility.
+
+### Changing the Plugin Version
+
+By default, the latest version of the plugin will be available in the list of plugins.
+
+1. To change the installed version of a plugin, in the **All Plugins** page, click the **Settings** icon.
+
+   The plugin’s settings page opens.
+   
+   ![](./assets/plugin-versions.png)
+
+2. Select the required plugin version from the Plugin version drop-down list and click Save.
+
+   In the next build, the code will be generated with the selected plugin version. 
+   
+   
 ## Creating Plugins
 
 To add more functionality, you can develop your own plugins, or can use plugins developed by the community, as they become available.
