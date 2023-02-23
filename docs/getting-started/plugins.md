@@ -39,19 +39,17 @@ PostgreSQL can handle complex data structures and relationships. It supports a w
 
 In the Apache Kafka messaging system, processes known as producers write data to Kafka topics, and processes known as consumers read data from Kafka topics.
 
-### Authentication
-
-#### NestJS Auth Module
+### NestJS Auth Module
 
 The NestJS Auth Module plugin provides all the basic modules required for authentication of the service.
 Installation of this plugin is mandatory for the service to be authenticated, and must be installed together with the JwT Auth Provider plugin or the Basic Auth Provider plugin, as follows:
 
-#### JWT Auth Provider
+### JWT Auth Provider
 
 [Passport](http://www.passportjs.org/) based JWT authentication involves the client sending a request to the server with a user's credentials in the form of a username and password. The server then authenticates the user and issues a JWT if the credentials are valid. This allows the client to authenticate subsequent requests to the server using the JWT.
 Read more about authentication [here](https://docs.nestjs.com/security/authentication). 
 
-#### Basic Auth Provider
+### Basic Auth Provider
 
 Basic authentication is a simple authentication scheme built into the HTTP protocol that involves sending a request to a server with a user's credentials in the form of a username and password. The credentials are encoded in base64 and included in the Authorization header of the request.
 
