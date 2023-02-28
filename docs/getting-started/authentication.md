@@ -122,7 +122,12 @@ Currently, the auth plugins are installed by default when a new service is creat
 
 If you choose to uninstall auth plugins after pushing it to GitHub, the changes may not be reflected in the customizable files (files that are not in the base folder), and you will receive the following compilation errors:
 
-![](./assets/authentication/uninstall-auth-plugins.png)
+![Uninstall](./assets/authentication/uninstall-auth-plugins.png)
+
+You need to fix it manually, as follows:
+
+- Remove imports from files that do not exist, for example: `../auth/gqlDefaultAuth.guard`
+- Remove the `rolesBuilder` from the `super()` in the constructor (in each entity controller/resolver).
 
 
 ## Custom Authentication with Passport
@@ -134,3 +139,14 @@ Amplication uses the `@nestjs/passport` module as middleware to support authenti
 Passport supports many authentication strategies available as `npm` modules, which you can implement in your generated project. You can easily integrate the library with a `Nest` application using the [`@nestjs/passport`](https://docs.nestjs.com/security/authentication) module.
 
 Passport has a rich ecosystem of [strategies](https://www.passportjs.org/concepts/authentication/strategies/) that implement various authentication mechanisms.
+
+
+## Creating a Service Without Authentication
+
+Amplication enables you to set up a service in the generated app that can run without authentication and authorization. 
+
+This is useful for a public-facing service that does not handle sensitive or personal information and you wish to enable access to anyone without the need for a login or password. Typical use cases include displaying public information, such as a public event or a weather forecast, and returning search results from a public database.
+
+Alternatively, this might be useful when you need background services that don't expose endpoints to end users. The service may be part of a larger system where authentication is handled at a different level, such as a gateway or reverse proxy. Typical use cases include where an organization’s internal services communicate with each other, and public facing APIs that do not require authentication. 
+
+To create a service without authentication, do not install the authentication plugins.
