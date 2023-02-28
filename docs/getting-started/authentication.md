@@ -122,7 +122,7 @@ Currently, the auth plugins are installed by default when a new service is creat
 
 If you choose to uninstall auth plugins after pushing it to GitHub, the changes may not be reflected in the customizable files (files that are not in the base folder), and you will receive the following compilation errors:
 
-![](./assets/authentication/unistall-auth-plugins.png)
+![](./assets/authentication/uninstall-auth-plugins.png)
 
 
 ## Custom Authentication with Passport
