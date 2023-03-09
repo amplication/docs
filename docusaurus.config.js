@@ -38,8 +38,13 @@ module.exports = {
       },
       items: [
         {
+          href: "https://amplication.com/contact-us",
+          html: "Contact Us",
+          position: "right",
+        },
+        {
           href: "https://github.com/amplication/amplication",
-          label: "GitHub",
+          html: "GitHub",
           position: "right",
         },
       ],
