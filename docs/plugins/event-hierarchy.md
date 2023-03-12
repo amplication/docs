@@ -15,8 +15,4 @@ Each of these main events includes other events to create the server’s files a
 
 The following diagram represents the execution order of the events in DSG.
 
-- The rectangles with the purple background are functions wrapped with a plugin wrapper and the title represents the event names
-- Resource creation (the yellow rectangle) is a function that executes the events of the resources (services, controllers, resolvers) creation.
-- Create message broker (the pink rectangle) is a function wrapped with a plugin wrapper (meaning that the title is the event name), but also executes the other events of the message broker creation.
-
-![](.\assets\events-hierarchy.drawio.svg)
+![](.\assets\heirarchy.png)
