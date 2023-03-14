@@ -47,11 +47,10 @@ slug: /tutorials/angular-todos/step-004
    export class AppModule { }
    ```
 
-2. We'll want to abstract some variables, such as our API url, into a reusable resource. In `web/src/environments/environment.ts` and `web/src/environments/environment.prod.ts` add the following properties to the `environment` export:
+2. We'll want to abstract some variables, such as our API url, into a reusable resource. In terminal, in the `web` directory, run the following command `ng generate environments`. Then in the newly generated `web/src/environments/environment.ts` and `web/src/environments/environment.development.ts` files add the following properties to the `environment` export:
 
    ```diff
    export const environment = {
-      production: false,
    +   apiUrl: 'http://localhost:3000',
    +   jwtKey: 'accessToken',
    };
@@ -68,42 +67,42 @@ slug: /tutorials/angular-todos/step-004
    ```ts
    import { Injectable } from '@angular/core';
    import {
-   HttpInterceptor,
-   HttpEvent,
-   HttpRequest,
-   HttpHandler,
+      HttpInterceptor,
+      HttpEvent,
+      HttpRequest,
+      HttpHandler,
    } from '@angular/common/http';
    import { Observable } from 'rxjs';
    import { environment } from '../environments/environment';
 
    @Injectable({
-   providedIn: 'root',
+      providedIn: 'root',
    })
    export class JWTService implements HttpInterceptor {
-   get jwt(): string {
-      return localStorage.getItem(environment.jwtKey) || '';
-   }
-
-   set jwt(accessToken: string) {
-      localStorage.setItem(environment.jwtKey, accessToken);
-   }
-
-   get isStoredJwt(): boolean {
-      return Boolean(this.jwt);
-   }
-
-   intercept(
-      request: HttpRequest<any>,
-      next: HttpHandler
-   ): Observable<HttpEvent<any>> {
-      if (request.url.startsWith(environment.apiUrl)) {
-         request = request.clone({
-         setHeaders: { Authorization: `Bearer ${this.jwt}` },
-         });
+      get jwt(): string {
+         return localStorage.getItem(environment.jwtKey) || '';
       }
 
-      return next.handle(request);
-   }
+      set jwt(accessToken: string) {
+         localStorage.setItem(environment.jwtKey, accessToken);
+      }
+
+      get isStoredJwt(): boolean {
+         return Boolean(this.jwt);
+      }
+
+      intercept(
+         request: HttpRequest<any>,
+         next: HttpHandler
+      ): Observable<HttpEvent<any>> {
+         if (request.url.startsWith(environment.apiUrl)) {
+            request = request.clone({
+               setHeaders: { Authorization: `Bearer ${this.jwt}` },
+            });
+         }
+
+         return next.handle(request);
+      }
    }
    ```
 
@@ -278,7 +277,7 @@ export class AuthComponent {
   });
   isLogin = true;
 
-  constructor(private fb: FormBuilder, private auth: AuthService) {}
+  constructor(private fb: FormBuilder, private auth: AuthService) { }
 
   onSubmit() {
     const { username, password, confirm } = this.authForm.getRawValue() as {
@@ -307,28 +306,10 @@ export class AuthComponent {
 ```html
 <form [formGroup]="authForm" (ngSubmit)="onSubmit()">
   <h2>{{isLogin ? "Login" : "Sign Up"}}</h2>
-  <input
-    name="username"
-    type="text"
-    placeholder="username"
-    formControlName="username"
-    required
-  />
-  <input
-    name="password"
-    type="password"
-    placeholder="password"
-    formControlName="password"
-    required
-  />
-  <input
-    *ngIf="!isLogin"
-    name="confirmPassword"
-    type="password"
-    placeholder="confirm password"
-    formControlName="confirm"
-    required
-  />
+  <input name="username" type="text" placeholder="username" formControlName="username" required />
+  <input name="password" type="password" placeholder="password" formControlName="password" required />
+  <input *ngIf="!isLogin" name="confirmPassword" type="password" placeholder="confirm password"
+    formControlName="confirm" required />
 
   <button type="submit">Submit</button>
   <button type="button" (click)="isLogin = !isLogin">

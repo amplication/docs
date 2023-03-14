@@ -108,8 +108,8 @@ Then replace the `HttpClient` in the `AuthService` constructor with `Apollo`:
 
 ```diff
 export class AuthService {
--    constructor(private http: HttpClient, private jwt: JWTService) {}
-+    constructor(private apollo: Apollo, private jwt: JWTService) {}
+-    constructor(private http: HttpClient, private jwt: JWTService) { }
++    constructor(private apollo: Apollo, private jwt: JWTService) { }
 
    me() {
 ```
@@ -132,10 +132,10 @@ export class AuthService {
    me() {
       return this.jwt.isStoredJwt
          ? this.apollo.query({ query: GET_ME }).pipe(
-            catchError(() => of(null)),
+            catchError(() => of()),
             map(({ data }: any) => data?.me)
          )
-         : of(null);
+         : of();
    }
    ```
 
@@ -165,7 +165,7 @@ export class AuthService {
             variables: { credentials: { username, password } },
          })
          .pipe(
-            catchError(() => of(null)),
+            catchError(() => of()),
             mergeMap(({ data }: any) => {
                const { login } = data;
                if (!login) {
@@ -207,7 +207,7 @@ export class AuthService {
             variables: { credentials: { username, password } },
          })
          .pipe(
-            catchError(() => of(null)),
+            catchError(() => of()),
             mergeMap(({ data }: any) => {
                const { signup } = data;
                if (!signup) {
@@ -283,7 +283,7 @@ export class TasksService {
         },
       })
       .pipe(
-        catchError(() => of(null)),
+        catchError(() => of()),
         map(({ data }: any) =>
           data ? data.createTask : alert('Could not create task')
         )
@@ -300,7 +300,7 @@ export class TasksService {
         },
       })
       .pipe(
-        catchError(() => of(null)),
+        catchError(() => of()),
         map(({ data }: any) => {
           if (!data) {
             alert('Could not get tasks');
@@ -326,7 +326,7 @@ export class TasksService {
         },
       })
       .pipe(
-        catchError(() => of(null)),
+        catchError(() => of()),
         map(({ data }: any) =>
           data ? data.updateTask : alert('Could not update task')
         )

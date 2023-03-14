@@ -49,7 +49,7 @@ In the previous step, we applied permissions to the `User` entity so that only u
         accessToken,
         username: user.username,
         id: user.id,
-        roles: (user.roles as UserRoles).roles,
+        roles: (user.roles as {roles: string[]}).roles,
       };
     }
    ```
@@ -104,7 +104,6 @@ Besides allowing for new users to be created, we also want to be able to get inf
    import { Credentials } from "./Credentials";
    import { PasswordService } from "./password.service";
    import { TokenService } from "./token.service";
-   import { UserRoles } from "./UserRoles";
    import { UserInfo } from "./UserInfo";
    import { User } from "../user/base/User";
    ```
