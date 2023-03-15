@@ -15,4 +15,4 @@ Each of these main events includes other events to create the server’s files a
 
 The following diagram represents the execution order of the events in DSG.
 
-![](.\assets\heirarchy.png) 
+![](.\assets\hierarchy.png) 
