@@ -57,7 +57,7 @@ module.exports = {
           items: [
             {
               label: "Discord",
-              href: "https://discord.gg/b8MrjU6",
+              href: "https://amplication.com/discord",
             },
             {
               label: "Twitter",

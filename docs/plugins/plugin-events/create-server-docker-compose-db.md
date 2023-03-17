@@ -1,10 +1,9 @@
 ---
-id: CreateServerDockerComposeDb
+id: create-server-docker-compose-db
 title: Create Server Docker Compose DB
 sidebar_label: Create Server Docker Compose DB
-slug: /plugins/plugin-events/CreateServerDockerComposeDb
+slug: /plugins/plugin-events/create-server-docker-compose-db
 ---
-
 
 # Create Server Docker Compose DB
 
@@ -13,21 +12,22 @@ slug: /plugins/plugin-events/CreateServerDockerComposeDb
 Creates the `docker-compose.db.yml` file of the service
 
 ## Event Name:
+
 `CreateServerDockerComposeDB`
 
 ## Event Params
 
 ```ts
 export interface CreateServerDockerComposeDBParams extends EventParams {
-    fileContent: string;
-    updateProperties: {[key: string]: any;}[];
-    outputFileName: string;
+  fileContent: string;
+  updateProperties: { [key: string]: any }[];
+  outputFileName: string;
 }
 ```
 
 ### fileContent
 
-The default content of the file as a string. If needed, the value can be parsed as an object using a YAML utility. 
+The default content of the file as a string. If needed, the value can be parsed as an object using a YAML utility.
 
 In most cases, there is no need to manipulate the property directly. Instead, use the `updateProperties` param.
 
@@ -35,7 +35,7 @@ In most cases, there is no need to manipulate the property directly. Instead, us
 
 An array that accepts any object that will be merged into the docker-compose file.
 
-The object will be deeply merged into the previous state of the file. 
+The object will be deeply merged into the previous state of the file.
 
 multiple plugins can add objects into this array, and they will be merged by the order of execution of the plugins
 
@@ -55,7 +55,7 @@ beforeCreateServerDockerComposeDB(
   }
 ```
 
- As a result the`CreateServerDockerComposeDB` is not running and you would have to provide your logic in the `after` lifecycle event.
+As a result the`CreateServerDockerComposeDB` is not running and you would have to provide your logic in the `after` lifecycle event.
 For that, you need to provide the path to your `docker-compose.db.yml` and set the path in which you want the `docker-compose.db.yml` will be generated.
 
 ```ts
@@ -72,6 +72,6 @@ For that, you need to provide the path to your `docker-compose.db.yml` and set t
 
 ### outputFileName
 
-The file name of the docker-compose file, the default value is `docker-compose.db.yml` 
+The file name of the docker-compose file, the default value is `docker-compose.db.yml`
 
 It is recommended not to change the file name unless specifically required and the impact is understood.
