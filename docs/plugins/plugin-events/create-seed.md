@@ -1,8 +1,8 @@
 ---
-id: CreateSeed
+id: create-seed
 title: Create Seed
 sidebar_label: Create Seed
-slug: /plugins/plugin-events/CreateSeed
+slug: /plugins/plugin-events/create-seed
 ---
 
 # Create Seed

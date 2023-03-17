@@ -1,9 +1,10 @@
 ---
-id: CreateServerAuth
+id: create-server-auth
 title: Create Server Auth
 sidebar_label: Create Server Auth
-slug: /plugins/plugin-events/CreateServerAuth
+slug: /plugins/plugin-events/create-server-auth
 ---
+
 # Create Server Authorization
 
 ## Description
@@ -11,6 +12,7 @@ slug: /plugins/plugin-events/CreateServerAuth
 Creates the Authorization directory with the selected strategy (basic/JWT)
 
 ## Event Name
+
 ` CreateServerAuth`
 
 ## Event Params
@@ -22,11 +24,13 @@ export interface CreateServerAuthParams extends EventParams {
 ```
 
 ### srcDir
+
 The target directory the auth folder will be generated in
 
 **Example**
 In order to set the auth strategy, we should use the `before` lifecycle event and call the `skipDefaultBehavior` util.
 As a result, the default event won't run, but we would have to provide our logic in the `after` lifecycle event:
+
 - the path to our static auth folder
 - the path in which we want the auth folder to be generated in
 
@@ -67,4 +71,3 @@ For example, you can see the diff on `defaultAuth.guard.ts` after the auth-basic
     super();
   }
 ```
-

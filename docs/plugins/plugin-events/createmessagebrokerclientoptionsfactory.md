@@ -1,10 +1,9 @@
 ---
-id: CreateMessageBrokerClientOptionsFactory
+id: create-message-broker-client-options-factory
 title: Create Message Broker Client Options Factory
 sidebar_label: Create Message Broker Client Options Factory
-slug: /plugins/plugin-events/CreateMessageBrokerClientOptionsFactory
+slug: /plugins/plugin-events/create-message-broker-client-options-factory
 ---
-
 
 # Create Message Broker Client Options Factory
 
@@ -14,8 +13,8 @@ Creates the client options of the message broker.
 
 This event does NOTHING by default. All of the logic is handled by the broker-kafka plugin https://github.com/amplication/plugins/tree/master/plugins/broker-kafka
 
-
 ## Event Name
+
 `CreateMessageBrokerClientOptionsFactory`
 
 ## Event Params
@@ -23,10 +22,12 @@ This event does NOTHING by default. All of the logic is handled by the broker-ka
 There are no additional params to this event
 
 ```ts
-export interface CreateMessageBrokerClientOptionsFactoryParams extends EventParams {}
+export interface CreateMessageBrokerClientOptionsFactoryParams
+  extends EventParams {}
 ```
 
 Example:
+
 ```ts
   async afterCreateMessageBrokerClientOptionsFactory(
     context: DsgContext,
@@ -50,6 +51,3 @@ Example:
     ];
   }
 ```
-
-
-

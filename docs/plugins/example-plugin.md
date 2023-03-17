@@ -1,21 +1,21 @@
 ---
-id: ExamplePlugin
-title: Example - Developing a Plugin 
+id: example-plugin
+title: Example - Developing a Plugin
 sidebar_label: Example - Developing a Plugin
-slug: /plugins/ExamplePlugin
+slug: /plugins/example-plugin
 ---
 
-Amplication includes several plugins -  some allow you to choose an authentication strategy, some allow you to choose which database you want to integrate with and one allows you to connect your service to a message broker.
+Amplication includes several plugins - some allow you to choose an authentication strategy, some allow you to choose which database you want to integrate with and one allows you to connect your service to a message broker.
 
 Before any development of a plugin, we take the following steps:
 
 1. Generate a service with Amplication
 2. Apply the changes that we need:
-    a. Add the missing functionality
-    b. Manipulate the existing functionality
+   a. Add the missing functionality
+   b. Manipulate the existing functionality
 3. use the knowledge from the previous step to design the plugin:
-    a. Which events need to be used
-    b. How to use the events with the before and after lifecycle functions
+   a. Which events need to be used
+   b. How to use the events with the before and after lifecycle functions
 
 The most straightforward example to illustrate this development workflow is the [MySQL](https://github.com/amplication/plugins/tree/master/plugins/db-mysql) plugin, as we already have the functionality of a database connection:
 
@@ -48,7 +48,7 @@ register(): Events {
   }
 ```
 
-`CreateServer` : before 
+`CreateServer` : before
 
 On this event we are taking care of the Prisma limitation regrading list of primitives values on MySQL provider.
 
@@ -59,7 +59,7 @@ beforeCreateServer(context: DsgContext, eventParams: CreateServerParams) {
     const generateErrorMessage = (
       entityName: string,
       fieldName: string
-    ) => `MultiSelectOptionSet (list of primitives type) on entity: ${entityName}, field: ${fieldName}, is not supported by MySQL prisma provider. 
+    ) => `MultiSelectOptionSet (list of primitives type) on entity: ${entityName}, field: ${fieldName}, is not supported by MySQL prisma provider.
     You can select another data type or change your DB to PostgreSQL`;
 
     context.entities?.forEach(({ name: entityName, fields }) => {
@@ -100,7 +100,7 @@ beforeCreateServerDockerComposeDB(
 
 `CreateServerDockerComposeDB` : after
 
-On this event, after we skip the default behavior in the `before` function, we provide our `docker-compose.db.yml` file. 
+On this event, after we skip the default behavior in the `before` function, we provide our `docker-compose.db.yml` file.
 
 ```tsx
 async afterCreateServerDockerComposeDB(context: DsgContext) {

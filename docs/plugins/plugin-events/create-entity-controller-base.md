@@ -1,8 +1,8 @@
 ---
-id: CreateEntityControllerBase
+id: create-entity-controller-base
 title: Create Entity Controller Base
 sidebar_label: Create Entity Controller Base
-slug: /plugins/plugin-events/CreateEntityControllerBase
+slug: /plugins/plugin-events/create-entity-controller-base
 ---
 
 # Create Entity Controller Base

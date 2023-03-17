@@ -1,19 +1,20 @@
 ---
-id: CreateMessageBroker
+id: create-message-broker
 title: Create Message Broker
 sidebar_label: Create Message Broker
-slug: /plugins/plugin-events/CreateMessageBroker
+slug: /plugins/plugin-events/create-message-broker
 ---
 
 # Create Message Broker
 
 ## Description
 
-Creates the message broker. 
+Creates the message broker.
 
 This event does NOTHING by default. All of the logic is handled by the broker-kafka plugin https://github.com/amplication/plugins/tree/master/plugins/broker-kafka
 
 ## Event Name
+
 `CreateMessageBroker`
 
 ## Event Params
@@ -25,6 +26,7 @@ export interface CreateMessageBrokerParams extends EventParams {}
 ```
 
 Example:
+
 ```ts
   beforeCreateBroker(
     dsgContext: DsgContext,

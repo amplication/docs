@@ -1,8 +1,8 @@
 ---
-id: CreateMessageBrokerNestjsModule
+id: create-message-broker-nestjs-module
 title: Create Message Broker NestJS Module
 sidebar_label: Create Message Broker NestJS Module
-slug: /plugins/plugin-events/CreateMessageBrokerNestjsModule
+slug: /plugins/plugin-events/create-message-broker-nestjs-module
 ---
 
 # Create Message Broker NestJS Module
@@ -13,8 +13,8 @@ Creates the NestJS of the message broker.
 
 This event does NOTHING by default. All of the logic is handled by the broker-kafka plugin https://github.com/amplication/plugins/tree/master/plugins/broker-kafka
 
-
 ## Event Name
+
 `CreateMessageBrokerNestJSModule`
 
 ## Event Params
@@ -26,6 +26,7 @@ export interface CreateMessageBrokerNestJSModuleParams extends EventParams {}
 ```
 
 Example:
+
 ```ts
   async afterCreateMessageBrokerNestJSModule(
     context: DsgContext,
@@ -45,6 +46,3 @@ Example:
     return [this.moduleFile];
   }
 ```
-
-
-

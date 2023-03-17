@@ -31,10 +31,10 @@ If you want to help out with a code contribution, our project uses the following
 
 ### Server-side
 
-- [Node.JS](https://nodejs.org/)
+- [Node.js](https://nodejs.org/en)
 - [TypeScript](https://www.typescriptlang.org/docs)
 - [NestJS](https://docs.nestjs.com/)
-- [Prisma](https://www.prisma.io/docs/) (with [PostgreSQL](https://www.postgresql.org/about/))
+- [Prisma](https://www.prisma.io/docs) (with [PostgreSQL](https://www.postgresql.org/about/))
 - [GraphQL API](https://docs.nestjs.com/graphql/quick-start)
 - [Jest](https://docs.nestjs.com/fundamentals/testing) (for testing)
 

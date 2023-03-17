@@ -1,9 +1,9 @@
 ---
 
-id: CreateEntityControllerSpec
+id: create-entity-controller-spec
 title: Create Entity Controller Spec
 sidebar_label: Create Entity Controller Spec
-slug: /plugins/plugin-events/CreateEntityControllerSpec
+slug: /plugins/plugin-events/create-entity-controller-spec
 ---# Create Entity Controller Spec
 
 ## Description

@@ -1,8 +1,8 @@
 ---
-id: CreateServerDockerCompose
+id: create-server-docker-compose
 title: Create Server Docker Compose
 sidebar_label: Create Server Docker Compose
-slug: /plugins/plugin-events/CreateServerDockerCompose
+slug: /plugins/plugin-events/create-server-docker-compose
 ---
 
 # Create Server Docker Compose
