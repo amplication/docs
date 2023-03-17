@@ -1,6 +1,6 @@
 ---
 id: contributing
-sidebar_label: Contributing 
+sidebar_label: Contributing
 slug: /contributing
 ---
 
@@ -10,7 +10,7 @@ We would ❤️ it if you contributed to the project and helped make Amplication
 
 ## Got a question?
 
-You can ask questions, consult with more experienced Amplication users, and discuss Amplication-related topics in the our [Discord channel](https://discord.gg/b8MrjU6).
+You can ask questions, consult with more experienced Amplication users, and discuss Amplication-related topics in the our [Discord channel](https://amplication.com/discord).
 
 ## Found a bug?
 
@@ -71,7 +71,7 @@ Set up and run the development environment on your local machine (for details, s
 
 ### Step 4: Create a branch
 
- Create a new branch for your fix.
+Create a new branch for your fix.
 
 ```bash
 git checkout -b branch-name-here
@@ -110,14 +110,14 @@ git push origin branch-name-here
 In GitHub, do the following to submit a pull request to the upstream repository:
 
 1. Give the pull request a title and a short description of the changes made. Include also the issue or bug number associated with your change. Explain the changes that you made, any issues you think exist with the pull request you made, and any questions you have for the maintainer.
-  :::tip
-  Remember, it's okay if your pull request is not perfect (no pull request ever is). The reviewer will be able to help you fix any problems and improve it!
-  :::
+   :::tip
+   Remember, it's okay if your pull request is not perfect (no pull request ever is). The reviewer will be able to help you fix any problems and improve it!
+   :::
 2. Wait for the pull request to be reviewed by a maintainer.
 3. Make changes to the pull request if the reviewing maintainer recommends them.
-  :::important
-  Celebrate your success after your pull request is merged :-)
-  :::
+   :::important
+   Celebrate your success after your pull request is merged :-)
+   :::
 
 ## Git Commit Messages
 

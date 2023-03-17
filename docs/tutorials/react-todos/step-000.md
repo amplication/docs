@@ -26,4 +26,4 @@ You'll also need an Amplication account, [visit here](https://app.amplication.co
 
 What we will do is go step by step to create a `Todos` application using React for your frontend and Amplication for your backend.
 
-If you get stuck, have any questions, or just want to say hi to other Amplication developers like yourself, then you should join our [Discord](https://discord.com/invite/KSJCZ24vj2)!
+If you get stuck, have any questions, or just want to say hi to other Amplication developers like yourself, then you should join our [Discord](https://amplication.com/discord)!
