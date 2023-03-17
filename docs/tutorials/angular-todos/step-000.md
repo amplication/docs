@@ -12,7 +12,7 @@ Welcome to this tutorial on how to build a full-stack application with Amplicati
 This guide assumes that you have, at minimum, a working understanding of the following:
 
 - [Angular](https://angular.io/)
-- [Node](https://nodejs.org/)
+- [Node](https://nodejs.org/en)
 - [GitHub](https://github.com/)
 - An IDE
 
