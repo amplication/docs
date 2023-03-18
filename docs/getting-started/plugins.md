@@ -2,7 +2,7 @@
 id: plugins
 title: Using Plugins
 sidebar_label: Using Plugins
-slug: getting-started/plugins
+slug: /getting-started/plugins
 ---
 
 ## Overview
