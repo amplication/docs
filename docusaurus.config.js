@@ -102,6 +102,49 @@ module.exports = {
   plugins: [
     "./plugins/analytics",
     [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          {
+            to: "/docs/getting-started",
+            from: ["/guides/getting-started"],
+          },
+          {
+            to: "/docs/getting-started/dev-env",
+            from: ["/docs/how-to/dev-env"],
+          },
+          {
+            to: "/faqs/",
+            from: ["/faqs/faqs/faqs/"],
+          },
+          {
+            to: "/getting-started/plugins/",
+            from: ["/getting-started/getting-started/plugins/"],
+          },
+          {
+            to: "/about/licensing/",
+            from: ["/about/about/licensing/"],
+          },
+          {
+            to: "/api/generated-api-pagination/",
+            from: ["/api/api/generated-api-pagination/"],
+          },
+          {
+            to: "/api/generated-api-filtering/",
+            from: ["/api/api/generated-api-filtering/"],
+          },
+          {
+            to: "/api/generated-api-sorting/",
+            from: ["/api/api/generated-api-sorting/"],
+          },
+          {
+            to: "/api/generated-api-sorting/",
+            from: ["/getting-started/getting-started/phone-home/"],
+          },
+        ],
+      },
+    ],
+    [
       require.resolve("docusaurus-gtm-plugin"),
       {
         id: "GTM-TQF7HCF", // GTM Container ID

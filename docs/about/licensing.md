@@ -2,7 +2,7 @@
 id: licensing
 title: Amplication’s licensing model
 sidebar_label: Amplication’s licensing model
-slug: about/licensing
+slug: /about/licensing
 ---
 
 # Amplication’s Licensing Model

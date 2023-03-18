@@ -2,7 +2,7 @@
 id: generated-api-pagination
 title: API Pagination
 sidebar_label: Generated API Pagination
-slug: api/generated-api-pagination
+slug: /api/generated-api-pagination
 ---
 
 # Generated API Pagination
