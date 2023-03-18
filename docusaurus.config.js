@@ -106,11 +106,11 @@ module.exports = {
       {
         redirects: [
           {
-            to: "/docs/getting-started",
+            to: "/getting-started/",
             from: ["/guides/getting-started"],
           },
           {
-            to: "/docs/getting-started/dev-env",
+            to: "/getting-started/dev-env/",
             from: ["/docs/how-to/dev-env"],
           },
           {
