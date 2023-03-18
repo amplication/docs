@@ -26,8 +26,10 @@ When running a local Amplication server you first need to configure the server t
    - **Webhook > Active** - "unchecked"
    - **Permissions > Repository permissions**
      - **Administration** - `Access: Read and Write`
-     - **Checks** - `Access: Read and Write`
      - **Content** - `Access: Read and Write`
+     - **Metadata** - `Access: Read-only`
+     - **Pull requests** - `Access: Read and Write`
+     - **Webhooks** - `Access: Read and Write`
 3. Click Save
 4. Click `Generate new client secret` and copy the resulting secret
 5. Click `Generate a private key`, download, open the generated certificate, add `\n` at the end of each line and join all lines to obtain a single line string
