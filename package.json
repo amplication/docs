@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "start": "docusaurus start --host 0.0.0.0",
     "build": "docusaurus build",
     "postbuild": "copyfiles -f \"./netlify.toml\" build",
     "swizzle": "docusaurus swizzle",
