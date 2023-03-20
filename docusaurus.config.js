@@ -38,6 +38,36 @@ module.exports = {
       },
       items: [
         {
+          type: 'doc',
+          docId: 'welcome',
+          position: 'left',
+          label: 'Get Started',
+        },
+        {
+          type: 'doc',
+          docId: 'tutorials/overview',
+          position: 'left',
+          label: 'Tutorials',
+        },
+        {
+          type: 'doc',
+          docId: 'how-to/overview',
+          position: 'left',
+          label: 'How Tos',
+        },
+        {
+          type: 'doc',
+          docId: 'custom-code/overview',
+          position: 'left',
+          label: 'Customize',
+        },
+        {
+          type: 'doc',
+          docId: 'api/overview',
+          position: 'left',
+          label: 'Generate',
+        },
+        {
           href: "https://amplication.com/contact-us",
           html: "Contact Us",
           position: "right",
@@ -53,7 +83,32 @@ module.exports = {
       style: "dark",
       links: [
         {
-          title: "Community",
+          title: "Docs",
+          items: [
+            {
+              to: 'welcome',
+              label: 'Get Started'
+            },
+            {
+              to: 'tutorials/overview',
+              label: 'Tutorials'
+            },
+            {
+              to: 'how-to/overview',
+              label: 'How Tos'
+            },
+            {
+              to: 'custom-code/overview',
+              label: 'Customize'
+            },
+            {
+              to: 'api/overview',
+              label: 'Generate'
+            }
+          ],
+        },
+        {
+          title: "Follow Us",
           items: [
             {
               label: "Discord",
@@ -73,6 +128,27 @@ module.exports = {
             },
           ],
         },
+        {
+          title: "Company",
+          items: [
+            {
+              label: "Blog",
+              href: "https://amplication.com/blog"
+            },
+            {
+              label: "About Us",
+              href: "https://amplication.com/about"
+            },
+            {
+              label: "Team",
+              href: "https://amplication.com/team"
+            },
+            {
+              label: "Contact Us",
+              href: "https://amplication.com/contact-us"
+            }
+          ]
+        }
       ],
       copyright: `Copyright © ${new Date().getFullYear()} amplication. Built with Docusaurus.`,
     },
