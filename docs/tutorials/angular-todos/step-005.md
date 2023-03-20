@@ -230,10 +230,10 @@ import { AuthService } from './auth.service';
    ```diff
    setUser(user: any) {
       this.user = user;
-      if (!user) return;
-      this.ts.getAll(user.id).subscribe({
-         next: (tasks: any[]) => (this.tasks = [...tasks]),
-      });
+   +    if (!user) return;
+   +    this.ts.getAll(user.id).subscribe({
+   +       next: (tasks: any[]) => (this.tasks = [...tasks]),
+   +    });
    }
    ```
 

@@ -2,19 +2,21 @@
 id: installation-fails
 title: Installation fails
 tags:
- - node.js
- - npm
- - Typescript
- - Setup
+  - node.js
+  - npm
+  - Typescript
+  - Setup
 sidebar_label: Installation fails
 slug: /errors/installation-fails
 ---
 
 ## Overview
+
 Attempting to install npm with the following command fails:
 `npm run setup:dev`
 
-## Symptoms 
+## Symptoms
+
 Attempting to run `npm run setup:dev` is not successful. An error message may, or may not, be displayed.
 
 ## Cause
@@ -27,7 +29,7 @@ The most common causes are:
 
 - Installation is stopped before completion of the process.
 
-    >npm run setup:dev runs multiple processes so it will often takes longer than expected. This may cause the user to assume that the process has stopped responding.
+  > npm run setup:dev runs multiple processes so it will often takes longer than expected. This may cause the user to assume that the process has stopped responding.
 
 ## Resolution
 
@@ -37,11 +39,11 @@ We recommend doing the following:
 
 - If you stopped the process in the middle, delete node modules and re-install npm as follows:
 
- ```bash
- npm run clean
- npm install
- npm run setup:dev
- ```
+```bash
+npm run clean
+npm install
+npm run setup:dev
+```
 
 :::note
 Stopping the installation process can result in changes to the package.json. We recommend checking that Lerna did not change the file, and if it did, to discard the changes.
@@ -49,8 +51,7 @@ Stopping the installation process can result in changes to the package.json. We 
 
 - If the process failed after stage 5, check that Docker is running.
 
-- Ask for help on our [Discord Server](https://discordapp.com/channels/757179260417867879/781089015548870695)
-
+- Ask for help on our [Discord Server](https://amplication.com/discord)
 
 ## Related Issue
 

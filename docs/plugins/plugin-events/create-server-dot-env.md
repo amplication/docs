@@ -1,9 +1,10 @@
 ---
-id: CreateServerDotEnv
+id: create-server-dot-env
 title: Create Server Dot Env
 sidebar_label: Create Server Dot Env
-slug: /plugins/plugin-events/CreateServerDotEnv
+slug: /plugins/plugin-events/create-server-dot-env
 ---
+
 # Create Server Dot Env
 
 ## Description
@@ -11,6 +12,7 @@ slug: /plugins/plugin-events/CreateServerDotEnv
 Creates the server's `.env` file
 
 ## Event Name
+
 `CreateServerDotEnv`
 
 ## Event Params
@@ -28,6 +30,7 @@ export type VariableDictionary = {
 ```
 
 ### envVariables
+
 An Array of objects represents the key-value pairs the user wants to add to the generated `.env` file.
 
 **Example**
@@ -55,9 +58,7 @@ beforeCreateServerDotEnv(
 The values: `${dbUser}` , `${dbPassword}` , `${dbPort}`, `${dbHost}` , `${dbName}` are coming from:
 my-project => my-service => settings => database
 
-
 ![](./assets/dbsettings.png)
 
-As you can see in the screenshot, the only variable that doesn't have a default value is the  `${dbName}`.
-When you install one of the DB plugins, the value of  `${dbName}` is the service name.
-
+As you can see in the screenshot, the only variable that doesn't have a default value is the `${dbName}`.
+When you install one of the DB plugins, the value of `${dbName}` is the service name.
