@@ -178,6 +178,10 @@ const sidebars = {
     {
       type: "category",
       label: "Troubleshooting",
+      link: {
+        type: "doc",
+        id: "errors/index"
+      },
       items: [
         {
           type: "category",

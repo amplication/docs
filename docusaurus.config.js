@@ -62,6 +62,12 @@ module.exports = {
         },
         {
           type: 'doc',
+          docId: 'errors/index',
+          position: 'left',
+          label: 'Troubleshooting',
+        },
+        {
+          type: 'doc',
           docId: 'api/index',
           position: 'left',
           label: 'Generate',
@@ -99,6 +105,10 @@ module.exports = {
             {
               to: 'custom-code',
               label: 'Customize'
+            },
+            {
+              to: 'errors',
+              label: 'Troubleshooting'
             },
             {
               to: 'api',
