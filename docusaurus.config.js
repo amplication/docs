@@ -38,32 +38,31 @@ module.exports = {
       },
       items: [
         {
-          type: 'doc',
-          docId: 'welcome',
+          to: '/',
           position: 'left',
-          label: 'Get Started',
+          label: 'Get Started'
         },
         {
           type: 'doc',
-          docId: 'tutorials/overview',
+          docId: 'tutorials/index',
           position: 'left',
           label: 'Tutorials',
         },
         {
           type: 'doc',
-          docId: 'how-to/overview',
+          docId: 'how-to/index',
           position: 'left',
           label: 'How Tos',
         },
         {
           type: 'doc',
-          docId: 'custom-code/overview',
+          docId: 'custom-code/index',
           position: 'left',
           label: 'Customize',
         },
         {
           type: 'doc',
-          docId: 'api/overview',
+          docId: 'api/index',
           position: 'left',
           label: 'Generate',
         },
@@ -86,23 +85,23 @@ module.exports = {
           title: "Docs",
           items: [
             {
-              to: 'welcome',
+              to: '/',
               label: 'Get Started'
             },
             {
-              to: 'tutorials/overview',
+              to: 'tutorials',
               label: 'Tutorials'
             },
             {
-              to: 'how-to/overview',
+              to: 'how-to',
               label: 'How Tos'
             },
             {
-              to: 'custom-code/overview',
+              to: 'custom-code',
               label: 'Customize'
             },
             {
-              to: 'api/overview',
+              to: 'api',
               label: 'Generate'
             }
           ],
