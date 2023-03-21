@@ -108,8 +108,8 @@ Then replace the `HttpClient` in the `AuthService` constructor with `Apollo`:
 
 ```diff
 export class AuthService {
--    constructor(private http: HttpClient, private jwt: JWTService) {}
-+    constructor(private apollo: Apollo, private jwt: JWTService) {}
+-    constructor(private http: HttpClient, private jwt: JWTService) { }
++    constructor(private apollo: Apollo, private jwt: JWTService) { }
 
    me() {
 ```
@@ -132,10 +132,10 @@ export class AuthService {
    me() {
       return this.jwt.isStoredJwt
          ? this.apollo.query({ query: GET_ME }).pipe(
-            catchError(() => of(null)),
+            catchError(() => of()),
             map(({ data }: any) => data?.me)
          )
-         : of(null);
+         : of();
    }
    ```
 
@@ -165,7 +165,7 @@ export class AuthService {
             variables: { credentials: { username, password } },
          })
          .pipe(
-            catchError(() => of(null)),
+            catchError(() => of()),
             mergeMap(({ data }: any) => {
                const { login } = data;
                if (!login) {
@@ -207,7 +207,7 @@ export class AuthService {
             variables: { credentials: { username, password } },
          })
          .pipe(
-            catchError(() => of(null)),
+            catchError(() => of()),
             mergeMap(({ data }: any) => {
                const { signup } = data;
                if (!signup) {
@@ -226,10 +226,10 @@ export class AuthService {
 We'll next need to update the `TasksService` to use GraphQL. Open up `web/src/app/tasks.service.ts` and replace the code with the following:
 
 ```ts
-import { Injectable } from '@angular/core';
-import { Apollo, gql } from 'apollo-angular';
-import { of } from 'rxjs';
-import { catchError, map } from 'rxjs/operators';
+import { Injectable } from "@angular/core";
+import { Apollo, gql } from "apollo-angular";
+import { of } from "rxjs";
+import { catchError, map } from "rxjs/operators";
 
 const CREATE_TASK = gql`
   mutation createTask($data: TaskCreateInput!) {
@@ -265,7 +265,7 @@ const UPDATE_TASK = gql`
 `;
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class TasksService {
   constructor(private apollo: Apollo) {}
@@ -283,9 +283,9 @@ export class TasksService {
         },
       })
       .pipe(
-        catchError(() => of(null)),
+        catchError(() => of()),
         map(({ data }: any) =>
-          data ? data.createTask : alert('Could not create task')
+          data ? data.createTask : alert("Could not create task")
         )
       );
   }
@@ -296,14 +296,14 @@ export class TasksService {
         query: GET_TASKS,
         variables: {
           where: { uid: { id: uid } },
-          orderBy: { createdAt: 'Asc' },
+          orderBy: { createdAt: "Asc" },
         },
       })
       .pipe(
-        catchError(() => of(null)),
+        catchError(() => of()),
         map(({ data }: any) => {
           if (!data) {
-            alert('Could not get tasks');
+            alert("Could not get tasks");
             return [];
           }
 
@@ -326,9 +326,9 @@ export class TasksService {
         },
       })
       .pipe(
-        catchError(() => of(null)),
+        catchError(() => of()),
         map(({ data }: any) =>
-          data ? data.updateTask : alert('Could not update task')
+          data ? data.updateTask : alert("Could not update task")
         )
       );
   }
@@ -345,6 +345,6 @@ Users' tasks are now being saved to the Amplication backend with GraphQL queries
 
 Congratulations developer. Take with you what you've learned and build something amazing.
 
-If you need help or want to share what you're up to then you should join our [Discord](https://discord.com/invite/KSJCZ24vj2).
+If you need help or want to share what you're up to then you should join our [Discord](https://amplication.com/discord).
 
 To view the changes for this step, [visit here](https://github.com/amplication/angular-todos/compare/step-005...step-006).

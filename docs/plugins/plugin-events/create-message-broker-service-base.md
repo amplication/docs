@@ -1,8 +1,8 @@
 ---
-id: CreateMessageBrokerServiceBase
+id: create-message-broker-service-base
 title: Create Message Broker Service Base
 sidebar_label: Create Message Broker Service Base
-slug: /plugins/plugin-events/CreateMessageBrokerServiceBase
+slug: /plugins/plugin-events/create-message-broker-service-base
 ---
 
 # Create Message Broker Service Base
@@ -14,6 +14,7 @@ Creates the base service of the Kafka message broker.
 This event does NOTHING by default. All of the logic is handled by the broker-kafka plugin https://github.com/amplication/plugins/tree/master/plugins/broker-kafka
 
 ## Event Name
+
 `CreateMessageBrokerServiceBase`
 
 ## Event Params
@@ -25,6 +26,7 @@ export interface CreateMessageBrokerServiceBaseParams extends EventParams {}
 ```
 
 Example:
+
 ```ts
   async afterCreateMessageBrokerServiceBase(
     context: DsgContext,
@@ -41,4 +43,3 @@ Example:
     return [{ code: file, path }];
   }
 ```
-

@@ -1,15 +1,15 @@
 ---
 id: licensing
-title: Amplication’s licensing model 
-sidebar_label: Amplication’s licensing model 
-slug: about/licensing
+title: Amplication’s licensing model
+sidebar_label: Amplication’s licensing model
+slug: /about/licensing
 ---
 
-# Amplication’s Licensing Model 
+# Amplication’s Licensing Model
 
 ## Amplication Free, Pro, and Enterprise Editions
 
-Amplication was developed as an open-source software, and it is free for all to use. It is also offered for free on our managed service at [amplication.com](http://amplication.com).   Our strong belief in open-source has enabled us to create a revolution in the way applications are developed, saving hours of development time, and boosting productivity.
+Amplication was developed as an open-source software, and it is free for all to use. It is also offered for free on our managed service at [amplication.com](https://amplication.com). Our strong belief in open-source has enabled us to create a revolution in the way applications are developed, saving hours of development time, and boosting productivity.
 
 Amplication can now meet the needs of individual developers and startups and provide the advanced features, robustness, and scale required by enterprises through its Free, Pro, and Enterprise Editions:
 

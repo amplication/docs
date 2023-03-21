@@ -39,7 +39,7 @@ The REST API provide methods on all your data model. For each model, you can fin
 
 The GraphQL API is available at **/graphql** at the root of your application.
 
-When you navigate directly to **/graphql** you will see the [GraphQL Playground](https://www.apollographql.com/docs/apollo-server/testing/graphql-playground/) provided by Apollo Server.
+When you navigate directly to **/graphql** you will see the [GraphQL Playground](https://www.apollographql.com/docs/apollo-server/v2/testing/graphql-playground/) provided by Apollo Server.
 
 For development and testing purposes, you can use the GraphQL Playground to execute queries and mutations against the API. First, click on the "HTTP HEADERS" tab at the bottom of the screen and add the authorization header in the following format:
 

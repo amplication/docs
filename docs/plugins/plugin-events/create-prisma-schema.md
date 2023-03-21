@@ -1,8 +1,8 @@
 ---
-id: CreatePrismaSchema
+id: create-prisma-schema
 title: Create Prisma Schema
 sidebar_label: Create Prisma Schema
-slug: /plugins/plugin-events/CreatePrismaSchema
+slug: /plugins/plugin-events/create-prisma-schema
 ---
 
 # Create Prisma Schema
@@ -12,6 +12,7 @@ slug: /plugins/plugin-events/CreatePrismaSchema
 Creates the Prisma schema
 
 ## Event Name
+
 `CreatePrismaSchema`
 
 ## Event Params
@@ -25,10 +26,12 @@ export interface CreatePrismaSchemaParams extends EventParams {
 ```
 
 ### entities
+
 The entities that will be generated as models in the Prisma schema and represent the table name.
 By default, this param value is the entities that the user sets in the UI (Amplication dashboard).
 
 ### dataSource
+
 Represents the data source type of Prisma provider (PostgreSQL, MySQL, MongoDB, etc.)
 
 ```ts
@@ -61,6 +64,7 @@ const dataSource: PrismaDataSource = {
 ```
 
 ### clientGenerator
+
 A generator determines which assets are created when you run the Prisma generate command.
 
 ```ts
@@ -74,4 +78,5 @@ const CLIENT_GENERATOR: PrismaClientGenerator = {
   provider: "prisma-client-js",
 };
 ```
+
 For more information: https://www.prisma.io/docs/concepts/components/prisma-schema/generators
