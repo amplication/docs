@@ -75,6 +75,10 @@ const sidebars = {
     {
       type: "category",
       label: "Plugins Developer Guide",
+      link: {
+        type: "doc",
+        id: "plugins/overview"
+      },
       items: [
         {
           type: "category",
@@ -133,6 +137,10 @@ const sidebars = {
         {
           type: "category",
           label: "Angular Todos",
+          link: {
+            type: "doc",
+            id: "tutorials/angular-todos/angular-todos-step-000"
+          },
           items: [
             "tutorials/angular-todos/angular-todos-step-000",
             "tutorials/angular-todos/angular-todos-step-001",
@@ -146,6 +154,10 @@ const sidebars = {
         {
           type: "category",
           label: "React Todos",
+          link: {
+            type: "doc",
+            id: "tutorials/react-todos/react-todos-step-000"
+          },
           items: [
             "tutorials/react-todos/react-todos-step-000",
             "tutorials/react-todos/react-todos-step-001",
@@ -161,6 +173,10 @@ const sidebars = {
     {
       type: "category",
       label: "Running Amplication Platform",
+      link: {
+        type: "doc",
+        id: "running-amplication-platform/index"
+      },
       items: [
         "running-amplication-platform/connect-server-to-github",
         "running-amplication-platform/configure-github-auth",
@@ -169,6 +185,10 @@ const sidebars = {
     {
       type: "category",
       label: "About",
+      link: {
+        type: "doc",
+        id: "about/index"
+      },
       items: [
         "about/licensing",
         "about/product-roadmap",
@@ -216,6 +236,10 @@ const sidebars = {
     {
       type: "category",
       label: "Community",
+      link: {
+        type: "doc",
+        id: "contributing"
+      },
       items: ["contributing", "community/handling-a-new-issue"],
     },
   ],
