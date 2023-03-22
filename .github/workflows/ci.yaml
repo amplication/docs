@@ -4,9 +4,9 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v3
       - name: simple-cspell
-        uses: zwaldowski/cspell-action@1.0.0
+        uses: streetsidesoftware/cspell-action@v2
         with:
           paths: "**/*.md"
           config: .github/workflows/cspell.json
