@@ -200,7 +200,7 @@ module.exports = {
           },
           {
             to: "/faqs/",
-            from: ["/faqs/faqs/faqs/"],
+            from: ["/faqs/faqs/faqs/", "/faqs/faqs/"],
           },
           {
             to: "/getting-started/plugins/",

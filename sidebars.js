@@ -8,16 +8,14 @@ const sidebars = {
         id: "welcome"
       },
       items: [
-        "getting-started/generated-app",
         "getting-started/first-app",
+        "getting-started/generated-app",
         "getting-started/view-generated-code",
         "how-to/run-dev-env",
         "how-to/add-custom-code",
         "getting-started/deploy",
         "getting-started/authentication",
         "getting-started/sync-with-github",
-        "faqs/faqs",
-        "getting-started/plugins",
         "getting-started/projects-resources-services",
         "getting-started/cli",
       ],
@@ -80,6 +78,7 @@ const sidebars = {
         id: "plugins/overview"
       },
       items: [
+        "getting-started/plugins",
         {
           type: "category",
           label: "Overview",
@@ -195,6 +194,9 @@ const sidebars = {
         "getting-started/phone-home",
       ],
     },
+
+    "faqs/faqs",
+
     {
       type: "category",
       label: "Troubleshooting",
