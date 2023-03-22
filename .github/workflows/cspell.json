@@ -13,6 +13,9 @@
     "flagWords": [
         "hte"
     ],
+    "ignoreRegExpList": [
+        "html-elements"
+    ],
     "patterns": [
         {
             "name": "html-video-element",
@@ -21,11 +24,8 @@
         {
             "name": "html-elements",
             "pattern": [
-                "html-video"
+                "html-video-element"
             ]
         }
-    ],
-    "ignoreRegExpList": [
-        "html-elements"
     ]
 }
