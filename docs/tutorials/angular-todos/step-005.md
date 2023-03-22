@@ -255,7 +255,9 @@ With almost everything in place, just a few changes to the `TaskComponent`'s tem
 
 Run the application and try creating some tasks. Feel free to refresh the page as well.
 
-![a working todo list app](./assets/step-005-001.webp)
+<video controls autoplay loop style="width: 100%;">
+  <source src="./assets/step-005-001.mp4" type="video/mp4">
+</video>
 
 Users' tasks are now being saved to the Amplication backend and still show when users refresh or revisit the application.
 

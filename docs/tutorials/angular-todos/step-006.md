@@ -20,7 +20,9 @@ So far we've handled communication with the Amplication backend by making HTTP r
 
 If you're running the backend (`npm run start:backend`) you can tinker with queries on the GraphQL Playground [http://localhost:3000/graphql](http://localhost:3000/graphql).
 
-![GraphQL Playground](./assets/step-006-001.webp)
+<video controls autoplay loop style="width: 100%;">
+  <source src="./assets/step-006-001.mp4" type="video/mp4">
+</video>
 
 1. To make the GraphQL queries to the backend we'll use a library called `apollo-angular`, an Angular focused for the `@apollo/client` library. First, add `apollo-angular` as a dependency in the `web` subfolder:
 
@@ -339,7 +341,9 @@ export class TasksService {
 
 Run the application and play around!
 
-![todos app using GraphQL](./assets/step-006-002.gif)
+<video controls autoplay loop style="width: 100%;">
+  <source src="./assets/step-006-002.mp4" type="video/mp4">
+</video>
 
 Users' tasks are now being saved to the Amplication backend with GraphQL queries and mutations rather than traditional HTTP requests.
 

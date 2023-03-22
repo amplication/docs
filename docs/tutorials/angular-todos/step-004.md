@@ -393,7 +393,9 @@ On submit the `login` or `signup` method from the `AuthService` is called, and t
 
 Run the application and try creating a new account.
 
-![a working todo list app](./assets/step-004-001.webp)
+<video controls autoplay loop style="width: 100%;">
+  <source src="./assets/step-004-001.mp4" type="video/mp4">
+</video>
 
 Users are now able to login to the `Todos` application, but we're not saving their tasks in our backend yet... That'll have to be next.
 
