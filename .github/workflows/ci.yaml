@@ -8,6 +8,6 @@ jobs:
       - name: simple-cspell
         uses: streetsidesoftware/cspell-action@v2
         with:
-          paths: "**/*.md"
+          files: "**/*.md"
           config: .github/workflows/cspell.json
       
