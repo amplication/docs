@@ -14,17 +14,17 @@
         "hte"
     ],
     "ignoreRegExpList": [
+        "code-block",
+        "html-video-element"
     ],
     "patterns": [
         {
-            "name": "html-video-element",
-            "pattern": "/^<video[^>]*>/gm"
+            "name": "code-block",
+            "pattern": "/```([\\s\\S]*?)```/gm"
         },
         {
-            "name": "html-elements",
-            "pattern": [
-                "html-video-element"
-            ]
+            "name": "html-video-element",
+            "pattern": "/^<video[^>]*>/gm"
         }
     ]
 }
