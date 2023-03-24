@@ -174,7 +174,7 @@ const sidebars = {
       label: "Running Amplication Platform",
       link: {
         type: "doc",
-        id: "running-amplication-platform/index"
+        id: "running-amplication-platform/connect-server-to-github"
       },
       items: [
         "running-amplication-platform/connect-server-to-github",
