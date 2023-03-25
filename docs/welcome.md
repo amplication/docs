@@ -1,7 +1,7 @@
 ---
 id: welcome
 title: Welcome
-slug: /
+slug: /welcome
 ---
 
 # Amplication Documentation

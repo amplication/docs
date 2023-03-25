@@ -27,48 +27,43 @@ module.exports = {
       // Hides the switch in the navbar
       disableSwitch: true,
     },
-    navbar: {
+    navbar: {      
       hideOnScroll: false,
       title: "",
       logo: {
         alt: "Amplication",
         src: "img/amplication-logo.svg",
         srcDark: "img/amplication-logo-dark.svg",
-        href: "https://amplication.com/",
+        href: "/",
       },
       items: [
         {
-          to: '/',
+          to: '/welcome',
           position: 'left',
           label: 'Get Started'
         },
         {
-          type: 'doc',
-          docId: 'tutorials/index',
+          to: '/tutorials',
           position: 'left',
           label: 'Tutorials',
         },
         {
-          type: 'doc',
-          docId: 'how-to/index',
+          to: '/how-to',
           position: 'left',
           label: 'How Tos',
         },
         {
-          type: 'doc',
-          docId: 'custom-code/index',
+          to: '/custom-code',
           position: 'left',
           label: 'Customize',
         },
         {
-          type: 'doc',
-          docId: 'errors/index',
+          to: '/errors',
           position: 'left',
           label: 'Troubleshooting',
         },
         {
-          type: 'doc',
-          docId: 'api/index',
+          to: '/api',
           position: 'left',
           label: 'Generate',
         },
