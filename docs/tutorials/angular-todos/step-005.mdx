@@ -47,7 +47,7 @@ import { Injectable } from '@angular/core';
 
    ```ts
    export class TasksService {
-      constructor(private http: HttpClient) {}
+     constructor(private http: HttpClient) {}
    }
    ```
 
@@ -91,7 +91,7 @@ import { Injectable } from '@angular/core';
                alert('Could not get tasks');
                return [];
             }
-  
+
             return result;
          })
       );
@@ -167,7 +167,7 @@ import { AuthService } from './auth.service';
    export class AppComponent implements OnInit {
       tasks: any[] = [];
       user: any;
-  
+
    -   constructor(private auth: AuthService) {}
    +   constructor(private auth: AuthService, private ts: TasksService) {}
    ```
@@ -182,7 +182,7 @@ import { AuthService } from './auth.service';
    -      completed: false,
    -   };
    - }
-  
+
    addTask(task: string) {
       const newTask = this.createTask(task);
       this.tasks.push(newTask);
@@ -246,7 +246,7 @@ With almost everything in place, just a few changes to the `TaskComponent`'s tem
 ```diff
 <li [class.completed]="task.completed">
    <span>{{task.text}}</span>
--   <input type="checkbox" [checked]="task.completed" (click)="completed.emit(task?.id)" readOnly /> 
+-   <input type="checkbox" [checked]="task.completed" (click)="completed.emit(task?.id)" readOnly />
 +   <input type="checkbox" [checked]="task.completed" (click)="completed.emit(task)" readOnly />
 </li>
 ```
@@ -255,8 +255,8 @@ With almost everything in place, just a few changes to the `TaskComponent`'s tem
 
 Run the application and try creating some tasks. Feel free to refresh the page as well.
 
-<video controls autoplay loop style={{width: '100%'}}>
-  <source src="./assets/step-005-001.mp4" type="video/mp4" />
+<video controls autoplay loop style={{ width: "100%" }}>
+  <source src="/video/step-005-001.mp4" type="video/mp4" />
 </video>
 
 Users' tasks are now being saved to the Amplication backend and still show when users refresh or revisit the application.
