@@ -1,26 +1,42 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from './Home.module.css';
-import Link from '@docusaurus/Link';
+import React from "react";
+import clsx from "clsx";
+import styles from "./Home.module.css";
+import Link from "@docusaurus/Link";
 
 const images = {
-  restAPI: "https://amplication.com/_next/static/media/enterprise-2.c55b797b.svg",
-  customCode: "https://amplication.com/_next/static/media/enterprise-1.87c33326.svg",
+  restAPI:
+    "https://amplication.com/_next/static/media/enterprise-2.c55b797b.svg",
+  customCode:
+    "https://amplication.com/_next/static/media/enterprise-1.87c33326.svg",
   community: "https://amplication.com/_next/static/media/social.35c6604e.svg",
-  gitSync: "https://amplication.com/_next/static/media/sync_with_github.1d7a27e3.svg",
-  authorization: "https://amplication.com/_next/static/media/enterprise-4.d36c1ed8.svg",
-  appDevelopment: "https://amplication.com/_next/static/media/data-models.d7de4216.svg"
-}
+  gitSync:
+    "https://amplication.com/_next/static/media/sync_with_github.1d7a27e3.svg",
+  authorization:
+    "https://amplication.com/_next/static/media/enterprise-4.d36c1ed8.svg",
+  appDevelopment:
+    "https://amplication.com/_next/static/media/data-models.d7de4216.svg",
+};
 
 function Hero() {
   return (
-    <div className={clsx(styles.hero, 'text--center')}>
-      <img src="/img/amplication-logo-dark.svg" alt="Amplication Logo" className={styles.logo} />
+    <div className={clsx(styles.hero, "text--center")}>
+      <img
+        src="/img/amplication-logo-dark.svg"
+        alt="Amplication Logo"
+        className={styles.logo}
+      />
       <h1>Documentation</h1>
-      <h2>The open-source backend development platform that helps you deliver code to production 20x faster</h2>
+      <h2>
+        The open-source backend development platform that helps you deliver code
+        to production 20x faster
+      </h2>
       <div className={styles.heroCTAs}>
-        <Link to="/welcome/" className="button button--primary">Learn Amplication</Link>
-        <Link to="/faqs/" className="button button--secondary">FAQs</Link>
+        <Link to="/welcome/" className="button button--primary">
+          Learn Amplication
+        </Link>
+        <Link to="/faqs/" className="button button--secondary">
+          FAQs
+        </Link>
       </div>
     </div>
   );
@@ -28,12 +44,15 @@ function Hero() {
 
 function Section({ headline, subheadline, imageUrl, ctaText, ctaLink, type }) {
   return (
-    <div className={clsx(styles.section, styles[type], 'text--center')}>
+    <div className={clsx(styles.section, styles[type], "text--center")}>
       <h2 className={styles.sectionHeadline}>{headline}</h2>
       <h3 className={styles.sectionSubheadline}>{subheadline}</h3>
       <img src={imageUrl} alt={headline} className={styles.sectionImage} />
       {ctaText && ctaLink && (
-        <Link to={ctaLink} className={clsx(styles.sectionButton, 'button button--primary')}>
+        <Link
+          to={ctaLink}
+          className={clsx(styles.sectionButton, "button button--primary")}
+        >
           {ctaText}
         </Link>
       )}
@@ -42,7 +61,6 @@ function Section({ headline, subheadline, imageUrl, ctaText, ctaLink, type }) {
 }
 
 export default function HomePage() {
-  
   return (
     <div>
       <Hero />
@@ -59,7 +77,7 @@ export default function HomePage() {
         subheadline="Amplication generates code based on your specifications, following best practices and industry standards. It provides a visual builder that allows you to design your application's data models, relationships, and permissions without writing a single line of code."
         imageUrl={images.customCode}
         ctaText="Customize your app"
-        ctaLink="/customize/"
+        ctaLink="/custom-code/"
         type="secondary"
       />
       <Section

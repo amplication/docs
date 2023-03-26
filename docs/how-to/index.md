@@ -13,7 +13,7 @@ Whether you are a beginner just starting with Amplication or an experienced deve
 - [Create a new App](/how-to/create-app/)
 - [Create an Entity](/how-to/create-entity/)
 - [Create a new entity field](/how-to/create-entity-field)
-- [Set Access Permissions](/how-to//set-access-permissions/)
+- [Set Access Permissions](/how-to/set-access-permissions/)
 - [Commit Changes](/how-to/commit-changes)
 - [Entity Relations](/relations/)
 - [Base Directories](/how-to/base-directories)
