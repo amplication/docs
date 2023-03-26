@@ -25,11 +25,13 @@ slug: /tutorials/angular-todos/step-001
 npm i -g @angular/cli
 ng new web -g -S --routing false --style css
 ```
+
 > The above command creates a new Angular application with the following configuration:
-> * Without initiating git (`-g` skips initiating git)
-> * Without creating testing files (`-S` skips initiating test files)
-> * Without setting up routing (`--routing false` tells the CLI not to setup the routing module)
-> * With using CSS as the styling language (`--style css` tells the CLI to use CSS)
+>
+> - Without initiating git (`-g` skips initiating git)
+> - Without creating testing files (`-S` skips initiating test files)
+> - Without setting up routing (`--routing false` tells the CLI not to setup the routing module)
+> - With using CSS as the styling language (`--style css` tells the CLI to use CSS)
 
 2. Next create a `package.json` file and copy into it the following:
 
@@ -201,12 +203,12 @@ For the logic, replace the content of the TypeScript file with the following:
 `web/src/app/task/task.component.ts`
 
 ```ts
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from "@angular/core";
 
 @Component({
-  selector: 'app-task',
-  templateUrl: './task.component.html',
-  styleUrls: ['./task.component.css']
+  selector: "app-task",
+  templateUrl: "./task.component.html",
+  styleUrls: ["./task.component.css"],
 })
 export class TaskComponent {
   @Input() task: any = {};
@@ -221,7 +223,12 @@ For the template, add the following code into the HTML file:
 ```html
 <li [class.completed]="task.completed">
   <span>{{task.text}}</span>
-  <input type="checkbox" [checked]="task.completed" (click)="completed.emit(task?.id)" readOnly />
+  <input
+    type="checkbox"
+    [checked]="task.completed"
+    (click)="completed.emit(task?.id)"
+    readonly
+  />
 </li>
 ```
 
@@ -230,7 +237,7 @@ For the template, add the following code into the HTML file:
 Our second component will be used to render a list of tasks. We'll bind it to an `@Input()` element and an `@Output()` event:
 
 - `@Input() tasks` - An array of tasks.
-- `@Output() completed` - This event emitter will trigger a user taps on the checkbox in the `Task` component, bubbling the event up to the `AppComponent`,  and eventually will toggle the state of the task.
+- `@Output() completed` - This event emitter will trigger a user taps on the checkbox in the `Task` component, bubbling the event up to the `AppComponent`, and eventually will toggle the state of the task.
 
 In your terminal navigate to the `web` directory and run:
 
@@ -243,12 +250,12 @@ For the logic, replace the content of the TypeScript file with the following:
 `web/src/app/tasks/tasks.component.ts`
 
 ```ts
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from "@angular/core";
 
 @Component({
-  selector: 'app-tasks',
-  templateUrl: './tasks.component.html',
-  styleUrls: ['./tasks.component.css']
+  selector: "app-tasks",
+  templateUrl: "./tasks.component.html",
+  styleUrls: ["./tasks.component.css"],
 })
 export class TasksComponent {
   @Input() tasks: any[] = [];
@@ -262,7 +269,11 @@ For the template, add the following code into the HTML file:
 
 ```html
 <ul>
-  <app-task *ngFor="let task of tasks" [task]="task" (completed)="completed.emit($event)"></app-task>
+  <app-task
+    *ngFor="let task of tasks"
+    [task]="task"
+    (completed)="completed.emit($event)"
+  ></app-task>
 </ul>
 ```
 
@@ -311,22 +322,22 @@ For the logic, replace the content of the TypeScript file with the following:
 `web/src/app/create-task/create-task.component.ts`
 
 ```ts
-import { Component, Output, EventEmitter } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { Component, Output, EventEmitter } from "@angular/core";
+import { FormBuilder } from "@angular/forms";
 
 @Component({
-  selector: 'app-create-task',
-  templateUrl: './create-task.component.html',
-  styleUrls: ['./create-task.component.css']
+  selector: "app-create-task",
+  templateUrl: "./create-task.component.html",
+  styleUrls: ["./create-task.component.css"],
 })
 export class CreateTaskComponent {
   @Output() addTask = new EventEmitter<string>();
 
   createTaskForm = this.fb.group({
-    task: ''
+    task: "",
   });
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder) {}
 
   onSubmit() {
     if (!this.createTaskForm.valid) return;
@@ -342,12 +353,7 @@ For the template, add the following code into the HTML file:
 
 ```html
 <form [formGroup]="createTaskForm" (ngSubmit)="onSubmit()">
-  <input
-    type="text"
-    placeholder="TODO"
-    formControlName="task"
-    required
-  />
+  <input type="text" placeholder="TODO" formControlName="task" required />
   <button type="submit">Add</button>
 </form>
 ```
@@ -369,7 +375,7 @@ With our different components created, we'll next put them together and see how 
    ```diff
    export class AppComponent {
      tasks: any[] = [];
-   
+
    +  createTask(text: string) {
    +    return {
    +      id: this.tasks.length,
@@ -419,8 +425,8 @@ git push origin main
 
 Go ahead and try adding tasks or marking them as complete.
 
-<video controls autoplay loop style={{width: '100%'}}>
-  <source src="./assets/step-001-002.mp4" type="video/mp4" />
+<video controls autoplay loop style={{ width: "100%" }}>
+  <source src="/video/step-001-002.mp4" type="video/mp4" />
 </video>
 
 The only problem is that these tasks aren't being saved anywhere, so when you refresh the page _poof_ they're gone. In our next step, we will create our backend with Amplication to be able to save our tasks to a database!
