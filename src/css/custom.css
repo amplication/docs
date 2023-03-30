@@ -168,3 +168,20 @@ article > header {
 .markdown > h3 {
   --ifm-h3-font-size: 1.3rem;
 }
+
+html.amplication-home-page {
+  background-color: #15192c;
+}
+
+/* Hide the "Last Updated By" section */
+/* Hide the "Was this page helpful?" section */
+.amplication-home-page .theme-doc-markdown + footer,
+.amplication-home-page .theme-doc-markdown + footer + form {
+  display: none !important;
+}
+
+.amplication-home-page img {
+  border: none;
+  margin: 0;
+  border-radius: 0;
+}

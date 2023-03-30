@@ -27,43 +27,43 @@ module.exports = {
       // Hides the switch in the navbar
       disableSwitch: true,
     },
-    navbar: {
+    navbar: {      
       hideOnScroll: false,
       title: "",
       logo: {
         alt: "Amplication",
         src: "img/amplication-logo.svg",
         srcDark: "img/amplication-logo-dark.svg",
-        href: "https://amplication.com/",
+        href: "/",
       },
       items: [
         {
-          type: 'doc',
-          docId: 'welcome',
+          to: '/welcome',
           position: 'left',
-          label: 'Get Started',
+          label: 'Get Started'
         },
         {
-          type: 'doc',
-          docId: 'tutorials/overview',
+          to: '/tutorials',
           position: 'left',
           label: 'Tutorials',
         },
         {
-          type: 'doc',
-          docId: 'how-to/overview',
+          to: '/how-to',
           position: 'left',
           label: 'How Tos',
         },
         {
-          type: 'doc',
-          docId: 'custom-code/overview',
+          to: '/custom-code',
           position: 'left',
           label: 'Customize',
         },
         {
-          type: 'doc',
-          docId: 'api/overview',
+          to: '/errors',
+          position: 'left',
+          label: 'Troubleshooting',
+        },
+        {
+          to: '/api',
           position: 'left',
           label: 'Generate',
         },
@@ -86,23 +86,27 @@ module.exports = {
           title: "Docs",
           items: [
             {
-              to: 'welcome',
+              to: '/',
               label: 'Get Started'
             },
             {
-              to: 'tutorials/overview',
+              to: 'tutorials',
               label: 'Tutorials'
             },
             {
-              to: 'how-to/overview',
+              to: 'how-to',
               label: 'How Tos'
             },
             {
-              to: 'custom-code/overview',
+              to: 'custom-code',
               label: 'Customize'
             },
             {
-              to: 'api/overview',
+              to: 'errors',
+              label: 'Troubleshooting'
+            },
+            {
+              to: 'api',
               label: 'Generate'
             }
           ],
@@ -191,7 +195,7 @@ module.exports = {
           },
           {
             to: "/faqs/",
-            from: ["/faqs/faqs/faqs/"],
+            from: ["/faqs/faqs/faqs/", "/faqs/faqs/"],
           },
           {
             to: "/getting-started/plugins/",
