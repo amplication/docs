@@ -1,4 +1,4 @@
-# Amplication Documentation
+# Amplication Documentation 
 
 ## Get started with one of our tutorials or explore real sample apps on GitHub. Join thousands of developers on Discord worldwide are using Amplication to build their applications.
 
