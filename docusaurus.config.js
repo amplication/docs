@@ -27,7 +27,7 @@ module.exports = {
       // Hides the switch in the navbar
       disableSwitch: true,
     },
-    navbar: {      
+    navbar: {
       hideOnScroll: false,
       title: "",
       logo: {
@@ -63,7 +63,7 @@ module.exports = {
           label: 'Troubleshooting',
         },
         {
-          to: '/api',
+          to: '/api/api-index',
           position: 'left',
           label: 'Generate',
         },

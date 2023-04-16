@@ -25,7 +25,7 @@ const sidebars = {
       label: "Generated API",
       link: {
         type: "doc",
-        id: "api/index"
+        id: "api/api-index"
       },
       items: [
         "getting-started/generated-app-api",
