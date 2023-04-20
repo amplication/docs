@@ -1,8 +1,8 @@
 ---
-id: developing-a-plugin
-title: Developing a Plugin
-sidebar_label: Developing a Plugin
-slug: /plugins/developing-a-plugin
+id: how-to-create-plugin
+title: How to Create a Plugin
+sidebar_label: How to create a plugin
+slug: /plugins/how-to-create-plugin
 ---
 
 Amplication includes several plugins - some allow you to choose an authentication strategy, some allow you to choose which database you want to integrate with and one allows you to connect your service to a message broker.
