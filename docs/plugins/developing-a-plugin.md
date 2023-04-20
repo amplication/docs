@@ -16,7 +16,7 @@ Before any development of a plugin, we take the following steps:
 3. use the knowledge from the previous step to design the plugin:
    - Which events need to be used
    - How to use the events with the before and after lifecycle functions
-5. Go to [amplication plugin template](https://github.com/amplication/plugin-template) and create a **public** GitHub repository from this template
+5. Go to [amplication plugin template](https://github.com/amplication/plugin-template) and create a GitHub repository from this template. Donn't forget to make sure that it's a **public** repository.
 ![amplication-plugin-template.png](.\assets\amplication-plugin-template.png)
 ![create-new-repo-from-template](.\assets\create-new-repo-from-template.png)
 6. When your new repository is ready, clone it and start building your plugin
