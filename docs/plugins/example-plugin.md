@@ -11,11 +11,17 @@ Before any development of a plugin, we take the following steps:
 
 1. Generate a service with Amplication
 2. Apply the changes that we need:
-   a. Add the missing functionality
-   b. Manipulate the existing functionality
+   - Add the missing functionality
+   - Manipulate the existing functionality
 3. use the knowledge from the previous step to design the plugin:
-   a. Which events need to be used
-   b. How to use the events with the before and after lifecycle functions
+   - Which events need to be used
+   - How to use the events with the before and after lifecycle functions
+4. Create a public GitHub repository for you plugin
+5. Copy and paste our [plugin template](https://github.com/amplication/plugins/tree/master/plugins/plugin-template)
+6. Remove and change the emplate based on what you need. For example, if you don't need static files in your plugin, you can delete that folder.
+
+
+### Example:
 
 The most straightforward example to illustrate this development workflow is the [MySQL](https://github.com/amplication/plugins/tree/master/plugins/db-mysql) plugin, as we already have the functionality of a database connection:
 
