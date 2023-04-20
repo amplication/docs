@@ -23,7 +23,7 @@ Before any development of a plugin, we take the following steps:
 7. You can remove and change things based on what you need. For example, if you don't need static files in your plugin, you can delete that folder.
 
 :::note
-If your plugin was published on npm under your organization, your plugin full name would be: 
+If your plugin was published on npm under your organization, your plugin's full name would be: 
 
 `
 @{your-organization-name}/plugin-{your-plugin-name}
@@ -31,7 +31,7 @@ If your plugin was published on npm under your organization, your plugin full na
 
 For example: @amplication/plugin-db-mysql
 
-As a result, in the `README.md` file, you would need to change the title and the npm downloads to this:
+As a result, in the `README.md` file, you would have to change the title and the npm downloads to this:
 
 ```md
 # @{your-organization-name}/plugin-{your-plugin-name}
