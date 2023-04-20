@@ -61,7 +61,7 @@ module.exports = {
       {
         type: "category",
         label: "Developing Plugins",
-        items: ["plugins/publish-plugin", "plugins/example-plugin"],
+        items: ["plugins/publish-plugin", "plugins/developing-a-plugin"],
       },
       {
         type: "category",

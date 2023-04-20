@@ -1,8 +1,8 @@
 ---
-id: example-plugin
-title: Example - Developing a Plugin
-sidebar_label: Example - Developing a Plugin
-slug: /plugins/example-plugin
+id: developing-a-plugin
+title: Developing a Plugin
+sidebar_label: Developing a Plugin
+slug: /plugins/developing-a-plugin
 ---
 
 Amplication includes several plugins - some allow you to choose an authentication strategy, some allow you to choose which database you want to integrate with and one allows you to connect your service to a message broker.
@@ -16,12 +16,13 @@ Before any development of a plugin, we take the following steps:
 3. use the knowledge from the previous step to design the plugin:
    - Which events need to be used
    - How to use the events with the before and after lifecycle functions
-4. Create a public GitHub repository for you plugin
-5. Copy and paste our [plugin template](https://github.com/amplication/plugins/tree/master/plugins/plugin-template)
-6. Remove and change the emplate based on what you need. For example, if you don't need static files in your plugin, you can delete that folder.
+5. Go to [amplication plugin template](https://github.com/amplication/plugin-template) and create a **public** GitHub repository from this template
+![amplication-plugin-template.png](.\assets\amplication-plugin-template.png)
+![create-new-repo-from-template](.\assets\create-new-repo-from-template.png)
+6. When your new repository is ready, clone it and start building your plugin
+7. You can remove and change things based on what you need. For example, if you don't need static files in your plugin, you can delete that folder.
 
-
-### Example:
+### Example: How we created the MySQL Plugin
 
 The most straightforward example to illustrate this development workflow is the [MySQL](https://github.com/amplication/plugins/tree/master/plugins/db-mysql) plugin, as we already have the functionality of a database connection:
 
