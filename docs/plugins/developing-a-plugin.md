@@ -104,11 +104,11 @@ beforeCreateServer(context: DsgContext, eventParams: CreateServerParams) {
 
 `CreateServerDotEnv` : before
 
-On this event we send our [event params](https://docs.amplication.com/plugins/plugin-events/CreateServerDotEnv/#event-params) which are the environment variables for the MySQL database. As a result the `.env` file will be generated not only with the default variables that it is already holds, but also with our environment variables.
+On this event we send our [event params](https://docs.amplication.com/plugins/plugin-events/create-server-dotenv/#event-params) which are the environment variables for the MySQL database. As a result the `.env` file will be generated not only with the default variables that it is already holds, but also with our environment variables.
 
 `CreateServerDockerCompose` : before
 
-On this event we send our [event params](https://docs.amplication.com/plugins/plugin-events/CreateServerDockerCompose/#event-params) which are the YAML properties and values for the MySQL database. As a result the `docker-compose.yml` file will be generated in a way that the PostgreSQL properties will be replaced by the MySQL properties.
+On this event we send our [event params](https://docs.amplication.com/plugins/plugin-events/create-server-docker-compose/#event-params) which are the YAML properties and values for the MySQL database. As a result the `docker-compose.yml` file will be generated in a way that the PostgreSQL properties will be replaced by the MySQL properties.
 
 `CreateServerDockerComposeDB` : before
 
@@ -148,11 +148,13 @@ This event is responsible to manipulate this part on the Prisma schema:
 export const dataSource: DataSource = {
   name: "mysql",
   provider: DataSourceProvider.MySQL,
-  url: new DataSourceURLEnv("DB_URL"),
+  url: {
+    name: "DB_URL",
+  },
 };
 ```
 
-We use the [event params](https://docs.amplication.com/plugins/plugin-events/CreatePrismaSchema/#event-params) to:
+We use the [event params](https://docs.amplication.com/plugins/plugin-events/create-prisma-schema/#event-params) to:
 
 - change the data source name form `postgres` to `mysql`
 - change the provider from `postgresql` to `MySQL`
