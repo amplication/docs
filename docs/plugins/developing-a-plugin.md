@@ -22,6 +22,25 @@ Before any development of a plugin, we take the following steps:
 6. When your new repository is ready, clone it and start building your plugin
 7. You can remove and change things based on what you need. For example, if you don't need static files in your plugin, you can delete that folder.
 
+:::note
+If your plugin was published on npm under your organization, your plugin full name would be: 
+
+`
+@{your-organization-name}/plugin-{your-plugin-name}
+`
+
+For example: @amplication/plugin-db-mysql
+
+As a result, in the `README.md` file, you would need to change the title and the npm downloads to this:
+
+```md
+# @{your-organization-name}/plugin-{your-plugin-name}
+
+[![NPM Downloads](https://img.shields.io/npm/dt/@{your-organization-name}/plugin-{your-plugin-name})](https://www.npmjs.com/package/plugin-{your-plugin-name})
+```
+
+:::
+
 ### Example: How we created the MySQL Plugin
 
 The most straightforward example to illustrate this development workflow is the [MySQL](https://github.com/amplication/plugins/tree/master/plugins/db-mysql) plugin, as we already have the functionality of a database connection:
