@@ -70,7 +70,7 @@ module.exports = {
           "plugins/plugin-events/create-server",
           "plugins/plugin-events/create-server-docker-compose",
           "plugins/plugin-events/create-server-docker-compose-db",
-          "plugins/plugin-events/create-server-dot-env",
+          "plugins/plugin-events/create-server-dotenv",
           "plugins/plugin-events/create-server-auth",
           "plugins/plugin-events/create-package-json",
           "plugins/plugin-events/create-entity-service",
