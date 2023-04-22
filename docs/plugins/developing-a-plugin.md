@@ -7,6 +7,7 @@ slug: /plugins/how-to-create-plugin
 
 Amplication includes several plugins - some allow you to choose an authentication strategy, some allow you to choose which database you want to integrate with and one allows you to connect your service to a message broker.
 
+### Planning and POC:
 Before any development of a plugin, we take the following steps:
 
 1. Generate a service with Amplication
@@ -16,7 +17,9 @@ Before any development of a plugin, we take the following steps:
 3. use the knowledge from the previous step to design the plugin:
    - Which events need to be used
    - How to use the events with the before and after lifecycle functions
-5. Go to [amplication plugin template](https://github.com/amplication/plugin-template) and create a GitHub repository from this template. Donn't forget to make sure that it's a **public** repository.
+
+### Creating a GitHub Repository From Amplication Plugin Template Repository
+4. Go to [amplication plugin template](https://github.com/amplication/plugin-template) and create a GitHub repository from this template. Donn't forget to make sure that it's a **public** repository.
 ![amplication-plugin-template.png](.\assets\amplication-plugin-template.png)
 ![create-new-repo-from-template](.\assets\create-new-repo-from-template.png)
 6. When your new repository is ready, clone it and start building your plugin
@@ -41,6 +44,46 @@ As a result, in the `README.md` file, you would have to change the title and the
 
 :::
 
+### Keeping My Repository Up to Date with The Template
+Your newly created repository is independent and does not maintain a direct link to the original template. Consequently, any changes made to the template will not automatically update your repository.
+
+To keep your repository up to date, you can manually incorporate changes from the template repository by adding it as an additional remote and merging the updates.
+
+Here are the steps to do that:
+1. **Add the template repository as a remote:**
+```shell
+cd <your_repository>
+git add remote amplication-plugin-template https://github.com/amplication/plugin-template.git
+```
+`amplication-plugin-template` is the origin name. You can name it however you wan't, but make sure you change it in all commands below.
+
+2. **Fetch changes from the template repository**
+```shell
+git fetch amplication-plugin-template
+```
+
+3. **Merge or rebase the changes from the template repository**
+- Merge:
+```shell
+git merge amplication-plugin-template/main
+```
+This will create a new merge commit in your repository that includes the changes from the template repository
+- Rebase:
+```shell
+git rebase amplication-plugin-template/main
+```
+ This will apply the changes from the template repository on top of your local commits, effectively rewriting your local commit history.
+ 
+ 4. **Resolve conflicts, if any** - if there are conflicts between your repository and the template repository, Git will prompt you to resolve them. Edit the affected files to manually resolve the conflicts, then stage and commit the changes
+ 
+ 5. **Push the changes to your remote repository:**
+ ```shell
+ git push origin <your_default_branch_name> 
+ ```
+
+:::note
+This process only updates your repository with the changes made in the template repository at the time of fetching. You'll need to repeat steps 2-5 whenever you want to update your repository with the latest changes from the template repository.
+:::
 ### Example: How we created the MySQL Plugin
 
 The most straightforward example to illustrate this development workflow is the [MySQL](https://github.com/amplication/plugins/tree/master/plugins/db-mysql) plugin, as we already have the functionality of a database connection:
