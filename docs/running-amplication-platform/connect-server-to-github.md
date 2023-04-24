@@ -27,12 +27,11 @@ When running a local Amplication server you first need to configure the server t
    - **Permissions > Repository permissions**
      - **Administration** - `Access: Read and Write`
      - **Content** - `Access: Read and Write`
-     - **PR** - `Access: Read and Write`
      - **Metadata** - `Access: Read-only`
      - **Pull requests** - `Access: Read and Write`
      - **Webhooks** - `Access: Read and Write`
-3. Click **Save**
-4. Click `Generate new client secret` and copy the resulting secret
+3. Click `Create GitHub app`
+4. Click `Generate a new client secret` and copy the resulting secret
 5. Click `Generate a private key`, download, open the generated certificate, add `\n` at the end of each line and join all lines to obtain a single line string
 
 ## Step 2: Configure Amplication server to work with the new GitHub app
