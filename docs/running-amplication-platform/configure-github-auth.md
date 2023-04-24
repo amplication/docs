@@ -53,4 +53,3 @@ Amplication leverage GitHub OAuth implementation that supports the standard [aut
    NX_REACT_APP_GITHUB_CONTROLLER_LOGIN_URL=http://localhost:3000/github
    ```
 9. Restart Amplication server and client.
-
