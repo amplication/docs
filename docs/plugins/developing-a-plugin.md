@@ -147,7 +147,7 @@ beforeCreateServer(context: DsgContext, eventParams: CreateServerParams) {
 
 `CreateServerDotEnv` : before
 
-On this event we send our [event params](https://docs.amplication.com/plugins/plugin-events/create-server-dotenv/#event-params) which are the environment variables for the MySQL database. As a result the `.env` file will be generated not only with the default variables that it is already holds, but also with our environment variables.
+On this event we send our [event params](https://docs.amplication.com/plugins/plugin-events/create-server-dot-env/#event-params) which are the environment variables for the MySQL database. As a result the `.env` file will be generated not only with the default variables that it is already holds, but also with our environment variables.
 
 `CreateServerDockerCompose` : before
 
