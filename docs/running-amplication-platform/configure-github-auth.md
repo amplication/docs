@@ -25,15 +25,15 @@ Amplication leverage GitHub OAuth implementation that supports the standard [aut
 ![](./assets/register-new-oauth-app.png)
 
 2. Enter the fields as follows:
-   - **Application name** - `[your-github-username]-amplication-local`
-   - **Homepage URL** - `http://localhost:3001. _If you are hosting the Amplication client on any other address, use the specific address._
+   - **Application name** - `[your-github-username]-amplication-local`.
+   - **Homepage URL** - `http://localhost:3001` _If you are hosting the Amplication client on any other address, use the specific address._
    - **Application description** - optional
    - **Authorization callback URL** - `http://localhost:3000`. _If you are hosting the Amplication server on any other address, use the specific address._
-3. Click Save.
+3. Click `Register application`.
 
 ![](./assets/app-settings.png)
 
-4. Click `Generate new client secret` and copy the resulting secret
+4. Click `Generate a new client secret` and copy the resulting secret
 
 ![](./assets/client-secret.png)
 
