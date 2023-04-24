@@ -41,6 +41,7 @@ slug: /plugins/event-list
   - [Create Message Broker Service Base](plugins\plugin-events\create-message-broker-service-base.md)
 - [Create Server Auth](docs\plugins\plugin-events\create-server-auth.md)
 - [Create Prisma Schema](plugins\plugin-events\create-prisma-schema.md)
-- [Create Server Dot Env](plugins\plugin-events\create-server-dot-env.md)
+- [Create Server Dot Env](plugins\plugin-events\create-server-dot
+  env.md)
 - [Create Server Docker Compose](plugins\plugin-events\create-server-docker-compose.md)
 - [Create Server Docker Compose DB](docs\plugins\plugin-events\create-server-docker-compose-db.md)
