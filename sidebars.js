@@ -56,7 +56,6 @@ module.exports = {
           "plugins/plugin-events-before-after",
           "plugins/context-skip-default",
           "plugins/event-hierarchy",
-          "plugins/amplicationrc"
         ],
       },
       {

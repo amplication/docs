@@ -149,33 +149,6 @@ beforeCreateServer(context: DsgContext, eventParams: CreateServerParams) {
 
 On this event we send our [event params](/plugins/plugin-events/create-server-dot-env/#event-params) which are the environment variables for the MySQL database. As a result the `.env` file will be generated not only with the default variables that it is already holds, but also with our environment variables.
 
-In the following example you can see how we leveraged the [amplicationrc](/plugins/amplicationrc) and the plugin setting in order to add the additional environment variables that this plugin needs.
-
-```typescript
-beforeCreateServerDotEnv(
-    context: DsgContext,
-    eventParams: CreateServerDotEnvParams
-  ) {
-
-    const { port, password, user, host, dbName } = getPluginSettings(context.pluginInstallations);
-
-    eventParams.envVariables = [
-      ...eventParams.envVariables,
-      ...[
-        { DB_USER: user },
-        { DB_PASSWORD: password },
-        { DB_PORT: port.toString() },
-        { DB_NAME: dbName },
-        {
-          DB_URL: `mysql://${user}:${password}@${host}:${port}/${dbName}`,
-        },
-      ],
-    ];
-
-    return eventParams;
-  }
-```
-
 `CreateServerDockerCompose` : before
 
 On this event we send our [event params](/plugins/plugin-events/create-server-docker-compose/#event-params) which are the YAML properties and values for the MySQL database. As a result the `docker-compose.yml` file will be generated in a way that the PostgreSQL properties will be replaced by the MySQL properties.
