@@ -9,8 +9,7 @@ slug: /api/meta-query-graphql
 
 ## Obtaining the record count of a query
 
-The `_EntitiesMeta API` can be used to obtain the record count of a query.
-The meta query supports all the parameters that are supported in the `FindMany` query.
+You can use the `_EntitiesMeta API` to obtain the total record count of a query. The meta query supports all the parameters that are supported in the `FindMany` query.
 
  ```bash
 query{
@@ -25,10 +24,11 @@ query{
 
 
 ```
+This will return a JSON object with a single property: `count`, which represents the total number of records that match the query.
 
 ## Obtaining the result count of a query
 
-The meta query can be used together with the `findMany` query in order to get the result count.
+You can also use the meta query together with the `findMany` query to obtain the result count for a specific query.
 
 
 ```bash
@@ -47,3 +47,4 @@ query customers($where: CustomerWhereInput, $orderBy: CustomerOrderByInput, $ski
   }
 }
 ```
+This query will return two objects: `items` and `total`. The `items` object contains an array of records that match the specified criteria, while the `total` object contains the total number of records that match the query, as determined by the `_customersMeta` meta query.
