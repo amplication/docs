@@ -160,7 +160,7 @@ In this example, some of the actions have been changed to **Public**, while the 
 
 ![](./assets/first-app/permissions.png)
 
-In the following example, we use the **Granular** setting to find tune the permissions for a role.
+In the following example, we use the **Granular** setting to fine-tune the permissions for a role.
 
 1. On the _Overview_ page, click **Go to Entities**, or from the main menu (left sidebar) click the **Entities** icon.
 2. Click the _Project_ entity.
