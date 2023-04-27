@@ -37,4 +37,4 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 # Contributing
 
-We welcome contributions to the Amplication documentation! If you find an issue or want to suggest an improvement, please open a GitHub issue or submit a pull request.
+We welcome contributions to the Amplication documentation! If you find an issue or want to suggest an improvement, please [open a GitHub issue](https://github.com/amplication/amplication/issues/new/choose) and then submit a pull request.
