@@ -7,14 +7,14 @@ slug: /api/generated-api-pagination
 
 # Generated API Pagination
 
-The generated API comes with inbuilt support for Offset pagination.
+The generated API comes with built-in support for Offset pagination.
 
 Offset pagination uses the `skip` parameter to exclude the first N items and the `take` parameter to define the number of items to be included on each page.
 
 :::note
 
 The `skip` and `take` parameters are available only on endpoints and queries that return a list of items.
-For example: `/api/posts` `/api/posts/{id}/tags`
+For example: `/api/posts` or `/api/posts/{id}/tags`
 :::
 
 Pagination requires an implied ordering. This is determined by the `orderBy` parameter. For more information see [Generated API Sorting](../generated-api-sorting)

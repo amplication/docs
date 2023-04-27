@@ -7,17 +7,17 @@ slug: /api/generated-api-sorting
 
 # Generated API - Sorting
 
-The generated API comes with inbuilt support for sorting.
+The generated API comes with built-in support for sorting.
 
-Sorting uses the `orderBy` parameter which accepts an object with the name of the fields.
+Sorting uses the `orderBy` parameter, which accepts an object with the name of the fields.
 
 :::note
 
 - Amplication does not support sorting by fields of nested entities.
 
-- The `orderBy` parameter is available only on endpoints and queries that return a list of items.
-  For example: `/api/posts` `/api/posts/{id}/tags`
-  :::
+- The `orderBy` parameter is available only on endpoints and queries that return a list of items. For example: `/api/posts` or `/api/posts/{id}/tags`
+
+:::
 
 ## Sorting Examples
 
