@@ -1,5 +1,5 @@
 # Amplication Documentation
-Welcome to the Amplication documentation repository! This repository contains the documentation for the Amplication open-source development platform. Amplication is a low-code development platform that allows developers to quickly build scalable and maintainable applications.
+Welcome to the [Amplication documentation](https://docs.amplication.com/) repository! This repository contains the documentation for the Amplication open-source development platform. Amplication is a low-code development platform that allows developers to quickly build scalable and maintainable applications.
 
 The documentation provides detailed information on how to use the platform, including tutorials, guides, and reference material.
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
