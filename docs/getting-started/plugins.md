@@ -108,4 +108,4 @@ Each version of the Plugin has its own settings, so when you replace the version
 
 To add more functionality, you can develop your own plugins, or can use plugins developed by the community, as they become available.
 
-See [Plugin Development Overview](https://docs.amplication.com/plugins/overview/) for more information.
+See [Plugin Development Overview](/plugins/overview/) for more information.
