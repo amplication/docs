@@ -7,7 +7,7 @@ slug: /api/generated-api-filtering
 
 # Generated API - Filtering
 
-The generated API includes built-in support for filtering, which enables users to specify search criteria for their queries.
+The generated API includes built-in support for filtering, which enables users to specify search criteria for their queries. 
 
 Filtering is done using the `where` parameter, which defines filters based on record properties or related record properties, such as a user's email address or their top 10 most recent post titles.
 
