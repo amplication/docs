@@ -38,6 +38,11 @@ module.exports = {
       },
       items: [
         {
+          href: "https://app.amplication.com/login",
+          html: "Start Now",
+          position: "right",
+        },
+        {
           href: "https://amplication.com/contact-us",
           html: "Contact Us",
           position: "right",
