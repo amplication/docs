@@ -41,7 +41,6 @@ module.exports = {
           href: "https://app.amplication.com/login",
           html: "Start Now",
           position: "right",
-          className: ".start-now",
         },
         {
           href: "https://amplication.com/contact-us",
