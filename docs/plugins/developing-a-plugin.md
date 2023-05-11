@@ -84,6 +84,10 @@ git rebase amplication-plugin-template/main
 :::note
 This process only updates your repository with the changes made in the template repository at the time of fetching. You'll need to repeat steps 2-5 whenever you want to update your repository with the latest changes from the template repository.
 :::
+
+### Testing Your Plugin
+During and after the development of your new plugin, you can follow these instructions in order to [test your plugin locally](/plugins/how-to-test-plugin)
+
 ### Example: How we created the MySQL Plugin
 
 The most straightforward example to illustrate this development workflow is the [MySQL](https://github.com/amplication/plugins/tree/master/plugins/db-mysql) plugin, as we already have the functionality of a database connection:
