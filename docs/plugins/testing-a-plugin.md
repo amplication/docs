@@ -1,5 +1,5 @@
 ---
-id: how-to-test-your-plugin
+id: how-to-test-plugin
 title: How to Test a Plugin
 sidebar_label: How to test a plugin
 slug: /plugins/how-to-test-plugin
