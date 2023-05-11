@@ -16,7 +16,7 @@ Build critical apps faster. Streamline your development process and increase pro
 
 ## Key Features of Amplication
 
-Amplication helps you build a fully functional backend in minutes. Just define your [data models](/how-to/create-entity/), roles, [permissions](/how-to/set-access-permissions/), and Amplication will generate a Node.js application with everything you need.
+Amplication helps you build a fully functional backend in minutes. Just define your [data models](/how-to/create-entity/), roles, and [permissions](/how-to/set-access-permissions/) — and Amplication will generate a Node.js application with everything you need.
 
 All generated Node.js applications include the following features:
 
@@ -29,7 +29,7 @@ All generated Node.js applications include the following features:
 - [Code Generation](/getting-started/view-generated-code/)
 - [Deploy](/how-to/custom-code/) & Publish
 
-Also, developers can utilize their skills to [customize the generated application](/how-to/custom-code/) afterwards.
+In addition, developers can utilize their skills to [customize the generated application](/how-to/custom-code/) afterwards.
 
 ## Which tutorial is right for you?
 
