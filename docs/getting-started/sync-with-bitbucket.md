@@ -41,10 +41,10 @@ This wil lead you to _Sync with git provider_ page. Click on "Add organization" 
 
 ![select-git-provider](./assets/sync-with-git-provider/select-git-provider.png)
 
-You will be redirected to Bitbucket's authorization server and a page will then be displayed, outlining that the Amplication's OAuth consumer is requesting access to the resources on you Bitbucket accont.
+You will be redirected to Bitbucket's authorization server and a page will then be displayed, outlining that the Amplication's OAuth consumer is requesting access to the resources on you Bitbucket account.
 
 :::note
-If you are not logged in to your Bitbucket accont, the Bitbucket's authorization server will request you to log in first.
+If you are not logged in to your Bitbucket account, the Bitbucket's authorization server will request you to log in first.
 :::
 
 ![amplication-bitbucket-oauth-consumer](./assets/sync-with-git-provider/amplication-bitbucket-consumer.png)

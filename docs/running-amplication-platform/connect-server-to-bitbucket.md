@@ -13,12 +13,12 @@ When running a local Amplication server you first need to configure the server t
 
 ## Step 1: Create a new Bitbucket OAuth Consumer
 
-- Create a Bitbucket account or connect to your accont if you already have one
+- Create a Bitbucket account or connect to your account if you already have one
 - Create a workspace
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/khnDDDOGHlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-- Create a Bitbucket account or connect to your accont if you already have one
+- Create a Bitbucket account or connect to your account if you already have one
 - Create a workspace
 - Navigate to workspace settings 
 `https://bitbucket.org/{your-workspace-name}/workspace/settings`. At the bottom of the sidebar, click on **OAuth consumers**
@@ -101,7 +101,7 @@ npx nx serve local-data-service-generator-controller
 
 The `response_type=code` in the context of OAuth 2.0, it signifies that Bitbucket's authorization server will respond by sending an authorization code to the callback URL that we've set up, which in our case, is the amplication-client.
 
-amplication-client then forwards this code to the Amplication server. If the received code is as expected (and all the environmet variables are set as expected), the Amplication server responds with a token. That means that your local consumer granted permissions to your Bitbucket account.
+amplication-client then forwards this code to the Amplication server. If the received code is as expected (and all the environment variables are set as expected), the Amplication server responds with a token. That means that your local consumer granted permissions to your Bitbucket account.
 
 - Once the connection is established, you have the flexibility to either create a new Bitbucket repository or connect to an existing one. Regardless of the option you choose, you will need to select the Bitbucket workspace. If you're creating a new repository, this will be the workspace where your new repository will reside. If you're connecting to an existing repository, this should be the workspace where your current repository is located.
 
