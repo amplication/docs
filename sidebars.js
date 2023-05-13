@@ -118,6 +118,7 @@ module.exports = {
     ],
     "Running Amplication Platform": [
       "running-amplication-platform/connect-server-to-github",
+      "running-amplication-platform/connect-server-to-bitbucket",
       "running-amplication-platform/configure-github-auth",
     ],
     About: [
