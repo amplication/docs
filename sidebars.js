@@ -10,6 +10,7 @@ module.exports = {
       "getting-started/deploy",
       "getting-started/authentication",
       "getting-started/sync-with-github",
+      "getting-started/sync-with-bitbucket",
       "faqs/faqs",
       "getting-started/plugins",
       "getting-started/projects-resources-services",
