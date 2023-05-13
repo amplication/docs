@@ -69,7 +69,44 @@ BITBUCKET_CLIENT_ID={YOUR_CLIENT_ID}
 BITBUCKET_CLIENT_SECRET={YOUR_CLIENT_SECRET}
 ```
 
-- Restart both services
+:::note
+Bitbucket is an enterprise feature only. To being able use it locally, you need to disable billing in amplication-server `packages/amplication-server/.env.local` file:
+```
+BILLING_ENABLED=false
+```
+:::
+
+- Run the following services
+```bash
+# amplication-server
+npx nx serve amplication-server
+# amplication-client
+npx nx serve amplication-client
+# amplication-pull-request-service
+npx nx serve amplication-git-pull-request-service
+# amplication-build-manager
+npx nx serve amplication-build-manager
+# local-data-service-generator-controller
+npx nx serve local-data-service-generator-controller
+```
 
 ## Step 3: Running locally
+- Click on one of your service or create a new service and connect it to Bitbucket
+![connect-to-bitbucket](./assets/connect-to-bitbucket.png)
+- You will be redirected to Bitbucket's authorization server. The URL will look something like this: `bitbucket.org/site/oauth2/authorize`, with your OAuth consumer client ID included as a query parameter.
+
+- A page will then be displayed, outlining that the OAuth consumer (represented as "Demo" in our screenshot) is requesting access to the resources you specified earlier in the permissions setup for the OAuth consumer.
+
+![grant-access](./assets/grant-access.png)
+
+The `response_type=code` in the context of OAuth 2.0, it signifies that Bitbucket's authorization server will respond by sending an authorization code to the callback URL that we've set up, which in our case, is the amplication-client.
+
+amplication-client then forwards this code to the Amplication server. If the received code is as expected (and all the environmet variables are set as expected), the Amplication server responds with a token. That means that your local consumer granted permissions to your Bitbucket account.
+
+- Once the connection is established, you have the flexibility to either create a new Bitbucket repository or connect to an existing one. Regardless of the option you choose, you will need to select the Bitbucket workspace. If you're creating a new repository, this will be the workspace where your new repository will reside. If you're connecting to an existing repository, this should be the workspace where your current repository is located.
+
+
+![select-workspace](./assets/select-workspace.png)
+
+- From this point, everything works the same as describing in 
 
