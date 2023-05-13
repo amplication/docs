@@ -11,6 +11,7 @@ module.exports = {
       "getting-started/authentication",
       "getting-started/sync-with-github",
       "getting-started/sync-with-bitbucket",
+      "getting-started/sync-with-git-differences-between-plans",
       "faqs/faqs",
       "getting-started/plugins",
       "getting-started/projects-resources-services",
