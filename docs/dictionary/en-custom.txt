@@ -80,3 +80,4 @@ amplicationignore
 dbsettings
 drawio
 heirarchy
+autoplay
