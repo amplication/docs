@@ -108,5 +108,5 @@ amplication-client then forwards this code to the Amplication server. If the rec
 
 ![select-workspace](./assets/select-workspace.png)
 
-- From this point, everything works the same as describing in 
+- From this point, everything works the same as describing on [Sync with Bitbucket](/docs/getting-started/sync-with-bitbucket.md#create-a-new-pull-request-in-bitbucket)
 
