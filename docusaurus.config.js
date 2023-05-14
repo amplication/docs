@@ -48,24 +48,14 @@ module.exports = {
           label: "Tutorials",
         },
         {
-          to: "/how-to",
-          position: "left",
-          label: "How Tos",
-        },
-        {
           to: "/custom-code",
           position: "left",
-          label: "Customize",
+          label: "Custom Code",
         },
         {
-          to: "/errors",
+          to: "/api/index",
           position: "left",
-          label: "Troubleshooting",
-        },
-        {
-          to: "/api/api-index",
-          position: "left",
-          label: "Generate",
+          label: "Generated APIs",
         },
         {
           href: "https://app.amplication.com/login",
@@ -99,20 +89,20 @@ module.exports = {
               label: "Tutorials",
             },
             {
+              to: "custom-code",
+              label: "Custom Code",
+            },
+            {
+              to: "api",
+              label: "Generated APIs",
+            },
+            {
               to: "how-to",
               label: "How Tos",
             },
             {
-              to: "custom-code",
-              label: "Customize",
-            },
-            {
               to: "errors",
               label: "Troubleshooting",
-            },
-            {
-              to: "api",
-              label: "Generate",
             },
           ],
         },
