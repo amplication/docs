@@ -48,8 +48,7 @@ OAuth 2.0 is a protocol that allows a user to grant a third-party application ac
 
 ![bitbucket-oauth-consumer-permissions](./assets/bitbucket-oauth-consumer-permissions.png)
 
-- c
-Click on **Save**
+- Click on **Save**
 
 :::note
  Creating a Bitbucket OAuth consumer within your own Bitbucket account might initially seem puzzling. After all, the consumer's role is to access resources on a user's behalf, and here, you are that user. But remember, the operations you are carrying out originate from the Amplication platform. It's about facilitating these actions securely without sharing your Bitbucket credentials.

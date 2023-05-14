@@ -1,11 +1,9 @@
 ---
 id: sync-with-git-differences-between-plans
-title: Differences between Git sync Free edition and Pro/Enterprise Plans
-sidebar_label: Differences between Git sync Free edition and Pro/Enterprise Plans
+title: Differences between sync with a Git provider in Free edition and Pro/Enterprise Plans
+sidebar_label: Differences between sync with a Git provider in Free edition and Pro/Enterprise Plans
 slug: /sync-with-git-differences-between-plans
 ---
-
-## Differences between sync with a Git provider in Free edition and Pro/Enterprise Plans
 
 The Git provider sync process is for the Amplication Pro and Enterprise editions is different to the Free edition. 
 
