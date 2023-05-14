@@ -1,10 +1,9 @@
 ---
 title: Generated APIs
----
 
 # Generated APIs
 
-Amplication generates production-ready REST and GraphQL APIs for all your data models. Easily connect to your data with any HTTP client.
+Amplication generates production-ready REST and GraphQL APIs with [Swagger UI](https://swagger.io/tools/swagger-ui/) documentation for all your data models. Easily connect to your data with any HTTP client.
 
 ## REST APIs
 
