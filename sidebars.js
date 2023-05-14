@@ -5,7 +5,7 @@ const sidebars = {
       label: "Getting Started",
       link: {
         type: "doc",
-        id: "welcome"
+        id: "welcome",
       },
       items: [
         "getting-started/first-app",
@@ -25,7 +25,7 @@ const sidebars = {
       label: "Generated API",
       link: {
         type: "doc",
-        id: "api/api-index"
+        id: "api/index",
       },
       items: [
         "getting-started/generated-app-api",
@@ -40,7 +40,7 @@ const sidebars = {
       label: "Customize Your Application",
       link: {
         type: "doc",
-        id: "custom-code/index"
+        id: "custom-code/index",
       },
       items: [
         "custom-code/managing-custom-files",
@@ -56,7 +56,7 @@ const sidebars = {
       label: "How To",
       link: {
         type: "doc",
-        id: "how-to/index"
+        id: "how-to/index",
       },
       items: [
         "how-to/how-to-create-app",
@@ -75,7 +75,7 @@ const sidebars = {
       label: "Plugins Developer Guide",
       link: {
         type: "doc",
-        id: "plugins/overview"
+        id: "plugins/overview",
       },
       items: [
         "getting-started/plugins",
@@ -97,7 +97,7 @@ const sidebars = {
         {
           type: "category",
           label: "Developing Plugins",
-          items: ["plugins/publish-plugin", "plugins/example-plugin"],
+          items: ["plugins/publish-plugin", "plugins/how-to-create-plugin"],
         },
         {
           type: "category",
@@ -130,7 +130,7 @@ const sidebars = {
       label: "Tutorials",
       link: {
         type: "doc",
-        id: "tutorials/index"
+        id: "tutorials/index",
       },
       items: [
         {
@@ -138,7 +138,7 @@ const sidebars = {
           label: "Angular Todos",
           link: {
             type: "doc",
-            id: "tutorials/angular-todos/angular-todos-step-000"
+            id: "tutorials/angular-todos/angular-todos-step-000",
           },
           items: [
             "tutorials/angular-todos/angular-todos-step-000",
@@ -155,7 +155,7 @@ const sidebars = {
           label: "React Todos",
           link: {
             type: "doc",
-            id: "tutorials/react-todos/react-todos-step-000"
+            id: "tutorials/react-todos/react-todos-step-000",
           },
           items: [
             "tutorials/react-todos/react-todos-step-000",
@@ -174,7 +174,7 @@ const sidebars = {
       label: "Running Amplication Platform",
       link: {
         type: "doc",
-        id: "running-amplication-platform/connect-server-to-github"
+        id: "running-amplication-platform/connect-server-to-github",
       },
       items: [
         "running-amplication-platform/connect-server-to-github",
@@ -186,7 +186,7 @@ const sidebars = {
       label: "About",
       link: {
         type: "doc",
-        id: "about/index"
+        id: "about/index",
       },
       items: [
         "about/licensing",
@@ -202,7 +202,7 @@ const sidebars = {
       label: "Troubleshooting",
       link: {
         type: "doc",
-        id: "errors/index"
+        id: "errors/index",
       },
       items: [
         {
@@ -240,7 +240,7 @@ const sidebars = {
       label: "Community",
       link: {
         type: "doc",
-        id: "contributing"
+        id: "contributing",
       },
       items: ["contributing", "community/handling-a-new-issue"],
     },

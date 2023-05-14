@@ -7,31 +7,30 @@ slug: /api/generated-api-filtering
 
 # Generated API - Filtering
 
-The generated API comes with inbuilt support for filtering.
+The generated API includes built-in support for filtering, which enables users to specify search criteria for their queries. 
 
-Filtering uses the `where` parameter to define filters. It can be used to filter on record properties (such as a user's email address) or related record properties (such as a user's top 10 most recent post titles).
+Filtering is done using the `where` parameter, which defines filters based on record properties or related record properties, such as a user's email address or their top 10 most recent post titles.
 
 :::note
 
-The `where` parameter is available only on endpoints and queries that return a list of items.
-For example `/api/posts` `/api/posts/{id}/tags`
+The `where` parameter can only be used on endpoints and queries that return a list of items, such as `/api/posts` or `/api/posts/{id}/tags`.
 :::
 
 ## Filter conditions and operators
 
 The `where` parameter supports the following operators:
 
-- lt
-- lte
-- gt
-- contains
-- startsWith
-- endsWith
-- mode
-- not
+- `lt`
+- `lte`
+- `gt`
+- `contains`
+- `startsWith`
+- `endsWith`
+- `mode`
+- `not`
 
 :::note
-The `Searchable` flag in the entity field settings determines whether the record can be included in a search. The flag is activated by default.
+The `Searchable` flag in the entity field settings determines whether a record can be included in a search. This flag is activated by default.
 :::
 
 To find out more about filters and operators, we recommend reading the [Prisma Client API reference](https://www.prisma.io/docs/reference/api-reference/prisma-client-reference#filter-conditions-and-operators)

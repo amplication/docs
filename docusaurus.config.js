@@ -38,34 +38,39 @@ module.exports = {
       },
       items: [
         {
-          to: '/welcome',
-          position: 'left',
-          label: 'Get Started'
+          to: "/welcome",
+          position: "left",
+          label: "Get Started",
         },
         {
-          to: '/tutorials',
-          position: 'left',
-          label: 'Tutorials',
+          to: "/tutorials",
+          position: "left",
+          label: "Tutorials",
         },
         {
-          to: '/how-to',
-          position: 'left',
-          label: 'How Tos',
+          to: "/how-to",
+          position: "left",
+          label: "How Tos",
         },
         {
-          to: '/custom-code',
-          position: 'left',
-          label: 'Customize',
+          to: "/custom-code",
+          position: "left",
+          label: "Customize",
         },
         {
-          to: '/errors',
-          position: 'left',
-          label: 'Troubleshooting',
+          to: "/errors",
+          position: "left",
+          label: "Troubleshooting",
         },
         {
-          to: '/api/api-index',
-          position: 'left',
-          label: 'Generate',
+          to: "/api/api-index",
+          position: "left",
+          label: "Generate",
+        },
+        {
+          href: "https://app.amplication.com/login",
+          html: "Start Now",
+          position: "right",
         },
         {
           href: "https://amplication.com/contact-us",
@@ -86,29 +91,29 @@ module.exports = {
           title: "Docs",
           items: [
             {
-              to: '/',
-              label: 'Get Started'
+              to: "/",
+              label: "Get Started",
             },
             {
-              to: 'tutorials',
-              label: 'Tutorials'
+              to: "tutorials",
+              label: "Tutorials",
             },
             {
-              to: 'how-to',
-              label: 'How Tos'
+              to: "how-to",
+              label: "How Tos",
             },
             {
-              to: 'custom-code',
-              label: 'Customize'
+              to: "custom-code",
+              label: "Customize",
             },
             {
-              to: 'errors',
-              label: 'Troubleshooting'
+              to: "errors",
+              label: "Troubleshooting",
             },
             {
-              to: 'api',
-              label: 'Generate'
-            }
+              to: "api",
+              label: "Generate",
+            },
           ],
         },
         {
@@ -137,22 +142,22 @@ module.exports = {
           items: [
             {
               label: "Blog",
-              href: "https://amplication.com/blog"
+              href: "https://amplication.com/blog",
             },
             {
               label: "About Us",
-              href: "https://amplication.com/about"
+              href: "https://amplication.com/about",
             },
             {
               label: "Team",
-              href: "https://amplication.com/team"
+              href: "https://amplication.com/team",
             },
             {
               label: "Contact Us",
-              href: "https://amplication.com/contact-us"
-            }
-          ]
-        }
+              href: "https://amplication.com/contact-us",
+            },
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} amplication. Built with Docusaurus.`,
     },

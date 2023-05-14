@@ -27,18 +27,21 @@ When running a local Amplication server you first need to configure the server t
    - **Permissions > Repository permissions**
      - **Administration** - `Access: Read and Write`
      - **Content** - `Access: Read and Write`
-     - **PR** - `Access: Read and Write`
      - **Metadata** - `Access: Read-only`
      - **Pull requests** - `Access: Read and Write`
      - **Webhooks** - `Access: Read and Write`
-3. Click **Save**
-4. Click `Generate new client secret` and copy the resulting secret
+3. Click `Create GitHub app`
+4. Click `Generate a new client secret` and copy the resulting secret
 5. Click `Generate a private key`, download, open the generated certificate, add `\n` at the end of each line and join all lines to obtain a single line string
+6. Under the "Generate a private key" section, click "Generate private key" to download a PEM file containing your app's private key
+7. Note the App ID shown on the "General" tab of your app's settings page
+8. On your local machine, set the GITHUB_APP_APP_ID and GITHUB_APP_PRIVATE_KEY environment variables to the App ID and the contents of the PEM file, respectively
+9. Once you have set up these credentials, you should be able to complete the build process locally using git pull.
 
 ## Step 2: Configure Amplication server to work with the new GitHub app
 
-6. Clone [/packages/amplication-server/.env](https://github.com/amplication/amplication/blob/master/packages/amplication-server/.env) into `/packages/amplication-server/.env.local`
-7. Update `/packages/amplication-server/.env.local` with the following variables
+10. Clone [/packages/amplication-server/.env](https://github.com/amplication/amplication/blob/master/packages/amplication-server/.env) into `/packages/amplication-server/.env.local`
+11. Update `/packages/amplication-server/.env.local` with the following variables
 
    ```sh
    # GitHub App (Git sync)
@@ -51,4 +54,16 @@ When running a local Amplication server you first need to configure the server t
    GITHUB_APP_INSTALLATION_URL='https://github.com/apps/[your-github-username]-amplication-local/installations/new?state={state}'
    ```
 
-8. Restart Amplication server.
+## Step 3: Configure Amplication git pull request service to work with the new GitHub app
+
+12. Clone [/packages/amplication-git-pull-request-service/.env](https://github.com/amplication/amplication/blob/master/packages/amplication-git-pull-request-service/.env) into `/packages/amplication-git-pull-request-service/.env.local`
+13. Update `/packages/amplication-git-pull-request-service/.env.local` with the following variables
+
+   ```sh
+   GITHUB_APP_APP_ID="replace with the github App ID"
+   # replace [your-github-username]-amplication-local with your chosen name
+   GITHUB_APP_INSTALLATION_URL='https://github.com/apps/[your-github-username]-amplication-local/installations/new?state={state}'
+   GITHUB_APP_PRIVATE_KEY="-----BEGIN RSA PRIVATE KEY-----The key copied at step 1.5-----END RSA PRIVATE KEY-----"
+   ```
+
+14. Restart Amplication server.

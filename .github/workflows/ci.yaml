@@ -4,10 +4,11 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - name: simple-cspell
-        uses: zwaldowski/cspell-action@1.0.0
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
-          paths: "**/*.md"
-          config: .github/workflows/cspell.json
-      
+          fetch-depth: 1
+      - name: Install dependencies
+        run: npm install
+      - name: CSpell
+        run: npm run cspell
