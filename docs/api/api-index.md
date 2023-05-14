@@ -1,8 +1,6 @@
 ---
 title: Generated APIs
 
----
-
 # Generated APIs
 
 Amplication generates production-ready REST and GraphQL APIs with [Swagger UI](https://swagger.io/tools/swagger-ui/) documentation for all your data models. Easily connect to your data with any HTTP client.
@@ -13,7 +11,7 @@ Amplication generates REST APIs that provide you with a way to interact with you
 
 ### Sorting
 
-Retrieve data in a specific order by applying sorting to your API requests. Sort data based on different properties and control the order using ascending or descending sorting.
+Retrieve data in a specific order by applying sorting to your API requests. Sort data based on different fields in your data model.
 
 ```
 GET /api/posts?orderBy[createdAt]=Asc
@@ -33,7 +31,7 @@ GET /api/posts?where[title][contains]=Node.js
 
 ### Pagination
 
-Paginate API results to manage large datasets and provide a better user experience. Use the `limit` and `offset` query parameters to control the number of results per page and the starting point.
+Paginate API results to manage large datasets and provide a better user experience. Use the `skip` and `take` query parameters to control the number of results per page and the starting point.
 
 ```
 GET /api/posts?skip=20&take=20
@@ -47,7 +45,7 @@ Besides REST APIs, Amplication also generates GraphQL APIs as an alternative way
 
 ### Sorting
 
-Sort the retrieved data in a specific order by adding sorting arguments to your GraphQL queries. Control the sorting order using ascending or descending options.
+Sort the retrieved data in a specific order by adding sorting arguments to your GraphQL queries. Control the sorting order based on fields defined in your data model.
 
 ```
 query{
@@ -87,7 +85,7 @@ query{
 
 ### Pagination
 
-Implement pagination in your GraphQL queries to handle large datasets and improve the user experience. Use the `first`, `last`, `before`, and `after` arguments to control the number of results and the starting point.
+Implement pagination in your GraphQL queries to handle large datasets and improve the user experience. Use the `skip` and `take` arguments to control the number of results and the starting point.
 
 ```
 query{
