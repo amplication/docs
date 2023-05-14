@@ -38,11 +38,6 @@ module.exports = {
       },
       items: [
         {
-          href: "https://app.amplication.com/login",
-          html: "Start Now",
-          position: "right",
-        },
-        {
           href: "https://amplication.com/contact-us",
           html: "Contact Us",
           position: "right",
@@ -51,6 +46,12 @@ module.exports = {
           href: "https://github.com/amplication/amplication",
           html: "GitHub",
           position: "right",
+        },
+        {
+          to: "https://app.amplication.com/login",
+          label: "Start Now",
+          position: "right",
+          class: "start-now-button",
         },
       ],
     },
