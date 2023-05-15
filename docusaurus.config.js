@@ -38,7 +38,7 @@ module.exports = {
       },
       items: [
         {
-          to: "/welcome",
+          to: "/",
           position: "left",
           label: "Get Started",
         },
@@ -53,7 +53,7 @@ module.exports = {
           label: "Custom Code",
         },
         {
-          to: "/api/index",
+          to: "/api",
           position: "left",
           label: "Generated APIs",
         },
