@@ -31,6 +31,4 @@ Additional types of Resources to be added in upcoming releases include storage, 
 
 In earlier releases of Amplication, Services were known as apps, and the workflow supported the creation of individual and separate apps. Now, with the Project as the framework for the development process, each Project can contain multiple connected Services, enabling support for multiple use cases.
 
-
-
-See [Your First Project](/first-app/) for more information. 
+See [Create Your First Service](/first-service/) for more information.

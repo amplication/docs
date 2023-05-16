@@ -8,7 +8,8 @@ const sidebars = {
         id: "welcome",
       },
       items: [
-        "getting-started/first-app",
+        "getting-started/first-service",
+        "getting-started/service-entities-roles-permissions",
         "getting-started/generated-app",
         "getting-started/view-generated-code",
         "how-to/run-dev-env",
@@ -59,7 +60,7 @@ const sidebars = {
         id: "how-to/index",
       },
       items: [
-        "how-to/how-to-create-app",
+        "how-to/how-to-create-service",
         "how-to/how-to-create-entity",
         "how-to/how-to-create-entity-field",
         "how-to/how-to-set-access-permissions",

@@ -10,7 +10,7 @@ Whether you are a beginner just starting with Amplication or an experienced deve
 
 ## Available How Tos
 
-- [Create a new App](/how-to/create-app/)
+- [Create a new Service](/how-to/create-service/)
 - [Create an Entity](/how-to/create-entity/)
 - [Create a new entity field](/how-to/create-entity-field)
 - [Set Access Permissions](/how-to/set-access-permissions/)
