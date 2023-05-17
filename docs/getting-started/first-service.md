@@ -112,6 +112,6 @@ If you're curious about what the generated code for a service looks like, we hav
 
 ## Next Steps
 
-After succesfully creating your first service. [Learn more](/getting-started/) about the specific details, structure, and technologies that a service consists of.
+After successfully creating your first service. [Learn more](/getting-started/) about the specific details, structure, and technologies that a service consists of.
 
 The next steps are to add entities, roles, and permissions to your service: [Set Up Entities, Roles, and Permissions On Your Service](/entities-roles-permissions)
