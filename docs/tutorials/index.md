@@ -11,7 +11,7 @@ To help you get started and learn Amplication in-depth we've put together some r
 We currently have two step-by-step tutorials that help you build apps with either Angular or React.
 
 - [Angular Todos](/tutorials/angular-todos/): Build a todos app with Angular as your front-end and Amplication as your backend.
-- [React Todos](/tutorials/angular-todos/): Build a todos app with React as your front-end and Amplication as your backend.
+- [React Todos](/tutorials/react-todos/): Build a todos app with React as your front-end and Amplication as your backend.
 
 ## YouTube Developer Guides
 
