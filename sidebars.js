@@ -142,7 +142,6 @@ const sidebars = {
             id: "tutorials/angular-todos/angular-todos-step-000",
           },
           items: [
-            "tutorials/angular-todos/angular-todos-step-000",
             "tutorials/angular-todos/angular-todos-step-001",
             "tutorials/angular-todos/angular-todos-step-002",
             "tutorials/angular-todos/angular-todos-step-003",
@@ -159,7 +158,6 @@ const sidebars = {
             id: "tutorials/react-todos/react-todos-step-000",
           },
           items: [
-            "tutorials/react-todos/react-todos-step-000",
             "tutorials/react-todos/react-todos-step-001",
             "tutorials/react-todos/react-todos-step-002",
             "tutorials/react-todos/react-todos-step-003",
