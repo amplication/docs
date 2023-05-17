@@ -75,9 +75,9 @@ When synchronizing with GitHub using the Free Plan, the following occurs:
 
 When synchronizing with GitHub using the Pro or Enterprise Plan, the following occurs: 
 
-- When you first create a build in Amplication Pro and Enterprise Plans, it will create a branch named Amplication and create inside. Pull Request inside a branch that is created named “Amplication.”
-- Subsequent builds will create additional commits within the Amplication branch if there is an open pull request. If there is no open pull request, it will open a new pull request.
-- After the PR has been merged, the next build will create a new Pull Request from the first commit of the default branch. Subsequent builds will add additional commits until the next merge, and so on.
+- **Initial Build Creation**: When you create your first build in Amplication, a new branch labeled amplication is created. All Pull Requests from Amplication are opened against this branch
+- **Subsequent Builds**: Further builds will lead to additional commits within the amplication branch, given an open pull request exists. A new one will be initiated if no open pull request is found
+- **Post-Merge Strategy**: After successfully merging a Pull Request, the following build will kickstart a new Pull Request, starting from the first commit of the default branch. Additional builds will continue to add commits until the next merge, keeping the process seamless and organized
 
 ### Advantages of GitHub Sync in the Pro and Enterprise Plans
 
