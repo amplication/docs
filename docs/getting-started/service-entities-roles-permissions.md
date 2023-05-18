@@ -21,21 +21,24 @@ If you haven't set up your service yet, [create your first service](/first-servi
 
 ## Step 1 - Create an Entity
 
-1. On the _Overview_ page, click **Go to Entities**, or from the main menu (left sidebar) click the **Entities** icon.
-   The _Entities_ page opens. Here you see all the entities in your service.
+1. On your Service's _Overview_ page, click **Go to Entities**, or from the main menu (left sidebar) click the **Entities** icon.
 
-Click the **Entities** icon on the main menu (left sidebar) to reach the _Entities_ page. Here you see all the entities in your application.
+![](./assets/service-entities-roles-permissions/entities-from-overview.png)
+
+The _Entities_ page opens. Here you see all the entities in your application.
 
 ![](./assets/first-app/entities.png)
 
-:::tip
-At this stage, there's only one entity, **User**. This is auto-generated when you created the new service.
+:::info
+When you initially established your service using the service creation wizard, you had the choice to [incorporate entities into your data model](/first-service/#step-6-define-your-data-model) from an Amplication template, or leave it empty.
+
+If you opted not to use a template, you'll find your Entities screen with only one entitiy, **User**. This entity auto-generated when you created the new service.
 :::
 
-In this example, we'll now add another entity called “Project”.
+In this example, we'll now add another entity called _Project_.
 
 2. Click **Add Entity**.
-3. In the _New Entity_ dialog, type “Project”.
+3. In the _New Entity_ dialog, type `Project`.
 4. Click **Create Entity**.
 
 ![](./assets/first-app/created-entity.png)
@@ -44,12 +47,16 @@ You now have a new entity named _Project_. Notice that the added entity comes wi
 
 ## Step 2 - Add Entity Fields
 
-To describe your project add some new fields. For this example, add these fields:
+To describe your project add some new fields. For this example, we will add the following fields:
 
 - **Name** – for saving the project name
 - **Description** – for saving a more detailed description of the project
 - **Start Date** – for saving the date on which this project starts
 - **Owner** – for assigning a user to be an owner of the project
+
+:::tip
+You might find it easier to first add all the fields you want, one after another, and only afterwards set the properties of each field.
+:::
 
 ### Create the Name Field
 
@@ -95,13 +102,15 @@ If needed, you can manually change the field name in the field's properties pane
 
 1. In the _Entity Fields_ text box type “Owner”.
 2. Click **Add field** \(or just press Enter\). The new field is added to the list and the field's property panel opens.
-3. Change the _Data Type_ from **Single Line Text** to **Relation to Entity**.
-4. In the _Related Entity Id_ field select **User**.
-5. Click the **Required Field** toggle to make the _Owner_ field required.
+3. Click the **Required Field** toggle to make the _Owner_ field required.
+4. Change the _Data Type_ from **Single Line Text** to **Relation to Entity**.
+5. In the _Related Entity Id_ field select **User**.
 
-:::tip
-You might find it easier to first add all the fields you want, one after another, and only afterwards set the properties of each field.
-:::
+After selecting User, a modal will appear telling you to create the relation to user. The opposite related field on User needs to be created to relate User back to Project.
+
+Click on `Create` and proceed to Step 3.
+
+![](./assets/service-entities-roles-permissions/name-relations-field-from-user.png)
 
 ## Step 3 - Create Roles
 
@@ -122,7 +131,13 @@ In this example, we add another two roles: _Admin_ and _Manager_.
 
 ## Step 4 - Set Access Permissions
 
-In order to allow users to access the entity, we need to set its permissions.
+In order to allow users to access the entity, we need to set its permissions. To access your service's permissions:
+
+1. On the _Overview_ page, click **Go to Entities**, or from the main menu (left sidebar) click the **Entities** icon.
+2. Click the _Project_ entity.
+3. In the _Project_ page click the _Permissions_ tab. This opens the Permissions settings.
+
+![](./assets/service-entities-roles-permissions/service-entities-permissions.png)
 
 Permissions can be controlled separately for each of the following actions:
 
@@ -148,11 +163,8 @@ In this example, some of the actions have been changed to **Public**, while the 
 
 In the following example, we use the **Granular** setting to fine-tune the permissions for a role.
 
-1. On the _Overview_ page, click **Go to Entities**, or from the main menu (left sidebar) click the **Entities** icon.
-2. Click the _Project_ entity.
-3. In the _Project_ page click the _Permissions_ tab. This opens the Permissions settings.
-4. By default, all actions (_View_, _Create_, _Update_, _Delete_, and _Search_) are set to **All Roles**.
-5. Fine tune permissions by changing the *Delete* permissions from **All Roles** to **Granular** and then select from the displayed roles the _Admin_ role. This ensures that only users with the _Admin_ role can delete projects.
+1. By default, all actions (_View_, _Create_, _Update_, _Delete_, and _Search_) are set to **All Roles**.
+2. Fine tune permissions by changing the *Delete* permissions from **All Roles** to **Granular** and then select from the displayed roles the _Admin_ role. This ensures that only users with the _Admin_ role can delete projects.
 
 ![](./assets/first-app/granular-permissions.png)
 
@@ -166,7 +178,7 @@ We will now set permissions at the field level.
 
 1.  In the **Update** action, click **+ Add Field** and select the **Start Date** and **ID** fields from the drop-down list.
 
-![](./assets/first-app/granular-fields.png)
+![](./assets/service-entities-roles-permissions/specific-permissions-fields.png)
 
 2. We now select the roles to associate with each selected field.
 
@@ -190,61 +202,21 @@ In this page, you can see that the creation of the _Project_ entity hasn't been 
 2. Click **Commit Changes**. All changes are committed. A build of the first version of your service is automatically created!
 
 :::tip
-Use Code View to view and explore the generated code. You can see the updated code before it is synced with GitHub or downloaded. Click the [View Code](./view-generated-code.md) icon to view the generated code.
+Use Code View to view and explore the generated code. You can see the updated code before it is synced with GitHub. Click the [View Code](/view-generated-code/) icon to view the generated code.
 :::
 
-3. After the build process completes, click the download icon in the _Generate Code_ row to get a .zip file of your app. It is now ready to be deployed anywhere you want. 🚀
+![](./assets/service-entities-roles-permissions/generated-code.png)
 
-## Step 6 - Taking your app a bit further
+3. After the build process completes, you will see a new pull request created on the GitHub repo you associated with your service. You can review the pull request and after merging the generated code will be in repo [using the folder structure you picked](#step-4-select-your-repo-style) when you created your service.
+
+## You're Done!
+
+Congratulations! You've successfully set up your service, added new entities, roles, and permissions to that service. You saw your generated code and the associated pull request on your repo.
+
+![](./assets/service-entities-roles-permissions/github-pull-request.png)
+
+## Next Steps
 
 Now that you know how to create entities, commit changes, and build new versions, let's take it a bit further by adding another entity and learning how to compare changes before committing.
 
-### Create the Task Entity
-
-We'll now add another entity called “Task”.
-
-1. On the _Overview_ page, click **Go to Entities**, or from the main menu (left sidebar) click the **Entities** icon.
-2. Click **Add entity**.
-3. In the _New Entity_ dialog, type in “Task”.
-4. Click **Create Entity**.
-5. The entity comes with a few default fields. We'll add some more fields as follows.
-
-| Field Name        | Data Type          | Properties                                                                              |
-| ----------------- | ------------------ | --------------------------------------------------------------------------------------- |
-| Title             | Single Line Text   | Required                                                                                |
-| Estimation (days) | Whole Number       |                                                                                         |
-| Start Date        | Date Time          |                                                                                         |
-| Status            | Option Set         | Required, 4 options: <ul><li>New</li><li>Pending</li><li>Ongoing</li><li>Done</li></ul> |
-| Project           | Relation to Entity | Related to: Project                                                                     |
-| Assigned To       | Relation to Entity | Related to: User                                                                        |
-
-The Task's field list should now look like this:
-
-![](./assets/first-app/task.png)
-
-### Update the Project Entity
-
-We'll now make a few changes to the _Project_ entity.
-
-1. On the _Overview_ page, click **Go to Entities**, or from the main menu (left sidebar) click the **Entities** icon.
-2. Select the _Project_ entity.
-3. Add a new field called **Due Date** and set its data type to "Date Time".
-4. Select the existing _Owner_ field and change its _Display Name_ to "Project Owner".
-
-### Compare Pending Changes Before Commit
-
-It's always good to check what was changed before you commit to verify that these changes were intentional.
-To do so:
-
-1. Click **Compare Changes**. (Note: **Compare Changes** icon is next to **Delete** icon)
-2. The _Pending Changes_ page opens and indicates what was changed and what was added.
-
-- The _Task_ entity was created
-- The _Project_ entity was updated
-
-![](./assets/first-app/commit.png)
-
-3. Since these changes were intentional and we're happy to commit them, click **Commit changes and build**.
-
-**You are now ready to build a new version of your app. Great work!**
-
+[Building New Versions of Your Service](/building-new-versions/)

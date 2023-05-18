@@ -10,6 +10,7 @@ const sidebars = {
       items: [
         "getting-started/first-service",
         "getting-started/service-entities-roles-permissions",
+        "getting-started/service-building-new-versions",
         "getting-started/generated-app",
         "getting-started/view-generated-code",
         "how-to/run-dev-env",
