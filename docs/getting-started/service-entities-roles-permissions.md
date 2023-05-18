@@ -7,7 +7,6 @@ slug: /entities-roles-permissions
 
 # Set Up Entities, Roles, and Permissions On Your Service
 
-
 These instructions will walk you through adding entities, roles, and setting permissions on those entities for [your service](/projects-resources-services#service).
 
 Next, you'll also see how to commit changes and manage versions. Finally, you'll learn how to build your app and download the generated source code.
@@ -24,10 +23,6 @@ If you haven't set up your service yet, [create your first service](/first-servi
 
 1. On the _Overview_ page, click **Go to Entities**, or from the main menu (left sidebar) click the **Entities** icon.
    The _Entities_ page opens. Here you see all the entities in your service.
-
-:::tip
-When creating an Entity, make sure you do not use a reserved name for the name of the Entity or for any of its fields. Go [here](https://github.com/amplication/amplication/blob/master/packages/amplication-server/src/core/entity/reservedNames.ts) to check the list of reserved names.
-:::
 
 Click the **Entities** icon on the main menu (left sidebar) to reach the _Entities_ page. Here you see all the entities in your application.
 
