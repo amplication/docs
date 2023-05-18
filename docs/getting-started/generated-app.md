@@ -1,11 +1,11 @@
 ---
 id: generated-app
-title: What is a Service?
-sidebar_label: What is a Service?
+title: The Generated Service
+sidebar_label: The Generated Service
 slug: /getting-started
 ---
 
-# What is a Service?
+# The Generated Service
 
 Amplication auto-generates fully functional human-readable and editable services based on TypeScript and Node.js.
 
