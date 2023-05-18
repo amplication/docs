@@ -32,7 +32,7 @@ The _Entities_ page opens. Here you see all the entities in your application.
 :::info
 When you initially established your service using the service creation wizard, you had the choice to [incorporate entities into your data model](/first-service/#step-6-define-your-data-model) from an Amplication template, or leave it empty.
 
-If you opted not to use a template, you'll find your Entities screen with only one entitiy, **User**. This entity auto-generated when you created the new service.
+If you opted not to use a template, you'll find your Entities screen with only one entity, **User**. This entity auto-generated when you created the new service.
 :::
 
 In this example, we'll now add another entity called _Project_.

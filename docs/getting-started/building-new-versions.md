@@ -9,7 +9,7 @@ slug: /building-new-versions
 
 In the [previous guide](/entities-roles-permissions/) you learned how to create entities, add roles, and set permissions for your service.
 
-In this guide we'll take it further by adding another entity, making changes to an existing entity, and learning how to compare changes before building and commiting.
+In this guide we'll take it further by adding another entity, making changes to an existing entity, and learning how to compare changes before building and committing.
 
 Let's get started.
 
