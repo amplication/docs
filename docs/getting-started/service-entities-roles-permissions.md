@@ -202,7 +202,7 @@ In this page, you can see that the creation of the _Project_ entity hasn't been 
 2. Click **Commit Changes**. All changes are committed. A build of the first version of your service is automatically created!
 
 :::tip
-Use Code View to view and explore the generated code. You can see the updated code before it is synced with GitHub. Click the [View Code](/view-generated-code/) icon to view the generated code.
+Use Code View to view and explore the generated code. You can see the updated code before it is synced with GitHub. Click the [View Code](/getting-started/view-generated-code/) icon to view the generated code.
 :::
 
 ![](./assets/service-entities-roles-permissions/generated-code.png)
