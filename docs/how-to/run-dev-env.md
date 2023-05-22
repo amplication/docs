@@ -1,11 +1,11 @@
 ---
 id: run-dev-env
-title: How to run your service on development environment
-sidebar_label: Run your services on development environment
+title: Run Amplication Locally
+sidebar_label: Run Amplication Locally
 slug: /getting-started/dev-env
 ---
 
-# Run Your Service on Development Environment
+# Run Amplication Locally
 
 To build and run your generated application in a local development environment follow this tutorial.
 VS Code is used for demonstration in this article, but the process can be done on any IDE or directly in the command line with npm CLI.

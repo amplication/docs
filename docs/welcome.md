@@ -1,10 +1,10 @@
 ---
 id: welcome
-title: Welcome
+title: Getting Started
 slug: /
 ---
 
-# Getting Started with Amplication
+# Getting started with Amplication
 
 ---
 
