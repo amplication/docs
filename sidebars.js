@@ -10,7 +10,6 @@ const sidebars = {
       items: [
         "welcome",
         "getting-started/first-app",
-        // "getting-started/authentication",
         "getting-started/projects-resources-services",
         // "getting-started/cli",
       ],
@@ -22,6 +21,7 @@ const sidebars = {
         "getting-started/generated-app",
         "getting-started/view-generated-code",
         "how-to/add-custom-code",
+        "getting-started/authentication",
         {
           type: "category",
           label: "Generated API",
