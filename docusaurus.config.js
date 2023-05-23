@@ -34,7 +34,7 @@ module.exports = {
         alt: "Amplication",
         src: "img/amplication-logo.svg",
         srcDark: "img/amplication-logo-dark.svg",
-        href: "/",
+        href: "https://amplication.com/",
       },
       items: [
         {
