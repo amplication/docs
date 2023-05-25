@@ -32,7 +32,7 @@ Example:
   async afterCreateMessageBrokerClientOptionsFactory(
     context: DsgContext,
     eventParams: CreateMessageBrokerClientOptionsFactoryParams
-  ): Promise<Module[]> {
+  ): Promise<ModuleMap> {
     const { serverDirectories } = context;
     const filePath = resolve(staticDirectory, "generateKafkaClientOptions.ts");
     const file = await readFile(filePath, "utf8");
