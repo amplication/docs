@@ -51,7 +51,7 @@ module.exports = {
           to: "https://app.amplication.com/login",
           label: "Start Now",
           position: "right",
-          class: "start-now-button",
+          className: "start-now-button",
         },
       ],
     },
