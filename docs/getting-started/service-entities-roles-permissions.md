@@ -41,6 +41,10 @@ In this example, we'll now add another entity called _Project_.
 3. In the _New Entity_ dialog, type `Project`.
 4. Click **Create Entity**.
 
+:::tip
+When creating an Entity, **make sure you do not use a reserved name** for the name of the Entity or for any of its fields. Check [our list of reserved names](https://github.com/amplication/amplication/blob/master/packages/amplication-server/src/core/entity/reservedNames.ts) on GitHub.
+:::
+
 ![](./assets/first-app/created-entity.png)
 
 You now have a new entity named _Project_. Notice that the added entity comes with auto-generated values such as “Plural Display Name” and some default fields – **ID**, **Created At**, and **Updated At**.
