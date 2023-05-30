@@ -14,6 +14,7 @@
     "Droid Sans", "Helvetica Neue", sans-serif;
   --primary: #7950ed;
   --secondary: #a787ff;
+  --secondary-light: #aa8bff;
   --dark-purple: #6032ea;
   --raised-button-fill: #6032ea;
   --mdc-theme-primary: var(--primary);
@@ -168,3 +169,38 @@ article > header {
 .markdown > h3 {
   --ifm-h3-font-size: 1.3rem;
 }
+
+.start-now-button {
+  tab-size: 4;
+  line-height: 1.5;
+  pointer-events: auto;
+  border: 0 solid;
+  box-sizing: border-box;
+  text-decoration: inherit;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: .25rem;
+  background-color: var(--primary);
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 1rem!important;
+  padding-right: 1rem!important;
+  text-align: center;
+  color: var(--white);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .3s;
+  font-weight: 500;
+  font-weight: bold;
+}
+
+.start-now-button:hover{
+  color: var(--white);
+  text-decoration: none;
+  background-color: var(--secondary-light);
+}
+
+

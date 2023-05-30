@@ -58,9 +58,10 @@ module.exports = {
           label: "Generated APIs",
         },
         {
-          href: "https://app.amplication.com/login",
-          html: "Start Now",
+          to: "https://app.amplication.com/login",
+          label: "Start Now",
           position: "right",
+          className: "start-now-button",
         },
         {
           href: "https://amplication.com/contact-us",
