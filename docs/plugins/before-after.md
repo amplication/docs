@@ -29,8 +29,8 @@ export type PluginBeforeEvent<T extends EventParams> = (
 export type PluginAfterEvent<T extends EventParams> = (
   dsgContext: DsgContext,
   eventParams: T,
-  modules: Module[]
-) => Promisable<Module[]>;
+  modules: ModuleMap
+) => Promisable<ModuleMap>;
 ```
 
 In the `before` and `after` functions, we have an access to the context and the event params.
