@@ -38,9 +38,30 @@ module.exports = {
       },
       items: [
         {
-          href: "https://app.amplication.com/login",
-          html: "Start Now",
+          to: "/",
+          position: "left",
+          label: "Get Started",
+        },
+        {
+          to: "/tutorials",
+          position: "left",
+          label: "Tutorials",
+        },
+        {
+          to: "/custom-code",
+          position: "left",
+          label: "Custom Code",
+        },
+        {
+          to: "/api",
+          position: "left",
+          label: "Generated APIs",
+        },
+        {
+          to: "https://app.amplication.com/login",
+          label: "Start Now",
           position: "right",
+          className: "start-now-button",
         },
         {
           href: "https://amplication.com/contact-us",
@@ -58,7 +79,36 @@ module.exports = {
       style: "dark",
       links: [
         {
-          title: "Community",
+          title: "Docs",
+          items: [
+            {
+              to: "/",
+              label: "Get Started",
+            },
+            {
+              to: "tutorials",
+              label: "Tutorials",
+            },
+            {
+              to: "custom-code",
+              label: "Custom Code",
+            },
+            {
+              to: "api",
+              label: "Generated APIs",
+            },
+            {
+              to: "how-to",
+              label: "How Tos",
+            },
+            {
+              to: "errors",
+              label: "Troubleshooting",
+            },
+          ],
+        },
+        {
+          title: "Follow Us",
           items: [
             {
               label: "Discord",
@@ -75,6 +125,27 @@ module.exports = {
             {
               label: "LinkedIn",
               href: "https://www.linkedin.com/company/amplication",
+            },
+          ],
+        },
+        {
+          title: "Company",
+          items: [
+            {
+              label: "Blog",
+              href: "https://amplication.com/blog",
+            },
+            {
+              label: "About Us",
+              href: "https://amplication.com/about",
+            },
+            {
+              label: "Team",
+              href: "https://amplication.com/team",
+            },
+            {
+              label: "Contact Us",
+              href: "https://amplication.com/contact-us",
             },
           ],
         },
@@ -120,7 +191,7 @@ module.exports = {
           },
           {
             to: "/faqs/",
-            from: ["/faqs/faqs/faqs/"],
+            from: ["/faqs/faqs/faqs/", "/faqs/faqs/"],
           },
           {
             to: "/getting-started/plugins/",

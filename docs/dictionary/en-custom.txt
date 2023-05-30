@@ -81,3 +81,4 @@ dbsettings
 drawio
 heirarchy
 autoplay
+youtube
