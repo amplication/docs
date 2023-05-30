@@ -9,7 +9,8 @@ const sidebars = {
       },
       items: [
         "welcome",
-        "getting-started/first-app",
+        "getting-started/first-service",
+        "getting-started/service-entities-roles-permissions",
         "getting-started/projects-resources-services"
       ],
     },
@@ -17,6 +18,7 @@ const sidebars = {
       type: "category",
       label: "Services",
       items: [
+        "getting-started/service-building-new-versions",
         "getting-started/generated-app",
         "getting-started/view-generated-code",
         "how-to/add-custom-code",
@@ -81,7 +83,7 @@ const sidebars = {
             "getting-started/cli"
           ],
         },
-        "how-to/how-to-create-app",
+        "how-to/how-to-create-service",
         "how-to/how-to-create-entity",
         "how-to/how-to-create-entity-field",
         "how-to/how-to-set-access-permissions",
