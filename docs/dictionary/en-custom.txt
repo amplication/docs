@@ -80,4 +80,5 @@ amplicationignore
 dbsettings
 drawio
 heirarchy
+autoplay
 youtube

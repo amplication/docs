@@ -10,8 +10,7 @@ const sidebars = {
       items: [
         "welcome",
         "getting-started/first-app",
-        "getting-started/projects-resources-services",
-        // "getting-started/cli",
+        "getting-started/projects-resources-services"
       ],
     },
     {
@@ -50,6 +49,8 @@ const sidebars = {
         "how-to/run-dev-env",
         "getting-started/deploy",
         "getting-started/sync-with-github",
+        "getting-started/sync-with-bitbucket",
+        "getting-started/sync-with-git-differences-between-plans",
         {
           type: "category",
           label: "Customize Your Service",
@@ -64,6 +65,20 @@ const sidebars = {
             "custom-code/add-graphql-query",
             "custom-code/seed-db",
             "custom-code/add-custom-dto",
+          ],
+        },
+        {
+          type: "category",
+          label: "Run Amplication Locally",
+          link: {
+            type: "doc",
+            id: "running-amplication-platform/connect-server-to-github",
+          },
+          items: [
+            "running-amplication-platform/connect-server-to-github",
+            "running-amplication-platform/connect-server-to-bitbucket",
+            "running-amplication-platform/configure-github-auth",
+            "getting-started/cli"
           ],
         },
         "how-to/how-to-create-app",
@@ -191,18 +206,6 @@ const sidebars = {
         }
       ],
     },
-    // {
-    //   type: "category",
-    //   label: "Running Amplication Platform",
-    //   link: {
-    //     type: "doc",
-    //     id: "running-amplication-platform/connect-server-to-github",
-    //   },
-    //   items: [
-    //     "running-amplication-platform/connect-server-to-github",
-    //     "running-amplication-platform/configure-github-auth",
-    //   ],
-    // },
     {
       type: "category",
       label: "About",
