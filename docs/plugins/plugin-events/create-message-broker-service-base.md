@@ -31,7 +31,7 @@ Example:
   async afterCreateMessageBrokerServiceBase(
     context: DsgContext,
     eventParams: CreateMessageBrokerServiceBaseParams
-  ): Promise<Module[]> {
+  ): Promise<ModuleMap> {
     const { serverDirectories } = context;
     const { messageBrokerDirectory } = serverDirectories;
     const filePath = resolve(staticDirectory, `kafka.service.base.ts`);
