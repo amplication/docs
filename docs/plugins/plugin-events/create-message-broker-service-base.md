@@ -30,7 +30,8 @@ Example:
 ```ts
   async afterCreateMessageBrokerServiceBase(
     context: DsgContext,
-    eventParams: CreateMessageBrokerServiceBaseParams
+    eventParams: CreateMessageBrokerServiceBaseParams,
+    modules: ModuleMap
   ): Promise<ModuleMap> {
     const { serverDirectories } = context;
     const { messageBrokerDirectory } = serverDirectories;
