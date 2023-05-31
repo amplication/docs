@@ -42,12 +42,7 @@ Example:
       serverDirectories.messageBrokerDirectory,
       generateFileName
     );
-
-    return [
-      {
-        code: file,
-        path,
-      },
-    ];
+    modules.set({ code: file, path });
+    return modules;
   }
 ```

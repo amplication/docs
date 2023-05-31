@@ -40,6 +40,6 @@ async afterCreateMessageBrokerService(
     const generateFileName = `kafka.service.ts`;
 
     const path = join(messageBrokerDirectory, generateFileName);
-    return [{ code: file, path }];
-  }
+    modules.set({ code: file, path });
+    return modules;  }
 ```

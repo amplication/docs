@@ -59,14 +59,18 @@ As a result the`CreateServerDockerComposeDB` is not running and you would have t
 For that, you need to provide the path to your `docker-compose.db.yml` and set the path in which you want the `docker-compose.db.yml` will be generated.
 
 ```ts
-  async afterCreateServerDockerComposeDB(context: DsgContext) {
+  async afterCreateServerDockerComposeDB(
+    context: DsgContext,
+    eventParams: CreateServerDockerComposeDBParams,
+    modules: ModuleMap) {
     const staticPath = resolve(__dirname, "../static");
     const staticsFiles = await context.utils.importStaticModules(
       staticPath,
       context.serverDirectories.baseDirectory
     );
 
-    return staticsFiles;
+    modules.merge(staticsFiles)
+    return modules;
   }
 ```
 

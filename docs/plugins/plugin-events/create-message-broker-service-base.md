@@ -40,6 +40,7 @@ Example:
     const generateFileName = `kafka.service.base.ts`;
 
     const path = join(messageBrokerDirectory, "base", generateFileName);
-    return [{ code: file, path }];
+    modules.set({ code: file, path });
+    return modules;
   }
 ```
