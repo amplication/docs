@@ -18,8 +18,8 @@ const sidebars = {
       type: "category",
       label: "Services",
       items: [
-        "getting-started/service-building-new-versions",
         "getting-started/generated-app",
+        "getting-started/service-building-new-versions",        
         "getting-started/view-generated-code",
         "how-to/add-custom-code",
         "getting-started/authentication",
