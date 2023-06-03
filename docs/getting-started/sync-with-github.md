@@ -102,7 +102,7 @@ But, it's possible to override these settings for each individual service.
 
 To do this when you're creating a service, turn on the `Override default settings` toggle [during the Git Provider selection step](/first-service/#step-2-connect-your-github-repository).
 
-You'll see [the repository seletion modal](#select-your-repository) appear again.
+You'll see [the repository selection modal](#select-your-repository) appear again.
 You can select a new repository based on [the configuration settings](#set-amplications-configuration-settings) you set for Amplication's GitHub App.
 
 ![](./assets/sync-with-git-provider/1bb1238f-01a7-4650-aeb2-6f5ae8ae76c7.png)
