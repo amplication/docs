@@ -16,7 +16,11 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Services",
+      label: "The Generated Service",
+      link: {
+        type: "doc",
+        id: "getting-started/generated-app",
+      },
       items: [
         "getting-started/generated-app",
         "getting-started/service-building-new-versions",        
@@ -48,11 +52,17 @@ const sidebars = {
         id: "how-to/index",
       },
       items: [
-        "how-to/run-dev-env",
         "getting-started/deploy",
-        "getting-started/sync-with-github",
-        "getting-started/sync-with-bitbucket",
-        "getting-started/sync-with-git-differences-between-plans",
+        "getting-started/plugins",
+        {
+          type: "category",
+          label: "Sync With Git",
+          items: [
+            "getting-started/sync-with-github",
+            "getting-started/sync-with-bitbucket",
+            "getting-started/sync-with-git-differences-between-plans",
+          ]
+        },
         {
           type: "category",
           label: "Customize Your Service",
@@ -74,9 +84,10 @@ const sidebars = {
           label: "Run Amplication Locally",
           link: {
             type: "doc",
-            id: "running-amplication-platform/connect-server-to-github",
+            id: "how-to/run-dev-env",
           },
           items: [
+            "how-to/run-dev-env",
             "running-amplication-platform/connect-server-to-github",
             "running-amplication-platform/connect-server-to-bitbucket",
             "running-amplication-platform/configure-github-auth",
@@ -96,18 +107,13 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Plugins",
+      label: "Plugin Development",
       link: {
         type: "doc",
         id: "plugins/overview",
       },
       items: [
-        "getting-started/plugins",
-        {
-          type: "category",
-          label: "Overview",
-          items: ["plugins/overview"],
-        },
+        "plugins/overview",
         {
           type: "category",
           label: "Architecture",
