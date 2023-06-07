@@ -229,6 +229,6 @@ Amplication doesn't just push your service's generated code to a git repository 
 
 Now that you know how to create entities, commit changes, and build new versions, let's take it a bit further by adding another entity and learning how to compare changes before committing.
 
-You'll also learn more about how Amplication automatically tracks your code and changes in a git repoistory.
+You'll also learn more about how Amplication automatically tracks your code and changes in a git repository.
 
 [Building New Versions of Your Service](/building-new-versions/)
