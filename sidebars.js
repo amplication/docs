@@ -21,6 +21,7 @@ const sidebars = {
         "getting-started/sync-with-bitbucket",
         "getting-started/sync-with-git-differences-between-plans",
         "getting-started/projects-resources-services",
+        "getting-started/smart-git-sync",
         "getting-started/cli",
       ],
     },
