@@ -56,7 +56,7 @@ const sidebars = {
         "getting-started/plugins",
         {
           type: "category",
-          label: "Sync With Git",
+          label: "Sync With a Git Provider",
           items: [
             "getting-started/sync-with-github",
             "getting-started/sync-with-bitbucket",
@@ -65,7 +65,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "Customize Your Service",
+          label: "Customize Your Generated Service",
           link: {
             type: "doc",
             id: "custom-code/index",
