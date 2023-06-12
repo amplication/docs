@@ -40,23 +40,20 @@ This is separate and distinct from logging in with GitHub on [Amplication's logi
 
 When you [create a service](/first-service/) on a project for the first time on Amplication, you have the option of selecting your preferred git provider.
 
-![](./assets/sync-with-git-provider/select-git-provider.png)
-
-If you haven't done this yet, go to your project's dashboard. You'll need to go to the _Sync with Git Provider_ page. There are 3 ways to do this:
+If you haven't connected a git repo to your service yet, go to your project's dashboard. You'll need to go to the _Sync with Git Provider_ page. There are 3 ways to do this:
 
 1. Click _Sync with git provider_ on the sidebar.
-2. Click _Connect to git_ on the footer at the bottom of the page.
-3. Click on the _Sync with git provider_ tile on your project's dashboard.
+2. Click on the _Sync with git provider_ tile on your project's dashboard.
+3. Click _Connect to git_ on the footer at the bottom of the page.
 
 ![](./assets/sync-with-git-provider/4b389970-6207-4010-b181-405806ff87c8.png)
 
-Now that you're on the _Sync with Git Provider_ page, click on the _Select organization_ dropdown.
-Your existing organizations from all your git providers will appear.
-Click on the `Add Organization` button.
+You're now on the _Sync with Git Provider_ page.
+Proceed with the following steps to connect a GitHub repository to your service:
 
-![](./assets/sync-with-git-provider/945389.png)
-
-Click on the _Connect_ button for GitHub.
+1. Click on the `Select organization` dropdown.
+2. Click on the `Add Organization` button at the bottom of the dropdown.
+3. Click on the `Connect` button for GitHub that appears in the _Select Git Provider_ modal.
 
 :::important
 If you're already connected to GitHub, you can either add another GitHub organization or select an account you connected previously.
