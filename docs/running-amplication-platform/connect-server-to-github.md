@@ -3,6 +3,7 @@ id: connect-server-to-github
 title: Connect Amplication server to GitHub
 sidebar_label: Connect Amplication server to GitHub
 slug: /running-amplication-platform/connect-server-to-github
+pagination_next: running-amplication-platform/connect-server-to-bitbucket
 ---
 
 # Connect Amplication server to GitHub
