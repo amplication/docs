@@ -220,7 +220,11 @@ module.exports = {
           {
             to: "/how-to/create-service",
             from: ["/how-to/create-app"]
-          }
+          },
+          {
+            to: "/first-service/",
+            from: ["/first-app/"],
+          },
         ],
       },
     ],
