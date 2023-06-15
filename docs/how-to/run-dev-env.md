@@ -44,7 +44,7 @@ cd server
 ```
 
 :::note
-Depending on how you chose a **Monorepo** or **Polyrepo** style to push your code to your git repo, you will have to `cd` into an additionl folder.
+Depending on how you chose a **Monorepo** or **Polyrepo** style to push your code to your git repo, you will have to `cd` into an additional folder.
 :::
 
 For example, if your service is named `Order Service` and you chose a [_Monorepo_](/first-service/#step-4-select-your-repo-style) style, your server folder would be at `apps/order-service`.
@@ -64,11 +64,18 @@ If you run into issues during the installation step, please see our troubleshoot
 
 ## Step 3 - Start a Docker Container for Your Database
 
+To start the database, you need to run a Docker container.
+In the server folder of your service's generated code, you will find a `docker-compose.yml` file, which is used to define and run your application's services.
+
 To start the database, you need to run a Docker container using the following command:
 
 ```
 npm run docker:db
 ```
+
+:::info
+The `docker-compose.yml` file lets you to manage all your service's components in an isolated environment.
+:::
 
 ## Step 4 - Initialize Your Database
 
