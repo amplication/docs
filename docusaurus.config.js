@@ -217,6 +217,10 @@ module.exports = {
             to: "/api/generated-api-sorting/",
             from: ["/getting-started/getting-started/phone-home/"],
           },
+          {
+            to: "/how-to/create-service",
+            from: ["/how-to/create-app"]
+          }
         ],
       },
     ],
