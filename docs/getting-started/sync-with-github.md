@@ -1,7 +1,6 @@
 ---
 id: sync-with-github
 title: Sync with GitHub
-next: manage-amplication-services-github
 sidebar_label: Sync with GitHub
 slug: /sync-with-github
 ---
