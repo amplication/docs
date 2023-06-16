@@ -94,4 +94,4 @@ Visiting this link will take you back to Amplication to see the build log for th
 
 ## Conclusion
 
-Smart Git Sync is a powerful feature that simplifies the integration between Amplication and your Git repository. It automatically tracks and commits changes to a dedicated `amplication` branch. This significantly reduces the manual effort and enhances productivity. Whether you're adding a new resource or making a change to an existing one, Smart Git Sync ensures that all changes are systematically tracked, committed, and easy to review.
+Smart Git Sync is a powerful feature that simplifies the integration between Amplication and your Git repository. It automatically tracks and commits changes to a dedicated `amplication` branch. This significantly reduces manual effort and enhances productivity. Whether you're adding a new resource or making a change to an existing one, Smart Git Sync ensures that all changes are systematically tracked, committed, and easy to review.
