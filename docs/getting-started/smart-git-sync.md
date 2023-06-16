@@ -15,7 +15,7 @@ Git Sync achieves this by creating an `amplication` branch that contains all new
 For Pro and Enterprise plan users, Amplication offers _Smart Git Sync_.
 Free users get access to a simplified _Basic Git Sync_.
 
-On this page, you'll learn how Git Sync works and the primary betweens between Smart and Basic.
+On this page, you'll learn how Git Sync works and the primary differences between Smart and Basic.
 You will understand how Amplication manages the amplication branch, creates commits, and initiates pull requests.
 
 Let's get started.
@@ -87,7 +87,8 @@ If there isn't an open pull request from the `amplication` branch when a commit 
 Amplication will generate a default message for your commit if you don't input a message into the pending changes input box.
 :::
 
-Additionally, the first comment on the pull request includes a link back to your build in Amplication, presented in a codeblock. Clicking this link will take you back to Amplication to see the build log for this specific commit, offering you a comprehensive overview of the changes that were made during the build.
+Additionally, the first comment on the pull request includes a link back to your build in Amplication.
+Visiting this link will take you back to Amplication to see the build log for this specific commit, offering you a comprehensive overview of the changes that were made during the build.
 
 ![](./assets/sync-with-git-provider/amplication-commit-message.png)
 
