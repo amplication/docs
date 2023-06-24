@@ -32,7 +32,7 @@ export interface CreateEntityControllerParams extends EventParams {
 
 A template file that is used to generate the service
 This is the default template that is used for this event.
-https://github.com/amplication/amplication/tree/master/packages/data-service-generator/src/server/resource/service/service.base.template.ts
+https://github.com/amplication/amplication/tree/master/packages/data-service-generator/src/server/resource/controller/controller.template.ts
 
 You can manipulate the template or replace it completely with a new template in your plugin.
 
