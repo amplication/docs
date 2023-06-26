@@ -50,6 +50,7 @@ const sidebars = {
         "custom-code/managing-custom-files",
         "custom-code/add-business-logic",
         "custom-code/add-action-to-controller",
+        "custom-code/prisma-custom-attributes",
         "custom-code/add-graphql-query",
         "custom-code/seed-db",
         "custom-code/add-custom-dto",
