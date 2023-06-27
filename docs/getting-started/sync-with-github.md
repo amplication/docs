@@ -70,7 +70,7 @@ Select your preferred account or organization on GitHub.
 ### Set Amplication's Configuration Settings
 
 After selecting your preferred account or organization, you'll be led to the configuration page.
-You can configure the GitHub App to only allow access to specific repositories in your account, or allow Amplication to access all of your repositories.
+You can configure the GitHub App to only allow access specific repositories in your account, or allow Amplication to access all of your repositories.
 
 ![](./assets/sync-with-git-provider/32086706-520a-4996-8647-ecd81546f4f5.png)
 
