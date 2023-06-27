@@ -45,6 +45,7 @@ Amplication leverage GitHub OAuth implementation that supports the standard [aut
    GITHUB_REDIRECT_URI=http://localhost:3000/github/callback
    GITHUB_CLIENT_ID="replace with the github auth application client id"
    GITHUB_CLIENT_SECRET="replace with secret created as step 4""
+   GITHUB_SCOPE="user:email"
    ```
 7. Clone [/packages/amplication-client/.env](https://github.com/amplication/amplication/blob/master/packages/amplication-client/.env) into `/packages/amplication-client/.env.local`
 8. Update `/packages/amplication-client/.env.local` with the following variables
