@@ -27,7 +27,8 @@ First, a quick primer on how Amplication manages and creates your app's database
 
 Every action that you take in Amplication's UI related to database changes is mapped back to the code that Amplication creates for your project.
 
-For example, let's say you create a new service and choose MySQL as your database of choice.
+For example, let's say you create a new service, choose MySQL as your database of choice, and also [add authentication](/authentication/).
+
 Amplication will generate the following Prisma schema:
 
 ```
@@ -53,7 +54,7 @@ model User {
 ```
 
 :::important
-The _User_ entity is always created by default for every Amplication service.
+The User entity is _only_ created for your Amplication service if you enable authentication.
 :::
 
 The above code snippet is an example of the `schema.prisma` file that Amplication automatically generates for your application.
@@ -80,14 +81,14 @@ model User {
 ```
 
 :::important
-Go through the [Building New Versions of Your Service](/building-new-versions/) guides you through the steps for adding new entities and fields to your service and committing those changes to your git provider.
+The [Building New Versions of Your Service](/building-new-versions/) shows you the necessary steps for adding new entities and fields to your service and [committing those changes to your git provider](/sync-with-github/).
 :::
 
 All of the changes that you make through Amplication's UI always translate back to changes in your code, in this case (database changes), to the generated `prisma.schema` file.
 
 **But, Prisma is powerful. It allows you to further refine and customize your schema beyond what Amplication allows you to do purely through the UI.**
 
-**This is why Amplication gives you access to the Custom Attributes text field to fully access that feature and further customize your entities**
+This is why Amplication gives you access to the Custom Attributes text field to fully access that feature and further customize your entities
 
 ## What are Prisma Custom Attributes?
 
