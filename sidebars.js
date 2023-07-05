@@ -63,6 +63,7 @@ const sidebars = {
         id: "how-to/index",
       },
       items: [
+        "getting-started/plugins",
         "how-to/how-to-create-service",
         "how-to/how-to-create-entity",
         "how-to/how-to-create-entity-field",
@@ -82,12 +83,7 @@ const sidebars = {
         id: "plugins/overview",
       },
       items: [
-        "getting-started/plugins",
-        {
-          type: "category",
-          label: "Overview",
-          items: ["plugins/overview"],
-        },
+        "plugins/overview",
         {
           type: "category",
           label: "Architecture",
