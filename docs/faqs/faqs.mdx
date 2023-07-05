@@ -53,7 +53,7 @@ See [Amplication’s licensing model](https://docs.amplication.com/about/about/l
 
 The Free edition is the best option for individuals and small teams who build smaller projects.
 
-It includes everything you need to build backend services with Amplication, including database and data models management, roles & permissions, GraphQL & Rest APIs, admin UI, custom code, community plugins, unlimited code generation builds, and unlimited code push to git.
+It includes everything you need to build backend services with Amplication, including database and data models management, roles & permissions, [Smart Git Sync](/smart-git-sync/) to easily sync your code to your favorite git provider, GraphQL & Rest APIs, admin UI, custom code, community plugins, unlimited code generation builds, and unlimited code push to git.
 
 The Free edition is limited to 3 services and to 7 entities per service. It includes seats for 2 team members.
 
@@ -61,7 +61,7 @@ The Free edition is limited to 3 services and to 7 entities per service. It incl
 
 The Pro edition is for businesses that want to build on a larger scale, for advanced use cases that require more customizability, and when working with larger teams.
 
-It includes everything from the free plan with the following additional benefits: Smart sync with GitHub to easily resolve conflicts with custom code, unlimited services and entities per service, up to 10 team members.
+It includes everything from the free plan with the following additional benefits: Unlimited services and entities per service, and up to 10 team members.
 
 ### Enterprise Edition
 
@@ -80,10 +80,10 @@ it wherever you want; on the public cloud, private cloud, or on-premise.
 
 ## How can I get the code?
 
-You can download the source code of your application or connect to your GitHub
-account and push a new Pull Request directly to a selected GitHub repository. There
+You can connect your project to your preferred git provider like [GitHub](/sync-with-github) or [Bitbucket](/sync-with-bitbucket).
+After connecting to a git repo you can push a new Pull Request directly to a selected git repository. There
 is also a code-view option, that enables you to view the code in the console before
-you download it or move it to GitHub.
+you download it or move it to your git provider.
 
 ---
 
@@ -131,16 +131,14 @@ your code while continuing to get code from Amplication.
 
 ## Can I contribute to the development of Amplication?
 
-We'd love to have you contribute! To find out how,read -
-
-[Contributing](https://docs.amplication.com/contributing/)
+We'd love to have you contribute! To find out how,read our [Contributing](https://docs.amplication.com/contributing/) guide.
 
 ---
 
 ## Can I work with GitLab (or other git providers) besides GitHub?
 
-Amplication currently supports integration only with GitHub, but we are planning
-to add support for more Git providers. See our [Product Roadmap](https://docs.amplication.com/about/roadmap/).
+Amplication currently supports integration only with [GitHub](/sync-with-github) and [Bitbucket](/sync-with-bitbucket), 
+but we are planning to add support for more Git providers. See our [Product Roadmap](https://docs.amplication.com/about/roadmap/).
 
 ---
 
@@ -207,10 +205,11 @@ Amplication incorporates the following practices to provide you with a platform 
 -Microservices support  
 -Plugin system
 -Monorepo with modular connected services  
--Custom sync flows and GitHub sync at the project level
+-Custom sync flows and [smart git sync](/smart-git-sync) at the project level
+
 With these new features and improvements in our new version, we make it much easier for you (or your team) to build scalable services, have better control over the generated code and collaborate with multiple developers to work on large scale solutions.
 
-To know more on how to use Amplication to your advantage [Read](https://amplication.com/blog/amplication-version-10-is-now-live)
+To know more on how to use Amplication to your advantage [read](https://amplication.com/blog/amplication-version-10-is-now-live) our blog post.
 
 ---
 
@@ -238,7 +237,7 @@ It depends on your requirements. If you want to store all your projects( or serv
 
 Microservices (or microservices architecture) is a cloud native architectural approach in which a single application is composed of many loosely coupled and independently deployable smaller components, or services.
 
-Want more Information?[Read this](https://amplication.com/blog/an-introduction-to-microservices)
+Want more information? [Read this](https://amplication.com/blog/an-introduction-to-microservices).
 
 ---
 
@@ -250,13 +249,13 @@ Project development becomes easier with the following functionalities:
 -You can connect to a single git repo at the project level saving a lot of your time that would be spent manually connecting the services
 -You can make a single commit at the project level
 
-Learn more about the benefits [Here](https://amplication.com/blog/release-0150-support-for-microservices-architecture)
+Learn more about the benefits [here](https://amplication.com/blog/release-0150-support-for-microservices-architecture).
 
 ---
 
 ## How are microservices incorporated in Amplication?
 
-Amplication supports microservices through the Project hierarchy. A Project groups together multiple resources used and created by Amplication, enabling support for multiple use cases. This simplifies the creation of connected Services, and makes it much easier to sync with GitHub across multiple Services.
+Amplication supports microservices through the Project hierarchy. A Project groups together multiple resources used and created by Amplication, enabling support for multiple use cases. This simplifies the creation of connected Services, and makes it much easier to [sync with your preferred git provider](/smart-git-sync/) across multiple Services.
 
 ---
 
@@ -266,16 +265,18 @@ This structure helps you to manage various services (architected as microservice
 
 It provides a much simple and easy-to-maintain project flow with multiple services.
 
-Read more about the Hierarchy [Here](https://docs.amplication.com/projects-resources-services/)
+Read more about the hierarchy [here](https://docs.amplication.com/projects-resources-services/).
 
 ---
 
 ## How do I keep track of my codebase if it involves continuous development?
 
-Amplication comes with version control built-in enabling you to see the changes made in the services and push the code, after verification, to your GitHub repository. In Amplication, your work is auto saved but not committed, thus giving you the opportunity to review.
+Amplication comes with version control built-in enabling you to see the changes made in the services and push the code to your preferred git provider.
+We call this feature [Smart Git Sync](/smart-git-sync/).
+In Amplication, your work is auto saved but not committed, thus giving you the opportunity to review.
 All the pending changes are visible under 'Pending Changes', ready for you to review and commit.
 
-Read [this](https://docs.amplication.com/how-to/commit-changes/)
+Read [How To Commit Changes](https://docs.amplication.com/how-to/commit-changes/).
 
 ---
 
@@ -299,10 +300,10 @@ This information is used to better understand the usage of amplication platform 
 
 ## For any issue related to Amplication development where can I get answers?
 
-You can look into the [docs](https://docs.amplication.com/) under 'Troubleshooting' that have answers for a number of Issues relating to Set-up, Code Generation, Database, Authorization, Github.
-or if it's a new issue you can ask in the community or raise an issue yourself in GitHub.
+You can look into the [docs](https://docs.amplication.com/) under [_Troubleshooting_](/errors/) that have answers for a number of Issues relating to Set-up, Code Generation, Database, Authorization, and Git Sync.
+If it's a new issue you can ask in the community or raise an issue yourself in GitHub.
 
-Read the guidelines to contribute [Here](https://docs.amplication.com/contributing/).
+Read the guidelines to contribute [here](https://docs.amplication.com/contributing/).
 
 ---
 
