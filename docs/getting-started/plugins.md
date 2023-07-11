@@ -44,6 +44,12 @@ In the Apache Kafka messaging system, processes known as producers write data to
 The NestJS Auth Module plugin provides all the basic modules required for authentication of the service.
 Installation of this plugin is mandatory for the service to be authenticated, and must be installed together with the JwT Auth Provider plugin or the Basic Auth Provider plugin, as follows:
 
+:::info
+
+A _User_ entity must exist in order to enable this plugin in your project.
+Learn [how to add the user entity](/authentication/#how-to-add-the-user-entity) into your service.
+:::
+
 ### JWT Auth Provider
 
 [Passport](https://www.passportjs.org/) based JWT authentication involves the client sending a request to the server with a user's credentials in the form of a username and password. The server then authenticates the user and issues a JWT if the credentials are valid. This allows the client to authenticate subsequent requests to the server using the JWT.
