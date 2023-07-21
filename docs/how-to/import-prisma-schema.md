@@ -44,7 +44,7 @@ Here's a quick overview of its main functions on SQL databases:
 To learn more see [Prisma's documentation on Introspection](https://www.prisma.io/docs/concepts/components/introspection#what-does-introspection-do).
 
 Run the `prisma db pull` command in the terminal to start the introspection process.
-Using this command requires your **Connection URL** be set in your Prisma Schema datasource.
+Using this command requires your **Connection URL** be set in your Prisma Schema `datasource`.
 
 ```bash
 npx prisma db pull
@@ -126,7 +126,7 @@ Here's how that log might look:
 ### 2. Composite IDs on models   
 
 A model in Prisma can use the `@@id` custom attribute and combine fields to create a unique identifier for each record.
-But, due to current limitations, Amplication requires that each model have a single, disinct `id` field.   
+But, due to current limitations, Amplication requires that each model have a single, distinct `id` field.   
 
 During schema processing. Amplication modifies IDs created with the `@@id` custom attribute to be `@@unique` custom attributes, which are supported.
 It also introduces a new `id` field of type `String` to each model.   
