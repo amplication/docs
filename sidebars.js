@@ -66,6 +66,7 @@ const sidebars = {
         "how-to/how-to-create-service",
         "how-to/how-to-create-entity",
         "how-to/how-to-create-entity-field",
+        "how-to/import-prisma-schema",
         "how-to/how-to-set-access-permissions",
         "how-to/how-to-commit-changes",
         "getting-started/relations",
