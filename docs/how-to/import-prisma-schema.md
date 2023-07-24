@@ -372,6 +372,6 @@ Here is a re-written table summarizing the Prisma to Amplication data type conve
 That's it!
 Now you have your own custom database schema uploaded into Amplication.
 
-If you haven't already, make sure you visit the [Prisma Custom Attributes](/custom-code/prisma-custom-attributes/) page to further familiarize yourself with custom attributes like `@id` and `@@map`.
+If you haven't already, make sure you visit the **Prisma Custom Attributes** page to further familiarize yourself with custom attributes like `@id` and `@@map`.
 
 Some of the transformations involve custom attributes in some way. Learning more about Prisma Custom Attributes will help you understand what's happening, but also how to effectively utilize them to add more functionality to your entities and fields.
