@@ -45,9 +45,8 @@ The NestJS Auth Module plugin provides all the basic modules required for authen
 Installation of this plugin is mandatory for the service to be authenticated, and must be installed together with the JwT Auth Provider plugin or the Basic Auth Provider plugin, as follows:
 
 :::info
-
 A _User_ entity must exist in order to enable this plugin in your project.
-Learn [how to add the user entity](/authentication/#how-to-add-the-user-entity) into your service.
+Learn [how to add the user entity](/how-to/add-delete-user-entity) into your service.
 :::
 
 ### JWT Auth Provider

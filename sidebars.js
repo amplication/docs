@@ -67,6 +67,7 @@ const sidebars = {
         "how-to/how-to-create-entity",
         "how-to/how-to-create-entity-field",
         "how-to/how-to-set-access-permissions",
+        "how-to/add-delete-user-entity",
         "how-to/how-to-commit-changes",
         "getting-started/relations",
         "how-to/base-directories",

@@ -19,6 +19,11 @@ Use plugins to support your choice of authentication method.
 
 The NestJS Auth Module plugin provides all the basic modules required for authentication of the service. Installation of this plugin is mandatory for the service to be authenticated, and must be installed together with the JWT Auth Provider plugin or the Basic Auth Provider plugin.
 
+:::info
+A _User_ entity must exist _first_ in order to enable this plugin in your project.
+Learn [how to add the user entity](/how-to/add-delete-user-entity) into your service.
+:::
+
 ### JWT Auth Provider
 
 [Passport](https://www.passportjs.org/) based JWT authentication involves the client sending a request to the server with a user's credentials in the form of a username and password. The server then authenticates the user and issues a JWT if the credentials are valid. This allows the client to authenticate subsequent requests to the server using the JWT. Read more about authentication [here](https://docs.nestjs.com/security/authentication).
@@ -32,51 +37,6 @@ We recommend using JWT as a more secure alternative to Basic authentication.
 ### Basic Auth Provider
 
 Basic authentication is a simple authentication scheme built into the HTTP protocol that involves sending a request to a server with a user's credentials in the form of a username and password. The credentials are encoded in base64 and included in the Authorization header of the request.
-
-## The User Entity
-
-The _User_ entity **is required** in order for you to enable authentication on your service.
-
-If you choose to [create a service _without_ authentication](#how-to-create-a-service-without-authentication) then the _User_ entity will not be created.
-
-### How To Add The User Entity
-
-First, go into your service's _Entities_ page.
-Click on the **Add Entity** button in the top right hand corner.
-Type `User` into the entity name text field and then click on the **Create Entity** button.
-
-![Add a new User entity to your Amplication service](./assets/authentication/new_user_entity.png)
-
-A popup will appear and give you additional context on restoring the _User_ entity.
-Click on the **Restore Default** button and the original _User_ entity provided by Amplication will be restored.
-
-:::note
-You have to add the _User_ entity first and then enable the _NestJS Auth Module_ plugin.
-It's not possible to do this in reverse order.
-:::
-
-### How To Delete The User Entity
-
-Usually, it's possible to delete any Entity that you create on your service.
-But, the _User_ entity is special.
-In order to delete it, you must first disable the _NestJS Auth Module_.
-
-:::caution
-It's possible to restore the original _User_ entity provided by Amplication, but any additional fields or permissions you added will be permanently deleted.
-:::
-
-Follow these steps to delete the _User_ entity:
-
-1. Visit your service's Plugins page and toggle the _NestJS Auth Module_ into the off state.
-
-![Disable the NestJS Auth Module](./assets/authentication/disable_auth_plugin.png)
-
-2. Visit your service's _Entities_ page.
-You will notice that you can now click the _User_ entity's delete button. Click it and a popup will appear.
-
-![Delete the User entity popup](./assets/authentication/delete_user_popup.png)
-
-3. Click on the popup's **Delete** button. Now the User entity is deleted.
 
 ## JWT Authentication
 
