@@ -13,7 +13,7 @@ Amplication's **Import Prisma Schema** feature lets you use your _existing_ data
 This way you don't have to manually create entities, fields, and relationships from scratch saving you a lot of time.
 
 Just upload your `schema.prisma` file.
-Amplication will then search for models and [convert them into Amplication's internal struture](/getting-started/how-prisma-schema-is-converted-into-entities).
+Amplication will then search for models and [convert them into Amplication's internal structure](/getting-started/how-prisma-schema-is-converted-into-entities).
 
 This guide walks you through how to generate a custom `schema.prisma` file from your existing database and upload it to Amplication.
 
