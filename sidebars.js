@@ -101,7 +101,12 @@ const sidebars = {
         {
           type: "category",
           label: "Developing Plugins",
-          items: ["plugins/how-to-create-plugin", "plugins/how-to-test-plugin", "plugins/publish-plugin"],
+          items: [
+            "plugins/how-to-create-plugin",
+            "plugins/define-plugin-settings",
+            "plugins/how-to-test-plugin",
+            "plugins/publish-plugin"
+          ],
         },
         {
           type: "category",
