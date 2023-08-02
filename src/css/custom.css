@@ -203,4 +203,7 @@ article > header {
   background-color: var(--secondary-light);
 }
 
-
+.theme-doc-sidebar-item-link.plugin-event-not-recommended > .menu__link:not(.menu__link--active) {
+  color: var(--black10);
+  opacity: 0.5;
+}

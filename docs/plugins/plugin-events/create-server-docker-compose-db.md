@@ -7,6 +7,14 @@ slug: /plugins/plugin-events/create-server-docker-compose-db
 
 # Create Server Docker Compose DB
 
+:::danger
+It's recommended that you use the [`CreateServerDockerComposeDev`](/plugins/plugin-events/create-server-docker-compose-dev) event instead of `CreateServerDockerComposeDB`.
+
+[`CreateServerDockerComposeDev`](/plugins/plugin-events/create-server-docker-compose-dev) works the same way and is the **preferred event** moving forward. We continue to support the `CreateServerDockerComposeDB` event, but it may be deprecated in the future.
+:::
+
+We continue to support the CreateServerDockerComposeDB event, but the instructions are to use the new one.
+
 ## Description
 
 Creates the `docker-compose.db.yml` file of the service
