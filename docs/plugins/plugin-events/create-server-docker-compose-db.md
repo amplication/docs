@@ -17,7 +17,7 @@ It's recommended that you use the [`CreateServerDockerComposeDev`](/plugins/plug
 
 Creates the `docker-compose.db.yml` file of the service
 
-## Event Name:
+## Event Name
 
 `CreateServerDockerComposeDB`
 

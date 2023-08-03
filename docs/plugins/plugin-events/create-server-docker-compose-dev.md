@@ -12,7 +12,7 @@ pagination_next: plugins/plugin-events/create-server-dot-env
 
 Creates the `docker-compose.dev.yml` file of the service
 
-## Event Name:
+## Event Name
 
 `CreateServerDockerComposeDev`
 
