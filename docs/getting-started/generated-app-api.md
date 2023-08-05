@@ -8,11 +8,12 @@ slug: /api
 
 # REST and GraphQL API
 
-Amplication generates production-ready REST and GraphQL APIs with [Swagger UI](https://swagger.io/tools/swagger-ui/) documentation for all your data models. Easily connect to your data with any HTTP client.
+Amplication generates production-ready REST and GraphQL APIs with documentation and playgrounds for all your data models.
+Easily connect to your data with any HTTP client.
 
 ## REST APIs
 
-Amplication generates REST APIs that provide you with a way to interact with your data models. Generated APIs include [authentication and authorization](#authentication) and follow strict RESTful conventions. Each generated REST API also comes with **sorting**, **filtering**, and **pagination** features.
+Amplication generates REST APIs that provide a way to interact with your data models. Generated APIs include [authentication and authorization](#authentication) and follow strict RESTful conventions. Each generated REST API also comes with **sorting**, **filtering**, and **pagination** features.
 
 The REST API is available at `/api` at the root of your application.
 
@@ -58,7 +59,7 @@ It will add the authorization header automatically.
 
 ## GraphQL APIs
 
-Besides REST APIs, Amplication also generates GraphQL APIs as an alternative way to help you interact with your data models. GraphQL APIs also support sorting, filtering, pagination, and **meta queries**.
+Besides REST APIs, Amplication also generates a GraphQL API as an alternative way to help you interact with your data models. The GraphQL API also support sorting, filtering, pagination, and **meta queries**.
 
 The GraphQL API is available at `/graphql` at the root of your application.
 
