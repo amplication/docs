@@ -155,7 +155,11 @@ Let's review what's happening here in its entirety.
 
 ## The `amplication` branch
 
-Users can merge Amplication-made changes by merging pull requests created by Amplication from the `amplication` branch to the [user repository's base branch](#how-to-change-the-base-branch-for-pull-requests).
+Users can merge Amplication-made changes by merging pull requests created by Amplication from the `amplication` branch to the user repository's base branch.
+
+:::tip
+Enterprise plan users can [change the base branch](/how-to/change-base-branch-for-pull-requests) that Amplication uses for pull requests.
+:::
 
 ## The commit message
 
@@ -169,34 +173,6 @@ It will take you to the specific build log for this commit on Amplication.
 After clicking on `Merge`, you can safely delete this branch. You can then navigate back to your main branch where you will find your Amplication code.
 
 ![](./assets/sync-with-git-provider/4d38da6f-9b1c-4844-91ec-ec9b101c4503.png)
-
-## How to change the base branch for pull requests 
-
-By default, Amplication will create pull requests from the `amplication` branch into your repository's base branch.
-This is usually `main` or `master` for many repositories. 
-
-It's possible to change the base branch that Amplication uses for pull requests.
-This allows you to merge changes into a different branch.
-
-For example, you may want pull requests to merge into a development branch first before your main branch.
-
-To change the base branch for _all_ services in your project:
-
-1. Go to your _project's_ Git Settings page.
-2. You'll see a new **Base Branch** text field.  
-3. Enter the name of the branch you want Amplication to merge changes into.
-4. Click **Save Changes**.
-
-To change the base branch for a _specific_ service in your project:
-
-1. Visit your _service's_ Git Settings page.  
-2. Click on the `Override default settings` toggle.
-3. [Re-select](#select-your-repository) your GitHub repository.
-4. You'll see a new **Base Branch** text field.
-5. Enter the name of the branch you want Amplication to merge changes into.
-6. Click **Save Changes**.
-
-Amplication will now send pull requests into the new base branch you specified.
 
 ## Next Steps
 

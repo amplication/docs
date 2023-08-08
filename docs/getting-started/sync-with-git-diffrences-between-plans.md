@@ -25,7 +25,8 @@ When synchronizing with git provider using the Pro or Enterprise Plan, the follo
 - After the PR has been merged, the next build will create a new Pull Request from the first commit of the default branch. Subsequent builds will add additional commits until the next merge, and so on.
 
 ### Sync with Git provider (Enterprise Plans)
-- support for Bitbucket
+- Support for [Bitbucket](/sync-with-bitbucket)
+- [Change the default base branch for pull requests](/how-to/change-base-branch-for-pull-requests)
 
 ### Advantages of Git provider Sync in the Pro and Enterprise Plans
 

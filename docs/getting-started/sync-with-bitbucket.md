@@ -67,30 +67,4 @@ And there you have it – a new pull request ready for review.
 
 ![bitbucket-pull-request](./assets/sync-with-git-provider/bitbucket-pull-request.png)
 
-## How to change the base branch for pull requests 
-
-By default, Amplication will create pull requests from the `amplication` branch into your repository's base branch.
-This is usually `main` or `master` for many repositories. 
-
-It's possible to change the base branch that Amplication uses for pull requests.
-This allows you to merge changes into a different branch.
-
-For example, you may want pull requests to merge into a development branch first before your main branch.
-
-To change the base branch for _all_ services in your project:
-
-1. Go to your _project's_ Git Settings page.
-2. You'll see a new **Base Branch** text field.  
-3. Enter the name of the branch you want Amplication to merge changes into.
-4. Click **Save Changes**.
-
-To change the base branch for a _specific_ service in your project:
-
-1. Visit your _service's_ Git Settings page.  
-2. Click on the `Override default settings` toggle.
-3. [Re-select](#select-your-repository) your Bitbucket repository.
-4. You'll see a new **Base Branch** text field.
-5. Enter the name of the branch you want Amplication to merge changes into.
-6. Click **Save Changes**.
-
-Amplication will now send pull requests into the new base branch you specified.
+Amplication creates pull requests from the `amplication` branch into your repository's default base branch. As an Enterprise plan user, you can [change the base branch for these pull requests](/how-to/change-base-branch-for-pull-requests).
