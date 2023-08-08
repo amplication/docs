@@ -112,7 +112,11 @@ User's who will be creating tasks in the Todo app will need to be granted certai
 
 ## Step 5 - Connect to GitHub
 
-Amplication provides code sync with GitHub. We'll want to set this up with the repository we created in the previous step.
+Amplication provides [code sync with GitHub](/sync-with-github/). We'll want to set this up with the repository we created in the previous step.
+
+:::note
+If you're an Enterprise plan user you can also sync with other git providers like [Bitbucket](/sync-with-bitbucket/).
+:::
 
 1. Click the `Connect to Github` icon on the left-hand panel. Then click `Go to project settings.`
 
