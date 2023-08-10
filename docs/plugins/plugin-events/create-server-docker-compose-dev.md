@@ -43,7 +43,7 @@ Multiple plugins can add objects into this array, and they will be merged by the
 
 :::note
 Unlike the [`CreateServerDockerCompose`](/plugins/plugin-events/create-server-docker-compose) event, it makes more sense to replace the whole file with `CreateServerDockerComposeDev`.
-The reason for that is that in a `docker-compose.db.yml` file, you usually take the DB image from Docker Hub and you want to replace the whole file's content.
+The reason for that is that in a `docker-compose.dev.yml` file, you usually take the DB image from Docker Hub and you want to replace the whole file's content.
 :::
 
 The way to do it is by using the `before` lifecycle event and in the body of the function **skip** the default behavior.
@@ -59,7 +59,7 @@ beforeCreateServerDockerComposeDev(
 ```
 
 As a result, `CreateServerDockerComposeDev` is not run and you would have to provide your logic in the `after` lifecycle event.
-For that, you need to provide the path to your `docker-compose.db.yml` and set the path in which you want the `docker-compose.db.yml` will be generated.
+For that, you need to provide the path to your `docker-compose.dev.yml` and set the path in which you want the `docker-compose.dev.yml` will be generated.
 
 ```ts
   async afterCreateServerDockerComposeDev(
@@ -79,7 +79,7 @@ For that, you need to provide the path to your `docker-compose.db.yml` and set t
 
 ### outputFileName
 
-The file name of the docker-compose file, the default value is `docker-compose.db.yml`
+The file name of the docker-compose file, the default value is `docker-compose.dev.yml`
 
 :::note
 Our recommendation is not to change the file name unless it's specifically required and you understand the impact.
