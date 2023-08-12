@@ -16,8 +16,8 @@ This allows you to merge changes into a different branch.
 For example, you may want pull requests to merge into a development branch first before your main branch.
 
 :::info
-This feature is only available for **Enterprise Plan** users.
-See the more [differences](/sync-with-git-differences-between-plans) between the Free, Pro, and Enterprise plan.
+This feature requires a Pro or Enterprise plan.
+Review plan differences on the [Git Sync Plan Differences](sync-with-git-differences-between-plans) page.
 :::
 
 ## Change the base branch for _all_ services in your project
@@ -25,7 +25,7 @@ See the more [differences](/sync-with-git-differences-between-plans) between the
 1. Go to your _project's_ Git Settings page.
 2. You'll see a new **Base Branch** text field.  
 3. Enter the name of the branch you want Amplication to merge changes into.
-4. Click **Save Changes**.
+4. Your new base branch is saved when you click out of the text field.
 
 ## Change the base branch for a _specific_ service in your project
 
@@ -34,6 +34,6 @@ See the more [differences](/sync-with-git-differences-between-plans) between the
 3. [Re-select](#select-your-repository) your GitHub repository.
 4. You'll see a new **Base Branch** text field.
 5. Enter the name of the branch you want Amplication to merge changes into.
-6. Click **Save Changes**.
+6. Your new base branch is saved when you click out of the text field.
 
 Amplication will now send pull requests into the new base branch you specified.
