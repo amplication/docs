@@ -10,7 +10,7 @@ pagination_next: getting-started/how-prisma-schema-is-converted-into-entities
 
 Amplication's **Import Prisma Schema** feature lets you use your _existing_ databases for a head start on development.
 
-This way you don't have to manually create entities, fields, and relationships from scratch saving you a lot of time.
+For example, if you want to build a new application or [API](/api/) using an existing database, you can import its schema to quickly generate Amplication entities, fields, and relationships, saving significant time.
 
 Just upload your `schema.prisma` file.
 Amplication will then search for models and [convert them into Amplication's internal structure](/getting-started/how-prisma-schema-is-converted-into-entities).
@@ -19,12 +19,7 @@ This guide walks you through how to generate a custom `schema.prisma` file from 
 
 ## How to create and upload your `schema.prisma` file
 
-First, you will run the Prisma introspection process on your existing database.
-The introspection process will generate a schema file representing your database's tables and columns.
-
-Next, you'll upload the generated file into Amplication, ensuring it's free of errors before doing so.
-After upload, you'll see an upload log of everything that happens to [convert the schema into Amplication's internal structure](/getting-started/how-prisma-schema-is-converted-into-entities).
-If any warnings appear in the upload log you can then choose to modify your `schema.prisma` file and re-upload it or continue as is.
+To import your schema into Amplication, you first need to run Prisma's introspection process on your existing database.
 
 ### Step 1: Run the Introspection process
 
@@ -40,42 +35,89 @@ Here's a quick overview of its main functions on SQL databases:
 
 To learn more see [Prisma's Introspection docs](https://www.prisma.io/docs/concepts/components/introspection#what-does-introspection-do).
 
-Run the `prisma db pull` command in the terminal to start the introspection process.
-Using this command requires your database's **Connection URL** be set in your Prisma Schema `datasource`.
+Here are the steps to introspect your database:
+
+#### Install Prisma
+
+If you don't have Prisma CLI installed globally, install it:
 
 ```bash
-npx prisma db pull
+npm install -g prisma
+```
+
+#### Set the connection URL in `prisma.schema`
+
+Next, create a `prisma.schema` file.
+
+Now add your database's **connection URL** to the `url` parameter in the datasource block of your new `prisma.schema` file.
+
+Here's an example:
+
+```graphql title="prisma.schema"
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://janedoe:mypassword@localhost:5432/mydb?schema=sample"
+}
+```
+
+The format of the `url` parameter depends on your database provider.
+For example, PostgreSQL connection URLs start with `postgresql://`.
+
+Visit the [Prisma docs' section on connection URLs](https://www.prisma.io/docs/reference/database-reference/connection-urls) for details on constructing yours.
+
+#### Run The Prisma Introspection Command
+
+Run the following command in the same directory as your `schema.prisma` file:
+
+```bash
+prisma db pull
 ```
 
 :::caution
 After generating your schema file, double check it in your code editor for errors.
 Make sure you fix any errors before you upload your `schema.prisma` file into Amplication.
-There are some cases where the introspection process ends with a schema that might have errors. 
+There are some cases where the introspection process ends with a schema that might have errors.
+
+Visit [Prisma's Error Message Reference](https://www.prisma.io/docs/reference/api-reference/error-reference) to learn more about other prisma schema issues you might run into.
 :::
 
-Here's an example of where the generated schema file could have an error:
+Here's a simple example of what happens when you run the introspection process on a Postgres database:
 
-```graphql title="schema.prisma"
-model searchText {
-  application_id   BigInt  @id @default(0) @db.UnsignedBigInt
-  guid             String  @db.VarChar(50)  
-  application_text String? @db.LongText   
+```graphql title="prisma.schema"
+model posts {
+  id Int @id
 
-  @@index([application_text], map: "idx_searchText_application_text")
+  @@map("posts")
+}
+
+model User {
+  user_id    Int    @id 
+  first_name String
+
+  @@map("users") 
 }
 ```
 
-In this case, it's because you cannot define an index on fields with a native type of **LongText** on MySQL. You have to use the `length` argument to the field in the index definition to allow this.
+The introspection process generated Prisma models matching the original PostgreSQL database structure.
+It created a `posts` model and `user_id` field for the `User` model based on the database table and column names.
 
-To learn more about other prisma schema issues you might run into, see [Prisma's Error Message Reference](https://www.prisma.io/docs/reference/api-reference/error-reference).
+However, changes are needed for the schema to follow Prisma conventions:
+
+- The `posts` model should be named Post for PascalCase.
+- The `user_id` field needs the `@id` directive to indicate the primary key
+- Any foreign key fields need `@relation` directives to define relationships
+
+Additional conversions are also required to generate Amplication entities from 
+Additional conversions are also required to generate Amplication entities from the schema.
+You'll learn more about that process on the **[How Prisma Schemas Are Converted Into Amplication Entities](/getting-started/how-prisma-schema-is-converted-into-entities)** page.
 
 ### Step 2: Upload your Prisma Schema File to Amplication
 
-First, visit the _Entities_ page of your service.
+Visit the _Entities_ page of your service.
 
 ![Upload Prisma Schema Button](./assets/upload-prisma-schema-button.png)
 
-If you're subscribed to a Pro or Enterprise plan, you'll see the **Upload Prisma Schema** button in the top right corner.
+You'll now see the **Upload Prisma Schema** button in the top right corner.
 
 Click on this button and you'll be presented a form where you can upload your `schema.prisma` file.
 
@@ -87,16 +129,9 @@ After uploading the file, you'll see a log of what's happening while Amplication
 
 Here's how that log might look:
 
-```bash title="Prisma Schema Conversion Log" 
-2023-07-06T09:47:39.410Z (Warning) The option 'PENDING' has been created in the enum 'OrderStatus', but its value has not been mapped
-2023-07-06T09:47:39.410Z (Info) The option 'COMPLETED' has been created in the enum 'OrderStatus'
-2023-07-06T09:47:39.410Z (Info) The option 'CANCELLED' has been created in the enum 'OrderStatus'
-2023-07-06T09:47:39.411Z (Warning) The option 'INDIVIDUAL' has been created in the enum 'CustomerType', but its value has not been mapped  
-2023-07-06T09:47:39.411Z (Warning) The option 'COMPANY' has been created in the enum 'CustomerType', but its value has not been mapped
-```
+![Amplication Import Prisma Schema Upload Log](./../getting-started/assets/import-prisma-schema-log.png)
 
-These logs detail exactly what is happening during the conversion process.
-Make sure that you're okay with everything the logs are displaying.
+These logs detail what is happening during the conversion process.
 
 :::caution
 If the `schema.prisma` file is invalid, doesn't contain entities, or one of the operations in the process receives an unexpected value — the process will stop immediately.
