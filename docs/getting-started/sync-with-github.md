@@ -14,7 +14,7 @@ You own the code and have full control to customize it to your needs in your fav
 This page provides you with everything you need to work with GitHub. You'll learn how to do the following:
 
 - [Authorize GitHub](#authorize-amplication-to-access-github)
-- [Connect to a specific GitHub repository](#select-your-repository)
+- [Connect to a specific GitHub repository](#select-or-create-your-repository)
 - [Change git providers for a specific service](#change-your-services-connected-git-provider)
 
 You'll also learn how Amplication manages your repo from GitHub's side.
@@ -57,7 +57,7 @@ Proceed with the following steps to connect a GitHub repository to your service:
 :::important
 If you're already connected to GitHub, you can either add another GitHub organization or select an account you connected previously.
 
-You can then go to [selecting your repository](#select-your-repository).
+You can then go to [selecting your repository](#select-or-create-your-repository)
 :::
 
 ## Install Amplication's GitHub App
@@ -77,15 +77,17 @@ You can configure the GitHub App to only allow access specific repositories in y
 After selecting your repositories, click on the `Next` button.
 You'll be brought back to Amplication.
 
-## Select Your Repository
+## Select or Create Your Repository
 
 You'll see a modal appear with a populated list of repositories based on your configuration settings from above.
+You can also create a new repository by clicking on the **Create repository** button.
 
 ![](./assets/first-service/select-repository.png)
 
-:::note
-If you connect a personal GitHub account you can only sync to existing GitHub repositories.
-Only if you connect to an organization can you create a new repository via Amplication.
+This repository is where Amplication will put your generated code.
+
+:::tip
+If you create a new repository, you'll to update the Amplication GitHub App settings to allow access to the new repository.
 :::
 
 ## Change Your Service's Repository
@@ -99,7 +101,7 @@ To do this when you're creating a service, turn on the `Override default setting
 
 ![](./assets/sync-with-git-provider/1bb1238f-01a7-4650-aeb2-6f5ae8ae76c7.png)
 
-[The repository selection modal](#select-your-repository) will appear again.
+[The repository selection modal](#select-or-create-your-repository) will appear again.
 You can select a new repository based on [the configuration settings](#set-amplications-configuration-settings) you set for Amplication's GitHub App.
 
 ## Change Your Service's Connected Git Provider
@@ -155,7 +157,12 @@ Let's review what's happening here in its entirety.
 
 ## The `amplication` branch
 
-Users can merge Amplication-made changes by merging pull requests created by Amplication from the `amplication` branch to the user repository's default branch.
+Users can merge Amplication-made changes by merging pull requests created by Amplication from the `amplication` branch to the user repository's base branch.
+
+:::tip
+The ability to [change your base branch](/how-to/change-base-branch-for-pull-requests) is a feature that's available for **Pro and Enterprise** plan users.
+Review plan differences on the [Git Sync Plan Differences](sync-with-git-differences-between-plans) page.
+:::
 
 ## The commit message
 

@@ -41,6 +41,7 @@ module.exports = {
           to: "/",
           position: "left",
           label: "Get Started",
+          activeBaseRegex: '^/$'
         },
         {
           to: "/tutorials",
