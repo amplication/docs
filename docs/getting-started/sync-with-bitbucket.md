@@ -53,8 +53,8 @@ Once the connection is established, you have the flexibility to either create a 
 
 ![select-workspace](./assets/sync-with-git-provider/select-workspace.png)
 
-
 ## Create a New Pull Request in Bitbucket
+
 To initiate a new pull request in Bitbucket, follow these steps:
 
 - Navigate to the right side of the page and click on "Commit Changes & Build", followed by clicking on the most recent commit.
@@ -67,3 +67,4 @@ And there you have it – a new pull request ready for review.
 
 ![bitbucket-pull-request](./assets/sync-with-git-provider/bitbucket-pull-request.png)
 
+Amplication creates pull requests from the `amplication` branch into your repository's default base branch. Pro and Enterprise users can [change the base branch for these pull requests](/how-to/change-base-branch-for-pull-requests).
