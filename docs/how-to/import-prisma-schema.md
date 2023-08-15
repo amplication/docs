@@ -132,7 +132,7 @@ Click on this button and you'll be presented a form where you can upload your `s
 After uploading the file, you'll see a log of what's happening while Amplication is [converting your prisma schema](/getting-started/how-prisma-schema-is-converted-into-entities) into its internal structure.  
 
 :::note
-**Schema uploads can't be redone in the same project**, so make sure that you're OK with everythting you see in the conversion logs.
+**Schema uploads can't be redone in the same project**, so make sure that you're OK with everything you see in the conversion logs.
 :::
 
 Here's how that log might look:
