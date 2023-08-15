@@ -15,6 +15,10 @@ For example, if you want to build a new application or [API](/api/) using an exi
 Just upload your `schema.prisma` file.
 Amplication will then search for models and [convert them into Amplication's internal structure](/getting-started/how-prisma-schema-is-converted-into-entities).
 
+:::note
+The **Import Prisma Schema** feature is available on all Amplication plans include Free accounts.
+:::
+
 This guide walks you through how to generate a custom `schema.prisma` file from your existing database and upload it to Amplication.
 
 ## How to create and upload your `schema.prisma` file
