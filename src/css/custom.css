@@ -204,3 +204,8 @@ article > header {
 }
 
 
+@media only screen and (max-width: 996px) {
+  .start-now-button {
+    display: none; 
+  }
+}
