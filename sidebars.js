@@ -66,6 +66,8 @@ const sidebars = {
         "how-to/how-to-create-service",
         "how-to/how-to-create-entity",
         "how-to/how-to-create-entity-field",
+        "how-to/erd-view-for-amplication-entities",
+        "getting-started/relations",
         "how-to/how-to-set-access-permissions",
         "how-to/how-to-commit-changes",
         "how-to/change-base-branch-for-pull-requests",
