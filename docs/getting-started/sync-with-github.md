@@ -157,7 +157,12 @@ Let's review what's happening here in its entirety.
 
 ## The `amplication` branch
 
-Users can merge Amplication-made changes by merging pull requests created by Amplication from the `amplication` branch to the user repository's default branch.
+Users can merge Amplication-made changes by merging pull requests created by Amplication from the `amplication` branch to the user repository's base branch.
+
+:::tip
+The ability to [change your base branch](/how-to/change-base-branch-for-pull-requests) is a feature that's available for **Pro and Enterprise** plan users.
+Review plan differences on the [Git Sync Plan Differences](sync-with-git-differences-between-plans) page.
+:::
 
 ## The commit message
 
