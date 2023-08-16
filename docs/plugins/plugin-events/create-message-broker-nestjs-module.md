@@ -30,7 +30,8 @@ Example:
 ```ts
   async afterCreateMessageBrokerNestJSModule(
     context: DsgContext,
-    eventParams: CreateMessageBrokerNestJSModuleParams
+    eventParams: CreateMessageBrokerNestJSModuleParams,
+    modules: ModuleMap
   ) {
     const filePath = resolve(staticDirectory, "kafka.module.ts");
 
@@ -43,6 +44,7 @@ Example:
       code: file,
       path: join(messageBrokerDirectory, generateFileName),
     };
-    return [this.moduleFile];
+
+    return modules.set(this.moduleFile);
   }
 ```

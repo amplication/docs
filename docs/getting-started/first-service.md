@@ -39,7 +39,8 @@ First, install the Amplication GitHub App into your account or organization.
 
 ![](./assets/first-service/install-amplication-github-app.png)
 
-Next, select the repository where the generated code will be stored.
+Next, select the repository to store your generated code.
+You can also create a new repository by clicking on the **Create repository** button.
 
 ![](./assets/first-service/select-repository.png)
 
