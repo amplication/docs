@@ -230,7 +230,23 @@ The monorepo model provides you with several advantages:
 
 ## Will all my services be stored in the same or different repositories?
 
-It depends on your requirements. If you want to store all your projects( or services) on the same repo then amplication provides you the monorepo model to do so. Alternatively, you can create different repositories to store the service as Amplication as supports the polyrepo approach.
+The choice is yours.
+You can decide where you want to sync your code for each service.
+
+You can store each service in its own separate repo.
+You can also group services together in the same repository.
+
+Amplication provides two options for organizing your generated code in a git repository:
+
+- **Monorepo** - Stores your service code in a dedicated folder you select. Great if combining multiple services in one repo.
+- **Polyrepo** - Puts your service code at the root of the repo. Better if you want a single service per repository.
+
+:::note
+Check out our docs for more on syncing to a git repository and how Amplication handles pull requests:
+
+- [Sync with GitHub](/sync-with-github)
+- [Sync with Bitbucket](/sync-with-bitbucket)
+:::
 
 ---
 
