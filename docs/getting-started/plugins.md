@@ -57,6 +57,17 @@ Basic authentication is a simple authentication scheme built into the HTTP proto
 
 [Prettier](https://prettier.io/) is an opinionated code formatter that automatically formats your code to ensure adherence to a consistent style. Code is automatically formatted every time it is committed.
 
+### ESLint
+
+[ESLint](https://eslint.org/) is a library that helps find issues and enforce code style in your JavaScript code.
+ESLint has a wide array of rules that can be configured to enforce code quality and consistency.
+
+### Redis
+
+[Redis](https://redis.io/) is an open-source, in-memory data store that can be used as a database, cache, streaming engine, and message broker.
+Redis provides high availability via replication and high performance via caching.
+It is commonly used to quickly access frequently used application data.
+
 ## Installing plugins
 
 To install a plugin:
