@@ -1,7 +1,7 @@
 ---
 id: enterprise-sso
-title: How To Enable Enterprise SSO
-sidebar_label: Enable Enterprise SSO  
+title: Enterprise SSO
+sidebar_label: SSO
 slug: /enterprise-sso
 pagination_prev: how-to/change-base-branch-for-pull-requests
 pagination_next: getting-started/sync-with-git-differences-between-plans

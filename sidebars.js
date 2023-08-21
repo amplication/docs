@@ -46,6 +46,13 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Pro & Enterprise",
+      items: [
+        "how-to/enterprise-sso"
+      ]
+    },
+    {
+      type: "category",
       label: "How To",
       link: {
         type: "doc",
@@ -101,7 +108,6 @@ const sidebars = {
         "getting-started/how-prisma-schema-is-converted-into-entities",
         "how-to/erd-view-for-amplication-entities",
         "getting-started/relations",
-        "how-to/enterprise-sso",
         "how-to/how-to-set-access-permissions",
         "how-to/how-to-commit-changes",
         "how-to/change-base-branch-for-pull-requests",
