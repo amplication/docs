@@ -1,7 +1,7 @@
 ---
 id: base-directories
 title: How to configure base directories 
-sidebar_label: Base Directories
+sidebar_label: Configure Base Directories
 slug: /how-to/base-directories 
 ---
 

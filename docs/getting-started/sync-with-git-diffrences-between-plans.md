@@ -1,7 +1,7 @@
 ---
 id: sync-with-git-differences-between-plans
-title: Differences between sync with a Git provider in Free edition and Pro/Enterprise Plans
-sidebar_label: Git Sync - Free vs Pro vs Enterprise Plans
+title: Git Sync Plan Differences
+sidebar_label: Git Sync Plan Differences
 slug: /sync-with-git-differences-between-plans
 ---
 
