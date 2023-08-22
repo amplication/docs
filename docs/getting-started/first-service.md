@@ -44,6 +44,12 @@ You can also create a new repository by clicking on the **Create repository** bu
 
 ![](./assets/first-service/select-repository.png)
 
+:::note
+In addition to GitHub, Amplication also supports [Bitbucket](/sync-with-bitbucket) for Enterprise users.
+[Learn more](/sync-with-git-differences-between-plans) about the differences between the Free, Pro, and Enterprise plan.
+:::
+
+
 ## Step 3: Customize Your Service
 
 Amplication can generate GraphQL APIs, REST APIs, and an Admin UI for each of your services. Select the components you need for your service.
