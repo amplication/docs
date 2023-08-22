@@ -27,6 +27,8 @@ When synchronizing with git provider using the Pro or Enterprise Plan, the follo
 In addition to the PR behavior described above, Enterprise and Pro plan users have the ability to [change the default base branch for pull requests](/how-to/change-base-branch-for-pull-requests).
 This allows you to customize which branch pull requests are opened against.
 
+![Use the coupon code '2FREE' for 2 free months of Amplication Pro](./assets/pro-coupon.png)
+
 ### Sync with Git provider (Enterprise Plans)
 
 - Support for [Bitbucket](/sync-with-bitbucket)
