@@ -6,7 +6,7 @@ slug: /how-to/add-delete-user-entity
 pagination_next: getting-started/authentication
 ---
 
-# How To Add and Delete The User Entity
+# How To Add, Delete, and Change The User Entity
 
 The _User_ entity **is required** in order for you to enable authentication on your service.
 
@@ -50,3 +50,16 @@ You will notice that you can now click the _User_ entity's delete button. Click 
 ![Delete the User entity popup](./../getting-started/assets/authentication/delete_user_popup.png)
 
 3. Click on the popup's **Delete** button. Now the User entity is deleted.
+
+## Changing The Default User Entity
+
+Amplication also gives you the ability to change the default User entity for each service.
+
+![Change the default User entity](./assets/authentication-entity.png)
+
+Follow these steps to change the default User entity:
+
+1. Go to your service's **Settings**.
+2. Go to the **Authentication Entity** page.
+3. Pick the new Entity you want to be the User entity from the **Entity List** dropdown.
+4. You have now set a new User entity.
