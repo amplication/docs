@@ -27,5 +27,6 @@ Visit the [Git Sync Plan Differences](/sync-with-git-differences-between-plans) 
 2. Click on the **Continue with SSO** link.
 3. Enter the email address associated with your Amplication account.
 4. Click **Continue**.
+5. You are now successfully logged in.
 
 ![](./assets/sso-login.png)

@@ -46,7 +46,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Pro & Enterprise",
+      label: "Premium Features",
       items: [
         "how-to/enterprise-sso"
       ]
