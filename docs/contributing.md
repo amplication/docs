@@ -1,10 +1,10 @@
 ---
 id: contributing
-sidebar_label: Contributing
+sidebar_label: Introduction
 slug: /contributing
 ---
 
-# Contributing
+# Contribute To Amplication
 
 We would ❤️ it if you contributed to the project and helped make Amplication even better. We will make sure that contributing to Amplication is easy, enjoyable, and educational for anyone and everyone. All contributions are welcome, including features, issues, documentation, guides, and more.
 

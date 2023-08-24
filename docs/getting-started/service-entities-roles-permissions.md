@@ -122,7 +122,7 @@ Click on `Create` and proceed to Step 3.
 1. On the _Overview_ page, click **Go to roles**, or from the main menu (left sidebar) click the **Roles** icon.
 
 :::tip
-Currently, there's only a default **User** role that was auto-generated when you created the new app.
+Currently, there's only a default **User** role that was auto-generated when you created the new service.
 :::
 
 In this example, we add another two roles: _Admin_ and _Manager_.
@@ -190,6 +190,18 @@ We will now set permissions at the field level.
 
 ![](./assets/first-app/granular-fields-2.png)
 
+### Visualize Your Entities with ERD View
+
+After you've set up your new entities, fields, and permissions, you can visualize their relationships with [Amplication's ERD view](/erd-view-for-entities).
+
+To activate the ERD view:
+
+1. Navigate back to the Entities page of your service.
+2. In the center, to the right of the search bar, you'll find a toggle switch.
+3. Activate the toggle to enable the ERD view. 
+
+![Amplication's Entity ERD View](./../how-to/assets/amplication-erd-view.png)
+
 ## Step 5 - Commit Your Changes
 
 While working in Amplication your changes are saved automatically, but are not committed. Only committed changes will be included in the next version of your generated application.
@@ -219,8 +231,16 @@ Congratulations! You've successfully set up your service, added new entities, ro
 
 ![](./assets/service-entities-roles-permissions/github-pull-request.png)
 
+:::important
+Amplication doesn't just push your service's generated code to a git repository once. It continuously keeps track of your changes and helps you manage your service through pull requests on a git provider that you choose.
+
+[Learn more](/sync-with-github/) about syncing with a git provider.
+:::
+
 ## Next Steps
 
 Now that you know how to create entities, commit changes, and build new versions, let's take it a bit further by adding another entity and learning how to compare changes before committing.
+
+You'll also learn more about how Amplication automatically tracks your code and changes in a git repository.
 
 [Building New Versions of Your Service](/building-new-versions/)

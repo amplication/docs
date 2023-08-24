@@ -1,7 +1,7 @@
 ---
 id: context-skip-default
-title: Context Skip and Default Behavior
-sidebar_label: Context Skip and Default Behavior
+title: Context and Skip Default Behavior
+sidebar_label: Context and Skip Default Behavior
 slug: /plugins/context-skip-default
 ---
 

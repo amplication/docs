@@ -1,5 +1,5 @@
 ---
-title: Tutorials
+title: Introduction
 ---
 
 # Learn Amplication with Tutorials
