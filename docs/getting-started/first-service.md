@@ -5,8 +5,6 @@ sidebar_label: Create Your First Service
 slug: /first-service
 ---
 
-![Use the coupon code '2FREE' for 2 free months of Amplication Pro](./assets/pro-coupon.png)
-
 Welcome to Amplication, a platform that helps you build critical apps faster by auto-generating fully-functional apps. These automatically-generated apps are known as [**services**](/projects-resources-services/#service).
 
 [Services](/getting-started/) include components like NestJS, Prisma, a REST API, and an Admin UI. It's a full solution complete with authentication, authorization, logging, and other essential features for back-end management.

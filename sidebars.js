@@ -9,6 +9,7 @@ const sidebars = {
       },
       items: [
         "welcome",
+        "getting-started/2-month-pro-for-free",
         "getting-started/first-service",
         "getting-started/service-entities-roles-permissions",
         "getting-started/projects-resources-services"
