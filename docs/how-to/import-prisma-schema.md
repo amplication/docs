@@ -26,7 +26,7 @@ This guide walks you through how to generate a custom `schema.prisma` file from 
 To import your schema into Amplication, you first need to run Prisma's introspection process on your existing database.
 
 :::tip
-Always backup your database before performing any introspectiosn or migrations.
+Always backup your database before performing any introspection or migrations.
 These operations can potentially lead to data loss.
 :::
 
