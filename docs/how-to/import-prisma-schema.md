@@ -144,7 +144,7 @@ The `-p` flag will recursively create any missing folders in the path you provid
 
 #### 2. Generate the migration with `prisma migrate diff`
 
-Next, run the following commadn to generate a `migration.sql` file.
+Next, run the following command to generate a `migration.sql` file.
 
 ```bash
 prisma migrate diff --from-empty --to-schema-datamodel prisma/schema.prisma --script > prisma/migrations/init_after_introspection/migration.sql
