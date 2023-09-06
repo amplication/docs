@@ -70,6 +70,22 @@ ESLint has a wide array of rules that can be configured to enforce code quality 
 Redis provides high availability via replication and high performance via caching.
 It is commonly used to quickly access frequently used application data.
 
+### OpenAI
+
+The [OpenAI](https://github.com/amplication/plugins/tree/master/plugins/integration-openai) plugin allows you to integrate OpenAI's various AI models into your Amplication app.
+This gives you access to models like GPT-3, DALLE-E 2, and Codex right from your Amplication app.
+
+### GitHub Actions
+
+Simplify CI/CD for your service with the [GitHub Actions](https://github.com/amplication/plugins/tree/master/plugins/ci-github-actions) plugin.
+You can create workflows to build and test your service.
+It also supports containerization of your service.
+
+### Helm Chart
+
+Package and deploy your app on Kubernetes using Amplication's [Helm Chart](https://github.com/amplication/plugins/tree/master/plugins/deployment-helm-chart) plugin.
+This plugin generates a customizable Helm chart for installing and managing your app on Kubernetes clusters.
+
 ## Viewing Open-Source Plugin Code
 
 All Amplication plugins are open-source and available on GitHub.
