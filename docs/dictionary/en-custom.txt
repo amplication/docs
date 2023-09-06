@@ -83,3 +83,5 @@ heirarchy
 autoplay
 youtube
 DALLE
+datasource
+autoincrement
