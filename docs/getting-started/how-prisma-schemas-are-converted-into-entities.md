@@ -186,7 +186,7 @@ Here is a table summarizing the Prisma to Amplication data type conversions:
 | DateTime (@default(now())) | CreatedAt | DateTime with now() default converts to CreatedAt |
 | DateTime (@updatedAt) | UpdatedAt | DateTime with updatedAt attribute converts to UpdatedAt |
 | DateTime | DateTime | Plain DateTime remains DateTime |
-| Float, Decimal | Decimal | Float and Decimal convert to Decimal |
+| Float, Decimal | Decimal Number | Float and Decimal convert to Decimal Number |
 | Int, BigInt | WholeNumber | Int and BigInt convert to WholeNumber |
 | String | SingleLineText | String converts to SingleLineText |    
 | Json | Json | Json types are equivalent |  
