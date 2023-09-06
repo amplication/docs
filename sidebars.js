@@ -60,8 +60,7 @@ const sidebars = {
           items: [
             "getting-started/sync-with-github",
             "getting-started/sync-with-bitbucket",
-            "getting-started/smart-git-sync",
-            "getting-started/sync-with-git-differences-between-plans",
+            "getting-started/smart-git-sync"
           ]
         },
         {

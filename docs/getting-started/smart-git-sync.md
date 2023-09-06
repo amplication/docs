@@ -44,8 +44,9 @@ For example, let's say you've just added a new _Task_ entity to your project. On
 
 This method ensures that every single change you make in your Amplication project is automatically tracked and committed to the `amplication` branch in your Git repository. You can then easily review and merge these changes through pull requests.
 
-:::important
-Do not delete the `amplication` branch from your repository. Deleting this branch will trigger its recreation, and the following pull request will result in a merge conflict. After resolving the merge conflict in the first pull request, you can proceed normally, as subsequent PRs won't create conflicts in the same area.
+:::tip
+After completing an Amplication build, review the PR, resolve any conflicts, merge it, and
+**delete the `amplication` branch**.
 :::
 
 ## The `amplication` branch
@@ -61,7 +62,7 @@ For example, Amplication will base the `amplication` branch from `main` if your 
 You can merge Amplication-made changes by merging pull requests created by Amplication from the `amplication` branch to your repository's default branch.
 
 :::note
-Refrain from modifying the `amplication` branch. Creating new commits or merging changes from other branches can introduce bugs and inconsistencies. In case of conflict, delete the 'amplication' branch and resolve the merge conflict in the next PR.
+Refrain from modifying the `amplication` branch. Creating new commits or merging changes from other branches can introduce bugs and inconsistencies. In case of conflict, delete the `amplication` branch and resolve the merge conflict in the next PR.
 :::
 
 ![](./assets/sync-with-git-provider/github-pull-request.png)
