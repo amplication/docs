@@ -41,6 +41,6 @@ In the `after` function, we also have access to the generated modules. An exampl
 
 ## Best Practices
 
-1. In the `after` function, avoid unintentionally overriding the entire generated file. Opt for smaller changes instead
+1. In the `after` function, avoid unintentionally overriding the entire generated file. Opt for smaller changes instead.
 2. In the `before` function, take care when modifying templates to not unintentionally affect code generation.
 3. In the `before` function, only choose `skipDefaultBehavior` if skipping code generation entirely, including default generation, is intended.
