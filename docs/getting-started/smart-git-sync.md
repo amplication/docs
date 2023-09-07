@@ -17,7 +17,7 @@ Amplication offers _Smart Git Sync_ for everyone including Free, Pro, and Enterp
 On this page, you'll learn how Smart Git Sync works.
 You will understand how Amplication manages the `amplication` branch on your repo, creates commits, and initiates pull requests.
 
-![](https://amplication.com/_next/static/media/sync_with_github.ee2ac5a5.svg)
+![](./assets/smart-git-sync.svg)
 
 ## How Smart Git Sync Works
 
@@ -31,7 +31,7 @@ Amplication supports both [GitHub](/sync-with-github) and [Bitbucket](/sync-with
 
 This commit encompasses all the files that were added, removed, or changed since the last build.
 
-![](https://amplication.com/_next/static/media/sync_with_github.1d7a27e3.svg)
+![](./assets/sync-with-github.svg)
 
 ### Step-by-step breakdown
 
