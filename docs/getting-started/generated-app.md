@@ -1,7 +1,7 @@
 ---
 id: generated-app
 title: The Generated Service
-sidebar_label: The Generated Service
+sidebar_label: Introduction
 slug: /getting-started
 ---
 
