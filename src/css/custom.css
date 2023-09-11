@@ -82,6 +82,22 @@
   font-size: 0.9rem;
 }
 
+.menu__link.menu__link--hasTag {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__link-sidebar-tag {
+  color: rgb(126 132 151);
+  font-size: 0.64rem;
+  font-style: normal;
+  background: rgb(21 25 44);
+  border-radius: 5px;
+  padding: 2px 5px;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
 .alert {
   border-left: 6px solid var(--black60);
   margin-top: 2rem;

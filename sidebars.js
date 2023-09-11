@@ -9,8 +9,22 @@ const sidebars = {
       },
       items: [
         "welcome",
-        "getting-started/first-service",
-        "getting-started/service-entities-roles-permissions",
+        {
+          type: "doc",
+          id: "getting-started/first-service",
+          label: "Create Your First Service",
+          customProps: {
+            sidebarTag: "3 Min",
+          }
+        },
+        {
+          type: "doc",
+          id: "getting-started/service-entities-roles-permissions",
+          label: "Set Up Entities, Roles, and Permissions On Your Service",
+          customProps: {
+            sidebarTag: "8 Min",
+          }
+        },
         "getting-started/projects-resources-services"
       ],
     },
@@ -23,7 +37,14 @@ const sidebars = {
       },
       items: [
         "getting-started/generated-app",
-        "getting-started/service-building-new-versions",        
+        {
+          type: "doc",
+          id: "getting-started/service-building-new-versions",
+          label: "Building New Versions Of Your Service",
+          customProps: {
+            sidebarTag: "5 Min",
+          }
+        },
         "getting-started/view-generated-code",
         "how-to/add-custom-code",
         "getting-started/authentication",
@@ -58,9 +79,23 @@ const sidebars = {
           type: "category",
           label: "Sync With a Git Provider",
           items: [
+            {
+              type: "doc",
+              id: "getting-started/smart-git-sync",
+              label: "Smart Git Sync Explained",
+              customProps: {
+                sidebarTag: "New",
+              }
+            },
             "getting-started/sync-with-github",
-            "getting-started/sync-with-bitbucket",
-            "getting-started/smart-git-sync"
+            {
+              type: "doc",
+              id: "getting-started/sync-with-bitbucket",
+              label: "Sync With Bitbucket",
+              customProps: {
+                sidebarTag: "Enterprise",
+              }
+            },
           ]
         },
         {
@@ -97,9 +132,30 @@ const sidebars = {
         "how-to/how-to-create-service",
         "how-to/how-to-create-entity",
         "how-to/how-to-create-entity-field",
-        "how-to/import-prisma-schema",
-        "getting-started/how-prisma-schema-is-converted-into-entities",
-        "how-to/erd-view-for-amplication-entities",
+        {
+          type: "doc",
+          id: "how-to/import-prisma-schema",
+          label: "Import Prisma Schema",
+          customProps: {
+            sidebarTag: "New",
+          }
+        },
+        {
+          type: "doc",
+          id: "getting-started/how-prisma-schema-is-converted-into-entities",
+          label: "How Prisma Schema Is Converted Into Amplication Entities",
+          customProps: {
+            sidebarTag: "New"
+          }
+        },
+        {
+          type: "doc",
+          id: "how-to/erd-view-for-amplication-entities",
+          label: "ERD View For Amplication Entities",
+          customProps: {
+            sidebarTag: "New"
+          }
+        },
         "getting-started/relations",
         "how-to/how-to-set-access-permissions",
         "how-to/how-to-commit-changes",

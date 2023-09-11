@@ -178,6 +178,7 @@ module.exports = {
   ],
   plugins: [
     "./plugins/analytics",
+    "./plugins/sidebar-tags",
     [
       "@docusaurus/plugin-client-redirects",
       {
