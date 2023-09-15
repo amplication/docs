@@ -46,6 +46,13 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Premium Features",
+      items: [
+        "how-to/enterprise-sso"
+      ]
+    },
+    {
+      type: "category",
       label: "How To",
       link: {
         type: "doc",
