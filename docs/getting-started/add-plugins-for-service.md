@@ -12,7 +12,7 @@ For example, the GitHub Actions plugin adds an actions workflow to the service f
 
 Much of the functionality that you enabled while creating your service is provided by plugins too.
 
-PostgreSQL is a specifc plugin to provide you with database functionality.
+PostgreSQL is a specific plugin to provide you with database functionality.
 Authentication is a collection of plugins to provide you with auth functionality.
 
 Let's walk through the process of adding a new plugin to your service.
@@ -51,7 +51,7 @@ More information about a plugin's settings and necessary JSON properties are ava
 In the Prettier plugin's case, you will need to provide a `rules` property with a JSON object of rules.
 This JSON object corresponds to a Prettier configuration file.
 
-After determing your Prettier rules, write them in the text box in the _Plugin Settings_ page.
+After determining your Prettier rules, write them in the text box in the _Plugin Settings_ page.
 Here's how those settings could look:
 
 ![Prettier Plugin Settings filled in](./assets/prettier-plugin-settings-filled-in.png)
@@ -73,12 +73,12 @@ Here are the steps to do that:
 ![Installing a new database plugin](./assets/new-database-plugin.png)
 
 Done in just a few clicks.
-How much time would it have tkane to change an entire database without Amplication?
+How much time would it have taken to change an entire database without Amplication?
 
 ## You're Done
 
 Great work!
-You just enabled a new plugin to add more funtionality to your service.
+You just enabled a new plugin to add more functionality to your service.
 You also optionally switched your database in just a few clicks.
 
 Amplication truly does save you a lot of time, and our plugin system is designed to help save even more time and customize your service exactly how you need.
@@ -93,5 +93,5 @@ We're always working on releasing more.
 Visit the [How To Use Plugins](/getting-started/plugins/) page to learn more about which ones are available.
 
 If none of the official plugins fit your use case, Amplication allows you to [develop your own custom plugins](/plugins/how-to-create-plugin/).
-These custom plugins give you extsensive access to the code creation lifecycle so you can customize your service however you like.
+These custom plugins give you extensive access to the code creation lifecycle so you can customize your service however you like.
 We have detailed guides on that on our documentation.
