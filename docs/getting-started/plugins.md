@@ -70,6 +70,11 @@ ESLint has a wide array of rules that can be configured to enforce code quality 
 Redis provides high availability via replication and high performance via caching.
 It is commonly used to quickly access frequently used application data.
 
+### Redis Message Broker
+
+[Redis Message Broker](https://github.com/amplication/plugins/tree/master/plugins/broker-redis) is an extension of the traditional Redis in-memory data store, allowing it to function as a message broker. 
+Install this plugin to leverage Redis's in-memory capabilities and enables asynchronous message communication between different parts of an application or between different applications.
+
 ### OpenAI
 
 The [OpenAI](https://github.com/amplication/plugins/tree/master/plugins/integration-openai) plugin allows you to integrate OpenAI's various AI models into your Amplication app.
@@ -85,6 +90,11 @@ It also supports containerization of your service.
 
 Package and deploy your app on Kubernetes using Amplication's [Helm Chart](https://github.com/amplication/plugins/tree/master/plugins/deployment-helm-chart) plugin.
 This plugin generates a customizable Helm chart for installing and managing your app on Kubernetes clusters.
+
+### Opentelemetry
+
+[Opentelemetry](https://github.com/amplication/plugins/tree/master/plugins/observability-opentelemetry) is an observability framework that lets you monitor the health and performance of your application.
+This plugin lets you integrate with Opentelemtry allowing you to gain deeper insights into your application's operations and to troubleshoot potential issues more efficiently.
 
 ## Viewing Open-Source Plugin Code
 
