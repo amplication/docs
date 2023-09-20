@@ -85,3 +85,4 @@ youtube
 DALLE
 datasource
 autoincrement
+OpenTelemetry

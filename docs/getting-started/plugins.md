@@ -91,10 +91,10 @@ It also supports containerization of your service.
 Package and deploy your app on Kubernetes using Amplication's [Helm Chart](https://github.com/amplication/plugins/tree/master/plugins/deployment-helm-chart) plugin.
 This plugin generates a customizable Helm chart for installing and managing your app on Kubernetes clusters.
 
-### Opentelemetry
+### OpenTelemetry
 
-[Opentelemetry](https://github.com/amplication/plugins/tree/master/plugins/observability-opentelemetry) is an observability framework that lets you monitor the health and performance of your application.
-This plugin lets you integrate with Opentelemtry allowing you to gain deeper insights into your application's operations and to troubleshoot potential issues more efficiently.
+[OpenTelemetry](https://github.com/amplication/plugins/tree/master/plugins/observability-opentelemetry) is an observability framework that lets you monitor the health and performance of your application.
+This plugin lets you integrate with OpenTelemetry allowing you to gain deeper insights into your application's operations and to troubleshoot potential issues more efficiently.
 
 ## Viewing Open-Source Plugin Code
 
