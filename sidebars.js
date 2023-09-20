@@ -48,7 +48,8 @@ const sidebars = {
       type: "category",
       label: "Premium Features",
       items: [
-        "how-to/enterprise-sso"
+        "how-to/enterprise-sso",
+        "how-to/git-branch-per-service"
       ]
     },
     {
