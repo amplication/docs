@@ -17,7 +17,7 @@ This guide will walk you through the steps to achieve this with various examples
 
 1. Navigate to your service's _Entity Overview_ page.
 2. Click on the specific _Entity_ field you want to set a default value for.
-3. On the Entity Field page, you will find a text box labeled **Custom Attributes**. Here, you'll enter the custom prisma @default() attribute.
+3. On the Entity Field page, you will find a text box labeled **Custom Attributes**. Here, you'll enter the custom prisma `@default()` attribute.
 4. In the Custom Attribute text field, enter the `@default()` attribute followed by the desired default value in parentheses. 
 5. After entering the default value, it will be saved automatically.
 
