@@ -104,6 +104,7 @@ const sidebars = {
         "how-to/how-to-create-service",
         "how-to/how-to-create-entity",
         "how-to/how-to-create-entity-field",
+        "how-to/default-value-entity-field",
         "how-to/import-prisma-schema",
         "getting-started/how-prisma-schema-is-converted-into-entities",
         "how-to/erd-view-for-amplication-entities",
