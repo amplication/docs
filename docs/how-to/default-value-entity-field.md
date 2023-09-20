@@ -1,10 +1,10 @@
 ---
-title: How To Set Default Value on Entity Fields
+title: How To Set Default Value for an Entity Field
 sidebar_label: Set Default Value for an Entity Field
 slug: /how-to/set-default-value-entity-field
 ---
 
-# How To Set Default Value on Entity Fields
+# How To Set Default Value for an Entity Field
 
 Setting default values for your entity fields in Amplication is straightforward using the `@default()` custom Prisma attribute.
 This can be helpful in scenarios where you want certain fields to have a predefined value when new records are created.
