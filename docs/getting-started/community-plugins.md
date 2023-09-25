@@ -1,15 +1,19 @@
 ---
-title: Official Plugins
-sidebar_label: Official Plugins List
+title: Community Plugins
+sidebar_label: Community Plugins List
 slug: /plugins-list
-pagination_next: "plugins/overview"
+pagination_next: plugins/overview
 pagination_prev: getting-started/plugins
 ---
 
-# Official Amplication Plugins
+# Amplication Community Plugins
 
 The following plugins are currently available.
 Additional plugins will be added in future releases of Amplication.
+
+:::note
+For the most updated list of plugins, it's recommended to check the _All Plugins_ page on your Amplication dashboard.
+:::
 
 ### MongoDB
 

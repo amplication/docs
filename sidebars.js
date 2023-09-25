@@ -125,7 +125,7 @@ const sidebars = {
       },
       items: [
         "getting-started/plugins",
-        "getting-started/official-plugins",
+        "getting-started/community-plugins",
         "plugins/how-to-create-plugin",
         "plugins/how-to-test-plugin",
         "plugins/publish-plugin",

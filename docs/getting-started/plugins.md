@@ -4,12 +4,12 @@ title: How To Use Plugins
 sidebar_label: How To Use Plugins
 slug: /getting-started/plugins
 pagination_next: plugins/overview
-pagination_prev: getting-started/official-plugins
+pagination_prev: getting-started/community-plugins
 ---
 
 Plugins are custom code that extend the functionality of your generated application.
 
-Amplication includes [official plugins](//plugins-list) by default. To add more functionality, you can [develop your own plugins](/plugins/overview), or can use plugins developed by the community, as they become available.
+Amplication includes [community plugins](/plugins-list) by default. To add more functionality, you can [develop your own plugins](/plugins/overview), or can use plugins developed by the community, as they become available.
 
 All the official plugins are available on the _All Plugins_ screen in the Amplication dashboard.
 Your installed plugins for a particular service are shown on the _Installed Plugins_ screen.
