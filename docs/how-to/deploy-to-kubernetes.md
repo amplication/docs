@@ -9,7 +9,7 @@ In the dynamic realm of modern software development, deploying applications on K
 
 ## Pre-requisites
 
-Although default amplication code generation provides a few of the building blocks required to be able to deploy to kubernetes - e.g., Dockerfile. We will supplement the code base with the other pre-requisites by installing two plugins on the applicable service. These plugins are `Github Actions` and `Helm Chart`. Using these plugins will result in havin the artefacts required to deploy the application to Kubernetes - a container image & helm chart.
+Although default amplication code generation provides a few of the building blocks required to be able to deploy to kubernetes - e.g., Dockerfile. We will supplement the code base with the other pre-requisites by installing two plugins on the applicable service. These plugins are `Github Actions` and `Helm Chart`. Using these plugins will result in having the artifacts required to deploy the application to Kubernetes - a container image & helm chart.
 
 ### Step 1: Configuration of the Github Actions plugin
 
@@ -48,13 +48,13 @@ Adding the `configuration` options `registry_path` & `authentication_method` wil
 
 :::caution
 
-When specifying the `registry_path` keep in mind that it will still be suffixed by the service name. The path for package of for example the server component of a service named `logistics` will be `example-kubernetes-deployment/logistics` and live within the `amplication` github organisation.
+When specifying the `registry_path` keep in mind that it will still be suffixed by the service name. The path for package of for example the server component of a service named `logistics` will be `example-kubernetes-deployment/logistics` and live within the `amplication` GitHub organization.
 
 :::
 
 ### Step 2: Configuration of the Helm Chart plugin
 
-After setting up the process that will result in the first artfact for the kubernetes deployment, we will continue with the setup for the Helm chart that will encapsulate the container image.
+After setting up the process that will result in the first artifact for the kubernetes deployment, we will continue with the setup for the Helm chart that will encapsulate the container image.
 
 When in the overview of the to be deployed service, navigate to the plugins part of the service configuration. Here the `Helm Chart` plugin can be found. Press the `Install` button, this should introduce pending changes and the option to press a `Settings` button, press this to be able to configure the plugin further. As with the `Github Actions` plugin some changes are made to the default generated json settings.
 
@@ -80,15 +80,15 @@ The `root_level` setting determines whether the directory for the helm charts is
 
 :::note
 
-Everything that is in the environments variable file for the service is moved to the configmap part of the helm chart, it would be adviced to move secret related configuration to the secrets object and preferably not have the secrets stored in the generated code at all (as this is implementation specific the decision was made to add everything to the configmap).
+Everything that is in the environments variable file for the service is moved to the `configmap` part of the helm chart, it would be advised to move secret related configuration to the secrets object and preferably not have the secrets stored in the generated code at all (as this is implementation specific the decision was made to add everything to the `configmap`).
 
 :::
 
 ### Step 3: Building and publishing the container image
 
-After both the `Github Actions` & `Helm Chart` plugin have been enabled and confgured, the pending changes should be enforced by building the service and merging the pull request.
+After both the `Github Actions` & `Helm Chart` plugin have been enabled and configured, the pending changes should be enforced by building the service and merging the pull request.
 
-The next step is to run the generated workflow, this can either be done by doing a commit in the service directory or running the manually by using the `workflow_dispatch` trigger. When the workflow has been completed succesfully, this should result in a container image available under github packages.
+The next step is to run the generated workflow, this can either be done by doing a commit in the service directory or running the manually by using the `workflow_dispatch` trigger. When the workflow has been completed successfully, this should result in a container image available under github packages.
 
 :::caution
 
@@ -104,7 +104,7 @@ As it is beside the scope, this walkthrough does not include the fact that it is
 
 ## Deployment
 
-Having all required artefacts in-place the next step is the deployment of the application on the Kubernetes cluster. The steps provided next should be provider agnostic, whether you're running on [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks), [Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/aks) or [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine) or a local distribution like [Minikube](https://minikube.sigs.k8s.io/), [Kind](https://kind.sigs.k8s.io/) or [K3s](https://k3s.io/).
+Having all required artifacts in-place the next step is the deployment of the application on the Kubernetes cluster. The steps provided next should be provider agnostic, whether you're running on [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks), [Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/aks) or [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine) or a local distribution like [Minikube](https://minikube.sigs.k8s.io/), [Kind](https://kind.sigs.k8s.io/) or [K3s](https://k3s.io/).
 
 For the deployment process we need to following applications installed:
 - [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
