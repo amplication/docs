@@ -14,7 +14,7 @@ Services are a full solution complete with authentication, authorization, loggin
 
 Let's get you started on creating your first service using our service creation onboarding wizard.
 
-## Step 0: Create Your Amplication Account
+## Prerequisites
 
 First, [sign up](https://app.amplication.com/login) for an Amplication account. Next, authorize with GitHub.
 

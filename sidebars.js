@@ -10,7 +10,9 @@ const sidebars = {
       items: [
         "welcome",
         "getting-started/first-service",
-        "getting-started/service-entities-roles-permissions"
+        "getting-started/set-up-entities",
+        "getting-started/configure-roles-and-permissions",
+        "getting-started/commit-changes-and-build-new-versions"
       ],
     },
     {
