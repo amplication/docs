@@ -12,6 +12,7 @@ const sidebars = {
         "getting-started/first-service",
         "getting-started/set-up-entities",
         "getting-started/configure-roles-and-permissions",
+        "getting-started/add-plugins-for-service",
         "getting-started/commit-changes-and-build-new-versions"
       ],
     },
