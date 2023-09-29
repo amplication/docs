@@ -114,6 +114,11 @@ After selecting User, a modal will appear telling you to create the relation to 
 
 Click on `Create` and proceed to Step 3.
 
+:::info
+The **User** entity will only exist, if you opted into Authentication when you created your service.
+Otherwise, you'll have to manually add authentication and create the User entity first.
+:::
+
 ![](./assets/service-entities-roles-permissions/name-relations-field-from-user.png)
 
 ## Step 3: Visualize Your Entities with ERD View
@@ -134,3 +139,8 @@ Now you know how to create database entities and fields.
 Let's take this further by learning how to set roles and permissions on your various entities.
 
 [Configure Roles and Permissions For Your Service](/configure-roles-and-permissions)
+
+:::tip
+There's an alternative to manually creating entities and entity fields.
+Amplication's [**Import Prisma Schema**](/import-prisma-schema/) feature lets you use your _existing_ databases for a head start on development.
+:::
