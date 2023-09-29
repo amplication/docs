@@ -9,9 +9,9 @@ slug: /
 
 Hello and welcome to Amplication's developer documentation.
 
-[Amplication](/about/) is an open-source backend development tool. It accelerates the development of Node.js applications by auto-generating fully-functional apps.
+[Amplication](/about/) is an open-source backend development tool. It accelerates the development of Node.js applications by auto-generating production-ready backends.
 
-Build critical apps faster. Streamline your development process and increase productivity so you can focus on what matters most: **creating awesome applications**.
+Streamline your development process and increase productivity so you can focus on what matters most: **creating awesome applications**.
 
 ## Quick Start
 
