@@ -8,8 +8,8 @@ slug: /commit-and-build-new-versions
 
 One of Amplication's core features is the ability to automatically sync changes to your service to a git provider.
 
-Changes are saved automatically, but are not commited until you explicitly click **Commit changes and build** in the right sidebar.
-Only commited changes will be included in the next version of your generated service.
+Changes are saved automatically, but are not committed until you explicitly click **Commit changes and build** in the right sidebar.
+Only committed changes will be included in the next version of your generated service.
 
 In this guide, you'll learn how to commit changes to your git provider and build new versions of your service.
 

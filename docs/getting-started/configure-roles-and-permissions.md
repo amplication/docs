@@ -99,7 +99,7 @@ We will now set permissions at the field level.
 
 Now you know how to various roles and permissions to the entities and fields for your service.
 
-In the next guide, you'll learn how commit changes to your git provider, compare changes before commiting, and build new versions of your service.
+In the next guide, you'll learn how commit changes to your git provider, compare changes before committing, and build new versions of your service.
 
 You'll also learn more about how Amplication automatically tracks your code and changes in a git repository.
 
