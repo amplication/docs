@@ -107,7 +107,7 @@ model User {
 This is a simplified schema to showcase Prisma's `@unique` [field-level custom attribute](#field-level-custom-attributes).
 Amplication supports the `@unique` out of the box directly from the UI.
 But, if you use the unique field toggle, do not include `@unique` in the _Custom Attributes_ textarea.
-You will see errors in your schema.
+Otherwise, you'll encounter errors your schema.
 :::
 
 2. **Enforce uniqueness on multiple fields**: In many applications, it's important to uniquely identify records by a combination of fields. Prisma lets you enforce this at the entity level with a composite unique index using the `@@unique` custom attribute.
