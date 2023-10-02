@@ -46,6 +46,14 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Premium Features",
+      items: [
+        "how-to/enterprise-sso",
+        "how-to/git-branch-per-service"
+      ]
+    },
+    {
+      type: "category",
       label: "How To",
       link: {
         type: "doc",
@@ -60,6 +68,7 @@ const sidebars = {
           items: [
             "getting-started/sync-with-github",
             "getting-started/sync-with-bitbucket",
+            "getting-started/sync-with-aws-codecommit",
             "getting-started/smart-git-sync"
           ]
         },
