@@ -85,5 +85,4 @@ youtube
 datasource
 autoincrement
 configmap
-logists
 kubeconfig
