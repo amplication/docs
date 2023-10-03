@@ -1,8 +1,8 @@
 ---
-id: deploy-to-kubernetes
+id: deploy-kubernetes
 title: Deploying to Kubernetes
 sidebar_label: Deploy to Kubernetes
-slug: /how-to/deploy-to-kubernetes
+slug: /deploy/kubernetes
 ---
 
 In the dynamic realm of modern software development, deploying applications on Kubernetes has become the defacto standard for reliability, flexibility and faster iteration. This guide distills the process of deploying an Amplication generated application on a Kubernetes cluster.
@@ -152,7 +152,7 @@ metadata:
 
 :::note
 
-Make sure that the rendered repository name and image tag on the deployment is matching the container image repository: `"ghcr.io/amplication/example-kubernetes-deployment/logists:latest"`
+Make sure that the rendered repository name and image tag on the deployment is matching the container image repository: `"ghcr.io/amplication/example-kubernetes-deployment/logistics:latest"` set by the `GitHub Actions` workflow.
 
 :::
 
@@ -176,3 +176,11 @@ STATUS: deployed
 REVISION: 1
 TEST SUITE: None
 ```
+
+The different Kubernetes objects for the generated service should now be on the Kubernetes cluster, as part of the deployment the container image will be pulled and in that way the generated service source code runs on the Kubernetes cluster.
+
+:::caution
+
+The `deployment` part of the helm chart also renders an `initContainer` which execute the prisma schema migration on the database specified throught the `.Values.variables.configmap.DB_URL` or `.Values.variables.secret.DB_URL` - when this fails to connect to the database the main container of the deployment won't intialize.
+
+:::
