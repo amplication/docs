@@ -181,6 +181,6 @@ The different Kubernetes objects for the generated service should now be on the 
 
 :::caution
 
-The `deployment` part of the helm chart also renders an `initContainer` which execute the prisma schema migration on the database specified throught the `.Values.variables.configmap.DB_URL` or `.Values.variables.secret.DB_URL` - when this fails to connect to the database the main container of the deployment won't intialize.
+The `deployment` part of the helm chart also renders an `initContainer` which execute the prisma schema migration on the database specified through the `.Values.variables.configmap.DB_URL` or `.Values.variables.secret.DB_URL` - when this fails to connect to the database the main container of the deployment won't initialize.
 
 :::
