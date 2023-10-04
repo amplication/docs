@@ -1,7 +1,7 @@
 ---
 id: sync-with-git-differences-between-plans
-title: Differences between sync with a Git provider in Free edition and Pro/Enterprise Plans
-sidebar_label: Differences between sync with a Git provider in Free edition and Pro/Enterprise Plans
+title: Git Sync Plan Differences
+sidebar_label: Git Sync Plan Differences
 slug: /sync-with-git-differences-between-plans
 ---
 
@@ -24,8 +24,12 @@ When synchronizing with git provider using the Pro or Enterprise Plan, the follo
 - Subsequent builds will create additional commits within the Amplication branch if there is an open pull request. If there is no open pull request, it will open a new pull request.
 - After the PR has been merged, the next build will create a new Pull Request from the first commit of the default branch. Subsequent builds will add additional commits until the next merge, and so on.
 
+In addition to the PR behavior described above, Enterprise and Pro plan users have the ability to [change the default base branch for pull requests](/how-to/change-base-branch-for-pull-requests).
+This allows you to customize which branch pull requests are opened against.
+
 ### Sync with Git provider (Enterprise Plans)
-- support for Bitbucket
+
+- Support for [Bitbucket](/sync-with-bitbucket)
 
 ### Advantages of Git provider Sync in the Pro and Enterprise Plans
 
