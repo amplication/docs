@@ -19,8 +19,8 @@ The file works similarly to `.gitignore`, using the [glob](<https://en.wikipedia
 
 ```bash
 # .amplicationignore
-folder_or_file.     <-- Ignore ignore a specific file or folder
-folder/file         <-- Ignore a specific file in a
+folder_or_file.     <-- Ignore a specific file or folder
+folder/file         <-- Ignore a specific file in a folder
 folder/**/file.json <-- Ignore all file.json occurrences in subfolders of "folder"
 ```
 
