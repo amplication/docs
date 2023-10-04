@@ -15,7 +15,7 @@ Although default amplication code generation provides a few of the building bloc
 
 When in the overview of the to be deployed service, navigate to the plugins part of the service configuration. Here the `Github Actions` plugin can be found in between various other plugins. Press the `Install` button, this should introduce pending changes and the option to press a `Settings` button, press this to be able to configure the plugin further.
 
-The setting `registry` determines the workflow base that is used. When it is left empty, the default workflow is used - this workflow only includes steps for building and testing the service.
+The setting `registry` determines the workflow base that is used. When it is left empty, the default workflow, that only includes steps for building and testing the service, is used.
 
 ```json title="github-actions-plugin/settings" showLineNumbers
 {
