@@ -80,7 +80,7 @@ The `root_level` setting determines whether the directory for the helm charts is
 
 :::note
 
-Everything that is in the environments variable file for the service is moved to the `configmap` part of the helm chart, it would be advised to move secret related configuration to the secrets object and preferably not have the secrets stored in the generated code at all (as this is implementation specific the decision was made to add everything to the `configmap`).
+Everything that is in the environments variable file for the service is moved to the `configmap` part of the helm chart. As this might contain also secrets, we advise to move secret related configuration to the secrets object and preferably not have the secrets stored in the generated code at all (as this is implementation specific the decision was made to add everything to the `configmap`).
 
 :::
 
