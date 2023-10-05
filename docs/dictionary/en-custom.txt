@@ -86,3 +86,5 @@ datasource
 autoincrement
 configmap
 kubeconfig
+frontends
+Zustand
