@@ -17,7 +17,7 @@ The installed plugins are shown on the _Installed Plugins_ screen.
 
 The following plugins are currently available.
 Additional plugins will be added in future releases of Amplication.
-All official Amplication plugins are [available on GitHub](https://github.com/amplication/plugins).
+All community Amplication plugins are [available on GitHub](https://github.com/amplication/plugins).
 
 ### MongoDB
 
@@ -128,7 +128,7 @@ If a plugin execution is a prerequisite for another plugin, it must be located e
 
 Amplication plugin developers may release several versions of a plugin over time. By default, the latest version will be available when installing the plugin.
 
-Sometimes, you might need to generate a project with an earlier version of the plugin, to ensure version compatibility.
+Sometimes, you might need to generate your service's code with an earlier version of the plugin, to ensure version compatibility.
 
 ### Changing the Plugin Version
 
