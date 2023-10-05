@@ -179,6 +179,7 @@ const sidebars = {
       },
       items: [
         "tutorials/index",
+        "tutorials/community-tutorials",
         {
           type: "link",
           label: "Developer Tutorials",
