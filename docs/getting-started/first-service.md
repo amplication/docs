@@ -45,7 +45,7 @@ You can also create a new repository by clicking on the **Create repository** bu
 ![](./assets/first-service/select-repository.png)
 
 :::note
-In addition to GitHub, Amplication also supports [Bitbucket](/sync-with-bitbucket) and AWS CodeCommit for Enterprise users.
+In addition to GitHub, Amplication also supports [Bitbucket](/sync-with-bitbucket) and [AWS CodeCommit](/sync-with-aws-codecommit) for Enterprise users.
 [Learn more](/sync-with-git-differences-between-plans) about the differences between the Free, Pro, and Enterprise plan.
 :::
 
