@@ -84,3 +84,5 @@ autoplay
 youtube
 datasource
 autoincrement
+configmap
+kubeconfig
