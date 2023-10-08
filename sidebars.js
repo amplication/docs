@@ -62,7 +62,8 @@ const sidebars = {
         id: "how-to/index",
       },
       items: [
-        "getting-started/deploy",
+        "getting-started/deploy-docker-desktop",
+        "how-to/deploy-kubernetes",
         "getting-started/plugins",
         {
           type: "category",
