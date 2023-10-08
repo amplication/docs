@@ -183,6 +183,10 @@ module.exports = {
       {
         redirects: [
           {
+            to: "/deploy/docker-desktop",
+            from: ["/deploy"]
+          },
+          {
             to: "/getting-started/",
             from: ["/guides/getting-started"],
           },
