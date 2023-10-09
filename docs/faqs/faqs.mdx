@@ -151,15 +151,13 @@ However, we generate apps that work with Prisma, so you could change the Prisma 
 
 ## Which cloud platforms does Amplication support?
 
-You can host your server on AWS, Heroku, Azure, Google Cloud Platform, Digital Ocean, and many more.
-
-Amplication uses Docker and Kubernetes to support deployment.
+Amplication is shipped in container form and can be hosted on different cloud platforms like AWS, Heroku, Azure, Google Cloud Platform, Digital Ocean, and many more. 
 
 Check out the following for more information:
 
-[Deploy a Docker Container](https://docs.amplication.com/deploy/#deploy-a-docker-container)
-
-[Deploying Amplication Server to Digital Ocean](https://dev.to/asiancat54x/deploying-amplication-app-to-digital-ocean-5d7k)
+1. [Deploy to Docker Desktop](https://docs.amplication.com/deploy/docker-desktop)
+1. [Deploy to Kubernetes](https://docs.amplication.com/deploy/kubernetes)
+2. [Deploying to Digital Ocean](https://dev.to/asiancat54x/deploying-amplication-app-to-digital-ocean-5d7k)
 
 ---
 
