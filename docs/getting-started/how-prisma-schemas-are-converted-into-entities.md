@@ -129,19 +129,21 @@ For example, here's how two models could see transformations:
 }
 ```
 
-#### Model IDs
+#### Model IDs  
+
+In the next phase, Amplication will convert the `@@id` attribute with one argument when you are using it as the primary key of the model. For example, `@@id([field])`.
+
+:::note
 Currently, using the `@@id` attribute as a composite ID is not supported (`@@id([field1, field2])`).
+:::
 
-When useing the `@@id` attribute with one argument, as the PK of the model, e.g `@@id([field])`:
+- The `@@id` attribute in your model is converted to an `@@unique` attribute.
+- The field which was used as the primary key of the model through the `@@id` attribute is converted to an id field. This means the `@id` attribute is added to this field.
+- If this field has no `@default()` attribute representing the default id field type, the `@default()` attribute will be added based on the field type (`String` => `@default(cuid())`, `Int` => `@default(autoincrement())`).
+- If the primary key field is not named "id", it gets renamed to id and we add the `@map` attribute: `@map("originalFieldName")`.
+- The field name in the `@@id` attribute is changed to "id", e.g. `@@id([field])` => `@@id([id])`.
 
-- The `@@id` attribute in your model is converted to `@@unique` attribute.
-- The field which was used as PK of the model through the `@@id` attribute, is converted to an id field, meaning the `@id` attribute is added to this field.
-- If this field has no `@default()` attribute represents the default id field type, the `@default()` attribute will be added based on the field type(`String` => `@default(cuid())`, `Int` => `@default(autoincrement())`)
-- If the PK field in not named "id", it gets renamed to id and we add the `@map` attribute:  `@map("originalFieldName")`
-- The field name in the `@@id` attribute is changed to "id", e.g `@@id([field])` => `@@id([id])`
-
-
-Here's an example of this transformation:
+Here is an example of this transformation:
 
 ```diff title="schema.prisma"
 model DomainUnit {
