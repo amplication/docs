@@ -113,6 +113,7 @@ const sidebars = {
         "getting-started/relations",
         "how-to/how-to-set-access-permissions",
         "how-to/add-delete-user-entity",
+        "how-to/authentication-plugin-examples",
         "how-to/how-to-commit-changes",
         "how-to/change-base-branch-for-pull-requests",
         "getting-started/relations",
