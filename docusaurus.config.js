@@ -9,6 +9,14 @@ module.exports = {
   projectName: "amplication", // Usually your repo name.
   trailingSlash: true,
   themeConfig: {
+    metadata: [
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:domain", content: "docs.amplication.com" },
+      { name: "twitter:image", content: "img/amplication-docs-social-card.png" },
+
+      { name: "og:image", content: "img/amplication-docs-social-card.png" },
+      { name: "og:type", content: "website" }
+    ],
     algolia: {
       // The application ID provided by Algolia
       appId: "2U9P8WAXIR",
