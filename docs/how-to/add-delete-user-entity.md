@@ -25,7 +25,7 @@ Click on the **Restore Default** button and the original _User_ entity provided 
 
 :::note
 You have to add the _User_ entity first and then enable the [_NestJS Auth Module_ plugin](/authentication/#nestjs-auth-module-mandatory).
-It's not possible to do this in reverse order.
+If you try to install the auth plugin first without the _User_ entity, **you will be offered to create it**.
 :::
 
 ## Deleting The User Entity
