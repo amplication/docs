@@ -142,5 +142,5 @@ Let's take this further by learning how to set roles and permissions on your var
 
 :::tip
 There's an alternative to manually creating entities and entity fields.
-Amplication's [**Import Prisma Schema**](/import-prisma-schema/) feature lets you use your _existing_ databases for a head start on development.
+Amplication's [**Import Prisma Schema**](/how-to/import-prisma-schema) feature lets you use your _existing_ databases for a head start on development.
 :::
