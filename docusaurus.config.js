@@ -12,9 +12,9 @@ module.exports = {
     metadata: [
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:domain", content: "docs.amplication.com" },
-      { name: "twitter:image", content: "img/amplication-docs-social-card.png" },
+      { name: "twitter:image", content: "/img/amplication-docs-social-card.png" },
 
-      { name: "og:image", content: "img/amplication-docs-social-card.png" },
+      { name: "og:image", content: "/img/amplication-docs-social-card.png" },
       { name: "og:type", content: "website" }
     ],
     algolia: {
