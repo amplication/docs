@@ -3,6 +3,7 @@ id: connect-server-to-github
 title: Connect Amplication server to GitHub
 sidebar_label: Connect Amplication server to GitHub
 slug: /running-amplication-platform/connect-server-to-github
+pagination_next: running-amplication-platform/connect-server-to-bitbucket
 ---
 
 # Connect Amplication server to GitHub
@@ -32,7 +33,7 @@ When running a local Amplication server you first need to configure the server t
      - **Webhooks** - `Access: Read and Write`
 3. Click `Create GitHub app`
 4. Click `Generate a new client secret` and copy the resulting secret
-5. Click `Generate a private key`, download, open the generated certificate, add `\n` at the end of each line and join all lines to obtain a single line string
+5. Click `Generate a private key`, download, open the generated certificate, add `\n` at the end of each line except the last line and join all lines to obtain a single line string
 6. Under the "Generate a private key" section, click "Generate private key" to download a PEM file containing your app's private key
 7. Note the App ID shown on the "General" tab of your app's settings page
 8. On your local machine, set the GITHUB_APP_APP_ID and GITHUB_APP_PRIVATE_KEY environment variables to the App ID and the contents of the PEM file, respectively
