@@ -45,7 +45,8 @@ beforeCreateServerAuth(
 
  async afterCreateServerAuth(
     context: DsgContext,
-    eventParams: CreateAuthModulesParams
+    eventParams: CreateAuthModulesParams,
+    modules: ModuleMap
   ) {
     const staticPath = resolve(__dirname, "../static");
     const staticsFiles = await context.utils.importStaticModules(
@@ -53,7 +54,8 @@ beforeCreateServerAuth(
       context.serverDirectories.srcDirectory
     );
 
-    return staticsFiles;
+    modules.merge(staticsFiles)
+    return modules;
   }
 ```
 

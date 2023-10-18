@@ -190,6 +190,18 @@ We will now set permissions at the field level.
 
 ![](./assets/first-app/granular-fields-2.png)
 
+### Visualize Your Entities with ERD View
+
+After you've set up your new entities, fields, and permissions, you can visualize their relationships with [Amplication's ERD view](/erd-view-for-entities).
+
+To activate the ERD view:
+
+1. Navigate back to the Entities page of your service.
+2. In the center, to the right of the search bar, you'll find a toggle switch.
+3. Activate the toggle to enable the ERD view. 
+
+![Amplication's Entity ERD View](./../how-to/assets/amplication-erd-view.png)
+
 ## Step 5 - Commit Your Changes
 
 While working in Amplication your changes are saved automatically, but are not committed. Only committed changes will be included in the next version of your generated application.

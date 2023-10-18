@@ -30,7 +30,8 @@ Example:
 ```ts
 async afterCreateMessageBrokerService(
     context: DsgContext,
-    eventParams: CreateMessageBrokerServiceParams
+    eventParams: CreateMessageBrokerServiceParams,
+    modules: ModuleMap
   ): Promise<ModuleMap> {
     const { serverDirectories } = context;
     const { messageBrokerDirectory } = serverDirectories;
@@ -40,6 +41,6 @@ async afterCreateMessageBrokerService(
     const generateFileName = `kafka.service.ts`;
 
     const path = join(messageBrokerDirectory, generateFileName);
-    return [{ code: file, path }];
-  }
+    modules.set({ code: file, path });
+    return modules;  }
 ```

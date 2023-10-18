@@ -31,7 +31,8 @@ Example:
 ```ts
   async afterCreateMessageBrokerClientOptionsFactory(
     context: DsgContext,
-    eventParams: CreateMessageBrokerClientOptionsFactoryParams
+    eventParams: CreateMessageBrokerClientOptionsFactoryParams,
+    modules: ModuleMap
   ): Promise<ModuleMap> {
     const { serverDirectories } = context;
     const filePath = resolve(staticDirectory, "generateKafkaClientOptions.ts");
@@ -42,12 +43,7 @@ Example:
       serverDirectories.messageBrokerDirectory,
       generateFileName
     );
-
-    return [
-      {
-        code: file,
-        path,
-      },
-    ];
+    modules.set({ code: file, path });
+    return modules;
   }
 ```

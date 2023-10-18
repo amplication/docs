@@ -41,6 +41,7 @@ module.exports = {
           to: "/",
           position: "left",
           label: "Get Started",
+          activeBaseRegex: '^/$'
         },
         {
           to: "/tutorials",
@@ -182,6 +183,10 @@ module.exports = {
       {
         redirects: [
           {
+            to: "/deploy/docker-desktop",
+            from: ["/deploy"]
+          },
+          {
             to: "/getting-started/",
             from: ["/guides/getting-started"],
           },
@@ -216,6 +221,14 @@ module.exports = {
           {
             to: "/api/generated-api-sorting/",
             from: ["/getting-started/getting-started/phone-home/"],
+          },
+          {
+            to: "/how-to/create-service",
+            from: ["/how-to/create-app"]
+          },
+          {
+            to: "/first-service/",
+            from: ["/first-app/"],
           },
         ],
       },

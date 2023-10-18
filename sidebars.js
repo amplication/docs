@@ -62,7 +62,15 @@ const sidebars = {
         "how-to/how-to-create-entity",
         "how-to/how-to-create-entity-field",
         "how-to/how-to-set-access-permissions",
-        "getting-started/relations",
+        "getting-started/relations"
+      ]
+    },
+    {
+      type: "category",
+      label: "Premium Features",
+      items: [
+        "how-to/enterprise-sso",
+        "how-to/git-branch-per-service"
       ]
     },
     {
@@ -73,6 +81,16 @@ const sidebars = {
         id: "how-to/index",
       },
       items: [
+        {
+          type: "category",
+          label: "Sync With a Git Provider",
+          items: [
+            "getting-started/sync-with-github",
+            "getting-started/sync-with-bitbucket",
+            "getting-started/sync-with-aws-codecommit",
+            "getting-started/smart-git-sync"
+          ]
+        },
         {
           type: "category",
           label: "Customize Your Generated Service",
@@ -105,9 +123,22 @@ const sidebars = {
             "getting-started/cli"
           ],
         },
-        "getting-started/deploy",
+        "getting-started/deploy-docker-desktop",
+        "how-to/deploy-kubernetes",
         "getting-started/plugins",
         "how-to/how-to-create-service",
+        "how-to/how-to-create-entity",
+        "how-to/how-to-create-entity-field",
+        "how-to/import-prisma-schema",
+        "getting-started/how-prisma-schema-is-converted-into-entities",
+        "how-to/erd-view-for-amplication-entities",
+        "getting-started/relations",
+        "how-to/how-to-set-access-permissions",
+        "how-to/how-to-commit-changes",
+        "how-to/change-base-branch-for-pull-requests",
+        "getting-started/relations",
+        "how-to/base-directories",
+        "how-to/api-admin-ui-settings",
         "how-to/create-message-broker",
       ],
     },
