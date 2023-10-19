@@ -1,6 +1,7 @@
 ---
 id: create-entity-service-base
-title: Create Entity Service Base
+title: Create Entity Service Base | Plugin Event
+description: Creates the base service of an entity.
 sidebar_label: Create Entity Service Base
 slug: /plugins/plugin-events/create-entity-service-base
 ---

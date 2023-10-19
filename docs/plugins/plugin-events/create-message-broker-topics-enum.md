@@ -1,6 +1,7 @@
 ---
 id: create-message-broker-topics-enum
-title: Create Message Broker Topics Enum
+title: Create Message Broker Topics Enum | Plugin Event
+description: Creates the message broker topics enum.
 sidebar_label: Create Message Broker Topics Enum
 slug: /plugins/plugin-events/create-message-broker-topics-enum
 ---

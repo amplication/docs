@@ -1,6 +1,7 @@
 ---
 id: create-server-auth
-title: Create Server Auth
+title: Create Server Auth | Plugin Event
+description: Creates the Authorization directory with the selected auth strategy.
 sidebar_label: Create Server Auth
 slug: /plugins/plugin-events/create-server-auth
 ---

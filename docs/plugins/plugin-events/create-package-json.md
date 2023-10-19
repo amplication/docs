@@ -1,6 +1,7 @@
 ---
 id: create-package-json
-title: Create Package Json
+title: Create Package Json | Plugin Event
+description: Create the package.json file of the service.
 sidebar_label: Create Package Json
 slug: /plugins/plugin-events/create-package-json
 ---

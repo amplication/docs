@@ -1,10 +1,13 @@
 ---
 
 id: create-entity-controller-spec
-title: Create Entity Controller Spec
+title: Create Entity Controller Spec | Plugin Event
+description: Creates the controller spec file for the entity controller.
 sidebar_label: Create Entity Controller Spec
 slug: /plugins/plugin-events/create-entity-controller-spec
----# Create Entity Controller Spec
+---
+
+# Create Entity Controller Spec
 
 ## Description
 

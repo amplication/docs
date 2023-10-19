@@ -1,6 +1,7 @@
 ---
 id: how-to-create-entity
 title: How to create an entity
+description: Learn how to create an Amplication entity.
 sidebar_label: Create an Entity
 slug: /how-to/create-entity
 ---

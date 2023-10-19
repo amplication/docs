@@ -1,6 +1,7 @@
 ---
 id: deploy-kubernetes
 title: Deploying to Kubernetes
+description: Learn how to deploy your Amplication service to Kubernetes.
 sidebar_label: Deploy to Kubernetes
 slug: /deploy/kubernetes
 ---

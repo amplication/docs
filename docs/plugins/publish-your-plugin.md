@@ -1,6 +1,7 @@
 ---
 id: publish-plugin
 title: Publishing Your Plugin
+description: Learn how to publish your Amplication plugin.
 sidebar_label: Publishing Your Plugin
 slug: /plugins/publish-plugin
 ---

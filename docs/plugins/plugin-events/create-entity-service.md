@@ -1,6 +1,7 @@
 ---
 id: create-entity-service
-title: Create Entity Service
+title: Create Entity Service | Plugin Event
+description: Creates the service of an entity.
 sidebar_label: Create Entity Service
 slug: /plugins/plugin-events/create-entity-service
 ---

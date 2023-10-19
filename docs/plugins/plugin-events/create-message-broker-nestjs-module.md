@@ -1,6 +1,7 @@
 ---
 id: create-message-broker-nestjs-module
-title: Create Message Broker NestJS Module
+title: Create Message Broker NestJS Module | Plugin Event
+description: Creates the NestJS of the message broker.
 sidebar_label: Create Message Broker NestJS Module
 slug: /plugins/plugin-events/create-message-broker-nestjs-module
 ---

@@ -1,6 +1,7 @@
 ---
 id: create-server-dot-env
-title: Create Server dotenv
+title: Create Server dotenv | Plugin Event
+description: Creates the server's .env file.
 sidebar_label: Create Server dotenv
 slug: /plugins/plugin-events/create-server-dot-env
 ---

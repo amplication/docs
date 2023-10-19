@@ -1,9 +1,12 @@
 ---
 id: first-service
-title: Create your first service with Amplication
+title: Create Your First Service
+description: Amplication services are a full solution complete with authentication, authorization, logging, git sync, and other essential features for back-end management.
 sidebar_label: Create Your First Service
 slug: /first-service
 ---
+
+# Create Your First Service With Amplication
 
 Welcome to Amplication, a platform that helps you build critical apps faster by auto-generating fully-functional apps. These automatically-generated apps are known as [**services**](/projects-resources-services/#service).
 

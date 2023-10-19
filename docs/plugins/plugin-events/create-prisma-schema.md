@@ -1,6 +1,7 @@
 ---
 id: create-prisma-schema
-title: Create Prisma Schema
+title: Create Prisma Schema | Plugin Event
+description: Creates the Prisma schema
 sidebar_label: Create Prisma Schema
 slug: /plugins/plugin-events/create-prisma-schema
 ---

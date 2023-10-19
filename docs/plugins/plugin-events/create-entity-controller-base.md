@@ -1,6 +1,7 @@
 ---
 id: create-entity-controller-base
-title: Create Entity Controller Base
+title: Create Entity Controller Base | Plugin Event
+description: Creates the base controller of an entity.
 sidebar_label: Create Entity Controller Base
 slug: /plugins/plugin-events/create-entity-controller-base
 ---

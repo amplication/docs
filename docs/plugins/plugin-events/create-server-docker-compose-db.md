@@ -1,6 +1,7 @@
 ---
 id: create-server-docker-compose-db
-title: Create Server Docker Compose DB
+title: Create Server Docker Compose DB | Plugin Event
+description: Creates the docker-compose.db.yml file of the service.
 sidebar_label: Create Server Docker Compose DB
 slug: /plugins/plugin-events/create-server-docker-compose-db
 ---

@@ -1,7 +1,8 @@
 ---
-id: meta-query-graphql
-title: Meta Query in GraphQL 
-sidebar_label: Meta Query in GraphQL
+id: meta-query-graphql 
+title: GraphQL Meta Queries
+description: Learn how to use GraphQL's EntitiesMeta API to obtain both the total record count and specific result counts for your queries.
+sidebar_label: GraphQL Meta Queries
 slug: /api/meta-query-graphql
 ---
 

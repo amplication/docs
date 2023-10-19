@@ -1,6 +1,7 @@
 ---
 id: create-seed
-title: Create Seed
+title: Create Seed | Plugin Event
+description: Creates the feed file.
 sidebar_label: Create Seed
 slug: /plugins/plugin-events/create-seed
 ---

@@ -1,6 +1,7 @@
 ---
 id: create-message-broker-service
-title: Create Message Broker Service
+title: Create Message Broker Service | Plugin Event
+description: Creates the service of the Kafka message broker.
 sidebar_label: Create Message Broker Service
 slug: /plugins/plugin-events/create-message-broker-service
 ---

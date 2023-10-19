@@ -1,6 +1,7 @@
 ---
 id: welcome
 title: Getting Started
+description: Welcome to Amplication's developer docs. Build critical backends faster.
 slug: /
 ---
 
