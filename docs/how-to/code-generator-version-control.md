@@ -31,7 +31,7 @@ Only Code Generator versions that have been released since you created your serv
 
 2. Enable the `I want to select a specific version of the code generator` toggle into the ON state.
 
-Every item in the dropdown is a specific version. Lock in a specific version forthis service and it won't change until you manually update it.
+Every item in the dropdown is a specific version. Lock in a specific version for this service and it won't change until you manually update it.
 
 :::tip
 If you disable this toggle, Amplication will always use the latest version of the code generator.
