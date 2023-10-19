@@ -1,7 +1,7 @@
 ---
 id: service-building-new-versions
 title: Building New Versions of Your Service
-description: Add another entity, make changes to an existing entity, and learn how to compare changes to your service before building and commiting.
+description: Add another entity, make changes to an existing entity, and learn how to compare changes to your service before building and committing.
 sidebar_label: Building New Versions of Your Service
 slug: /building-new-versions
 ---
