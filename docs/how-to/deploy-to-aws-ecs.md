@@ -5,6 +5,8 @@ sidebar_label: Deploy to AWS ECS
 slug: /deploy/aws/ecs
 ---
 
+To get started with deploying your generated service onto Amazon Web Services (RDS), we can look towards Elastic Container Service (ECS). This is a service which allows to deploy an application as a container in an easy manner. This walkthrough uses various plugins within Amplication together, to both provision the infrastructure required as well as setup a process for continuous integration and deployment.
+
 ## 1. Pre-requisites - Manual configuration
 
 Although the setup in this example abstracts away a large part of the work to get the service running on Amazon Web Services, some manual actions are required to lay the ground work for the setup.
