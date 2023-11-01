@@ -159,9 +159,15 @@ The name of the role created above needs to be passed to the 'Provisioning Terra
 
 ## 2. Pre-requisites - Plugin settings
 
-In addition to the manual configuration above, we need to configure the plugins settings to make sure that the different plugins for Amazon Web Services work together. 
+In addition to the manual configuration above, we need to configure the plugins settings to make sure that the different plugins for Amazon Web Services work together. To get started with configuration of the plugins, they need to be installed first. Go to the plugin overview for the service that you want to deploy to AWS ECS, and install:
 
-### Step 2.1: Configuration of the 'Provisioning Terraform AWS Core'
+- Provisioning Terraform AWS Core
+- Provisioning Terraform AWS Repository ECR
+- Provisioning Terraform AWS Database RDS
+- Provisioning Terraform AWS Deployment ECS
+- Deployment Github Actions AWS ECS
+
+### Step 2.1: Configuration of the 'Provisioning Terraform AWS Core' plugin
 
 ```json title="provisioning-terraform-aws-core/settings" showLineNumbers
 {
@@ -190,7 +196,7 @@ In addition to the manual configuration above, we need to configure the plugins 
 }
 ```
 
-### Step 2.2: Configuration of the 'Provisioning Terraform AWS Repository ECR'
+### Step 2.2: Configuration of the 'Provisioning Terraform AWS Repository ECR' plugin
 
 
 ```json title="provisioning-terraform-aws-repository-ecr/settings" showLineNumbers
@@ -209,7 +215,7 @@ When looking at the configuration above it should be noted that the `repository_
 
 :::
 
-### Step 2.3: Configuration of the 'Provisioning Terraform AWS Database RDS'
+### Step 2.3: Configuration of the 'Provisioning Terraform AWS Database RDS' plugin
 
 ```json title="provisioning-terraform-aws-database-rds/settings" showLineNumbers
 {
@@ -249,7 +255,7 @@ As the naming for the database has some constraints, the name will be changed fr
 
 :::
 
-### Step 2.4: Configuration of the 'Provisioning Terraform AWS Deployment ECS'
+### Step 2.4: Configuration of the 'Provisioning Terraform AWS Deployment ECS' plugin
 
 
 ```json title="provisioning-terraform-aws-deployment-ecs/settings" showLineNumbers
@@ -281,7 +287,7 @@ The most important configuration part in the settings above is to make sure you 
 
 :::
 
-### Step 2.5: Configuration of the 'Deployment Github Actions AWS ECS'
+### Step 2.5: Configuration of the 'Deployment Github Actions AWS ECS' plugin
 
 
 ```json title="deployment-github-actions-aws-ecs/settings" showLineNumbers
@@ -395,3 +401,4 @@ Now that the infrastructure has been created within the Amazon Web Services acco
 
 With the existing infrastructure and more specifically, the template service we will deploy on top off, we're able to start the deployment process. The deployment process is done via a GitHub Actions workflow that will overwrite the current revision of the task definition with the latest image tag.
 
+The workflow can be triggered in two ways, the first is closing a pull request, the second is a manual trigger on the console of the GitHub Actions workflow.
