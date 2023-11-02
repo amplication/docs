@@ -1,8 +1,8 @@
 ---
-id: deploy
+id: deploy-docker-desktop
 title: Deploy to Docker Desktop
 sidebar_label: Deploy to Docker Desktop
-slug: /deploy
+slug: /deploy/docker-desktop
 ---
 
 To deploy to Docker, build a Docker image and run a Docker container.
