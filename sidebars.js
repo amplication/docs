@@ -62,6 +62,7 @@ const sidebars = {
       items: [
         "getting-started/deploy-docker-desktop",
         "how-to/deploy-kubernetes",
+        "how-to/deploy-to-aws-ecs",
         "getting-started/plugins",
         {
           type: "category",
