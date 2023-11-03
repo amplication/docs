@@ -25,7 +25,7 @@ const sidebars = {
       },
       items: [
         "getting-started/generated-app",
-        "getting-started/service-building-new-versions",        
+        "getting-started/service-building-new-versions",
         "getting-started/view-generated-code",
         "how-to/add-custom-code",
         "getting-started/authentication",
@@ -48,6 +48,27 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Sync With Git",
+      items: [
+        "getting-started/sync-with-github",
+        "getting-started/sync-with-bitbucket",
+        "getting-started/sync-with-git-differences-between-plans",
+        "how-to/how-to-commit-changes",
+        "how-to/base-directories"
+      ]
+    },
+    {
+      type: "category",
+      label: "Data Modeling",
+      items: [
+        "how-to/how-to-create-entity",
+        "how-to/how-to-create-entity-field",
+        "how-to/how-to-set-access-permissions",
+        "getting-started/relations"
+      ]
+    },
+    {
+      type: "category",
       label: "Premium Features",
       items: [
         "how-to/enterprise-sso",
@@ -62,9 +83,6 @@ const sidebars = {
         id: "how-to/index",
       },
       items: [
-        "getting-started/deploy-docker-desktop",
-        "how-to/deploy-kubernetes",
-        "getting-started/plugins",
         {
           type: "category",
           label: "Sync With a Git Provider",
@@ -86,9 +104,11 @@ const sidebars = {
             "custom-code/managing-custom-files",
             "custom-code/add-business-logic",
             "custom-code/add-action-to-controller",
+            "custom-code/prisma-custom-attributes",
             "custom-code/add-graphql-query",
             "custom-code/seed-db",
             "custom-code/add-custom-dto",
+            "how-to/api-admin-ui-settings",
           ],
         },
         {
@@ -106,6 +126,9 @@ const sidebars = {
             "getting-started/cli"
           ],
         },
+        "getting-started/deploy-docker-desktop",
+        "how-to/deploy-kubernetes",
+        "getting-started/plugins",
         "how-to/how-to-create-service",
         "how-to/how-to-create-entity",
         "how-to/how-to-create-entity-field",
@@ -114,9 +137,10 @@ const sidebars = {
         "how-to/erd-view-for-amplication-entities",
         "getting-started/relations",
         "how-to/how-to-set-access-permissions",
+        "how-to/add-delete-user-entity",
+        "how-to/authentication-plugin-examples",
         "how-to/how-to-commit-changes",
         "how-to/change-base-branch-for-pull-requests",
-        "getting-started/relations",
         "how-to/base-directories",
         "how-to/api-admin-ui-settings",
         "how-to/create-message-broker",
@@ -144,7 +168,12 @@ const sidebars = {
         {
           type: "category",
           label: "Developing Plugins",
-          items: ["plugins/how-to-create-plugin", "plugins/how-to-test-plugin", "plugins/publish-plugin"],
+          items: [
+            "plugins/how-to-create-plugin",
+            "plugins/define-plugin-settings",
+            "plugins/how-to-test-plugin",
+            "plugins/publish-plugin"
+          ],
         },
         {
           type: "category",
@@ -152,7 +181,12 @@ const sidebars = {
           items: [
             "plugins/plugin-events/create-server",
             "plugins/plugin-events/create-server-docker-compose",
-            "plugins/plugin-events/create-server-docker-compose-db",
+            "plugins/plugin-events/create-server-docker-compose-dev",
+            {
+              type: 'doc',
+              id: 'plugins/plugin-events/create-server-docker-compose-db',
+              className: 'plugin-event-not-recommended', 
+            },
             "plugins/plugin-events/create-server-dot-env",
             "plugins/plugin-events/create-server-auth",
             "plugins/plugin-events/create-package-json",
