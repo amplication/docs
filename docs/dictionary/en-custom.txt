@@ -91,3 +91,4 @@ autoincrement
 Baselining
 configmap
 kubeconfig
+DALLE
