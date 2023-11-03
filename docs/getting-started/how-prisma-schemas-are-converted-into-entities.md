@@ -186,13 +186,96 @@ Here is a table summarizing the Prisma to Amplication data type conversions:
 | DateTime (@default(now())) | CreatedAt | DateTime with now() default converts to CreatedAt |
 | DateTime (@updatedAt) | UpdatedAt | DateTime with updatedAt attribute converts to UpdatedAt |
 | DateTime | DateTime | Plain DateTime remains DateTime |
-| Float, Decimal | Decimal | Float and Decimal convert to Decimal |
+| Float, Decimal | Decimal Number | Float and Decimal convert to Decimal Number |
 | Int, BigInt | WholeNumber | Int and BigInt convert to WholeNumber |
 | String | SingleLineText | String converts to SingleLineText |    
 | Json | Json | Json types are equivalent |  
 | Enum | OptionSet | Enum converts to OptionSet |
 | Enum[] | MultiSelectOptionSet | Enum array converts to MultiSelectOptionSet |
 | Model relation | Lookup | Relation to another model becomes Lookup |
+
+## Common Id Field Conversion Scenarios 
+
+During schema conversion, the `id` field will require special handling in some cases.
+
+#### 1. If the `id` field already has a `@default` attribute, it gets removed.
+
+Having multiple `@default` attributes is invalid.
+Therefore, if your `id` field already has a `@default` attribute, it will be removed during conversion.
+This is because a `@default` attribute matching the `id` type (like `cuid()`) gets added during conversion.
+
+```graphql
+// Original model (After Introspection)
+model User {
+  id Int @default(0)
+  name String
+}
+
+// After Importing Into Amplication
+model User {
+  id Int @default(autoincrement())
+  name String  
+}
+```
+
+#### 2. If a model doesn't have a field that can become the `id`, we add an `id` field.
+
+The added `id` field will be of type `String` with a default `cuid()` value.
+
+```graphql 
+// Original model (After Introspection)
+model Product {
+  price Decimal @unique
+  name String
+}
+
+// After Importing Into Amplication
+model Product {
+  id String @id @default(cuid()) 
+  price Decimal @unique
+  name String
+}
+```
+
+#### 3. If multiple unique fields could become the `id`, the one named `id` gets the `@id` attribute. 
+
+Here's an example:
+
+```graphql
+// Original Model (After Introspection)
+model User {
+  email String @unique
+  name String @unique
+  id Int @unique 
+}
+
+// After Importing Into Amplication
+model User {
+  email String @unique
+  name String @unique
+  id Int @unique @id @default(autoincrement())
+}
+```
+
+#### 4. If no unique field is named `id`, one gets renamed to `id` and mapped to its original name.
+
+If no unique field is named `id`, one will be renamed to `id` and mapped to its original name with the `@map` custom attribute.
+
+```graphql
+// Original Model (After Introspection)
+model User {
+  email String @unique
+  name String @unique
+  username Int @unique
+}
+
+// After Importing Into Amplication
+model User {
+  id String @unique @map("email")
+  name String @unique
+  username Int @unique
+}
+```
 
 ## Log Warnings
 
