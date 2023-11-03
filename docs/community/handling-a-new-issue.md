@@ -1,11 +1,11 @@
 ---
 id: handling-a-new-issue
-title: Handling a New Issue
-sidebar_label: Handling a New Issue
+title: Handling Issues
+sidebar_label: Handling Issues
 slug: /community/handling-a-new-issue
 ---
 
-# Handling a New Issue
+# Handling Issues
 
 **This article describes how the Amplication team responds to a new issue in GitHub.**
 

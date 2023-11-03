@@ -83,3 +83,9 @@ heirarchy
 autoplay
 youtube
 amplicationrc
+RDBMS
+NATS
+datasource
+autoincrement
+configmap
+kubeconfig

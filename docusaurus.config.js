@@ -41,6 +41,7 @@ module.exports = {
           to: "/",
           position: "left",
           label: "Get Started",
+          activeBaseRegex: '^/$'
         },
         {
           to: "/tutorials",
@@ -181,6 +182,10 @@ module.exports = {
       "@docusaurus/plugin-client-redirects",
       {
         redirects: [
+          {
+            to: "/deploy/docker-desktop",
+            from: ["/deploy"]
+          },
           {
             to: "/getting-started/",
             from: ["/guides/getting-started"],
