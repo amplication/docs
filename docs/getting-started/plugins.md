@@ -1,7 +1,6 @@
 ---
 id: plugins
 title: Using Plugins
-title: How To Use Plugins
 sidebar_label: Use Plugins
 slug: /getting-started/plugins
 ---
@@ -90,7 +89,7 @@ Add a GitHub Actions workflow to your service.
 
 ### Swagger ApiBody
 
-Add NestJS Api Swagger decorator to your service. 
+Add NestJS Api Swagger decorator to your service.
 
 The OpenAPI specification is a language-agnostic definition format used to describe RESTful APIs. [Nest provides a dedicated module](https://docs.nestjs.com/openapi/introduction) which allows generating such a specification by leveraging decorators.
 

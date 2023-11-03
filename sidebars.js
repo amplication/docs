@@ -23,7 +23,7 @@ const sidebars = {
       },
       items: [
         "getting-started/generated-app",
-        "getting-started/service-building-new-versions",        
+        "getting-started/service-building-new-versions",
         "getting-started/view-generated-code",
         "how-to/add-custom-code",
         "getting-started/authentication",
@@ -64,7 +64,6 @@ const sidebars = {
         "getting-started/deploy-docker-desktop",
         "how-to/deploy-kubernetes",
         "how-to/deploy-to-aws-ecs",
-        "getting-started/plugins",
         {
           type: "category",
           label: "Sync With a Git Provider",
