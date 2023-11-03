@@ -1,5 +1,6 @@
 ampconfig
 amplication
+amplicationrc
 Amplication
 amplication's
 Amplication's
@@ -75,7 +76,6 @@ upvote
 webp
 Wontfix
 microservices
-dto
 amplicationignore
 dbsettings
 drawio
@@ -83,8 +83,11 @@ heirarchy
 autoplay
 youtube
 DALLE
+OpenTelemetry
+RDBMS
+NATS
 datasource
 autoincrement
-OpenTelemetry
+Baselining
 configmap
 kubeconfig
