@@ -82,5 +82,11 @@ drawio
 heirarchy
 autoplay
 youtube
+amplicationrc
+RDBMS
+NATS
 datasource
 autoincrement
+Baselining
+configmap
+kubeconfig
