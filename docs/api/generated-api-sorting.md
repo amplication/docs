@@ -27,7 +27,7 @@ The following examples get all posts sorted by the `createdAt` field.
 
 ```jsx
 curl -X 'GET' \
-  'https://[server-url]/api/posts?orderBy%5BcreatedAt%5D=Asc' \
+  'https://[server-url]/api/posts?orderBy%5BcreatedAt%5D=asc' \
   -H 'accept: application/json'
 ```
 
@@ -37,7 +37,7 @@ curl -X 'GET' \
 query{
   posts(
     orderBy:{
-      createdAt:Desc
+      createdAt:desc
     }
   ){
     id
