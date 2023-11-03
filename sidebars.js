@@ -23,7 +23,7 @@ const sidebars = {
       },
       items: [
         "getting-started/generated-app",
-        "getting-started/service-building-new-versions",        
+        "getting-started/service-building-new-versions",
         "getting-started/view-generated-code",
         "how-to/add-custom-code",
         "getting-started/authentication",
@@ -60,9 +60,10 @@ const sidebars = {
         id: "how-to/index",
       },
       items: [
+        "getting-started/plugins",
         "getting-started/deploy-docker-desktop",
         "how-to/deploy-kubernetes",
-        "getting-started/plugins",
+        "how-to/deploy-to-aws-ecs",
         {
           type: "category",
           label: "Sync With a Git Provider",
@@ -84,6 +85,7 @@ const sidebars = {
             "custom-code/managing-custom-files",
             "custom-code/add-business-logic",
             "custom-code/add-action-to-controller",
+            "custom-code/prisma-custom-attributes",
             "custom-code/add-graphql-query",
             "custom-code/seed-db",
             "custom-code/add-custom-dto",
@@ -112,6 +114,8 @@ const sidebars = {
         "how-to/erd-view-for-amplication-entities",
         "getting-started/relations",
         "how-to/how-to-set-access-permissions",
+        "how-to/add-delete-user-entity",
+        "how-to/authentication-plugin-examples",
         "how-to/how-to-commit-changes",
         "how-to/change-base-branch-for-pull-requests",
         "getting-started/relations",

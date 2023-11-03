@@ -82,6 +82,8 @@ drawio
 heirarchy
 autoplay
 youtube
+RDBMS
+NATS
 datasource
 autoincrement
 configmap
