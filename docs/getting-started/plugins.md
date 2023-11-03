@@ -34,8 +34,8 @@ Besides the community plugins created by the Amplication team, you can [develop 
 
 ## Community Plugins List 
 
-You can view all official plugins on the _All Plugins_ page.
-They're also available on the [Official Plugins](/plugins-list) page here on the Amplication documentation.
+You can view all community plugins on the _All Plugins_ page.
+They're also available on the [Community Plugins](/plugins-list) page here on the Amplication documentation.
 
 ## Viewing Open-Source Plugin Code
 
