@@ -118,7 +118,6 @@ const sidebars = {
         "how-to/authentication-plugin-examples",
         "how-to/how-to-commit-changes",
         "how-to/change-base-branch-for-pull-requests",
-        "getting-started/relations",
         "how-to/base-directories",
         "how-to/api-admin-ui-settings",
         "how-to/create-message-broker",
