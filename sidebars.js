@@ -154,7 +154,12 @@ const sidebars = {
           items: [
             "plugins/plugin-events/create-server",
             "plugins/plugin-events/create-server-docker-compose",
-            "plugins/plugin-events/create-server-docker-compose-db",
+            "plugins/plugin-events/create-server-docker-compose-dev",
+            {
+              type: 'doc',
+              id: 'plugins/plugin-events/create-server-docker-compose-db',
+              className: 'plugin-event-not-recommended', 
+            },
             "plugins/plugin-events/create-server-dot-env",
             "plugins/plugin-events/create-server-auth",
             "plugins/plugin-events/create-package-json",
