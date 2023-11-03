@@ -82,6 +82,7 @@ drawio
 heirarchy
 autoplay
 youtube
+amplicationrc
 RDBMS
 NATS
 datasource
