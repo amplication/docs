@@ -87,5 +87,6 @@ RDBMS
 NATS
 datasource
 autoincrement
+Baselining
 configmap
 kubeconfig
