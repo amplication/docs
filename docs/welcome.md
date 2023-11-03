@@ -27,7 +27,7 @@ All generated Node.js applications include the following features:
 - [Sync with GitHub](/sync-with-github/)
 - Version Control
 - [Code Generation](/getting-started/view-generated-code/)
-- [Deploy](/how-to/custom-code/) & Publish
+- [Deploy](/deploy/) & Publish
 
 In addition, developers can utilize their skills to [customize the generated application](/how-to/custom-code/) afterwards.
 
