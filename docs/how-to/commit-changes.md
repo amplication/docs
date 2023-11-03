@@ -5,7 +5,7 @@ sidebar_label: Commit Changes
 slug: /how-to/commit-changes
 ---
 
-# Commit Changes
+# How to commit changes
 
 While working in Amplication your changes are saved automatically, but are not committed. Only committed changes will be included in the next version of your application.
 
