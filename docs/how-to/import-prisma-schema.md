@@ -16,7 +16,7 @@ Just upload your `schema.prisma` file.
 Amplication will then search for models and [convert them into Amplication's internal structure](/getting-started/how-prisma-schema-is-converted-into-entities).
 
 :::note
-The **Import Prisma Schema** feature is available on all Amplication plans include Free accounts.
+The **Import Prisma Schema** feature is available on all Amplication plans including Free accounts.
 :::
 
 This guide walks you through how to generate a custom `schema.prisma` file from your existing database and upload it to Amplication.
@@ -24,6 +24,11 @@ This guide walks you through how to generate a custom `schema.prisma` file from 
 ## How to create and upload your `schema.prisma` file
 
 To import your schema into Amplication, you first need to run Prisma's introspection process on your existing database.
+
+:::tip
+Always backup your database before performing any introspection or migrations.
+These operations can potentially lead to data loss.
+:::
 
 ### Step 1: Run the Introspection process
 
@@ -41,7 +46,7 @@ To learn more see [Prisma's Introspection docs](https://www.prisma.io/docs/conce
 
 Here are the steps to introspect your database:
 
-#### Install Prisma
+#### 1. Install Prisma
 
 If you don't have Prisma CLI installed globally, install it:
 
@@ -49,7 +54,7 @@ If you don't have Prisma CLI installed globally, install it:
 npm install -g prisma
 ```
 
-#### Set the connection URL in `prisma.schema`
+#### 2. Set the connection URL in `prisma.schema`
 
 Next, create a `prisma.schema` file.
 
@@ -69,7 +74,7 @@ For example, PostgreSQL connection URLs start with `postgresql://`.
 
 Visit the [Prisma docs' section on connection URLs](https://www.prisma.io/docs/reference/database-reference/connection-urls) for details on constructing yours.
 
-#### Run The Prisma Introspection Command
+#### 3. Run The Prisma Introspection Command
 
 Run the following command in the same directory as your `schema.prisma` file:
 
@@ -151,6 +156,9 @@ Check the [Log Warnings](/getting-started/how-prisma-schema-is-converted-into-en
 ### Step 4: Check your new entities
 
 After a successful upload and conversion process, you will see your newly created entities on your dashboard.
+You can visualize your entities and their relationships with [Amplication's ERD view](/erd-view-for-entities).
+
+![Amplication's Entity ERD View](./assets/amplication-erd-view.png)
 
 ## Next Steps  
 
