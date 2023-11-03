@@ -57,6 +57,11 @@ Use a NestJS NATS message broker to communicate between your services.
 It follows a publish-subscribe model like Kafka but is less complex and easier to set up.
 NATS is ideal for applications that require real-time messaging but don't need the level of durability and fault-tolerance that Kafka provides.
 
+:::info
+A _User_ entity must exist in order to enable this plugin in your project.
+Learn [how to add the user entity](/how-to/add-delete-user-entity) into your service.
+:::
+
 ### JWT Auth Provider
 
 Add JSON Web Token (JWT) authentication and authorization to your service.
