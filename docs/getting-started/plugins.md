@@ -1,6 +1,7 @@
 ---
 id: plugins
 title: Using Plugins
+title: How To Use Plugins
 sidebar_label: Use Plugins
 slug: /getting-started/plugins
 ---
