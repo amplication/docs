@@ -46,6 +46,27 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Sync With Git",
+      items: [
+        "getting-started/sync-with-github",
+        "getting-started/sync-with-bitbucket",
+        "getting-started/sync-with-git-differences-between-plans",
+        "how-to/how-to-commit-changes",
+        "how-to/base-directories"
+      ]
+    },
+    {
+      type: "category",
+      label: "Data Modeling",
+      items: [
+        "how-to/how-to-create-entity",
+        "how-to/how-to-create-entity-field",
+        "how-to/how-to-set-access-permissions",
+        "getting-started/relations"
+      ]
+    },
+    {
+      type: "category",
       label: "Premium Features",
       items: [
         "how-to/enterprise-sso",
@@ -60,10 +81,6 @@ const sidebars = {
         id: "how-to/index",
       },
       items: [
-        "getting-started/plugins",
-        "getting-started/deploy-docker-desktop",
-        "how-to/deploy-kubernetes",
-        "how-to/deploy-to-aws-ecs",
         {
           type: "category",
           label: "Sync With a Git Provider",
@@ -89,6 +106,7 @@ const sidebars = {
             "custom-code/add-graphql-query",
             "custom-code/seed-db",
             "custom-code/add-custom-dto",
+            "how-to/api-admin-ui-settings",
           ],
         },
         {
@@ -106,6 +124,9 @@ const sidebars = {
             "getting-started/cli"
           ],
         },
+        "getting-started/deploy-docker-desktop",
+        "how-to/deploy-kubernetes",
+        "getting-started/plugins",
         "how-to/how-to-create-service",
         "how-to/how-to-create-entity",
         "how-to/how-to-create-entity-field",
