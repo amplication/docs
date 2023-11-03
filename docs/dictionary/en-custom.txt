@@ -1,5 +1,6 @@
 ampconfig
 amplication
+amplicationrc
 Amplication
 amplication's
 Amplication's

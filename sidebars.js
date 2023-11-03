@@ -2,7 +2,7 @@ const sidebars = {
   someSidebar: [
     {
       type: "category",
-      label: "Introduction",
+      label: "Get Started",
       link: {
         type: "doc",
         id: "welcome",
@@ -10,8 +10,10 @@ const sidebars = {
       items: [
         "welcome",
         "getting-started/first-service",
-        "getting-started/service-entities-roles-permissions",
-        "getting-started/projects-resources-services"
+        "getting-started/set-up-entities",
+        "getting-started/configure-roles-and-permissions",
+        "getting-started/add-plugins-for-service",
+        "getting-started/commit-changes-and-build-new-versions"
       ],
     },
     {
