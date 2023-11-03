@@ -23,7 +23,7 @@ const sidebars = {
       },
       items: [
         "getting-started/generated-app",
-        "getting-started/service-building-new-versions",        
+        "getting-started/service-building-new-versions",
         "getting-started/view-generated-code",
         "how-to/add-custom-code",
         "getting-started/authentication",
@@ -102,6 +102,7 @@ const sidebars = {
             "custom-code/managing-custom-files",
             "custom-code/add-business-logic",
             "custom-code/add-action-to-controller",
+            "custom-code/prisma-custom-attributes",
             "custom-code/add-graphql-query",
             "custom-code/seed-db",
             "custom-code/add-custom-dto",
@@ -134,9 +135,10 @@ const sidebars = {
         "how-to/erd-view-for-amplication-entities",
         "getting-started/relations",
         "how-to/how-to-set-access-permissions",
+        "how-to/add-delete-user-entity",
+        "how-to/authentication-plugin-examples",
         "how-to/how-to-commit-changes",
         "how-to/change-base-branch-for-pull-requests",
-        "getting-started/relations",
         "how-to/base-directories",
         "how-to/api-admin-ui-settings",
         "how-to/create-message-broker",
@@ -164,7 +166,12 @@ const sidebars = {
         {
           type: "category",
           label: "Developing Plugins",
-          items: ["plugins/how-to-create-plugin", "plugins/how-to-test-plugin", "plugins/publish-plugin"],
+          items: [
+            "plugins/how-to-create-plugin",
+            "plugins/define-plugin-settings",
+            "plugins/how-to-test-plugin",
+            "plugins/publish-plugin"
+          ],
         },
         {
           type: "category",
@@ -172,7 +179,12 @@ const sidebars = {
           items: [
             "plugins/plugin-events/create-server",
             "plugins/plugin-events/create-server-docker-compose",
-            "plugins/plugin-events/create-server-docker-compose-db",
+            "plugins/plugin-events/create-server-docker-compose-dev",
+            {
+              type: 'doc',
+              id: 'plugins/plugin-events/create-server-docker-compose-db',
+              className: 'plugin-event-not-recommended', 
+            },
             "plugins/plugin-events/create-server-dot-env",
             "plugins/plugin-events/create-server-auth",
             "plugins/plugin-events/create-package-json",
