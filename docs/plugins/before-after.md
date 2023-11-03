@@ -38,3 +38,9 @@ The [context](docs\plugins\context.md) is used to gather common parts between ev
 The event params manipulate the default behavior by passing different values.
 
 In the `after` function, we also have access to the generated modules. An example of using this parameter is when you want to restructure the generated modules in a different folder structure.
+
+## Cautionary Guidelines
+
+1. In the `after` function, avoid unintentionally overriding the entire generated file. Opt for smaller changes instead.
+2. In the `before` function, take care when modifying templates to not unintentionally affect code generation.
+3. In the `before` function, only choose `skipDefaultBehavior` if skipping code generation entirely, including default generation, is intended.
