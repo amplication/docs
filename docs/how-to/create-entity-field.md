@@ -1,7 +1,7 @@
 ---
 id: how-to-create-entity-field
 title: How to create an entity field
-sidebar_label: Create a new entity field
+sidebar_label: Create an Entity Field
 slug: /how-to/create-entity-field
 ---
 
