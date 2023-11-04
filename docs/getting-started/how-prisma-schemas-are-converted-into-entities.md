@@ -129,22 +129,30 @@ For example, here's how two models could see transformations:
 }
 ```
 
-#### Model IDs
+#### Model IDs  
 
-This phase converts `@@id` attributes in your models to `@@unique` attributes.
+In the next phase, Amplication will convert the `@@id` attribute with one argument when you are using it as the primary key of the model. For example, `@@id([field])`.
 
-It also introduces an `id` field of type `String` to every model that uses a composite ID.
+:::note
+Currently, using the `@@id` attribute as a composite ID is not supported (`@@id([field1, field2])`).
+:::
 
-Here's an example of this transformation:
+- The `@@id` attribute in your model is converted to an `@@unique` attribute.
+- The field which was used as the primary key of the model through the `@@id` attribute is converted to an id field. This means the `@id` attribute is added to this field.
+- If this field has no `@default()` attribute representing the default id field type, the `@default()` attribute will be added based on the field type (`String` => `@default(cuid())`, `Int` => `@default(autoincrement())`).
+- If the primary key field is not named "id", it gets renamed to id and we add the `@map` attribute: `@map("originalFieldName")`.
+- The field name in the `@@id` attribute is changed to "id", e.g. `@@id([field])` => `@@id([id])`.
+
+Here is an example of this transformation:
 
 ```diff title="schema.prisma"
 model DomainUnit {
-+ id       String @id @default(cuid())
-  domainId String
-  unitId   String
++ id   String @id @default(cuid()) @map("domainId")
+- domainId String
+  unitId   String 
 
-- @@id([domainId, unitId])
-+ @@unique([domainId, unitId])
+- @@id([domainId])
++ @@unique([id])
 }
 ```
 
@@ -186,13 +194,96 @@ Here is a table summarizing the Prisma to Amplication data type conversions:
 | DateTime (@default(now())) | CreatedAt | DateTime with now() default converts to CreatedAt |
 | DateTime (@updatedAt) | UpdatedAt | DateTime with updatedAt attribute converts to UpdatedAt |
 | DateTime | DateTime | Plain DateTime remains DateTime |
-| Float, Decimal | Decimal | Float and Decimal convert to Decimal |
+| Float, Decimal | Decimal Number | Float and Decimal convert to Decimal Number |
 | Int, BigInt | WholeNumber | Int and BigInt convert to WholeNumber |
 | String | SingleLineText | String converts to SingleLineText |    
 | Json | Json | Json types are equivalent |  
 | Enum | OptionSet | Enum converts to OptionSet |
 | Enum[] | MultiSelectOptionSet | Enum array converts to MultiSelectOptionSet |
 | Model relation | Lookup | Relation to another model becomes Lookup |
+
+## Common Id Field Conversion Scenarios 
+
+During schema conversion, the `id` field will require special handling in some cases.
+
+#### 1. If the `id` field already has a `@default` attribute, it gets removed.
+
+Having multiple `@default` attributes is invalid.
+Therefore, if your `id` field already has a `@default` attribute, it will be removed during conversion.
+This is because a `@default` attribute matching the `id` type (like `cuid()`) gets added during conversion.
+
+```graphql
+// Original model (After Introspection)
+model User {
+  id Int @default(0)
+  name String
+}
+
+// After Importing Into Amplication
+model User {
+  id Int @default(autoincrement())
+  name String  
+}
+```
+
+#### 2. If a model doesn't have a field that can become the `id`, we add an `id` field.
+
+The added `id` field will be of type `String` with a default `cuid()` value.
+
+```graphql 
+// Original model (After Introspection)
+model Product {
+  price Decimal @unique
+  name String
+}
+
+// After Importing Into Amplication
+model Product {
+  id String @id @default(cuid()) 
+  price Decimal @unique
+  name String
+}
+```
+
+#### 3. If multiple unique fields could become the `id`, the one named `id` gets the `@id` attribute. 
+
+Here's an example:
+
+```graphql
+// Original Model (After Introspection)
+model User {
+  email String @unique
+  name String @unique
+  id Int @unique 
+}
+
+// After Importing Into Amplication
+model User {
+  email String @unique
+  name String @unique
+  id Int @unique @id @default(autoincrement())
+}
+```
+
+#### 4. If no unique field is named `id`, one gets renamed to `id` and mapped to its original name.
+
+If no unique field is named `id`, one will be renamed to `id` and mapped to its original name with the `@map` custom attribute.
+
+```graphql
+// Original Model (After Introspection)
+model User {
+  email String @unique
+  name String @unique
+  username Int @unique
+}
+
+// After Importing Into Amplication
+model User {
+  id String @unique @map("email")
+  name String @unique
+  username Int @unique
+}
+```
 
 ## Log Warnings
 
