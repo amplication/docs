@@ -72,7 +72,8 @@ const sidebars = {
       label: "Premium Features",
       items: [
         "how-to/enterprise-sso",
-        "how-to/git-branch-per-service"
+        "how-to/git-branch-per-service",
+        "how-to/code-generator-version-control"
       ]
     },
     {
@@ -220,6 +221,7 @@ const sidebars = {
       },
       items: [
         "tutorials/index",
+        "tutorials/community-tutorials",
         {
           type: "link",
           label: "Developer Tutorials",

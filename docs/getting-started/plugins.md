@@ -20,18 +20,6 @@ The source code of all community Amplication plugins are [available on GitHub](h
 
 Besides the community plugins created by the Amplication team, you can [develop your own custom plugins](/plugins/overview/).
 
-## How To Install A Plugin
-
-1.  In the _All Plugins_ page, click **Install** for the required plugin.
-
-![](./assets/all-plugins.png)
-
-2. Go to the _Installed Plugins_ page. The installed plugins are listed.
-
-![](./assets/installed-plugins.png)
-
-3. To see the plugin on gitHub, select **View on GitHub**.
-
 ## Community Plugins List 
 
 You can view all community plugins on the _All Plugins_ page.

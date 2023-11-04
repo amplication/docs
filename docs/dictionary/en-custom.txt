@@ -76,14 +76,13 @@ upvote
 webp
 Wontfix
 microservices
-dto
 amplicationignore
 dbsettings
 drawio
 heirarchy
 autoplay
 youtube
-amplicationrc
+OpenTelemetry
 RDBMS
 NATS
 datasource
@@ -92,3 +91,5 @@ Baselining
 configmap
 kubeconfig
 DALLE
+frontends
+Zustand
