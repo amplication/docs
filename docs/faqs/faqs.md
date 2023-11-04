@@ -80,10 +80,8 @@ it wherever you want; on the public cloud, private cloud, or on-premise.
 
 ## How can I get the code?
 
-You can connect your project to your preferred git provider like [GitHub](/sync-with-github) or [Bitbucket](/sync-with-bitbucket).
-After connecting to a git repo you can push a new Pull Request directly to a selected git repository. There
-is also a code-view option, that enables you to view the code in the console before
-you download it or move it to your git provider.
+You can connect your project to your preferred git provider like [GitHub](/sync-with-github), [Bitbucket](/sync-with-bitbucket), or AWS CodeCommit.
+After connecting to a git repo you can push a new Pull Request directly to a selected git repository. There is also a code-view option, that enables you to view the code in the console before you push it to your git provider.
 
 ---
 
@@ -137,8 +135,10 @@ We'd love to have you contribute! To find out how,read our [Contributing](https:
 
 ## Can I work with GitLab (or other git providers) besides GitHub?
 
-Amplication currently supports integration only with [GitHub](/sync-with-github) and [Bitbucket](/sync-with-bitbucket), 
-but we are planning to add support for more Git providers. See our [Product Roadmap](https://docs.amplication.com/about/roadmap/).
+Amplication currently supports integration with [GitHub](/sync-with-github) (Free Plan), [Bitbucket](/sync-with-bitbucket) (Enterprise Plan), and AWS CodeCommit (Enterprise Plan).
+
+We are planning to add support for more Git providers.
+See our [Product Roadmap](https://docs.amplication.com/about/roadmap/).
 
 ---
 
@@ -200,14 +200,14 @@ Keep an eye on our [Product Roadmap](https://docs.amplication.com/about/roadmap/
 
 Amplication incorporates the following practices to provide you with a platform to better scale your projects:
 
--Microservices support  
--Plugin system
--Monorepo with modular connected services  
--Custom sync flows and [smart git sync](/smart-git-sync) at the project level
+- Microservices support  
+- Plugin system
+- Monorepo with modular connected services  
+- Custom sync flows and [smart git sync](/smart-git-sync) at the project level
 
 With these new features and improvements in our new version, we make it much easier for you (or your team) to build scalable services, have better control over the generated code and collaborate with multiple developers to work on large scale solutions.
 
-To know more on how to use Amplication to your advantage [read](https://amplication.com/blog/amplication-version-10-is-now-live) our blog post.
+Read our documentation on [Amplication's key features](https://docs.amplication.com/#key-features-of-amplication) to learn more.
 
 ---
 
@@ -263,7 +263,7 @@ Project development becomes easier with the following functionalities:
 -You can connect to a single git repo at the project level saving a lot of your time that would be spent manually connecting the services
 -You can make a single commit at the project level
 
-Learn more about the benefits [here](https://amplication.com/blog/release-0150-support-for-microservices-architecture).
+Learn more about the benefits on our [Support for Microservices Architecture](https://amplication.com/blog/release-0150-support-for-microservices-architecture) blog post.
 
 ---
 
