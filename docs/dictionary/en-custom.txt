@@ -76,14 +76,14 @@ upvote
 webp
 Wontfix
 microservices
-dto
 amplicationignore
 dbsettings
 drawio
 heirarchy
 autoplay
 youtube
-amplicationrc
+DALLE
+OpenTelemetry
 RDBMS
 NATS
 datasource
