@@ -1,7 +1,7 @@
 ---
 id: how-to-create-service
 title: How to create a new service
-sidebar_label: Create a new Service
+sidebar_label: Create a Service
 slug: /how-to/create-service
 ---
 

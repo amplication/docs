@@ -1,44 +1,63 @@
 ---
 id: base-directories
-title: How to configure base directories 
-sidebar_label: Base Directories
+title: How To Configure Base Directories
+sidebar_label: Configure Base Directories
 slug: /how-to/base-directories 
 ---
 
-You can customize the default directories (Server and Admin UI) for generated code . This makes generated projects more modular. For example, each project can have its own docker files, README files etc.
+When you first create your service using our Service Creation Wizard, you can choose whether to store your generated code in your git repository using a Monorepo or Polyrepo style. 
 
-There are two parameters for each app, enabling you to override the default directories for the Server and Admin-UI. 
+But, you can't edit the individual folder names during creation. 
 
-The default values of the fields (if left blank) are as follows: 
-
-Server base: `packages/[SERVICE-NAME]`
-
-Admin UI base: `packages/[SERVICE-NAME]`
-
-
+Amplication's **Base Directories** settings lets you customize both the default directory and folder name for your generated code.
+This applies to both your Server and Admin UI code.
 
 ![](../how-to/assets/base-directories.png)
 
+## How To Change Your Service's Base Directory Values
+
+1. Go to your service's _Settings_ page.
+2. Click the _Base directories_ tab.  
+3. Set the base directory for your server code using the **Server base directory** text field.
+4. Set the base directory for your admin UI code using the **Admin UI base directory** text field.
+5. [Commit your changes](/how-to/commit-changes) to see your new folder structure in your git repository.
+
+## Base Directory Default Values 
+
+Your service's default base directory values (on creation) are:
+
+### Monorepo
+
+- Server base: `apps/[service-name]-service`
+- Admin UI base: `apps/[service-name]-admin`
+
+### Polyrepo
+
+- Server base: `[service-name]-service`  
+- Admin UI base: `[service-name]-admin`
+
+:::tip
+The only difference between a **Monorepo** and **Polyrepo** is that the Monorepo stores each service and admin UI in nested folders, while a polyrepo stores them in the root.
+:::
+
+## Example - Syncing Services in a Monorepo on GitHub
+
+Let's say you have two services, _Customer Service_ and _Order Service_.
+You want these services to sync to the `packages` directory in the same repo.
+
+Use these **Base Directory** settings:
+
+### _Customer Service_ 
+
+- Server base: `./packages/customer-service`
+- Admin UI base: `./packages/customer-service-admin`
+
+### _Order Service_
+
+- Server base: `./packages/order-service`
+- Admin UI base: `./packages/order-service-admin` 
+
 :::info
-
-When you have two or more services in a project being committed to the same repository, you must use different paths in the base directory configuration for each service.
-
-When you use different repositories for your services, no action is required, even if you have multiple services in your project.
-::: 
-
-
-### Example - setting two separate apps to work with a monorepo in GitHub:
-
-Lets say we have two apps, _Customer Service_ and _Order Service_, and we want all services to sync to the `./packages` directory in the same repo. To achieve that we use the following settings: 
-
-**Customer Service**
-
-Server base directory: `packages/customer-service`
-
-Admin UI base directory: `packages/customer-service-admin`
-
-**Order Service**
-
-Server base directory: `packages/order-service`
-
-Admin UI base directory: `packages/order-service-admin`
+When you commit two or more services to the same repo, make sure you use different base directory paths for each one.
+No action is needed when using separate repos, even with multiple services.
+:::
