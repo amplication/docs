@@ -129,22 +129,30 @@ For example, here's how two models could see transformations:
 }
 ```
 
-#### Model IDs
+#### Model IDs  
 
-This phase converts `@@id` attributes in your models to `@@unique` attributes.
+In the next phase, Amplication will convert the `@@id` attribute with one argument when you are using it as the primary key of the model. For example, `@@id([field])`.
 
-It also introduces an `id` field of type `String` to every model that uses a composite ID.
+:::note
+Currently, using the `@@id` attribute as a composite ID is not supported (`@@id([field1, field2])`).
+:::
 
-Here's an example of this transformation:
+- The `@@id` attribute in your model is converted to an `@@unique` attribute.
+- The field which was used as the primary key of the model through the `@@id` attribute is converted to an id field. This means the `@id` attribute is added to this field.
+- If this field has no `@default()` attribute representing the default id field type, the `@default()` attribute will be added based on the field type (`String` => `@default(cuid())`, `Int` => `@default(autoincrement())`).
+- If the primary key field is not named "id", it gets renamed to id and we add the `@map` attribute: `@map("originalFieldName")`.
+- The field name in the `@@id` attribute is changed to "id", e.g. `@@id([field])` => `@@id([id])`.
+
+Here is an example of this transformation:
 
 ```diff title="schema.prisma"
 model DomainUnit {
-+ id       String @id @default(cuid())
-  domainId String
-  unitId   String
++ id   String @id @default(cuid()) @map("domainId")
+- domainId String
+  unitId   String 
 
-- @@id([domainId, unitId])
-+ @@unique([domainId, unitId])
+- @@id([domainId])
++ @@unique([id])
 }
 ```
 
