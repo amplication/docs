@@ -67,7 +67,7 @@ You might find it easier to first add all the fields you want, one after another
 1. In the _Entity Fields_ text box (above the list of fields), type “Name”.
 2. Click **Add field** (or just press Enter). The new field is added to the list and the field's property panel opens.
 3. Click the **Required Field** toggle to configure the _Name_ field as required.
-4. Leave the defaults for the other properties (_Searchable_ active, _Data Type_ "Single Line Text", and _Max Length_ "1000".)
+4. Leave the defaults for the other properties (_Searchable_ active, _Data Type_ "Single Line Text", and _Max Length_ "1000").
 
 ![](./assets/first-app/name-field.png)
 
@@ -79,7 +79,7 @@ All changes are saved automatically.
 
 1. In the _Entity Fields_ text box type “Description”.
 2. Click **Add field** (or just press Enter). The new field is added to the list and the field's property panel opens.
-3. Leave the defaults (_Required Field_ inactive _Searchable_ active, _Data Type_ "Multi Line Text", and _Max Length_ "1000".)
+3. Leave the defaults (_Required Field_ inactive _Searchable_ active, _Data Type_ "Multi Line Text", and _Max Length_ "1000").
 
 :::info
 
@@ -100,7 +100,7 @@ If needed, you can manually change the field name in the field's properties pane
 :::
 
 2. Click **Add field** (or just press Enter). The new field is added to the list.
-3. The field's property panel opens. Leave the defaults (_Required Field_ inactive, _Searchable_ active, _Data Type_ "Date Time", and _Time Zone_ "Local Time".)
+3. The field's property panel opens. Leave the defaults (_Required Field_ inactive, _Searchable_ active, _Data Type_ "Date Time", and _Time Zone_ "Local Time).
 
 ### Create the Owner Field
 
@@ -161,7 +161,7 @@ These actions can be set to one of the following:
 
 By default, all of the actions are set as **All Roles**.
 
-In this example, some of the actions have been changed to **Public**, while the others remain as **All Roles**
+In this example, some of the actions have been changed to **Public**, while the others remain as **All Roles**.
 
 ![](./assets/first-app/permissions.png)
 

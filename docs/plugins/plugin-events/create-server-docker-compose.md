@@ -11,6 +11,10 @@ slug: /plugins/plugin-events/create-server-docker-compose
 
 Creates the `docker-compose.yml` file of the service
 
+## Event Name
+
+`CreateServerDockerCompose`
+
 ## Event Params
 
 ```tsx
