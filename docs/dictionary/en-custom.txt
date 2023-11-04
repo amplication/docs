@@ -91,3 +91,5 @@ autoincrement
 Baselining
 configmap
 kubeconfig
+frontends
+Zustand
