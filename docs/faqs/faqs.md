@@ -265,7 +265,7 @@ Project development becomes easier with the following functionalities:
 -You can connect to a single git repo at the project level saving a lot of your time that would be spent manually connecting the services
 -You can make a single commit at the project level
 
-Learn more about the benefits [here](https://amplication.com/blog/release-0150-support-for-microservices-architecture).
+Learn more about the benefits on our [Support for Microservices Architecture](https://amplication.com/blog/release-0150-support-for-microservices-architecture) blog post.
 
 ---
 
