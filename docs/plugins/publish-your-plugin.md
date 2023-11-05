@@ -1,7 +1,7 @@
 ---
 id: publish-plugin
-title: Publishing Your Plugin
-sidebar_label: Publishing Your Plugin
+title: How To Publish a Custom Plugin
+sidebar_label: How To Publish a Custom Plugin
 slug: /plugins/publish-plugin
 ---
 

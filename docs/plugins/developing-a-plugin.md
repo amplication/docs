@@ -1,7 +1,7 @@
 ---
 id: how-to-create-plugin
-title: How to Create a Plugin
-sidebar_label: How to Create a Plugin
+title: How to Create a Custom Plugin
+sidebar_label: How to Create a Custom Plugin
 slug: /plugins/how-to-create-plugin
 ---
 

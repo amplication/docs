@@ -150,16 +150,20 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Plugin Development",
+      label: "Plugins",
       link: {
-        type: "doc",
-        id: "plugins/overview",
+        type:"doc",
+        id: "getting-started/plugins"
       },
       items: [
-        "plugins/overview",
+        "getting-started/plugins",
+        "getting-started/community-plugins",
+        "plugins/how-to-create-plugin",
+        "plugins/how-to-test-plugin",
+        "plugins/publish-plugin",
         {
           type: "category",
-          label: "Architecture",
+          label: "Custom Plugin Architecture",
           items: [
             "plugins/plugin-architecture",
             "plugins/plugin-events-before-after",
@@ -205,8 +209,8 @@ const sidebars = {
             "plugins/plugin-events/create-message-broker-topics-enum",
             "plugins/plugin-events/create-prisma-schema",
           ],
-        },
-      ],
+        }
+      ]
     },
     {
       type: "category",
