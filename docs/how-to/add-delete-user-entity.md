@@ -1,7 +1,7 @@
 ---
 id: add-delete-user-entity
 title: How To Add and Delete The User Entity
-sidebar_label: Add and Delete The User Entity
+sidebar_label: How To Add, Delete, and Change The User Entity
 slug: /how-to/add-delete-user-entity
 pagination_next: getting-started/authentication
 ---
