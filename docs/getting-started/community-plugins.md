@@ -1,6 +1,6 @@
 ---
 title: Community Plugins
-sidebar_label: Community Plugins List
+sidebar_label: Plugins List
 slug: /plugins-list
 pagination_next: plugins/overview
 pagination_prev: getting-started/plugins

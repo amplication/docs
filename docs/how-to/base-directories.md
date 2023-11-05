@@ -1,11 +1,13 @@
 ---
 id: base-directories
-title: How To Configure Base Directories
-sidebar_label: Configure Base Directories
+title: How To Configure Your Service's Git Folder Structure
+sidebar_label: How To Configure Your Service's Git Folder Structure
 slug: /how-to/base-directories 
 ---
 
-When you first create your service using our Service Creation Wizard, you can choose whether to store your generated code in your git repository using a Monorepo or Polyrepo style. 
+# How To Configure Your Service's Git Folder Structure
+
+When you first create your service using our Service Creation Wizard, you can choose whether to store your generated code in your git repository using a Monorepo or Polyrepo style.
 
 But, you can't edit the individual folder names during creation. 
 

@@ -1,15 +1,15 @@
 ---
 id: relations
-title: Relations
-sidebar_label: Entity Relations
+title: How To Set Entity Relations
+sidebar_label: How To Set Entity Relations
 slug: /relations
 ---
 
-# Entity Relations
+# How To Set Entity Relations
 
 Entities in Amplication can have relations to other entities. For example, there is a relation between a **task** and a **project**, where a project can be related to many tasks, and a task can be related to a single project.
 
-## General
+## Entity Relations Explained
 
 Usually, at the database level, a relation is described using a Foreign Key field on one table that references a Primary Key on another table.
 In Amplication a relation between entities is described using a named field on both sides of the relation. It is made to allow easy navigation from one side of the relation to the other, especially in graphQL queries.
@@ -17,9 +17,11 @@ In Amplication a relation between entities is described using a named field on b
 For example, The relation between a project and its tasks is described by a **Project** field on the **Task** entity, and a **Tasks** field on the **Project** entity.
 
 A **Tasks** field on the **Project** entity:
+
 ![](./assets/relations/related-entity--2.jpg)
 
 A **Project** field on the **Task** entity:
+
 ![](./assets/relations/related-entity--1.jpg)
 
 ## Cardinality

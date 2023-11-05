@@ -1,11 +1,11 @@
 ---
 id: how-to-set-access-permissions
-title: How to Set Access Permissions
-sidebar_label: Set Access Permissions
+title: How To Set Entity Access Permissions
+sidebar_label: How To Set Entity Access Permissions
 slug: /how-to/set-access-permissions
 ---
 
-# Set Access Permissions
+# How To Set Entity Access Permissions
 
 To control users to access an entity, we must set its permissions. We can also set permissions at the field level.
 

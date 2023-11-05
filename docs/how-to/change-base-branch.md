@@ -1,11 +1,11 @@
 ---
 id: change-base-branch-for-pull-requests
-title: How to change the base branch for pull requests
-sidebar_label: Change the base branch for pull requests
+title: How To Change Base Branch For Pull Requests
+sidebar_label: How To Change Base Branch For Pull Requests
 slug: /how-to/change-base-branch-for-pull-requests
 ---
 
-# How to change the base branch for pull requests 
+# How To Change Base Branch For Pull Requests
 
 By default, Amplication will create pull requests from the `amplication` branch into your repository's base branch.
 This is usually `main` or `master` for many repositories. 
