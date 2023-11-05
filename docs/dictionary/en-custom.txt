@@ -82,7 +82,6 @@ drawio
 heirarchy
 autoplay
 youtube
-DALLE
 OpenTelemetry
 RDBMS
 NATS
@@ -91,5 +90,6 @@ autoincrement
 Baselining
 configmap
 kubeconfig
+DALLE
 frontends
 Zustand

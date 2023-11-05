@@ -3,6 +3,8 @@ id: overview
 title: Plugin Development Overview
 sidebar_label: Overview
 slug: /plugins/overview
+pagination_next: plugins/plugin-architecture
+pagination_prev: plugins/event-hierarchy
 ---
 
 # Plugin Development Overview
