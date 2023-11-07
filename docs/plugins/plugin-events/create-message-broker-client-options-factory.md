@@ -1,6 +1,7 @@
 ---
 id: create-message-broker-client-options-factory
-title: Create Message Broker Client Options Factory
+title: Create Message Broker Client Options Factory | Plugin Event
+description: Creates the client options of the message broker.
 sidebar_label: Create Message Broker Client Options Factory
 slug: /plugins/plugin-events/create-message-broker-client-options-factory
 ---

@@ -1,6 +1,6 @@
 ---
 id: create-entity-resolver
-title: Create Entity Resolver
+title: Create Entity Resolver | Plugin Event
 sidebar_label: Create Entity Resolver
 slug: /plugins/plugin-events/create-entity-resolver
 ---

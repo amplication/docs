@@ -2,6 +2,7 @@
 id: publish-plugin
 title: How To Publish a Custom Plugin
 sidebar_label: How To Publish a Custom Plugin
+description: Learn how to publish your Amplication plugin.
 slug: /plugins/publish-plugin
 ---
 

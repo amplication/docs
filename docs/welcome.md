@@ -1,6 +1,7 @@
 ---
 id: welcome
-title: Get Started
+title: Getting Started
+description: Master Amplication with in-depth developer guides, API details, and tutorials.
 sidebar_label: Introduction
 slug: /
 ---

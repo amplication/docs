@@ -1,9 +1,12 @@
 ---
 id: first-service
 title: Create Your First Service
+description: Amplication services are a full solution complete with authentication, authorization, logging, git sync, and other essential features for back-end management.
 sidebar_label: Create Your First Service
 slug: /first-service
 ---
+
+# Create Your First Service With Amplication
 
 Amplication accelerates your Node.js development by helping you build production-ready backends.
 These automatically-generated backends are known as **services**.

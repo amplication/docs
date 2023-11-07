@@ -2,6 +2,7 @@
 id: how-to-create-entity-field
 title: How To Create An Entity Field
 sidebar_label: How To Create An Entity Field
+description: Learn how to create an Amplication entity field.
 slug: /how-to/create-entity-field
 ---
 

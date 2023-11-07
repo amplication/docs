@@ -1,6 +1,7 @@
 ---
 id: deploy-docker-desktop
 title: Deploy to Docker Desktop
+description: Learn how to deploy your Amplication service to Docker.
 sidebar_label: Deploy to Docker Desktop
 slug: /deploy/docker-desktop
 ---

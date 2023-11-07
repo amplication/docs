@@ -1,6 +1,7 @@
 ---
 id: authentication
 title: Authentication
+description: Amplication services contain authentication mechanisms based on the NestJS/Passport Node.js library.
 sidebar_label: Authentication
 slug: /authentication
 ---

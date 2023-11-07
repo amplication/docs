@@ -1,6 +1,7 @@
 ---
 id: create-entity-controller
-title: Create Entity Controller
+title: Create Entity Controller | Plugin Event
+description: Creates the controller of an entity.
 sidebar_label: Create Entity Controller
 slug: /plugins/plugin-events/create-entity-controller
 ---

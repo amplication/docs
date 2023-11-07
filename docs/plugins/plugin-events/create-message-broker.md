@@ -1,6 +1,7 @@
 ---
 id: create-message-broker
-title: Create Message Broker
+title: Create Message Broker | Plugin Event
+description: Creates the message broker.
 sidebar_label: Create Message Broker
 slug: /plugins/plugin-events/create-message-broker
 ---
