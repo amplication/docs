@@ -1,7 +1,7 @@
 ---
 id: erd-view-for-amplication-entities
 title: ERD View for Amplication Entities
-sidebar_label: ERD View for Amplication Entities
+sidebar_label: ERD View for Amplication Entities Explained
 slug: /erd-view-for-entities
 ---
 

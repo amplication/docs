@@ -1,12 +1,12 @@
 ---
 id: how-to-create-entity
-title: How to create an entity
+title: How To Create An Entity
+sidebar_label: How To Create An Entity
 description: Learn how to create an Amplication entity.
-sidebar_label: Create an Entity
 slug: /how-to/create-entity
 ---
 
-# Create a new entity
+# How To Create An Entity
 
 :::tip
 When creating an entity, make sure you do not use a reserved name for the name of the entity or for any of its fields. Go [here](https://github.com/amplication/amplication/blob/master/packages/amplication-server/src/core/entity/reservedNames.ts) to check the list of reserved names.

@@ -1,12 +1,12 @@
 ---
 id: how-to-create-entity-field
-title: How to create an entity field
+title: How To Create An Entity Field
+sidebar_label: How To Create An Entity Field
 description: Learn how to create an Amplication entity field.
-sidebar_label: Create an Entity Field
 slug: /how-to/create-entity-field
 ---
 
-# Create a new entity field
+# How To Create An Entity Field
 
 1. To create a new entity field,  navigate to the _Entity_ screen.
 2. Click the **Entities** icon on the main menu (left toolbar) to reach the Entities page. Here you see all the entities in your application. 

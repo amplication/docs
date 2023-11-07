@@ -53,7 +53,7 @@ Here are the steps to do that:
 1. **Add the template repository as a remote:**
 ```shell
 cd <your_repository>
-git add remote amplication-plugin-template https://github.com/amplication/plugin-template.git
+git remote add amplication-plugin-template https://github.com/amplication/plugin-template.git
 ```
 `amplication-plugin-template` is the origin name. You can name it however you wan't, but make sure you change it in all commands below.
 

@@ -1,7 +1,7 @@
 ---
 id: import-prisma-schema
 title: Import Prisma Schema
-sidebar_label: Import Prisma Schema
+sidebar_label: How To Import Prisma Schema
 slug: /how-to/import-prisma-schema
 pagination_next: getting-started/how-prisma-schema-is-converted-into-entities
 ---

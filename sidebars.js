@@ -50,17 +50,25 @@ const sidebars = {
       type: "category",
       label: "Sync With Git",
       items: [
+        "getting-started/smart-git-sync",
         "getting-started/sync-with-github",
         "getting-started/sync-with-bitbucket",
-        "getting-started/sync-with-git-differences-between-plans",
+        "getting-started/sync-with-aws-codecommit",
+        // "getting-started/sync-with-git-differences-between-plans",
         "how-to/how-to-commit-changes",
-        "how-to/base-directories"
+        "how-to/base-directories",
+        "how-to/change-base-branch-for-pull-requests",
       ]
     },
     {
       type: "category",
       label: "Data Modeling",
       items: [
+        "how-to/default-value-entity-field",
+        "how-to/import-prisma-schema",
+        "getting-started/how-prisma-schema-is-converted-into-entities",
+        "how-to/erd-view-for-amplication-entities",
+        "how-to/add-delete-user-entity",
         "how-to/how-to-create-entity",
         "how-to/how-to-create-entity-field",
         "how-to/how-to-set-access-permissions",
@@ -84,16 +92,6 @@ const sidebars = {
         id: "how-to/index",
       },
       items: [
-        {
-          type: "category",
-          label: "Sync With a Git Provider",
-          items: [
-            "getting-started/sync-with-github",
-            "getting-started/sync-with-bitbucket",
-            "getting-started/sync-with-aws-codecommit",
-            "getting-started/smart-git-sync"
-          ]
-        },
         {
           type: "category",
           label: "Customize Your Generated Service",
@@ -129,22 +127,9 @@ const sidebars = {
         },
         "getting-started/deploy-docker-desktop",
         "how-to/deploy-kubernetes",
-        "getting-started/plugins",
+        "how-to/deploy-to-aws-ecs",
         "how-to/how-to-create-service",
-        "how-to/how-to-create-entity",
-        "how-to/how-to-create-entity-field",
-        "how-to/default-value-entity-field",
-        "how-to/import-prisma-schema",
-        "getting-started/how-prisma-schema-is-converted-into-entities",
-        "how-to/erd-view-for-amplication-entities",
-        "getting-started/relations",
-        "how-to/how-to-set-access-permissions",
-        "how-to/add-delete-user-entity",
         "how-to/authentication-plugin-examples",
-        "how-to/how-to-commit-changes",
-        "how-to/change-base-branch-for-pull-requests",
-        "how-to/base-directories",
-        "how-to/api-admin-ui-settings",
         "how-to/create-message-broker",
       ],
     },
@@ -173,17 +158,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "Developing Plugins",
-          items: [
-            "plugins/how-to-create-plugin",
-            "plugins/define-plugin-settings",
-            "plugins/how-to-test-plugin",
-            "plugins/publish-plugin"
-          ],
-        },
-        {
-          type: "category",
-          label: "Plugin Events - Reference",
+          label: "Custom Plugin Events - Reference",
           items: [
             "plugins/plugin-events/create-server",
             "plugins/plugin-events/create-server-docker-compose",
