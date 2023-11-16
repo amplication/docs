@@ -120,3 +120,39 @@ Add NestJS Api Swagger decorator to your service.
 The OpenAPI specification is a language-agnostic definition format used to describe RESTful APIs. [Nest provides a dedicated module](https://docs.nestjs.com/openapi/introduction) which allows generating such a specification by leveraging decorators.
 
 This plugin will specifically allow you to specify the structure of the request payload for create (POST) and update (PUT/PATCH) actions.
+
+### MS SQL Server DB
+
+Leverage Microsoft's enterprise-grade database management system for your applications with the [MS SQL Server DB](https://github.com/amplication/plugins/tree/master/plugins/db-sqlserver) plugin. This plugin ensures reliable data storage and powerful querying capabilities.
+
+### gRPC API
+
+Enhance your Amplication service with high-performance remote procedure calls using the [gRPC API](https://github.com/amplication/plugins/tree/master/plugins/transport-grpc) plugin. gRPC enables efficient communication between microservices, making it ideal for scalable architectures.
+
+### Supertokens Auth Provider
+
+Incorporate Supertokens' flexible authentication solutions into your service with the [Supertokens Auth Provider](https://github.com/amplication/plugins/tree/master/plugins/auth-supertokens) plugin, ensuring both security and enhanced user experience.
+
+### Terraform - AWS Core
+
+Provision AWS core network infrastructure using the [Terraform - AWS Core](https://github.com/amplication/plugins/tree/master/plugins/provisioning-terraform-aws-core) plugin. This plugin lays the foundation for building a robust cloud environment.
+
+### Terraform - AWS Database RDS
+
+Set up AWS Relational Database Service with ease using the [Terraform - AWS Database RDS](https://github.com/amplication/plugins/tree/master/plugins/provisioning-terraform-aws-database-rds) plugin, facilitating smooth database deployments in the cloud.
+
+### Terraform - AWS Deployment ECS
+
+Deploy your services on AWS Elastic Container Service using the [Terraform - AWS Deployment ECS](https://github.com/amplication/plugins/tree/master/plugins/provisioning-terraform-aws-deployment-ecs) plugin. It streamlines the creation and management of containerized applications.
+
+### AWS Secrets Manager
+
+Manage and secure application secrets with the [AWS Secrets Manager](https://github.com/amplication/plugins/tree/master/plugins/secrets-manager-aws-secret-manager) plugin. It integrates AWS's secrets management into your Amplication services, keeping sensitive information safe.
+
+### Github Actions - AWS ECS
+
+Automate your CI/CD pipeline and streamline deployments to AWS ECS with the [Github Actions - AWS ECS](https://github.com/amplication/plugins/tree/master/plugins/deployment-github-actions-aws-ecs) plugin, ensuring smooth and consistent delivery processes.
+
+### Terraform - AWS Repository ECR
+
+Provision AWS Elastic Container Registry for your Docker images with the [Terraform - AWS Repository ECR](https://github.com/amplication/plugins/tree/master/plugins/provisioning-terraform-aws-deployment-ecs) plugin, simplifying container image management in your CI/CD pipeline.
