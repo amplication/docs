@@ -6,7 +6,7 @@ slug: /enterprise-git-custom-base-branch
 
 # Use A Custom Git Base Branch
 
-Enterprise plan users of Amplication can enhance their workflow by using our Git Base Branch feature. This lets you direct pull requests to a specific branch of your choice to accomodate various development workflows. For example, feature branching or environment-specific branches.
+Enterprise plan users of Amplication can enhance their workflow by using our Git Base Branch feature. This lets you direct pull requests to a specific branch of your choice to accommodate various development workflows. For example, feature branching or environment-specific branches.
 
 ## Understanding the Custom Git Base Branch Feature
 
