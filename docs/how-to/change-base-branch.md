@@ -16,7 +16,7 @@ This allows you to merge changes into a different branch.
 For example, you may want pull requests to merge into a development branch first before your main branch.
 
 :::info
-This feature requires a Pro or Enterprise plan.
+This feature requires an Enterprise plan.
 Review plan differences on the [Git Sync Plan Differences](sync-with-git-differences-between-plans) page.
 :::
 
