@@ -47,29 +47,13 @@ See [Amplication’s licensing model](https://docs.amplication.com/about/about/l
 
 ---
 
-## What is the difference between the Free, Pro, and Enterprise Editions?
+## What is the difference between the Free and Enterprise Editions?
 
-### Free Edition
+The Free edition is for individual developers or small teams focused on compact projects. It provides a robust foundation for backend service creation. It includes features like database and model management, role-based permissions, and both GraphQL & REST API support.
 
-The Free edition is the best option for individuals and small teams who build smaller projects.
+The Enterprise edition, on the other hand, is designed for large-scale organizational needs, emphasizing advanced security features, more git sync providers, and dedicated support, and includes single sign-on (SSO) to ensure a comprehensive environment for enterprise-level development.
 
-It includes everything you need to build backend services with Amplication, including database and data models management, roles & permissions, [Smart Git Sync](/smart-git-sync/) to easily sync your code to your favorite git provider, GraphQL & Rest APIs, admin UI, custom code, community plugins, unlimited code generation builds, and unlimited code push to git.
-
-The Free edition is limited to 3 services and to 7 entities per service. It includes seats for 2 team members.
-
-### Pro Edition
-
-The Pro edition is for businesses that want to build on a larger scale, for advanced use cases that require more customizability, and when working with larger teams.
-
-It includes everything from the free plan with the following additional benefits: Unlimited services and entities per service, and up to 10 team members.
-
-### Enterprise Edition
-
-The Enterprise edition is intended for large organizations that need advanced security, control, and support, offering the following additional benefits: private plugins, custom Git Integration, unlimited team members, SSO, and audit logs.
-
-The Pro and Enterprise editions come with access to premium support. This means that users can get help and guidance from our team of experts whenever they need it.
-
----
+To learn more about what's included with the Enterprise plan, see the **Premium Features** section of the docs.
 
 ## Who owns the code I generate with Amplication?
 
