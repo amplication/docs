@@ -125,6 +125,7 @@ const sidebars = {
             "getting-started/cli"
           ],
         },
+        "how-to/custom-actions",
         "getting-started/deploy-docker-desktop",
         "how-to/deploy-kubernetes",
         "how-to/deploy-to-aws-ecs",
