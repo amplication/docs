@@ -20,5 +20,4 @@ To utilize Custom Actions for an entity, begin by accessing the new **Modules** 
 
 1. Navigate to the **Modules** tab.
 2. Select the **Entity** for which you wish to enable Custom Actions.
-4. Activate the Module for the entity by toggling on the switch next to its name.
-5. Individually toggle on or off any CRUD methods as per your needs.
+3. Individually toggle on or off any CRUD methods as per your needs. Alternatively, you can deactivate (or activate) the entire Module and affect all its methods
