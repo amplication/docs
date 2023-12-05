@@ -16,7 +16,7 @@ The Custom Actions feature is available in Amplication's **Enterprise** plan.
 
 ## How To Enable Custom Actions For An Entity
 
-To utilize Custom Actions for an entity, begin by accessing the new **Modules** tab in your Amplication dashboard. Here, each entity is associated with a _Module_, allowing you to perform _Module Actions_, operations on these entities with or without API endpoints.
+To utilize Custom Actions for an entity, begin by accessing the new **Modules** tab in your Amplication dashboard. Here, each entity is associated with a _Module_, allowing you to enable or disable each of the APIs associated with this Module (or all of the APIs related to this Module at once).
 
 1. Navigate to the **Modules** tab.
 2. Select the **Entity** for which you wish to enable Custom Actions.
