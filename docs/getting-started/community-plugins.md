@@ -74,7 +74,7 @@ The _NestJS Auth Provider_ plugin must also be installed to use the Passport Bas
 
 ### Auth0 Authentication Provider
 
-Integrate Auth0's robust authentication solutions into your service with the [Auth0 Authentication Provider](https://github.com/amplication/plugins/tree/master/plugins/auth-auth0) plugin. Auth0 offers a flexible, drop-in solution to add authentication and authorization services to your applications. It supports a wide range of identity providers, user management, multifactor authentication, and more.
+Integrate Auth0's robust authentication solutions into your service with the [Auth0 Authentication Provider](https://github.com/amplication/plugins/tree/master/plugins/auth-auth0) plugin. Auth0 offers a flexible, drop-in solution to add authentication and authorization services to your applications.
 
 ### Prettier
 
@@ -183,7 +183,7 @@ Securely manage and store your secrets with the [Azure Key Vault Secrets Manager
 
 ### Bitwarden Secrets Manager
 
-The [Bitwarden Secrets Manager](https://github.com/amplication/plugins/tree/master/plugins/secrets-manager-bitwarden) plugin offers a secure and convenient way to manage sensitive data with Bitwarden's open-source password management solution. It provides a reliable method for storing and accessing your secrets.
+The [Bitwarden Secrets Manager](https://github.com/amplication/plugins/tree/master/plugins/secrets-manager-bitwarden) plugin offers a secure and convenient way to manage sensitive data with the Bitwarden open-source password management solution. It provides a reliable method for storing and accessing your secrets.
 
 ### Google Secret Manager
 
