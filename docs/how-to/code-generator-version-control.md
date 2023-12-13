@@ -5,7 +5,7 @@ sidebar_label: Code Generator Version Control
 slug: /code-generator-version-control
 ---
 
-The **Code Generator Version Control** feature gives Pro and Enterprise plan users the flexibility to choose which version of the code generator they want to use.
+The **Code Generator Version Control** feature gives Enterprise plan users the flexibility to choose which version of the code generator they want to use.
 
 Amplication's code generator periodically releases new versions with bug fixes, enhancements, and new features. 
 
@@ -45,7 +45,7 @@ Now whenever you generate code for your services, Amplication will use the code 
 
 ## Enable CodeGen Version Control
 
-To use the **Code Generator Version Control** feature, upgrade to Amplication's Pro plan or Enterprise plan.
+To use the **Code Generator Version Control** feature, upgrade to Amplication's Enterprise plan.
 
 The feature will automatically become available in the settings page for each of your services.
 
