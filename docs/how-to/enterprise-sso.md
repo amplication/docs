@@ -11,8 +11,7 @@ Amplication provides Single Sign-On (SSO) support for Enterprise plan users.
 This makes it easier for your organization's members to access their Amplication accounts using your existing SSO provider.
 
 :::note
-SSO is **only available for Enterprise Plan users**.  
-Visit the [Git Sync Plan Differences](/sync-with-git-differences-between-plans) page to learn about the differences between the Free, Pro, and Enterprise plans.
+SSO is **only available for Enterprise Plan users**.
 :::
 
 ## Enabling SSO

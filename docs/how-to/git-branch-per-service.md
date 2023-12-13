@@ -7,7 +7,7 @@ pagination_next: getting-started/smart-git-sync
 
 # One Git Branch Per Service
 
-With Amplication's Pro Plan, teams can now streamline their workflow in multi-service repositories with **dedicated git branches and PRs for each service**.
+With Amplication's Enterprise Plan, teams can now streamline their workflow in multi-service repositories with **dedicated git branches and PRs for each service**.
 This feature enables faster delivery of changes, as only the team members responsible for a specific service need to review the associated PR.
 
 ## Benefits
@@ -24,9 +24,9 @@ This feature enables faster delivery of changes, as only the team members respon
 
 ## Enable One Git Branch Per Service
 
-To enable the **One Git Branch Per Service** feature, make sure you have subscribed to Amplication's Pro Plan.
+To enable the **One Git Branch Per Service** feature, make sure you have subscribed to Amplication's Enterprise Plan.
 As soon as you upgrade, simply continue working on your services, and Amplication will handle the branching and PRs for you.
 
 For more details on how Git sync works in Amplication, refer to the [Smart Git Sync](/sync-with-github/) page.
 
-To learn more about the various features available to you in Amplication's pro plan, visit our [pricing page](https://amplication.com/pricing).
+To learn more about the various features available to you in Amplication's Enterprise plan, visit our [pricing page](https://amplication.com/pricing).
