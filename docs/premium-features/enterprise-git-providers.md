@@ -9,11 +9,11 @@ slug: /enterprise-git-providers
 Amplication extends its support beyond GitHub to include additional Git providers like [Bitbucket](/sync-with-bitbucket) and [AWS CodeCommit](/sync-with-aws-codecommit) for users on the Enterprise plan.
 Organizations can integrate with their git provider to leverage the Git workflows they are already accustomed to.
 
-![Sync With Git Providers Enterprise](./assets/enterprise-sync-with-git-providers.png)
-
 :::note
-This feature is exclusive to users on Amplication's **Enterprise plan**. Free plan users get access to [GitHub](/sync-with-github).
+Get access to all supported git providers during your 14-day Enterprise plan trial for new workspaces. Free plan users get access to [GitHub](/sync-with-github).
 :::
+
+![Sync With Git Providers Enterprise](./assets/enterprise-sync-with-git-providers.png)
 
 ## Available Git Providers
 

@@ -77,7 +77,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Premium Features",
+      label: "Enterprise Features",
       items: [
         "how-to/enterprise-sso",
         "how-to/git-branch-per-service",

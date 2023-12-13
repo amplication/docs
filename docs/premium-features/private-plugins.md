@@ -10,6 +10,10 @@ Amplication's Enterprise plan includes a powerful feature for organizations that
 This feature allows enterprise users to create proprietary plugins that are accessible only within their organization.
 This lets you do deep integration with internal systems and workflows.
 
+:::note
+Try Private Plugins during your 14-day Enterprise plan trial for new workspaces.
+:::
+
 ## Private Plugins vs Community Plugins
 
 Private plugins are similar to [community plugins](/getting-started/plugins/) but are hosted in a private, secure environment exclusive to your enterprise. These plugins enable organizations to extend the functionality of their generated applications with custom integrations and proprietary business logic.
