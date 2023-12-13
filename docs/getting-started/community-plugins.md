@@ -72,6 +72,10 @@ The _NestJS Auth Provider_ plugin must also be installed to use the JWT Auth Pro
 The _NestJS Auth Provider_ plugin must also be installed to use the Passport Basic Authentication plugin.
 :::
 
+### Auth0 Authentication Provider
+
+Integrate Auth0's robust authentication solutions into your service with the [Auth0 Authentication Provider](https://github.com/amplication/plugins/tree/master/plugins/auth-auth0) plugin. Auth0 offers a flexible, drop-in solution to add authentication and authorization services to your applications. It supports a wide range of identity providers, user management, multifactor authentication, and more.
+
 ### Prettier
 
 [Prettier](https://github.com/amplication/plugins/tree/master/plugins/formatter-prettier) is an opinionated code formatter that automatically formats your code to ensure adherence to a consistent style. Code is automatically formatted every time it is committed.
@@ -91,6 +95,10 @@ It is commonly used to quickly access frequently used application data.
 
 [Redis Message Broker](https://github.com/amplication/plugins/tree/master/plugins/broker-redis) is an extension of the traditional Redis in-memory data store, allowing it to function as a message broker. 
 Install this plugin to leverage Redis's in-memory capabilities and enables asynchronous message communication between different parts of an application or between different applications.
+
+### Redis Caching
+
+Enhance your application's performance with the [Redis Caching](https://github.com/amplication/plugins/tree/master/plugins/cache-redis) plugin. Redis is known for its fast data retrieval capabilities, making it an excellent choice for implementing caching strategies.
 
 ### OpenAI
 
@@ -156,3 +164,31 @@ Automate your CI/CD pipeline and streamline deployments to AWS ECS with the [Git
 ### Terraform - AWS Repository ECR
 
 Provision AWS Elastic Container Registry for your Docker images with the [Terraform - AWS Repository ECR](https://github.com/amplication/plugins/tree/master/plugins/provisioning-terraform-aws-deployment-ecs) plugin, simplifying container image management in your CI/CD pipeline.
+
+### Terraform - GCP Core
+
+Provision Google Cloud Platform's core infrastructure with the [Terraform - GCP Core](https://github.com/amplication/plugins/tree/master/plugins/provisioning-terraform-gcp-core) plugin. This plugin is essential for setting up the foundational elements in GCP, enabling robust and scalable cloud environments.
+
+### Terraform - GCP Database Cloud SQL
+
+Deploy Google Cloud SQL instances seamlessly with the [Terraform - GCP Database Cloud SQL](https://github.com/amplication/plugins/tree/master/plugins/provisioning-terraform-gcp-database-csql) plugin. It simplifies database provisioning in GCP, ensuring consistent and efficient cloud database deployments.
+
+### Terraform - GCP Repository Artifact Registry
+
+Manage Google Cloud's Artifact Registry effectively with the [Terraform - GCP Repository Artifact Registry](https://github.com/amplication/plugins/tree/master/plugins/provisioning-terraform-gcp-repository-ar) plugin. This plugin streamlines the creation and administration of GCP's secure, scalable container registry and artifact storage.
+
+### Azure Key Vault Secrets Manager
+
+Securely manage and store your secrets with the [Azure Key Vault Secrets Manager](https://github.com/amplication/plugins/tree/master/plugins/secrets-manager-azure-key-vault) plugin. Integrating seamlessly with Azure's Key Vault, this plugin ensures the safety and accessibility of sensitive data across your services.
+
+### Bitwarden Secrets Manager
+
+The [Bitwarden Secrets Manager](https://github.com/amplication/plugins/tree/master/plugins/secrets-manager-bitwarden) plugin offers a secure and convenient way to manage sensitive data with Bitwarden's open-source password management solution. It provides a reliable method for storing and accessing your secrets.
+
+### Google Secret Manager
+
+Implement Google Cloud's Secret Manager in your services with the [Google Secret Manager](https://github.com/amplication/plugins/tree/master/plugins/secrets-manager-google-secret-manager) plugin. This plugin provides a robust mechanism for storing, managing, and accessing sensitive configuration data securely.
+
+### Hashicorp Vault Secrets Manager
+
+Incorporate Hashicorp Vault's powerful secrets management capabilities with the [Hashicorp Vault Secrets Manager](https://github.com/amplication/plugins/tree/master/plugins/secrets-manager-hashicorp-vault) plugin. Vault offers a comprehensive solution for securing, storing, and tightly controlling access to tokens, passwords, certificates, and other sensitive data.
