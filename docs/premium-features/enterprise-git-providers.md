@@ -23,7 +23,7 @@ Apart from GitHub, Amplication's Enterprise plan users can choose to integrate w
 
 - [**Bitbucket**](/sync-with-bitbucket): Ideal for teams already using Atlassian products, offering seamless integration with Jira and Trello.
 - [**AWS CodeCommit**](/sync-with-aws-codecommit): A fully-managed source control service that hosts secure Git-based repositories, perfect for users deeply integrated with the AWS ecosystem.
-- **GitLab**: Tntegrates version control, CI/CD, and project management in a unified environment. Its self-hosting option and strong API support make it adaptable and scalable for diverse development needs.
+- **GitLab**: Integrates version control, CI/CD, and project management in a unified environment. Its self-hosting option and strong API support make it adaptable and scalable for diverse development needs.
 
 ## Benefits of Integrating with Enterprise Git Providers
 
