@@ -6,11 +6,13 @@ slug: /enterprise-git-providers
 
 # Enterprise Git Providers
 
-Amplication extends its support beyond GitHub to include additional Git providers like [Bitbucket](/sync-with-bitbucket) and [AWS CodeCommit](/sync-with-aws-codecommit) for users on the Enterprise plan.
+Amplication extends its support beyond GitHub to include additional Git providers like [Bitbucket](/sync-with-bitbucket), GitLab, and [AWS CodeCommit](/sync-with-aws-codecommit) for users on the Enterprise plan.
 Organizations can integrate with their git provider to leverage the Git workflows they are already accustomed to.
 
 :::note
-Get access to all supported git providers during your 14-day Enterprise plan trial for new workspaces. Free plan users get access to [GitHub](/sync-with-github).
+Access to more git providers is only **available for Enterprise Plan users**.
+Get temporary access during your 14-day Enterprise plan trial for new workspaces.
+Free plan users get access to [GitHub](/sync-with-github).
 :::
 
 ![Sync With Git Providers Enterprise](./assets/enterprise-sync-with-git-providers.png)
@@ -21,6 +23,7 @@ Apart from GitHub, Amplication's Enterprise plan users can choose to integrate w
 
 - [**Bitbucket**](/sync-with-bitbucket): Ideal for teams already using Atlassian products, offering seamless integration with Jira and Trello.
 - [**AWS CodeCommit**](/sync-with-aws-codecommit): A fully-managed source control service that hosts secure Git-based repositories, perfect for users deeply integrated with the AWS ecosystem.
+- **GitLab**: Tntegrates version control, CI/CD, and project management in a unified environment. Its self-hosting option and strong API support make it adaptable and scalable for diverse development needs.
 
 ## Benefits of Integrating with Enterprise Git Providers
 
@@ -39,9 +42,10 @@ Switching between Git providers on Amplication is straightforward and can be man
 4. To add a new organization or account, click on the `Add Organization` button at the bottom of the dropdown.
 5. In the _Select Git Provider_ modal, choose your new Git provider and click `Connect`.
 6. Follow the authorization steps required by the selected Git provider to allow Amplication access.
-7. Once authorized, select an existing repository from the list provided or create a new one directly through the modal.
+7. Once authorized, select an existing repository from the list provided or create a new repository through the modal.
 
-For detailed instructions on how to sync with Bitbucket or AWS CodeCommit, please refer to their specific documentation pages on Amplication:
+For detailed instructions on how to sync with Bitbucket, AWS CodeCommit, or GitLab please refer to their specific documentation pages on Amplication:
 
 - [Sync with Bitbucket](/sync-with-bitbucket)
 - [Sync With AWS CodeCommit](/sync-with-aws-codecommit)
+- Sync With GitLab (Coming Soon)

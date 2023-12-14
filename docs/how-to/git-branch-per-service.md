@@ -11,7 +11,8 @@ With Amplication's Enterprise Plan, teams can now streamline their workflow in m
 This feature enables faster delivery of changes, as only the team members responsible for a specific service need to review the associated PR.
 
 :::note
-Try dedicated git branches for your services during your 14-day Enterprise plan trial for new workspaces.
+Dedicated Git Branches are only **available for Enterprise Plan users**.
+Try it during your 14-day Enterprise plan trial for new workspaces.
 :::
 
 ## Benefits

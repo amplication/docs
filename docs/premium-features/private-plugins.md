@@ -11,7 +11,8 @@ This feature allows enterprise users to create proprietary plugins that are acce
 This lets you do deep integration with internal systems and workflows.
 
 :::note
-Try Private Plugins during your 14-day Enterprise plan trial for new workspaces.
+Private Plugins is only **available for Enterprise Plan users**.
+Try it during your 14-day Enterprise plan trial for new workspaces.
 :::
 
 ## Private Plugins vs Community Plugins

@@ -12,7 +12,8 @@ Amplication's code generator periodically releases new versions with bug fixes, 
 While it's recommended to use the latest version, some teams may prefer having more control over when to upgrade the generated code.
 
 :::note
-Try Code Generator Version Control during your 14-day Enterprise plan trial for new workspaces.
+Code Generator Version Control is only **available for Enterprise Plan users**.
+Try it during your 14-day Enterprise plan trial for new workspaces.
 :::
 
 ![Amplication Code Generator Version Control](./assets/code-generator-version-control.png)
