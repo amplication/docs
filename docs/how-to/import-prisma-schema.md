@@ -16,7 +16,7 @@ Just upload your `schema.prisma` file.
 Amplication will then search for models and [convert them into Amplication's internal structure](/getting-started/how-prisma-schema-is-converted-into-entities).
 
 :::note
-The **Import Prisma Schema** feature is available on all Amplication plans including Free accounts.
+The **Import Prisma Schema** feature is available on Amplication's Enterprise plan.
 :::
 
 This guide walks you through how to generate a custom `schema.prisma` file from your existing database and upload it to Amplication.
