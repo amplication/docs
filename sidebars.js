@@ -77,11 +77,14 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Premium Features",
+      label: "Enterprise Features",
       items: [
         "how-to/enterprise-sso",
         "how-to/git-branch-per-service",
-        "how-to/code-generator-version-control"
+        "how-to/code-generator-version-control",
+        "premium-features/enterprise-git-providers",
+        "premium-features/custom-base-branch",
+        "premium-features/private-plugins"
       ]
     },
     {

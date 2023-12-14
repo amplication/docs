@@ -11,14 +11,14 @@ Amplication provides Single Sign-On (SSO) support for Enterprise plan users.
 This makes it easier for your organization's members to access their Amplication accounts using your existing SSO provider.
 
 :::note
-SSO is **only available for Enterprise Plan users**.
+SSO is only **available for Enterprise Plan users**.
+Try it during your 14-day Enterprise plan trial for new workspaces.
 :::
 
 ## Enabling SSO
 
-1. Make sure your account has already been upgraded to the Enterprise plan.  
-2. [Contact our team](https://amplication.com/contact-us/) to help you set up SSO.
-3. Our team will handle the setup and integration with your organization's SSO provider.
+1. [Contact our team](https://amplication.com/contact-us/) to help you set up SSO.
+2. Our team will handle the setup and integration with your organization's SSO provider.
 
 ## Logging In via SSO
 
