@@ -2,7 +2,7 @@
 id: plugins
 title: How To Use Plugins
 description: Learn how to use Amplication plugins that extend the functionality of your generated application.
-sidebar_label: Use Plugins
+sidebar_label: How To Use Plugins
 slug: /getting-started/plugins
 pagination_next: plugins/overview
 pagination_prev: getting-started/community-plugins
@@ -12,46 +12,48 @@ Amplication uses _Plugins_ to extend the functionality of your generated code.
 
 Some plugins can be enabled when you first create your service.
 For example, if you choose MySQL as your database, the _MySQL DB_ plugin will be enabled.
-If you choose to turn on authentication for your service, that will enable the _NestJS Auth Module_ plugin.
+If you choose to turn on authentication for your service, that will enable the _NestJS Auth Module_ plugin and other Authentication-focused plugins.
 
-All community plugins published by Amplication are available on the _All Plugins_ page.
-Your installed plugins are shown on the _Installed Plugins_ page.
-Plugins can be manually enabled or disabled on either of these pages.
+All community plugins published by Amplication are available on your service's _Plugins_ tab.
+Plugins can be enabled or disabled on this tab.
+To view your installed plugins, click on the _Installed Plugins_ category in the filter options on the left side.
 The source code of all community Amplication plugins are [available on GitHub](https://github.com/amplication/plugins).
 
-Besides the community plugins created by the Amplication team, you can [develop your own custom plugins](/plugins/overview/).
+Besides the available community plugins, you can [develop your own custom plugins](/plugins/overview/).
 
 ## Community Plugins List 
 
 You can view all community plugins on the _All Plugins_ page.
 They're also available on the [Community Plugins](/plugins-list) page here on the Amplication documentation.
 
-## Viewing Open-Source Plugin Code
-
-All Amplication plugins are open-source and available on GitHub.
-You can find the plugin source code for each individual plugin in Amplication's [`plugins`](https://github.com/amplication/amplication-plugins) repository.
-
 ## How To Install A Plugin
 
 To install a plugin:
 
-1.  In the _All Plugins_ page, click **Install** for the required plugin.
+1.  In  your service's _Plugins_ tab, click **Install** for the required plugin.
 
 ![](./assets/all-plugins.png)
 
-2. This will turn on the plugin's toggle into its _on_ state.
+2. For streamlined searching, click on **Categories** in the filter panel to browse plugins by type.
 
-3. Go to the _Installed Plugins_ page. The installed plugins are listed.
+3. Click on the plugin's toggle switch to activate it, changing its status to the _on_ state.
 
-4. To see the plugin's code on GitHub, select **View on GitHub**.
+4. Click on the _Installed Plugins_ category on the filter options on the left side. The installed plugins are listed.
+
+5. To see the plugin's code on GitHub, click the **View on GitHub** link.
 
 ## How To Uninstall A Plugin
 
-To uninstall, or deactivate, a plugin, click the toggle switch into its _off_ state.
+To uninstall a plugin, click the toggle switch into its _off_ state.
+
+## How To View Open-Source Plugin Code
+
+All Amplication plugins are open-source and available on GitHub.
+You can find the plugin source code for each individual plugin in Amplication's [`plugins`](https://github.com/amplication/amplication-plugins) repository.
 
 ## How To Modify Plugin Execution Order
 
-The plugins are executed when Amplication generates code, according to their order on the *Installed Plugins* page.
+The plugins are executed when Amplication generates code, according to their order on the *Installed Plugins* category.
 
 :::tip
 If a plugin execution is a prerequisite for another plugin, it must be located earlier in the list.
