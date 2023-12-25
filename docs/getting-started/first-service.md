@@ -19,7 +19,7 @@ Let's get you started on creating your first service using our service creation 
 
 ## Prerequisites
 
-First, [sign up](https://app.amplication.com/login) for an Amplication account. Next, authorize with GitHub.
+First, [sign up](https://app.amplication.com/login) for an Amplication account with GitHub or your email address.
 
 ![](./assets/first-service/amplication-home-page.png)
 
