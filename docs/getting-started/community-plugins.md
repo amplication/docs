@@ -192,3 +192,7 @@ Implement Google Cloud's Secret Manager in your services with the [Google Secret
 ### Hashicorp Vault Secrets Manager
 
 Incorporate Hashicorp Vault's powerful secrets management capabilities with the [Hashicorp Vault Secrets Manager](https://github.com/amplication/plugins/tree/master/plugins/secrets-manager-hashicorp-vault) plugin. Vault offers a comprehensive solution for securing, storing, and tightly controlling access to tokens, passwords, certificates, and other sensitive data.
+
+### JSON Logger
+
+The JSON Logger Plugin is designed for logging in JSON format. It offers configurable log levels, including 'fatal', 'error', 'warn', 'info', 'debug', 'trace', and 'silent'. Users can also add custom properties to log messages.
