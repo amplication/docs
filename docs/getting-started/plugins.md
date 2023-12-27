@@ -12,11 +12,11 @@ Amplication uses _Plugins_ to extend the functionality of your generated code.
 
 Some plugins can be enabled when you first create your service.
 For example, if you choose MySQL as your database, the _MySQL DB_ plugin will be enabled.
-If you choose to turn on authentication for your service, that will enable the _NestJS Auth Module_ plugin and other Authentication-focused plugins.
+If you choose to turn on authentication for your service, that will enable the _NestJS Auth Module_ plugin and other required Authentication-focused plugins.
 
 All community plugins published by Amplication are available on your service's _Plugins_ tab.
-Plugins can be enabled or disabled on this tab.
-To view your installed plugins, click on the _Installed Plugins_ category in the filter options on the left side.
+Plugins can be enabled or disabled on this tab. In addtion, you can click on the _Settings_ button and configure the settings of each plugin there.
+To view your installed plugins, click on the _Installed Plugins_ page in the filter panel on the left side.
 The source code of all community Amplication plugins are [available on GitHub](https://github.com/amplication/plugins).
 
 Besides the available community plugins, you can [develop your own custom plugins](/plugins/overview/).
@@ -38,7 +38,7 @@ To install a plugin:
 
 3. Click on the plugin's toggle switch to activate it, changing its status to the _on_ state.
 
-4. Click on the _Installed Plugins_ category on the filter options on the left side. The installed plugins are listed.
+4. Click on the _Installed Plugins_ page on the filter panel on the left side. The installed plugins are listed.
 
 5. To see the plugin's code on GitHub, click the **View on GitHub** link.
 
@@ -53,7 +53,7 @@ You can find the plugin source code for each individual plugin in Amplication's 
 
 ## How To Modify Plugin Execution Order
 
-The plugins are executed when Amplication generates code, according to their order on the *Installed Plugins* category.
+The plugins are executed when Amplication generates code, according to their order on the *Installed Plugins* page.
 
 :::tip
 If a plugin execution is a prerequisite for another plugin, it must be located earlier in the list.
