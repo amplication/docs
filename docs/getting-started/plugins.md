@@ -15,7 +15,7 @@ For example, if you choose MySQL as your database, the _MySQL DB_ plugin will be
 If you choose to turn on authentication for your service, that will enable the _NestJS Auth Module_ plugin and other required Authentication-focused plugins.
 
 All community plugins published by Amplication are available on your service's _Plugins_ tab.
-Plugins can be enabled or disabled on this tab. In addtion, you can click on the _Settings_ button and configure the settings of each plugin there.
+Plugins can be enabled or disabled on this tab. In addition, you can click on the _Settings_ button and configure the settings of each plugin there.
 To view your installed plugins, click on the _Installed Plugins_ page in the filter panel on the left side.
 The source code of all community Amplication plugins are [available on GitHub](https://github.com/amplication/plugins).
 
