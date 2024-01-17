@@ -84,7 +84,8 @@ const sidebars = {
         "how-to/code-generator-version-control",
         "premium-features/enterprise-git-providers",
         "premium-features/custom-base-branch",
-        "premium-features/private-plugins"
+        "premium-features/private-plugins",
+        "premium-features/break-the-monolith"
       ]
     },
     {
