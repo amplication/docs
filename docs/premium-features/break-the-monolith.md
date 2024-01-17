@@ -59,7 +59,7 @@ Changes made in Redesign mode are auto-saved, but they're not applied until you 
 
 ### Step 4: Reviewing and Committing Changes
 
-After applying changes in the Architecture tab, the "Pending Changes" section of the dashboard will reflect those updates. If everything looks good, click on the **Commit Changes & Build** button and Amplicatin will create a new PR with your changes.
+After applying changes in the Architecture tab, the "Pending Changes" section of the dashboard will reflect those updates. If everything looks good, click on the **Commit Changes & Build** button and Amplication will create a new PR with your changes.
 
 ## Explore "Break The Monolith" in Our Interactive Sandbox
 
