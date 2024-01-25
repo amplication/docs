@@ -2,7 +2,6 @@
 title: Break The Monolith
 sidebar_label: Break The Monolith
 slug: /break-the-monolith
-pagination_next: /how-to/understanding-break-the-monolith
 ---
 
 # Break The Monolith
@@ -39,7 +38,7 @@ Overview mode is the view-only default mode for viewing your services and entiti
 
 Redesign mode allows you redesign one service at a time, migrate, and create new entities.
 
-::note
+:::note
 **Free users** have access to Overview mode _without_ the Redesign capabilities.
 :::
 
@@ -79,9 +78,11 @@ This approach allows you to import your existing database structure into Amplica
 
 To get started with your Prisma schema upload, visit our [Import Prisma Schema](/how-to/import-prisma-schema) documentation for step-by-step instructions.
 
-## Learn the Technical Mechanisms of Break The Monolit
+<!--
+## Learn the Technical Mechanisms of Break The Monolith
 
 For a deeper understanding of the technical details behind "Break The Monolith" and how it transforms your monolithic architecture into microservices, visit our detailed technical guide on the [Understanding Break The Monolith](/understanding-break-the-monolith) page.
+-->
 
 <!-- 
 ## Explore "Break The Monolith" in Our Interactive Sandbox

@@ -174,6 +174,7 @@ Click on this button and you'll be presented a form where you can upload your `s
 
 ![Upload Prisma Schema](./assets/upload-prisma-schema.png)
 
+<!--
 ### Step 3.5 Optional AI-Driven Service Redesign
 
 After uploading your `schema.prisma` file, you can utilize Amplication's new Intelligent AI Helper to break down the entities from your schema into microservices.
@@ -181,6 +182,7 @@ After uploading your `schema.prisma` file, you can utilize Amplication's new Int
 The AI Helper analyzes your uploaded schema and suggests an optimal microservice architecture. This process involves recommendations for efficient entity distribution and service structure optimization, all while maintaining your privacy and the integrity of your data models.
 
 To learn more visit Break the Monolith's [documentation page](/break-the-monolith).
+-->
 
 ### Step 4: Check the conversion logs
 

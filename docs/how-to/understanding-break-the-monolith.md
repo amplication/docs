@@ -3,7 +3,6 @@ id: understanding-break-the-monolith
 title: Understanding Break The Monolith
 sidebar_label: Understanding Break The Monolith
 slug: /understanding-break-the-monolith
-pagination_prev: /premium-features/break-the-monolith
 ---
 
 # Understanding Break The Monolith

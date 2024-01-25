@@ -85,8 +85,8 @@ const sidebars = {
         "premium-features/enterprise-git-providers",
         "premium-features/custom-base-branch",
         "premium-features/private-plugins",
-        "premium-features/break-the-monolith",
-        "how-to/understanding-break-the-monolith"
+        "premium-features/break-the-monolith"
+        // "how-to/understanding-break-the-monolith"
       ]
     },
     {
