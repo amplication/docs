@@ -70,6 +70,14 @@ Once you're satisfied with the changes, use the **Apply** button to update your 
 Changes made in Redesign Mode are auto-saved, but they're not applied or visible to other team members until you click the **Apply** button
 :::
 
+## Starting with Prisma Schema in Break The Monolith
+
+Start with our [Import Prisma Schema](/how-to/import-prisma-schema) feature to leverage your existing database schemas instead of manually creating entities. Rapidly transition to optimized microservice configurations saving you even more time.
+
+This approach allows you to import your existing database structure into Amplication, where the Intelligent AI Helper can then suggest optimal microservice configurations.
+
+To get started with your Prisma schema upload, visit our [Import Prisma Schema](/how-to/import-prisma-schema) documentation for step-by-step instructions.
+
 <!-- 
 ## Explore "Break The Monolith" in Our Interactive Sandbox
 
