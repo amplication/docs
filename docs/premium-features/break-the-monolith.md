@@ -2,6 +2,7 @@
 title: Break The Monolith
 sidebar_label: Break The Monolith
 slug: /break-the-monolith
+pagination_next: /how-to/understanding-break-the-monolith
 ---
 
 # Break The Monolith
@@ -77,6 +78,10 @@ Start with our [Import Prisma Schema](/how-to/import-prisma-schema) feature to l
 This approach allows you to import your existing database structure into Amplication, where the Intelligent AI Helper can then suggest optimal microservice configurations.
 
 To get started with your Prisma schema upload, visit our [Import Prisma Schema](/how-to/import-prisma-schema) documentation for step-by-step instructions.
+
+## Learn the Technical Mechanisms of Break The Monolit
+
+For a deeper understanding of the technical details behind "Break The Monolith" and how it transforms your monolithic architecture into microservices, visit our detailed technical guide on the [Understanding Break The Monolith](/understanding-break-the-monolith) page.
 
 <!-- 
 ## Explore "Break The Monolith" in Our Interactive Sandbox
