@@ -2,45 +2,59 @@
 id: understanding-break-the-monolith
 title: Understanding Break The Monolith
 sidebar_label: Understanding Break The Monolith
-slug: /understanding-break-the-monolith
+slug: /how-to/understanding-break-the-monolith
 ---
 
 # Understanding Break The Monolith
 
-[Break The Monolith](/break-the-monolith) is a comprehensive tool for transforming monolithic architectures into modern, scalable, and maintainable microservices.
+[Break The Monolith](/break-the-monolith) is a new feature, currently in Beta, for transitioning monolithic architectures into efficient, scalable microservices.
 
-This page explains the technical workings of this feature to help you understand how it operates under the hood.
+This page provides an in-depth technical overview of how it alters your project's architecture, particularly focusing on entity relationships and database schema transformations.
 
-## How "Break The Monolith" Works
+Let's explore how Amplication handles the technical specifics of this process.
 
-The "Break The Monolith" feature consists of several steps, each designed to help you smoothly transition your monolithic service into a set of microservices.
+## Technical Workings of "Break The Monolith"
 
-### 1. Overview of Current Services
+### Handling Non-Relation Fields
 
-First, the feature provides an **Overview** mode where you can see a detailed view of your project's current services, entities, fields, and their relationships. This helps you understand the existing structure before making any changes.
+When entities are moved between services in "Break The Monolith," non-relation fields are replicated exactly as they are. These fields retain all their properties, such as type, uniqueness, and searchability. This direct replication ensures consistency in the data model across different services.
 
-Overview mode provides you with a service mesh visualization, showing the services in your project, the entities owned by each service, and the relations between the entities.
+#### Example
 
-### 2. Redesign and Breaking Services
+If an entity in your original monolith service has a non-relation field like `createdAt` (a date field), this field will appear in the new service with the same properties, ensuring data consistency.
 
-In the Redesign mode, you can manually or with the assistance of AI, restructure your monolith or individual services. This includes the ability to:
+### Handling One-to-One Relations
 
-- Move entities between existing or new services.
-- Utilize the Intelligent AI Helper for suggestions on optimal microservice configurations.
-- Create tailored micro-services based on the suggested architecture.
+In one-to-one relationships, both entities involved in the relationship retain a single field representing the remote entity's ID. This approach maintains a link between the entities even after they are distributed across different services.
 
-The AI Helper identifies logical groupings of entities based on their relationships and usage patterns. It also suggests ways to cut relations between entities beyond group boundaries.
+#### Example
 
-:::note
-**The AI Helper uses advanced LLMs for insightful microservice architecture suggestions**, analyzing your entity details with a commitment to high privacy standards.
-:::
+Each entity will have a field, like `partnerId` in a `Customer` entity, which points to the corresponding entity in the other service. This mutual referencing ensures that the entities can still reference each other post-transition.
 
-### 3. Applying the New Architecture
+### Handling One-to-Many Relations
 
-Once you are satisfied with the new design, "Break The Monolith" facilitates the creation of new microservices complete with their entities and APIs that bridge the entity relations separated across services, transforming foreign keys into remote IDs where necessary.
+In a one-to-many relationships, the handling of fields is nuanced:
 
-This process ensures that your code is production-ready and supports the new microservice architecture.
+#### The "Many" Side
+
+The entity on the "many" side of the relationship, upon being moved, retains a field representing the ID of the "one" side. This field, like `customerId` in an `Order` entity, is an actual field in the database. It allows the service to reference the related entity in another service, preserving the integrity of the relationship even when the entities are separated.
+
+#### The "One" Side
+
+On the "one" side of the relationship, no direct relational fields are created to represent the "many" side. This side, therefore, loses the direct link to the "many" entities, reflecting the separation of services.
+
+#### Example
+
+For example, if a `Customer` entity (one side) and `Order` entities (many side) are separated, the `Order` entities will retain a `customerId` field to refer to their corresponding `Customer`. However, the `Customer` entity won't have a direct reference to its orders in the new structure.
+
+### Data Migration Considerations
+
+It's crucial to recognize that migrating entities between services often necessitates data migration. When entities are relocated, separate databases are created for each service. This division requires moving relevant data from the original database to the new service's database to maintain data consistency and integrity.
 
 ## Next Steps
 
-After understanding how "Break The Monolith" works, you can start using this feature in your project. For a step-by-step guide on how to use "Break The Monolith," refer to our [Break The Monolith documentation page](/break-the-monolith).
+This technical overview of "Break The Monolith" aims to provide you with a clear understanding of the implications and potential outcomes when restructuring your entities.
+
+It's important to recognize that, due to the nature of service separation, some relationships and references may not function as they did within a monolithic structure. Grasping these nuances is key to successfully navigating the transition process.
+
+For a comprehensive guide on using "Break The Monolith" in your projects, please visit our [Break The Monolith documentation page](/break-the-monolith).

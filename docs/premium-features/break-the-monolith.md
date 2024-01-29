@@ -92,11 +92,9 @@ This approach allows you to import your existing database structure into Amplica
 To get started with your Prisma schema upload, visit our [Import Prisma Schema](/how-to/import-prisma-schema) documentation for step-by-step instructions.
 -->
 
-<!--
-## Learn the Technical Mechanisms of Break The Monolith
+## Learn the Technical Workings of Break The Monolith
 
-For a deeper understanding of the technical details behind "Break The Monolith" and how it transforms your monolithic architecture into microservices, visit our detailed technical guide on the [Understanding Break The Monolith](/understanding-break-the-monolith) page.
--->
+For a deeper understanding of the technical details behind "Break The Monolith" and how it transforms your monolithic architecture into microservices, visit our detailed technical guide on the [Understanding Break The Monolith](/how-to/understanding-break-the-monolith) page.
 
 <!-- 
 ## Explore "Break The Monolith" in Our Interactive Sandbox
