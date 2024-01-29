@@ -19,7 +19,7 @@ The "Break The Monolith" feature consists of several steps, each designed to hel
 
 First, the feature provides an **Overview** mode where you can see a detailed view of your project's current services, entities, fields, and their relationships. This helps you understand the existing structure before making any changes.
 
-Overview mode provides you with a service mesh visualization, showing the services in your project, the entities owned by each service, and the relations between the services.
+Overview mode provides you with a service mesh visualization, showing the services in your project, the entities owned by each service, and the relations between the entities.
 
 ### 2. Redesign and Breaking Services
 
@@ -29,7 +29,7 @@ In the Redesign mode, you can manually or with the assistance of AI, restructure
 - Utilize the Intelligent AI Helper for suggestions on optimal microservice configurations.
 - Create tailored micro-services based on the suggested architecture.
 
-The AI Helper identifies logical groupings of entities based on their relationships and usage patterns. It suggests ways to cut relations between entities beyond group boundaries, transforming foreign keys into remote IDs where necessary.
+The AI Helper identifies logical groupings of entities based on their relationships and usage patterns. It also suggests ways to cut relations between entities beyond group boundaries.
 
 :::note
 **The AI Helper uses advanced LLMs for insightful microservice architecture suggestions**, analyzing your entity details with a commitment to high privacy standards.
@@ -37,7 +37,7 @@ The AI Helper identifies logical groupings of entities based on their relationsh
 
 ### 3. Applying the New Architecture
 
-Once you are satisfied with the new design, "Break The Monolith" facilitates the creation of new microservices complete with their entities and APIs that bridge the entity relations separated across services, ensuring smooth communication and data flow.
+Once you are satisfied with the new design, "Break The Monolith" facilitates the creation of new microservices complete with their entities and APIs that bridge the entity relations separated across services, transforming foreign keys into remote IDs where necessary.
 
 This process ensures that your code is production-ready and supports the new microservice architecture.
 

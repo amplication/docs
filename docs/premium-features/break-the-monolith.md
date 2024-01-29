@@ -11,7 +11,7 @@ Amplication's "Break The Monolith" feature helps you seamlessly update monolithi
 This guide will walk you through the steps to effectively utilize this feature for enhancing your application's architecture.
 
 :::note
-The "Break The Monolith" feature is **available to Enterprise workspaces including trial workspaces**.
+The "Break The Monolith" feature is currently in beta and **available to Enterprise workspaces including trial workspaces**.
 :::
 
 ## What is "Break The Monolith"?
