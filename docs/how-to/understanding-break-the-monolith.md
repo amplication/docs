@@ -3,6 +3,8 @@ id: understanding-break-the-monolith
 title: Understanding Break The Monolith
 sidebar_label: Understanding Break The Monolith
 slug: /how-to/understanding-break-the-monolith
+pagination_prev: premium-features/break-the-monolith
+pagination_next: null
 ---
 
 # Understanding Break The Monolith
@@ -29,7 +31,7 @@ In one-to-one relationships, both entities involved in the relationship retain a
 
 #### Example
 
-Each entity will have a field, like `partnerId` in a `Customer` entity, which points to the corresponding entity in the other service. This mutual referencing ensures that the entities can still reference each other post-transition.
+Each entity will have a field, like `partnerId` in a `Customer` entity, which holds the ID of the corresponding entity in the other service. This mutual referencing ensures that the entities can still reference each other post-transition.
 
 ### Handling One-to-Many Relations
 
@@ -46,6 +48,12 @@ On the "one" side of the relationship, no direct relational fields are created t
 #### Example
 
 For example, if a `Customer` entity (one side) and `Order` entities (many side) are separated, the `Order` entities will retain a `customerId` field to refer to their corresponding `Customer`. However, the `Customer` entity won't have a direct reference to its orders in the new structure.
+
+### Handling Many-to-Many Relations
+
+In this current Beta phase of "Break The Monolith," many-to-many relationships are not actively handled.
+
+This means that when entities with many-to-many relations are moved between services, no corresponding related fields are created on either side.
 
 ### Data Migration Considerations
 

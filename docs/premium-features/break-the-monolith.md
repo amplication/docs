@@ -2,6 +2,8 @@
 title: Break The Monolith
 sidebar_label: Break The Monolith
 slug: /break-the-monolith
+pagination_next: how-to/understanding-break-the-monolith
+pagination_prev: null
 ---
 
 # Break The Monolith
@@ -42,11 +44,15 @@ Redesign mode allows you to redesign and restructure services, facilitating the 
 **Free users** have access to Overview mode _without_ the Redesign capabilities.
 :::
 
+![Amplication's Break The Monolith View Mode](./assets/break-the-monolith-view-mode.png)
+
 ### Step 2: Manual Service Redesign
 
 After entering Redesign Mode, manually move entities between services. You can select multiple entities using the dedicated menu and move them in bulk to create micro-services.
 
 To migrate entities to other services, you can drag and drop them into the appropriate service. After making changes, you can click on the **Apply** button to implement those changes.
+
+![Amplication's Break The Monolith Redesign Mode](./assets/break-the-monolith-redesign-mode.png)
 
 <!--
 ### Step 3: Utilize AI for Smart Architecture Suggestions (Optional)
@@ -81,6 +87,8 @@ After applying changes in the Architecture tab, the "Pending Changes" section of
 :::note
 Changes made in Redesign Mode are auto-saved, but they're not applied or visible to other team members until you click the **Apply** button.
 :::
+
+![Amplication's Break The Monolith Confirm Architecture Changes](./assets/break-the-monolith-confirm-architecture.png)
 
 <!--
 ## Starting with Prisma Schema in Break The Monolith
