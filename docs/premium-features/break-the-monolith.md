@@ -82,7 +82,7 @@ Redesign mode introduces a few more buttons to help you while redesigning your s
 
 1. **Add New Service** creates a new service so that you can drag-and-drop entities between 
 2. **Fetch Updates From Server** gets any updates from the server. This is useful in case updates were made during the monolith update process.
-3. **Discard Changes** discards all changes and brings you back into Overiew Mode. 
+3. **Discard Changes** discards all changes and brings you back into Overview Mode. 
 4. **Apply Plan** applies your changes and brings you to the confirmation screen.
 
 <!--
