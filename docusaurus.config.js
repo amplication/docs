@@ -73,7 +73,7 @@ module.exports = {
           className: "start-now-button",
         },
         {
-          href: "https://amplication.com/contact-us",
+          href: "https://meetings-eu1.hubspot.com/oalaluf/meet-with-oren",
           html: "Contact Us",
           position: "right",
         },
@@ -154,7 +154,7 @@ module.exports = {
             },
             {
               label: "Contact Us",
-              href: "https://amplication.com/contact-us",
+              href: "https://meetings-eu1.hubspot.com/oalaluf/meet-with-oren",
             },
           ],
         },
