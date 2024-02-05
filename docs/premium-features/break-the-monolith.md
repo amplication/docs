@@ -38,7 +38,7 @@ Overview mode is the view-only default mode for viewing your services and entiti
 
 ![Amplication's Break The Monolith View Mode](./assets/break-the-monolith-overview-mode.png)
 
-Overview Mode introduces several components to ease navigating throughout the interface.
+Overview Mode introduces several UI components to ease navigating throughout the interface.
 
 ### Service Filter
 
@@ -48,9 +48,9 @@ Each individual colored button with an icon represents one of your services. _Ho
 
 The associated search field helps you search through your services by name.
 
-The filter is useful if you only need to break specific services.
+The filter is useful if you only need to handle or analyze specific services.
 
-### Drag-and-Drop Interface Management Buttons
+### UI Management Buttons
 
 Directly below the Service Filter are various buttons to help you manage the drag-and-drop interface.
 
@@ -68,22 +68,26 @@ Redesign mode allows you to restructure services by facilitating the movement of
 Click on the **Redesign** button to enter Redesign Mode and select a service to redesign.
 
 :::note
-You can currently redesign only **one** service at a time.
+You can redesign only **one** service at a time.
 :::
 
 You can move entities between services in two ways:
 
 1. Drag and drop entities into the appropriate service.
-2. Select multiple entities using the dedicated menu and move them in bulk to create micro-services.
+2. Select multiple entities using the dedicated menu or the command/control button and move them in bulk to create micro-services.
 
 ![Amplication's Break The Monolith Redesign Mode](./assets/break-the-monolith-redesign-mode.png)
 
 Redesign mode introduces a few more buttons to help you while redesigning your service.
 
 1. **Add New Service** creates a new service so that you can drag-and-drop entities between 
-2. **Fetch Updates From Server** gets any updates from the server. This is useful in case updates were made during the monolith update process.
-3. **Discard Changes** discards all changes and brings you back into Overview Mode. 
+2. **Fetch Updates From Server** gets any updates from the server. This is useful in case updates were made during the monolith redesign process.
+3. **Discard Changes** discards all the Redesign changes and brings you back into Overview Mode.
 4. **Apply Plan** applies your changes and brings you to the confirmation screen.
+
+:::note
+Changes made in Redesign Mode are auto-saved, but they're not applied or visible to other team members until you click the **Apply** button.
+:::
 
 <!--
 ### Step 3: Utilize AI for Smart Architecture Suggestions (Optional)
@@ -106,10 +110,6 @@ The "AI Helper" button in the Architecture tab, also available in both the Proje
 -->
 
 <!--
-### Step 4: Manage and Apply Changes
--->
-
-<!--
 ## Starting with Prisma Schema in Break The Monolith
 
 Start with our [Import Prisma Schema](/how-to/import-prisma-schema) feature to leverage your existing database schemas instead of manually creating entities. Rapidly transition to optimized microservice configurations saving you even more time.
@@ -123,13 +123,11 @@ To get started with your Prisma schema upload, visit our [Import Prisma Schema](
 
 Once you're satisfied with the changes, use the **Apply Plan** button to update your project's architecture.
 
-After applying changes in the Architecture tab, the "Pending Changes" section of your dashboard will reflect those updates. If everything looks good, click on the **Commit Changes & Build** button and Amplication will create a new PR to your git provider with your changes.
-
-:::note
-Changes made in Redesign Mode are auto-saved, but they're not applied or visible to other team members until you click the **Apply** button.
-:::
-
 ![Amplication's Break The Monolith Confirm Architecture Changes](./assets/break-the-monolith-confirm-architecture.png)
+
+The dialog will let you confirm the creation of new services with default settings and the reallocation of specific entities to those services.
+
+After applying changes in the Architecture tab, the "Pending Changes" section of your dashboard will reflect those updates. If everything looks good, click on the **Commit Changes & Build** button and Amplication will automatically create a new PR to your git provider containing your changes towards a micro-services architecture.
 
 ## Learn the Technical Workings of Break The Monolith
 
