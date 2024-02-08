@@ -27,7 +27,7 @@ If an entity in your original monolith service has a non-relation field like `cr
 
 ### Handling One-to-One Relations
 
-In one-to-one relationships, both entities involved in the relationship undergo a modification where their related field names are suffixed with `Id`. This approach maintains a link between the entities even after they are distributed across different services.
+In one-to-one relationships, both entities involved in the relationship undergo a modification where their related field names are suffixed with `Id`. This approach maintains a virtual link between the entities. This means that while the entities reside in separate databases, the suffixed `Id` fields provide a means to reference each other virtually rather than through a direct database relationship.
 
 #### Example
 
