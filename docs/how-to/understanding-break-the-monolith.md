@@ -27,7 +27,7 @@ If an entity in your original monolith service has a non-relation field like `cr
 
 ### Handling One-to-One Relations
 
-In one-to-one relationships, both entities involved in the relationship undergo a modification where their related field names are suffixed with `Id`. This approach maintains a virtual link between the entities. This means that while the entities reside in separate databases, the suffixed `Id` fields provide a means to reference each other virtually rather than through a direct database relationship.
+In one-to-one relationships, both entities involved in the relationship undergo a modification where their related field names are suffixed with `Id`. This approach maintains an external key between the entities. This means that while the entities reside in separate databases, the suffixed `Id` fields provide a means to reference each other virtually rather than through a direct database relationship.
 
 #### Example
 
@@ -47,7 +47,7 @@ On the "one" side, a new field is created, retaining the original field name but
 
 #### Example
 
-If a Customer entity (one side) and Order entities (many side) are separated, Order entities retain a `customerId` field. Meanwhile, the Customer entity gains a new field named `customer`, of JSON type, to reference its orders, adapting to the new architecture.
+If a Customer entity (one side) and Order entities (many side) are separated, Order entities retain a `customerId` field. Meanwhile, the Customer entity gains a new field named `orders`, of JSON type, to reference its orders, adapting to the new architecture.
 
 ### Handling Many-to-Many Relations
 
