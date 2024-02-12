@@ -127,6 +127,12 @@ Once you're satisfied with the changes, use the **Apply Plan** button to update 
 
 The dialog will let you confirm the creation of new services with default settings and the reallocation of specific entities to those services.
 
+:::note
+Existing existing entity permissions **do not get moved over** to the new service structure with Break The Monolith. The permissions with your entities will need manual reassignment.
+
+Learn [how to set acess permissions](how-to/set-access-permissions/#set-entity-permissions) for your entities.
+:::
+
 After applying changes in the Architecture tab, the "Pending Changes" section of your dashboard will reflect those updates. If everything looks good, click on the **Commit Changes & Build** button and Amplication will automatically create a new PR to your git provider containing your changes towards a micro-services architecture.
 
 ## Learn the Technical Workings of Break The Monolith
