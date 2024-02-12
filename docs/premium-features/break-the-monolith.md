@@ -128,7 +128,7 @@ Once you're satisfied with the changes, use the **Apply Plan** button to update 
 The dialog will let you confirm the creation of new services with default settings and the reallocation of specific entities to those services.
 
 :::note
-Existing existing entity permissions **do not get moved over** to the new service structure with Break The Monolith. The permissions with your entities will need manual reassignment.
+Existing entity permissions **do not get moved over** to the new service structure with Break The Monolith. The permissions with your entities will need manual reassignment.
 
 Learn [how to set access permissions](how-to/set-access-permissions/#set-entity-permissions) for your entities.
 :::
