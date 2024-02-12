@@ -25,9 +25,9 @@ These actions can be set to one of the following:
 
 ## Set Entity Permissions
 
-1. Click the **Entities** icon in the main menu (left sidebar) to open the _Entities_ page.
-2. Click an entity.
-3. On the entity's page, click **Permissions**.
+1. Click on the **Entities** tab on your dashboard to open the _Entities_ page.
+2. Click on a specific entity.
+3. On the entity's page, click **Permissions** in the left sidebar.
 
    By default, all actions (_View_, _Create_, _Update_, _Delete_, and _Search_) are set to **All Roles**.
 
