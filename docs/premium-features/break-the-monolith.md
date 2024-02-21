@@ -23,7 +23,7 @@ The "Break The Monolith" feature is currently in beta and **available to Enterpr
 "Break The Monolith" focuses on the following 3 parts:
 
 1. **Overview of Current Services**: Get a comprehensive view of your project's services, their entities, fields, and relationships with Overview mode.
-2. **Redesign and Service Distribution**: <!-- Manually or with AI assistance, r--> Redesign your service and move entities between services to create a new micro-service structure.
+2. **Redesign and Service Distribution**: Manually or with AI assistance, redesign your service and move entities between services to create a new micro-service structure.
 3. **Confirm and Apply the New Architecture**: Amplication handles the creation of new services, moves entities, and manages the relationships between entities automatically. Each service comes complete with their entities, APIs, and data models, to support the new microservice architecture to your code is ready for production.
 
 Let's review each of the various parts of this new feature specifically.
@@ -99,15 +99,13 @@ The "Break the Monolith" button, available in the Project and Service Overview s
 :::
 -->
 
-<!--
-### Step 3: Utilize AI for Smart Architecture Suggestions (Optional)
+## Utilize AI for Smart Architecture Suggestions (Optional)
 
 The "AI Helper" button in the Architecture tab, also available in both the Project and Service Overview screens as "Break The Monolith" button, offer AI-driven suggestions for transforming services into an efficient microservice architecture. Select a service to initiate AI analysis, which includes service distribution and entity organization recommendations.
 
 :::note
 **This feature uses advanced LLMs for optimal microservices structuring suggestions**. Only anonymous data is shared during analysis, and it occurs exclusively when users proactively engage features utilizing LLMs. Users can opt out of LLM features, maintaining control over their data privacy.
 :::
--->
 
 <!--
 ## Starting with Prisma Schema in Break The Monolith
