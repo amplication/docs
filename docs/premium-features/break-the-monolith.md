@@ -89,16 +89,6 @@ Redesign mode introduces a few more buttons to help you while redesigning your s
 Changes made in Redesign Mode are auto-saved, but they're not applied or visible to other team members until you click the **Apply** button.
 :::
 
-<!--
-### Step 3: Utilize AI for Smart Architecture Suggestions (Optional)
-
-The "Break the Monolith" button, available in the Project and Service Overview screens, triggers AI analysis to suggest an efficient new microservice architecture, including service distribution and entity organization. Review the AI's recommendations before making any changes.
-
-:::note
-**This feature uses LLMs to analyze and suggest ideal microservices structures**. It requires sharing details of your entities and fields with LLMs for analysis. We ensure the highest privacy standards and use your data only to improve your project's architecture.
-:::
--->
-
 ## Utilize AI for Smart Architecture Suggestions (Optional)
 
 The "AI Helper" button in the Architecture tab, also available in both the Project and Service Overview screens as "Break The Monolith" button, offer AI-driven suggestions for transforming services into an efficient microservice architecture. Select a service to initiate AI analysis, which includes service distribution and entity organization recommendations.
@@ -107,7 +97,6 @@ The "AI Helper" button in the Architecture tab, also available in both the Proje
 **This feature uses advanced LLMs for optimal microservices structuring suggestions**. Only anonymous data is shared during analysis, and it occurs exclusively when users proactively engage features utilizing LLMs. Users can opt out of LLM features, maintaining control over their data privacy.
 :::
 
-<!--
 ## Starting with Prisma Schema in Break The Monolith
 
 Start with our [Import Prisma Schema](/how-to/import-prisma-schema) feature to leverage your existing database schemas instead of manually creating entities. Rapidly transition to optimized microservice configurations saving you even more time.
@@ -115,7 +104,6 @@ Start with our [Import Prisma Schema](/how-to/import-prisma-schema) feature to l
 This approach allows you to import your existing database structure into Amplication, where the Intelligent AI Helper can then suggest optimal microservice configurations.
 
 To get started with your Prisma schema upload, visit our [Import Prisma Schema](/how-to/import-prisma-schema) documentation for step-by-step instructions.
--->
 
 ## Architecture Change Confirmation
 
@@ -137,8 +125,6 @@ After applying changes in the Architecture tab, the "Pending Changes" section of
 
 For a deeper understanding of the technical details behind "Break The Monolith" and how it transforms your monolithic architecture into microservices, visit our detailed technical guide on the [Understanding Break The Monolith](/how-to/understanding-break-the-monolith) page.
 
-<!-- 
 ## Explore "Break The Monolith" in Our Interactive Sandbox
 
 "Break The Monolith" can also be explored in a sandbox environment on Amplication's website. This environment lets you experience the feature before applying it to your services. You can experiment with a set of predefined entities and open-source repositories structured as monoliths.
--->
