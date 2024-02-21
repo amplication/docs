@@ -196,3 +196,7 @@ Incorporate Hashicorp Vault's powerful secrets management capabilities with the 
 ### JSON Logger
 
 The JSON Logger Plugin is designed for logging in JSON format. It offers configurable log levels, including 'fatal', 'error', 'warn', 'info', 'debug', 'trace', and 'silent'. Users can also add custom properties to log messages.
+
+### MQTT
+
+MQTT (Message Queuing Telemetry Transport) is an ISO standard publish-subscribe-based messaging protocol. It is designed for connections with remote locations where a "small code footprint" is required or the network bandwidth is limited. MQTT is highly scalable and is ideal for IoT devices, mobile applications, and messaging applications that require minimal data packets for communication.
