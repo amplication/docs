@@ -16,7 +16,7 @@ Just upload your `schema.prisma` file.
 Amplication will then search for models and [convert them into Amplication's internal structure](/getting-started/how-prisma-schema-is-converted-into-entities).
 
 :::note
-The **Import Prisma Schema** feature is available on all Amplication plans including Free accounts.
+The **Import Prisma Schema** feature is available on Amplication's Enterprise plan.
 :::
 
 This guide walks you through how to generate a custom `schema.prisma` file from your existing database and upload it to Amplication.
@@ -173,6 +173,16 @@ You'll now see the **Upload Prisma Schema** button in the top right corner.
 Click on this button and you'll be presented a form where you can upload your `schema.prisma` file.
 
 ![Upload Prisma Schema](./assets/upload-prisma-schema.png)
+
+<!--
+### Step 3.5 Optional AI-Driven Service Redesign
+
+After uploading your `schema.prisma` file, you can utilize Amplication's new Intelligent AI Helper to break down the entities from your schema into microservices.
+
+The AI Helper analyzes your uploaded schema and suggests an optimal microservice architecture. This process involves recommendations for efficient entity distribution and service structure optimization, all while maintaining your privacy and the integrity of your data models.
+
+To learn more visit Break the Monolith's [documentation page](/break-the-monolith).
+-->
 
 ### Step 4: Check the conversion logs
 
