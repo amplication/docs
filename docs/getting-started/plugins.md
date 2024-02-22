@@ -2,7 +2,7 @@
 id: plugins
 title: How To Use Plugins
 description: Learn how to use Amplication plugins that extend the functionality of your generated application.
-sidebar_label: Use Plugins
+sidebar_label: How To Use Plugins
 slug: /getting-started/plugins
 pagination_next: plugins/overview
 pagination_prev: getting-started/community-plugins
