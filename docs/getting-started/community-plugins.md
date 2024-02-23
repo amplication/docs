@@ -72,6 +72,10 @@ The _NestJS Auth Provider_ plugin must also be installed to use the JWT Auth Pro
 The _NestJS Auth Provider_ plugin must also be installed to use the Passport Basic Authentication plugin.
 :::
 
+### Auth0 Authentication Provider
+
+Integrate Auth0's robust authentication solutions into your service with the [Auth0 Authentication Provider](https://github.com/amplication/plugins/tree/master/plugins/auth-auth0) plugin. Auth0 offers a flexible, drop-in solution to add authentication and authorization services to your applications.
+
 ### Prettier
 
 [Prettier](https://github.com/amplication/plugins/tree/master/plugins/formatter-prettier) is an opinionated code formatter that automatically formats your code to ensure adherence to a consistent style. Code is automatically formatted every time it is committed.
@@ -91,6 +95,10 @@ It is commonly used to quickly access frequently used application data.
 
 [Redis Message Broker](https://github.com/amplication/plugins/tree/master/plugins/broker-redis) is an extension of the traditional Redis in-memory data store, allowing it to function as a message broker. 
 Install this plugin to leverage Redis's in-memory capabilities and enables asynchronous message communication between different parts of an application or between different applications.
+
+### Redis Caching
+
+Enhance your application's performance with the [Redis Caching](https://github.com/amplication/plugins/tree/master/plugins/cache-redis) plugin. Redis is known for its fast data retrieval capabilities, making it an excellent choice for implementing caching strategies.
 
 ### OpenAI
 
@@ -120,3 +128,75 @@ Add NestJS Api Swagger decorator to your service.
 The OpenAPI specification is a language-agnostic definition format used to describe RESTful APIs. [Nest provides a dedicated module](https://docs.nestjs.com/openapi/introduction) which allows generating such a specification by leveraging decorators.
 
 This plugin will specifically allow you to specify the structure of the request payload for create (POST) and update (PUT/PATCH) actions.
+
+### MS SQL Server DB
+
+Leverage Microsoft's enterprise-grade database management system for your applications with the [MS SQL Server DB](https://github.com/amplication/plugins/tree/master/plugins/db-sqlserver) plugin. This plugin ensures reliable data storage and powerful querying capabilities.
+
+### gRPC API
+
+Enhance your Amplication service with high-performance remote procedure calls using the [gRPC API](https://github.com/amplication/plugins/tree/master/plugins/transport-grpc) plugin. gRPC enables efficient communication between microservices, making it ideal for scalable architectures.
+
+### Supertokens Auth Provider
+
+Incorporate Supertokens' flexible authentication solutions into your service with the [Supertokens Auth Provider](https://github.com/amplication/plugins/tree/master/plugins/auth-supertokens) plugin, ensuring both security and enhanced user experience.
+
+### Terraform - AWS Core
+
+Provision AWS core network infrastructure using the [Terraform - AWS Core](https://github.com/amplication/plugins/tree/master/plugins/provisioning-terraform-aws-core) plugin. This plugin lays the foundation for building a robust cloud environment.
+
+### Terraform - AWS Database RDS
+
+Set up AWS Relational Database Service with ease using the [Terraform - AWS Database RDS](https://github.com/amplication/plugins/tree/master/plugins/provisioning-terraform-aws-database-rds) plugin, facilitating smooth database deployments in the cloud.
+
+### Terraform - AWS Deployment ECS
+
+Deploy your services on AWS Elastic Container Service using the [Terraform - AWS Deployment ECS](https://github.com/amplication/plugins/tree/master/plugins/provisioning-terraform-aws-deployment-ecs) plugin. It streamlines the creation and management of containerized applications.
+
+### AWS Secrets Manager
+
+Manage and secure application secrets with the [AWS Secrets Manager](https://github.com/amplication/plugins/tree/master/plugins/secrets-manager-aws-secret-manager) plugin. It integrates AWS's secrets management into your Amplication services, keeping sensitive information safe.
+
+### Github Actions - AWS ECS
+
+Automate your CI/CD pipeline and streamline deployments to AWS ECS with the [Github Actions - AWS ECS](https://github.com/amplication/plugins/tree/master/plugins/deployment-github-actions-aws-ecs) plugin, ensuring smooth and consistent delivery processes.
+
+### Terraform - AWS Repository ECR
+
+Provision AWS Elastic Container Registry for your Docker images with the [Terraform - AWS Repository ECR](https://github.com/amplication/plugins/tree/master/plugins/provisioning-terraform-aws-deployment-ecs) plugin, simplifying container image management in your CI/CD pipeline.
+
+### Terraform - GCP Core
+
+Provision Google Cloud Platform's core infrastructure with the [Terraform - GCP Core](https://github.com/amplication/plugins/tree/master/plugins/provisioning-terraform-gcp-core) plugin. This plugin is essential for setting up the foundational elements in GCP, enabling robust and scalable cloud environments.
+
+### Terraform - GCP Database Cloud SQL
+
+Deploy Google Cloud SQL instances seamlessly with the [Terraform - GCP Database Cloud SQL](https://github.com/amplication/plugins/tree/master/plugins/provisioning-terraform-gcp-database-csql) plugin. It simplifies database provisioning in GCP, ensuring consistent and efficient cloud database deployments.
+
+### Terraform - GCP Repository Artifact Registry
+
+Manage Google Cloud's Artifact Registry effectively with the [Terraform - GCP Repository Artifact Registry](https://github.com/amplication/plugins/tree/master/plugins/provisioning-terraform-gcp-repository-ar) plugin. This plugin streamlines the creation and administration of GCP's secure, scalable container registry and artifact storage.
+
+### Azure Key Vault Secrets Manager
+
+Securely manage and store your secrets with the [Azure Key Vault Secrets Manager](https://github.com/amplication/plugins/tree/master/plugins/secrets-manager-azure-key-vault) plugin. Integrating seamlessly with Azure's Key Vault, this plugin ensures the safety and accessibility of sensitive data across your services.
+
+### Bitwarden Secrets Manager
+
+The [Bitwarden Secrets Manager](https://github.com/amplication/plugins/tree/master/plugins/secrets-manager-bitwarden) plugin offers a secure and convenient way to manage sensitive data with the Bitwarden open-source password management solution. It provides a reliable method for storing and accessing your secrets.
+
+### Google Secret Manager
+
+Implement Google Cloud's Secret Manager in your services with the [Google Secret Manager](https://github.com/amplication/plugins/tree/master/plugins/secrets-manager-google-secret-manager) plugin. This plugin provides a robust mechanism for storing, managing, and accessing sensitive configuration data securely.
+
+### Hashicorp Vault Secrets Manager
+
+Incorporate Hashicorp Vault's powerful secrets management capabilities with the [Hashicorp Vault Secrets Manager](https://github.com/amplication/plugins/tree/master/plugins/secrets-manager-hashicorp-vault) plugin. Vault offers a comprehensive solution for securing, storing, and tightly controlling access to tokens, passwords, certificates, and other sensitive data.
+
+### JSON Logger
+
+The JSON Logger Plugin is designed for logging in JSON format. It offers configurable log levels, including 'fatal', 'error', 'warn', 'info', 'debug', 'trace', and 'silent'. Users can also add custom properties to log messages.
+
+### MQTT
+
+MQTT (Message Queuing Telemetry Transport) is an ISO standard publish-subscribe-based messaging protocol. It is designed for connections with remote locations where a "small code footprint" is required or the network bandwidth is limited. MQTT is highly scalable and is ideal for IoT devices, mobile applications, and messaging applications that require minimal data packets for communication.
