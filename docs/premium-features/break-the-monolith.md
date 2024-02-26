@@ -89,14 +89,6 @@ Redesign mode introduces a few more buttons to help you while redesigning your s
 Changes made in Redesign Mode are auto-saved, but they're not applied or visible to other team members until you click the **Apply** button.
 :::
 
-## Utilize AI for Smart Architecture Suggestions (Optional)
-
-The "AI Helper" button in the Architecture tab, also available in both the Project and Service Overview screens as "Break The Monolith" button, offer AI-driven suggestions for transforming services into an efficient microservice architecture. Select a service to initiate AI analysis, which includes service distribution and entity organization recommendations.
-
-:::note
-**This feature uses advanced LLMs for optimal microservices structuring suggestions**. Only anonymous data is shared during analysis, and it occurs exclusively when users proactively engage features utilizing LLMs. Users can opt out of LLM features, maintaining control over their data privacy.
-:::
-
 ## Starting with Prisma Schema in Break The Monolith
 
 Start with our [Import Prisma Schema](/how-to/import-prisma-schema) feature to leverage your existing database schemas instead of manually creating entities. Rapidly transition to optimized microservice configurations saving you even more time.
@@ -104,6 +96,16 @@ Start with our [Import Prisma Schema](/how-to/import-prisma-schema) feature to l
 This approach allows you to import your existing database structure into Amplication, where the Intelligent AI Helper can then suggest optimal microservice configurations.
 
 To get started with your Prisma schema upload, visit our [Import Prisma Schema](/how-to/import-prisma-schema) documentation for step-by-step instructions.
+
+## Utilize AI for Smart Architecture Suggestions (Optional)
+
+The "AI Helper" button in the Architecture tab, also available in both the Project and Service Overview screens as "Break The Monolith" button, offer AI-driven suggestions for transforming services into an efficient microservice architecture. Select a service to initiate AI analysis, which includes service distribution and entity organization recommendations.
+
+![Break The Monolith AI Helper](./assets/break-the-monolith-ai-helper.png)
+
+:::note
+**This feature uses advanced LLMs for optimal microservices structuring suggestions**. Only anonymous data is shared during analysis, and it occurs exclusively when users proactively engage features utilizing LLMs. Users can opt out of LLM features, maintaining control over their data privacy.
+:::
 
 ## Architecture Change Confirmation
 
@@ -128,3 +130,5 @@ For a deeper understanding of the technical details behind "Break The Monolith" 
 ## Explore "Break The Monolith" in Our Interactive Sandbox
 
 "Break The Monolith" can also be explored in a sandbox environment on Amplication's website. This environment lets you experience the feature before applying it to your services. You can experiment with a set of predefined entities and open-source repositories structured as monoliths.
+
+[Explore The Sandbox →](https://amplication.com/break-the-monolith)
