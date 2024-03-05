@@ -10,7 +10,7 @@ Enterprise plan users of Amplication can enhance their workflow by using our Git
 
 :::note
 Custom Git Base Branch is only **available for Enterprise Plan users**.
-Try it during your 14-day Enterprise plan trial for new workspaces.
+Try it during your 7-day Enterprise plan trial for new workspaces.
 :::
 
 ## Understanding the Custom Git Base Branch Feature

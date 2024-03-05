@@ -11,7 +11,7 @@ Organizations can integrate with their git provider to leverage the Git workflow
 
 :::note
 Access to more git providers is only **available for Enterprise Plan users**.
-Get temporary access during your 14-day Enterprise plan trial for new workspaces.
+Get temporary access during your 7-day Enterprise plan trial for new workspaces.
 Free plan users get access to [GitHub](/sync-with-github).
 :::
 
