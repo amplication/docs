@@ -12,7 +12,7 @@ This lets you do deep integration with internal systems and workflows.
 
 :::note
 Private Plugins is only **available for Enterprise Plan users**.
-Try it during your 14-day Enterprise plan trial for new workspaces.
+Try it during your 7-day Enterprise plan trial for new workspaces.
 :::
 
 ## Private Plugins vs Community Plugins
