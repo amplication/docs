@@ -12,7 +12,7 @@ This feature enables faster delivery of changes, as only the team members respon
 
 :::note
 Dedicated Git Branches are only **available for Enterprise Plan users**.
-Try it during your 14-day Enterprise plan trial for new workspaces.
+Try it during your 7-day Enterprise plan trial for new workspaces.
 :::
 
 ## Benefits

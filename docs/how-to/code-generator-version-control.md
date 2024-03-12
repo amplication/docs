@@ -13,7 +13,7 @@ While it's recommended to use the latest version, some teams may prefer having m
 
 :::note
 Code Generator Version Control is only **available for Enterprise Plan users**.
-Try it during your 14-day Enterprise plan trial for new workspaces.
+Try it during your 7-day Enterprise plan trial for new workspaces.
 :::
 
 ![Amplication Code Generator Version Control](./assets/code-generator-version-control.png)

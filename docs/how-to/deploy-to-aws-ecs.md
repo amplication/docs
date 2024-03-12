@@ -75,7 +75,7 @@ Generate credentials for the user created above and store the credentials as rep
 
 ### Step 1.1.2. Role (task execution - ecs service)
 
-When executing the service definition that will be pushed from the github actions workflow pipeline in tha last step of this walkthrough, a role must be assigned to the service with the appropriate permissions.
+When executing the service definition that will be pushed from the github actions workflow pipeline in the last step of this walkthrough, a role must be assigned to the service with the appropriate permissions.
 
 `role: <task-execution-role-name>`
 

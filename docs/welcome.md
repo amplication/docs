@@ -25,7 +25,7 @@ Amplication helps you build a fully functional backend in minutes. Just define y
 
 All generated Node.js applications include the following features:
 
-- Fully-functional [REST](/api/#rest-api) and [GraphQL](/api/#graphql-api) APIs for all your data models.
+- Fully-functional [REST](/api/#rest-api) and [GraphQL](/api/#graphql-apis) APIs for all your data models.
 - [Authentication](/authentication/) & Authorization
 - React Admin UI
 - Logging

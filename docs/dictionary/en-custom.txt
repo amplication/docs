@@ -93,3 +93,5 @@ kubeconfig
 DALLE
 frontends
 Zustand
+Supertokens
+Bitwarden

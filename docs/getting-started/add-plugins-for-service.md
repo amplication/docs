@@ -88,7 +88,7 @@ Amplication truly does save you a lot of time, and our plugin system is designed
 - [How To Use Plugins](/getting-started/plugins)
 - [Custom Plugin Development](/plugins/how-to-create-plugin/)
 
-Amplication provides many more plugins plugins for you to use with your service.
+Amplication provides many more plugins for you to use with your service.
 We're always working on releasing more.
 Visit the [How To Use Plugins](/getting-started/plugins/) page to learn more about which ones are available.
 
