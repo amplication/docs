@@ -9,7 +9,7 @@ pagination_next: null
 
 # Understanding Break The Monolith
 
-[Break The Monolith](/break-the-monolith) is a new feature, currently in Beta, for transitioning monolithic architectures into efficient, scalable microservices.
+[Break The Monolith](/break-the-monolith) is a new feature for transitioning monolithic architectures into efficient, scalable microservices.
 
 This page provides an in-depth technical overview of how it alters your project's architecture, particularly focusing on entity relationships and database schema transformations.
 
