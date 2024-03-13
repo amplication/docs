@@ -35,9 +35,8 @@ To implement event-driven architecture in your Amplication project, you'll need 
 
 1. Create a message broker
 2. Define topics
-3. Connect services to the message broker
-4. Install the Kafka plugin
-5. Implement event production and consumption logic
+3. Connect services to the message broker and relevant topics
+4. Implement event production and consumption logic
 
 :::info
 For a step-by-step guide on building an event-driven application with Amplication and Kafka, refer to the blog post: [Building Real-time Applications with Amplication and Kafka](https://amplication.com/blog/building-real-time-applications-with-amplication-and-kafka).
@@ -45,7 +44,9 @@ For a step-by-step guide on building an event-driven application with Amplicatio
 
 ## Step 1: Create a Message Broker
 
-In your Amplication project, navigate to "Add Resource" and select "[Message Broker](/how-to/create-message-broker)". This will lead you to the Message Broker Creation Wizard. Configure the settings for your message broker, such as the broker type (e.g., Kafka) and connection details.
+In your Amplication project, navigate to "Add Resource" and select "[Message Broker](/how-to/create-message-broker)". This will lead you to the Message Broker Creation Wizard. 
+
+After creating the message broker, you'll be able to configure the settings by installing and configuring the appropriate [message broker plugin](#supported-message-brokers).
 
 ![Message Broker Creation Wizard](./assets/message-broker-creation-wizard.png)
 
@@ -61,17 +62,19 @@ For each service that needs to interact with the message broker, enable the mess
 
 ![Service Connections Tab](./assets/service-connections-tab.png)
 
-## Step 4: Install the Kafka Plugin
-
-To use Apache Kafka as your message broker, install the [Kafka plugin](/getting-started/plugins) in each service that will be producing or consuming messages. The Kafka plugin provides the necessary dependencies and configurations for seamless integration with Kafka.
-
-![Kafka Plugin](./assets/kafka-plugin.png)
-
-## Step 5: Implement Event Production and Consumption
+## Step 4: Implement Event Production and Consumption
 
 In your producer services, add logic to publish events to the appropriate topics when certain actions or conditions occur. Use the provided Kafka client to send messages to the desired topics.
 
 In your consumer services, define event handlers that process the messages received from the subscribed topics. You can use decorators like `@EventPattern()` to map event handlers to specific topics and handle incoming messages accordingly.
+
+## Supported Message Brokers
+
+Amplication supports using Kafka, MQTT, Redis Message Broker, and various others as your message broker. To find the one most suitable to your project visit the **Plugins** tab and then click on the _Message broker_ category.
+
+To use it, install the [message broker plugin](/getting-started/plugins) in each service that will be producing or consuming messages.
+
+![Message Broker Plugins](./assets/message-broker-plugins.png)
 
 ## Conclusion
 
