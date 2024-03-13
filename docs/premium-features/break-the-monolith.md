@@ -15,7 +15,7 @@ It introduces a new project-level _Architecture_ tab to simplify the process of 
 This guide will walk you through the steps to effectively utilize Break The Monolith for improving your application's architecture.
 
 :::note
-The "Break The Monolith" feature is currently in beta and **available to Enterprise workspaces including trial workspaces**.
+The "Break The Monolith" feature is **available to Enterprise workspaces including trial workspaces**.
 :::
 
 ## How To Use "Break The Monolith"
