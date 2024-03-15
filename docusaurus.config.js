@@ -240,7 +240,7 @@ module.exports = {
           },
           {
             to: "/custom-types-and-actions",
-            from: ["/custom-actions", "/custom-code/custom-dto"]
+            from: ["/custom-actions"]
           }
         ],
       },
