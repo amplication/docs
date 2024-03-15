@@ -238,6 +238,10 @@ module.exports = {
             to: "/first-service/",
             from: ["/first-app/"],
           },
+          {
+            to: "/custom-types-and-actions",
+            from: ["/custom-actions", "/custom-code/custom-dto"]
+          }
         ],
       },
     ],
