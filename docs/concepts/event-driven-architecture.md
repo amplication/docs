@@ -33,10 +33,11 @@ Before getting started, let's define some important concepts and terms related t
 
 To implement event-driven architecture in your Amplication project, you'll need to:
 
-1. Create a message broker
+1. Create a message broker resource
 2. Define topics
-3. Connect services to the message broker and relevant topics
-4. Implement event production and consumption logic
+3. Install a message broker plugin
+4. Connect services to the message broker and relevant topics
+5. Implement event production and consumption logic
 
 :::info
 For a step-by-step guide on building an event-driven application with Amplication and Kafka, refer to the blog post: [Building Real-time Applications with Amplication and Kafka](https://amplication.com/blog/building-real-time-applications-with-amplication-and-kafka).
@@ -56,19 +57,7 @@ Create topics that represent the different event categories in your system. Topi
 
 ![Message Broker Topics](./assets/message-broker-topics.png)
 
-## Step 3: Connect Services
-
-For each service that needs to interact with the message broker, enable the message broker integration in your service's _Connections_ tab. Specify whether the service should act as a producer or consumer for each relevant topic.
-
-![Service Connections Tab](./assets/service-connections-tab.png)
-
-## Step 4: Implement Event Production and Consumption
-
-In your producer services, add logic to publish events to the appropriate topics when certain actions or conditions occur. Use the provided Kafka client to send messages to the desired topics.
-
-In your consumer services, define event handlers that process the messages received from the subscribed topics. You can use decorators like `@EventPattern()` to map event handlers to specific topics and handle incoming messages accordingly.
-
-## Supported Message Brokers
+## Step 3: Install Message Broker Plugin
 
 Amplication supports using Kafka, MQTT, Redis Message Broker, and various others as your message broker. To find the one most suitable to your project visit the **Plugins** tab and then click on the _Message broker_ category.
 
@@ -76,9 +65,21 @@ To use it, install the [message broker plugin](/getting-started/plugins) in each
 
 ![Message Broker Plugins](./assets/message-broker-plugins.png)
 
+## Step 4: Connect Services
+
+For each service that needs to interact with the message broker, enable the message broker integration in your service's _Connections_ tab. Specify whether the service should act as a producer or consumer for each relevant topic.
+
+![Service Connections Tab](./assets/service-connections-tab.png)
+
+## Step 5: Implement Event Production and Consumption
+
+In your producer services, add logic to publish events to the appropriate topics when certain actions or conditions occur. Use your chosen message broker client to send messages to the desired topics.
+
+In your consumer services, define event handlers that process the messages received from the subscribed topics. You can use decorators like `@EventPattern()` to map event handlers to specific topics and handle incoming messages accordingly.
+
 ## Conclusion
 
-By leveraging event-driven architecture, you can build microservices that are scalable, responsive, and adaptable to changing requirements. Amplication's built-in support for message brokers and easy integration with Kafka makes it straightforward to implement event-driven communication between your microservices.
+By leveraging event-driven architecture, you can build microservices that are scalable, responsive, and adaptable to changing requirements. Amplication's built-in support for message brokers and easy integration with various message broker plugins makes it straightforward to implement event-driven communication between your microservices.
 
 ## Further Reading
 
