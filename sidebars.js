@@ -29,6 +29,7 @@ const sidebars = {
         "getting-started/view-generated-code",
         "how-to/add-custom-code",
         "getting-started/authentication",
+        "concepts/event-driven-architecture",
         {
           type: "category",
           label: "Generated API",
