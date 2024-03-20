@@ -86,7 +86,8 @@ const sidebars = {
         "premium-features/enterprise-git-providers",
         "premium-features/custom-base-branch",
         "premium-features/private-plugins",
-        "premium-features/break-the-monolith"
+        "premium-features/break-the-monolith",
+        "premium-features/custom-types-and-actions"
       ]
     },
     {
@@ -131,7 +132,6 @@ const sidebars = {
           ],
         },
         "how-to/understanding-break-the-monolith",
-        "how-to/custom-actions",
         "getting-started/deploy-docker-desktop",
         "how-to/deploy-kubernetes",
         "how-to/deploy-to-aws-ecs",
