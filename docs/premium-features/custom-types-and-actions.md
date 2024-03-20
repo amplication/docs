@@ -8,11 +8,33 @@ slug: /custom-types-and-actions
 
 Custom Types & Actions is an enhanced feature that gives you full control over your Data Transfer Objects (DTOs) and APIs. It allows you to automatically generate high-quality, efficient code for both the default CRUD operations and your custom APIs that utilize custom DTOs, all within your REST and/or GraphQL APIs.
 
-Custom Types & Actions let you define custom data structures, create API endpoints, and manage the relationships between them, all within the Amplication UI. These changes are automatically translated into production-ready code in your repository, ensuring the best quality and ,efficiency.
+Custom Types & Actions let you define custom data structures (Types), create API endpoints (Actions), and manage the relationships between them, all within the Amplication UI. These changes are automatically translated into production-ready code in your repository, ensuring the best quality and efficiency.
 
 :::note
 The Custom Types & Actions feature is available for Amplication's **Enterprise** plan, including trial plans.
 :::
+
+## What Are Types And Actions?
+
+In Amplication, Types and Actions are fundamental concepts that define the data structures and API endpoints of your application.
+
+### Types
+
+Types in Amplication refer to the data structures used to define the shape and format of your application's data. There are two main categories of types:
+
+1. **Data Transfer Objects (DTOs)**: DTOs are custom data structures that define the input and output data for your API endpoints (Actions). They encapsulate the data that is transferred between the client and the server or between different services within your application.
+
+2. **Primitives**: Primitives are the basic data types supported by Amplication, such as String, Integer, Boolean, Date, and JSON. These primitives can be used as fields within your DTOs or as standalone types for your Actions.
+
+### Actions
+
+Actions in Amplication represent the API endpoints that define the operations available in your application. Each Action specifies the HTTP method (GET, POST, PUT, DELETE, etc.), path, input, and output data structures for a specific API endpoint.
+
+Actions can be of two types:
+
+1. **Default CRUD Actions**: Amplication automatically generates default CRUD (Create, Read, Update, Delete) Actions based on your application's entities. These Actions provide standard API endpoints for interacting with your data.
+
+2. **Custom Actions**: Custom Actions are user-defined API endpoints that extend the functionality of your application beyond the default CRUD operations. You can create Custom Actions to implement specific business logic, perform complex data transformations, or integrate with external services.
 
 ## Accessing Custom Types & Actions
 
@@ -26,7 +48,7 @@ The APIs tab provides a centralized view of all your project's Modules, DTOs, an
 
 Modules are organizational units that group related DTOs and Actions together. They help structure your application in a logical and maintainable way.
 
-Modules are closely tied to entities in your application, with each entity being generated as a Module containing all the entity's code (DTOs, APIs, and more). Each Module is generated as a folder containing all the DTOs and APIs code related to that Module. You can also create additional Modules based on your business needs and requirements.
+Modules are closely tied to entities in your application. Each entity is generated as a Module containing all the DTO and API code related to that Module. You can also create additional Modules based on your business needs and requirements.
 
 ### Create Module
 
@@ -108,13 +130,6 @@ To create a new DTO, follow these steps:
    - If needed, you can change the property to an array by toggling the "Array" switch.
    - Mark the property as optional by checking the "Optional" checkbox.
 3. Repeat step 2 for each additional property you want to add to the DTO.
-4. If you need to define a union type for a property, click on "+ Add union type" and specify the types for the union.
-
-#### Finalizing DTO Creation
-
-Click the "Create DTO" button to finalize the creation process.
-
-After completing these steps, your new DTO will be created within the selected Module, and you can further customize its properties and relationships as needed.
 
 ### Create Enum
 
@@ -134,12 +149,6 @@ To create a new Enum, follow these steps:
    - Specify the Name of the member.
    - Provide the Value for the member.
 3. Repeat step 2 for each additional member you want to add to the Enum.
-
-#### Finalizing Enum Creation
-
-Click the "Create Enum" button to finalize the creation process.
-
-After completing these steps, your new Enum will be created within the selected Module, and you can use it as a type for properties in your DTOs or as input/output types for your Actions.
 
 ### Edit DTO or Enum
 
@@ -165,11 +174,16 @@ To create a new Action, follow these steps:
 2. Provide a Display Name for your new Action, such as "My New Module Name". This will automatically populate the Name field with a generated name like "MyNewModuleName".
 3. Optionally, add a description for your Action.
 
+:::note
+If you're defining a new action from the "All Modules" screen, you can choose which Module the Action will reside in.
+:::
+
 #### Choosing Types
 
 1. In the "Types" section, select the input and output types for your Action:
-   - For the Input Type, choose "DTO" from the dropdown and click "Select..." to pick an existing DTO or create a new one.
-   - For the Output Type, choose "DTO" from the dropdown and click "Select..." to pick an existing DTO or create a new one.
+   - For the Input Type, choose the type of the property from the dropdown (e.g., "String", "Number", "Boolean", "Date", "JSON", "DTO", "Enum").
+   - If you choose "DTO", click "Select..." to pick an existing DTO or create a new one.
+   - Repeat the same steps for the Output Type.
 2. If needed, you can change the Input Type or Output Type to an array by toggling the "Array" switch.
 
 #### REST API Settings
@@ -181,12 +195,6 @@ To create a new Action, follow these steps:
 #### GraphQL API Settings
 
 Choose the Operation Type for your Action (e.g., "query" or "mutation").
-
-#### Finalizing Action Creation
-
-Click the "Create Action" button to finalize the creation process.
-
-After completing these steps, your new Action will be created within the selected Module, and you can further customize its settings and behavior as needed.
 
 ![Create Action](./assets/custom-types-and-actions/create-action.png)
 
@@ -206,13 +214,14 @@ Disabling an Action will cause Amplication not to generate the code for that Act
 
 ### Edit and Delete Action
 
-To edit an Action, click on the Action within its associated Module in the APIs tab. You can modify the Action's properties, such as the HTTP method, path, input DTO, output DTO, and other settings as needed. Remember to save your changes when you're done.
+To edit an Action, click on the Action within its associated Module in the APIs tab. You can modify the Action's properties, such as the HTTP method, path, input DTO, output DTO, and other settings as needed.
 
 To delete an Action, click on the delete button next to the Action's name. Be cautious when deleting Actions, as it may impact other parts of your application that depend on them.
 
 :::note
-Moving or duplicating Actions (and DTOs) is currently not be supported.
+Actions generated by Amplication **cannot be deleted**.
 :::
+
 
 ## Conclusion
 
