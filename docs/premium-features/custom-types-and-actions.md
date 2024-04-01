@@ -7,9 +7,11 @@ pagination_next: api/index
 
 # Custom Types & Actions
 
-Custom Types & Actions is an enhanced feature that gives you full control over your Data Transfer Objects (DTOs) and APIs. It allows you to automatically generate high-quality, efficient code for both the default CRUD operations and your custom APIs that utilize custom DTOs, all within your REST and/or GraphQL APIs.
+Custom Types & Actions is an enhanced feature that gives you full control over your Data Transfer Objects (DTOs) and APIs. It offers a single source of truth for your APIs and DTOs, enabling fast creation of all your API endpoints and promoting standardization across your codebase.
 
-Custom Types & Actions let you define custom data structures (Types), create API endpoints (Actions), and manage the relationships between them, all within the Amplication UI. These changes are automatically translated into production-ready code in your repository, ensuring the best quality and efficiency.
+Custom Types & Actions let you define custom data structures (Types), create API endpoints (Actions), and manage the relationships between them, all within the Amplication UI. 
+
+It allows you to automatically generate both the default CRUD operations and your custom APIs that utilize custom DTOs, all within your REST and/or GraphQL APIs. These changes are automatically translated into production-ready code in your repository, ensuring the best quality and efficiency.
 
 :::note
 The Custom Types & Actions feature is available for Amplication's **Enterprise** plan, including trial plans.
@@ -33,8 +35,8 @@ Actions in Amplication represent the API endpoints that define the operations av
 
 For [REST API](/api/#rest-apis), an Action defines:
 
-- HTTP method (GET, POST, PUT, DELETE, etc.)
-- Path (e.g., `/users` or `/products/:id`)
+- HTTP verb (GET, POST, PUT, DELETE, etc.)
+- Route (e.g., `/users` or `/products/:id`)
 - Input parameters (query, path, or request body)
 - Output data structure (response body)
 
@@ -62,6 +64,8 @@ Actions can be of two types:
      - `updateEntity(id: ID!, input: UpdateEntityInput!)` (Update)
      - `deleteEntity(id: ID!)` (Delete)
 
+Amplication also generates Default _Relation_ CRUD Actions for all of your entities. For example, Get all books for a specific author, or get an author for a specific book.
+
 2. **Custom Actions**: Custom Actions are user-defined API endpoints that extend the functionality of your application beyond the default CRUD operations. You can create Custom Actions to implement specific business logic, perform complex data transformations, or integrate with external services.
 
 ## Accessing Custom Types & Actions
@@ -74,9 +78,13 @@ The APIs tab provides a centralized view of all your project's Modules, DTOs, an
 
 ## Modules
 
-Modules are organizational units that group related DTOs and Actions together. They help structure your application in a logical and maintainable way.
+Modules are organizational units that group related DTOs and Actions together. They help structure your application in a logical and maintainable way by encapsulating a unit of business logic related to one application domain.
 
-Modules are closely tied to entities in your application. Each entity is generated as a Module containing all the DTO and API code related to that Module. You can also create additional Modules based on your business needs and requirements.
+By default, Amplication creates a module for each database entity in your application. These entity-related modules contain all the CRUD operations and associated code for that specific entity. However, creating modules is not limited to database entities alone.
+
+You can create your own custom modules based on your business needs and requirements. Custom modules allow you to organize and encapsulate business logic that may not directly correspond to a single database entity but rather spans across multiple entities or represents a specific functionality in your application.
+
+Whether it's an entity-related module or a custom module you've created, you can add custom DTOs and custom Actions to a module to define the data structures and API endpoints specific to that module's responsibilities.
 
 ### Create Module
 
@@ -160,7 +168,7 @@ If you create a new DTO / Enum from the "All Modules" screen, you can choose whi
    - Specify the Name of the property (e.g., "firstProperty").
    - Choose the Type of the property from the dropdown (e.g., "String", "Number", "Boolean", "Date", "JSON", "DTO", "Enum").
    - If needed, you can change the property to an array by toggling the "Array" switch.
-   - Mark the property as optional by checking the "Optional" checkbox.
+   - If needed, mark the property as optional by checking the "Optional" checkbox.
 3. Repeat step 2 for each additional property you want to add to the DTO.
 
 ### Create Enum
@@ -188,12 +196,12 @@ To edit an existing DTO, click on the DTO within its associated Module in the AP
 
 ## Actions
 
-Actions represent the API endpoints that define the operations available in your application. They specify the HTTP methods, paths, input, and output data structures for each endpoint.
+Actions represent the API endpoints that define the operations available in your application. They specify the HTTP verbs, routes, input, and output data structures for each endpoint.
 
 Actions use DTOs to define their input and output data. Each Action can have a request DTO (for input) and a response DTO (for output). Amplication generates built-in Actions based on your application's entities for CRUD operations, but you can also create custom Actions to implement specific functionality.
 
 :::note
-The generated Amplication service has support for HTTP mode only. Our [HTTPs plugin](https://amplication.com/plugins/transport-https) adds support for HTTPS mode and TLS termination at the app level.
+By default, the generated Amplication service exposes its endpoints over HTTP to allow HTTPS termination at a higher level (like an API Gateway, etc.). However, our [HTTPs plugin](https://amplication.com/plugins/transport-https) adds support for HTTPS mode and TLS termination at the app level.
 :::
 
 ### Create Action
@@ -220,8 +228,8 @@ If you create a new Action from the "All Modules" screen, you can choose which M
 
 #### REST API Settings
 
-1. Choose the appropriate HTTP Method from the dropdown (e.g., "get", "post", "put", "delete").
-2. Specify the Path for your Action (e.g., "/id/my-new-module-name").
+1. Choose the appropriate HTTP verb from the dropdown (e.g., "get", "post", "put", "delete").
+2. Specify the route for your Action (e.g., "/id/my-new-module-name").
 3. Select the Input Source for your Action's parameters (e.g., "body", "query", "params", or "split") from the dropdown.
 
 #### GraphQL API Settings
@@ -246,7 +254,7 @@ Disabling an Action will cause Amplication not to generate the code for that Act
 
 ### Edit and Delete Action
 
-To edit an Action, click on the Action within its associated Module in the APIs tab. You can modify the Action's properties, such as the HTTP method, path, input DTO, output DTO, and other settings as needed.
+To edit an Action, click on the Action within its associated Module in the APIs tab. You can modify the Action's properties, such as the HTTP verb, route, input DTO, output DTO, and other settings as needed.
 
 To delete an Action, click on the delete button next to the Action's name. Be cautious when deleting Actions, as it may impact other parts of your application that depend on them.
 
@@ -256,4 +264,4 @@ Actions generated by Amplication **cannot be deleted**.
 
 ## Conclusion
 
-Custom Types & Actions in Amplication provide a powerful and flexible way to define and manage your application's data structures and API endpoints. By leveraging custom DTOs and Actions, you can create a tailored and efficient API that meets your specific requirements and generates the production-ready code for it in your repository.
+Custom Types & Actions in Amplication streamline the process of creating and managing your application's APIs and data structures. With a single source of truth, fast creation capabilities, and standardization benefits, you can focus on building the core functionality of your application while Amplication takes care of generating high-quality, production-ready code for your APIs in your repository.
