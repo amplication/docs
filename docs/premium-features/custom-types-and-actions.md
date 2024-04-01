@@ -9,7 +9,7 @@ pagination_next: api/index
 
 Custom Types & Actions is an enhanced feature that gives you full control over your Data Transfer Objects (DTOs) and APIs. It offers a single source of truth for your APIs and DTOs, enabling fast creation of all your API endpoints and promoting standardization across your codebase.
 
-Custom Types & Actions let you define custom data structures (Types), create API endpoints (Actions), and manage the relationships between them, all within the Amplication UI. 
+Custom Types & Actions, currently in Beta, let you define custom data structures (Types), create API endpoints (Actions), and manage the relationships between them, all within the Amplication UI. 
 
 It allows you to automatically generate both the default CRUD operations and your custom APIs that utilize custom DTOs, all within your REST and/or GraphQL APIs. These changes are automatically translated into production-ready code in your repository, ensuring the best quality and efficiency.
 
