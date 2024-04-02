@@ -131,6 +131,7 @@ const sidebars = {
             "getting-started/cli"
           ],
         },
+        "how-to/analytics-dashboard",
         "how-to/understanding-break-the-monolith",
         "getting-started/deploy-docker-desktop",
         "how-to/deploy-kubernetes",
