@@ -161,6 +161,8 @@ If you create a new DTO / Enum from the "All Modules" screen, you can choose whi
 3. Provide a name for your DTO, such as "MyNewDtoName". This will automatically populate the Name field with the provided name.
 4. Optionally, add a description for your DTO.
 
+![DTO Name and Description](./assets/custom-types-and-actions/dto-name-and-description.png)
+
 #### Adding Properties
 
 1. In the "Properties" section, click on "Add property" to define the DTO's properties.
@@ -170,6 +172,8 @@ If you create a new DTO / Enum from the "All Modules" screen, you can choose whi
    - If needed, you can change the property to an array by toggling the "Array" switch.
    - If needed, mark the property as optional by checking the "Optional" checkbox.
 3. Repeat step 2 for each additional property you want to add to the DTO.
+
+![DTO Adding Properties](./assets/custom-types-and-actions/dto-properties.png)
 
 ### Create Enum
 
@@ -218,6 +222,8 @@ To create a new Action, follow these steps:
 If you create a new Action from the "All Modules" screen, you can choose which Module the Action will reside in.
 :::
 
+![Action Name and Description](./assets/custom-types-and-actions/action-name-and-description.png)
+
 #### Choosing Types
 
 1. In the "Types" section, select the input and output types for your Action:
@@ -226,17 +232,21 @@ If you create a new Action from the "All Modules" screen, you can choose which M
    - Repeat the same steps for the Output Type.
 2. If needed, you can change the Input Type or Output Type to an array by toggling the "Array" switch.
 
+![Action Choosing Types](./assets/custom-types-and-actions/action-input-output-types.png)
+
 #### REST API Settings
 
 1. Choose the appropriate HTTP verb from the dropdown (e.g., "get", "post", "put", "delete").
 2. Specify the route for your Action (e.g., "/id/my-new-module-name").
 3. Select the Input Source for your Action's parameters (e.g., "body", "query", "params", or "split") from the dropdown.
 
+![Action REST Settings](./assets/custom-types-and-actions/action-rest.png)
+
 #### GraphQL API Settings
 
 Choose the Operation Type for your Action (e.g., "query" or "mutation").
 
-![Create Action](./assets/custom-types-and-actions/create-action.png)
+![Action GraphQL Settings](./assets/custom-types-and-actions/action-graphql.png)
 
 ### Enable and Disable Actions
 
