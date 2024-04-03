@@ -168,7 +168,7 @@ If you create a new DTO / Enum from the "All Modules" screen, you can choose whi
 1. In the "Properties" section, click on "Add property" to define the DTO's properties.
 2. For each property:
    - Specify the Name of the property (e.g., "firstProperty").
-   - Choose the Type of the property from the dropdown (e.g., "String", "Number", "Boolean", "Date", "JSON", "DTO", "Enum").
+   - Choose the Type of the property from the dropdown (You can filter by Primitives, DTOs, or Enums. You can also search for any available type).
    - If needed, you can change the property to an array by toggling the "Array" switch.
    - If needed, mark the property as optional by checking the "Optional" checkbox.
 3. Repeat step 2 for each additional property you want to add to the DTO.
@@ -227,8 +227,7 @@ If you create a new Action from the "All Modules" screen, you can choose which M
 #### Choosing Types
 
 1. In the "Types" section, select the input and output types for your Action:
-   - For the Input Type, choose the type of the property from the dropdown (e.g., "String", "Number", "Boolean", "Date", "JSON", "DTO", "Enum").
-   - If you choose "DTO", click "Select..." to pick an existing DTO or create a new one.
+   - For the Input Type, choose the type of the property from the dropdown (You can filter by Primitives, DTOs, or Enums. You can also search for any available type).
    - Repeat the same steps for the Output Type.
 2. If needed, you can change the Input Type or Output Type to an array by toggling the "Array" switch.
 
