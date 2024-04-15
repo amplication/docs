@@ -7,7 +7,7 @@ slug: /getting-started
 
 # The Generated Service
 
-When you use Amplication to create your backend service, we automatically generate a codebase that follows best practices for software development and is fully functionable, human-readable and editable.
+When you use Amplication to create your backend service, we automatically generate a codebase that follows best practices for software development and is fully functional, human-readable, and editable.
 
 Some of the key features of our generated backend services include:
 
@@ -43,7 +43,7 @@ Below are the technologies employed for Node.js and .NET, ensuring efficient, re
 #### .NET
 
 - [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet) - A framework for building internet-connected, web-based applications.
-- [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/) - A modern object-database mapper for .NET. It supports LINQ queries, change tracking, updates, and schema migrations.
+- [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/) - A modern object-database mapper for .NET. It supports queries, change tracking, updates, and schema migrations.
 - [SQL Server](https://www.microsoft.com/en-us/sql-server) - A relational database management system developed by Microsoft.
 - [IdentityServer](https://identityserver.io/) - An OpenID Connect and OAuth 2.0 framework for ASP.NET Core, enabling you to serve and authenticate API requests securely.
 - [XUnit](https://xunit.net/) - A free, open source, community-focused unit testing tool for the .NET Framework.
