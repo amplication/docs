@@ -10,7 +10,7 @@ slug: /
 
 Hello and welcome to Amplication's developer documentation.
 
-[Amplication](/about/) is an open-source backend development tool. It accelerates the development of Node.js applications by auto-generating production-ready backends.
+[Amplication](/about/) is an open-source backend development tool. It accelerates the development of Node.js and .NET applications by auto-generating production-ready backends.
 
 Streamline your development process and increase productivity so you can focus on what matters most: **creating awesome applications**.
 
@@ -21,16 +21,16 @@ Set up a new service in less than 1 minute with our onboarding wizard.
 
 ## Key Features of Amplication
 
-Amplication helps you build a fully functional backend in minutes. Just define your [data models](/how-to/create-entity/), roles, and [permissions](/how-to/set-access-permissions/) — and Amplication will generate a Node.js application with everything you need.
+Amplication helps you build a fully functional backend in minutes. Just define your [data models](/how-to/create-entity/), roles, and [permissions](/how-to/set-access-permissions/) — and Amplication will generate a Node.js or .NET application with everything you need.
 
-All generated Node.js applications include the following features:
+All generated applications include the following features:
 
 - Fully-functional [REST](/api/#rest-api) and [GraphQL](/api/#graphql-apis) APIs for all your data models.
 - [Authentication](/authentication/) & Authorization
 - React Admin UI
 - Logging
 - [Smart Git Sync](/smart-git-sync/)
-- [Code Generation](/getting-started/view-generated-code/)
+- [Automatic Code Generation](/getting-started/view-generated-code/)
 - [Deploy](/deploy/) & Publish
 
 In addition, developers can utilize their skills to [customize the generated application](/how-to/custom-code/) afterwards.
