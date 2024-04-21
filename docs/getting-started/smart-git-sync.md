@@ -44,7 +44,7 @@ For example, let's say you've just added a new _Task_ entity to your project. On
 
 This method ensures that every single change you make in your Amplication project is automatically tracked and committed to the `amplication` branch in your Git repository. You can then easily review and merge these changes through pull requests.
 
-:::warning
+:::info
 After the Amplication build completes, review the PR, resolve any conflicts, and merge it. **Keep the `amplication` branch and avoid deleting it**.
 :::
 
