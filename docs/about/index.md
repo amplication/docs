@@ -8,11 +8,9 @@ Amplication is a backend development platform that simplifies and accelerates th
 
 ## Open Source and Commercial Offerings
 
-Amplication is proud to offer the free version of its Node.js application generation tools as open-source software and free for all to use. This ensures that developers can freely access, modify, and distribute the source code for their Node.js applications.
+Amplication offers both open-source and commercial solutions for backend service generation. The free version of our Node.js application generation tools is available as open-source software, allowing developers to freely access, modify, and distribute the source code. In addition, Amplication provides a premium Enterprise plan for its Node.js tools with additional features and support.
 
-The .NET functionality and the Enterprise Edition is available under a separate licensing model. For more information regarding the licensing details, please visit our [licensing model](/about/licensing) page.
-
-We are committed to a policy of complete transparency about our future direction.
+The .NET solution offered by Amplication is not open-source and is currently part of the Enterprise plan. For more information regarding the licensing details, please visit our [licensing model](/about/licensing) page.
 
 ## How Amplication can help you
 
