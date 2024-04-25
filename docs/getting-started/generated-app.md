@@ -11,7 +11,7 @@ When you use Amplication to create your backend service, we automatically genera
 
 Some of the key features of our generated backend services include:
 
-- **Extensive Functionality**: The generated services provide a wide range of features, including authentication, authorization, data validation, a React-based admin UI, logging, and a database. They also offer REST and GraphQL APIs for efficient data communication.
+- **Extensive Functionality**: The generated services provide a wide range of features, including authentication, authorization, data validation, logging, and a database. For Node.js services, they also offer REST and GraphQL APIs for efficient data communication and a React-based admin UI.
 - **Clean Architecture**: Both Node.js and .NET services are structured following the clean architecture principles, ensuring that the business logic is decoupled from the infrastructure and UI layers. This makes the code easier to maintain and test.
 - **Ready for Production**: The generated services include Docker configurations, CI/CD pipelines, and are optimized for cloud deployment, making it straightforward to move from development to production.
 - **Customizable and Extendable**: While the service provides a solid foundation, it is fully customizable. Developers can extend the generated code with custom features and integrate additional services as needed.
@@ -32,9 +32,6 @@ Below are the technologies employed for Node.js and .NET, ensuring efficient, re
 
 - [NestJS](https://nestjs.com/) - A progressive Node.js framework for building efficient, reliable and scalable server-side applications.
 - [Prisma](https://www.prisma.io/) - Next-generation ORM for Node.js and TypeScript.
-- [PostgreSQL](https://www.postgresql.org/) - The world's most advanced open source relational database
-- [MySQL](https://www.mysql.com/) - A popular, open source database delivering high performance scalable database applications.
-- [MongoDB](https://www.mongodb.com/) - A source-available, cross-platform, document-oriented, NoSQL database program.
 - [Passport](https://www.passportjs.org/) - Simple, unobtrusive authentication for Node.js
 - [GraphQL](https://graphql.org/) - a query language for APIs.
 - [Swagger UI](https://swagger.io/) - Visual documentation for REST API based on OpenAPI Specification.
@@ -45,9 +42,6 @@ Below are the technologies employed for Node.js and .NET, ensuring efficient, re
 
 - [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet) - A framework for building internet-connected, web-based applications.
 - [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/) - A modern object-database mapper for .NET. It supports queries, change tracking, updates, and schema migrations.
-- [SQL Server](https://www.microsoft.com/en-us/sql-server) - A relational database management system developed by Microsoft.
-- [IdentityServer](https://identityserver.io/) - An OpenID Connect and OAuth 2.0 framework for ASP.NET Core, enabling you to serve and authenticate API requests securely.
-- [XUnit](https://xunit.net/) - A free, open source, community-focused unit testing tool for the .NET Framework.
 - [Swagger](https://swagger.io/tools/swagger-ui/) - A Swagger tool implementation for API's built with ASP.NET Core, generating beautiful API documentation including a UI to explore and test operations, directly from your routes, controllers, and models.
 - [Docker](https://www.docker.com/) - Same as above, used for creating, deploying, and running applications using containers.
 
@@ -58,31 +52,31 @@ Below are the technologies employed for Node.js and .NET, ensuring efficient, re
 
 ## Projects Structure
 
-The code for your generated service is built from two projects, each in a separate folder, `server`, and an optional `admin`:
+The code for your generated service is built from a `server` project folder, and an optional `admin` folder for Node.js services:
 
 ```
 /
 |-- server/
 |   |-- (Your generated Server code)
 |-- admin/
-    |-- (Your generated Admin UI code)
+|-- (Your generated Admin UI code for Node.js services)
 ```
 
 Let's review what these two folders contain:
 
 ### Server
 
-The server project provides all the back-end services of your application, like REST API, GraphQL API, authentication, authorization, logging, data validation, and connection to the database.
+The server project provides all the back-end services of your application, like REST API, GraphQL API (for Node.js), authentication, authorization, logging, data validation, and connection to the database.
 
 :::note
-The following diagram shows a Node.js-generated service using PostgreSQL as an example. Other databases are also supported.
+The following diagram shows a Node.js-generated service as an example. Both Node.js and .NET are supported.
 :::
 
 ![](./assets/generated-app/app-components2.jpg)
 
 ### Admin
 
-The Admin project provide a React application with ready-made forms for creating and editing all the data models of your application. The React app is pre-configured to work with the server and comes with all the boilerplate and foundation for your client - routing and navigation, authentication, permissions, menu, breadcrumbs, error handling and much more.
+For Node.js services, the Admin project provides a React application with ready-made forms for creating and editing all the data models of your application. The React app is pre-configured to work with the server and comes with all the boilerplate and foundation for your client - routing and navigation, authentication, permissions, menu, breadcrumbs, error handling and much more.
 
 ![](./assets/generated-app/admin-ui.png)
 

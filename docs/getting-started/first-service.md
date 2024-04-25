@@ -8,7 +8,7 @@ slug: /first-service
 
 # Create Your First Service With Amplication
 
-Amplication accelerates your app development by helping you build production-ready backends in either Node.js or .NET. These automatically-generated backends, known as **services**, utilize modern frameworks such as NestJS and Prisma for Node.js, and ASP.NET Core alongside Entity Framework for .NET.
+Amplication accelerates your app development by helping you build production-ready backends in either Node.js or .NET. These automatically-generated backends, known as **services**, utilize modern frameworks such as NestJS and Prisma for Node.js, and ASP.NET Core alongside Entity Framework Core for .NET.
 
 Each service includes both REST and GraphQL APIs and comes with an interactive React Admin UI. These services offer a comprehensive solution that encompasses authentication, authorization, logging, git synchronization, and other critical backend management functionalities.
 
