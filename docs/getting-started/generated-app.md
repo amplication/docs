@@ -11,7 +11,7 @@ When you use Amplication to create your backend service, we automatically genera
 
 Some of the key features of our generated backend services include:
 
-- **Extensive Functionality**: The generated services provide a wide range of features, including authentication, authorization, data validation, logging, and a database. For Node.js services, they also offer REST and GraphQL APIs for efficient data communication and a React-based admin UI.
+- **Extensive Functionality**: The generated services provide a wide range of features, including authentication, authorization, data validation, logging, a database, and a REST API. For Node.js services, they also offer GraphQL APIs for efficient data communication and a React-based admin UI.
 - **Clean Architecture**: Both Node.js and .NET services are structured following the clean architecture principles, ensuring that the business logic is decoupled from the infrastructure and UI layers. This makes the code easier to maintain and test.
 - **Ready for Production**: The generated services include Docker configurations, CI/CD pipelines, and are optimized for cloud deployment, making it straightforward to move from development to production.
 - **Customizable and Extendable**: While the service provides a solid foundation, it is fully customizable. Developers can extend the generated code with custom features and integrate additional services as needed.
@@ -33,6 +33,9 @@ Below are the technologies employed for Node.js and .NET, ensuring efficient, re
 - [NestJS](https://nestjs.com/) - A progressive Node.js framework for building efficient, reliable and scalable server-side applications.
 - [Prisma](https://www.prisma.io/) - Next-generation ORM for Node.js and TypeScript.
 - [Passport](https://www.passportjs.org/) - Simple, unobtrusive authentication for Node.js
+- [MySQL](https://www.mysql.com/) - A popular, open source database delivering high performance scalable database applications.
+- [MongoDB](https://www.mongodb.com/) - A source-available, cross-platform, document-oriented, NoSQL database program.
+- [PostgreSQL](https://www.postgresql.org/) - The world's most advanced open source relational database.
 - [GraphQL](https://graphql.org/) - a query language for APIs.
 - [Swagger UI](https://swagger.io/) - Visual documentation for REST API based on OpenAPI Specification.
 - [Jest](https://jestjs.io/) - delightful JavaScript Testing Framework with a focus on simplicity.
@@ -42,6 +45,7 @@ Below are the technologies employed for Node.js and .NET, ensuring efficient, re
 
 - [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet) - A framework for building internet-connected, web-based applications.
 - [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/) - A modern object-database mapper for .NET. It supports queries, change tracking, updates, and schema migrations.
+- [SQL Server](https://www.microsoft.com/en-us/sql-server) - A relational database management system developed by Microsoft.
 - [Swagger](https://swagger.io/tools/swagger-ui/) - A Swagger tool implementation for API's built with ASP.NET Core, generating beautiful API documentation including a UI to explore and test operations, directly from your routes, controllers, and models.
 - [Docker](https://www.docker.com/) - Same as above, used for creating, deploying, and running applications using containers.
 

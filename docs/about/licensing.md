@@ -24,4 +24,4 @@ Amplication offers both open-source and commercial licensing options to accommod
 
 ## Amplication's Commitment to Open Source
 
-Amplication continues to uphold a strong commitment to the open-source community. While expanding with the Enterprise Edition, we ensure that our development practices and offerings do not undermine the integrity of our open-source projects.
+Amplication remains deeply committed to the open-source community. As we expand our offerings with the Enterprise Edition, we make sure to align our development practices and commercial solutions with the values of our open-source projects.
