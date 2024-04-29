@@ -35,7 +35,7 @@ Now, would you like me to create some default entities for your Blog service, su
 
 ## Creating an Entity with Fields
 
-Jovu can assist you in creating new entities and specifiying the required fields, making it easier to define your service's data models.
+Jovu can assist you in creating new entities and specifying the required fields, making it easier to define your service's data models.
 
 **Question**
 ```

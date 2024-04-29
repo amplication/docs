@@ -95,3 +95,5 @@ frontends
 Zustand
 Supertokens
 Bitwarden
+Jovu
+Jovu's
