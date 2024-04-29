@@ -49,6 +49,14 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Amplication AI",
+      items: [
+        "how-to/amplication-ai",
+        "how-to/amplication-ai-examples"
+      ]
+    },
+    {
+      type: "category",
       label: "Sync With Git",
       items: [
         "getting-started/smart-git-sync",
