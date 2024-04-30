@@ -33,9 +33,6 @@ Below are the technologies employed for Node.js and .NET, ensuring efficient, re
 - [NestJS](https://nestjs.com/) - A progressive Node.js framework for building efficient, reliable and scalable server-side applications.
 - [Prisma](https://www.prisma.io/) - Next-generation ORM for Node.js and TypeScript.
 - [Passport](https://www.passportjs.org/) - Simple, unobtrusive authentication for Node.js
-- [MySQL](https://www.mysql.com/) - A popular, open source database delivering high performance scalable database applications.
-- [MongoDB](https://www.mongodb.com/) - A source-available, cross-platform, document-oriented, NoSQL database program.
-- [PostgreSQL](https://www.postgresql.org/) - The world's most advanced open source relational database.
 - [GraphQL](https://graphql.org/) - a query language for APIs.
 - [Swagger UI](https://swagger.io/) - Visual documentation for REST API based on OpenAPI Specification.
 - [Jest](https://jestjs.io/) - delightful JavaScript Testing Framework with a focus on simplicity.
@@ -45,9 +42,19 @@ Below are the technologies employed for Node.js and .NET, ensuring efficient, re
 
 - [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet) - A framework for building internet-connected, web-based applications.
 - [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/) - A modern object-database mapper for .NET. It supports queries, change tracking, updates, and schema migrations.
-- [SQL Server](https://www.microsoft.com/en-us/sql-server) - A relational database management system developed by Microsoft.
 - [Swagger](https://swagger.io/tools/swagger-ui/) - A Swagger tool implementation for API's built with ASP.NET Core, generating beautiful API documentation including a UI to explore and test operations, directly from your routes, controllers, and models.
 - [Docker](https://www.docker.com/) - Same as above, used for creating, deploying, and running applications using containers.
+
+### Databases
+
+Amplication supports multiple databases to cater to your application's specific needs. The following databases are currently supported:
+
+- [MySQL](https://www.mysql.com/) - A popular, open-source relational database known for its reliability, simplicity, and performance.
+- [MongoDB](https://www.mongodb.com/) - A source-available, cross-platform, document-oriented NoSQL database program designed for ease of development and scaling.
+- [PostgreSQL](https://www.postgresql.org/) - A powerful, open-source object-relational database system with over 30 years of active development.
+- [MS SQL Server](https://www.microsoft.com/en-us/sql-server) - A high-performance, secure relational database by Microsoft, providing a reliable and scalable platform for applications.
+
+If you require support for a database not listed above, please [contact us](https://amplication.com/contact-us) to discuss potential integration options.
 
 ### Client-Side
 
