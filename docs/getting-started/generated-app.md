@@ -7,34 +7,54 @@ slug: /getting-started
 
 # The Generated Service
 
-Amplication auto-generates fully functional human-readable and editable services based on TypeScript and Node.js.
+When you use Amplication to create your backend service, we automatically generate a codebase that follows best practices for software development and is fully functional, human-readable, and editable.
 
-The generated services include NestJS, Prisma, REST API, GraphQL API, a React admin UI, authentication, authorization, logging, and more.
+Some of the key features of our generated backend services include:
 
-In this article you can find the details on the structure of a single service and the technologies behind it.
+- **Extensive Functionality**: The generated services provide a wide range of features, including authentication, authorization, data validation, logging, a database, and a REST API. For Node.js services, they also offer GraphQL APIs for efficient data communication and a React-based admin UI.
+- **Clean Architecture**: Both Node.js and .NET services are structured following the clean architecture principles, ensuring that the business logic is decoupled from the infrastructure and UI layers. This makes the code easier to maintain and test.
+- **Ready for Production**: The generated services include Docker configurations, CI/CD pipelines, and are optimized for cloud deployment, making it straightforward to move from development to production.
+- **Customizable and Extendable**: While the service provides a solid foundation, it is fully customizable. Developers can extend the generated code with custom features and integrate additional services as needed.
 
 :::note
-You can see an example of a service generated with Amplication in this repository
-
-https://github.com/amplication/sample-app
+You can see an example of a Node.js service generated with Amplication in this [GitHub repository](https://github.com/amplication/sample-app).
 :::
 
 ## Technologies
 
-The generated service is built with the following proven open-source technologies:
+The generated services utilize a suite of proven, robust technologies tailored for each supported technology.
+
+Below are the technologies employed for Node.js and .NET, ensuring efficient, reliable, and scalable server-side applications.
 
 ### Server-side
 
+#### Node.js
+
 - [NestJS](https://nestjs.com/) - A progressive Node.js framework for building efficient, reliable and scalable server-side applications.
 - [Prisma](https://www.prisma.io/) - Next-generation ORM for Node.js and TypeScript.
-- [PostgreSQL](https://www.postgresql.org/) - The world's most advanced open source relational database
-- [MySQL](https://www.mysql.com/) - A popular, open source database delivering high performance scalable database applications.
-- [MongoDB](https://www.mongodb.com/) - A source-available, cross-platform, document-oriented, NoSQL database program.
 - [Passport](https://www.passportjs.org/) - Simple, unobtrusive authentication for Node.js
 - [GraphQL](https://graphql.org/) - a query language for APIs.
 - [Swagger UI](https://swagger.io/) - Visual documentation for REST API based on OpenAPI Specification.
 - [Jest](https://jestjs.io/) - delightful JavaScript Testing Framework with a focus on simplicity.
 - [Docker](https://www.docker.com/) - an open platform for developing, shipping, and running applications.
+
+#### .NET
+
+- [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet) - A framework for building internet-connected, web-based applications.
+- [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/) - A modern object-database mapper for .NET. It supports queries, change tracking, updates, and schema migrations.
+- [Swagger](https://swagger.io/tools/swagger-ui/) - A Swagger tool implementation for API's built with ASP.NET Core, generating beautiful API documentation including a UI to explore and test operations, directly from your routes, controllers, and models.
+- [Docker](https://www.docker.com/) - Same as above, used for creating, deploying, and running applications using containers.
+
+### Databases
+
+Amplication supports multiple databases to cater to your application's specific needs. The following databases are currently supported:
+
+- [MySQL](https://www.mysql.com/) - A popular, open-source relational database known for its reliability, simplicity, and performance.
+- [MongoDB](https://www.mongodb.com/) - A source-available, cross-platform, document-oriented NoSQL database program designed for ease of development and scaling.
+- [PostgreSQL](https://www.postgresql.org/) - A powerful, open-source object-relational database system with over 30 years of active development.
+- [MS SQL Server](https://www.microsoft.com/en-us/sql-server) - A high-performance, secure relational database by Microsoft, providing a reliable and scalable platform for applications.
+
+If you require support for a database not listed above, please [contact us](https://amplication.com/contact-us) to discuss potential integration options.
 
 ### Client-Side
 
@@ -43,24 +63,31 @@ The generated service is built with the following proven open-source technologie
 
 ## Projects Structure
 
-The generated service is built from two projects, each in a separate folder
+The code for your generated service is built from a `server` project folder, and an optional `admin` folder for Node.js services:
 
-- Server - For all the server components including REST API, GraphQL, Services and more.
-- Admin - For the Admin UI including forms for CRUD operations on all data models.
+```
+/
+|-- server/
+|   |-- (Your generated Server code)
+|-- admin/
+|-- (Your generated Admin UI code for Node.js services)
+```
+
+Let's review what these two folders contain:
 
 ### Server
 
-The server project provides all the back-end services of your application, like REST API, GraphQL API, authentication, authorization, logging, data validation, and connection to the database.
+The server project provides all the back-end services of your application, like REST API, GraphQL API (for Node.js), authentication, authorization, logging, data validation, and connection to the database.
 
 :::note
-The following diagram shows PostgresSQL as an example. MySQL and MongoDB are also supported.
+The following diagram shows a Node.js-generated service as an example. Both Node.js and .NET are supported.
 :::
 
 ![](./assets/generated-app/app-components2.jpg)
 
 ### Admin
 
-The Admin project provide a React application with ready-made forms for creating and editing all the data models of your application. The React app is pre-configured to work with the server and comes with all the boilerplate and foundation for your client - routing and navigation, authentication, permissions, menu, breadcrumbs, error handling and much more.
+For Node.js services, the Admin project provides a React application with ready-made forms for creating and editing all the data models of your application. The React app is pre-configured to work with the server and comes with all the boilerplate and foundation for your client - routing and navigation, authentication, permissions, menu, breadcrumbs, error handling and much more.
 
 ![](./assets/generated-app/admin-ui.png)
 
