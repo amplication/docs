@@ -1,21 +1,21 @@
 ---
 id: amplication-ai-examples
 title: Amplication AI Examples
-sidebar_label: Amplication AI Examples
+sidebar_label: Examples
 slug: /amplication-ai-examples
 pagination_prev: how-to/amplication-ai
 ---
 
 # Amplication AI Examples
 
-Discover the power of Jovu, [Amplication's AI assistant](/amplication-ai), through these practical examples showcasing how it can help you with your projects.
+Discover the power of Jovu, [Amplication's AI assistant](/amplication-ai), through these practical examples showcasing how it can help you with your projects.  
 
 Jovu offers two main types of assistance:
 
-1. Direct task completion: Jovu can perform specific actions for you, such as creating services, defining entities, and configuring relations.
-2. Helpful answers from documentation: Jovu can provide you with relevant information and guidance from the documentation in response to your questions.
+1. **Direct task completion**: Jovu can perform specific actions for you, such as creating services, defining entities, configuring relations, and creating APIs.
+2. **Helpful answers**: Jovu can provide you with relevant information and guidance in response to your questions.
 
-Below, you'll find examples of tasks Jovu can accomplish and questions you can ask to get helpful answers. Each example includes a specific task or question and a sample response from Jovu. Feel free to use these questions as inspiration or copy and paste them directly into your Amplication dashboard to experience Jovu's assistance firsthand.
+Below, you'll find examples of tasks Jovu can accomplish and questions you can ask to get helpful answers. Each example includes a specific task or question and a sample response from Jovu. Feel free to use these as inspiration or copy and paste them directly into your Amplication dashboard to experience Jovu's assistance firsthand.
 
 ## Creating a New Service
 
@@ -23,15 +23,10 @@ When creating a new service, Jovu can help you automatically set up the basic st
 
 **Question**
 ```
-Can you create a new service for a blog application?
+Can you create a new service for a blog application that will have posts, categories, authors, and comments?
 ```
 
-**Jovu's Response**
-```
-I've successfully created a new service for your blog application. You can access it and customize it further using this link: Blog Service.
-
-Now, would you like me to create some default entities for your Blog service, such as Posts, Categories, Comments, and Authors?
-```
+![](./assets/amplication-ai/new-service.png)
 
 ## Creating an Entity with Fields
 
@@ -48,12 +43,6 @@ The "Customer" entity has been successfully created with fields for name, email,
 
 Is there anything else you would like to add or modify for your blog application?
 ```
-
-:::note
-The ability to modify an entity, its fields, or any of its relationships is currently not supported in the Beta version of Jovu.
-
-Instead, you can re-create the entity.
-:::
 
 ## Deploying an Amplication Project
 
