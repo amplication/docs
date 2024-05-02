@@ -42,7 +42,7 @@ You can ask Jovu questions or provide commands related to your Amplication proje
 Here are some examples of what you can ask Jovu:
 
 - `Create a new blog service with entities for posts, categories, authors, and comments`
-- `Add a new review entity to the ecommerce service with fields for rating, comment, reviewer name, and product reference`  
+- `Add a new review entity to the e-commerce service with fields for rating, comment, reviewer name, and product reference`  
 - `Generate the code for my pending changes so I can review it in GitHub`
 - `Create a DTO for creating new orders with fields for customer ID, product IDs, and quantities`
 - `Install the Google Secrets Manager plugin to help me handle secrets in my service`
