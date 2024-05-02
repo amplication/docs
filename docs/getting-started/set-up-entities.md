@@ -13,11 +13,15 @@ This introductory guide will walk you through creating and configuring new entit
 
 Let's get started.
 
+:::tip
+[Amplication's AI](/amplication-ai) can help you create new entities for your service, with all the necessary fields and relationships, with a single question.
+
+Ask Jovu: `I need to create a Customer entity with fields for name, email, and phone number. Can you assist me?`
+:::
+
 ## Prerequisites
 
-:::info
-If you haven't set up your service yet, [create your first service](/first-service/) using our Service Creation wizard.
-:::
+- If you haven't set up your first service yet, [create one first](/first-service/) with Jovu or using our Service Creation Wizard.
 
 ## Step 1: Create an Entity
 

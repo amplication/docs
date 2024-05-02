@@ -14,7 +14,7 @@ In less than four minutes, and with a few questions, you can go from an idea to 
 
 Making changes to your existing services is also a breeze. You can easily change your service's architecture, add new entities, install plugins, or make any necessary adjustments, all while maintaining a high-quality codebase.
 
-With Amplication AI, you get production-ready code for all your services, no matter how many you need. The [generated code](/getting-started/view-generated-code/) is clean, follows best practices, and is ready for your developers to dive in and add the custom logic that will make your application unique.
+With Amplication AI (currently in Beta), you get production-ready code for all your services, no matter how many you need. The [generated code](/getting-started/view-generated-code/) is clean, follows best practices, and is ready for your developers to dive in and add the custom logic that will make your application unique.
 
 Amplication AI opens up a world of possibilities for code generation. It empowers you to innovate and build applications faster than ever before.
 

@@ -17,6 +17,12 @@ Services are a full solution complete with authentication, authorization, loggin
 
 Let's get you started on creating your first service using our service creation onboarding wizard.
 
+:::tip
+[Amplication's AI](/amplication-ai) can help you build your first service with a single question in a few seconds.
+
+Ask Jovu: `Can you create a new blog service with entities for posts, categories, authors, and comments?`
+:::
+
 ## Prerequisites
 
 First, [sign up](https://app.amplication.com/login) for an Amplication account with GitHub or your _business_ email address.
