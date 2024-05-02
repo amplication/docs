@@ -1,21 +1,18 @@
 ---
 id: first-service
 title: Create Your First Service
-description: Amplication services are a full solution complete with authentication, authorization, logging, git sync, and other essential features for back-end management.
+description: Amplication services are a full back-end solution complete with authentication, authorization, logging, git sync, and other essential features for back-end management.
 sidebar_label: Create Your First Service
 slug: /first-service
 ---
 
 # Create Your First Service With Amplication
 
-Amplication accelerates your Node.js development by helping you build production-ready backends.
-These automatically-generated backends are known as **services**.
+Amplication accelerates your app development by helping you build production-ready backends in either Node.js or .NET. These automatically-generated backends, known as **services**, utilize modern frameworks such as NestJS and Prisma for Node.js, and ASP.NET Core alongside Entity Framework Core for .NET.
 
-Services are  built with modern frameworks like NestJS and Prisma.
-They also include a REST and GraphQL API and an interactive React Admin UI.
-Services are a full solution complete with authentication, authorization, logging, git sync, and other essential features for back-end management.
+Each service includes both REST and GraphQL APIs and comes with an interactive React Admin UI. These services offer a comprehensive solution that encompasses authentication, authorization, logging, git synchronization, and other critical backend management functionalities.
 
-Let's get you started on creating your first service using our service creation onboarding wizard.
+This guide will help you create your first service using our streamlined service creation onboarding wizard.
 
 ## Prerequisites
 
@@ -47,7 +44,6 @@ You can also create a new repository by clicking on the **Create repository** bu
 :::note
 In addition to GitHub, Amplication also supports [Bitbucket](/sync-with-bitbucket) and [AWS CodeCommit](/sync-with-aws-codecommit) for Enterprise users.
 :::
-
 
 ## Step 3: Customize Your Service
 
