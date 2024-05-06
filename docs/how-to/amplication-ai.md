@@ -10,7 +10,7 @@ pagination_next: how-to/amplication-ai-examples
 
 Amplication AI is a game-changing feature that revolutionizes code generation in Amplication.
 
-In less than four minutes, and with a few questions, you can go from an idea to fully-functional, production-ready code. This includes data models, APIs, authentication, and all the other [essential components](/getting-started/#technologies) your project needs.
+In less than four minutes, and with a few requests, you can go from an idea to fully-functional, production-ready code. This includes data models, APIs, authentication, and all the other [essential components](/getting-started/#technologies) your project needs.
 
 Making changes to your existing services is also a breeze. You can easily change your service's architecture, add new entities, install plugins, or make any necessary adjustments, all while maintaining a high-quality codebase.
 
@@ -22,7 +22,8 @@ At the heart of Amplication's AI capabilities is Jovu.
 
 ## What Is Jovu?
 
-Jovu is a breakthrough AI chatbot from Amplication that really works.
+Jovu is a breakthrough AI assistant from Amplication designed to help you generate production-ready back-end services.
+
 Using the most sophisticated AI language models, Jovu helps you throughout your Amplication journey.
 It can assist you with:
 
@@ -42,7 +43,7 @@ You can ask Jovu questions or provide commands related to your Amplication proje
 Here are some examples of what you can ask Jovu:
 
 - `Create a new blog service with entities for posts, categories, authors, and comments`
-- `Add a new review entity to the e-commerce service with fields for rating, comment, reviewer name, and product reference`  
+- `Add a new review entity to the e-commerce service with fields for rating, comment, reviewer name, and product reference`
 - `Generate the code for my pending changes so I can review it in GitHub`
 - `Create a DTO for creating new orders with fields for customer ID, product IDs, and quantities`
 - `Install the Google Secrets Manager plugin to help me handle secrets in my service`
@@ -52,7 +53,7 @@ Here are some examples of what you can ask Jovu:
 Feel free to explore and experiment with Jovu. It's designed to be a valuable asset in your Amplication workflow.
 
 :::note
-For more examples on how to effectively use Jovu, see the [Amplication AI Examples](/amplication-ai-examples) page.
+For more real world examples on how to effectively use Jovu, see the [Amplication AI Examples](/amplication-ai-examples) page.
 :::
 
 ## Customize Your AI Experience
