@@ -47,7 +47,6 @@ Here are some examples of what you can ask Jovu:
 - `Build my project and generate the code for my pending changes so I can review it in GitHub`
 - `Create a DTO for creating new orders with fields for customer ID, product IDs, and quantities`
 - `Install the Google Secrets Manager plugin to help me handle secrets in my service`
-- `Generate the code for my pending changes and commit them with the commit message "Added order creation"`
 - `Which plugins do you recommend for adding caching to my service?`
 
 Feel free to explore and experiment with Jovu. It's designed to be a valuable asset in your Amplication workflow.
