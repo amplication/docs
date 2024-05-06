@@ -18,7 +18,7 @@ Custom Types & Actions, currently in Beta, let you define custom data structures
 It allows you to automatically generate both the default CRUD operations and your custom APIs that utilize custom DTOs, all within your REST and/or GraphQL APIs. These changes are automatically translated into production-ready code in your repository, ensuring the best quality and efficiency.
 
 :::tip
-[Amplication's AI](/amplication-ai) can help you automatically create new modules, enums, DTOs, and actions for your service with a single question.
+[Amplication's AI](/amplication-ai) can help you automatically create new modules, enums, DTOs, and actions for your service with a single request.
 
 Ask Jovu: `I need to create a DTO for creating new orders with fields for customer ID, product IDs, and quantities. Can you help me with that?`
 :::

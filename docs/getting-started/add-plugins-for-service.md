@@ -19,7 +19,7 @@ Let's walk through the process of adding a new plugin to your service.
 You'll see how fast and seamless the process is.
 
 :::tip
-[Amplication's AI](/amplication-ai) can help you automatically install plugins, and give appropriate recommendations, with a single question.
+[Amplication's AI](/amplication-ai) can help you automatically install plugins, and give appropriate recommendations, with a single request.
 
 Ask Jovu: `Can you install the Prettier plugin to my service to automatically format my code?`
 :::

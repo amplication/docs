@@ -15,7 +15,7 @@ Each service includes both REST and GraphQL APIs and comes with an interactive R
 This guide will help you create your first service using our streamlined service creation onboarding wizard.
 
 :::tip
-[Amplication's AI](/amplication-ai) can help you build your first service with a single question in a few seconds.
+[Amplication's AI](/amplication-ai) can help you build your first service with a single request in a few seconds.
 
 Ask Jovu: `Can you create a new blog service with entities for posts, categories, authors, and comments?`
 :::

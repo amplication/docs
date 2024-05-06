@@ -14,7 +14,7 @@ Only committed changes will be included in the next version of your generated se
 In this guide, you'll learn how to commit changes to your git provider and build new versions of your service.
 
 :::tip
-[Amplication's AI](/amplication-ai) can help you build new versions of your service and create commit messages with a single question.
+[Amplication's AI](/amplication-ai) can help you build new versions of your service and create commit messages with a single request.
 
 Ask Jovu: `Can you commit my pending changes with the message "Added Task entity and updated Project entity"?`
 :::

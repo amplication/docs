@@ -22,7 +22,7 @@ The source code of all community Amplication plugins are [available on GitHub](h
 Besides the community plugins created by the Amplication team, you can [develop your own custom plugins](/plugins/overview/).
 
 :::tip
-[Amplication's AI](/amplication-ai) can help you find new plugins for your service, and even install them automatically, with a single question.
+[Amplication's AI](/amplication-ai) can help you find new plugins for your service, and even install them automatically, with a single request.
 
 Ask Jovu: `Which plugins do you recommend for adding caching capabilities to my Amplication service?`
 :::
