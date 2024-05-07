@@ -10,9 +10,9 @@ pagination_next: how-to/amplication-ai-examples
 
 Amplication AI is a game-changing feature that revolutionizes code generation in Amplication.
 
-In less than four minutes, and with a few requests, you can go from an idea to fully-functional, production-ready code. This includes data models, APIs, authentication, and all the other [essential components](/getting-started/#technologies) your project needs.
+In just a few minutes, and with a few requests, you can go from an idea to fully-functional, production-ready code. This includes data models, APIs, authentication, and all the other [essential components](/getting-started/#technologies) your service needs.
 
-Making changes to your existing services is also a breeze. You can easily change your service's architecture, add new entities, install plugins, or make any necessary adjustments, all while maintaining a high-quality codebase.
+You can also easily make changes to your existing services. Change your service's architecture, add new entities, install plugins, or make any necessary adjustments, all while maintaining a high-quality codebase.
 
 With Amplication AI (currently in Beta), you get production-ready code for all your services, no matter how many you need. The [generated code](/getting-started/view-generated-code/) is clean, follows best practices, and is ready for your developers to dive in and add the custom logic that will make your application unique.
 
@@ -22,7 +22,7 @@ At the heart of Amplication's AI capabilities is Jovu.
 
 ## What Is Jovu?
 
-Jovu is a breakthrough AI assistant from Amplication designed to help you generate production-ready back-end services.
+Jovu is a breakthrough AI assistant from Amplication designed to help you generate production-ready backend services.
 
 Using the most sophisticated AI language models, Jovu helps you throughout your Amplication journey.
 It can assist you with:

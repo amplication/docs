@@ -17,6 +17,17 @@ Jovu offers two main types of assistance:
 
 Below, you'll find examples of tasks Jovu can accomplish and questions you can ask to get helpful answers. Each example includes a specific task or question and a sample response from Jovu. Feel free to use these as inspiration or copy and paste them directly into your Amplication dashboard to experience Jovu's assistance firsthand.
 
+## Start New Projects
+
+Jovu can kickstart new projects by setting up the initial project structure and configuration based on your requirements.
+
+**Question**
+```
+I'm starting a new twitter clone project that will contain several micro-services. Can you help me create it?
+```
+
+![Create new projects with Jovu](./assets/amplication-ai/create-new-project.png)
+
 ## Create a New Service
 
 When [creating a new service](/first-service/), Jovu can help you automatically set up the basic structure with the necessary entities and fields.
@@ -26,7 +37,7 @@ When [creating a new service](/first-service/), Jovu can help you automatically 
 Can you create a new service for a blog application that will have posts, categories, authors, and comments?
 ```
 
-![](./assets/amplication-ai/new-service.png)
+![](./assets/amplication-ai/create-blog-service.png)
 
 ## Create New Entities
 
@@ -56,7 +67,7 @@ Jovu can assist you in creating [new custom modules](/custom-types-and-actions#m
 
 **Question**
 ```
-In the Checkout module, I need to define the data structure for the information required when a user initiates a payment. Could you help me create a DTO that includes the payment amount, the currency, and the selected payment method?
+The checkout process is getting pretty complex for my E-commerce service. Is there a way to separate the checkout-related code from the rest of the application to keep things organized and manageable?
 ```
 
 ![](./assets/amplication-ai/create-new-module.png)
@@ -67,7 +78,7 @@ Jovu can [create new DTOs](/custom-types-and-actions#dtos-and-enums) to shape th
 
 **Question**
 ```
-In the Checkout module, I need to define the data structure for the information required when a user initiates a payment. Could you help me c reate a DTO that includes the payment amount, the currecny, and the selected payment method?
+In the Checkout module, I need to define the data structure for the information required when a user initiates a payment. Could you help me create a DTO that includes the payment amount, the currecny, and the selected payment method?
 ```
 
 ![Create New Amplication DTOs](./assets/amplication-ai/create-new-dto.png)
@@ -81,17 +92,6 @@ Jovu will create [custom actions](/custom-types-and-actions#actions-1) (API endp
 Can you help me create an Action to handle the approval or rejection of a comment for my BlogService and any necessary DTOs?
 ```
 ![Create Custom Actions For Your Modules](./assets/amplication-ai/create-actions.png)
-
-## Start New Projects
-
-Jovu can kickstart new projects by setting up the initial project structure and configuration based on your requirements.
-
-**Question**
-```
-I'm starting a new project fora client. Can you create a new project for me called AcmeCorp Website?
-```
-
-![Create new projects with Jovu](./assets/amplication-ai/create-project.png)
 
 ## Recommend Suitable Plugins
 

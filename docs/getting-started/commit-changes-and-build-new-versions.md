@@ -16,7 +16,7 @@ In this guide, you'll learn how to commit changes to your git provider and build
 :::tip
 [Amplication's AI](/amplication-ai) can help you build new versions of your service and create commit messages with a single request.
 
-Ask Jovu: `Can you commit my pending changes with the message "Added Task entity and updated Project entity"?`
+Ask Jovu: `Can you build and commit my pending changes with the message "Added Task entity and updated Project entity"?`
 :::
 
 ## Prerequisites
