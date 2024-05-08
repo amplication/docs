@@ -28,7 +28,7 @@ I'm starting a new twitter clone project that will contain several micro-service
 
 ![Create new projects with Jovu](./assets/amplication-ai/create-new-project.png)
 
-## Create a New Service
+## Create New Services
 
 When [creating a new service](/first-service/), Jovu can help you automatically set up the basic structure with the necessary entities and fields.
 
