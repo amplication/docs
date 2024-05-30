@@ -2,15 +2,53 @@
 id: add-delete-user-entity
 title: How To Add and Delete The User Entity
 sidebar_label: How To Add, Delete, and Change The User Entity
-slug: /how-to/add-delete-user-entity
+slug: /user-entity
 pagination_next: getting-started/authentication
 ---
 
-# How To Add, Delete, and Change The User Entity
+# The User Entity
 
-The _User_ entity **is required** in order for you to enable authentication on your service.
+The _User_ entity is essential for the proper functioning of the authentication plugins in Amplication. It **is required** in order for you to enable authentication on your service.
 
 If you choose to [create a service _without_ authentication](/authentication/#how-to-create-a-service-without-authentication) then the _User_ entity will not be created.
+
+## Dependencies Between the User Entity and Authentication Plugins
+
+The authentication plugins, such as the _NestJS Auth Module_ and others, rely on the existence of a _User_ entity to handle user authentication and authorization.
+
+If the _User_ entity is not defined or is missing the required fields, the build process will fail, and the authentication plugins will not function correctly.
+
+It's important to ensure that the _User_ entity is properly defined with the necessary fields before enabling any authentication plugins in your Amplication service.
+
+## Default User Entity Fields
+
+When you create a new _User_ entity in Amplication, it comes with a set of default fields that are necessary for the authentication plugins to work correctly:
+
+- `id`: An automatically created unique identifier of the entity. It is a required and unique field.
+- `createdAt`: An automatically created field of the time the entity was created. It is a required field.
+- `updatedAt`: An automatically created field of the last time the entity was updated. It is a required field.
+- `firstName`: An automatically created field for the first name of the user. It is a searchable single-line text field.
+- `lastName`: An automatically created field for the last name of the user. It is a searchable single-line text field.
+- `username`: An automatically created field for the username of the user. It is a required, unique, and searchable field.
+- `email`: An automatically created field for the email of the user. It is a unique and searchable field.
+- `password`: An automatically created field for the password of the user. It is a required field.
+- `roles`: An automatically created field for the roles of the user. It is a required field.
+
+These default fields provide the necessary information for user authentication and authorization.
+
+## Default User Permissions
+
+Amplication also sets up default permissions for various actions related to the _User_ entity. These permissions determine who can access and perform certain operations on the entity.
+
+The default permissions for the _User_ entity are as follows:
+
+- **View Users**: Allows users to view the list of users. By default, this permission is granted to "All Roles".
+- **Create Users**: Allows users to create new user accounts. By default, this permission is granted to "All Roles".
+- **Update Users**: Allows users to update existing user accounts. By default, this permission is granted to "All Roles".
+- **Delete Users**: Allows users to delete user accounts. By default, this permission is granted to "All Roles".
+- **Search Users**: Allows users to search for specific user accounts. By default, this permission is granted to "All Roles".
+
+These default permissions provide a starting point for managing access to the _User_ entity. You can further customize these permissions based on your application's specific requirements by assigning different roles to each permission.
 
 ## Adding The User Entity
 
