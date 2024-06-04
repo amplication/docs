@@ -13,7 +13,7 @@ The _Authentication_ entity (formerly known as the _User_ entity) is essential f
 If you choose to [create a service _without_ authentication](/authentication/#how-to-create-a-service-without-authentication) then the _Authentication_ entity will not be created.
 
 :::note
-The Authentication entity was previously known as the User entity. It serves as the default entity for handling user authentication and authorization in Amplication. While you can customize the Authentication entity to fit your specific needs, it is essential for the proper functioning of the authentication plugins.
+The User entity is still the default Authentication entity in Amplication. In some cases, it can be created automatically as part of the authentication plugin installation process. In other cases, it can be manually restored. The User entity plays a crucial role in handling user authentication and authorization within your application.
 :::
 
 ## Dependencies Between the Authentication Entity and Authentication Plugins
@@ -26,7 +26,7 @@ It's important to ensure that the _Authentication_ entity is properly defined wi
 
 ## Default Authentication Entity Fields
 
-When you create a new _Authentication_ entity in Amplication, it comes with a set of default fields that are necessary for the authentication plugins to work correctly:
+When an authentication plugin is installed, an Authentication entity should be defined. By default, the "User" entity is that Authentication entity, but [you can change it](#changing-the-default-authentication-entity) if you want. If the "User" entity is created automatically, it comes with a set of default fields that are necessary for the authentication plugins to work correctly:
 
 - `id` (required by all authentication plugins): An automatically created unique identifier of the entity. It is a required and unique field.
 - `createdAt` (required by all authentication plugins): An automatically created field of the time the entity was created. It is a required field.
@@ -42,7 +42,7 @@ These default fields provide the necessary information for user authentication a
 
 ## Default Permissions Based on Authentication Entity Values
 
-Amplication sets up default permissions for various actions related to each entity based on the values defined in the _Authentication_ entity. These permissions determine who can access and perform certain operations on the various entities.
+Amplication allows setting up default permissions for various actions related to each entity based on the values defined in the _Authentication_ entity. These permissions determine who can access and perform certain operations on the various entities.
 
 The default permissions for each entity are as follows:
 
@@ -52,7 +52,11 @@ The default permissions for each entity are as follows:
 - **Delete Entity**: Allows users to delete entity instances. By default, this permission is granted to "All Roles".
 - **Search Entity**: Allows users to search for specific entity instances. By default, this permission is granted to "All Roles".
 
-These default permissions provide a starting point for managing access to the various entities. You can further customize these permissions based on your application's specific requirements by assigning different roles to each permission.
+:::note
+In Amplication, "All Roles" refers to all authenticated users. This means that any user who is authenticated and logged in will have the specified permissions granted to them by default.
+:::
+
+These default permissions provide a starting point for managing access to the various entities. You can further [customize these permissions](/how-to/set-access-permissions/#set-entity-permissions) based on your application's specific requirements by assigning different roles to each permission.
 
 ## Adding The Authentication Entity
 
@@ -60,9 +64,9 @@ First, go into your service's _Entities_ page.
 Click on the **Add Entity** button in the top right hand corner.
 Type `User` into the entity name text field and then click on the **Create Entity** button.
 
-![Add a new Authentication entity to your Amplication service](./../getting-started/assets/authentication/new_user_entity.png)
+![Add a User entity to your Amplication service](./../getting-started/assets/authentication/new_user_entity.png)
 
-A popup will appear and give you additional context on restoring the _Authentication_ entity.
+A popup will appear and give you additional context on restoring the _User_ entity.
 Click on the **Restore Default** button and the original _Authentication_ entity provided by Amplication will be restored.
 
 :::note
