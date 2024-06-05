@@ -8,12 +8,12 @@ pagination_next: getting-started/authentication
 
 # The Authentication Entity
 
-The _Authentication_ entity (formerly known as the _User_ entity) is essential for the proper functioning of the authentication plugins in Amplication. It **is required** in order for you to enable authentication on your service.
+The _Authentication_ entity is essential for the proper functioning of the authentication plugins in Amplication. It **is required** in order for you to enable authentication on your service.
 
 If you choose to [create a service _without_ authentication](/authentication/#how-to-create-a-service-without-authentication) then the _Authentication_ entity will not be created.
 
 :::note
-The User entity is still the default Authentication entity in Amplication. In some cases, it can be created automatically as part of the authentication plugin installation process. In other cases, it can be manually restored. The User entity plays a crucial role in handling user authentication and authorization within your application.
+The User entity is the default Authentication entity in Amplication. Amplication automatically creates the User entity or suggests creating it with all the required fields when installing an ,authentication plugin.
 :::
 
 ## Dependencies Between the Authentication Entity and Authentication Plugins
@@ -22,11 +22,13 @@ The authentication plugins, such as the _NestJS Auth Module_ and others, rely on
 
 If the _Authentication_ entity is not defined or is missing the required fields, the build process will fail, and the authentication plugins will not function correctly.
 
-It's important to ensure that the _Authentication_ entity is properly defined with the necessary fields before enabling any authentication plugins in your Amplication service.
+It's important to ensure that the Authentication entity is properly defined with the necessary fields before enabling any authentication plugins in your Amplication service.
 
-## Default Authentication Entity Fields
+## Authentication Entity Fields
 
-When an authentication plugin is installed, an Authentication entity should be defined. By default, the "User" entity is that Authentication entity, but [you can change it](#changing-the-default-authentication-entity) if you want. If the "User" entity is created automatically, it comes with a set of default fields that are necessary for the authentication plugins to work correctly:
+An Authentication plugin requires an Authentication entity containing the proper fields.
+
+By default, the 'User' entity is defined as the Authentication entity, but you can [configure it](#changing-the-default-authentication-entity). If the `User` entity is created automatically, it comes with a set of default fields necessary for the authentication plugins to work correctly:
 
 - `id` (required by all authentication plugins): An automatically created unique identifier of the entity. It is a required and unique field.
 - `createdAt` (required by all authentication plugins): An automatically created field of the time the entity was created. It is a required field.
@@ -40,9 +42,9 @@ When an authentication plugin is installed, an Authentication entity should be d
 
 These default fields provide the necessary information for user authentication and authorization.
 
-## Default Permissions Based on Authentication Entity Values
+## Permissions Based on Authentication Entity Values
 
-Amplication allows setting up default permissions for various actions related to each entity based on the values defined in the _Authentication_ entity. These permissions determine who can access and perform certain operations on the various entities.
+Amplication allows you to set up permissions for various actions related to each entity based on the user's values in the _Authentication_ entity. These permissions determine who can access and perform certain operations on the various entities.
 
 The default permissions for each entity are as follows:
 
@@ -53,14 +55,14 @@ The default permissions for each entity are as follows:
 - **Search Entity**: Allows users to search for specific entity instances. By default, this permission is granted to "All Roles".
 
 :::note
-In Amplication, "All Roles" refers to all authenticated users. This means that any user who is authenticated and logged in will have the specified permissions granted to them by default.
+In Amplication, "All Roles" refers to all authenticated users. This means that any user who is authenticated and logged in will have the specified permissions granted to them.
 :::
 
-These default permissions provide a starting point for managing access to the various entities. You can further [customize these permissions](/how-to/set-access-permissions/#set-entity-permissions) based on your application's specific requirements by assigning different roles to each permission.
+These default permissions provide a starting point for managing access to various entities. You can further [customize these permissions](/how-to/set-access-permissions/#set-entity-permissions) based on your application's specific requirements by assigning different roles to each permission and more.
 
-## Adding The Authentication Entity
+## Adding The User Entity
 
-First, go into your service's _Entities_ page.
+First, go to your service's _Entities_ page.
 Click on the **Add Entity** button in the top right hand corner.
 Type `User` into the entity name text field and then click on the **Create Entity** button.
 
@@ -86,7 +88,7 @@ It's possible to restore the original _Authentication_ entity provided by Amplic
 
 Follow these steps to delete the _Authentication_ entity:
 
-1. Visit your service's Plugins page and toggle the _NestJS Auth Module_ into the off state.
+1. Visit your service's Plugins page and toggle the _NestJS Auth Module_ to the off state.
 
 ![Disable the NestJS Auth Module](./../getting-started/assets/authentication/disable_auth_plugin.png)
 
@@ -95,7 +97,7 @@ You will notice that you can now click the _Authentication_ entity's delete butt
 
 ![Delete the Authentication entity popup](./../getting-started/assets/authentication/delete_user_popup.png)
 
-3. Click on the popup's **Delete** button. Now the Authentication entity is deleted.
+3. Click on the popup's **Delete** button. The Authentication entity is now deleted.
 
 ## Changing The Default Authentication Entity
 
