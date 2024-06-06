@@ -13,7 +13,7 @@ The _Authentication_ entity is essential for the proper functioning of the authe
 If you choose to [create a service _without_ authentication](/authentication/#how-to-create-a-service-without-authentication) then the _Authentication_ entity will not be created.
 
 :::note
-The User entity is the default Authentication entity in Amplication. Amplication automatically creates the User entity or suggests creating it with all the required fields when installing an ,authentication plugin.
+The User entity is the default Authentication entity in Amplication. Amplication automatically creates the User entity or suggests creating it with all the required fields when installing an authentication plugin.
 :::
 
 ## Dependencies Between the Authentication Entity and Authentication Plugins
