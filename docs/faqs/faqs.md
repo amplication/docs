@@ -149,7 +149,7 @@ Need to deploy to other cloud providers? You can easily [create a custom plugin]
 
 ### I have an existing DB with a lot of data, entities, tables, and relationships. Can I use Amplication, while still keeping my existing data?
 
-Ampliation's DB Schema Import feature provides a clear pathway for integrating an existing database with Amplication's platform. The import feature is available on Amplication's Enterprise plan.
+Amplication's DB Schema Import feature provides a clear pathway for integrating an existing database with Amplication's platform. The import feature is available on Amplication's Enterprise plan.
 
 ## Security and Team Management
 
