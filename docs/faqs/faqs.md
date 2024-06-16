@@ -3,199 +3,71 @@ id: faqs
 title: Frequently Asked Questions
 sidebar_label: FAQs
 slug: /faqs
+toc_max_heading_level: 2
 ---
 
-These are some of the questions we are often asked about using Amplication
+Here are some questions that we are asked about frequently about using Amplication:
 
-## What is Amplication?
+## General
 
-Amplication is an open-source platform that helps developers build backend services without spending time on repetitive coding tasks and boilerplate code. Amplication auto-generates a fully functional, production-ready backend based on TypeScript and Node.js.
+### What is Amplication?
 
----
+Amplication is an open-source AI-powered code generation platform that helps developers build backend services without spending time on repetitive coding tasks and boilerplate code. Amplication auto-generates a fully functional, production-ready backend based on Node.js and .NET.
 
-## How does Amplication work?
+### How does Amplication work?
 
-You just need to define your data models, roles, and permissions, and Amplication will generate a TypeScript Node.js application with everything you need already baked in. This includes fully functional REST API and GraphQL API for all your data models, authentication, role-based authorization, logging, and even an admin UI.
+You just need to define your data models, roles, and permissions, and Amplication will generate a Node.js or .NET application with everything you need already baked in. This includes fully functional REST API and GraphQL API for all your data models, authentication, role-based authorization, logging, and even an admin UI.
 
----
+## Pricing and Editions
 
-## Do I need to be an expert developer to work with Amplication?
+### How does Amplication's pricing work?
 
-Amplication is a great platform for professional developers, whatever their experience.
-Even though beginners can get up-and-running quickly with Amplication, you own
-the code and so can make full use of your code-writing talent to customize your
-output and work your magic. Amplication is also a great solution for technical
-leaders who seek to boost their teams' productivity and efficiency.
+Our pricing plans are applied per each workspace individually. The Free plan is offered for **FREE**. 
 
----
+The Essential plan is currently priced at $169 per month per project when paid annually or $199 per month per project when paid monthly. Multiple projects can be purchased under this plan.
 
-## How do I get started with Amplication?
+Enterprise plan pricing will be tailored to your specific requirements. [Contact us](https://amplication.com/contact-us) to get a quote.
 
-You can generate your first service in minutes. These instructions will walk you through the steps of creating a service using our onboarding wizard.
+### What plan is best for me and my team?
 
-[Create Your First Service](/first-service/)
+Choosing the right plan depends on your project needs:
 
----
+- **Free Plan:** Ideal for individual developers working on small-scale applications. This plan includes core features like Node.js support, database integration, roles & permissions, GraphQL & REST APIs, and unlimited code generation builds. It's perfect for getting started without any cost.
 
-## Is Amplication free?
+- **Essential Plan:** This plan is best for small teams building collaborative projects. It includes enhanced capabilities such as support for both Node.js and .NET, more Jovu requests, multiple services, custom actions support, and additional team members.
 
-Amplication was developed as an open-source software, and it is free for all to use. It is also offered for free on our managed service at [amplication.com](https://amplication.com) and has benefited dozens of thousands of users. Our commitment to open-source has allowed us to revolutionize how applications are developed, saving time and increasing productivity. Our pricing model is designed to build a sustainable business to enable Amplication to keep growing and to lead this revolution.
+- **Enterprise Plan:** For larger organizations with more complex needs, the Enterprise plan is the best fit. It includes all the features of the Essential plan plus unlimited Jovu requests, projects, services, and team members. Additionally, it offers advanced security features like SSO and 2FA, comprehensive Git sync options for all enterprise providers, and tools for breaking monolithic applications into microservices. This plan is tailored for scalability and integration with lifecycle management tools. For a full breakdown of its capabilities and to get a personalized quote, [contact us](https://amplication.com/contact-us) directly.
 
-The pricing model enables teams working on small projects to continue to use the service for free. Teams working on larger projects can take advantage of one of the paid plans to enjoy advanced features.
+## Code Ownership and Customization
 
-See [Amplication’s licensing model](https://docs.amplication.com/about/about/licensing/)
-
----
-
-## What is the difference between the Free and Enterprise Editions?
-
-The Free edition is for individual developers or small teams focused on compact projects. It provides a robust foundation for backend service creation. It includes features like database and model management, role-based permissions, and both GraphQL & REST API support.
-
-The Enterprise edition, on the other hand, is designed for large-scale organizational needs, emphasizing advanced security features, more git sync providers, and dedicated support, and includes single sign-on (SSO) to ensure a comprehensive environment for enterprise-level development.
-
-To learn more about what's included with the Enterprise plan, see the **Premium Features** section of the docs.
-
-## Who owns the code I generate with Amplication?
+### Who owns the code I generate with Amplication?
 
 You own the code. Develop your service and applications however you wish, and deploy
-it wherever you want; on the public cloud, private cloud, or on-premise.
+it wherever you want.
 
----
+### How can I customize the generated code, and will the generated code override my custom changes?
 
-## How can I get the code?
+You can customize the generated code just like any other code changes in your existing code base.
+
+Amplication's Smart Git Sync feature ensures that your custom code always takes precedence over the generated code, so your changes will not be overridden. For more details on how this works, please refer to our [Smart Git Sync documentation](https://docs.amplication.com/smart-git-sync/).
+
+### We have our own best practices and standards - can we ask Amplication to generate the code in our own flavor?
+
+Amplication offers a structured way to [add custom code](https://docs.amplication.com/custom-code/) and modify your generated code.
+
+We also provide various [plugins](https://docs.amplication.com/getting-started/plugins/), like Prettier and ESLint, so you can format your code exactly how you need it.
+
+Furthermore, you can create [private plugins](https://docs.amplication.com/enterprise-private-plugins/) that are accessible only within your organization.
+
+## Version Control and Collaboration
+
+### How can I get the code?
 
 You can connect your project to your preferred git provider like [GitHub](/sync-with-github), [Bitbucket](/sync-with-bitbucket), or AWS CodeCommit.
+
 After connecting to a git repo you can push a new Pull Request directly to a selected git repository. There is also a code-view option, that enables you to view the code in the console before you push it to your git provider.
 
----
-
-## What server-side technologies does Amplication use?
-
-NestJS, Prisma, PostgreSQL, MySQL, MongoDB, Passport, GraphQL, Swagger UI, Jest, Docker
-
----
-
-## What client-side technologies does Amplication use?
-
-Amplication focuses on creating the best backend. We provide the client only as a starting point for simple CRUD operations using the following technologies:
-ReactJS, React-Admin, Axios, Formik.
-
-Use your programming skills to build a great client.
-
----
-
-## Is Amplication a no-code solution?
-
-Amplication is a platform for professional developers, enabling you to automate
-repetitive tasks, eliminating or reducing the time spent on repetitive server-side
-tasks and boilerplate code. Your developer skills are very much required to create
-your hand-crafted business logic, so it is definitely NOT a no-code solution. Amplication
-reduces the amount of code you need to write, hence some may call it a low-code
-solution for professional developers.
-
----
-
-## What is the Amplication architecture?
-
-Each Amplication project generates a server and admin UI, each in a separate folder:
-
-- Server - for all the server components including REST API, GraphQL, Services and more.
-- Admin - for the Admin UI including forms for CRUD operations on all data models.
-
----
-
-## Can I customize the code generated by Amplication?
-
-Definitely. The code is yours. Do with it what you wish. You can continuously customize
-your code while continuing to get code from Amplication.
-
----
-
-## Can I contribute to the development of Amplication?
-
-We'd love to have you contribute! To find out how,read our [Contributing](https://docs.amplication.com/contributing/) guide.
-
----
-
-## Can I work with GitLab (or other git providers) besides GitHub?
-
-Amplication currently supports integration with [GitHub](/sync-with-github) (Free Plan), [Bitbucket](/sync-with-bitbucket) (Enterprise Plan), and AWS CodeCommit (Enterprise Plan).
-
-We are planning to add support for more Git providers.
-See our [Product Roadmap](https://docs.amplication.com/about/roadmap/).
-
----
-
-## Which databases does Amplication support?
-
-Amplication currently includes plugins to support PostgreSQL, MySQL, and MongoDB.
-However, we generate apps that work with Prisma, so you could change the Prisma configuration to use other databases supported by Prisma.
-
----
-
-## Which cloud platforms does Amplication support?
-
-Amplication is shipped in container form and can be hosted on different cloud platforms like AWS, Heroku, Azure, Google Cloud Platform, Digital Ocean, and many more. 
-
-Check out the following for more information:
-
-1. [Deploy to Docker Desktop](https://docs.amplication.com/deploy/docker-desktop)
-1. [Deploy to Kubernetes](https://docs.amplication.com/deploy/kubernetes)
-2. [Deploying to Digital Ocean](https://dev.to/asiancat54x/deploying-amplication-app-to-digital-ocean-5d7k)
-
----
-
-## Can I integrate Plugins into my Project?
-
-Yes, Definitely. Some plugins are included in Amplication by default.
-From the available list of plugins in amplication you can select any plugin you want for each of your services and install them.
-
-Please follow this guide for more instructions on [Using plugins](https://docs.amplication.com/getting-started/getting-started/plugins/)
-
----
-
-## What are the plugins supported by amplication that I can use?
-
-The following plugins are currently available for your use. We are working on adding more plugins.
-
-- MongoDB
-- PostgreSQL DB
-- MySQL DB
-- Kafka
-- Password JWT Authentication
-- Password Basic Authentication
-  Please ensure you arrange the order of installed plugins carefully, as the Amplication code is generated according to their order.
-
----
-
-## Can I create my own Plugin(s) for my project?
-
-Yes, Of Course.
-
-To add more functionality, you can develop your own plugins as you require.
-The Plugin architecture of amplication provides you the ecosystem to develop a plugin yourself.
-Or you can also use plugins developed by the community, as they become available.
-
-Keep an eye on our [Product Roadmap](https://docs.amplication.com/about/roadmap/).
-
----
-
-## How does amplication help me to scale my Project?
-
-Amplication incorporates the following practices to provide you with a platform to better scale your projects:
-
-- Microservices support  
-- Plugin system
-- Monorepo with modular connected services  
-- Custom sync flows and [smart git sync](/smart-git-sync) at the project level
-
-With these new features and improvements in our new version, we make it much easier for you (or your team) to build scalable services, have better control over the generated code and collaborate with multiple developers to work on large scale solutions.
-
-Read our documentation on [Amplication's key features](https://docs.amplication.com/#key-features-of-amplication) to learn more.
-
----
-
-## What is monorepo? Does Amplication support it?
+### Does Amplication support the monorepo version control model?
 
 Amplication supports the monorepo model, allowing you and your team to collaborate on bigger projects.
 
@@ -207,9 +79,7 @@ The monorepo model provides you with several advantages:
 -Improved collaboration
 -Release management
 
----
-
-## Will all my services be stored in the same or different repositories?
+### Will all my services be stored in the same or different repositories?
 
 The choice is yours.
 You can decide where you want to sync your code for each service.
@@ -229,17 +99,33 @@ Check out our docs for more on syncing to a git repository and how Amplication h
 - [Sync with Bitbucket](/sync-with-bitbucket)
 :::
 
----
+### We are working with the enterprise edition of GitLab / BitBucket, will it work with Amplication?
 
-## What is Microservices architecture?
+Amplication's compatibility with git providers varies based on the plan:
 
-Microservices (or microservices architecture) is a cloud native architectural approach in which a single application is composed of many loosely coupled and independently deployable smaller components, or services.
+- **Free & Essential Plans:** Support GitHub. 
+- **Enterprise Plan**: Supports also Bitbucket, AWS CodeCommit, GitLab, and any other Git provider
 
-Want more information? [Read this](https://amplication.com/blog/an-introduction-to-microservices).
+## Scalability and Architecture
 
----
+### We have legacy systems, and would like to progress to modern architecture. Can you assist with it?
 
-## How does the microservices architecture benefit my development?
+Amplication can facilitate the modernization of your legacy system. We offer a suite of tools and features designed to streamline this process like [DB Schema Import](https://docs.amplication.com/how-to/import-prisma-schema/), [Data Modeling](https://docs.amplication.com/how-to/create-entity/), [Event Brokering](https://docs.amplication.com/plugins-list/#apache-kafka), [Customizable Code Generation](https://docs.amplication.com/custom-code/), [Break The Monolith](https://docs.amplication.com/break-the-monolith/), and many more features.
+
+### How does Amplication help me to scale my project?
+
+Amplication incorporates the following practices to provide you with a platform to better scale your projects:
+
+- Microservices support  
+- Plugin system
+- Monorepo with modular connected services  
+- Custom sync flows and [Smart Git Sync](/smart-git-sync) at the project level
+
+With these new features and improvements in our new version, we make it much easier for you (or your team) to build scalable services, have better control over the generated code and collaborate with multiple developers to work on large scale solutions.
+
+Read our documentation on [Amplication's key features](https://docs.amplication.com/#key-features-of-amplication) to learn more.
+
+### How does the microservices architecture benefit my development?
 
 Amplication's Microservices architecture enables you to develop services with ease and select the best tech stack for each service. Different development teams can work on different services without cross-team dependencies.
 
@@ -249,63 +135,39 @@ Project development becomes easier with the following functionalities:
 
 Learn more about the benefits on our [Support for Microservices Architecture](https://amplication.com/blog/release-0150-support-for-microservices-architecture) blog post.
 
----
+## Supported Technologies and Deployment
 
-## How are microservices incorporated in Amplication?
+### Which databases does Amplication support?
 
-Amplication supports microservices through the Project hierarchy. A Project groups together multiple resources used and created by Amplication, enabling support for multiple use cases. This simplifies the creation of connected Services, and makes it much easier to [sync with your preferred git provider](/smart-git-sync/) across multiple Services.
+Amplication currently includes plugins to support PostgreSQL, MySQL, MongoDB, and more. For a full list visit the [Generated Service](/getting-started/) page.
 
----
+### Can you assist with deploying to various cloud providers like AWS?
 
-## What is Project, Resources and Services structure in Amplication?
+Yes, Amplication offers a wide range of relevant plugins and comprehensive guides that enable deployment to services such as [Kubernetes](https://docs.amplication.com/deploy/kubernetes/), [Docker Desktop](https://docs.amplication.com/deploy/docker-desktop/), [AWS's ECS](https://docs.amplication.com/deploy/aws/ecs/), and more.
 
-This structure helps you to manage various services (architected as microservices) and the resources associated with each service.
+Need to deploy to other cloud providers? You can easily [create a custom plugin](https://docs.amplication.com/plugins/how-to-create-plugin/) for that.
 
-It provides a much simple and easy-to-maintain project flow with multiple services.
+### I have an existing DB with a lot of data, entities, tables, and relationships. Can I use Amplication, while still keeping my existing data?
 
-Read more about the hierarchy [here](https://docs.amplication.com/projects-resources-services/).
+Ampliation's DB Schema Import feature provides a clear pathway for integrating an existing database with Amplication's platform. The import feature is available on Amplication's Enterprise plan.
 
----
+## Security and Team Management
 
-## How do I keep track of my codebase if it involves continuous development?
+### Does Amplication support advanced security features like 2FA, audit logs, and SSO for organizational security concerns?
 
-Amplication comes with version control built-in enabling you to see the changes made in the services and push the code to your preferred git provider.
-We call this feature [Smart Git Sync](/smart-git-sync/).
-In Amplication, your work is auto saved but not committed, thus giving you the opportunity to review.
-All the pending changes are visible under 'Pending Changes', ready for you to review and commit.
+Yes, Amplication's Enterprise plan is equipped with advanced security features to meet the needs of your organization. This includes support for [Single Sign-On (SSO)](https://docs.amplication.com/enterprise-sso/), audit logs, and Two-Factor Authentication (2FA).
 
-Read [How To Commit Changes](https://docs.amplication.com/how-to/commit-changes/).
+### We have multiple teams in the organization, can we use one account to manage separate teams?
 
----
+Yes, the Enterprise plan lets you have unlimited projects, services, and team members. You can manage all your teams from the same organization in your preferred structure.
 
-## What is Message Broker?
+## Community and Contribution
 
-Message Broker enables your microservices to communicate with each other.
-A message broker is software that enables applications, systems, and services to communicate with each other and exchange information. This allows interdependent services to “talk” with one another directly, even if they were written in different languages or implemented on different platforms.
-Amplication provides a plugin for Kafka Message Broker that can be installed as required.
-Follow the [Instructions](https://docs.amplication.com/getting-started/getting-started/plugins/)
+### Can I contribute to the development of Amplication?
 
-To create a Message Broker follow the [How to Create a Message Broker Instruction](https://docs.amplication.com/how-to/create-message-broker/)
+We'd love to have you contribute! To find out how, read our [Contributing](https://docs.amplication.com/contributing/) guide.
 
----
-
-## What is Phone Home in Amplication?
-
-A software that allows the amplication core team to see the number of amplication deployments made by the users of amplication.
-This information is used to better understand the usage of amplication platform by users and how to improve the platform with enhanced or new features.
-
----
-
-## For any issue related to Amplication development where can I get answers?
-
-You can look into the [docs](https://docs.amplication.com/) under [_Troubleshooting_](/errors/) that have answers for a number of Issues relating to Set-up, Code Generation, Database, Authorization, and Git Sync.
-If it's a new issue you can ask in the community or raise an issue yourself in GitHub.
-
-Read the guidelines to contribute [here](https://docs.amplication.com/contributing/).
-
----
-
-## How can I keep in touch with the Amplication community?
+### How can I keep in touch with the Amplication community?
 
 Join us at any of the following locations:
 
@@ -314,5 +176,3 @@ Join us at any of the following locations:
 - [Amplication website](https://amplication.com/)
 - [Blog](https://amplication.com/blog)
 - [Docs](https://docs.amplication.com/getting-started/)
-
----
