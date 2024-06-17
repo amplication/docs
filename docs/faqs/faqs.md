@@ -12,7 +12,7 @@ Here are some questions that we are asked about frequently about using Amplicati
 
 ### What is Amplication?
 
-Amplication is an open-source AI-powered code generation platform that helps developers build backend services without spending time on repetitive coding tasks and boilerplate code. Amplication auto-generates a fully functional, production-ready backend based on Node.js and .NET.
+Amplication is an open-source AI-powered code generation platform that helps developers build and manage backend services without spending time on repetitive coding tasks and boilerplate code. Amplication auto-generates a fully functional, production-ready backend based on Node.js and .NET.
 
 ### How does Amplication work?
 
@@ -22,9 +22,9 @@ You just need to define your data models, roles, and permissions, and Amplicatio
 
 ### How does Amplication's pricing work?
 
-Our pricing plans are applied per each workspace individually. The Free plan is offered for **FREE**. 
+Our pricing plans are applied per each workspace individually. The Free plan is offered for **FREE**.
 
-The Essential plan is currently priced at $169 per month per project when paid annually or $199 per month per project when paid monthly. Multiple projects can be purchased under this plan.
+The Essential plan is offered in a monthly or annual subscription for single or multiple projects. See [our pricing page](https://amplication.com/pricing) for more information.
 
 Enterprise plan pricing will be tailored to your specific requirements. [Contact us](https://amplication.com/contact-us) to get a quote.
 
@@ -63,7 +63,7 @@ Furthermore, you can create [private plugins](https://docs.amplication.com/enter
 
 ### How can I get the code?
 
-You can connect your project to your preferred git provider like [GitHub](/sync-with-github), [Bitbucket](/sync-with-bitbucket), or AWS CodeCommit.
+You can connect your project to your preferred git provider like [GitHub](/sync-with-github), [Bitbucket](/sync-with-bitbucket), GitLab, or AWS CodeCommit.
 
 After connecting to a git repo you can push a new Pull Request directly to a selected git repository. There is also a code-view option, that enables you to view the code in the console before you push it to your git provider.
 
@@ -74,10 +74,11 @@ Amplication supports the monorepo model, allowing you and your team to collabora
 In version control systems, a monorepo ("mono" meaning 'single' and "repo" is short for 'repository') is a software development strategy where code for many projects is stored in the same repository. Providing you the power to use the microservices approach for you services.
 
 The monorepo model provides you with several advantages:
--Easy visibility of your services
--Code sharing among services to avoid code redundancy
--Improved collaboration
--Release management
+
+- Easy visibility of your services
+- Code sharing among services to avoid code redundancy
+- Improved collaboration
+- Release management
 
 ### Will all my services be stored in the same or different repositories?
 
@@ -97,14 +98,15 @@ Check out our docs for more on syncing to a git repository and how Amplication h
 
 - [Sync with GitHub](/sync-with-github)
 - [Sync with Bitbucket](/sync-with-bitbucket)
+- [Sync With AWS CodeCommit](/sync-with-aws-codecommit/)
 :::
 
 ### We are working with the enterprise edition of GitLab / BitBucket, will it work with Amplication?
 
 Amplication's compatibility with git providers varies based on the plan:
 
-- **Free & Essential Plans:** Support GitHub. 
-- **Enterprise Plan**: Supports also Bitbucket, AWS CodeCommit, GitLab, and any other Git provider
+- **Free & Essential Plans:** Support GitHub
+- **Enterprise Plan**: Supports Bitbucket, AWS CodeCommit, GitLab, and any other Git provider
 
 ## Scalability and Architecture
 
@@ -130,8 +132,9 @@ Read our documentation on [Amplication's key features](https://docs.amplication.
 Amplication's Microservices architecture enables you to develop services with ease and select the best tech stack for each service. Different development teams can work on different services without cross-team dependencies.
 
 Project development becomes easier with the following functionalities:
--You can connect to a single git repo at the project level saving a lot of your time that would be spent manually connecting the services
--You can make a single commit at the project level
+
+- You can connect to a single git repo at the project level saving a lot of your time that would be spent manually connecting the services
+- You can make a single commit at the project level
 
 Learn more about the benefits on our [Support for Microservices Architecture](https://amplication.com/blog/release-0150-support-for-microservices-architecture) blog post.
 
@@ -139,7 +142,7 @@ Learn more about the benefits on our [Support for Microservices Architecture](ht
 
 ### Which databases does Amplication support?
 
-Amplication currently includes plugins to support PostgreSQL, MySQL, MongoDB, and more. For a full list visit the [Generated Service](/getting-started/) page.
+Amplication currently includes plugins to support PostgreSQL, MySQL, MongoDB, MS SQL, and more. For a full list visit the [Generated Service](/getting-started/) page.
 
 ### Can you assist with deploying to various cloud providers like AWS?
 
