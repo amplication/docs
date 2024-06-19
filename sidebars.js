@@ -67,6 +67,7 @@ const sidebars = {
         "how-to/how-to-commit-changes",
         "how-to/base-directories",
         "how-to/change-base-branch-for-pull-requests",
+        "how-to/resolve-github-connection-errors"
       ]
     },
     {
