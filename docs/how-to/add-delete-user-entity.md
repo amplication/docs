@@ -14,6 +14,8 @@ If you choose to [create a service _without_ authentication](/authentication/#ho
 
 :::note
 The User entity is the default Authentication entity in Amplication. Amplication automatically creates the User entity or suggests creating it with all the required fields when installing an authentication plugin.
+
+However, you can choose to use your own custom Authentication entity as long as it has the required fields (see below).
 :::
 
 ## Dependencies Between the Authentication Entity and Authentication Plugins
@@ -80,7 +82,7 @@ If you try to install the auth plugin first without the _Authentication_ entity,
 
 Usually, it's possible to delete any Entity that you create on your service.
 But, the _Authentication_ entity is special.
-In order to delete it, you must first disable the _NestJS Auth Module_.
+In order to delete it, you must first disable the _NestJS Auth Module_ **and any other authentication plugins you installed**.
 
 :::caution
 It's possible to restore the original _Authentication_ entity provided by Amplication, but any additional fields or permissions you added will be permanently deleted.
@@ -88,7 +90,7 @@ It's possible to restore the original _Authentication_ entity provided by Amplic
 
 Follow these steps to delete the _Authentication_ entity:
 
-1. Visit your service's Plugins page and toggle the _NestJS Auth Module_ to the off state.
+1. Visit your service's Plugins page and toggle the _NestJS Auth Module_ to the off state. Additional Authentication Plugins also need to be disabled if any were installed.
 
 ![Disable the NestJS Auth Module](./../getting-started/assets/authentication/disable_auth_plugin.png)
 
