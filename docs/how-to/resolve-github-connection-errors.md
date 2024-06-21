@@ -2,17 +2,17 @@
 id: resolve-github-connection-errors
 title: How to Resolve GitHub Connection Errors in Amplication
 sidebar_label: How To Resolve GitHub Connection Errors
-slug: /how-to/resolve-github-connection-errors
+slug: /errors/resolve-github-connection-errors
 pagination_next: how-to/change-base-branch-for-pull-requests
 ---
 
 # How to Resolve GitHub Connection Errors in Amplication
 
-If you encounter an internal server error while attempting to select a repository or change the repository that your service is currently connected to in Amplication, follow these steps to resolve the issue.
+If you encounter an "Internal server error" while attempting to select a repository or change the repository that your service is currently connected to in Amplication, follow these steps to resolve the issue.
 
 ## Step 1: Uninstall the Amplication GitHub App
 
-1. Go to your GitHub settings by visiting [https://github.com/settings/applications](https://github.com/settings/applications).
+1. Visit your [GitHub settings](https://github.com/settings/applications) and proceed to the "Installed GitHub Apps" tab.
 2. Find the Amplication GitHub App and click on the `Configure` button.
 3. Scroll to the bottom of the page and click on the `Uninstall` button.
 4. Confirm the action by clicking "OK" in the pop-up window.

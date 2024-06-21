@@ -66,8 +66,7 @@ const sidebars = {
         // "getting-started/sync-with-git-differences-between-plans",
         "how-to/how-to-commit-changes",
         "how-to/base-directories",
-        "how-to/change-base-branch-for-pull-requests",
-        "how-to/resolve-github-connection-errors"
+        "how-to/change-base-branch-for-pull-requests"
       ]
     },
     {
@@ -304,7 +303,7 @@ const sidebars = {
         {
           type: "category",
           label: "GitHub",
-          items: ["errors/merge-conflict", "errors/github-different-app-id"],
+          items: ["how-to/resolve-github-connection-errors", "errors/merge-conflict", "errors/github-different-app-id"],
         },
         {
           type: "category",
