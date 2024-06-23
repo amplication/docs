@@ -191,6 +191,10 @@ module.exports = {
       {
         redirects: [
           {
+            to: "/user-entity",
+            from: ["/how-to/add-delete-user-entity"]
+          },
+          {
             to: "/deploy/docker-desktop",
             from: ["/deploy"]
           },
