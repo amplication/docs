@@ -20,7 +20,7 @@ However, you can choose to use your own custom Authentication entity as long as 
 
 ## Dependencies Between the Authentication Entity and Authentication Plugins
 
-The authentication plugins, such as the _NestJS Auth Module_ and others, rely on the existence of an _Authentication_ entity to handle user authentication and authorization.
+The authentication plugins rely on the existence of an _Authentication_ entity to handle user authentication and authorization. For Node.js services, this includes the _NestJS Auth Module_ and others. For .NET services, this includes the _ASP.NET Core Identity_ plugin.
 
 If the _Authentication_ entity is not defined or is missing the required fields, the build process will fail, and the authentication plugins will not function correctly.
 
@@ -32,15 +32,15 @@ An Authentication plugin requires an Authentication entity containing the proper
 
 By default, the 'User' entity is defined as the Authentication entity, but you can [configure it](#changing-the-default-authentication-entity). If the `User` entity is created automatically, it comes with a set of default fields necessary for the authentication plugins to work correctly:
 
-- `id` (required by all authentication plugins): An automatically created unique identifier of the entity. It is a required and unique field.
-- `createdAt` (required by all authentication plugins): An automatically created field of the time the entity was created. It is a required field.
-- `updatedAt` (required by all authentication plugins): An automatically created field of the last time the entity was updated. It is a required field.
+- `id` (required): An automatically created unique identifier of the entity. It is a required and unique field.
+- `createdAt` (required): An automatically created field of the time the entity was created. It is a required field.
+- `updatedAt` (required): An automatically created field of the last time the entity was updated. It is a required field.
 - `firstName`: An automatically created field for the first name of the user. It is a searchable single-line text field.
 - `lastName`: An automatically created field for the last name of the user. It is a searchable single-line text field.
-- `username` (required by NestJS Auth Module): An automatically created field for the username of the user. It is a required, unique, and searchable field.
-- `email` (required by NestJS Auth Module): An automatically created field for the email of the user. It is a unique and searchable field.
-- `password` (required by NestJS Auth Module): An automatically created field for the password of the user. It is a required field.
-- `roles` (required by NestJS Auth Module): An automatically created field for the roles of the user. It is a required field.
+- `username` (required): An automatically created field for the username of the user. It is a required, unique, and searchable field.
+- `email` (required): An automatically created field for the email of the user. It is a unique and searchable field.
+- `password` (required): An automatically created field for the password of the user. It is a required field.
+- `roles` (required): An automatically created field for the roles of the user. It is a required field.
 
 These default fields provide the necessary information for user authentication and authorization.
 
@@ -74,7 +74,9 @@ A popup will appear and give you additional context on restoring the _User_ enti
 Click on the **Restore Default** button and the original _Authentication_ entity provided by Amplication will be restored.
 
 :::note
-You have to add the _Authentication_ entity first and then enable the [_NestJS Auth Module_ plugin](/authentication/#nestjs-auth-module-mandatory).
+For Node.js services, you have to add the _Authentication_ entity first and then enable the [_NestJS Auth Module_ plugin](/authentication/#nestjs-auth-module-mandatory).
+For .NET services, the process is similar, but you'll be working with the ASP.NET Core Identit plugin instead.
+
 If you try to install the auth plugin first without the _Authentication_ entity, **you will be offered to create it**.
 :::
 
@@ -82,7 +84,11 @@ If you try to install the auth plugin first without the _Authentication_ entity,
 
 Usually, it's possible to delete any Entity that you create on your service.
 But, the _Authentication_ entity is special.
-In order to delete it, you must first disable the _NestJS Auth Module_ **and any other authentication plugins you installed**.
+In order to delete it, you must first disable the authentication plugin for your service.
+
+For Node.js services, this means disabling the _NestJS Auth Module_ **and any other authentication plugins you installed**.
+
+For .NET services, this involves disabling the ASP.NET Core Identity plugin from your service.
 
 :::caution
 It's possible to restore the original _Authentication_ entity provided by Amplication, but any additional fields or permissions you added will be permanently deleted.
@@ -90,9 +96,12 @@ It's possible to restore the original _Authentication_ entity provided by Amplic
 
 Follow these steps to delete the _Authentication_ entity:
 
-1. Visit your service's Plugins page and toggle the _NestJS Auth Module_ to the off state. Additional Authentication Plugins also need to be disabled if any were installed.
+1. Visit your service's Plugins page and disable the authentication plugin for your service type.
 
-![Disable the NestJS Auth Module](./../getting-started/assets/authentication/disable_auth_plugin.png)
+   - For Node.js: Toggle the _NestJS Auth Module_ to the off state. Additional Authentication Plugins also need to be disabled if any were installed.
+   - For .NET: Disable the ASP.NET Core Identity plugin on your service.
+
+![Disable the Authentication Plugin](./../getting-started/assets/authentication/disable_auth_plugin.png)
 
 2. Visit your service's _Entities_ page.
 You will notice that you can now click the _Authentication_ entity's delete button. Click it and a popup will appear.
@@ -113,3 +122,7 @@ Follow these steps to change the default Authentication entity:
 2. Go to the **Authentication Entity** page.
 3. Pick the new Entity you want to be the Authentication entity from the **Entity List** dropdown.
 4. You have now set a new Authentication entity.
+
+:::note
+When changing the default Authentication entity, ensure that the new entity contains all the required fields for your service type (Node.js or .NET) as outlined in the [Authentication Entity Fields](#authentication-entity-fields) section.
+:::
