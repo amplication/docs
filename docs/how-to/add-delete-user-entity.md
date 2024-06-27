@@ -20,7 +20,7 @@ However, you can choose to use your own custom Authentication entity as long as 
 
 ## Dependencies Between the Authentication Entity and Authentication Plugins
 
-The authentication plugins rely on the existence of an _Authentication_ entity to handle user authentication and authorization. For Node.js services, this includes the _NestJS Auth Module_ and others. For .NET services, this includes the _ASP.NET Core Identity_ plugin.
+The authentication plugins rely on the existence of an _Authentication_ entity to handle user authentication and authorization. For Node.js services, this includes the _NestJS Auth Module_ and others. For .NET services, this includes the ASP.NET Core Identity plugin.
 
 If the _Authentication_ entity is not defined or is missing the required fields, the build process will fail, and the authentication plugins will not function correctly.
 
