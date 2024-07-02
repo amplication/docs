@@ -10,32 +10,34 @@ slug: /
 
 Welcome to Amplication's developer documentation!
 
-Amplication is an open-source, AI-powered backend development platform that accelerates the creation of production-ready Node.js and .NET applications. With Amplication, you can focus on your core business logic while we handle the boilerplate.
+Amplication is an open-source, AI-powered code generation solution for rapid .NET and Node.js development. Unlike other AI code generation tools, Amplication is the only one that guarantees production-ready code generation with every use.
 
 ## Quick Start
 
-Get up and running in minutes:
+[Create your first service](/first-service/) with Amplication's AI, Jovu, and generate a .NET or Node.js _production-ready codebase in minutes_.
 
-1. [Create your first service](/first-service/)
-2. [Set up entities and fields](/set-up-entities/)
-3. [Configure roles and permissions](/configure-roles-and-permissions/)
-4. [Commit changes and build](/commit-and-build-new-versions/)
+## Customize Your Generated Service
+
+Amplication transforms your ideas into production-ready code in minutes, but we're more than just a code generator. Our platform supports you throughout the entire development process.
+
+After your service is created, use these features to fine-tune and customize your service to your exact needs:
+
+- [Set up entities and fields](/set-up-entities/)
+- [Configure roles and permissions](/configure-roles-and-permissions/)
+- [Extend capabilities with plugins](/add-plugins-service/)
+- [Commit changes and build](/commit-and-build-new-versions/)
 
 ## Key Features
 
-- **AI Assistance**: Intelligent suggestions for your architecture, production-ready code generation, and more.
-- **Full Stack Generation**: REST and GraphQL APIs, database models, authentication, and more.
-- **Customizable**: Extend generated code with custom business logic.
-- **Git Integration**: Seamless sync with GitHub, Bitbucket, GitLab, or AWS CodeCommit.
-- **Plugin System**: Extend functionality with community or custom plugins.
-- **Multiple Databases**: Support for PostgreSQL, MySQL, MongoDB, MS SQL Server, and more.
-
-## Dive Deeper
-
-- [Explore the generated application structure](/getting-started/)
-- [Learn about authentication options](/authentication/)
-- [Understand Smart Git Sync](/smart-git-sync/)
-- [Discover available plugins](/plugins-list/)
+- **[AI-powered Development](/amplication-ai/)**: Generate production-ready .NET or Node.js code, get intelligent suggestions for your service's architecture, and more with Amplication AI.
+- **[Import Your Existing DB](/how-to/import-prisma-schema/)**: Use your _existing_ databases for a head start on development.
+- **[Full Stack Code Generation](/getting-started/)**: Fully-functional REST and GraphQL APIs, database models, authentication, logging, React Admin UI, and more.
+- **[Event-Driven Architecture](/concepts/event-driven-architecture/)**: Create new services with a modern architecture or modernize your existing apps into a event-driven microservices architecture.
+- **[Seamless Git Integration](/smart-git-sync/)**: Git sync with GitHub, Bitbucket, GitLab, or AWS CodeCommit.
+- **[Custom Code Integration](/custom-code/)**: Extend generated code with your own custom business logic.
+- **[Plugin System](/plugins/)**: Extend functionality with our community plugins or create your custom plugins.
+- **[Multiple Databases](/getting-started/#databases)**: Support for PostgreSQL, MySQL, MongoDB, MS SQL Server, and more.
+- **[Deployment & CI/CD](/deploy/docker-desktop/)**: Simplify and automate your CI/CD pipeline with our plugins and streamline deployments to popular options like AWS ECS, Docker Desktop, and Kubernetes.
 
 ## Tutorials and Samples
 
