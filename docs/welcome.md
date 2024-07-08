@@ -10,7 +10,7 @@ slug: /
 
 Welcome to Amplication's developer documentation!
 
-Amplication is an open-source, AI-powered code generation solution for rapid .NET and Node.js development. Unlike other AI code generation tools, Amplication is the only one that guarantees production-ready code generation with every use.
+Amplication is an open-source, AI-powered code generation solution for rapid .NET and Node.js development. Unlike other AI code generation tools, Amplication is the only one that guarantees production-ready code generation for all your backend needs.
 
 ## Quick Start
 
@@ -20,10 +20,11 @@ Amplication is an open-source, AI-powered code generation solution for rapid .NE
 
 Amplication transforms your ideas into production-ready code in minutes, but we're more than just a code generator. Our platform supports you throughout the entire development process.
 
-After your service is created, use these features to fine-tune and customize your service to your exact needs:
+Use these features to fine-tune and customize your service to your exact needs:
 
 - [Set up entities and fields](/set-up-entities/)
 - [Configure roles and permissions](/configure-roles-and-permissions/)
+- [Create custom API endpoints and data structures](/custom-types-and-actions/)
 - [Extend capabilities with plugins](/add-plugins-service/)
 - [Commit changes and build](/commit-and-build-new-versions/)
 
@@ -33,7 +34,7 @@ After your service is created, use these features to fine-tune and customize you
 - **[Import Your Existing DB](/how-to/import-prisma-schema/)**: Use your _existing_ databases for a head start on development.
 - **[Full Stack Code Generation](/getting-started/)**: Fully-functional REST and GraphQL APIs, database models, authentication, logging, React Admin UI, and more.
 - **[Event-Driven Architecture](/concepts/event-driven-architecture/)**: Create new services with a modern architecture or modernize your existing apps into a event-driven microservices architecture.
-- **[Seamless Git Integration](/smart-git-sync/)**: Git sync with GitHub, Bitbucket, GitLab, or AWS CodeCommit.
+- **[Seamless Git Integration](/smart-git-sync/)**: Smart git sync with GitHub, Bitbucket, GitLab, or AWS CodeCommit.
 - **[Custom Code Integration](/custom-code/)**: Extend generated code with your own custom business logic.
 - **[Plugin System](/getting-started/plugins/)**: Extend functionality with our community plugins or create your custom plugins.
 - **[Multiple Databases](/getting-started/#databases)**: Support for PostgreSQL, MySQL, MongoDB, MS SQL Server, and more.
