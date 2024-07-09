@@ -52,19 +52,24 @@ module.exports = {
           activeBaseRegex: '^/$'
         },
         {
-          to: "/tutorials",
+          to: "/amplication-ai",
           position: "left",
-          label: "Tutorials",
+          label: "Amplication AI",
         },
         {
-          to: "/custom-code",
+          to: "/how-to/import-prisma-schema/",
           position: "left",
-          label: "Custom Code",
+          label: "Import Your DB",
         },
         {
-          to: "/api",
+          to: "/custom-types-and-actions",
           position: "left",
-          label: "Generated APIs",
+          label: "Custom APIs",
+        },
+        {
+          to: "/getting-started/plugins/",
+          position: "left",
+          label: "Plugins",
         },
         {
           to: "https://app.amplication.com/login",
