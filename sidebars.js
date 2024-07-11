@@ -71,6 +71,20 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Deployment",
+      link: {
+        type: "doc",
+        id: "how-to/deploy",
+      },
+      items: [
+        "how-to/deploy",
+        "getting-started/deploy-docker-desktop",
+        "how-to/deploy-kubernetes",
+        "how-to/deploy-to-aws-ecs",
+      ]
+    },
+    {
+      type: "category",
       label: "Data Modeling",
       items: [
         "how-to/default-value-entity-field",
@@ -141,9 +155,6 @@ const sidebars = {
         },
         "how-to/analytics-dashboard",
         "how-to/understanding-break-the-monolith",
-        "getting-started/deploy-docker-desktop",
-        "how-to/deploy-kubernetes",
-        "how-to/deploy-to-aws-ecs",
         "how-to/how-to-create-service",
         "how-to/authentication-plugin-examples",
         "how-to/create-message-broker",
