@@ -195,10 +195,6 @@ module.exports = {
             from: ["/how-to/add-delete-user-entity"]
           },
           {
-            to: "/deploy/docker-desktop",
-            from: ["/deploy"]
-          },
-          {
             to: "/getting-started/",
             from: ["/guides/getting-started"],
           },
