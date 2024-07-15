@@ -54,22 +54,37 @@ module.exports = {
         {
           to: "/amplication-ai",
           position: "left",
-          label: "Amplication AI",
+          label: "AI",
         },
         {
-          to: "/how-to/import-prisma-schema/",
+          to: "/how-to/create-entity/",
           position: "left",
-          label: "Import Your DB",
+          label: "Entities"
         },
         {
           to: "/custom-types-and-actions",
           position: "left",
-          label: "Custom APIs",
+          label: "APIs",
+        },
+        {
+          to: "/getting-started/",
+          position: "left",
+          label: "Code Generation"
+        },
+        {
+          to: "/how-to/import-prisma-schema/",
+          position: "left",
+          label: "Import DB",
         },
         {
           to: "/getting-started/plugins/",
           position: "left",
           label: "Plugins",
+        },
+        {
+          to: "/deploy",
+          position: "left",
+          label: "Deploy",
         },
         {
           to: "https://app.amplication.com/login",
