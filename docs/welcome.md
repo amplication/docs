@@ -24,7 +24,7 @@ Use these features to fine-tune and customize your service to your exact needs:
 
 - [Set up entities and fields](/set-up-entities/)
 - [Configure roles and permissions](/configure-roles-and-permissions/)
-- [Create custom API endpoints and data structures](/custom-types-and-actions/)
+- [Create and manage custom API endpoints and data structures](/custom-types-and-actions/)
 - [Extend capabilities with plugins](/add-plugins-service/)
 - [Commit changes and build](/commit-and-build-new-versions/)
 
