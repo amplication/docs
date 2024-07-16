@@ -38,7 +38,7 @@ Use these features to fine-tune and customize your service to your exact needs:
 - **[Custom Code Integration](/custom-code/)**: Extend generated code with your own custom business logic.
 - **[Plugin System](/getting-started/plugins/)**: Extend functionality with our community plugins or create your custom plugins.
 - **[Multiple Databases](/getting-started/#databases)**: Support for PostgreSQL, MySQL, MongoDB, MS SQL Server, and more.
-- **[Deployment & CI/CD](/deploy/)**: Simplify and automate your CI/CD pipeline with our plugins and streamline deployments to popular options like AWS ECS, Docker Desktop, and Kubernetes.
+- **Deployment & CI/CD**: Simplify and automate your CI/CD pipeline with our plugins and streamline deployments to popular options like [AWS ECS](/deploy/aws/ecs), [Docker Desktop](/deploy/docker-desktop/), and [Kubernetes](/deploy/kubernetes).
 
 ## Tutorials and Samples
 
