@@ -72,20 +72,20 @@ module.exports = {
           label: "Code Generation"
         },
         {
-          to: "/how-to/import-prisma-schema/",
-          position: "left",
-          label: "Import DB",
-        },
-        {
           to: "/getting-started/plugins/",
           position: "left",
           label: "Plugins",
         },
         {
+          to: "/how-to/import-prisma-schema/",
+          position: "left",
+          label: "Import DB",
+        },
+        /* {
           to: "/deploy",
           position: "left",
           label: "Deploy",
-        },
+        }, */
         {
           to: "https://app.amplication.com/login",
           label: "Start Now",
