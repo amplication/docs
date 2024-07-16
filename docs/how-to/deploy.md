@@ -12,10 +12,13 @@ This guide provides an overview of Amplication's deployment options and links to
 
 ## Understanding Amplication's Deployment Architecture
 
-Applications created with Amplication comprise two main components:
+Services created with Amplication comprise of at least two main parts:
 
 1. The server that runs the API
 2. A database
+
+There can be other parts like a Kafka message broker, or a Redis cache, or something else that your service needs.
+These will all be additional containers that will be specified in the `docker-compose` file.
 
 When it comes to deployment, you have several options to choose from, allowing you to select the best approach for your development workflow and production needs.
 
