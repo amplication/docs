@@ -46,4 +46,4 @@ Amplication supports deployment to Amazon Web Services using Elastic Container S
 
 We're always looking to expand our deployment options to meet the needs of our users. Is there a specific deployment target or cloud provider you'd like to see covered in our documentation? We'd love to hear from you!
 
-[Contact us with your deployment guide requests](https://amplication.com/contact-us)
+[Contact us with your deployment guide requests](https://meetings-eu1.hubspot.com/paz-yanover/product-overview-vp-product)
