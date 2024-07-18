@@ -1,25 +1,25 @@
 ---
 id: plugins
-title: How To Use Plugins
+title: Plugins Explained
 description: Learn how to use Amplication plugins that extend the functionality of your generated application.
-sidebar_label: How To Use Plugins
+sidebar_label: Plugins Explained
 slug: /getting-started/plugins
 pagination_next: plugins/overview
 pagination_prev: getting-started/community-plugins
 ---
 
-Amplication uses _Plugins_ to extend the functionality of your generated code.
+Amplication uses _Plugins_ to extend the functionality of your service.
 
-Some plugins can be enabled when you first create your service.
+You can enable certain plugins when you first create your service.
 For example, if you choose MySQL as your database, the _MySQL DB_ plugin will be enabled.
-If you choose to turn on authentication for your service, that will enable the _NestJS Auth Module_ plugin.
+If you choose to turn on authentication for your service, that will enable Authentication-related plugin.
 
-All community plugins published by Amplication are available on the _All Plugins_ page.
-Your installed plugins are shown on the _Installed Plugins_ page.
-Plugins can be manually enabled or disabled on either of these pages.
+To see all published plugins, first visit the _Plugins_ tab in your service's dashboard and click on _All Plugins_ on the left sidebar.
+Your installed plugins are shown on the _Installed Plugins_ tab.
+Plugins can be manually enabled or disabled on either of these tabs.
+
 The source code of all community Amplication plugins are [available on GitHub](https://github.com/amplication/plugins).
-
-Besides the community plugins created by the Amplication team, you can [develop your own custom plugins](/plugins/overview/).
+Besides the plugins created by the Amplication team, you can [develop your own custom plugins](/plugins/overview/).
 
 :::tip
 [Amplication's AI](/amplication-ai) can help you find new plugins for your service, and even install them automatically, with a single request.
@@ -27,17 +27,24 @@ Besides the community plugins created by the Amplication team, you can [develop 
 Ask Jovu: `Which plugins do you recommend for adding caching capabilities to my Amplication service?`
 :::
 
-## Community Plugins List 
-
-You can view all community plugins on the _All Plugins_ page.
-They're also available on the [Community Plugins](/plugins-list) page here on the Amplication documentation.
-
 ## Viewing Open-Source Plugin Code
 
 All Amplication plugins are open-source and available on GitHub.
 You can find the plugin source code for each individual plugin in Amplication's [`plugins`](https://github.com/amplication/amplication-plugins) repository.
 
-## How To Install A Plugin
+## Node.js vs .NET Plugins
+
+Amplication supports both Node.js and .NET for code generation.Plugins are technology-specific.
+
+When you switch between Node.js and .NET, you'll see a different set of available plugins, each optimized for the chosen stack.
+
+Node.js plugins integrate seamlessly with the Node.js ecosystem and popular frameworks like NestJS. .NET plugins are designed to work with .NET Core and leverage the power of the .NET ecosystem.
+
+## .NET Plugins (Coming Soon)
+
+With the recent release of full .NET support, Amplication is actively expanding its .NET plugin ecosystem. While currently more limited than the Node.js offerings, new .NET plugins are being developed and released regularly, focusing on essential functionalities like authentication and database connectivity, with many more plugins coming soon.
+
+## How To Install a Plugin
 
 To install a plugin:
 
@@ -51,7 +58,7 @@ To install a plugin:
 
 4. To see the plugin's code on GitHub, select **View on GitHub**.
 
-## How To Uninstall A Plugin
+## How To Uninstall a Plugin
 
 To uninstall, or deactivate, a plugin, click the toggle switch into its _off_ state.
 
