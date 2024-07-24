@@ -1,7 +1,7 @@
 ---
 id: choose-configure-update-database
 title: How To Choose, Configure, and Update Your Database
-description: Learn how to choose, confiugre, and update your Amplication database using plugins.
+description: Learn how to choose, configure, and update your Amplication database using plugins.
 sidebar_label: How To Choose, Configure, and Update Your Database
 slug: /plugins/guides/database
 ---
