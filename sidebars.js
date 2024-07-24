@@ -160,6 +160,7 @@ const sidebars = {
           type: "category",
           label: "Plugin Guides",
           items: [
+            "how-to/choose-configure-update-database",
             "how-to/authentication-plugin-examples",
             "how-to/create-message-broker",
           ]
