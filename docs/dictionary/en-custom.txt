@@ -97,3 +97,4 @@ Supertokens
 Bitwarden
 Jovu
 Jovu's
+passwordless
