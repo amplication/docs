@@ -1,76 +1,83 @@
 ---
-title: Authentication Plugin Examples
-sidebar_label: Authentication Plugin Examples
-slug: /authentication-plugin-examples
+title: Authentication Plugin Guide
+sidebar_label: Authentication Plugin Guide
+slug: /plugins/guides/authentication
 pagination_next: getting-started/authentication
 ---
 
-# Authentication Plugin Examples
+# How To Update Your Authentication and Authorization Setup
 
-Amplication provides you with various plugins for [Authentication](/authentication).
+Authentication and authorization are important parts of your Amplication service. Amplication provides flexible options for implementing these security measures.
 
-This page provides you with in-depth examples on how to use and interact with the available authentication plugins.
+This guide will walk you through the process of updating your authentication and authorization setup in your Amplication-generated service.
 
-## JWT Authentication
+## Creating a Service Without Authentication
 
-When generating an app with JWT authentication, the process includes the following two steps:
+If you initially created your service without authentication, you can still add it later. Here are the key steps:
 
-1. Send a login request to the server with username and password to get back from the server the JWT token.
-2. Add an authentication header with the JWT token to every consecutive request.
+1. Go to your service's Plugins page.
+2. Choose and add an Auth Provider plugin (e.g., JWT, Auth0, etc.) that suits your needs.
+3. Configure the Authentication Entity in your service settings.
 
-Following are examples of how to log in with REST API and GraphQL API.
+For detailed instructions on this process, refer to the [Authentication Entity documentation](https://docs.amplication.com/user-entity).
 
-### Rest API
+## Node.js vs .NET Authentication Options
 
-```bash title="Rest API Curl Request Example"
-curl -X 'POST' \
-  'https://[server-url]/api/login' \
-  -H 'accept: */*' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "username": "admin",
-  "password": "admin"
-}'
-```
+It's important to note that authentication options differ between Node.js and .NET services in Amplication:
 
-![Swagger playground for login endpoint.](./../getting-started/assets/authentication/auth-rest.png)
+- For Node.js services, you can choose from the various authentication plugins mentioned above.
+- For .NET services, ASP.NET Core Identity is currently the primary authentication option. However, more authentication options for .NET will be added in the future.
 
-### GraphQL API
+## Available Authentication Plugins
 
-```graphql
-mutation {
-  login(credentials: { username: "admin", password: "admin" }) {
-    accessToken
-  }
-}
-```
+Amplication offers several authentication plugins to choose from. Each plugin has its own configuration options and setup process. 
 
-### Header with JWT Included (example)
+### Node.js
 
-<!-- spell-checker: disable -->
+1. Auth0 Auth Provider
+2. Basic Auth Provider
+4. JWT Auth Provider
+5. KeyCloak Auth Provider
+6. SAML Auth Provider
+7. Supertokens Auth Provider
 
-```text title="JWT Authorization Header Example"
- Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoieW91IGFyZSBzb29vb28gY29vbCB0aGF0IHlvdSBjaGVjayB0aGF0ISIsIm5hbWUiOiJPZmVrIGdhYmF5IDspIiwiaWF0IjoxNTE2MjM5MDIyfQ.vaYJaP9SUlOU0u4NfFCRm5tmBVDKeCwvN6ByCkqJt8U
-```
+#### JWT Auth Provider
 
-<!-- spell-checker: enable -->
+- Adds JSON Web Token (JWT) authentication and authorization to your service.
+- Must be installed with the "NestJS Auth Module" plugin.
+- For detailed configuration, visit the [JWT Auth Provider GitHub README](https://github.com/amplication/plugins/tree/master/plugins/auth-jwt).
 
-## Basic Authentication
+#### Auth0 Auth Provider
 
-When using Basic HTTP authentication, when sending a request to the API you must provide a Basic HTTP authentication header with the format:
+- Integrates Auth0 authentication and authorization into your service.
+- Requires an Auth0 account and configuration of an Auth0 application.
+- For setup instructions and configuration options, check the [Auth0 Auth Provider GitHub README](https://github.com/amplication/plugins/tree/master/plugins/auth-auth0).
 
-Authorization: 'type' 'credentials'
+#### Supertokens Auth Provider
 
-where type is Basic and credentials is the Base64 encoding of a string "username:password".
+- Adds Supertokens authentication to your service.
+- Supports various authentication recipes (e.g., email-password, passwordless, third-party).
+- Requires setup of the Supertokens core service.
+- For detailed configuration and usage, refer to the [Supertokens Auth Provider GitHub README](https://github.com/amplication/plugins/tree/master/plugins/auth-supertokens).
 
-```text title="Basic Authentication Example"
-Authorization: Basic YWRtaW46YWRtaW4=
-```
+#### SAML Auth Provider
 
-By default, your app comes with one user with the username `admin` and password `admin`.
+- Enables SAML authentication on your service.
+- Uses Passport SAML strategy and generates JWT tokens for authorization.
+- For usage details, check the [SAML Auth Provider GitHub README](https://github.com/amplication/plugins/tree/master/plugins/auth-saml).
 
-:::tip
-You can use a tool to create the header. There are several generators available, such as [https://www.blitter.se/utils/basic-authentication-header-generator/](https://www.blitter.se/utils/basic-authentication-header-generator/)
-:::
+### .NET 
 
-Read here to find out more: [HTTP authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication).
+As of now, .NET services only support **ASP.NET Core Identity** but we will add more authentication providers soon.
+
+#### ASP.NET Core Identity
+
+If you're using a .NET service, refer to the [.NET Auth Core Identity plugin documentation](https://github.com/amplication/plugins/tree/master/plugins/dotnet-auth-core-identity) for setup and usage instructions.
+
+## Best Practices for Authentication and Authorization
+
+1. Choose the appropriate authentication method based on your project requirements.
+2. Always use HTTPS to encrypt data in transit.
+3. Implement proper error handling and logging for authentication failures.
+4. Regularly update and rotate authentication secrets and keys.
+5. Follow the principle of least privilege when assigning roles and permissions.
