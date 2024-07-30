@@ -17,7 +17,7 @@ Each of these main events includes other events to create the server's files and
 
 The following diagram represents the execution order of the events in DSG for Node.js:
 
-![](.\assets\hierarchy.png)
+![A Diagram of Node.js Plugins Events](./assets/hierarchy.png)
 
 ## .NET Event Hierarchy
 
