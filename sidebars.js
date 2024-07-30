@@ -159,6 +159,7 @@ const sidebars = {
       items: [
         "getting-started/plugins",
         "getting-started/community-plugins",
+        "plugins/dotnet-plugins",
         "plugins/how-to-create-plugin",
         "plugins/how-to-test-plugin",
         "plugins/publish-plugin",
