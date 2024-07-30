@@ -13,7 +13,7 @@ Some of the key features of our generated backend services include:
 
 - **Extensive Functionality**: The generated services provide a wide range of features, including authentication, authorization, data validation, logging, a database, and a REST API. For Node.js services, they also offer GraphQL APIs for efficient data communication and a React-based admin UI.
 - **Clean Architecture**: Both Node.js and .NET services are structured following the clean architecture principles, ensuring that the business logic is decoupled from the infrastructure and UI layers. This makes the code easier to maintain and test.
-- **Ready for Production**: The generated services include Docker configurations, CI/CD pipelines, and are optimized for cloud deployment, making it straightforward to move from development to production.
+- **Ready for Production**: The generated services are optimized for [deployment](/deploy/), include Docker configurations and CI/CD pipelines, making it straightforward to move from development to production.
 - **Customizable and Extendable**: While the service provides a solid foundation, it is fully customizable. Developers can extend the generated code with custom features and integrate additional services as needed.
 
 :::note
