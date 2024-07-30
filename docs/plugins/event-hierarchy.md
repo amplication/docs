@@ -15,6 +15,8 @@ For Node.js services, we have two main events: one for the server creation and t
 
 Each of these main events includes other events to create the server's files and the admin-ui files (in our source code, it is sometimes referred to as `modules`).
 
+For a complete list of Node.js events, descriptions, parameters, and examples, refer to the [Node.js Plugin Events Reference](/plugins/plugin-events/create-server/) section.
+
 The following diagram represents the execution order of the events in DSG for Node.js:
 
 ![A Diagram of Node.js Plugins Events](./assets/hierarchy.png)
