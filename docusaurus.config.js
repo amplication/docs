@@ -87,7 +87,7 @@ module.exports = {
           label: "Deploy",
         }, */
         {
-          to: "https://app.amplication.com/login",
+          to: "https://app.amplication.com/login?event=startNowClicked&source=documentation",
           label: "Start Now",
           position: "right",
           className: "start-now-button",
