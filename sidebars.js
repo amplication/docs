@@ -174,8 +174,12 @@ const sidebars = {
           ],
         },
         {
+          type: 'doc',
+          id: 'plugins/dotnet-plugin-events-reference',
+        },
+        {
           type: "category",
-          label: "Custom Plugin Events - Reference",
+          label: "Node.js Plugin Events - Reference",
           items: [
             "plugins/plugin-events/create-server",
             "plugins/plugin-events/create-server-docker-compose",
