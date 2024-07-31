@@ -12,14 +12,14 @@ Amplication uses _Plugins_ to extend the functionality of your service.
 
 You can enable certain plugins when you first create your service.
 For example, if you choose MySQL as your database, the _MySQL DB_ plugin will be enabled.
-If you choose to turn on authentication for your service, that will enable Authentication-related plugin.
+If you choose to turn on authentication for your service, that will enable Authentication-related plugins.
 
-To see all published plugins, first visit the _Plugins_ tab in your service's dashboard and click on _All Plugins_ on the left sidebar.
+To see all community-created plugins, first visit the _Plugins_ tab in your service's dashboard and click on _All Plugins_ on the left sidebar.
 Your installed plugins are shown on the _Installed Plugins_ tab.
 Plugins can be manually enabled or disabled on either of these tabs.
 
 The source code of all community Amplication plugins are [available on GitHub](https://github.com/amplication/plugins).
-Besides the plugins created by the Amplication team, you can [develop your own custom plugins](/plugins/overview/).
+Besides the plugins created by the Amplication team and the community, you can [develop your own custom plugins](/plugins/overview/).
 
 :::tip
 [Amplication's AI](/amplication-ai) can help you find new plugins for your service, and even install them automatically, with a single request.
@@ -32,17 +32,13 @@ Ask Jovu: `Which plugins do you recommend for adding caching capabilities to my 
 All Amplication plugins are open-source and available on GitHub.
 You can find the plugin source code for each individual plugin in Amplication's [`plugins`](https://github.com/amplication/amplication-plugins) repository.
 
-## Node.js vs .NET Plugins
+## Node.js and .NET Plugins
 
-Amplication supports both Node.js and .NET for code generation.Plugins are technology-specific.
+Amplication supports both Node.js and .NET for code generation. Plugins are technology-specific.
 
 When you switch between Node.js and .NET, you'll see a different set of available plugins, each optimized for the chosen stack.
 
 Node.js plugins integrate seamlessly with the Node.js ecosystem and popular frameworks like NestJS. .NET plugins are designed to work with .NET Core and leverage the power of the .NET ecosystem.
-
-## .NET Plugins (Coming Soon)
-
-With the recent release of full .NET support, Amplication is actively expanding its .NET plugin ecosystem. While currently more limited than the Node.js offerings, new .NET plugins are being developed and released regularly, focusing on essential functionalities like authentication and database connectivity, with many more plugins coming soon.
 
 ## How To Install a Plugin
 
@@ -83,7 +79,7 @@ By default, the latest version of the plugin will be available in the list of pl
 
 1. To change the installed version of a plugin, in the **All Plugins** page, click the **Settings** icon.
 
-   The plugin’s settings page opens.
+   The plugin's settings page opens.
 
    ![](./assets/plugin-versions.png)
 
