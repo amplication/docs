@@ -1,7 +1,7 @@
 ---
 id: plugin-architecture
 title: Plugin Architecture Overview
-sidebar_label: Overview
+sidebar_label: Custom Plugin Architecture
 slug: /plugins/plugin-architecture
 ---
 
@@ -23,7 +23,7 @@ If no part of the event lifecycle was provided or if none of its params were cha
 
 ## Node.js vs .NET
 
-While the overall architecture remains similar for both Node.js and .NET services, there are distinct events and parameters for each. The Node.js events are prefixed with `Create`, while the .NET events are defined in the `DotnetEventNames` enum.
+While the overall architecture remains similar for both Node.js and .NET services, there are distinct events and parameters for each. The Node.js events are defined in the `EventNames` enum, while the .NET events are defined in the `DotnetEventNames` enum.
 
 - [Node.js Event Reference](/plugins/plugin-events/create-server/)
-- [.NET Event Reference](/plugins/dotnet-plugin-events-reference/)
+- [.NET Event Reference](/plugins/dotnet-plugin-events/create-server/)

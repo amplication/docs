@@ -23,17 +23,16 @@ The following diagram represents the execution order of the events in DSG for No
 
 ## .NET Event Hierarchy
 
-For .NET services, the event hierarchy is focused on server-side generation. It includes events for creating various components of the .NET service, such as controllers, services, models, and infrastructure elements.
+For .NET services, the event hierarchy is focused on server-side generation. It includes events for creating various components of the .NET service, such as controllers, services, database models, and infrastructure elements.
 
 Key events in the .NET hierarchy include:
 
-1. [`CreateServer`](/plugins/dotnet-plugin-events-reference/#createserver): The main event for creating the .NET server.
-2. [`CreateProgramFile`](/plugins/dotnet-plugin-events-reference/#createprogramfile): Creates the main program file for the .NET application.
-3. [`CreateEntityController`](/plugins/dotnet-plugin-events-reference/#createentitycontroller) and [`CreateEntityService`](/plugins/dotnet-plugin-events-reference/#createentityservice): Create controllers and services for each entity.
-4. [`CreateServerAuth`](/plugins/dotnet-plugin-events-reference/#createserverauth): Sets up authentication for the .NET server.
-5. [`CreateServerDockerCompose`](/plugins/dotnet-plugin-events-reference/#createserverdockercompose): Generates Docker Compose files for the .NET server.
+1. [`CreateServer`](/plugins/dotnet-plugin-events/create-server): The main event for creating the .NET server.
+2. [`CreateProgramFile`](/plugins/dotnet-plugin-events/create-program-file): Creates the main program file for the .NET application.
+3. [`CreateEntityController`](/plugins/dotnet-plugin-events/create-entity-controller) and [`CreateEntityService`](/plugins/dotnet-plugin-events/create-entity-service): Create controllers and services for each entity.
+4. [`CreateServerAuth`](/plugins/dotnet-plugin-events/create-server-auth): Sets up authentication for the .NET server.
 
-The exact order of execution may vary, and some events may run in parallel. For a complete list of .NET events, descriptions, parameters, and examples, refer to the [.NET Plugin Events Reference](/plugins/dotnet-plugin-events-reference) page.
+The order of execution is deterministic and events run synchronously. For a complete list of .NET events, descriptions, parameters, and examples, refer to the [.NET Plugin Events Reference](/plugins/dotnet-plugin-events/create-server) page.
 
 :::note
 The event hierarchies for Node.js and .NET are distinct and tailored to the specific needs and structures of each platform.

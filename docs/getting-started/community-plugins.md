@@ -85,14 +85,14 @@ Integrate Auth0's robust authentication solutions into your service with the [Au
 [ESLint](https://github.com/amplication/plugins/tree/master/plugins/linter-eslint) is a library that helps find issues and enforce code style in your JavaScript code.
 ESLint has a wide array of rules that can be configured to enforce code quality and consistency.
 
+### Redis Caching
+
+Enhance your application's performance with the [Redis Caching](https://github.com/amplication/plugins/tree/master/plugins/cache-redis) plugin. Redis is known for its fast data retrieval capabilities, making it an excellent choice for implementing caching strategies.
+
 ### Redis Message Broker
 
 [Redis Message Broker](https://github.com/amplication/plugins/tree/master/plugins/broker-redis) is an extension of the traditional Redis in-memory data store, allowing it to function as a message broker. 
 Install this plugin to leverage Redis's in-memory capabilities and enables asynchronous message communication between different parts of an application or between different applications.
-
-### Redis Caching
-
-Enhance your application's performance with the [Redis Caching](https://github.com/amplication/plugins/tree/master/plugins/cache-redis) plugin. Redis is known for its fast data retrieval capabilities, making it an excellent choice for implementing caching strategies.
 
 ### OpenAI
 
