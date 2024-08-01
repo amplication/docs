@@ -31,11 +31,11 @@ Example:
 async afterCreateDTOs(
   context: DsgContext,
   eventParams: CreateDTOsParams,
-  modules: ModuleMap
+  files: FileMap<F>
 ) {
   const { entity, dtoName, dtoBasePath } = eventParams;
   const dtoPath = join(dtoBasePath, `${dtoName}.cs`);
-  const dtoFile = modules.get(dtoPath);
+  const dtoFile = files.get(dtoPath);
 
   if (dtoFile) {
     const updatedCode = dtoFile.code + `
@@ -46,12 +46,12 @@ async afterCreateDTOs(
     }
     `;
 
-    modules.set({
+    files.set({
       path: dtoPath,
       code: updatedCode
     });
   }
 
-  return modules;
+  return files;
 }
 ```

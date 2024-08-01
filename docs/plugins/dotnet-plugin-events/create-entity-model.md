@@ -32,11 +32,11 @@ Example:
 async afterCreateEntityModel(
   context: DsgContext,
   eventParams: CreateEntityModelParams,
-  modules: ModuleMap
+  files: FileMap<F>
 ) {
   const { entity, resourceName, apisDir } = eventParams;
   const modelPath = join(apisDir, "Models", `${resourceName}.cs`);
-  const modelFile = modules.get(modelPath);
+  const modelFile = files.get(modelPath);
 
   if (modelFile) {
     const updatedCode = modelFile.code.replace(
@@ -44,12 +44,12 @@ async afterCreateEntityModel(
       "[Table(\"" + entity.name + "\")]\npublic class"
     );
 
-    modules.set({
+    files.set({
       path: modelPath,
       code: updatedCode
     });
   }
 
-  return modules;
+  return files;
 }
 ```

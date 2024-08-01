@@ -31,10 +31,10 @@ Example:
 async afterCreateResourceDbContextFile(
   context: DsgContext,
   eventParams: CreateResourceDbContextFileParams,
-  modules: ModuleMap
+  files: FileMap<F>
 ) {
   const { resourceName, resourceDbContextPath } = eventParams;
-  const dbContextFile = modules.get(resourceDbContextPath);
+  const dbContextFile = files.get(resourceDbContextPath);
 
   if (dbContextFile) {
     const updatedCode = dbContextFile.code.replace(
@@ -48,12 +48,12 @@ async afterCreateResourceDbContextFile(
     }
     `;
 
-    modules.set({
+    files.set({
       path: resourceDbContextPath,
       code: updatedCode
     });
   }
 
-  return modules;
+  return files;
 }
 ```

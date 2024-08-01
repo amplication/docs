@@ -30,19 +30,19 @@ Example:
 async afterLoadStaticFiles(
   context: DsgContext,
   eventParams: LoadStaticFilesParams,
-  modules: ModuleMap
+  files: FileMap<F>
 ) {
   const { source, basePath } = eventParams;
   const staticFiles = await readDir(source);
   
   for (const file of staticFiles) {
     const content = await readFile(join(source, file));
-    modules.set({
+    files.set({
       path: join(basePath, file),
       code: content
     });
   }
 
-  return modules;
+  return files;
 }
 ```

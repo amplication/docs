@@ -26,18 +26,30 @@ export type PluginBeforeEvent<T extends EventParams> = (
   eventParams: T
 ) => Promisable<T>;
 
-export type PluginAfterEvent<T extends EventParams> = (
+// Node.js version
+export type PluginAfterEventNodejs<T extends EventParams> = (
   dsgContext: DsgContext,
   eventParams: T,
   modules: ModuleMap
 ) => Promisable<ModuleMap>;
+
+// .NET version
+export type PluginAfterEventDotNet<T extends EventParams, F> = (
+  dsgContext: DsgContext,
+  eventParams: T,
+  files: FileMap<F>
+) => Promisable<FileMap<F>>;
 ```
 
 In the `before` and `after` functions, we have an access to the context and the event params.
 The [context](docs\plugins\context.md) is used to gather common parts between events.
 The event params manipulate the default behavior by passing different values.
 
-In the `after` function, we also have access to the generated modules. An example of using this parameter is when you want to restructure the generated modules in a different folder structure.
+In the `after` function, we also have access to the generated files. An example of using this parameter is when you want to restructure the generated files in a different folder structure.
+
+:::info
+In the Node.js DSG, the generated files are mapped to the [`ModuleMap`](https://github.com/amplication/amplication/blob/master/libs/util/code-gen-types/src/code-gen-types.ts). For the .NET DSG, the generated files are mapped to [`FileMap`](https://github.com/amplication/amplication/blob/master/libs/util/code-gen-types/src/files/index.ts).
+:::
 
 ## Cautionary Guidelines
 

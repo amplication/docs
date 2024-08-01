@@ -32,11 +32,11 @@ Example:
 async afterCreateEntityService(
   context: DsgContext,
   eventParams: CreateEntityServiceParams,
-  modules: ModuleMap
+  files: FileMap<F>
 ) {
   const { entity, resourceName, apisDir } = eventParams;
   const servicePath = join(apisDir, `${resourceName}Service.cs`);
-  const serviceFile = modules.get(servicePath);
+  const serviceFile = files.get(servicePath);
 
   if (serviceFile) {
     const updatedCode = serviceFile.code + `
@@ -47,12 +47,12 @@ async afterCreateEntityService(
     }
     `;
 
-    modules.set({
+    files.set({
       path: servicePath,
       code: updatedCode
     });
   }
 
-  return modules;
+  return files;
 }
 ```

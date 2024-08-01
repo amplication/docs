@@ -31,11 +31,11 @@ Example:
 async afterCreateEntityExtensions(
   context: DsgContext,
   eventParams: CreateEntityExtensionsParams,
-  modules: ModuleMap
+  files: FileMap<F>
 ) {
   const { entity, apisDir } = eventParams;
   const extensionsPath = join(apisDir, "Extensions", `${entity.name}Extensions.cs`);
-  const extensionsFile = modules.get(extensionsPath);
+  const extensionsFile = files.get(extensionsPath);
 
   if (extensionsFile) {
     const updatedCode = extensionsFile.code + `
@@ -45,12 +45,12 @@ async afterCreateEntityExtensions(
     }
     `;
 
-    modules.set({
+    files.set({
       path: extensionsPath,
       code: updatedCode
     });
   }
 
-  return modules;
+  return files;
 }
 ```

@@ -34,23 +34,23 @@ Example:
 async afterCreateEntityInterface(
   context: DsgContext,
   eventParams: CreateEntityInterfaceParams,
-  modules: ModuleMap
+  files: FileMap<F>
 ) {
   const { entity, apisDir } = eventParams;
   const interfacePath = join(apisDir, "Interfaces", `I${entity.name}.cs`);
-  const interfaceFile = modules.get(interfacePath);
+  const interfaceFile = files.get(interfacePath);
 
   if (interfaceFile) {
     const updatedCode = interfaceFile.code + `
     Task<bool> IsUnique(string name);
     `;
 
-    modules.set({
+    files.set({
       path: interfacePath,
       code: updatedCode
     });
   }
 
-  return modules;
+  return files;
 }
 ```

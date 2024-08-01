@@ -30,10 +30,10 @@ Example:
 async afterCreateSeedDevelopmentDataFile(
   context: DsgContext,
   eventParams: CreateSeedDevelopmentDataFileParams,
-  modules: ModuleMap
+  files: FileMap<F>
 ) {
   const { seedFilePath, resourceName } = eventParams;
-  const seedFile = modules.get(seedFilePath);
+  const seedFile = files.get(seedFilePath);
 
   if (seedFile) {
     const updatedCode = seedFile.code + `
@@ -50,12 +50,12 @@ async afterCreateSeedDevelopmentDataFile(
     }
     `;
 
-    modules.set({
+    files.set({
       path: seedFilePath,
       code: updatedCode
     });
   }
 
-  return modules;
+  return files;
 }
 ```

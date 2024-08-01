@@ -48,11 +48,11 @@ Example:
 async afterCreateEntityController(
   context: DsgContext,
   eventParams: CreateEntityControllerParams,
-  modules: ModuleMap
+  files: FileMap<F>
 ) {
   const { entity, resourceName, apisDir } = eventParams;
   const controllerPath = join(apisDir, `${resourceName}Controller.cs`);
-  const controllerFile = modules.get(controllerPath);
+  const controllerFile = files.get(controllerPath);
 
   if (controllerFile) {
     const updatedCode = controllerFile.code.replace(
@@ -60,12 +60,12 @@ async afterCreateEntityController(
       "[ApiVersion(\"1.0\")]\npublic class"
     );
 
-    modules.set({
+    files.set({
       path: controllerPath,
       code: updatedCode
     });
   }
 
-  return modules;
+  return files;
 }
 ```
