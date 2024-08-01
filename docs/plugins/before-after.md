@@ -7,7 +7,7 @@ slug: /plugins/plugin-events/plugin-events-before-after
 
 # Before and After Lifecycle Functions
 
-All events expose an identical interface with two functions that can be handled by the plugin and responsible for a different step in the lifecycle of the event. One for “before” the event is emitted and another for “after” the event is emitted.
+All events expose an identical interface with two functions that can be handled by the plugin and responsible for a different step in the lifecycle of the event. One for "before" the event is emitted and another for "after" the event is emitted.
 
 ```tsx
 export interface PluginEventType<T extends EventParams> {
@@ -48,7 +48,7 @@ The event params manipulate the default behavior by passing different values.
 In the `after` function, we also have access to the generated files. An example of using this parameter is when you want to restructure the generated files in a different folder structure.
 
 :::info
-In the Node.js DSG, the generated files are mapped to the [`ModuleMap`](https://github.com/amplication/amplication/blob/master/libs/util/code-gen-types/src/code-gen-types.ts). For the .NET DSG, the generated files are mapped to [`FileMap`](https://github.com/amplication/amplication/blob/master/libs/util/code-gen-types/src/files/index.ts).
+In the `after` function for .NET plugins, we use a [`FileMap`](https://github.com/amplication/amplication/blob/master/libs/util/code-gen-types/src/files/index.ts). For Node.js plugins' `after` function we use a [`ModuleMap`](https://github.com/amplication/amplication/blob/master/libs/util/code-gen-types/src/code-gen-types.ts).
 :::
 
 ## Cautionary Guidelines
