@@ -33,7 +33,7 @@ export type PluginAfterEvent<T extends EventParams> = (
   modules: ModuleMap
 ) => Promisable<ModuleMap>;
 
-// .NET version
+// .NET [version](https://github.com/amplication/amplication/blob/master/libs/util/code-gen-types/src/dotnet-plugins.types.ts#L22)
 export type PluginAfterEvent<T extends EventParams, F> = (
   dsgContext: DsgContext,
   eventParams: T,
