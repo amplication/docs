@@ -61,7 +61,7 @@ In the `after` function for .NET plugins, we use a [`FileMap`](https://github.co
 
 ## Function Examples
 
-Most of the functions include examples. But, if you're looking for more comprehensive and real-world examples, you can explore the [code of the Amplication plugins](https://github.com/amplication/plugins/tree/master/plugins)directly. These plugins showcase various implementations and use cases for the before and after lifecycle functions.
+Most of the functions include examples. But, if you're looking for more comprehensive and real-world examples, you can explore the [code of the Amplication plugins](https://github.com/amplication/plugins/tree/master/plugins) directly. These plugins showcase various implementations and use cases for the before and after lifecycle functions.
 
 ## Best Practices and Cautions
 
