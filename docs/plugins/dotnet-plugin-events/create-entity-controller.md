@@ -42,30 +42,45 @@ The directory where the API controllers are being generated.
 
 An object containing the CRUD actions available for the entity.
 
-Example:
+### Example
 
 ```ts
-async afterCreateEntityController(
-  context: DsgContext,
-  eventParams: CreateEntityControllerParams,
-  modules: ModuleMap
-) {
+afterCreateEntityController(
+  context: dotnetTypes.DsgContext,
+  eventParams: dotnet.CreateEntityControllerParams,
+  files: FileMap<Class>
+): Promise<FileMap<Class>> {
   const { entity, resourceName, apisDir } = eventParams;
-  const controllerPath = join(apisDir, `${resourceName}Controller.cs`);
-  const controllerFile = modules.get(controllerPath);
+  const controllerPath = `${apisDir}/${entity.name}/${pascalCase(entity.name)}Controller.cs`;
+  const controllerFile = files.get(controllerPath);
 
   if (controllerFile) {
-    const updatedCode = controllerFile.code.replace(
-      "public class",
-      "[ApiVersion(\"1.0\")]\npublic class"
+    // Add a custom action to the controller
+    controllerFile.code.addMethod(
+      CsharpSupport.method({
+        name: "ExportToCsv",
+        access: "public",
+        isAsync: true,
+        returnType: CsharpSupport.Types.task(CsharpSupport.Types.reference("IActionResult")),
+        decorators: [
+          CsharpSupport.decorator({
+            name: "HttpGet",
+            arguments: ["export-csv"],
+          }),
+        ],
+        body: `
+          var allItems = await _service.List();
+          var csv = ConvertToCsv(allItems);
+          return File(Encoding.UTF8.GetBytes(csv), "text/csv", "${entity.name}Export.csv");
+        `,
+      })
     );
 
-    modules.set({
-      path: controllerPath,
-      code: updatedCode
-    });
+    // Add necessary imports
+    controllerFile.code.addImport("System.Text");
+    controllerFile.code.addImport("Microsoft.AspNetCore.Mvc");
   }
 
-  return modules;
+  return files;
 }
 ```

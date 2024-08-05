@@ -26,33 +26,49 @@ export interface CreateEntityServiceParams extends EventParams {
 }
 ```
 
-Example:
+### Example
 
 ```ts
-async afterCreateEntityService(
-  context: DsgContext,
-  eventParams: CreateEntityServiceParams,
-  modules: ModuleMap
-) {
+afterCreateEntityService(
+  context: dotnetTypes.DsgContext,
+  eventParams: dotnet.CreateEntityServiceParams,
+  files: FileMap<Class>
+): Promise<FileMap<Class>> {
   const { entity, resourceName, apisDir } = eventParams;
-  const servicePath = join(apisDir, `${resourceName}Service.cs`);
-  const serviceFile = modules.get(servicePath);
+  const servicePath = `${apisDir}/${entity.name}/${pascalCase(entity.name)}Service.cs`;
+  const serviceFile = files.get(servicePath);
 
   if (serviceFile) {
-    const updatedCode = serviceFile.code + `
-    public async Task<${entity.name}> CustomOperation(int id)
-    {
-        // Add custom business logic here
-        return await _context.${entity.pluralName}.FindAsync(id);
-    }
-    `;
+    // Add a custom method to the service
+    serviceFile.code.addMethod(
+      CsharpSupport.method({
+        name: "GetRecentlyModified",
+        access: "public",
+        isAsync: true,
+        returnType: CsharpSupport.Types.task(CsharpSupport.Types.list(CsharpSupport.Types.reference(entity.name))),
+        parameters: [
+          CsharpSupport.parameter({
+            name: "days",
+            type: CsharpSupport.Types.int(),
+            defaultValue: "7",
+          }),
+        ],
+        body: `
+          var cutoffDate = DateTime.UtcNow.AddDays(-days);
+          return await _repository.GetAll()
+            .Where(e => e.UpdatedAt >= cutoffDate)
+            .OrderByDescending(e => e.UpdatedAt)
+            .ToListAsync();
+        `,
+      })
+    );
 
-    modules.set({
-      path: servicePath,
-      code: updatedCode
-    });
+    // Add necessary imports
+    serviceFile.code.addImport("System");
+    serviceFile.code.addImport("System.Linq");
+    serviceFile.code.addImport("Microsoft.EntityFrameworkCore");
   }
 
-  return modules;
+  return files;
 }
 ```

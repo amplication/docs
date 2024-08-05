@@ -24,38 +24,50 @@ export interface CreateSeedDevelopmentDataFileParams extends EventParams {
 }
 ```
 
-Example:
+### Example
 
 ```ts
-async afterCreateSeedDevelopmentDataFile(
-  context: DsgContext,
-  eventParams: CreateSeedDevelopmentDataFileParams,
-  modules: ModuleMap
-) {
+afterCreateSeedDevelopmentDataFile(
+  context: dotnetTypes.DsgContext,
+  eventParams: dotnet.CreateSeedDevelopmentDataFileParams,
+  files: FileMap<Class>
+): FileMap<Class> {
   const { seedFilePath, resourceName } = eventParams;
-  const seedFile = modules.get(seedFilePath);
+  const { entities } = context;
 
-  if (seedFile) {
-    const updatedCode = seedFile.code + `
-    public static void SeedCustomData(${resourceName}DbContext context)
-    {
-        if (!context.Users.Any())
-        {
-            context.Users.AddRange(
-                new User { Username = "admin", Email = "admin@example.com" },
-                new User { Username = "user1", Email = "user1@example.com" }
-            );
-            context.SaveChanges();
-        }
-    }
-    `;
+  if (!entities) return files;
 
-    modules.set({
-      path: seedFilePath,
-      code: updatedCode
-    });
-  }
+  const seedFile = files.get(seedFilePath);
+  seedFile?.code.addMethod(
+    CsharpSupport.method({
+      name: "SeedDevUser",
+      access: "public",
+      isAsync: true,
+      body: CreateSeedDevelopmentDataBody(resourceName, context),
+      type: MethodType.STATIC,
+      parameters: [
+        CsharpSupport.parameter({
+          name: "serviceProvider",
+          type: CsharpSupport.Types.reference(
+            CsharpSupport.classReference({
+              name: "IServiceProvider",
+              namespace: `${resourceName}.Infrastructure.Models`,
+            })
+          ),
+        }),
+        CsharpSupport.parameter({
+          name: "configuration",
+          type: CsharpSupport.Types.reference(
+            CsharpSupport.classReference({
+              name: "IConfiguration",
+              namespace: "",
+            })
+          ),
+        }),
+      ],
+    })
+  );
 
-  return modules;
+  return files;
 }
 ```
