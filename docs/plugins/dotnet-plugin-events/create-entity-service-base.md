@@ -27,32 +27,32 @@ export interface CreateEntityServiceBaseParams extends EventParams {
 }
 ```
 
-Example:
+### Example
 
 ```ts
-async afterCreateEntityServiceBase(
-  context: DsgContext,
-  eventParams: CreateEntityServiceBaseParams,
-  modules: ModuleMap
-) {
-  const { resourceName, apisDir } = eventParams;
-  const serviceBasePath = join(apisDir, `${resourceName}ServiceBase.cs`);
-  const serviceBaseFile = modules.get(serviceBasePath);
-
+afterCreateEntityServiceBase(
+  context: dotnetTypes.DsgContext,
+  eventParams: dotnet.CreateEntityServiceBaseParams,
+  files: FileMap<Class>
+): Promise<FileMap<Class>> {
+  const { entity } = eventParams;
+  const serviceBaseFile = files.get(`Services/Base/${entity.name}ServiceBase.cs`);
   if (serviceBaseFile) {
-    const updatedCode = serviceBaseFile.code + `
-    protected async Task<bool> EntityExists(int id)
-    {
-        return await _context.Set<TEntity>().AnyAsync(e => e.Id == id);
-    }
-    `;
-
-    modules.set({
-      path: serviceBasePath,
-      code: updatedCode
-    });
+    serviceBaseFile.code.addMethod(
+      CsharpSupport.method({
+        name: "SoftDelete",
+        access: "protected",
+        returnType: CsharpSupport.Types.task(CsharpSupport.Types.void()),
+        parameters: [
+          CsharpSupport.parameter({
+            name: "id",
+            type: CsharpSupport.Types.string(),
+          }),
+        ],
+        body: "// Implement soft delete logic here",
+      })
+    );
   }
-
-  return modules;
+  return files;
 }
 ```

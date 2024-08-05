@@ -24,27 +24,30 @@ export interface CreateProgramFileParams extends EventParams {
 }
 ```
 
-Example:
+### Example
 
 ```ts
 beforeCreateProgramFile(
-  context: DsgContext,
-  eventParams: CreateProgramFileParams
+  { resourceInfo }: dotnetTypes.DsgContext,
+  eventParams: dotnet.CreateProgramFileParams
 ) {
-  eventParams.builderServicesBlocks.push({
-    code: "builder.Services.AddSwaggerGen();",
-    comment: "Add Swagger generator"
-  });
-
-  eventParams.appBlocks.push({
-    code: `
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}`,
-    comment: "Configure Swagger middleware"
-  });
+  const serviceNamespace = pascalCase(resourceInfo?.name ?? "");
+  const serviceDbContext = `${pascalCase(resourceInfo?.name ?? "")}DbContext`;
+  eventParams.builderServicesBlocks.push(
+    new CodeBlock({
+      code: `builder.Services.AddDbContext<${serviceDbContext}>(opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("${CONNECTION_STRING}")));`,
+      references: [
+        new ClassReference({
+          name: "AddDbContext",
+          namespace: "Microsoft.EntityFrameworkCore",
+        }),
+        new ClassReference({
+          name: serviceDbContext,
+          namespace: `${serviceNamespace}.Infrastructure`,
+        }),
+      ],
+    })
+  );
 
   return eventParams;
 }

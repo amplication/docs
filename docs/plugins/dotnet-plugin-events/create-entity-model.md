@@ -26,30 +26,24 @@ export interface CreateEntityModelParams extends EventParams {
 }
 ```
 
-Example:
+### Example
 
 ```ts
-async afterCreateEntityModel(
-  context: DsgContext,
-  eventParams: CreateEntityModelParams,
-  modules: ModuleMap
-) {
-  const { entity, resourceName, apisDir } = eventParams;
-  const modelPath = join(apisDir, "Models", `${resourceName}.cs`);
-  const modelFile = modules.get(modelPath);
-
+afterCreateEntityModel(
+  context: dotnetTypes.DsgContext,
+  eventParams: dotnet.CreateEntityModelParams,
+  files: FileMap<Class>
+): Promise<FileMap<Class>> {
+  const { entity, resourceName } = eventParams;
+  const modelFile = files.get(`${resourceName}/Models/${entity.name}.cs`);
   if (modelFile) {
-    const updatedCode = modelFile.code.replace(
-      "public class",
-      "[Table(\"" + entity.name + "\")]\npublic class"
+    modelFile.code.addAttribute(
+      CsharpSupport.attribute({
+        name: "Table",
+        arguments: [`"${entity.name}s"`],
+      })
     );
-
-    modules.set({
-      path: modelPath,
-      code: updatedCode
-    });
   }
-
-  return modules;
+  return files;
 }
 ```

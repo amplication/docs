@@ -23,23 +23,22 @@ export interface CreateServerAppsettingsParams extends EventParams {
 }
 ```
 
-Example:
+### Example
 
 ```ts
 beforeCreateServerAppsettings(
-  context: DsgContext,
-  eventParams: CreateServerAppsettingsParams
+  context: dotnetTypes.DsgContext,
+  eventParams: dotnet.CreateServerAppsettingsParams
 ) {
+  const { port, password, user, host, dbName } = getPluginSettings(
+    context.pluginInstallations
+  );
+
   eventParams.updateProperties = {
     ...eventParams.updateProperties,
-    "Logging": {
-      "LogLevel": {
-        "Default": "Information",
-        "Microsoft": "Warning",
-        "Microsoft.Hosting.Lifetime": "Information"
-      }
+    ConnectionStrings: {
+      [CONNECTION_STRING]: `Host=${host}:${port};Username=${user};Password=${password};Database=${dbName}`,
     },
-    "AllowedHosts": "*"
   };
   return eventParams;
 }

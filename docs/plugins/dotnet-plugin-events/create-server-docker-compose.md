@@ -25,23 +25,18 @@ export interface CreateServerDockerComposeParams extends EventParams {
 }
 ```
 
-Example:
+### Example
 
 ```ts
 beforeCreateServerDockerCompose(
-  context: DsgContext,
-  eventParams: CreateServerDockerComposeParams
+  context: dotnetTypes.DsgContext,
+  eventParams: dotnet.CreateServerDockerComposeParams
 ) {
-  const additionalServices = {
-    services: {
-      redis: {
-        image: "redis:alpine",
-        ports: ["6379:6379"]
-      }
-    }
-  };
+  const settings = getPluginSettings(context.pluginInstallations);
 
-  eventParams.updateProperties.push(additionalServices);
+  eventParams.updateProperties.push(
+    ...updateDockerComposeProperties(settings)
+  );
   return eventParams;
 }
 ```

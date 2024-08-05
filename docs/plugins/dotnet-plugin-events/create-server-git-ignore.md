@@ -23,17 +23,18 @@ export interface CreateServerGitIgnoreParams extends EventParams {
 }
 ```
 
-Example:
+### Example
 
 ```ts
 beforeCreateServerGitIgnore(
-  context: DsgContext,
-  eventParams: CreateServerGitIgnoreParams
-) {
+  context: dotnetTypes.DsgContext,
+  eventParams: dotnet.CreateServerGitIgnoreParams
+): Promise<dotnet.CreateServerGitIgnoreParams> {
   eventParams.gitignorePaths.push(
     "*.user",
     "*.userosscache",
-    "*.sln.docstates"
+    "*.sln.docstates",
+    "[Tt]est[Rr]esult*"
   );
   return eventParams;
 }

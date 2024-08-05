@@ -29,22 +29,16 @@ export interface CreateServerCsprojParams extends EventParams {
 }
 ```
 
-Example:
+### Example
 
 ```ts
 beforeCreateServerCsproj(
-  context: DsgContext,
-  eventParams: CreateServerCsprojParams
+  _: dotnetTypes.DsgContext,
+  eventParams: dotnet.CreateServerCsprojParams
 ) {
-  eventParams.propertyGroup = {
-    ...eventParams.propertyGroup,
-    "TargetFramework": "net6.0",
-    "ImplicitUsings": "enable"
-  };
-
   eventParams.packageReferences.push({
-    include: "Swashbuckle.AspNetCore",
-    version: "6.2.3"
+    include: "Npgsql.EntityFrameworkCore.PostgreSQL",
+    version: "8.0.4",
   });
 
   return eventParams;
