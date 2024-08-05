@@ -27,7 +27,7 @@ export type PluginBeforeEvent<T extends EventParams> = (
 ) => Promisable<T>;
 
 // Node.js version
-export type PluginAfterEventNodejs<T extends EventParams> = (
+export type PluginAfterEvent<T extends EventParams> = (
   dsgContext: DsgContext,
   eventParams: T,
   modules: ModuleMap
