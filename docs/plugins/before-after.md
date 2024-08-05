@@ -34,7 +34,7 @@ export type PluginAfterEvent<T extends EventParams> = (
 ) => Promisable<ModuleMap>;
 
 // .NET version
-export type PluginAfterEventDotNet<T extends EventParams, F> = (
+export type PluginAfterEvent<T extends EventParams, F> = (
   dsgContext: DsgContext,
   eventParams: T,
   files: FileMap<F>
