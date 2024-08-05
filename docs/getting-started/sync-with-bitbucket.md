@@ -120,4 +120,4 @@ And there you have it – a new pull request ready for review.
 
 ![bitbucket-pull-request](./assets/sync-with-git-provider/bitbucket-pull-request.png)
 
-Amplication creates pull requests from the `amplication` branch into your repository's default base branch. Pro and Enterprise users can [change the base branch for these pull requests](/how-to/change-base-branch-for-pull-requests)
+Amplication creates pull requests from the `amplication` branch into your repository's default base branch. In case of conflict, resolve it on the `amplication` branch. Do not delete or modify the `amplication` branch. Pro and Enterprise users can [change the base branch for these pull requests](/how-to/change-base-branch-for-pull-requests).
