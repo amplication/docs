@@ -24,37 +24,49 @@ export interface CreateSeedDevelopmentDataFileParams extends EventParams {
 }
 ```
 
-Example:
+### Example
 
 ```ts
-async afterCreateSeedDevelopmentDataFile(
-  context: DsgContext,
-  eventParams: CreateSeedDevelopmentDataFileParams,
-  files: FileMap<F>
-) {
+afterCreateSeedDevelopmentDataFile(
+  context: dotnetTypes.DsgContext,
+  eventParams: dotnet.CreateSeedDevelopmentDataFileParams,
+  files: FileMap<Class>
+): FileMap<Class> {
   const { seedFilePath, resourceName } = eventParams;
+  const { entities } = context;
+
+  if (!entities) return files;
+
   const seedFile = files.get(seedFilePath);
-
-  if (seedFile) {
-    const updatedCode = seedFile.code + `
-    public static void SeedCustomData(${resourceName}DbContext context)
-    {
-        if (!context.Users.Any())
-        {
-            context.Users.AddRange(
-                new User { Username = "admin", Email = "admin@example.com" },
-                new User { Username = "user1", Email = "user1@example.com" }
-            );
-            context.SaveChanges();
-        }
-    }
-    `;
-
-    files.set({
-      path: seedFilePath,
-      code: updatedCode
-    });
-  }
+  seedFile?.code.addMethod(
+    CsharpSupport.method({
+      name: "SeedDevUser",
+      access: "public",
+      isAsync: true,
+      body: CreateSeedDevelopmentDataBody(resourceName, context),
+      type: MethodType.STATIC,
+      parameters: [
+        CsharpSupport.parameter({
+          name: "serviceProvider",
+          type: CsharpSupport.Types.reference(
+            CsharpSupport.classReference({
+              name: "IServiceProvider",
+              namespace: `${resourceName}.Infrastructure.Models`,
+            })
+          ),
+        }),
+        CsharpSupport.parameter({
+          name: "configuration",
+          type: CsharpSupport.Types.reference(
+            CsharpSupport.classReference({
+              name: "IConfiguration",
+              namespace: "",
+            })
+          ),
+        }),
+      ],
+    })
+  );
 
   return files;
 }

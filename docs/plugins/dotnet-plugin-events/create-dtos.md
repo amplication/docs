@@ -25,33 +25,24 @@ export interface CreateDTOsParams extends EventParams {
 }
 ```
 
-Example:
+### Example
 
 ```ts
-async afterCreateDTOs(
-  context: DsgContext,
-  eventParams: CreateDTOsParams,
-  files: FileMap<F>
-) {
-  const { entity, dtoName, dtoBasePath } = eventParams;
-  const dtoPath = join(dtoBasePath, `${dtoName}.cs`);
-  const dtoFile = files.get(dtoPath);
-
+afterCreateDTOs(
+  context: dotnetTypes.DsgContext,
+  eventParams: dotnet.CreateDTOsParams,
+  files: FileMap<Class>
+): Promise<FileMap<Class>> {
+  const { entity, dtoName } = eventParams;
+  const dtoFile = files.get(`DTOs/${dtoName}.cs`);
   if (dtoFile) {
-    const updatedCode = dtoFile.code + `
-    public class ${entity.name}SummaryDTO
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-    }
-    `;
-
-    files.set({
-      path: dtoPath,
-      code: updatedCode
-    });
+    dtoFile.code.addProperty(
+      CsharpSupport.property({
+        name: "LastModified",
+        type: CsharpSupport.Types.dateTime(),
+      })
+    );
   }
-
   return files;
 }
 ```

@@ -24,25 +24,37 @@ export interface LoadStaticFilesParams extends EventParams {
 }
 ```
 
-Example:
+### Example
 
 ```ts
 async afterLoadStaticFiles(
-  context: DsgContext,
-  eventParams: LoadStaticFilesParams,
-  files: FileMap<F>
-) {
-  const { source, basePath } = eventParams;
-  const staticFiles = await readDir(source);
-  
-  for (const file of staticFiles) {
-    const content = await readFile(join(source, file));
-    files.set({
-      path: join(basePath, file),
-      code: content
-    });
-  }
+  context: dotnetTypes.DsgContext,
+  eventParams: dotnet.LoadStaticFilesParams,
+  files: FileMap<CodeBlock>
+): Promise<FileMap<CodeBlock>> {
+  const { resourceInfo } = context;
+  if (!resourceInfo) return files;
 
+  const resourceName = pascalCase(resourceInfo.name);
+
+  const destPath = `${eventParams.basePath}/src/APIs/Common/Auth/ProgramAuthExtensions.cs`;
+  const filePath = resolve(
+    __dirname,
+    "./static/common/auth/ProgramAuthExtensions.cs"
+  );
+
+  const programAuthExtensionsFileMap = await createStaticFileFileMap(
+    destPath,
+    filePath,
+    context,
+    [
+      CsharpSupport.classReference({
+        name: `${resourceName}DbContext`,
+        namespace: `${resourceName}.Infrastructure`,
+      }),
+    ]
+  );
+  
   return files;
 }
 ```

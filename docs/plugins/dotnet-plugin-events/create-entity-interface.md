@@ -28,29 +28,24 @@ export interface CreateEntityInterfaceParams extends EventParams {
 }
 ```
 
-Example:
+### Example
 
 ```ts
-async afterCreateEntityInterface(
-  context: DsgContext,
-  eventParams: CreateEntityInterfaceParams,
-  files: FileMap<F>
-) {
-  const { entity, apisDir } = eventParams;
-  const interfacePath = join(apisDir, "Interfaces", `I${entity.name}.cs`);
-  const interfaceFile = files.get(interfacePath);
-
+afterCreateEntityInterface(
+  context: dotnetTypes.DsgContext,
+  eventParams: dotnet.CreateEntityInterfaceParams,
+  files: FileMap<Interface>
+): Promise<FileMap<Interface>> {
+  const { entity } = eventParams;
+  const interfaceFile = files.get(`Interfaces/I${entity.name}.cs`);
   if (interfaceFile) {
-    const updatedCode = interfaceFile.code + `
-    Task<bool> IsUnique(string name);
-    `;
-
-    files.set({
-      path: interfacePath,
-      code: updatedCode
-    });
+    interfaceFile.code.addMethod(
+      CsharpSupport.method({
+        name: "Validate",
+        returnType: CsharpSupport.Types.boolean(),
+      })
+    );
   }
-
   return files;
 }
 ```

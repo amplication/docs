@@ -25,34 +25,34 @@ export interface CreateResourceDbContextFileParams extends EventParams {
 }
 ```
 
-Example:
+### Example
 
 ```ts
-async afterCreateResourceDbContextFile(
-  context: DsgContext,
-  eventParams: CreateResourceDbContextFileParams,
-  files: FileMap<F>
-) {
-  const { resourceName, resourceDbContextPath } = eventParams;
-  const dbContextFile = files.get(resourceDbContextPath);
+afterCreateResourceDbContextFile(
+  context: dotnetTypes.DsgContext,
+  eventParams: dotnet.CreateResourceDbContextFileParams,
+  files: FileMap<Class>
+): FileMap<Class> {
+  const { resourceDbContextPath, resourceName } = eventParams;
 
-  if (dbContextFile) {
-    const updatedCode = dbContextFile.code.replace(
-      "public class",
-      "public class " + resourceName + "DbContext : DbContext\n{\n"
-    ) + `
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        base.OnModelCreating(modelBuilder);
-        // Add your custom configurations here
-    }
-    `;
+  const modelFile = files.get(
+    `${resourceDbContextPath}${resourceName}DbContext.cs`
+  );
 
-    files.set({
-      path: resourceDbContextPath,
-      code: updatedCode
-    });
-  }
+  if (!modelFile) return files;
+
+  modelFile.code.parentClassReference = CsharpSupport.genericClassReference({
+    reference: CsharpSupport.classReference({
+      name: `IdentityDbContext`,
+      namespace: "Microsoft.AspNetCore.Identity.EntityFrameworkCore",
+    }),
+    innerType: CsharpSupport.Types.reference(
+      CsharpSupport.classReference({
+        name: `IdentityUser`,
+        namespace: "Microsoft.AspNetCore.Identity",
+      })
+    ),
+  });
 
   return files;
 }
