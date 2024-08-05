@@ -48,7 +48,7 @@ The event params manipulate the default behavior by passing different values.
 In the `after` function, we also have access to the generated files. An example of using this parameter is when you want to restructure the generated files in a different folder structure.
 
 :::info
-In the `after` function for .NET plugins, we use a [`FileMap`](https://github.com/amplication/amplication/blob/master/libs/util/code-gen-types/src/files/index.ts). For Node.js plugins' `after` function we use a [`ModuleMap`](https://github.com/amplication/amplication/blob/master/libs/util/code-gen-types/src/code-gen-types.ts).
+In the `after` function for .NET plugins, we use a [`FileMap`](https://github.com/amplication/amplication/blob/master/libs/util/code-gen-types/src/files/file-map.ts). For Node.js plugins' `after` function we use a [`ModuleMap`](https://github.com/amplication/amplication/blob/master/libs/util/code-gen-types/src/code-gen-types.ts#L149).
 :::
 
 ## Cautionary Guidelines
