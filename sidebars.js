@@ -144,9 +144,7 @@ const sidebars = {
         "getting-started/deploy-docker-desktop",
         "how-to/deploy-kubernetes",
         "how-to/deploy-to-aws-ecs",
-        "how-to/how-to-create-service",
-        "how-to/authentication-plugin-examples",
-        "how-to/create-message-broker",
+        "how-to/how-to-create-service"
       ],
     },
     {
@@ -160,6 +158,15 @@ const sidebars = {
         "getting-started/plugins",
         "getting-started/community-plugins",
         "plugins/dotnet-plugins",
+         {
+          type: "category",
+          label: "Plugin Guides",
+          items: [
+            "how-to/choose-configure-update-database",
+            "how-to/authentication-plugin-examples",
+            "how-to/create-message-broker",
+          ]
+        },
         {
           type: "category",
           label: "Custom Plugins",

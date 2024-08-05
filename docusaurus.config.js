@@ -211,6 +211,10 @@ module.exports = {
       {
         redirects: [
           {
+            to: "/plugins/guides/authentication",
+            from: ["/authentication-plugin-examples"]
+          },
+          {
             to: "/user-entity",
             from: ["/how-to/add-delete-user-entity"]
           },
