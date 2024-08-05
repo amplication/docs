@@ -22,3 +22,27 @@ export interface CreateMessageBrokerClientOptionsFactoryParams extends EventPara
 ```
 
 This event does not use any additional parameters.
+
+### Example
+
+
+```ts
+afterCreateMessageBrokerClientOptionsFactory(
+  context: dotnetTypes.DsgContext,
+  eventParams: dotnet.CreateMessageBrokerClientOptionsFactoryParams,
+  files: FileMap<Class>
+): Promise<FileMap<Class>> {
+  const optionsFactoryFile = files.get("MessageBroker/MessageBrokerClientOptionsFactory.cs");
+  if (optionsFactoryFile) {
+    optionsFactoryFile.code.addMethod(
+      CsharpSupport.method({
+        name: "CreateConsumerConfig",
+        access: "public",
+        returnType: CsharpSupport.Types.reference("ConsumerConfig"),
+        body: "return new ConsumerConfig { GroupId = \"my-consumer-group\" };",
+      })
+    );
+  }
+  return files;
+}
+```

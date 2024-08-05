@@ -35,30 +35,56 @@ An array of module actions available for the entity.
 
 An array of all entities in the application.
 
-Example:
+### Example
 
 ```ts
-async afterCreateEntityControllerBase(
-  context: DsgContext,
-  eventParams: CreateEntityControllerBaseParams,
-  modules: ModuleMap
-) {
-  const { resourceName, apisDir } = eventParams;
-  const controllerBasePath = join(apisDir, `${resourceName}ControllerBase.cs`);
-  const controllerBaseFile = modules.get(controllerBasePath);
+afterCreateEntityControllerBase(
+  context: dotnetTypes.DsgContext,
+  eventParams: dotnet.CreateEntityControllerBaseParams,
+  files: FileMap<Class>
+): Promise<FileMap<Class>> {
+  const { entity, resourceName, apisDir } = eventParams;
+  const controllerBasePath = `${apisDir}/${entity.name}/Base/${pascalCase(entity.name)}ControllerBase.cs`;
+  const controllerBaseFile = files.get(controllerBasePath);
 
   if (controllerBaseFile) {
-    const updatedCode = controllerBaseFile.code.replace(
-      "public abstract class",
-      "[ApiController]\n[Route(\"api/[controller]\")]\npublic abstract class"
+    // Add a protected method to the base controller
+    controllerBaseFile.code.addMethod(
+      CsharpSupport.method({
+        name: "ValidateEntityState",
+        access: "protected",
+        returnType: CsharpSupport.Types.boolean(),
+        parameters: [
+          CsharpSupport.parameter({
+            name: "entity",
+            type: CsharpSupport.Types.reference(entity.name),
+          }),
+        ],
+        body: `
+          if (entity == null)
+            return false;
+          
+          // Add custom validation logic here
+          return true;
+        `,
+      })
     );
 
-    modules.set({
-      path: controllerBasePath,
-      code: updatedCode
+    // Modify existing methods to use the new validation
+    const methods = controllerBaseFile.code.getMethods();
+    methods.forEach(method => {
+      if (method.name === `Create${entity.name}` || method.name === `Update${entity.name}`) {
+        const existingBody = method.body;
+        method.body = `
+          if (!ValidateEntityState(${camelCase(entity.name)}))
+            return BadRequest("Invalid entity state");
+          
+          ${existingBody}
+        `;
+      }
     });
   }
 
-  return modules;
+  return files;
 }
 ```

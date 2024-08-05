@@ -25,32 +25,63 @@ export interface CreateEntityExtensionsParams extends EventParams {
 }
 ```
 
-Example:
+### Example
 
 ```ts
-async afterCreateEntityExtensions(
-  context: DsgContext,
-  eventParams: CreateEntityExtensionsParams,
-  modules: ModuleMap
-) {
-  const { entity, apisDir } = eventParams;
-  const extensionsPath = join(apisDir, "Extensions", `${entity.name}Extensions.cs`);
-  const extensionsFile = modules.get(extensionsPath);
+afterCreateEntityExtensions(
+  context: dotnetTypes.DsgContext,
+  eventParams: dotnet.CreateEntityExtensionsParams,
+  files: FileMap<Class>
+): Promise<FileMap<Class>> {
+  const { entity, resourceName, apisDir } = eventParams;
+  const extensionsPath = `${apisDir}/${entity.name}/${pascalCase(entity.name)}Extensions.cs`;
+  const extensionsFile = files.get(extensionsPath);
 
   if (extensionsFile) {
-    const updatedCode = extensionsFile.code + `
-    public static string GetDisplayName(this ${entity.name} entity)
-    {
-        return $"{entity.FirstName} {entity.LastName}";
-    }
-    `;
+    // Add a custom extension method
+    extensionsFile.code.addMethod(
+      CsharpSupport.method({
+        name: "ToAuditString",
+        isStatic: true,
+        returnType: CsharpSupport.Types.string(),
+        parameters: [
+          CsharpSupport.parameter({
+            name: "this",
+            type: CsharpSupport.Types.reference(entity.name),
+            isThis: true,
+          }),
+        ],
+        body: `
+          return $"{entity.Id}|{entity.CreatedAt}|{entity.UpdatedAt}";
+        `,
+      })
+    );
 
-    modules.set({
-      path: extensionsPath,
-      code: updatedCode
-    });
+    // Add a custom mapper extension
+    extensionsFile.code.addMethod(
+      CsharpSupport.method({
+        name: "ToDto",
+        isStatic: true,
+        returnType: CsharpSupport.Types.reference(`${entity.name}Dto`),
+        parameters: [
+          CsharpSupport.parameter({
+            name: "this",
+            type: CsharpSupport.Types.reference(entity.name),
+            isThis: true,
+          }),
+        ],
+        body: `
+          return new ${entity.name}Dto
+          {
+            Id = entity.Id,
+            // Map other properties here
+            AuditString = entity.ToAuditString()
+          };
+        `,
+      })
+    );
   }
 
-  return modules;
+  return files;
 }
 ```
