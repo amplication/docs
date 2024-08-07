@@ -120,4 +120,14 @@ And there you have it – a new pull request ready for review.
 
 ![bitbucket-pull-request](./assets/sync-with-git-provider/bitbucket-pull-request.png)
 
-Amplication creates pull requests from the `amplication` branch into your repository's default base branch. In case of conflict, resolve it on the `amplication` branch. Do not delete or modify the `amplication` branch. Pro and Enterprise users can [change the base branch for these pull requests](/how-to/change-base-branch-for-pull-requests).
+## Merging Amplication's Pull Request into your branch
+
+Amplication creates pull requests from the `amplication` branch into your repository's default base branch.
+Amplication triggers the creation of a commit on the changed files whenever a new build is performed on a project.
+The changed files are all the files that were added, removed, or changed from the last build.
+
+:::warning
+**Do not delete the `amplication` branch**.
+
+Do not modify the `amplication` branch, except to resolve conflicts. Handle conflicts directly on the `amplication` branch. Avoid creating new commits or merging changes from other branches to prevent bugs and inconsistencies.
+:::
