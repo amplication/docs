@@ -22,3 +22,17 @@ export interface CreateMessageBrokerServiceParams extends EventParams {}
 ```
 
 This event does not use any additional parameters.
+
+### Example
+
+```ts
+async afterCreateMessageBrokerService(
+  dsgContext: dotnetTypes.DsgContext,
+  eventParams: dotnet.CreateMessageBrokerServiceParams,
+  files: FileMap<Class>
+): Promise<FileMap<Class>> {
+  const messageBrokerFiles = await createMessageBroker(dsgContext);
+  await files.merge(messageBrokerFiles);
+  return files;
+}
+```
