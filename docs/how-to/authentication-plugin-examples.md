@@ -188,7 +188,7 @@ The Supertokens Auth Provider adds Supertokens authentication to your service, s
     "apiKey": "",
     "supertokensIdFieldName": "supertokensId",
     "recipe": {
-      "name": "emailpassword"
+      "name": "email-password"
     }
   }
 }
