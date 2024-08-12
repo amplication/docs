@@ -62,7 +62,7 @@ For example, Amplication will base the `amplication` branch from `main` if your 
 
 You can merge Amplication-made changes by merging pull requests created by Amplication from the `amplication` branch to your repository's default branch.
 
-:::warning
+:::note
 **Do not delete the `amplication` branch**.
 
 Do not modify the `amplication` branch, except to resolve conflicts. Handle conflicts directly on the `amplication` branch. Avoid creating new commits or merging changes from other branches to prevent bugs and inconsistencies.

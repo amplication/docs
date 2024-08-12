@@ -126,7 +126,7 @@ Amplication creates pull requests from the `amplication` branch into your reposi
 Amplication triggers the creation of a commit on the changed files whenever a new build is performed on a project.
 The changed files are all the files that were added, removed, or changed from the last build.
 
-:::warning
+:::note
 **Do not delete the `amplication` branch**.
 
 Do not modify the `amplication` branch, except to resolve conflicts. Handle conflicts directly on the `amplication` branch. Avoid creating new commits or merging changes from other branches to prevent bugs and inconsistencies.
