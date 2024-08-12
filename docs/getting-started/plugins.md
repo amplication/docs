@@ -1,36 +1,26 @@
 ---
 id: plugins
 title: Plugins Explained
-description: Learn how to use Amplication plugins that extend the functionality of your generated application.
+description: Learn how to use Amplication plugins to extend the functionality of your generated service.
 sidebar_label: Plugins Explained
 slug: /getting-started/plugins
 pagination_next: plugins/overview
 pagination_prev: getting-started/community-plugins
 ---
 
-Amplication uses _Plugins_ to extend the functionality of your service.
+Amplication uses _Plugins_ to extend the functionality of your generated service. These software additions allow developers to customize the default behavior of [Amplication's code generation process](/plugins/plugin-architecture/), providing hooks into various stages of service creation.
+
+Amplication offers a wide range of community-created plugins that are open-source and available on GitHub. You also have the flexibility to develop your own [custom plugins](/plugins/overview/) so you can tailor your generated service to meet youe exact requirements.
 
 You can enable certain plugins when you first create your service.
 For example, if you choose MySQL as your database, the _MySQL DB_ plugin will be enabled.
 If you choose to turn on authentication for your service, that will enable Authentication-related plugins.
-
-To see all community-created plugins, first visit the _Plugins_ tab in your service's dashboard and click on _All Plugins_ on the left sidebar.
-Your installed plugins are shown on the _Installed Plugins_ tab.
-Plugins can be manually enabled or disabled on either of these tabs.
-
-The source code of all community Amplication plugins are [available on GitHub](https://github.com/amplication/plugins).
-Besides the plugins created by the Amplication team and the community, you can [develop your own custom plugins](/plugins/overview/).
 
 :::tip
 [Amplication's AI](/amplication-ai) can help you find new plugins for your service, and even install them automatically, with a single request.
 
 Ask Jovu: `Which plugins do you recommend for adding caching capabilities to my Amplication service?`
 :::
-
-## Viewing Open-Source Plugin Code
-
-All Amplication plugins are open-source and available on GitHub.
-You can find the plugin source code for each individual plugin in Amplication's [`plugins`](https://github.com/amplication/amplication-plugins) repository.
 
 ## Node.js and .NET Plugins
 
@@ -42,17 +32,23 @@ Node.js plugins integrate seamlessly with the Node.js ecosystem and popular fram
 
 ## How To Install a Plugin
 
-To install a plugin:
+To see all community-created plugins, first visit the _Plugins_ tab in your Amplication dashboard.
 
-1.  In the _All Plugins_ page, click **Install** for the required plugin.
+To install an individual plugin:
 
-![](./assets/all-plugins.png)
+1. On the left sidebar in the Plugins page, you can browse by _Plugin Categories_ categories like Database, Authentication, and more, or click on _All Plugins_ to see the complete list.
+2. Click the **Install** button next to the desired plugin.
+3. The plugin's toggle will switch to its _on_ state, indicating it's now active.
+4. You can view all your installed plugins in the _Installed Plugins_ tab.
+5. To see a plugin's source code on GitHub, select **View on GitHub** next to the installed plugin.
 
-2. This will turn on the plugin's toggle into its _on_ state.
+Plugins can be manually enabled or disabled from both the _All Plugins_ and _Installed Plugins_ tabs.
 
-3. Go to the _Installed Plugins_ page. The installed plugins are listed.
+![](./assets/all-plugins-and-categories.png)
 
-4. To see the plugin's code on GitHub, select **View on GitHub**.
+:::tip
+Explore different plugin categories to discover plugins that can enhance specific parts of your service, such as database management, authentication, or API functionality.
+:::
 
 ## How To Uninstall a Plugin
 
@@ -90,6 +86,13 @@ By default, the latest version of the plugin will be available in the list of pl
 :::note
 Each version of the Plugin has its own settings, so when you replace the version you also replace its settings.
 :::
+
+## How To View Open-Source Plugin Code
+
+All Amplication plugins are open-source and available on GitHub.
+You can find the plugin source code for each individual plugin in Amplication's [`plugins`](https://github.com/amplication/amplication-plugins) repository.
+
+Besides the plugins created by the Amplication team and the community, you can [develop your own custom plugins](/plugins/overview/).
 
 ## How To Develop a Custom Plugin
 

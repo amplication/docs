@@ -7,26 +7,33 @@ pagination_next: getting-started/authentication
 
 # Handle Authentication and Authorization in your Service
 
-Authentication and authorization are important parts of your Amplication service. Amplication provides flexible options for implementing these security measures.
+Authentication and authorization are crucial components of your Amplication service.
 
-This guide will walk you through the process of updating your authentication and authorization setup in your Amplication-generated service.
+By following this guide and exploring the examples, you'll be well-equipped to implement authentication and authorization in your Amplication-generated service using the authentication plugin that best suits your needs.
 
 ## Adding Authentication to Your Service
 
-If you initially created your service without authentication, you can still add it later. Here are the key steps:
+Before adding any specific authentication plugin, you must first enable the Authentication Entity in your service:
 
-1. Go to your service's Plugins page.
-2. Navigate to the "Authentication" category in the left sidebar.
-3. Choose and add an Auth Provider plugin (e.g., JWT, Auth0, etc.) that suits your needs.
-4. Install the "NestJS Auth Module" plugin if it's not already installed. It's a pre-requisite if you're adding Authentication to a Node.js service.
-5. Configure the Authentication Entity in your service settings.
+1. Go to your service's Entities page.
+2. Locate or create an entity to serve as your Authentication Entity (commonly named "User").
+3. In the entity's settings, enable the "Authentication Entity" option.
 
-For detailed instructions on this process, refer to the [Authentication Entity documentation](https://docs.amplication.com/user-entity).
+:::note
+The Authentication Entity **is required** to enable authentication on your service. For detailed instructions, refer to the [Authentication Entity documentation](https://docs.amplication.com/user-entity).
+:::
 
-After adding the required plugins, you'll need to:
-1. Configure your authentication settings in the plugin options.
+Once you have an Authentication Entity set up, follow these steps to add authentication:
+
+1. Navigate to your service's Plugins page.
+2. Go to the "Authentication" category in the left sidebar.
+3. For Node.js services, ensure you install the "NestJS Auth Module" plugin first.
+4. Choose and add an Auth Provider plugin that suits your needs (e.g., JWT, Auth0, Supertokens, etc.).
+
+After adding the required Authentication plugins:
+1. Configure your authentication settings in the plugin options page (See the [Examples](#examples) section below).
 2. Add authenticated users to your system.
-3. Set up roles and permissions for authorization.
+3. Set up [roles and permissions](/configure-roles-and-permissions/) for authorization.
 
 ## Available Authentication Plugins
 
@@ -34,12 +41,12 @@ Amplication offers several authentication plugins to choose from. Each plugin ha
 
 ### Node.js
 
-1. [Auth0 Auth Provider](https://auth0.com/)
-2. Basic Auth Provider
-3. [JWT Auth Provider](https://jwt.io/)
-4. [KeyCloak Auth Provider](https://www.keycloak.org/)
-5. [SAML Auth Provider](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language)
-6. [Supertokens Auth Provider](https://supertokens.com/)
+1. [JWT Auth Provider](https://jwt.io/)
+2. [Auth0 Auth Provider](https://auth0.com/)
+3. [Supertokens Auth Provider](https://supertokens.com/)
+4. [SAML Auth Provider](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language)
+5. Basic Auth Provider
+6. [KeyCloak Auth Provider](https://www.keycloak.org/)
 
 #### JWT Auth Provider
 
@@ -66,9 +73,20 @@ Amplication offers several authentication plugins to choose from. Each plugin ha
 - Uses Passport SAML strategy and generates JWT tokens for authorization.
 - For usage details, check the [SAML Auth Provider GitHub README](https://github.com/amplication/plugins/tree/master/plugins/auth-saml).
 
-### .NET 
+#### Basic Auth Provider
 
-For .NET services, ASP.NET Core Identity is currently the primary authentication option.
+- Enables a straightforward authentication scheme built into the HTTP protocol. - Requires sending user's credentials in the form of a username and password, encoded in base64, included in the Authorization header of the request.
+
+#### KeyCloak Auth Provider
+
+- Integrates KeyCloak authentication and authorization into your service.
+- Provides single sign-on (SSO) capabilities and support for various identity protocols.
+- Requires setup of a KeyCloak server and configuration of a KeyCloak realm.
+- For detailed setup instructions and configuration options, refer to the [KeyCloak Auth Provider GitHub README](https://github.com/amplication/plugins/tree/master/plugins/auth-keycloak).
+
+### .NET
+
+For .NET services, ASP.NET Core Identity is the primary authentication option.
 
 #### ASP.NET Core Identity
 
@@ -82,36 +100,148 @@ If you're using a .NET service, refer to the [.NET Auth Core Identity plugin doc
 4. Regularly update and rotate authentication secrets and keys.
 5. Follow the principle of least privilege when assigning roles and permissions.
 
+## Disable Authentication On Your Service
+
+If you no longer need authentication on a specific service, you can disable it.
+
+1. Visit your service's Plugins page and toggle the Authentication-related plugins into the off state.
+2. Delete the User entity from your list of entities.
+3. Re-build your project and commit your changes to your preferred git provider.
+
 ## Examples
 
-Here are some examples of how to use authentication in your service:
+Let's look at detailed examples for some of the available authentication plugins:
 
-### JWT Authentication
+### JWT Auth Provider
 
-When using JWT authentication, the process typically includes:
+The JWT Auth Provider adds JSON Web Token (JWT) authentication and authorization to your service.
 
-1. Sending a login request to the server with username and password to get a JWT token.
-2. Adding an authentication header with the JWT token to every subsequent request.
+#### Configuration
 
-#### REST API Example
-
-```bash
-curl -X 'POST' \
-  'https://[server-url]/api/login' \
-  -H 'accept: */*' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "username": "admin",
-  "password": "admin"
-}'
-```
-
-#### GraphQL API Example
-
-```ts
-mutation {
-  login(credentials: { username: "admin", password: "admin" }) {
-    accessToken
+```json
+{
+  "settings": {
+    "tokenExpiresIn": 3600,
+    "refreshTokenExpiresIn": 604800,
+    "grantType": "PASSWORD",
+    "jwtSecretKey": "Change_ME!!!"
   }
 }
 ```
+
+- `tokenExpiresIn`: Expiration time of the access token in seconds (default: 3600)
+- `refreshTokenExpiresIn`: Expiration time of the refresh token in seconds (default: 604800)
+- `grantType`: The grant type for token generation (default: "PASSWORD")
+- `jwtSecretKey`: Secret key for JWT signing (default: "Change_ME!!!")
+
+For detailed configuration, visit the [JWT Auth Provider GitHub README](https://github.com/amplication/plugins/tree/master/plugins/auth-jwt).
+
+### Auth0 Auth Provider
+
+The Auth0 Auth Provider integrates Auth0 authentication and authorization into your service.
+
+#### Configuration
+
+```json
+{
+  "settings": {
+    "useManagementApi": true,
+    "managementParams": {
+      "identifier": "https://{TENANT_NAME}.{REGION}.auth0.com/api/v2/",
+      "accessToken": "{ACCESS_TOKEN}",
+      "actionName": "Add user details to access token",
+      "clientName": "Custom SPA",
+      "apiName": "Custom API",
+      "audience": "http://example.com"
+    }
+  }
+}
+```
+
+- `useManagementApi`: Set to `true` to use the Auth0 Management API
+- `managementParams`: Configuration for the Management API
+  - `identifier`: The identifier of the Auth0 Management API
+  - `accessToken`: The access token of the Auth0 Management API
+  - `actionName`: The name of the action to create in Auth0
+  - `clientName`: The name of the client to create in Auth0
+  - `apiName`: The name of the API to create in Auth0
+  - `audience`: The audience/identifier of the API
+
+For setup instructions and configuration options, check the [Auth0 Auth Provider GitHub README](https://github.com/amplication/plugins/tree/master/plugins/auth-auth0).
+
+### Supertokens Auth Provider
+
+The Supertokens Auth Provider adds Supertokens authentication to your service, supporting various authentication recipes.
+
+#### Configuration
+
+```json
+{
+  "settings": {
+    "apiDomain": "http://localhost:3000",
+    "appName": "Amplication App",
+    "websiteDomain": "http://localhost:3001",
+    "websiteBasePath": "/auth",
+    "apiBasePath": "/api/auth",
+    "connectionUri": "https://try.supertokens.com",
+    "apiGatewayPath": "",
+    "apiKey": "",
+    "supertokensIdFieldName": "supertokensId",
+    "recipe": {
+      "name": "emailpassword"
+    }
+  }
+}
+```
+
+- `apiDomain`: The API domain for Supertokens
+- `appName`: The name of your application
+- `websiteDomain`: The website domain for Supertokens
+- `websiteBasePath`: The base path for authentication on the website
+- `apiBasePath`: The base path for authentication API endpoints
+- `connectionUri`: The URI for connecting to the Supertokens core
+- `supertokensIdFieldName`: The field name to store the Supertokens user ID
+- `recipe`: The authentication recipe to use (e.g., "emailpassword", "passwordless", "thirdparty")
+
+For detailed configuration and usage, refer to the [Supertokens Auth Provider GitHub README](https://github.com/amplication/plugins/tree/master/plugins/auth-supertokens).
+
+### Keycloak Auth Provider
+
+The Keycloak Auth Provider integrates Keycloak authentication and authorization into your service.
+
+#### Configuration
+
+```json
+{
+  "settings": {
+    "port": 8080,
+    "realmID": "amplication-sample-realm",
+    "clientID": "amplication-server",
+    "realmName": "Amplication Sample Realm",
+    "clientName": "Amplication Server",
+    "clientDescription": "Sample client for Amplication Server",
+    "adminUsername": "admin",
+    "adminPassword": "admin",
+    "recipe": {
+      "emailFieldName": "email",
+      "verifyEmail": false,
+      "registrationAllowed": true,
+      "payLoadMapping": {
+        "username": "name",
+        "name": "name"
+      }
+    }
+  }
+}
+```
+
+- `port`: The port on which to run the Keycloak server
+- `realmID`: The ID of the Keycloak realm to use
+- `clientID`: The ID of the Keycloak client to use
+- `realmName`: The name of the Keycloak realm
+- `clientName`: The name of the Keycloak client
+- `adminUsername`: The username for the Keycloak admin user
+- `adminPassword`: The password for the Keycloak admin user
+- `recipe`: Configuration for the authentication recipe
+
+For detailed setup instructions and configuration options, refer to the [Keycloak Auth Provider GitHub README](https://github.com/amplication/plugins/tree/master/plugins/auth-keycloak).

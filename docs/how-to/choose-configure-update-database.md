@@ -2,7 +2,7 @@
 id: choose-configure-update-database
 title: How To Choose, Configure, and Update Your Database
 description: Learn how to choose, configure, and update your Amplication database using plugins.
-sidebar_label: How To Choose, Configure, and Update Your Database
+sidebar_label: Database Plugin Guide
 slug: /plugins/guides/database
 ---
 
@@ -22,10 +22,10 @@ Amplication supports multiple database options. Here are the steps to choose you
 
 1. When [creating a new service](/first-service/) using the wizard in Amplication, you'll be required to select a database. If you're using [Jovu](/amplication-ai/) to create your service, you can specify a different database than the default.
 2. Choose from the available options, which may include:
+   - Microsoft SQL Server (default for .NET)
    - PostgreSQL (default for Node.js)
-   - MySQL
-   - Microsoft SQL Server
    - MongoDB
+   - MySQL
 
 Consider factors such as your team's familiarity with the database, scalability needs, and specific feature requirements when making your choice.
 
