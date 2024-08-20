@@ -10,7 +10,7 @@ pagination_prev: getting-started/community-plugins
 
 Amplication uses _Plugins_ to extend the functionality of your generated service. These software additions allow developers to customize the default behavior of [Amplication's code generation process](/plugins/plugin-architecture/), providing hooks into various stages of service creation.
 
-Amplication offers a wide range of community-created plugins that are open-source and available on GitHub. You also have the flexibility to develop your own [custom plugins](/plugins/overview/) so you can tailor your generated service to meet youe exact requirements.
+Amplication offers a wide range of community-created plugins that are open-source and available on GitHub. You also have the flexibility to develop your own [custom plugins](/plugins/overview/) so you can tailor your generated service to meet your exact requirements.
 
 You can enable certain plugins when you first create your service.
 For example, if you choose MySQL as your database, the _MySQL DB_ plugin will be enabled.
