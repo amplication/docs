@@ -11,27 +11,30 @@ Authentication and authorization are crucial components of your Amplication serv
 
 By following this guide and exploring the examples, you'll be well-equipped to implement authentication and authorization in your Amplication-generated service using the authentication plugin that best suits your needs.
 
-## Adding Authentication to Your Service
+## Creating The Authentication Entity
 
-Before adding any specific authentication plugin, you must first enable the Authentication Entity in your service:
+If you initially created your service _without_ authentication, you must first create and define the Authentication Entity. The Authentication Entity **is required** to enable authentication on your service.
 
 1. Go to your service's Entities page.
-2. Locate or create an entity to serve as your Authentication Entity (commonly named "User").
-3. In the entity's settings, enable the "Authentication Entity" option.
+2. Create an entity, usually named "User", to serve as your Authentication Entity.
+3. In your service's settings, in the "Authentication Entity" option, choose the newly created entity.
 
-:::note
-The Authentication Entity **is required** to enable authentication on your service. For detailed instructions, refer to the [Authentication Entity documentation](https://docs.amplication.com/user-entity).
+:::tip
+For detailed instructions, refer to the [Authentication Entity documentation](https://docs.amplication.com/user-entity).
 :::
+
+## Adding Authentication to Your Service
 
 Once you have an Authentication Entity set up, follow these steps to add authentication:
 
 1. Navigate to your service's Plugins page.
 2. Go to the "Authentication" category in the left sidebar.
-3. For Node.js services, ensure you install the "NestJS Auth Module" plugin first.
-4. Choose and add an Auth Provider plugin that suits your needs (e.g., JWT, Auth0, Supertokens, etc.).
+3. For Node.js services, ensure you install the "NestJS Auth Module" plugin first. For .NET services, it's not required.
+4. Choose and add an Auth Provider plugin that suits your needs (e.g. Auth0, ASP.NET Core Identity, Supertokens, etc.).
 
 After adding the required Authentication plugins:
-1. Configure your authentication settings in the plugin options page (See the [Examples](#examples) section below).
+
+1. Configure your authentication settings in the plugin options page (See the [Examples](#authentication-plugin-configuration-settings) section below).
 2. Add authenticated users to your system.
 3. Set up [roles and permissions](/configure-roles-and-permissions/) for authorization.
 
@@ -75,7 +78,8 @@ Amplication offers several authentication plugins to choose from. Each plugin ha
 
 #### Basic Auth Provider
 
-- Enables a straightforward authentication scheme built into the HTTP protocol. - Requires sending user's credentials in the form of a username and password, encoded in base64, included in the Authorization header of the request.
+- Enables a straightforward authentication scheme built into the HTTP protocol.
+- Requires sending user's credentials in the form of a username and password, encoded in base64, included in the Authorization header of the request.
 
 #### KeyCloak Auth Provider
 
@@ -108,11 +112,11 @@ If you no longer need authentication on a specific service, you can disable it.
 2. Delete the User entity from your list of entities.
 3. Re-build your project and commit your changes to your preferred git provider.
 
-## Examples
+## Authentication Plugin Configuration Settings
 
-Let's look at detailed examples for some of the available authentication plugins:
+Let's look at detailed configuration settings for some of the available authentication plugins:
 
-### JWT Auth Provider
+### JWT Auth Provider (Node.js)
 
 The JWT Auth Provider adds JSON Web Token (JWT) authentication and authorization to your service.
 
@@ -136,7 +140,7 @@ The JWT Auth Provider adds JSON Web Token (JWT) authentication and authorization
 
 For detailed configuration, visit the [JWT Auth Provider GitHub README](https://github.com/amplication/plugins/tree/master/plugins/auth-jwt).
 
-### Auth0 Auth Provider
+### Auth0 Auth Provider (Node.js)
 
 The Auth0 Auth Provider integrates Auth0 authentication and authorization into your service.
 
@@ -169,7 +173,7 @@ The Auth0 Auth Provider integrates Auth0 authentication and authorization into y
 
 For setup instructions and configuration options, check the [Auth0 Auth Provider GitHub README](https://github.com/amplication/plugins/tree/master/plugins/auth-auth0).
 
-### Supertokens Auth Provider
+### Supertokens Auth Provider (Node.js)
 
 The Supertokens Auth Provider adds Supertokens authentication to your service, supporting various authentication recipes.
 
@@ -205,7 +209,7 @@ The Supertokens Auth Provider adds Supertokens authentication to your service, s
 
 For detailed configuration and usage, refer to the [Supertokens Auth Provider GitHub README](https://github.com/amplication/plugins/tree/master/plugins/auth-supertokens).
 
-### Keycloak Auth Provider
+### Keycloak Auth Provider (Node.js)
 
 The Keycloak Auth Provider integrates Keycloak authentication and authorization into your service.
 
