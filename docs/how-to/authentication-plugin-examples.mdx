@@ -5,19 +5,23 @@ slug: /plugins/guides/authentication
 pagination_next: getting-started/authentication
 ---
 
-# Handle Authentication and Authorization in your Service
+# Authentication Plugin Guide
 
 Authentication and authorization are crucial components of your Amplication service.
 
 By following this guide and exploring the examples, you'll be well-equipped to implement authentication and authorization in your Amplication-generated service using the authentication plugin that best suits your needs.
 
-## Creating The Authentication Entity
+## Creating The Authentication Entity (Node.js)
 
-If you initially created your service _without_ authentication, you must first create and define the Authentication Entity. The Authentication Entity **is required** to enable authentication on your service.
+:::note
+This step is required only for Node.js services. .NET services do not require this step.
+:::
+
+If you initially created your Node.js service without authentication, you must first create and define the Authentication Entity:
 
 1. Go to your service's Entities page.
-2. Create an entity, usually named "User", to serve as your Authentication Entity.
-3. In your service's settings, in the "Authentication Entity" option, choose the newly created entity.
+2. Create an entity, typically named "User", to serve as your Authentication Entity.
+3. In your service's settings, choose the newly created entity in the "Authentication Entity" option.
 
 :::tip
 For detailed instructions, refer to the [Authentication Entity documentation](https://docs.amplication.com/user-entity).
@@ -27,10 +31,26 @@ For detailed instructions, refer to the [Authentication Entity documentation](ht
 
 Once you have an Authentication Entity set up, follow these steps to add authentication:
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="nodejs" label="Node.js" default>
+
 1. Navigate to your service's Plugins page.
 2. Go to the "Authentication" category in the left sidebar.
-3. For Node.js services, ensure you install the "NestJS Auth Module" plugin first. For .NET services, it's not required.
-4. Choose and add an Auth Provider plugin that suits your needs (e.g. Auth0, ASP.NET Core Identity, Supertokens, etc.).
+3. Ensure you install the "NestJS Auth Module" plugin first.
+4. Choose and add an Auth Provider plugin that suits your needs (e.g., Auth0, Supertokens, etc.).
+
+</TabItem>
+<TabItem value="dotnet" label=".NET">
+
+1. Navigate to your service's Plugins page.
+2. Go to the "Authentication" category in the left sidebar.
+3. Choose and add an Auth Provider plugin that suits your needs (e.g., ASP.NET Core Identity).
+
+</TabItem>
+</Tabs>
 
 After adding the required Authentication plugins:
 
@@ -81,6 +101,10 @@ Amplication offers several authentication plugins to choose from. Each plugin ha
 - Enables a straightforward authentication scheme built into the HTTP protocol.
 - Requires sending user's credentials in the form of a username and password, encoded in base64, included in the Authorization header of the request.
 
+:::note
+If you use the Basic Auth Provider plugin, your service comes with one user with the username `admin` and the password `admin` by default.
+:::
+
 #### KeyCloak Auth Provider
 
 - Integrates KeyCloak authentication and authorization into your service.
@@ -109,7 +133,7 @@ If you're using a .NET service, refer to the [.NET Auth Core Identity plugin doc
 If you no longer need authentication on a specific service, you can disable it.
 
 1. Visit your service's Plugins page and toggle the Authentication-related plugins into the off state.
-2. Delete the User entity from your list of entities.
+2. Delete the Authentication Entity from your list of entities.
 3. Re-build your project and commit your changes to your preferred git provider.
 
 ## Authentication Plugin Configuration Settings
@@ -289,7 +313,7 @@ mutation {
 }
 ```
 
-#### Header with JWT Included (example)
+#### Header with JWT Included
 
 <!-- spell-checker: disable -->
 
@@ -301,7 +325,7 @@ mutation {
 
 ### Basic Authentication (Node.js)
 
-When using Basic HTTP authentication, when sending a request to the API you must provide a Basic HTTP authentication header with the format:
+When using Basic HTTP authentication and sending a request to the API you must provide a Basic HTTP authentication header with the format:
 
 Authorization: 'type' 'credentials'
 
@@ -310,8 +334,6 @@ where type is Basic and credentials is the Base64 encoding of a string "username
 ```text title="Basic Authentication Example"
 Authorization: Basic YWRtaW46YWRtaW4=
 ```
-
-By default, your app comes with one user with the username `admin` and password `admin`.
 
 :::tip
 You can use a tool to create the header. There are several generators available, such as [https://www.blitter.se/utils/basic-authentication-header-generator/](https://www.blitter.se/utils/basic-authentication-header-generator/)
