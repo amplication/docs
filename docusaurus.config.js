@@ -52,22 +52,42 @@ module.exports = {
           activeBaseRegex: '^/$'
         },
         {
-          to: "/tutorials",
+          to: "/amplication-ai",
           position: "left",
-          label: "Tutorials",
+          label: "AI",
         },
         {
-          to: "/custom-code",
+          to: "/how-to/create-entity/",
           position: "left",
-          label: "Custom Code",
+          label: "Entities"
         },
         {
-          to: "/api",
+          to: "/custom-types-and-actions",
           position: "left",
-          label: "Generated APIs",
+          label: "APIs",
         },
         {
-          to: "https://app.amplication.com/login",
+          to: "/getting-started/",
+          position: "left",
+          label: "Code Generation"
+        },
+        {
+          to: "/getting-started/plugins/",
+          position: "left",
+          label: "Plugins",
+        },
+        {
+          to: "/how-to/import-prisma-schema/",
+          position: "left",
+          label: "Import DB",
+        },
+        /* {
+          to: "/deploy",
+          position: "left",
+          label: "Deploy",
+        }, */
+        {
+          to: "https://app.amplication.com/login?event=startNowClicked&source=documentation",
           label: "Start Now",
           position: "right",
           className: "start-now-button",

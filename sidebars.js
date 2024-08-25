@@ -216,6 +216,93 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Plugins",
+      link: {
+        type:"doc",
+        id: "getting-started/plugins"
+      },
+      items: [
+        "getting-started/plugins",
+        "getting-started/community-plugins",
+        "plugins/dotnet-plugins",
+        {
+          type: "category",
+          label: "Custom Plugins",
+          link: {
+            type:"doc",
+            id: "plugins/overview"
+          },
+          items: [
+            "plugins/overview",
+            "plugins/plugin-architecture",
+            "plugins/how-to-create-plugin",
+            "plugins/how-to-test-plugin",
+            "plugins/publish-plugin",
+            "plugins/plugin-events-before-after",
+            "plugins/context-skip-default",
+            "plugins/event-hierarchy",
+            {
+              type: "category",
+              label: ".NET Plugin Events - Reference",
+              items: [
+                "plugins/dotnet-plugin-events/create-server",
+                "plugins/dotnet-plugin-events/create-server-appsettings",
+                "plugins/dotnet-plugin-events/create-server-auth",
+                "plugins/dotnet-plugin-events/create-program-file",
+                "plugins/dotnet-plugin-events/create-server-csproj",
+                "plugins/dotnet-plugin-events/create-server-docker-compose",
+                "plugins/dotnet-plugin-events/create-server-git-ignore",
+                "plugins/dotnet-plugin-events/create-entity-model",
+                "plugins/dotnet-plugin-events/create-resource-db-context-file",
+                "plugins/dotnet-plugin-events/create-message-broker",
+                "plugins/dotnet-plugin-events/create-message-broker-client-options-factory",
+                "plugins/dotnet-plugin-events/create-message-broker-service",
+                "plugins/dotnet-plugin-events/create-entity-controller",
+                "plugins/dotnet-plugin-events/create-entity-controller-base",
+                "plugins/dotnet-plugin-events/create-dtos",
+                "plugins/dotnet-plugin-events/create-entity-extensions",
+                "plugins/dotnet-plugin-events/create-entity-interface",
+                "plugins/dotnet-plugin-events/create-entity-service",
+                "plugins/dotnet-plugin-events/create-entity-service-base",
+                "plugins/dotnet-plugin-events/create-seed-development-data-file",
+                "plugins/dotnet-plugin-events/load-static-files"
+              ],
+            },
+            {
+              type: "category",
+              label: "Node.js Plugin Events - Reference",
+              items: [
+                "plugins/plugin-events/create-server",
+                "plugins/plugin-events/create-server-docker-compose",
+                "plugins/plugin-events/create-server-docker-compose-dev",
+                {
+                  type: 'doc',
+                  id: 'plugins/plugin-events/create-server-docker-compose-db',
+                  className: 'plugin-event-not-recommended', 
+                },
+                "plugins/plugin-events/create-server-dot-env",
+                "plugins/plugin-events/create-server-auth",
+                "plugins/plugin-events/create-package-json",
+                "plugins/plugin-events/create-entity-service",
+                "plugins/plugin-events/create-entity-service-base",
+                "plugins/plugin-events/create-entity-controller",
+                "plugins/plugin-events/create-entity-controller-base",
+                "plugins/plugin-events/create-entity-resolver",
+                "plugins/plugin-events/create-entity-resolver-base",
+                "plugins/plugin-events/create-message-broker-service",
+                "plugins/plugin-events/create-message-broker-service-base",
+                "plugins/plugin-events/create-message-broker-nestjs-module",
+                "plugins/plugin-events/create-message-broker-client-options-factory",
+                "plugins/plugin-events/create-message-broker-topics-enum",
+                "plugins/plugin-events/create-prisma-schema",
+              ],
+            }
+          ],
+        },
+      ]
+    },
+    {
+      type: "category",
       label: "Learn",
       link: {
         type: "doc",
