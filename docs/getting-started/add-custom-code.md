@@ -2,7 +2,7 @@
 id: add-custom-code
 title: How To Add Custom Code To Your Service
 sidebar_label: Add Custom Code To Your Service
-slug: /how-to/add-custom-code-to-your-service
+slug: /add-custom-code-to-your-service
 ---
 
 # How To Add Custom Code To Your Service
