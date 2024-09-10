@@ -13,7 +13,8 @@ const sidebars = {
         "getting-started/set-up-entities",
         "getting-started/configure-roles-and-permissions",
         "getting-started/add-plugins-for-service",
-        "getting-started/commit-changes-and-build-new-versions"
+        "getting-started/commit-changes-and-build-new-versions",
+        "getting-started/add-custom-code"
       ],
     },
     {
@@ -25,9 +26,9 @@ const sidebars = {
       },
       items: [
         "getting-started/generated-app",
-        "getting-started/service-building-new-versions",
+        // "getting-started/service-building-new-versions",
         "getting-started/view-generated-code",
-        "how-to/add-custom-code",
+        // "how-to/add-custom-code",
         "getting-started/authentication",
         "concepts/event-driven-architecture",
         {
