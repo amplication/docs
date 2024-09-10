@@ -213,6 +213,16 @@ Amplication will now rebuild your service, integrating your custom code with the
 
 Congratulations! You've successfully added custom code to implement a password reset feature in your Amplication-generated service. This custom logic will now be available through your API, allowing users to reset their passwords.
 
+## More Custom Code Examples
+
+Here are more examples of how to add custom code in different layers of your service.
+
+The purpose of these examples is to get familiar with the structure and responsibility of each of the components in the server.
+
+- **Example**: [How to add business logic to a service](/custom-code/business-logic/)
+- **Example**: [How to add an action to a REST API controller](/custom-code/controller-action/)
+- **Example**: [How to add a query to a GraphQL resolver](/custom-code/graphql-query/)
+
 ## Best Practices for Custom Code
 
 When adding custom code to your Amplication service, keep these best practices in mind:
