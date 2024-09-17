@@ -84,60 +84,6 @@ const sidebars = {
         "getting-started/relations"
       ]
     },
-        {
-      type: "category",
-      label: "Plugins",
-      link: {
-        type:"doc",
-        id: "getting-started/plugins"
-      },
-      items: [
-        "getting-started/plugins",
-        "getting-started/community-plugins",
-        "plugins/how-to-create-plugin",
-        "plugins/how-to-test-plugin",
-        "plugins/publish-plugin",
-        {
-          type: "category",
-          label: "Custom Plugin Architecture",
-          items: [
-            "plugins/plugin-architecture",
-            "plugins/plugin-events-before-after",
-            "plugins/context-skip-default",
-            "plugins/event-hierarchy",
-          ],
-        },
-        {
-          type: "category",
-          label: "Custom Plugin Events - Reference",
-          items: [
-            "plugins/plugin-events/create-server",
-            "plugins/plugin-events/create-server-docker-compose",
-            "plugins/plugin-events/create-server-docker-compose-dev",
-            {
-              type: 'doc',
-              id: 'plugins/plugin-events/create-server-docker-compose-db',
-              className: 'plugin-event-not-recommended', 
-            },
-            "plugins/plugin-events/create-server-dot-env",
-            "plugins/plugin-events/create-server-auth",
-            "plugins/plugin-events/create-package-json",
-            "plugins/plugin-events/create-entity-service",
-            "plugins/plugin-events/create-entity-service-base",
-            "plugins/plugin-events/create-entity-controller",
-            "plugins/plugin-events/create-entity-controller-base",
-            "plugins/plugin-events/create-entity-resolver",
-            "plugins/plugin-events/create-entity-resolver-base",
-            "plugins/plugin-events/create-message-broker-service",
-            "plugins/plugin-events/create-message-broker-service-base",
-            "plugins/plugin-events/create-message-broker-nestjs-module",
-            "plugins/plugin-events/create-message-broker-client-options-factory",
-            "plugins/plugin-events/create-message-broker-topics-enum",
-            "plugins/plugin-events/create-prisma-schema",
-          ],
-        }
-      ]
-    },
     {
       type: "category",
       label: "Deployment",
