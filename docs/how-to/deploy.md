@@ -33,7 +33,7 @@ When it comes to deployment, you have several options to choose from, allowing y
 
 ### Docker
 
-With the Docker Deployment plugins, Amplication generates all necessary configuration and scripts for Docker deployment, making it easy to containerize your application.
+Amplication generates all necessary configuration and scripts for Docker deployment, making it easy to containerize your application.
 
 [Learn more about deploying with Docker](/deploy/docker-desktop)
 
