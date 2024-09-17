@@ -54,9 +54,13 @@ import TabItem from '@theme/TabItem';
 
 After adding the required Authentication plugins:
 
-1. Configure your authentication settings in the plugin options page (See the [Examples](#authentication-plugin-configuration-settings) section below).
+1. [Configure your authentication settings](#authentication-plugin-configuration-settings) in the plugin options page.
 2. Add authenticated users to your system.
-3. Set up [roles and permissions](/configure-roles-and-permissions/) for authorization.
+3. [Set up roles and permissions](/configure-roles-and-permissions/) for authorization.
+
+:::note
+By default, Node.js services are created with a user with the credentials username: `admin` and password: `admin`. For .NET services, the default user credentials are username: `test@email.com` and password: `P@ssw0rd!`
+:::
 
 ## Available Authentication Plugins
 
@@ -120,25 +124,27 @@ For .NET services, ASP.NET Core Identity is the primary authentication option.
 
 If you're using a .NET service, refer to the [.NET Auth Core Identity plugin documentation](https://github.com/amplication/plugins/tree/master/plugins/dotnet-auth-core-identity) for setup and usage instructions.
 
-## Best Practices for Authentication and Authorization
-
-1. Choose the appropriate authentication method based on your project requirements.
-2. Always use HTTPS to encrypt data in transit.
-3. Implement proper error handling and logging for authentication failures.
-4. Regularly update and rotate authentication secrets and keys.
-5. Follow the principle of least privilege when assigning roles and permissions.
-
-## Disable Authentication On Your Service
-
-If you no longer need authentication on a specific service, you can disable it.
-
-1. Visit your service's Plugins page and toggle the Authentication-related plugins into the off state.
-2. Delete the Authentication Entity from your list of entities.
-3. Re-build your project and commit your changes to your preferred git provider.
-
 ## Authentication Plugin Configuration Settings
 
+You can customize your authentication settings, including the default username and password, in the authentication plugin's options page.
+
 Let's look at detailed configuration settings for some of the available authentication plugins:
+
+### ASP.NET Core Identity (.NET)
+
+This plugin adds authentication and authorization to your .NET services.
+
+#### Configuration
+
+```json
+{
+  "seedUserEmail":"test@email.com",
+  "seedUserPassword":"P@ssw0rd!"
+}
+```
+
+- `seedUserEmail`: The email address for the default seed user created when initializing the service (default: "test@email.com")
+- `seedUserPassword`: The password for the default seed user created when initializing the service (default: "P@ssw0rd!")
 
 ### JWT Auth Provider (Node.js)
 
@@ -274,6 +280,25 @@ The Keycloak Auth Provider integrates Keycloak authentication and authorization 
 
 For detailed setup instructions and configuration options, refer to the [Keycloak Auth Provider GitHub README](https://github.com/amplication/plugins/tree/master/plugins/auth-keycloak).
 
+### Basic Auth Provider (Node.js)
+
+```json
+{
+  "username":"admin",
+  "password":"admin"
+}
+```
+
+- `username`: The username for the default seed user created when initializing the service.
+- `seedUserPassword`: The password for the default seed user created when initializing the service.
+
+## Disable Authentication On Your Service
+
+If you no longer need authentication on a specific service, you can disable it.
+
+1. Visit your service's Plugins page and toggle the Authentication-related plugins into the off state.
+2. Delete the Authentication Entity from your list of entities.
+3. Re-build your project and commit your changes to your preferred git provider.
 
 ## Examples
 
