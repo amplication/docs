@@ -16,8 +16,8 @@ Before you begin, make sure you know to:
 1. [Create your first service](/first-service/)
 2. [Set up entities](/set-up-entities/) for your service
 3. [Configure roles and permissions](/configure-roles-and-permissions/)
-4. [Adde plugins to your service](/add-plugins-service/)
-5. [Commit changes and built a new version](/commit-and-build-new-versions/)
+4. [Add plugins to your service](/add-plugins-service/)
+5. [Commit changes and build a new version](/commit-and-build-new-versions/)
 6. Read the [Understanding Custom Code in Amplication](/how-to/custom-code/) document
 
 ## Understanding Custom Code in Amplication
@@ -36,7 +36,7 @@ Amplication preserves your custom code during updates:
 
 1. Base files in the `base` folder are regenerated with each build.
 2. Non-base files (like `user.service.ts`) are preserved during updates.
-3. If necessary changes to non-base files are required (e.g., removing references to a deleted plugin), Amplication will make these changes automatically while preserving your custom code.
+3. If necessary, changes to non-base files are required (e.g., removing references to a deleted plugin), Amplication will make these changes automatically while preserving your custom code.
 
 ## Adding Custom Code: A Simple Example
 
