@@ -18,7 +18,6 @@ Before you begin, make sure you know to:
 3. [Configure roles and permissions](/configure-roles-and-permissions/)
 4. [Add plugins to your service](/add-plugins-service/)
 5. [Commit changes and build a new version](/commit-and-build-new-versions/)
-6. Read the [Understanding Custom Code in Amplication](/how-to/custom-code/) document
 
 ## Understanding Custom Code in Amplication
 
@@ -29,6 +28,10 @@ Amplication is designed to allow seamless integration of custom code with genera
 3. The `base` folder contains generated files that Amplication updates with each build.
 4. Files outside the `base` folder are intended for your custom code and are preserved across builds.
 5. Amplication uses [smart merging](/smart-git-sync) to update your project while preserving your custom code.
+
+:::note
+For more a more in-depth explanation, read [Understanding Custom Code in Amplication](/custom-code-overview/)
+:::
 
 ## How Amplication Handles Custom Code
 
