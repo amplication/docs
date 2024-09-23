@@ -202,6 +202,12 @@ article > header {
   opacity: 0.5;
 }
 
+.tabs-container {
+  background-color: rgb(21 25 44);
+  border-radius: var(--ifm-alert-border-radius);
+  padding-bottom: var(--ifm-tabs-padding-vertical);
+}
+
 @media only screen and (max-width: 996px) {
   .start-now-button {
     display: none; 
