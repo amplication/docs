@@ -1,13 +1,14 @@
 ---
 id: add-custom-code
 title: Adding Custom Code to Your Amplication Service
-sidebar_label: Adding Custom Code
+sidebar_label: Add Custom Code To Your Service
 slug: /add-custom-code-to-your-service
 ---
 
-# Adding Custom Code to Your Amplication Service
+# Add Custom Code To Your Service
 
-While Amplication generates a robust, production-ready backend for your application, you'll often need to add custom business logic or additional functionality. This guide explains how Amplication manages custom code alongside generated code, and provides best practices for adding your own code to an Amplication-generated service.
+Amplication generates a robust, production-ready backend for your app, but you'll often need to add your own custom business logic with custom code.
+In this guide you'll learn how to add custom code to your Amplication service with a simple example.
 
 ## Prerequisites
 
@@ -20,12 +21,13 @@ Before you begin, make sure you know to:
 5. [Commit changes and build a new version](/commit-and-build-new-versions/)
 
 :::note
-For more a more in-depth explanation, read [Understanding Custom Code in Amplication](/custom-code-overview/)
+For more a more in-depth explanation of how custom code works, read [Understanding Custom Code in Amplication](/custom-code-overview/).
 :::
 
-## Adding Custom Code: A Simple Example
+## Adding Custom Code: Retrieve The User's Full Name
 
 Let's walk through a simple example of adding custom code to your service.
+In this example, we'll add a method with custom code to get the user's full name.
 
 ### Step 1: Create A New Feature Branch
 
@@ -41,9 +43,9 @@ Next, create a new branch from the main branch to make your custom code changes:
 git checkout -b feature/user-full-name
 ```
 
-### Step 2: Locate the Correct Files
+### Step 2: Locate the Correct File
 
-Navigate to your service's `src` folder and find the `user` folder:
+Navigate to the code of your generated service's `src` folder and find the `user` folder:
 
 ```
 src
@@ -58,11 +60,16 @@ src
     └── user.service.ts
 ```
 
-We'll be modifying `user.service.ts` to add our custom functionality.
+We'll modify the `user.service.ts` to add our custom functionality.
+
+:::tip
+Notice that we're adding our changes to `user.service.ts` instead of `base/user.service.base.ts` file.
+To learn more why we recommend doing this, read [Understanding Custom Code in Amplication](/custom-code-overview/).
+:::
 
 ### Step 3: Add Custom Logic to the Service
 
-Open `src/user/user.service.ts`. This file extends the base service and is where we'll add our custom method.
+Open `src/user/user.service.ts`. This file extends the base service and is where we'll add our custom method that retrieves the user's full name.
 
 ```typescript
 import { Injectable } from "@nestjs/common";
@@ -77,11 +84,11 @@ export class UserService extends UserServiceBase {
 }
 ```
 
-This example adds a simple method to get a user's full name. Note how it uses the `findOne` method from the base service.
+Note how it uses the `findOne` method from the base service.
 
 ### Step 4: Push Your Changes
 
-After adding your custom code, commit the changes to your git repository:
+After adding your custom code, commit the changes to the git feature branch you created in Step 1:
 
 ```bash
 git add .
