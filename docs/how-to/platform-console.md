@@ -113,7 +113,8 @@ Platform changes are separate from service-level changes. Make sure to review an
 
 ## Conclusion
 
-The Platform Console feature is in beta, so we encourage you to explore its capabilities and provide feedback to help us improve and refine it.
+The Platform Console feature is designed to enhance the maintainability of your backend services, ensure organizational standardization, reduce technical debt, and streamline collaboration between platform and development teams.
+As this feature is currently in beta, we encourage you to explore its capabilities and share your feedback to help us further improve and refine it.
 
 :::tip
 For any questions or issues related to the Platform Console, please [contact our support team](https://amplication.com/contact) or write your feedback on our [GitHub discussion](https://github.com/amplication/amplication/discussions/8979).
