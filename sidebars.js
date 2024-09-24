@@ -13,6 +13,7 @@ const sidebars = {
         "getting-started/set-up-entities",
         "getting-started/configure-roles-and-permissions",
         "getting-started/add-plugins-for-service",
+        "how-to/platform-console",
         "getting-started/commit-changes-and-build-new-versions"
       ],
     },
@@ -153,7 +154,6 @@ const sidebars = {
             "getting-started/cli"
           ],
         },
-        "how-to/platform-console",
         "how-to/analytics-dashboard",
         "how-to/understanding-break-the-monolith",
         "how-to/how-to-create-service"

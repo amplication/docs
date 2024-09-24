@@ -25,9 +25,10 @@ These components are managed through a new dashboard interface, separate from th
 ## Benefits
 
 - **Standardization**: Ensure all services follow organizational best practices and configurations.
-- **Efficiency**: Quickly create new services based on pre-defined templates.
-- **Centralized Management**: Update multiple services from a single location. When you update a template, all services using that template are automatically updated.
 - **Customization**: Create and use private plugins to tailor services to your organization's specific needs.
+- **Efficiency**: Quickly create new services based on pre-defined templates.
+- **Smooth Maintenance**: Update multiple services from a single location. When you update a template, all services using that template can automatically get a PR with the required changes.
+- **Technical Debt Prevention**: Implement organization-wide best practices across all services through templates and private plugins, creating a scalable architecture that resists the accumulation of technical debt as your project grows.
 
 ## Platform Console Templates
 
@@ -48,26 +49,26 @@ To create a new template:
 5. Choose a database (e.g., PostgreSQL).
 6. Click "Create" to finalize the template.
 
+![Amplication Create New Template](./assets/template-name-and-stack.png)
+
 ### Managing Templates
 
 Managing and updating templates is very similar to updating individual services. You have access to the same settings and most of the options available for services, including:
 
 - Viewing all templates in the Platform Console dashboard.
-- Adding entities to the service template.
 - Adding or removing plugins, including custom plugins.
 - Renaming templates and updating their descriptions.
-- Changing the code generator version for the template.
 
 To edit a template:
 
-1. Select the template from the Platform Console dashboard.
-2. Navigate to the "Settings" tab.
-3. Make your desired changes in the "General" or "Plugins" sections.
-4. All changes are saved automatically.
+1. Navigate to the Settings tab to update the configuration or the Plugins tab to install and update plugins.
+2. Make your desired changes in the "General" or "Plugins" sections.
+3. All changes are saved automatically.
 
-:::note
-When you update a template, **all services using that template will be automatically updated**, ensuring consistency across your infrastructure.
+<!-- :::note
+When you update a template, **all services using that template will be updated in your next build**, ensuring consistency across your infrastructure.
 :::
+-->
 
 ### Using Templates
 
@@ -97,7 +98,7 @@ To create a private plugin:
 
 1. In the Platform Console dashboard, navigate to the "Private Plugins" section.
 2. Click on "Create Private Repository".
-3. Follow the creation wizard to define your plugin's functionality.
+3. Connect to your plugin repository and add your existing private plugins to the project.
 
 ## Platform Changes Sidebar
 
@@ -117,5 +118,5 @@ The Platform Console feature is designed to enhance the maintainability of your 
 As this feature is currently in beta, we encourage you to explore its capabilities and share your feedback to help us further improve and refine it.
 
 :::tip
-For any questions or issues related to the Platform Console, please [contact our support team](https://amplication.com/contact) or write your feedback on our [GitHub discussion](https://github.com/amplication/amplication/discussions/8979).
+For any questions or issues related to the Platform Console, please contact us or write your feedback on our [GitHub discussion](https://github.com/amplication/amplication/discussions/8979).
 :::
