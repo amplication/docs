@@ -50,7 +50,7 @@ To create a new template:
 
 ### Managing Templates
 
-Managing and updating templates is very similar to updating individual services. You have access to the same settings and options available for services, including:
+Managing and updating templates is very similar to updating individual services. You have access to the same settings and most of the options available for services, including:
 
 - Viewing all templates in the Platform Console dashboard.
 - Adding entities to the service template.
