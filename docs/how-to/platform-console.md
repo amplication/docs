@@ -88,7 +88,7 @@ This process ensures that the new service inherits all the pre-configured settin
 Private plugins allow you to create custom functionality specific to your organization's needs. These can be added to templates or directly to services.
 
 :::note
-Creating and managing private plugins requires an Enterprise plan or higher.
+Creating and managing private plugins requires an Enterprise plan.
 :::
 
 ### Creating a Private Plugin
