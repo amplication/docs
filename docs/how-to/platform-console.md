@@ -96,7 +96,7 @@ Creating and managing private plugins requires an Enterprise plan.
 To create a private plugin:
 
 1. In the Platform Console dashboard, navigate to the "Private Plugins" section.
-2. Click on "Create Private Plugin".
+2. Click on "Create Private Repository".
 3. Follow the creation wizard to define your plugin's functionality.
 
 ## Platform Changes Sidebar
