@@ -16,7 +16,7 @@ The Platform Console features, including the usage of templates and creation of 
 The Platform Console introduces two main components:
 
 1. **Platform Console Templates**: Pre-configured service templates that serve as a blueprint for creating new services.
-2. **Private Plugins**: Custom plugins visible only to your organization that can be added to templates or services to extend functionality.
+2. **Private Plugins**: Custom plugins visible only to your organization that can be added to templates or services to extend functionality and/or keep your organization's best practices and standards.
 
 These components are managed through a new dashboard interface, separate from the existing services view.
 
