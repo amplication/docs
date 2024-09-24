@@ -153,6 +153,7 @@ const sidebars = {
             "getting-started/cli"
           ],
         },
+        "how-to/platform-console",
         "how-to/analytics-dashboard",
         "how-to/understanding-break-the-monolith",
         "how-to/how-to-create-service"
