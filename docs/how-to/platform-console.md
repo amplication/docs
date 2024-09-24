@@ -62,7 +62,7 @@ Managing and updating templates is very similar to updating individual services.
 To edit a template:
 
 1. Navigate to the Settings tab to update the configuration or the Plugins tab to install and update plugins.
-2. Make your desired changes in the "General" or "Plugins" sections.
+2. Make your desired changes.
 3. All changes are saved automatically.
 
 <!-- :::note
