@@ -77,9 +77,9 @@ module.exports = {
           label: "Plugins",
         },
         {
-          to: "/how-to/import-prisma-schema/",
+          to: "/platform-console/",
           position: "left",
-          label: "Import DB",
+          label: "Platform Console",
         },
         /* {
           to: "/deploy",

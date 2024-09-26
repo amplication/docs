@@ -13,8 +13,9 @@ const sidebars = {
         "getting-started/set-up-entities",
         "getting-started/configure-roles-and-permissions",
         "getting-started/add-plugins-for-service",
-        "getting-started/commit-changes-and-build-new-versions",
-        "getting-started/add-custom-code"
+        "how-to/platform-console",
+        "getting-started/add-custom-code",
+        "getting-started/commit-changes-and-build-new-versions"
       ],
     },
     {
