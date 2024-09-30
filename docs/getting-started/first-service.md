@@ -8,21 +8,21 @@ slug: /first-service
 
 # Create Your First Service With Amplication
 
-Amplication accelerates your app development by helping you build production-ready backends in either Node.js or .NET. These automatically-generated backends, known as **services**, utilize modern frameworks such as NestJS and Prisma for Node.js, and ASP.NET Core alongside Entity Framework Core for .NET.
+Amplication accelerates your app development by helping you build production-ready backends in either [Node.js](https://nodejs.org/en) or [.NET](https://dotnet.microsoft.com/en-us/). These automatically-generated backends, known as **services**, utilize modern frameworks such as [NestJS](https://nestjs.com/) and [Prisma](https://www.prisma.io/) for Node.js, and [ASP.NET Core](https://www.asp.net/) alongside Entity Framework Core for .NET.
 
-Each service includes both REST and GraphQL APIs and comes with an interactive React Admin UI. These services offer a comprehensive solution that encompasses authentication, authorization, logging, git synchronization, and other critical backend management functionalities.
+Each service includes both [REST](https://en.wikipedia.org/wiki/REST) and [GraphQL](https://graphql.org/) APIs and comes with an interactive React Admin UI. These services offer a comprehensive solution that encompasses authentication, authorization, logging, git synchronization, and other critical backend management functionalities.
 
 This guide will help you create your first service using our streamlined service creation onboarding wizard.
 
 :::tip
 [Amplication's AI](/amplication-ai) can help you build your first service with a single request in a few seconds.
 
-Ask Jovu: `Can you create a new blog service with entities for posts, categories, authors, and comments?`
+Ask Jovu: `Create a new blog service with entities for posts, categories, authors, and comments`
 :::
 
 ## Prerequisites
 
-First, [sign up](https://app.amplication.com/login) for an Amplication account with GitHub or your _business_ email address.
+First, [create](https://app.amplication.com/login) an Amplication account with GitHub or your _business_ email address.
 
 ![](./assets/first-service/amplication-home-page.png)
 
