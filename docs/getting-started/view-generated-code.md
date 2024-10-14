@@ -1,11 +1,11 @@
 ---
 id: view-generated-code
 title: Viewing the generated code
-sidebar_label: View the generated code
+sidebar_label: Code View Explained
 slug: /getting-started/view-generated-code
 ---
 
-# Viewing the Generated Code
+# Code View Explained
 
 Use **Code View** to view and explore the generated code. You can see the updated code before it is synced with GitHub or downloaded.
 

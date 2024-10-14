@@ -14,6 +14,7 @@ const sidebars = {
         "getting-started/configure-roles-and-permissions",
         "getting-started/add-plugins-for-service",
         "how-to/platform-console",
+        "getting-started/add-custom-code",
         "getting-started/commit-changes-and-build-new-versions"
       ],
     },
@@ -26,9 +27,10 @@ const sidebars = {
       },
       items: [
         "getting-started/generated-app",
-        "getting-started/service-building-new-versions",
+        // "getting-started/service-building-new-versions",
+        "how-to/custom-code-overview",
         "getting-started/view-generated-code",
-        "how-to/add-custom-code",
+        // "how-to/add-custom-code",
         "getting-started/authentication",
         "concepts/event-driven-architecture",
         {
