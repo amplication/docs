@@ -65,7 +65,7 @@ The Platform Console introduces a new **Platform Changes** sidebar that shows ch
 ![Amplication Platform Changes](./assets/platform-changes.png)
 
 :::note
-Platform changes are _separate_ from service-level changes and are not commited to your git repo. Make sure to review and commit platform changes separately from service changes.
+Platform changes are _separate_ from service-level changes and are not committed to your git repo. Make sure to review and commit platform changes separately from service changes.
 :::
 
 ## Conclusion
