@@ -141,7 +141,7 @@ This process will create a new commit with the updated configurations.
 
 ## Next Steps
 
-Now that you have all the information you need to set up individiual template syou can start creating a collection of templates to standarize your organization's best practices.
+Now that you've created an individual template you can start creating a collection of templates to standardize your organization's best practices.
 
 :::tip
 For any questions or issues related to Live Service Templates, please contact our support team or share your feedback in our [GitHub discussions](https://github.com/amplication/amplication/discussions).
