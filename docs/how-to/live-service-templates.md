@@ -85,7 +85,7 @@ The Settings tab for service templates provides various configuration options:
 5. **Code Generator Version**: Select a specific version or use the latest.
 
 :::note
-You can of course update your **Base Directories**, but our recommendation is keeping the placholder.
+You can of course update your **Base Directories**, but our recommendation is keeping the placeholder.
 :::
 
 ![Service Template Dashboard](./assets/live-service-templates/settings.png)
