@@ -192,6 +192,7 @@ const sidebars = {
             "plugins/how-to-create-plugin",
             "plugins/how-to-test-plugin",
             "plugins/publish-plugin",
+            "plugins/private-plugins",
             "plugins/plugin-events-before-after",
             "plugins/context-skip-default",
             "plugins/event-hierarchy",
