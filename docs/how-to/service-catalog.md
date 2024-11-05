@@ -117,17 +117,9 @@ When you click the "Generate the code" button, Amplication automatically builds 
 
 ## Next Steps
 
-Now that you understand the Service Catalog's capabilities, you can:
+Now that you understand how the Service Catalog is organized, you can explore other capabilities of Amplication:
 
-1. Create and organize your services using the Catalog view
-2. Set up Git synchronization for your services
-3. Monitor builds and deployments through the Commits tab
-4. Review and manage code using the Code View
-5. Configure service settings to match your requirements
-
-For more detailed information about specific features, refer to our other documentation pages:
-
-- [Architecture View Guide](/break-the-monolith/)
-- [Smart Git Sync Documentation](/smart-git-sync)
-- [Code View Tutorial](/getting-started/view-generated-code)
-- [Service Settings Configuration](/how-to/api-admin-ui-settings)
+- Create live templates to standardize service configurations
+- Develop private plugins to extend functionality
+- Build and deploy new versions of your services
+- Integrate custom code into your generated services
