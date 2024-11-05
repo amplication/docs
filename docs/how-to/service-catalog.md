@@ -123,3 +123,4 @@ Now that you understand how the Service Catalog is organized, you can explore ot
 - Develop private plugins to extend functionality
 - Build and deploy new versions of your services
 - Integrate custom code into your generated services
+
