@@ -2,21 +2,35 @@ const sidebars = {
   someSidebar: [
     {
       type: "category",
-      label: "Get Started",
+      label: "Documentation",
       link: {
         type: "doc",
         id: "welcome",
       },
       items: [
         "welcome",
-        "getting-started/first-service",
-        "getting-started/set-up-entities",
-        "getting-started/configure-roles-and-permissions",
-        "getting-started/add-plugins-for-service",
-        "how-to/platform-console",
-        "getting-started/commit-changes-and-build-new-versions"
-      ],
+        "getting-started-v2/quickstart",
+        "getting-started-v2/example-services",
+        "getting-started-v2/intro-to-amplication"
+      ]
     },
+    // {
+    //   type: "category",
+    //   label: "Get Started",
+    //   link: {
+    //     type: "doc",
+    //     id: "welcome",
+    //   },
+    //   items: [
+    //     "welcome",
+    //     "getting-started/first-service",
+    //     "getting-started/set-up-entities",
+    //     "getting-started/configure-roles-and-permissions",
+    //     "getting-started/add-plugins-for-service",
+    //     "how-to/platform-console",
+    //     "getting-started/commit-changes-and-build-new-versions"
+    //   ],
+    // },
     {
       type: "category",
       label: "The Generated Service",
