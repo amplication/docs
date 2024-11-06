@@ -30,9 +30,9 @@ Our AI assistant Jovu helps you rapidly generate production-ready backend servic
 Define and maintain standardized service architectures through live templates and private plugins.
 Create template with pre-configured settings, code generator versions, and plugins.
 
-- [Live Service Templates](/live-service-templates)
+- **Live Service Templates**
 - **[Private Plugins](/getting-started/plugins/)**: Extend functionality with private plugins or use our community plugins.
-- [Platform Console](/platform-console)
+- **Platform Console**
 
 ## Technical Debt Prevention
 
@@ -52,7 +52,7 @@ Enable developers to quickly create standardized services through our Service Ca
 Import existing databases, extend functionality through custom code, leverage multiple database options, and create custom plugins.
 With extensive documentation, developers can focus on business logic while maintaining alignment with organizational standards.
 
-- [Service Catalog](/service-catalog)
+- Service Catalog
 - **[Import Your Existing DB](/how-to/import-prisma-schema/)**: Use your _existing_ databases for a head start on development.
 - **[Custom Code Integration](/custom-code/)**: Extend generated code with your own custom business logic.
 - **[Database Support](/getting-started/#databases)**: Support for PostgreSQL, MySQL, MongoDB, MS SQL Server, and more.
