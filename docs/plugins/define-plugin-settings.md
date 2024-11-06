@@ -13,7 +13,7 @@ This file lives at the root of your plugin directory.
 It contains two properties at the root level:
 
 - `settings`: User-facing configuration.
-- `systemSettings` - Internal configuration.
+- `systemSettings`: Internal configuration.
 
 ```json title=".amplicationrc.json"
 {
@@ -25,7 +25,7 @@ It contains two properties at the root level:
     "dbName": "my-db"
   },
   "systemSettings": {
-    "requireAuth": true
+    "requireAuthenticationEntity": true
   }
 }
 ```
@@ -52,9 +52,7 @@ The `systemSettings` property is used to contain internal configuration that you
 These settings are **not visible to the user** and are solely for use in your plugin's code.
 
 :::caution
-**`systemSettings` is currently only available for internal developers** and not community developers.
-For now, use `systemSettings` to structure your `.amplicationrc.json` correctly.
-In the future, more documentation will be provided on what internal `systemSettings` are available.
+`requireAuthenticationEntity` is the only property available in the systemSettings configuration object. Also, **`systemSettings` is currently only available for internal developers** and not community developers.
 :::
 
 ## Examples
