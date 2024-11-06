@@ -26,6 +26,7 @@ const sidebars = {
       },
       items: [
         "getting-started/generated-app",
+        "how-to/live-service-templates",
         "getting-started/service-building-new-versions",
         "getting-started/view-generated-code",
         "how-to/add-custom-code",
