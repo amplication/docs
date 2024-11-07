@@ -191,6 +191,7 @@ const sidebars = {
             "plugins/overview",
             "plugins/plugin-architecture",
             "plugins/how-to-create-plugin",
+            "plugins/define-plugin-settings",
             "plugins/how-to-test-plugin",
             "plugins/publish-plugin",
             "plugins/plugin-events-before-after",
