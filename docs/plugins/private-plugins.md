@@ -6,7 +6,8 @@ toc_max_heading_level: 2
 
 # Creating and Using Private Plugins
 
-Private Plugins enable you to create [custom plugins](/plugins/overview/) exclusively for your organization's use. These plugins let you build secure, proprietary integrations while protecting sensitive business logic.
+Private Plugins enable you to create plugins exclusively for your organization's use.
+These plugins let you build secure, proprietary integrations and define your organization's standards. You can use them to protect sensitive business logic and enforce development best practices across your services.
 
 :::note
 Private Plugins are only **available for Enterprise Plan users**.
@@ -50,8 +51,6 @@ Next, add a new private plugin to your Platform Console:
 3. Set the plugin's **Display Name** and **Description** - these will appear in the UI when selecting plugins
 4. Choose the appropriate code generator (Node.js or .NET) that matches your target services
 
-The Plugin Id you enter will become the name of your plugin's folder within the `plugins` folder.
-
 ![Publish Your Platform Console Changes](./assets/private-plugins/add-new-plugin.png)
 
 ## Set Up Your Private Plugin Folder
@@ -90,7 +89,7 @@ cd plugins
 
 Next, clone the .NET Postgres Database plugin.
 
-To avoid downloading the entire repository, we’ll use a sparse checkout to copy only the `dotnet-db-postgres` folder from Amplication’s plugins repository.
+To avoid downloading the entire repository, we'll use a sparse checkout to copy only the `dotnet-db-postgres` folder from Amplication's plugins repository.
 
 Follow the steps below to complete this process:
 
@@ -116,7 +115,7 @@ Follow the steps below to complete this process:
    ```
 
 4. **Rename the Folder to Your Plugin ID**  
-   Finally, rename the cloned `dotnet-db-postgres` folder to match your plugin’s `Plugin Id`:
+   Finally, rename the cloned `dotnet-db-postgres` folder to match your plugin's `Plugin Id`:
 
    ```bash
    mv plugins/dotnet-db-postgres your-plugin-id
@@ -191,13 +190,12 @@ Plugin settings allow you to define customizable options that users can configur
 ![Publish Your Platform Console Changes](./assets/private-plugins/settings.png)
 
 :::note
-For a real-world example of using settings in your plugin, check out the [Supertokens authentication plugin](https://github.com/amplication/plugins/blob/a94dac7956e51903df0240eef7b704999fc6a752/plugins/auth-supertokens/src/index.ts#L160).
-For more detailed information about settings and configurations, see our [plugin settings documentation](/plugins/define-plugin-settings).
+For a real-world example of using settings in your plugin, see the [Supertokens authentication plugin](https://github.com/amplication/plugins/blob/a94dac7956e51903df0240eef7b704999fc6a752/plugins/auth-supertokens/src/index.ts#L160).
 :::
 
 ## Publish Your Plugin
 
-After adding a version to your plugin, configuring your plugin settings, and tagging your repository, it's time to publish your plugin.
+After adding a version to your plugin, configuring your plugin settings, and tagging your repository, it's time to publish your plugin. Publishing makes your plugin version available for use in services and templates, and sets it as the latest version.
 
 1. Go to your Platform Console
 2. Click on "Publish New Version" in your Platform Changes sidebar
@@ -213,7 +211,7 @@ You can use your private plugins in both templates and services, provided the co
 ### Include the Plugin in a Template
 
 1. Navigate to the Templates tab in your Platform Console
-2. Click on Create Template
+2. Click on Create Template or navigate to an existing Template
 3. Ensure that your template's code generator matches your private plugin's code generator
 4. In your template's overview page, click on Plugins
 5. Go to the Private Plugins tab on the left sidebar
@@ -221,7 +219,7 @@ You can use your private plugins in both templates and services, provided the co
 
 ### Include Plugin in a Service
 
-1. Navigate to your service in the Platform Console
+1. Navigate to your service in the Service Catalog
 2. Click on the Plugins tab
 3. Look for your private plugin in the Private Plugins section
    :::note
@@ -254,15 +252,17 @@ You can use your private plugins in both templates and services, provided the co
 - Use correct tag format: `PluginId@Version`
 - Always push tags to remote repository that match the tag you set in the UI
 
-### Common Issues and Solutions
+### Code Generation Errors
 
-- Undefined property errors: Verify plugin versions and publishing
-- Dependency errors: Check `package.json` configuration
-- Build failures: Review logs and ensure proper repository setup
+- Build failures during code generation: Review logs and ensure proper repository setup
+- Undefined property errors during code generation: Verify plugin versions and ensure the plugin is properly published
+- Dependency errors during service generation: Check `package.json` configuration
 
 ## Next Steps
 
 You successfully created your private plugin.
 It's version-controlled in your Git repository and available for use in both templates and services that match its code generator.
 
-For additional support, contact our support team.
+For more information or assistance:
+- Join our [Discord community](https://amplication.com/discord) for technical discussions and support
+- Enterprise customers can contact our support team through their designated support channels
