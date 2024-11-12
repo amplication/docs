@@ -3,15 +3,27 @@ const sidebars = {
     {
       type: "category",
       label: "Documentation",
+      collapsed: false,
       link: {
         type: "doc",
         id: "welcome",
       },
       items: [
         "welcome",
-        "getting-started-v2/quickstart",
-        "getting-started-v2/example-services",
-        "getting-started-v2/intro-to-amplication"
+        "getting-started/first-service"
+      ]
+    },
+    {
+      type: "category",
+      label: "Platform Features",
+      collapsed: false,
+      items: [
+        "how-to/platform-console",
+        {
+          type: "doc",
+          id: "plugins/private-plugins",
+          label: "Private Plugins", // Custom label for this sidebar item
+        },
       ]
     },
     // {
