@@ -10,14 +10,7 @@ const sidebars = {
       },
       items: [
         "welcome",
-        "getting-started/first-service"
-      ]
-    },
-    {
-      type: "category",
-      label: "Platform Features",
-      collapsed: false,
-      items: [
+        "getting-started/first-service",
         "how-to/platform-console",
         {
           type: "doc",
