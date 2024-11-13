@@ -105,3 +105,4 @@ Keycloak
 thirdparty
 emailpassword
 placeholder
+Quickstart
