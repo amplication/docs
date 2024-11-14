@@ -208,6 +208,15 @@ article > header {
   padding-bottom: var(--ifm-tabs-padding-vertical);
 }
 
+/* Amplication Sidebar Header */
+.amplication-sidebar-header {
+  flex: 1;
+  line-height: 1.25;
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 996px) {
   .start-now-button {
     display: none; 
