@@ -1,25 +1,21 @@
 ---
 title: Live Service Templates
-description: Learn about Amplication's Live Service Templates feature for creating and managing standardized service templates.
+description: Learn about Amplication's Live Service Templates feature for creating and managing standardized services.
 sidebar_label: Live Service Templates
 slug: /live-service-templates
 ---
 
 # Live Service Templates
 
-Live Service Templates let your team define, manage, and maintain standardized templates for backend services. This feature enhances consistency across your projects and streamlines the process of creating new services.
-
-:::note
-The Live Service Templates feature is currently in beta.
-:::
+Live Service Templates provide a centralized way to create, maintain, and enforce standardized backend services across your organization through reusable, autoupdating templates.
 
 ## Overview
 
 Live Service Templates introduce several key components:
 
-1. **Service Templates**: Pre-configured service blueprints that serve as a foundation for creating new services.
-2. **Template-based Services**: New services created from existing templates, inheriting all settings and configurations.
-3. **Template Management**: Tools for creating, editing, and maintaining service templates.
+1. **Service Templates**: Pre-configured templates that serve as a foundation for creating and maintaining new services that follow your organization standards and best practices.
+2. **Template-based Services**: New services created from existing templates, inheriting all settings, configurations and plugins.
+3. **Template Management**: Tools for creating, editing, and maintaining service templates, with the ability to propagate template updates automatically to the services as pull requests with the required changes.
 
 ## Create a Service Template
 
@@ -54,41 +50,9 @@ After completing these steps, your new service template will be created and adde
 To view and manage your templates:
 
 1. Go to the Platform Console dashboard.
-2. You'll see a list of all your service templates, each with its specific icon and type.
+2. You'll see a list of all your service templates, including their name, description, code generator type, and more.
 
 ![Amplication Platform Console](./assets/amplication-platform-console.png)
-
-### Editing Templates
-
-To edit a template:
-
-1. Click on the template name in the Platform Console dashboard.
-2. This will take you to the Service Template Overview page.
-
-On this page, you can:
-
-- View and edit the template name and description
-- See the associated technology stack
-- Manage installed plugins
-- Access template settings
-
-![Service Template Dashboard](./assets/live-service-templates/service-template-dashboard.png)
-
-### Template Settings
-
-The Settings tab for service templates provides various configuration options:
-
-1. **General**: Update the template name and description.
-2. **APIs and Admin**: Toggle different API types (REST, GraphQL) and Admin UI.
-3. **Base Directories**: Set the root directory for code placement when using the sync with Git feature. You can use `{{SERVICE_NAME}}` as a placeholder for the service name.
-4. **Authentication Entity**: Choose the authentication entity for your template.
-5. **Code Generator Version**: Select a specific version or use the latest.
-
-:::note
-You can of course update your **Base Directories**, but our recommendation is keeping the placeholder.
-:::
-
-![Service Template Dashboard](./assets/live-service-templates/settings.png)
 
 ### Managing Plugins
 
@@ -99,14 +63,29 @@ To manage plugins for your template:
 3. To install a new plugin, select it from the available options and click "Install".
 
 :::note
-To learn more about specifics about Plugin Management, visit the [Plugins page](/getting-started/plugins/).
+To learn more about Plugin Management and Private Plugins, visit the [Plugins page](/getting-started/plugins/) and [Private Plugins page](/private-plugins/).
 :::
+
+### Template Settings
+
+The Settings tab for service templates provides various configuration options:
+
+1. **General**: Update the template name and description.
+2. **APIs and Admin**: Toggle different API types (REST, GraphQL) and Admin UI.
+3. **Base Directories**: Set the root directory for code placement when using the sync with Git feature. You can use `{{SERVICE_NAME}}` as a placeholder for the service name which will be generated from the template.
+4. **Code Generator Version**: Select a specific version or use the latest.
+
+:::note
+While you can customize the Base Directories, we recommend keeping the `{{SERVICE_NAME}}` placeholder for better organization and consistency.
+:::
+
+![Service Template Dashboard](./assets/live-service-templates/settings.png)
 
 ## Creating Services from Templates
 
 To create a new service based on a template:
 
-1. Go to your workspace and click on the Services button for your project.
+1. Go to the Service Catalog of your project.
 2. Click "Add Resource".
 3. Select "Service from Template".
 4. Choose the desired template from the dropdown menu.
@@ -122,27 +101,28 @@ The new service will inherit all settings and plugins from the template. You can
 When you update a service template:
 
 1. Make the desired changes (e.g., add new plugins, modify settings).
-2. In the Platform Changes sidebar, provide a description of your changes.
-3. Click "Publish New Version".
+2. Click "Publish New Version" to reach the Publish screen.
+3. Add a description for your changes and publish the version(s).
 
-These changes will be stored within Amplication but not synced to your Git repository.
+The template definitions will be updated, with no immediate effect on the services created from this template.
 
 ![Amplication Platform Changes](./assets/platform-changes.png)
 
 ## Propagate Template Changes to Services
 
-After updating a template, you can apply these changes to existing services:
+After updating a template, the changes can be applied to existing services through the following process:
 
-1. Go to the service created from the template.
-2. You'll see the available updates in the Pending Changes sidebar.
-3. Review the changes and click "Generate Code" to apply them.
+1. You will receive in-product notifications and emails about available template updates.
+2. Access the tech debt screen and use the upgrade option for the required services.
+3. This will create pending changes that include all template updates, plugins, and definitions.
+4. Review and apply these changes to update your services.
 
-This process will create a new commit with the updated configurations.
+This process will create a new commit with all the updated template configurations, plugins, and definitions.
 
 ## Next Steps
 
-Now that you've created an individual template you can start creating a collection of templates to standardize your organization's best practices.
+Now that you've created an individual template, you can start building a comprehensive collection of templates and [private plugins](/private-plugins/) that reflect your organization's best practices and standards. This approach helps ensure consistency and maintainability across all your services.
 
 :::tip
-For any questions or issues related to Live Service Templates, please contact our support team or share your feedback in our [GitHub discussions](https://github.com/amplication/amplication/discussions).
+For any questions or issues related to Live Service Templates, please contact our support team or join our [Discord community](https://discord.gg/amplication) for feedback and discussions.
 :::
