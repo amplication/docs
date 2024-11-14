@@ -94,7 +94,7 @@ To create a new service based on a template:
 
 ![Amplication Create Services From Template](./assets/create-service-from-template.png)
 
-The new service will inherit all settings and plugins from the template. You can view these inherited configurations in the Pending Changes sidebar.
+The new service will inherit all settings and plugins from the template. You can view these inherited configurations in the Pending Changes tab.
 
 ## Update Service Templates
 
@@ -106,7 +106,7 @@ When you update a service template:
 
 The template definitions will be updated, with no immediate effect on the services created from this template.
 
-![Amplication Platform Changes](./assets/platform-changes.png)
+![Amplication Platform Changes](./assets/live-service-templates/platform-changes.png)
 
 ## Propagate Template Changes to Services
 
