@@ -106,3 +106,4 @@ thirdparty
 emailpassword
 placeholder
 Quickstart
+autoupdating
