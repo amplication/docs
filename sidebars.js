@@ -6,13 +6,11 @@ const sidebars = {
       value: '<h3 class="amplication-sidebar-header">Documentation</h3>',
       defaultStyle: true,
     },
-    // "Overview" document
     {
       type: 'doc',
       id: 'welcome',
       label: 'Overview',
     },
-    // "Create Your First Service" document
     {
       type: 'doc',
       id: 'getting-started/first-service',
@@ -23,6 +21,7 @@ const sidebars = {
       label: "Platform Features",
       items: [
         "how-to/platform-console",
+        "how-to/live-service-templates",
         {
           type: "doc",
           id: "plugins/private-plugins",
@@ -39,7 +38,6 @@ const sidebars = {
       },
       items: [
         "getting-started/generated-app",
-        "how-to/live-service-templates",
         "getting-started/service-building-new-versions",
         "getting-started/view-generated-code",
         "how-to/add-custom-code",
