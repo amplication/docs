@@ -69,9 +69,8 @@ For each service with technical debt, you can see:
 
 When you click "View Details" for any alert, you'll be taken to that specific service's technical debt tab where you can:
 - View detailed diffs comparing the old and new versions
-- Upgrade to the latest version using the "Upgrade" button
 - Choose to ignore specific updates
-- Resolve technical debt by applying the changes and generating a new service version
+- Resolve technical debt using the "Upgrade" button and generating a new service version
 
 Team members associated with affected services receive notifications about technical debt alerts, helping maintain up-to-date and consistent services across your organization.
 

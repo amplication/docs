@@ -94,7 +94,7 @@ You're not locked into your choice - you can always change your database type la
 
 ## Step 6: Define Your Data Model
 
-Define entities and fields for your database. You can manually define your own or use a template provided by Amplication.
+Define entities and fields for your database. You can manually define your own or use a set of pre-defined entities provided by Amplication.
 
 :::info
 Entities are the objects you want to keep track of in your app, like a User or a Product. They become tables in your database. Each row represents an instance of the entity.

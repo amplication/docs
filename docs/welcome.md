@@ -21,7 +21,7 @@ Our platform combines live templates, AI-powered code generation, and proactive 
 Define and maintain standardized development practices through live templates and private plugins, including code conventions, tools, architecture patterns and more.
 Create templates with pre-configured settings, code generator version, and plugins. When templates or plugins are updated, these changes are automatically proposed as pull requests to all dependent services, ensuring your standards continuously evolve across your entire service portfolio.
 
-- **Live Service Templates**: Create and maintain standardized service architectures that automatically propagate best practices
+- [**Live Service Templates**](/live-service-templates): Create and maintain standardized service architectures that automatically propagate best practices
 - **[Private Plugins](/private-plugins)**: Create organization-specific plugins for secure, internal functionality and standardization, or use [community plugins](/getting-started/plugins/) for common features. Support for security, deployment, monitoring, and more functionality.
 - [**Platform Console**](/platform-console): Centrally manage service standards and configurations
 
