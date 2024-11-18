@@ -1,48 +1,35 @@
 const sidebars = {
   someSidebar: [
+    // Static "Documentation" label
     {
-      type: "category",
-      label: "Documentation",
-      collapsed: false,
-      link: {
-        type: "doc",
-        id: "welcome",
-      },
-      items: [
-        "welcome",
-        "getting-started/first-service"
-      ]
+      type: 'html',
+      value: '<h3 class="amplication-sidebar-header">Documentation</h3>',
+      defaultStyle: true,
+    },
+    {
+      type: 'doc',
+      id: 'welcome',
+      label: 'Overview',
+    },
+    {
+      type: 'doc',
+      id: 'getting-started/first-service',
+      label: 'Create Your First Service',
     },
     {
       type: "category",
       label: "Platform Features",
-      collapsed: false,
       items: [
         "how-to/platform-console",
+        "how-to/service-catalog",
+        "how-to/live-service-templates",
         {
           type: "doc",
           id: "plugins/private-plugins",
-          label: "Private Plugins", // Custom label for this sidebar item
+          label: "Private Plugins",
         },
-      ]
+      ],
     },
-    // {
-    //   type: "category",
-    //   label: "Get Started",
-    //   link: {
-    //     type: "doc",
-    //     id: "welcome",
-    //   },
-    //   items: [
-    //     "welcome",
-    //     "getting-started/first-service",
-    //     "getting-started/set-up-entities",
-    //     "getting-started/configure-roles-and-permissions",
-    //     "getting-started/add-plugins-for-service",
-    //     "how-to/platform-console",
-    //     "getting-started/commit-changes-and-build-new-versions"
-    //   ],
-    // },
     {
       type: "category",
       label: "The Generated Service",
@@ -52,7 +39,6 @@ const sidebars = {
       },
       items: [
         "getting-started/generated-app",
-        "how-to/service-catalog",
         "getting-started/service-building-new-versions",
         "getting-started/view-generated-code",
         "how-to/add-custom-code",
