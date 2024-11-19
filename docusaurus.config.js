@@ -46,46 +46,25 @@ module.exports = {
       },
       items: [
         {
-          to: "/",
-          position: "left",
-          label: "Get Started",
-          activeBaseRegex: '^/$'
-        },
-        {
           to: "/amplication-ai",
           position: "left",
           label: "AI",
-        },
-        {
-          to: "/how-to/create-entity/",
-          position: "left",
-          label: "Entities"
-        },
-        {
-          to: "/custom-types-and-actions",
-          position: "left",
-          label: "APIs",
-        },
-        {
-          to: "/getting-started/",
-          position: "left",
-          label: "Code Generation"
-        },
-        {
-          to: "/getting-started/plugins/",
-          position: "left",
-          label: "Plugins",
         },
         {
           to: "/platform-console/",
           position: "left",
           label: "Platform Console",
         },
-        /* {
-          to: "/deploy",
+        {
+          to: "/live-service-templates",
           position: "left",
-          label: "Deploy",
-        }, */
+          label: "Live Templates",
+        },
+        {
+          to: "/private-plugins/",
+          position: "left",
+          label: "Private Plugins",
+        },
         {
           to: "https://app.amplication.com/login?event=startNowClicked&source=documentation",
           label: "Start Now",
