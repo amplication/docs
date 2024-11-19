@@ -1,54 +1,54 @@
 ---
 id: welcome
-title: Get Started
-description: Master Amplication with in-depth developer guides, API details, and tutorials.
-sidebar_label: Introduction
+title: Amplication Documentation 
+description: Learn how Amplication helps teams build and maintain standardized backend services while enforcing best practices and preventing technical debt.
+sidebar_label: Overview
 slug: /
 ---
 
-# Get Started with Amplication
+# Amplication Documentation
 
-Welcome to Amplication's developer documentation!
+Amplication helps you scaffold, build, maintain, and scale backend services that align with your organization's best practices, supporting you throughout the entire development process.
 
-Amplication is an open-source, AI-powered code generation solution for rapid .NET and Node.js development. Unlike other AI code generation tools, Amplication is the only one that guarantees production-ready code generation for all your backend needs.
+Our platform combines live templates, AI-powered code generation, and proactive technical debt management to help teams quickly scaffold, create, maintain, and scale production-ready Node.js and .NET backend services while continuously enforcing organizational standards.
 
-## Quick Start
+## Quickstart
 
 [Create your first service](/first-service/) with Amplication's AI, Jovu, and generate a .NET or Node.js _production-ready codebase in minutes_.
 
-## Customize Your Generated Service
+## Embed Your Organization's Best Practices
 
-Amplication transforms your ideas into production-ready code in minutes, but we're more than just a code generator. Our platform supports you throughout the entire development process.
+Define and maintain standardized development practices through live templates and private plugins, including code conventions, tools, architecture patterns and more.
+Create templates with pre-configured settings, code generator version, and plugins. When templates or plugins are updated, these changes are automatically proposed as pull requests to all dependent services, ensuring your standards continuously evolve across your entire service portfolio.
 
-Use these features to fine-tune and customize your service to your exact needs:
+- [**Live Service Templates**](/live-service-templates): Create and maintain standardized service architectures that automatically propagate best practices
+- **[Private Plugins](/private-plugins)**: Create organization-specific plugins for secure, internal functionality and standardization, or use [community plugins](/getting-started/plugins/) for common features. Support for security, deployment, monitoring, and more functionality.
+- [**Platform Console**](/platform-console): Centrally manage service standards and configurations
 
-- [Set up entities and fields](/set-up-entities/)
-- [Configure roles and permissions](/configure-roles-and-permissions/)
-- [Create and manage custom API endpoints and data structures](/custom-types-and-actions/)
-- [Extend capabilities with plugins](/add-plugins-service/)
-- [Commit changes and build](/commit-and-build-new-versions/)
+## Technical Debt Prevention
 
-## Key Features
+Track and manage technical debt through our [Platform Console](/platform-console) and Service Catalog.
+Monitor template versions, plugin updates, and dependency changes across all services.
+Receive automatic notifications when updates are available and get clear upgrade paths for outdated services.
+Maintain consistent standards across your entire service portfolio, with all changes tracked through version control.
 
-- **[AI-powered Development](/amplication-ai/)**: Generate production-ready .NET or Node.js code, get intelligent suggestions for your service's architecture, and more with Amplication AI.
-- **[Import Your Existing DB](/how-to/import-prisma-schema/)**: Use your _existing_ databases for a head start on development.
+## AI-powered Backend Generation
+
+Our AI assistant, Jovu, helps you rapidly generate production-ready backend services with built-in best practices. Generate complete service infrastructure including REST and GraphQL APIs, database models, authentication, and logging in minutes. Customize your services through our platform's intuitive interface while maintaining consistent standards.
+
+- **[Jovu](/amplication-ai/)**: Generate production-ready .NET or Node.js code, get intelligent suggestions for your service's architecture, and more with Amplication AI.
 - **[Full Stack Code Generation](/getting-started/)**: Fully-functional REST and GraphQL APIs, database models, authentication, logging, React Admin UI, and more.
-- **[Event-Driven Architecture](/concepts/event-driven-architecture/)**: Create new services with a modern architecture or modernize your existing apps into a event-driven microservices architecture.
-- **[Seamless Git Integration](/smart-git-sync/)**: Smart git sync with GitHub, Bitbucket, GitLab, or AWS CodeCommit.
-- **[Custom Code Integration](/custom-code/)**: Extend generated code with your own custom business logic.
-- **[Plugin System](/getting-started/plugins/)**: Extend functionality with our community plugins or create your custom plugins.
-- **[Multiple Databases](/getting-started/#databases)**: Support for PostgreSQL, MySQL, MongoDB, MS SQL Server, and more.
-- **Deployment & CI/CD**: Simplify and automate your CI/CD pipeline with our plugins and streamline deployments to popular options like [AWS ECS](/deploy/aws/ecs), [Docker Desktop](/deploy/docker-desktop/), and [Kubernetes](/deploy/kubernetes).
+- [Set up Entities and Fields](/set-up-entities)
+- [Configure API Endpoints](/custom-types-and-actions)
+- [Add Authentication and Authorization](/configure-roles-and-permissions)
 
-## Tutorials and Samples
+## Developer Self-Service
 
-- Follow our [step-by-step tutorials](/tutorials/) to build real-world applications.
-- Explore our [sample applications](https://github.com/amplication/sample-app) on GitHub.
+Enable developers to quickly create standardized services through our Service Catalog.
+Leverage plugins to efficiently add functionality in a standardized way across services.
+Support for multiple database options to match your technology stack.
 
-## Get Help
-
-- Join our [Discord community](https://amplication.com/discord) for support and collaboration.
-- Check out our [YouTube channel](https://www.youtube.com/c/Amplicationcom) for video tutorials.
-- Read our [blog](https://amplication.com/blog) for in-depth articles and updates.
-
-Ready to revolutionize your backend development? Let's get started!
+- Service Catalog
+- **[Database Support](/getting-started/#databases)**: Support for PostgreSQL, MySQL, MongoDB, MS SQL Server, and more
+- **Deployment & CI/CD**: Plugins for streamlined deployment to [AWS ECS](/deploy/aws/ecs), [Docker Desktop](/deploy/docker-desktop/), [Kubernetes](/deploy/kubernetes) and more
+- **[Import Your Existing DB](/how-to/import-prisma-schema/)**: Use your existing databases for a head start on development
