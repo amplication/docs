@@ -21,6 +21,7 @@ const sidebars = {
       label: "Platform Features",
       items: [
         "how-to/platform-console",
+        "how-to/service-catalog",
         "how-to/live-service-templates",
         {
           type: "doc",
