@@ -91,7 +91,7 @@ When you're ready to apply changes, click the "Generate the code" button to buil
 
 Now that you're familiar with the Service Catalog, explore these additional capabilities:
 
-- Create live templates to standardize service configurations
-- Develop private plugins to extend functionality
-- Build and deploy new versions of your services
-- Integrate custom code into your generated services
+- Create [live templates](/live-service-templates/) to standardize service configurations
+- Develop [private plugins](/private-plugins/) to extend functionality
+- Build and deploy [new versions](/building-new-versions/) of your services
+- Integrate [custom code](/how-to/custom-code/) into your generated services
