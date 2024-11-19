@@ -56,6 +56,11 @@ module.exports = {
           label: "Platform Console",
         },
         {
+          to: "/service-catalog/",
+          position: "left",
+          label: "Service Catalog",
+        },
+        {
           to: "/live-service-templates",
           position: "left",
           label: "Live Templates",
