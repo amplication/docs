@@ -12,7 +12,6 @@ The Service Catalog's main focus is the catalog view, which offers a comprehensi
 ![Amplication Service Catalog](./assets/service-catalog/service-catalog.png)
 
 ## Grid Columns
-
 The grid displays comprehensive information about each service through the following columns:
 
 - **Type** - Displays the resource type with visual indicators: purple brackets icon for services, green icon for message brokers, and distinct icons for other resource types
