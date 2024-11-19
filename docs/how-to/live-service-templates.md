@@ -7,7 +7,7 @@ slug: /live-service-templates
 
 # Live Service Templates
 
-Live Service Templates provide a centralized way to create, maintain, and enforce standardized backend services across your organization through reusable, autoupdating templates.
+Live Service Templates provide a centralized way to create, maintain, and enforce standardized backend services through reusable templates that evolve with your organization's best practices.
 
 ## Overview
 
@@ -112,10 +112,10 @@ The template definitions will be updated, with no immediate effect on the servic
 
 After updating a template, the changes can be applied to existing services through the following process:
 
-1. You will receive in-product notifications and emails about available template updates.
+1. You will receive in-product notifications and emails about available service updates.
 2. Access the tech debt screen and use the upgrade option for the required services.
 3. This will create pending changes that include all template updates, plugins, and definitions.
-4. Review and apply these changes to update your services.
+4. Review and apply these changes by choosing to "Generate the code" to update your services.
 
 This process will create a new commit with all the updated template configurations, plugins, and definitions.
 
