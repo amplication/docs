@@ -26,7 +26,7 @@ The grid displays comprehensive information about each service through the follo
   - Lightning bolt: automatically updates to latest version
   - Lock icon: version is locked to specific release
 - **Template** - Shows if the service was created from a template (orange icon). Clicking navigates to template details
-- **Template Version** - Displays the current template version number, which increments with each template update
+- **Template Version** - Displays the current template version number, which increments with each newly published template
 - **Actions** - Provides access to available operations for the service
 
 ## Customizing the Grid
@@ -35,7 +35,7 @@ The grid displays comprehensive information about each service through the follo
 
 - Drag columns left or right to reorder them
 - Resize columns by dragging their edges
-- Show/hide columns using the filter feature
+- Show/hide columns by clicking on the filter icon next to search
 
 ### Sorting
 
@@ -45,23 +45,39 @@ Click any column header to sort the grid:
 - Second click: Sort in descending order
 - Third click: Remove sorting
 
+### Filter View
+
+![Add filter to grid](./assets/service-catalog/above-grid-add-filter.png)
+
+There are filtering capabilities beyond column management, allowing you to filter the 
+
+You can filter the data that displays on your grid beyond the column management filters.
+For example, you can filter by properties, resource types, project, ownership, and more.
+
+To apply filters, click the "Add filter" button above the grid, select your desired filter type, and refine the filter criteria by clicking on the added filter component to narrow down your view.
+
 ### Teams Organization
 
-Teams provide an additional layer of service organization:
+Teams provide an additional layer of service organization and ownership management.
 
-1. Access Teams through the Teams tab in your project dashboard
+The owner (team or individual) is prominently displayed in the Service Catalog grid, allowing quick identification of who's responsible for each service.
+You can click the owner field to modify ownership settings directly.
+
+To set up and manage teams in your workspace, follow these steps:
+
+1. Access Teams through the Teams tab in your workspace dashboard
 2. Create new teams with:
    - Custom names
    - Descriptions
    - Distinctive colors (appears in the service catalog grid)
-3. Add team members who will receive notifications about service changes
-4. Assign services to teams for ownership and notifications
+3. Add team members
+4. Assign services to teams or individual members for ownership
 
 ### Properties
 
 Properties allow custom organization of your services:
 
-1. Access Properties through the Properties tab
+1. Access Properties through the Properties tab in your workspace dashboard.
 2. Create new properties with:
    - Custom name and key
    - Optional description
@@ -76,7 +92,7 @@ Properties allow custom organization of your services:
 
 ## Pending Changes Sidebar
 
-The Pending Changes sidebar provides a real-time view of modifications across your services, including:
+The Pending Changes sidebar shows you modifications across your services, including:
 
 - Plugin additions or updates
 - Entity modifications
