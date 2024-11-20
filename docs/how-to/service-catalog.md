@@ -49,8 +49,6 @@ Click any column header to sort the grid:
 
 ![Add filter to grid](./assets/service-catalog/above-grid-add-filter.png)
 
-There are filtering capabilities beyond column management, allowing you to filter the 
-
 You can filter the data that displays on your grid beyond the column management filters.
 For example, you can filter by properties, resource types, project, ownership, and more.
 
