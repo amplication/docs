@@ -12,7 +12,7 @@ Here are some questions that we are asked about frequently about using Amplicati
 
 ### What is Amplication?
 
-Amplication is an open-source AI-powered code generation platform that helps developers build and manage backend services without spending time on repetitive coding tasks and boilerplate code. Amplication auto-generates a fully functional, production-ready backend based on Node.js and .NET.
+Amplication is an open-source AI-powered code generation platform that helps developers build and manage backend services without spending time on repetitive coding tasks and boilerplate code. Our platform generates fully functional, production-ready backend services that follow modern best practices.
 
 ### How does Amplication work?
 
@@ -57,7 +57,7 @@ Amplication offers a structured way to [add custom code](https://docs.amplicatio
 
 We also provide various [plugins](https://docs.amplication.com/getting-started/plugins/), like Prettier and ESLint, so you can format your code exactly how you need it.
 
-Furthermore, you can create [private plugins](https://docs.amplication.com/enterprise-private-plugins/) that are accessible only within your organization.
+Furthermore, you can create [private plugins](/private-plugins/) that are accessible only within your organization.
 
 ## Version Control and Collaboration
 

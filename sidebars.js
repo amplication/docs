@@ -272,7 +272,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Learn",
+      label: "Tutorials",
       link: {
         type: "doc",
         id: "tutorials/index",
@@ -330,19 +330,20 @@ const sidebars = {
         }
       ],
     },
-    {
-      type: "category",
-      label: "About",
-      link: {
-        type: "doc",
-        id: "about/index",
-      },
-      items: [
-        "about/licensing",
-        "about/product-roadmap",
-        "getting-started/phone-home",
-      ],
-    },
+
+    // {
+    //   type: "category",
+    //   label: "About",
+    //   link: {
+    //     type: "doc",
+    //     id: "about/index",
+    //   },
+    //   items: [
+    //     "about/licensing",
+    //     "about/product-roadmap",
+    //     "getting-started/phone-home",
+    //   ],
+    // },
 
     "faqs/faqs",
 
@@ -386,7 +387,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Contribute To Amplication",
+      label: "Contribute",
       link: {
         type: "doc",
         id: "contributing",
