@@ -1,7 +1,7 @@
 ---
 id: define-plugin-settings
 title: How To Define Plugin Settings
-sidebar_label: How To Define Plugin Settings
+sidebar_label: Define Plugin Settings
 slug: /plugins/define-plugin-settings
 ---
 

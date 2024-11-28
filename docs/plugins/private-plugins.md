@@ -1,10 +1,11 @@
 ---
 id: private-plugins
+sidebar_label: Private Plugins
 slug: /private-plugins
 toc_max_heading_level: 2
 ---
 
-# Creating and Using Private Plugins
+# Private Plugins
 
 Private Plugins enable you to create plugins exclusively for your organization's use.
 These plugins let you build secure, proprietary integrations and define your organization's standards. You can use them to protect sensitive business logic and enforce development best practices across your services.

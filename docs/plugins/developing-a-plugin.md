@@ -1,14 +1,13 @@
 ---
 id: how-to-create-plugin
-title: How to Create a Custom Plugin
-sidebar_label: How to Create a Custom Plugin
+title: How to Develop a Plugin
+sidebar_label: Develop a Plugin
 slug: /plugins/how-to-create-plugin
 ---
 
-Amplication includes several plugins - some allow you to choose an authentication strategy, some allow you to choose which database you want to integrate with and one allows you to connect your service to a message broker.
+### Pre-requisites
 
-### Planning and POC:
-Before any development of a plugin, we take the following steps:
+Before the development of a plugin, take the following steps:
 
 1. Generate a service with Amplication
 2. Apply the changes that we need:

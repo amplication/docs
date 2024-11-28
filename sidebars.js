@@ -185,7 +185,7 @@ const sidebars = {
         "plugins/dotnet-plugins",
         {
           type: "category",
-          label: "Custom Plugins",
+          label: "Plugin Development",
           link: {
             type:"doc",
             id: "plugins/overview"
@@ -193,14 +193,13 @@ const sidebars = {
           items: [
             "plugins/overview",
             "plugins/plugin-architecture",
+            "plugins/event-hierarchy",
+            "plugins/plugin-events-before-after",
+            "plugins/context-skip-default",
             "plugins/how-to-create-plugin",
             "plugins/define-plugin-settings",
             "plugins/how-to-test-plugin",
             "plugins/publish-plugin",
-            "plugins/private-plugins",
-            "plugins/plugin-events-before-after",
-            "plugins/context-skip-default",
-            "plugins/event-hierarchy",
             {
               type: "category",
               label: ".NET Plugin Events - Reference",
