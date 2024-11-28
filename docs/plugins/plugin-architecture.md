@@ -15,7 +15,16 @@ The `pluginWrapper` function is invoked with the following arguments:
 - **event** - the name of event we want to capture, and change something in the triggered process.
 - **args** - the original parameters of the DSG function. These are likely to be used as the parameters of the event, for the plugin developer to have access to these params and manipulate the returned value of the function.
 
-For the purpose of this architecture overview, remember that every event has before and after property (which is a function), representing the event's lifecycle in which you can intervene (before the emission of the event and after the emission of the event). For more information about `before` and `after` event see [Before and After Lifecycle Functions](docs\plugins\before-after.md)
+## Event Lifecycle
+
+Each plugin event supports two execution points:
+
+- `before`: Executes before the main event processing
+- `after`: Executes after the main event processing
+
+These lifecycle hooks allow precise control over the code generation process.
+
+For more information about `before` and `after` event see [Before and After Lifecycle Functions](docs\plugins\before-after.md)
 
 When the `pluginWrapper` function is invoked, it checks whether the event argument that was passed has a `before` or `after` property. If so, it invokes other functions that are responsible for calculating the final behavior when this event is emitted, or in other words, the outcome of the function that this event is responsible to execute.
 
