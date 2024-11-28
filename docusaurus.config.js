@@ -195,6 +195,10 @@ module.exports = {
       {
         redirects: [
           {
+            to: "/guides/message-broker",
+            from: ["/how-to/create-message-broker"]
+          },
+          {
             to: "/plugins/guides/authentication",
             from: ["/authentication-plugin-examples"]
           },

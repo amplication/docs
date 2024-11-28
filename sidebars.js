@@ -183,15 +183,6 @@ const sidebars = {
         "getting-started/plugins",
         "getting-started/community-plugins",
         "plugins/dotnet-plugins",
-         {
-          type: "category",
-          label: "Plugin Guides",
-          items: [
-            "how-to/choose-configure-update-database",
-            "how-to/authentication-plugin-examples",
-            "how-to/create-message-broker",
-          ]
-        },
         {
           type: "category",
           label: "Custom Plugins",
@@ -280,6 +271,15 @@ const sidebars = {
       items: [
         "tutorials/index",
         "tutorials/community-tutorials",
+        {
+          type: "category",
+          label: "Guides",
+          items: [
+            "how-to/choose-configure-update-database",
+            "how-to/authentication-plugin-examples",
+            "how-to/create-message-broker",
+          ]
+        },
         {
           type: "link",
           label: "Developer Tutorials",

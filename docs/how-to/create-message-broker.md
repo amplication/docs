@@ -2,7 +2,7 @@
 id: create-message-broker
 title: How to create a message broker
 sidebar_label: Create a Message Broker
-slug: /how-to/create-message-broker
+slug: /guides/message-broker
 ---
 
 # Create a message broker
