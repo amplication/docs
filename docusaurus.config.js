@@ -8,6 +8,9 @@ module.exports = {
   organizationName: "amplication", // Usually your GitHub org/user name.
   projectName: "amplication", // Usually your repo name.
   trailingSlash: true,
+  stylesheets: [
+    "https://fonts.googleapis.com/css?family=Poppins"
+  ],
   themeConfig: {
     metadata: [
       { name: "twitter:card", content: "summary_large_image" },
@@ -177,6 +180,7 @@ module.exports = {
           editUrl: "https://github.com/amplication/docs/edit/main/",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
+          breadcrumbs: false
         },
         blog: false,
         theme: {

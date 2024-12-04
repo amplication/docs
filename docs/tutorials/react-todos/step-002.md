@@ -188,19 +188,24 @@ Make sure that you replace `first-service` with the name of the service that you
 
    By doing this the Todo app UI will now run on port `5000` during development so it won't conflict with Amplication's default port for the server (which is `3000`).
 
-   We've also set the start to script to run our frontend and backend code at the same time.
+   We've also set the `start` script to run our frontend and backend code at the same time.
 
-5. Before starting the server there are a few additional steps required. Read `server/README.md` for directions to:
+6. Before starting the server there are a few additional steps required. Read `server/README.md` for directions to:
 
    - Create a Prisma client
    - Start a database in Docker
    - Initiate the database
 
-6. When those steps have been completed run the following command:
+7. When those steps have been completed run the following command:
 
    ```bash
    npm run start
    ```
+
+> **Note:** If you encounter an error indicating that port `5000` is already in use, it means another software may be using the port, causing a conflict. This issue can be resolved by changing the port used for the frontend in `package.json`. Update the start script for the frontend to use a different port, for instance:
+> ```json
+> "start:frontend": "cross-env PORT=5001 npm --prefix web start",
+> ```
 
 ## Step 8 - Wrap Up
 
