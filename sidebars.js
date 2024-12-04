@@ -23,6 +23,7 @@ const sidebars = {
         "how-to/platform-console",
         "how-to/service-catalog",
         "how-to/live-service-templates",
+        "platform-features/technical-debt-management",
         {
           type: "doc",
           id: "plugins/private-plugins",
