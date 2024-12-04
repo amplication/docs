@@ -95,4 +95,5 @@ For Node.js services, the Admin project provides a React application with ready-
 
 ## Learn more
 
-- [How to add custom code to your application](/how-to/custom-code)
+- [Understanding Custom Code in Amplication](/custom-code-overview/)
+- [Add Custom Code To Your Service](/add-custom-code-to-your-service)

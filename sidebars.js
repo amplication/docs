@@ -28,7 +28,7 @@ const sidebars = {
           type: "doc",
           id: "plugins/private-plugins",
           label: "Private Plugins",
-        },
+        }
       ],
     },
     {
@@ -40,9 +40,12 @@ const sidebars = {
       },
       items: [
         "getting-started/generated-app",
-        "getting-started/service-building-new-versions",
+        "getting-started/commit-changes-and-build-new-versions",
+        "getting-started/add-custom-code",
+        // "getting-started/service-building-new-versions",
+        "how-to/custom-code-overview",
         "getting-started/view-generated-code",
-        "how-to/add-custom-code",
+        // "how-to/add-custom-code",
         "getting-started/authentication",
         "concepts/event-driven-architecture",
         {
