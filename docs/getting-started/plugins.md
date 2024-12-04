@@ -23,11 +23,11 @@ If you choose to turn on authentication for your service, that will enable Authe
 Ask Jovu: `Which plugins do you recommend for adding caching capabilities to my Amplication service?`
 :::
 
-## Node.js and .NET Plugins
+## Available Plugins
 
 Amplication supports both Node.js and .NET for code generation. Plugins are technology-specific.
 
-When you switch between Node.js and .NET, you'll see a different set of available plugins, each optimized for the chosen stack.
+Node.js and .NET services will see a different set of available plugins, each optimized for the chosen stack.
 
 Node.js plugins integrate seamlessly with the Node.js ecosystem and popular frameworks like NestJS. .NET plugins are designed to work with .NET Core and leverage the power of the .NET ecosystem.
 

@@ -11,20 +11,22 @@ When you use Amplication to create your backend service, we automatically genera
 
 Some of the key features of our generated backend services include:
 
-- **Extensive Functionality**: The generated services provide a wide range of features, including authentication, authorization, data validation, logging, a database, and a REST API. For Node.js services, they also offer GraphQL APIs for efficient data communication and a React-based admin UI.
-- **Clean Architecture**: Both Node.js and .NET services are structured following the clean architecture principles, ensuring that the business logic is decoupled from the infrastructure and UI layers. This makes the code easier to maintain and test.
-- **Ready for Production**: The generated services are optimized for [deployment](/deploy/), include Docker configurations and CI/CD pipelines, making it straightforward to move from development to production.
-- **Customizable and Extendable**: While the service provides a solid foundation, it is fully customizable. Developers can extend the generated code with custom features and integrate additional services as needed.
+- **Comprehensive APIs**: Every service includes REST APIs with built-in validation, documentation, and testing capabilities. Optional GraphQL support is available for enhanced data querying.
+- **Authentication & Authorization**: Built-in user management, role-based access control, and security best practices.
+- **Database Integration**: Robust database connectivity with your choice of modern ORMs and data validation.
+- **Developer Experience**: Generated services include logging, testing frameworks, and development tools configured according to industry standards.
+- **Production-ready**: Includes Docker configurations and CI/CD pipelines for straightforward deployment to your preferred platform.
+- **Extensible Architecture**: Clean, modular architecture that separates business logic from infrastructure concerns, making the code easy to maintain and customize.
 
-:::note
-You can see an example of a Node.js service generated with Amplication in this [GitHub repository](https://github.com/amplication/sample-app).
+:::info Generated Service Example
+See an example of a generated service in our [sample application repository](https://github.com/amplication/sample-app).
 :::
 
 ## Technologies
 
 The generated services utilize a suite of proven, robust technologies tailored for each supported technology.
 
-Below are the technologies employed for Node.js and .NET, ensuring efficient, reliable, and scalable server-side applications.
+Below are the technologies used for Amplication's supported tech stacks, ensuring efficient, reliable, and scalable server-side apps.
 
 ### Server-side
 

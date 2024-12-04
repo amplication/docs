@@ -17,7 +17,7 @@ The grid displays comprehensive information about each service through the follo
 - **Type** - Displays the resource type with visual indicators: purple brackets icon for services, green icon for message brokers, and distinct icons for other resource types
 - **Name** - The name of your service
 - **Owner** - Shows the assigned team or individual member responsible for the service. Clicking this field takes you to settings where you can modify ownership
-- **Code Generator** - Indicates whether the service uses Node.js or .NET
+- **Code Generator** - Indicates the selected technology stack for the service
 - **Repository** - Shows the connected Git repository. Can be modified through the service's "Sync with Git" tab
 - **Description** - Custom description of your service, editable through the service settings
 - **Pending Changes** - Displays the number of uncommitted changes since the last build
