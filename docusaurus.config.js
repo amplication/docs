@@ -199,6 +199,10 @@ module.exports = {
       {
         redirects: [
           {
+            to: "/guides/database",
+            from: ["/plugins/guides/database/"]
+          },
+          {
             to: "/guides/message-broker",
             from: ["/how-to/create-message-broker"]
           },
