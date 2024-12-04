@@ -199,7 +199,7 @@ module.exports = {
       {
         redirects: [
           {
-            to: "/add-custom-code-to-your-service"
+            to: "/add-custom-code-to-your-service",
             from: ["/how-to/custom-code/"]
           },
           {
