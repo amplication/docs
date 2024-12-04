@@ -202,8 +202,135 @@ article > header {
   opacity: 0.5;
 }
 
+.tabs-container {
+  background-color: rgb(21 25 44);
+  border-radius: var(--ifm-alert-border-radius);
+  padding-bottom: var(--ifm-tabs-padding-vertical);
+}
+
+/* Amplication Sidebar Header */
+.amplication-sidebar-header {
+  flex: 1;
+  line-height: 1.25;
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 996px) {
   .start-now-button {
     display: none; 
   }
+}
+
+.menu__link {
+  color: #B7BAC7;
+  font-size: 14px;
+}
+
+.menu__link.menu__link--active,
+.menu__link.menu__link--sublist.menu__link--active {
+  color: #FFF;
+}
+
+.markdown a, .markdown a:hover {
+  color: #53DBEE;
+}
+
+.navbar__link:hover, .navbar__link--active {
+  color: #53DBEE;
+}
+
+.markdown .alert a {
+  text-decoration-color: #53DBEE;
+}
+
+.theme-edit-this-page {
+  color: #53DBEE;
+}
+
+.pagination-nav__link:hover {
+  border-color: #53DBEE;
+}
+
+.pagination-nav__label {
+  color: #53DBEE;
+}
+
+.navbar__link {
+  font-size: 14px;
+}
+
+.navbar__logo img {
+  height: 82%;
+}
+
+@media only screen and (max-width: 995px) {
+  .navbar__logo img {
+    height: 90%;
+  }
+}
+
+.table-of-contents__link {
+  color: #B7BAC7;
+  font-size: 12px;
+}
+
+.table-of-contents__link.toc-highlight.table-of-contents__link--active,
+.table-of-contents__link:hover {
+  color: #FFF;
+}
+
+.breadcrumbs__link > svg > path {
+  fill: #B7BAC7;
+}
+
+.markdown h1:first-child {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.25rem;
+  margin-top: 1rem;
+}
+
+.markdown > h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.25rem;
+}
+
+.markdown > pre,
+.markdown > ul,
+.markdown > ol,
+.markdown > p {
+  color: #D3D4DC;
+  font-size: 14px;
+  line-height: 1.25rem;
+}
+
+.markdown .theme-admonition {
+  font-size: 14px;
+}
+
+.markdown .theme-admonition a {
+  text-decoration: none;
+}
+
+.markdown .theme-admonition a:hover {
+  text-decoration: underline;
+}
+
+.menu__link--sublist-caret:after {
+  background: var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 1.5rem
+}
+
+.menu__caret:before {
+  background: var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 1.5rem
+}
+
+.menu::-webkit-scrollbar-track {
+  background-color: #15192C;
+}
+
+.menu::-webkit-scrollbar-thumb {
+  background-color: #373D57;
 }

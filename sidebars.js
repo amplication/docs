@@ -1,19 +1,34 @@
 const sidebars = {
   someSidebar: [
+    // Static "Documentation" label
+    {
+      type: 'html',
+      value: '<h3 class="amplication-sidebar-header">Documentation</h3>',
+      defaultStyle: true,
+    },
+    {
+      type: 'doc',
+      id: 'welcome',
+      label: 'Overview',
+    },
+    {
+      type: 'doc',
+      id: 'getting-started/first-service',
+      label: 'Create Your First Service',
+    },
     {
       type: "category",
-      label: "Get Started",
-      link: {
-        type: "doc",
-        id: "welcome",
-      },
+      label: "Platform Features",
       items: [
-        "welcome",
-        "getting-started/first-service",
-        "getting-started/set-up-entities",
-        "getting-started/configure-roles-and-permissions",
-        "getting-started/add-plugins-for-service",
-        "getting-started/commit-changes-and-build-new-versions"
+        "how-to/platform-console",
+        "how-to/service-catalog",
+        "how-to/live-service-templates",
+        "platform-features/technical-debt-management",
+        {
+          type: "doc",
+          id: "plugins/private-plugins",
+          label: "Private Plugins",
+        },
       ],
     },
     {
@@ -86,6 +101,20 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Deployment",
+      link: {
+        type: "doc",
+        id: "how-to/deploy",
+      },
+      items: [
+        "how-to/deploy",
+        "getting-started/deploy-docker-desktop",
+        "how-to/deploy-kubernetes",
+        "how-to/deploy-to-aws-ecs",
+      ]
+    },
+    {
+      type: "category",
       label: "Enterprise Features",
       items: [
         "how-to/enterprise-sso",
@@ -141,12 +170,7 @@ const sidebars = {
         },
         "how-to/analytics-dashboard",
         "how-to/understanding-break-the-monolith",
-        "getting-started/deploy-docker-desktop",
-        "how-to/deploy-kubernetes",
-        "how-to/deploy-to-aws-ecs",
-        "how-to/how-to-create-service",
-        "how-to/authentication-plugin-examples",
-        "how-to/create-message-broker",
+        "how-to/how-to-create-service"
       ],
     },
     {
@@ -159,53 +183,97 @@ const sidebars = {
       items: [
         "getting-started/plugins",
         "getting-started/community-plugins",
-        "plugins/how-to-create-plugin",
-        "plugins/how-to-test-plugin",
-        "plugins/publish-plugin",
-        {
+        "plugins/dotnet-plugins",
+         {
           type: "category",
-          label: "Custom Plugin Architecture",
+          label: "Plugin Guides",
           items: [
-            "plugins/plugin-architecture",
-            "plugins/plugin-events-before-after",
-            "plugins/context-skip-default",
-            "plugins/event-hierarchy",
-          ],
+            "how-to/choose-configure-update-database",
+            "how-to/authentication-plugin-examples",
+            "how-to/create-message-broker",
+          ]
         },
         {
           type: "category",
-          label: "Custom Plugin Events - Reference",
+          label: "Custom Plugins",
+          link: {
+            type:"doc",
+            id: "plugins/overview"
+          },
           items: [
-            "plugins/plugin-events/create-server",
-            "plugins/plugin-events/create-server-docker-compose",
-            "plugins/plugin-events/create-server-docker-compose-dev",
+            "plugins/overview",
+            "plugins/plugin-architecture",
+            "plugins/how-to-create-plugin",
+            "plugins/define-plugin-settings",
+            "plugins/how-to-test-plugin",
+            "plugins/publish-plugin",
+            "plugins/private-plugins",
+            "plugins/plugin-events-before-after",
+            "plugins/context-skip-default",
+            "plugins/event-hierarchy",
             {
-              type: 'doc',
-              id: 'plugins/plugin-events/create-server-docker-compose-db',
-              className: 'plugin-event-not-recommended', 
+              type: "category",
+              label: ".NET Plugin Events - Reference",
+              items: [
+                "plugins/dotnet-plugin-events/create-server",
+                "plugins/dotnet-plugin-events/create-server-appsettings",
+                "plugins/dotnet-plugin-events/create-server-auth",
+                "plugins/dotnet-plugin-events/create-program-file",
+                "plugins/dotnet-plugin-events/create-server-csproj",
+                "plugins/dotnet-plugin-events/create-server-docker-compose",
+                "plugins/dotnet-plugin-events/create-server-git-ignore",
+                "plugins/dotnet-plugin-events/create-entity-model",
+                "plugins/dotnet-plugin-events/create-resource-db-context-file",
+                "plugins/dotnet-plugin-events/create-message-broker",
+                "plugins/dotnet-plugin-events/create-message-broker-client-options-factory",
+                "plugins/dotnet-plugin-events/create-message-broker-service",
+                "plugins/dotnet-plugin-events/create-entity-controller",
+                "plugins/dotnet-plugin-events/create-entity-controller-base",
+                "plugins/dotnet-plugin-events/create-dtos",
+                "plugins/dotnet-plugin-events/create-entity-extensions",
+                "plugins/dotnet-plugin-events/create-entity-interface",
+                "plugins/dotnet-plugin-events/create-entity-service",
+                "plugins/dotnet-plugin-events/create-entity-service-base",
+                "plugins/dotnet-plugin-events/create-seed-development-data-file",
+                "plugins/dotnet-plugin-events/load-static-files"
+              ],
             },
-            "plugins/plugin-events/create-server-dot-env",
-            "plugins/plugin-events/create-server-auth",
-            "plugins/plugin-events/create-package-json",
-            "plugins/plugin-events/create-entity-service",
-            "plugins/plugin-events/create-entity-service-base",
-            "plugins/plugin-events/create-entity-controller",
-            "plugins/plugin-events/create-entity-controller-base",
-            "plugins/plugin-events/create-entity-resolver",
-            "plugins/plugin-events/create-entity-resolver-base",
-            "plugins/plugin-events/create-message-broker-service",
-            "plugins/plugin-events/create-message-broker-service-base",
-            "plugins/plugin-events/create-message-broker-nestjs-module",
-            "plugins/plugin-events/create-message-broker-client-options-factory",
-            "plugins/plugin-events/create-message-broker-topics-enum",
-            "plugins/plugin-events/create-prisma-schema",
+            {
+              type: "category",
+              label: "Node.js Plugin Events - Reference",
+              items: [
+                "plugins/plugin-events/create-server",
+                "plugins/plugin-events/create-server-docker-compose",
+                "plugins/plugin-events/create-server-docker-compose-dev",
+                {
+                  type: 'doc',
+                  id: 'plugins/plugin-events/create-server-docker-compose-db',
+                  className: 'plugin-event-not-recommended', 
+                },
+                "plugins/plugin-events/create-server-dot-env",
+                "plugins/plugin-events/create-server-auth",
+                "plugins/plugin-events/create-package-json",
+                "plugins/plugin-events/create-entity-service",
+                "plugins/plugin-events/create-entity-service-base",
+                "plugins/plugin-events/create-entity-controller",
+                "plugins/plugin-events/create-entity-controller-base",
+                "plugins/plugin-events/create-entity-resolver",
+                "plugins/plugin-events/create-entity-resolver-base",
+                "plugins/plugin-events/create-message-broker-service",
+                "plugins/plugin-events/create-message-broker-service-base",
+                "plugins/plugin-events/create-message-broker-nestjs-module",
+                "plugins/plugin-events/create-message-broker-client-options-factory",
+                "plugins/plugin-events/create-message-broker-topics-enum",
+                "plugins/plugin-events/create-prisma-schema",
+              ],
+            }
           ],
-        }
+        },
       ]
     },
     {
       type: "category",
-      label: "Learn",
+      label: "Tutorials",
       link: {
         type: "doc",
         id: "tutorials/index",
@@ -263,19 +331,20 @@ const sidebars = {
         }
       ],
     },
-    {
-      type: "category",
-      label: "About",
-      link: {
-        type: "doc",
-        id: "about/index",
-      },
-      items: [
-        "about/licensing",
-        "about/product-roadmap",
-        "getting-started/phone-home",
-      ],
-    },
+
+    // {
+    //   type: "category",
+    //   label: "About",
+    //   link: {
+    //     type: "doc",
+    //     id: "about/index",
+    //   },
+    //   items: [
+    //     "about/licensing",
+    //     "about/product-roadmap",
+    //     "getting-started/phone-home",
+    //   ],
+    // },
 
     "faqs/faqs",
 
@@ -319,7 +388,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Contribute To Amplication",
+      label: "Contribute",
       link: {
         type: "doc",
         id: "contributing",

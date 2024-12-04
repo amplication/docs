@@ -6,18 +6,16 @@ sidebar_label: Create Your First Service
 slug: /first-service
 ---
 
-# Create Your First Service With Amplication
+# Create Your First Service
 
-Amplication accelerates your app development by helping you build production-ready backends in either Node.js or .NET. These automatically-generated backends, known as **services**, utilize modern frameworks such as NestJS and Prisma for Node.js, and ASP.NET Core alongside Entity Framework Core for .NET.
+Amplication accelerates your app development by helping you build production-ready backend services. These automatically-generated backends, known as **services**, provide modern, secure, and scalable foundations for your apps.
 
-Each service includes both REST and GraphQL APIs and comes with an interactive React Admin UI. These services offer a comprehensive solution that encompasses authentication, authorization, logging, git synchronization, and other critical backend management functionalities.
+Each service includes REST and GraphQL API support and an optional admin interface. Your service comes fully equipped with authentication, authorization, logging, git synchronization, and other critical backend management functionalities.
 
-This guide will help you create your first service using our streamlined service creation onboarding wizard.
+This guide will help you create your first service using our creation wizard.
 
-:::tip
-[Amplication's AI](/amplication-ai) can help you build your first service with a single request in a few seconds.
-
-Ask Jovu: `Can you create a new blog service with entities for posts, categories, authors, and comments?`
+:::info Generated Service Example
+Want to see an example of what a generated service looks like? Check out the [Generated Service Sample App](https://github.com/amplication/sample-app) on GitHub.
 :::
 
 ## Prerequisites
@@ -26,11 +24,31 @@ First, [sign up](https://app.amplication.com/login) for an Amplication account w
 
 ![](./assets/first-service/amplication-home-page.png)
 
-If this is your first time using Amplication, the Service Creation Wizard start automatically will guide you through the process.
+If this is your first time using Amplication, the Service Creation Wizard will automatically guide you through the process.
 
 ## Step 1: Name Your Service
 
 When naming your service, consider its primary function. What will it do? What problem is it solving? An appropriately named service will be easier to identify and maintain.
+
+<details>
+<summary>Available Technology Stacks</summary>
+
+Amplication supports two technology stacks for your backend services:
+
+**Node.js**
+- NestJS framework
+- Prisma ORM
+- GraphQL and REST APIs
+- React Admin UI
+
+**.NET**
+
+- ASP.NET Core
+- Entity Framework Core
+- REST APIs
+
+Choose the stack that best fits your team's expertise and project requirements during service creation.
+</details>
 
 ![](./assets/first-service/service-name.png)
 
@@ -47,7 +65,7 @@ You can also create a new repository by clicking on the **Create repository** bu
 
 ![](./assets/first-service/select-repository.png)
 
-:::note
+:::note Other Supported Git Providers
 In addition to GitHub, Amplication also supports [Bitbucket](/sync-with-bitbucket) and [AWS CodeCommit](/sync-with-aws-codecommit) for Enterprise users.
 :::
 
@@ -87,16 +105,16 @@ Monorepo is recommended if you plan on having multiple services in a single GitH
 Amplication supports PostgreSQL, MongoDB, and MySQL out of the box. Choose the one that suits your needs.
 
 :::tip
-You're not locked into your choice - you can always change your database type later in your project's plugin page.
+You're not locked into your choice - you can always [change your database type later](/plugins/guides/database/) in your project's plugin page.
 :::
 
 ![](./assets/first-service/database.png)
 
 ## Step 6: Define Your Data Model
 
-Define entities and fields for your database. You can manually define your own or use a template provided by Amplication.
+Define entities and fields for your database. You can manually define your own or use a set of pre-defined entities provided by Amplication.
 
-:::info
+:::info What Are Entities?
 Entities are the objects you want to keep track of in your app, like a User or a Product. They become tables in your database. Each row represents an instance of the entity.
 
 A field is a column in that table that represents an attribute of that entity.
@@ -117,12 +135,6 @@ Congratulations! You've successfully set up your first service on Amplication. Y
 ![](./assets/first-service/generating-service.png)
 
 Clicking on the `View my code` button will take you to the GitHub repository you chose in Step 2. Specifically, you'll see Amplication's first commit to that repository.
-
-:::note
-If you're curious about what the generated code for a service looks like, we have an example on GitHub for you. Check out the following repository:
-
-[Amplication Generated Service Sample App](https://github.com/amplication/sample-app)
-:::
 
 ![](./assets/first-service/service-created-successfully.png)
 

@@ -8,6 +8,9 @@ module.exports = {
   organizationName: "amplication", // Usually your GitHub org/user name.
   projectName: "amplication", // Usually your repo name.
   trailingSlash: true,
+  stylesheets: [
+    "https://fonts.googleapis.com/css?family=Poppins"
+  ],
   themeConfig: {
     metadata: [
       { name: "twitter:card", content: "summary_large_image" },
@@ -46,28 +49,32 @@ module.exports = {
       },
       items: [
         {
-          to: "/",
+          to: "/amplication-ai",
           position: "left",
-          label: "Get Started",
-          activeBaseRegex: '^/$'
+          label: "AI",
         },
         {
-          to: "/tutorials",
+          to: "/platform-console/",
           position: "left",
-          label: "Tutorials",
+          label: "Platform Console",
         },
         {
-          to: "/custom-code",
+          to: "/service-catalog/",
           position: "left",
-          label: "Custom Code",
+          label: "Service Catalog",
         },
         {
-          to: "/api",
+          to: "/live-service-templates",
           position: "left",
-          label: "Generated APIs",
+          label: "Live Templates",
         },
         {
-          to: "https://app.amplication.com/login",
+          to: "/private-plugins/",
+          position: "left",
+          label: "Private Plugins",
+        },
+        {
+          to: "https://app.amplication.com/login?event=startNowClicked&source=documentation",
           label: "Start Now",
           position: "right",
           className: "start-now-button",
@@ -173,6 +180,7 @@ module.exports = {
           editUrl: "https://github.com/amplication/docs/edit/main/",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
+          breadcrumbs: false
         },
         blog: false,
         theme: {
@@ -191,12 +199,12 @@ module.exports = {
       {
         redirects: [
           {
-            to: "/user-entity",
-            from: ["/how-to/add-delete-user-entity"]
+            to: "/plugins/guides/authentication",
+            from: ["/authentication-plugin-examples"]
           },
           {
-            to: "/deploy/docker-desktop",
-            from: ["/deploy"]
+            to: "/user-entity",
+            from: ["/how-to/add-delete-user-entity"]
           },
           {
             to: "/getting-started/",
