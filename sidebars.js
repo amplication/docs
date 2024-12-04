@@ -1,21 +1,34 @@
 const sidebars = {
   someSidebar: [
+    // Static "Documentation" label
+    {
+      type: 'html',
+      value: '<h3 class="amplication-sidebar-header">Documentation</h3>',
+      defaultStyle: true,
+    },
+    {
+      type: 'doc',
+      id: 'welcome',
+      label: 'Overview',
+    },
+    {
+      type: 'doc',
+      id: 'getting-started/first-service',
+      label: 'Create Your First Service',
+    },
     {
       type: "category",
-      label: "Get Started",
-      link: {
-        type: "doc",
-        id: "welcome",
-      },
+      label: "Platform Features",
       items: [
-        "welcome",
-        "getting-started/first-service",
-        "getting-started/set-up-entities",
-        "getting-started/configure-roles-and-permissions",
-        "getting-started/add-plugins-for-service",
         "how-to/platform-console",
-        "getting-started/add-custom-code",
-        "getting-started/commit-changes-and-build-new-versions"
+        "how-to/service-catalog",
+        "how-to/live-service-templates",
+        "platform-features/technical-debt-management",
+        {
+          type: "doc",
+          id: "plugins/private-plugins",
+          label: "Private Plugins",
+        }
       ],
     },
     {
@@ -27,6 +40,8 @@ const sidebars = {
       },
       items: [
         "getting-started/generated-app",
+        "getting-started/commit-changes-and-build-new-versions",
+        "getting-started/add-custom-code",
         // "getting-started/service-building-new-versions",
         "how-to/custom-code-overview",
         "getting-started/view-generated-code",
@@ -192,8 +207,10 @@ const sidebars = {
             "plugins/overview",
             "plugins/plugin-architecture",
             "plugins/how-to-create-plugin",
+            "plugins/define-plugin-settings",
             "plugins/how-to-test-plugin",
             "plugins/publish-plugin",
+            "plugins/private-plugins",
             "plugins/plugin-events-before-after",
             "plugins/context-skip-default",
             "plugins/event-hierarchy",
@@ -259,7 +276,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Learn",
+      label: "Tutorials",
       link: {
         type: "doc",
         id: "tutorials/index",
@@ -317,19 +334,20 @@ const sidebars = {
         }
       ],
     },
-    {
-      type: "category",
-      label: "About",
-      link: {
-        type: "doc",
-        id: "about/index",
-      },
-      items: [
-        "about/licensing",
-        "about/product-roadmap",
-        "getting-started/phone-home",
-      ],
-    },
+
+    // {
+    //   type: "category",
+    //   label: "About",
+    //   link: {
+    //     type: "doc",
+    //     id: "about/index",
+    //   },
+    //   items: [
+    //     "about/licensing",
+    //     "about/product-roadmap",
+    //     "getting-started/phone-home",
+    //   ],
+    // },
 
     "faqs/faqs",
 
@@ -373,7 +391,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Contribute To Amplication",
+      label: "Contribute",
       link: {
         type: "doc",
         id: "contributing",

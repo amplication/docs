@@ -8,6 +8,9 @@ module.exports = {
   organizationName: "amplication", // Usually your GitHub org/user name.
   projectName: "amplication", // Usually your repo name.
   trailingSlash: true,
+  stylesheets: [
+    "https://fonts.googleapis.com/css?family=Poppins"
+  ],
   themeConfig: {
     metadata: [
       { name: "twitter:card", content: "summary_large_image" },
@@ -46,46 +49,30 @@ module.exports = {
       },
       items: [
         {
-          to: "/",
-          position: "left",
-          label: "Get Started",
-          activeBaseRegex: '^/$'
-        },
-        {
           to: "/amplication-ai",
           position: "left",
           label: "AI",
-        },
-        {
-          to: "/how-to/create-entity/",
-          position: "left",
-          label: "Entities"
-        },
-        {
-          to: "/custom-types-and-actions",
-          position: "left",
-          label: "APIs",
-        },
-        {
-          to: "/getting-started/",
-          position: "left",
-          label: "Code Generation"
-        },
-        {
-          to: "/getting-started/plugins/",
-          position: "left",
-          label: "Plugins",
         },
         {
           to: "/platform-console/",
           position: "left",
           label: "Platform Console",
         },
-        /* {
-          to: "/deploy",
+        {
+          to: "/service-catalog/",
           position: "left",
-          label: "Deploy",
-        }, */
+          label: "Service Catalog",
+        },
+        {
+          to: "/live-service-templates",
+          position: "left",
+          label: "Live Templates",
+        },
+        {
+          to: "/private-plugins/",
+          position: "left",
+          label: "Private Plugins",
+        },
         {
           to: "https://app.amplication.com/login?event=startNowClicked&source=documentation",
           label: "Start Now",
@@ -193,6 +180,7 @@ module.exports = {
           editUrl: "https://github.com/amplication/docs/edit/main/",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
+          breadcrumbs: false
         },
         blog: false,
         theme: {
