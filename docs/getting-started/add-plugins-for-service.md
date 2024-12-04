@@ -6,7 +6,7 @@ slug: /add-plugins-service
 
 # Add Plugins To Your Service
 
-Amplication's plugin system allows you to easily extend the capabilities of your service with new features, making it much faster to build the exact backend you want.
+Amplication's [plugin system](/getting-started/plugins/) allows you to easily extend the capabilities of your service with new features, making it much faster to build the exact backend you want.
 
 For example, the GitHub Actions plugin adds an actions workflow to the service for building and testing on GitHub. The OpenAI plugin allows you to integrate with the OpenAI API. 
 
@@ -18,7 +18,13 @@ Authentication is a collection of plugins to provide you with auth functionality
 Let's walk through the process of adding a new plugin to your service.
 You'll see how fast and seamless the process is.
 
-## Add the Prettier Plugin
+:::tip
+[Amplication's AI](/amplication-ai) can help you automatically install plugins, and give appropriate recommendations, with a single request.
+
+Ask Jovu: `Can you install the Prettier plugin to my service to automatically format my code?`
+:::
+
+## Step 1: Add the Prettier Plugin
 
 Prettier is a code formatter that automatically formats your code to ensure adherence to a consistent style.
 
@@ -56,7 +62,7 @@ Here's how those settings could look:
 
 ![Prettier Plugin Settings filled in](./assets/prettier-plugin-settings-filled-in.png)
 
-## Switch Your Database Plugin (Optional)
+## Step 2: Switch Your Database Plugin (Optional)
 
 Amplication does not lock you into any specific database.
 You can quickly switch your preferred database in just a few clicks with another plugin.
@@ -88,7 +94,7 @@ Amplication truly does save you a lot of time, and our plugin system is designed
 - [How To Use Plugins](/getting-started/plugins)
 - [Custom Plugin Development](/plugins/how-to-create-plugin/)
 
-Amplication provides many more plugins plugins for you to use with your service.
+Amplication provides many more plugins for you to use with your service.
 We're always working on releasing more.
 Visit the [How To Use Plugins](/getting-started/plugins/) page to learn more about which ones are available.
 

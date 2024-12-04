@@ -1,25 +1,28 @@
 ---
 id: first-service
 title: Create Your First Service
-description: Amplication services are a full solution complete with authentication, authorization, logging, git sync, and other essential features for back-end management.
+description: Amplication services are a full back-end solution complete with authentication, authorization, logging, git sync, and other essential features for back-end management.
 sidebar_label: Create Your First Service
 slug: /first-service
 ---
 
 # Create Your First Service With Amplication
 
-Amplication accelerates your Node.js development by helping you build production-ready backends.
-These automatically-generated backends are known as **services**.
+Amplication accelerates your app development by helping you build production-ready backends in either Node.js or .NET. These automatically-generated backends, known as **services**, utilize modern frameworks such as NestJS and Prisma for Node.js, and ASP.NET Core alongside Entity Framework Core for .NET.
 
-Services are  built with modern frameworks like NestJS and Prisma.
-They also include a REST and GraphQL API and an interactive React Admin UI.
-Services are a full solution complete with authentication, authorization, logging, git sync, and other essential features for back-end management.
+Each service includes both REST and GraphQL APIs and comes with an interactive React Admin UI. These services offer a comprehensive solution that encompasses authentication, authorization, logging, git synchronization, and other critical backend management functionalities.
 
-Let's get you started on creating your first service using our service creation onboarding wizard.
+This guide will help you create your first service using our streamlined service creation onboarding wizard.
+
+:::tip
+[Amplication's AI](/amplication-ai) can help you build your first service with a single request in a few seconds.
+
+Ask Jovu: `Can you create a new blog service with entities for posts, categories, authors, and comments?`
+:::
 
 ## Prerequisites
 
-First, [sign up](https://app.amplication.com/login) for an Amplication account. Next, authorize with GitHub.
+First, [sign up](https://app.amplication.com/login) for an Amplication account with GitHub or your _business_ email address.
 
 ![](./assets/first-service/amplication-home-page.png)
 
@@ -47,7 +50,6 @@ You can also create a new repository by clicking on the **Create repository** bu
 :::note
 In addition to GitHub, Amplication also supports [Bitbucket](/sync-with-bitbucket) and [AWS CodeCommit](/sync-with-aws-codecommit) for Enterprise users.
 :::
-
 
 ## Step 3: Customize Your Service
 
@@ -92,7 +94,7 @@ You're not locked into your choice - you can always change your database type la
 
 ## Step 6: Define Your Data Model
 
-Define entities and fields for your database. You can manually define your own or use a template provided by Amplication.
+Define entities and fields for your database. You can manually define your own or use a set of pre-defined entities provided by Amplication.
 
 :::info
 Entities are the objects you want to keep track of in your app, like a User or a Product. They become tables in your database. Each row represents an instance of the entity.

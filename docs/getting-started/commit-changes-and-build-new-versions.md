@@ -13,14 +13,18 @@ Only committed changes will be included in the next version of your generated se
 
 In this guide, you'll learn how to commit changes to your git provider and build new versions of your service.
 
+:::tip
+[Amplication's AI](/amplication-ai) can help you build new versions of your service and create commit messages with a single request.
+
+Ask Jovu: `Can you build and commit my pending changes with the message "Added Task entity and updated Project entity"?`
+:::
+
 ## Prerequisites
 
-:::info
 In order to proceed with this guide, please ensure you have completed at least the following:
 
 1. [Set up your service](/first-service/) with our service creation wizard.
 2. [Set up entities and entity fields](/set-up-entities/) for your service.
-:::
 
 ## Step 1: Make Your First Commit
 

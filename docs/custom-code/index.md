@@ -4,7 +4,7 @@ title: Customize Your Application
 
 # Customize Your Application
 
-Amplication enables you to generate code, manage custom files, and seed databases. We'll give you a brief overview what what Amplication can do in this area.
+Amplication enables you to generate code, manage custom files, and seed databases. We'll give you a brief overview of what Amplication can do in this area.
 
 ## Custom Code with Amplication
 

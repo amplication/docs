@@ -13,11 +13,15 @@ This introductory guide will walk you through creating and configuring new entit
 
 Let's get started.
 
+:::tip
+[Amplication's AI](/amplication-ai) can help you create new entities for your service, with all the necessary fields and relationships, with a single request.
+
+Ask Jovu: `I need to create a Customer entity with fields for name, email, and phone number. Can you assist me?`
+:::
+
 ## Prerequisites
 
-:::info
-If you haven't set up your service yet, [create your first service](/first-service/) using our Service Creation wizard.
-:::
+- If you haven't set up your first service yet, [create one first](/first-service/) with Jovu or using our Service Creation Wizard.
 
 ## Step 1: Create an Entity
 
@@ -30,9 +34,9 @@ The _Entities_ page opens. Here you see all the entities in your application.
 ![](./assets/first-app/entities.png)
 
 :::info
-When you initially established your service using the service creation wizard, you had the choice to [incorporate entities into your data model](/first-service/#step-6-define-your-data-model) from an Amplication template, or leave it empty.
+When you initially established your service using the service creation wizard, you had the choice to [incorporate entities into your service](/first-service/#step-6-define-your-data-model) from a set of pre-defined entities, or leave it empty.
 
-If you opted not to use a template, you'll find your Entities screen with only one entity, **User**. This entity auto-generated when you created the new service.
+If you opted not to use the pre-defined entities, you'll find your Entities screen with only one entity, **User**. This entity auto-generated when you created the new service.
 :::
 
 In this example, we'll now add another entity called _Project_.

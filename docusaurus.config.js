@@ -49,34 +49,38 @@ module.exports = {
       },
       items: [
         {
-          to: "/",
+          to: "/amplication-ai",
           position: "left",
-          label: "Get Started",
-          activeBaseRegex: '^/$'
+          label: "AI",
         },
         {
-          to: "/tutorials",
+          to: "/platform-console/",
           position: "left",
-          label: "Tutorials",
+          label: "Platform Console",
         },
         {
-          to: "/custom-code",
+          to: "/service-catalog/",
           position: "left",
-          label: "Custom Code",
+          label: "Service Catalog",
         },
         {
-          to: "/api",
+          to: "/live-service-templates",
           position: "left",
-          label: "Generated APIs",
+          label: "Live Templates",
         },
         {
-          to: "https://app.amplication.com/login",
+          to: "/private-plugins/",
+          position: "left",
+          label: "Private Plugins",
+        },
+        {
+          to: "https://app.amplication.com/login?event=startNowClicked&source=documentation",
           label: "Start Now",
           position: "right",
           className: "start-now-button",
         },
         {
-          href: "https://amplication.com/contact-us",
+          href: "https://meetings-eu1.hubspot.com/muly/talk-tech-vp-engineering",
           html: "Contact Us",
           position: "right",
         },
@@ -157,7 +161,7 @@ module.exports = {
             },
             {
               label: "Contact Us",
-              href: "https://amplication.com/contact-us",
+              href: "https://meetings-eu1.hubspot.com/oalaluf/meet-with-oren",
             },
           ],
         },
@@ -195,8 +199,12 @@ module.exports = {
       {
         redirects: [
           {
-            to: "/deploy/docker-desktop",
-            from: ["/deploy"]
+            to: "/plugins/guides/authentication",
+            from: ["/authentication-plugin-examples"]
+          },
+          {
+            to: "/user-entity",
+            from: ["/how-to/add-delete-user-entity"]
           },
           {
             to: "/getting-started/",
@@ -242,6 +250,10 @@ module.exports = {
             to: "/first-service/",
             from: ["/first-app/"],
           },
+          {
+            to: "/custom-types-and-actions",
+            from: ["/custom-actions"]
+          }
         ],
       },
     ],

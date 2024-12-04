@@ -26,7 +26,7 @@ The primary advantage of using Smart Git Sync is its ability to simplify the pro
 When you perform a new build on your Amplication project, Smart Git Sync automatically triggers the creation of a commit on the `amplication` branch.
 
 :::note
-Amplication supports both [GitHub](/sync-with-github) and [Bitbucket](/sync-with-bitbucket) as git providers.
+Amplication supports [GitHub](/sync-with-github), [Bitbucket](/sync-with-bitbucket), [AWS CodeCommit](/sync-with-aws-codecommit), and GitLab as git providers.
 :::
 
 This commit encompasses all the files that were added, removed, or changed since the last build.
@@ -44,9 +44,10 @@ For example, let's say you've just added a new _Task_ entity to your project. On
 
 This method ensures that every single change you make in your Amplication project is automatically tracked and committed to the `amplication` branch in your Git repository. You can then easily review and merge these changes through pull requests.
 
-:::tip
-After completing an Amplication build, review the PR, resolve any conflicts, merge it, and
-**delete the `amplication` branch**.
+:::note
+After the Amplication build completes, review the PR, resolve any conflicts, and merge it.
+
+**Keep the `amplication` branch and avoid deleting it**. In case of conflicts, handle them on the `amplication` branch and perform commits there. Regular development work should not be done on this branch.
 :::
 
 ## The `amplication` branch
@@ -62,7 +63,9 @@ For example, Amplication will base the `amplication` branch from `main` if your 
 You can merge Amplication-made changes by merging pull requests created by Amplication from the `amplication` branch to your repository's default branch.
 
 :::note
-Refrain from modifying the `amplication` branch directly. Creating new commits or merging changes from other branches can introduce bugs and inconsistencies. In case of conflict, delete the `amplication` branch and resolve the merge conflict in the next PR.
+**Do not delete the `amplication` branch**.
+
+Do not modify the `amplication` branch, except to resolve conflicts. Handle conflicts directly on the `amplication` branch. Avoid creating new commits or merging changes from other branches to prevent bugs and inconsistencies.
 :::
 
 ![](./assets/sync-with-git-provider/github-pull-request.png)
@@ -95,3 +98,4 @@ Learn how to sync your service with your preferred git provider:
 
 - [Sync With GitHub](/sync-with-github) (Free, Enterprise)
 - [Sync With Bitbucket](/sync-with-bitbucket) (Enterprise)
+- [Sync With AWS CodeCommit](/sync-with-aws-codecommit) (Enterprise)

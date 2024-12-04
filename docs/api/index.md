@@ -25,7 +25,7 @@ GET /api/posts?orderBy[createdAt]=Asc
 Filter data based on specific criteria by using query parameters in your API requests. Combine multiple filters for more specific results.
 
 ```
-GET /api/posts?where[title][contains]=Node.js
+GET /api/posts?where[title][contains]=Development
 ```
 
 [Learn about filtering](/api/generated-api-filtering/#rest-api) REST API requests.
@@ -72,7 +72,7 @@ query{
   posts(
     where:{
       title:{
-        contains:"Node.js"
+        contains:"Development"
       }
     }
   ){

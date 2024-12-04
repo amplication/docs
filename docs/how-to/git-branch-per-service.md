@@ -10,6 +10,11 @@ pagination_next: getting-started/smart-git-sync
 With Amplication's Enterprise Plan, teams can now streamline their workflow in multi-service repositories with **dedicated git branches and PRs for each service**.
 This feature enables faster delivery of changes, as only the team members responsible for a specific service need to review the associated PR.
 
+:::note
+Dedicated Git Branches are only **available for Enterprise Plan users**.
+Try it during your 7-day Enterprise plan trial for new workspaces.
+:::
+
 ## Benefits
 
 - **Isolated Reviews**: Teams can review changes specific to their services without the interference from other unrelated services.
