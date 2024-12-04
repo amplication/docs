@@ -10,11 +10,11 @@ slug: /
 
 Amplication helps you scaffold, build, maintain, and scale backend services that align with your organization's best practices, supporting you throughout the entire development process.
 
-Our platform combines live templates, AI-powered code generation, and proactive technical debt management to help teams quickly scaffold, create, maintain, and scale production-ready Node.js and .NET backend services while continuously enforcing organizational standards.
+Our platform combines live templates, AI-powered code generation, and proactive technical debt management to help teams quickly scaffold, create, maintain, and scale production-ready backend services while continuously enforcing organizational standards.
 
 ## Quickstart
 
-[Create your first service](/first-service/) with Amplication's AI, Jovu, and generate a .NET or Node.js _production-ready codebase in minutes_.
+[Create your first service](/first-service/) with Amplication's AI, Jovu, and generate a _production-ready codebase in minutes_.
 
 ## Embed Your Organization's Best Practices
 
@@ -36,7 +36,7 @@ Maintain consistent standards across your entire service portfolio, with all cha
 
 Our AI assistant, Jovu, helps you rapidly generate production-ready backend services with built-in best practices. Generate complete service infrastructure including REST and GraphQL APIs, database models, authentication, and logging in minutes. Customize your services through our platform's intuitive interface while maintaining consistent standards.
 
-- **[Jovu](/amplication-ai/)**: Generate production-ready .NET or Node.js code, get intelligent suggestions for your service's architecture, and more with Amplication AI.
+- **[Jovu](/amplication-ai/)**: Generate production-ready code, get intelligent suggestions for your service's architecture, and more with Amplication AI.
 - **[Full Stack Code Generation](/getting-started/)**: Fully-functional REST and GraphQL APIs, database models, authentication, logging, React Admin UI, and more.
 - [Set up Entities and Fields](/set-up-entities)
 - [Configure API Endpoints](/custom-types-and-actions)
