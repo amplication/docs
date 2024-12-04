@@ -199,7 +199,7 @@ module.exports = {
             from: ["/how-to/create-message-broker"]
           },
           {
-            to: "/plugins/guides/authentication",
+            to: "/guides/authentication",
             from: ["/authentication-plugin-examples"]
           },
           {
