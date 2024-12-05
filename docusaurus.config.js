@@ -199,7 +199,15 @@ module.exports = {
       {
         redirects: [
           {
-            to: "/plugins/guides/authentication",
+            to: "/guides/database",
+            from: ["/plugins/guides/database/"]
+          },
+          {
+            to: "/guides/message-broker",
+            from: ["/how-to/create-message-broker"]
+          },
+          {
+            to: "/guides/authentication",
             from: ["/authentication-plugin-examples"]
           },
           {

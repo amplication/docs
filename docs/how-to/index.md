@@ -18,6 +18,6 @@ Whether you are a beginner just starting with Amplication or an experienced deve
 - [Entity Relations](/relations/)
 - [Base Directories](/how-to/base-directories)
 - [Configure selective code generation](/how-to/api-admin-ui-settings/)
-- [Create a message broker](/how-to/create-message-broker)
+- [Create a message broker](/guides/message-broker)
 
 Browse through the available tutorials and start building your web app with Amplication.

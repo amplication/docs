@@ -1,11 +1,11 @@
 ---
 id: event-hierarchy
-title: Event Hierarchy
-sidebar_label: Event Hierarchy
+title: Plugin Event Hierarchy
+sidebar_label: Plugin Event Hierarchy
 slug: /plugins/event-hierarchy
 ---
 
-# Event Hierarchy
+# Plugin Event Hierarchy
 
 We have two main event hierarchies in our Data Service Generator (DSG) service: one for Node.js services and one for .NET services. Each of these hierarchies includes events to create the server's files and, in the case of Node.js, the admin-ui files.
 

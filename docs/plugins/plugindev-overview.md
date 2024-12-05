@@ -9,7 +9,8 @@ pagination_prev: plugins/event-hierarchy
 
 # Plugin Development Overview
 
-A plugin is a custom code that extends Amplication developer platform with new features. The features incorporated can be generic, useful to a wide variety of users, or can be very specific to deal with specialized requirements.
+A plugin is code that extends the Amplication developer platform by adding new features or modifying existing functionality.
+The features incorporated can be generic, useful to a wide variety of users, or can be very specific to deal with specialized requirements.
 
 If you or your organization have a specific workflow, install an existing plugin or write one to customize the platform to perform your required tasks.
 
