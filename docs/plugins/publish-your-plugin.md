@@ -1,10 +1,14 @@
 ---
 id: publish-plugin
-title: How To Publish a Custom Plugin
-sidebar_label: How To Publish a Custom Plugin
+title: How To Publish a Plugin
+sidebar_label: Publish a Plugin
 description: Learn how to publish your Amplication plugin.
 slug: /plugins/publish-plugin
 ---
+
+:::info
+These steps are for publishing a publicly available [community plugin](/getting-started/plugins/). For information on releasing private plugins, see the [Private Plugins](/private-plugins/) page.
+:::
 
 Step 1. Create the Plugin
 

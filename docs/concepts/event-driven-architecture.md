@@ -45,7 +45,7 @@ For a step-by-step guide on building an event-driven application with Amplicatio
 
 ## Step 1: Create a Message Broker
 
-In your Amplication project, navigate to "Add Resource" and select "[Message Broker](/how-to/create-message-broker)". This will lead you to the Message Broker Creation Wizard. 
+In your Amplication project, navigate to "Add Resource" and select "[Message Broker](/guides/message-broker)". This will lead you to the Message Broker Creation Wizard. 
 
 After creating the message broker, you'll be able to configure the settings by installing and configuring the appropriate [message broker plugin](#supported-message-brokers).
 

@@ -1,7 +1,7 @@
 ---
 id: how-to-test-plugin
-title: How to Test a Custom Plugin
-sidebar_label: How to Test a Custom Plugin
+title: How to Test a Plugin
+sidebar_label: Test a Plugin
 slug: /plugins/how-to-test-plugin
 ---
 
