@@ -288,14 +288,14 @@ article > header {
 .markdown h1:first-child {
   font-size: 32px;
   font-weight: 600;
-  line-height: 1.25rem;
+  line-height: 1.25;
   margin-top: 1rem;
 }
 
 .markdown > h2 {
   font-size: 18px;
   font-weight: 600;
-  line-height: 1.25rem;
+  line-height: 1.25;
 }
 
 .markdown > pre,
