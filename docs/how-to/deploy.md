@@ -51,9 +51,3 @@ For those looking to leverage the power of Kubernetes orchestration, Amplication
 Amplication has plugins that enable deployment to Amazon Web Services using Elastic Container Service (ECS). This option allows you to leverage AWS's managed container orchestration service for deploying, managing, and scaling your containerized applications.
 
 [Learn more about deploying to AWS ECS](/deploy/aws/ecs)
-
-## Request New Deployment Guides
-
-We're always looking to expand our deployment options to meet the needs of our users. Is there a specific deployment target or cloud provider you'd like to see covered in our documentation? We'd love to hear from you!
-
-[Contact us with your deployment guide requests](https://meetings-eu1.hubspot.com/paz-yanover/product-overview-vp-product)
