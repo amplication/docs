@@ -43,17 +43,6 @@ Never use the same repository for private plugins and generated services to avoi
 
 ![Publish Your Platform Console Changes](./assets/private-plugins/configure-git-settings.png)
 
-## Add a New Private Plugin
-
-Next, add a new private plugin to your Platform Console:
-
-1. In the Private Plugins tab's sidebar, click the `Add Private Plugin` field
-2. Enter a unique name using kebab-case (e.g., `acme-corp-authentication`)
-3. Set the plugin's **Display Name** and **Description** - these will appear in the UI when selecting plugins
-4. Choose the appropriate code generator (Node.js or .NET) that matches your target services
-
-![Publish Your Platform Console Changes](./assets/private-plugins/add-new-plugin.png)
-
 ## Set Up Your Private Plugin Folder
 
 After creating the plugin entry in the Platform Console, set up your development environment.
@@ -122,10 +111,56 @@ Follow the steps below to complete this process:
    mv plugins/dotnet-db-postgres your-plugin-id
    ```
 
+## Add a New Private Plugin
+
+Next, add a new private plugin to your Platform Console:
+
+1. In the Private Plugins tab's sidebar, click the `Add Private Plugin` field
+2. A modal appears that scans your connected Git repository for private plugins
+3. Select your plugin from the list of found plugins
+
+:::note
+Only plugins that are properly structured within the `plugins` folder of your connected Git repository will be detected.
+:::
+
+![Publish Your Platform Console Changes](./assets/private-plugins/add-new-plugin.png)
+
+## Configure Your Plugin
+
+After adding your plugin, you'll need to configure its settings:
+
+1. **Plugin ID**: Automatically set based on your plugin's folder name in the Git repository. This can only be modified by renaming the folder and re-adding the plugin.
+2. **Display Name**: The human-readable name for your plugin that appears in the UI. By default, it matches the Plugin ID but can be customized for better clarity.
+3. **Icon**: Choose from a variety of technology-specific icons to help visually identify your plugin. You can also customize the icon's color to match your categorization system.
+4. **Code Generator**: Select the appropriate code generator for your plugin:
+  - Node.js
+  - .NET
+  - Blueprints (for custom blueprint solutions)
+5. **Blueprint Compatibility**: Optionally restrict your plugin to work with specific blueprints by selecting them from the dropdown menu.
+6. **Description**: Provide a detailed description of your plugin's purpose. A detailed description helps developers quickly understand and choose the right plugin for their needs.
+
+:::tip
+A meaningful display name, icon, and description will help developers quickly identify and understand your plugin's purpose when browsing the plugin list in services and templates.
+:::
+
+![Configure Your Private Plugin's Settings](./assets/private-plugins/configure-plugin.png)
+
 ## Develop Your Plugin
 
 Now that your plugin structure is set up, it's time to start building your plugin.
-We've prepared several resources and reference materials to help guide your plugin development process.
+
+First, enable dev versions by toggling the `Enable Dev Version` into the on state.
+
+![Enable Dev Versions](./assets/private-plugins/enable-dev-versions.png)
+
+Dev Versions streamline the plugin development process by automatically using the latest code from your repository's base branch.
+This eliminates the need to publish new versions during development and testing.
+
+Dev Versions makes the development process much smoother.
+The plugin code will be pulled from the base branch set at the Git Settings.
+The new changes in your plugin folder are immediately available for testing.
+
+Next, we've prepared several resources and reference materials to help guide your plugin development process.
 
 Core Documentation:
 
@@ -141,35 +176,7 @@ Community Plugin Examples:
 Study the published Node.js and .NET community plugins for best practices and guidance on how to structure your code effectively.
 :::
 
-## Add Versions to Your Plugin
-
-After developing your plugin, you'll need to version it both in Amplication and your Git repository.
-First, let's add a version through the Amplication UI:
-
-1. Navigate to the Private Plugins tab and select your plugin
-2. Scroll to **Add New Version** and click `Add Version`
-3. Note the version number you assign (e.g., `0.1.0`)
-
-![Publish Your Platform Console Changes](./assets/private-plugins/add-new-version.png)
-
-## Tag Your Git Repository
-
-Next, let's add a git tag to your plugin.
-Amplication uses Git tags to identify plugin versions during code generation.
-
-Create a tag with your Plugin ID and version from the previous step:
-
-```bash
-git tag "your-plugin-id@0.1.0"
-```
-
-Push the tag to your remote repository:
-
-```bash
-git push origin "your-plugin-id@0.1.0"
-```
-
-## Configure Plugin Settings
+### Add Plugin Settings
 
 Plugin settings allow you to define customizable options that users can configure when using your plugin. These settings can include API keys, feature flags, or other configuration values that modify your plugin's behavior.
 
@@ -196,7 +203,45 @@ For a real-world example of using settings in your plugin, see the [Supertokens 
 
 ## Publish Your Plugin
 
-After adding a version to your plugin, configuring your plugin settings, and tagging your repository, it's time to publish your plugin. Publishing makes your plugin version available for use in services and templates, and sets it as the latest version.
+After developing your plugin it's time to get it for release.
+To do this, you'll need to add a version to your plugin, tag your repository, and finally publish it through the Amplication UI.
+
+Publishing makes your plugin version available for use in services and templates, and sets it as the latest version.
+
+### Add Versions to Your Plugin
+
+After developing your plugin and to get it ready for release, you'll need to version it in both Amplication and your Git repository.
+
+First, disable dev versions by toggling the `Enable Dev Version` into the off state.
+
+![Disable Dev Versions](./assets/private-plugins/disable-dev-version.png)
+
+Next, let's add a version through the Amplication UI:
+
+1. Navigate to the Private Plugins tab and select your plugin
+2. Scroll to **Add New Version** and click `Add Version`
+3. Note the version number you assign (e.g., `0.1.0`)
+
+![Publish Your Platform Console Changes](./assets/private-plugins/add-new-version.png)
+
+### Tag Your Git Repository
+
+Next, let's add a git tag to your plugin.
+Amplication uses Git tags to identify plugin versions during code generation.
+
+Create a tag with your Plugin ID and version from the previous step:
+
+```bash
+git tag "your-plugin-id@0.1.0"
+```
+
+Push the tag to your remote repository:
+
+```bash
+git push origin "your-plugin-id@0.1.0"
+```
+
+### Publish Your Plugin
 
 1. Go to your Platform Console
 2. Click on "Publish New Version" in your Platform Changes sidebar
