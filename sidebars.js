@@ -24,6 +24,7 @@ const sidebars = {
         "how-to/service-catalog",
         "how-to/live-service-templates",
         "platform-features/technical-debt-management",
+        "platform-features/blueprints",
         {
           type: "doc",
           id: "plugins/private-plugins",
