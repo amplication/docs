@@ -19,7 +19,7 @@ You can create standardized resources that match your specific requirements whil
 
 With Blueprints you can:
 
-- Describe any piece of software like SDKs, deplyoyment configs, front-end apps, and even Amplication plugins.
+- Describe any piece of software like SDKs, deployment configs, front-end apps, and even Amplication plugins.
 - Create resources using your preferred technologies and frameworks
 - Implement organization-specific development standards
 - Define relationships between different parts of your system
