@@ -1,3 +1,9 @@
+
+
+| 📝 **Note** |
+|------------|
+| Amplication Documentation moved to https://github.com/amplication/amplication-docs |
+
 # Amplication Documentation
 Welcome to the [Amplication documentation](https://docs.amplication.com/) repository! This repository contains the documentation for the Amplication open-source development platform. Amplication is a low-code development platform that allows developers to quickly build scalable and maintainable applications.
 
