@@ -26,7 +26,7 @@ The primary advantage of using Smart Git Sync is its ability to simplify the pro
 When you perform a new build on your Amplication project, Smart Git Sync automatically triggers the creation of a commit on the `amplication` branch.
 
 :::note
-Amplication supports [GitHub](/sync-with-github), [Bitbucket](/sync-with-bitbucket), [AWS CodeCommit](/sync-with-aws-codecommit), and GitLab as git providers.
+Amplication supports [GitHub](/sync-with-github), [Bitbucket](/sync-with-bitbucket), [AWS CodeCommit](/sync-with-aws-codecommit), and [GitLab](/sync-with-gitlab) as git providers.
 :::
 
 This commit encompasses all the files that were added, removed, or changed since the last build.
@@ -97,5 +97,6 @@ Smart Git Sync is a powerful feature that simplifies the integration between Amp
 Learn how to sync your service with your preferred git provider:
 
 - [Sync With GitHub](/sync-with-github) (Free, Enterprise)
+- [Sync With GitLab](/sync-with-gitlab) (Enterprise)
 - [Sync With Bitbucket](/sync-with-bitbucket) (Enterprise)
 - [Sync With AWS CodeCommit](/sync-with-aws-codecommit) (Enterprise)
